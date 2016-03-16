@@ -18,7 +18,7 @@
 \DeclareGraphicsExtensions{.pdf,.jpg}
 \graphicspath{{./figs/}}
 
-\loadglsentries{glossary}
+\loadglsentries{glossary} 
 \makeglossaries
 
 \begin{document}
@@ -80,6 +80,9 @@
 \pagestyle{ruled}
 \include{example_chapter}
 %% include here the other chapters
+
+\include{introduction}
+
 \include{background}
 
 \renewcommand*{\bibname}{References}
@@ -87,13 +90,13 @@
 \bibliography{main}
 
 %% Uncomment the following if you have any appendix
-% \appendix
-% \addtocontents{toc}{%
-%  \protect\vspace{1em}% 
-%  \protect\noindent \bfseries \appendixtocname\protect\par
-%  \protect\vspace{-.5em}%
-% }
-% \renewcommand{\chaptername}{\appendixname}
+ \appendix
+ \addtocontents{toc}{%
+  \protect\vspace{1em}% 
+  \protect\noindent \bfseries \appendixtocname\protect\par
+  \protect\vspace{-.5em}%
+ }
+ \renewcommand{\chaptername}{\appendixname}
 %% include below possible appendices (chapters)
 
 
