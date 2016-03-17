@@ -2,6 +2,8 @@
 
 % this package is just to generate text for demo-purposes
 \usepackage{blindtext}
+\usepackage{graphicx}
+%\graphicspath{ {/home/sindre/Documents/Master/MasterThesis/Latex/figs} }
 
 
 \title{Understanding Data Analysis in an\newlinetitle End-to-End IoT System} % The title of your assignement; NB use \newlinetitle to start a newline
@@ -15,8 +17,8 @@
 % \usepackage[bf]{caption}
 % \usepackage{subcaption}
 
-\DeclareGraphicsExtensions{.pdf,.jpg}
-\graphicspath{{./figs/}}
+\DeclareGraphicsExtensions{.pdf,.jpg,.png}
+%\graphicspath{{./figs/}}
 
 \loadglsentries{glossary} 
 \makeglossaries
@@ -78,15 +80,17 @@
 
 \pagenumbering{arabic}
 \pagestyle{ruled}
-\include{example_chapter}
+%\include{example_chapter}
 %% include here the other chapters
 
 \include{introduction}
 
 \include{background}
 
+\include{architecture}
+
 \renewcommand*{\bibname}{References}
-\bibliographystyle{alpha}
+\bibliographystyle{chicago} %alpha
 \bibliography{main}
 
 %% Uncomment the following if you have any appendix
