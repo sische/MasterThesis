@@ -1,0 +1,15 @@
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\library\pk_wrap.c
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\components\iot\tls\mbedtls\tls\config\nrf_tls_config.h
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/check_config.h
+.\_build\pk_wrap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/pk_internal.h
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/pk.h
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/md.h
+.\_build\pk_wrap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/rsa.h
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/bignum.h
+.\_build\pk_wrap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/ecp.h
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/ecdsa.h
+.\_build\pk_wrap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\_build\pk_wrap.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/platform.h

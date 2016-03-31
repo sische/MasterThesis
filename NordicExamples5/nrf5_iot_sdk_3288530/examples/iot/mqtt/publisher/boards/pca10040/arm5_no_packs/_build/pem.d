@@ -1,0 +1,14 @@
+.\_build\pem.o: ..\..\..\..\..\..\..\external\mbedtls\library\pem.c
+.\_build\pem.o: ..\..\..\..\..\..\..\components\iot\tls\mbedtls\tls\config\nrf_tls_config.h
+.\_build\pem.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/check_config.h
+.\_build\pem.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\_build\pem.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/pem.h
+.\_build\pem.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\_build\pem.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/base64.h
+.\_build\pem.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/des.h
+.\_build\pem.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\_build\pem.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/aes.h
+.\_build\pem.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/md5.h
+.\_build\pem.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/cipher.h
+.\_build\pem.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\_build\pem.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/platform.h

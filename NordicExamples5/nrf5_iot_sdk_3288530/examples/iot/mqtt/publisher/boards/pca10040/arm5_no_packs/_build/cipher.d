@@ -1,0 +1,9 @@
+.\_build\cipher.o: ..\..\..\..\..\..\..\external\mbedtls\library\cipher.c
+.\_build\cipher.o: ..\..\..\..\..\..\..\components\iot\tls\mbedtls\tls\config\nrf_tls_config.h
+.\_build\cipher.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/check_config.h
+.\_build\cipher.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\_build\cipher.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/cipher.h
+.\_build\cipher.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\_build\cipher.o: ..\..\..\..\..\..\..\external\mbedtls\include\mbedtls/cipher_internal.h
+.\_build\cipher.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\_build\cipher.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
