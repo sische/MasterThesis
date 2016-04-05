@@ -48,6 +48,7 @@
 #include "ipv6_medium.h"
 
 #include <stdio.h>
+#include <string.h>
 #include <ctype.h>
 #include "config.h"
 #include "eeprom_simulator.h"
@@ -141,8 +142,14 @@ static const nrf_drv_twi_t m_twi_master = NRF_DRV_TWI_INSTANCE(MASTER_TWI_INST);
 
 static uint32_t measuredTWIx;
 static uint32_t measuredTWIy;
-static uint32_t measuredTWIz;																															 
-																															 
+static uint32_t measuredTWIz;	
+
+static uint32_t numberOfMeasurements = 0;
+static uint32_t sumOfMeasurementsSinceLastCoAP = 0;
+static uint32_t counter = 0; 
+
+static char * stringToSend[100]; 
+static char * valuesList[100]; 																															 
 																														 
 #ifdef COMMISSIONING_ENABLED
 static bool                    m_power_off_on_failure = false;
@@ -452,34 +459,147 @@ static void ip_app_handler(iot_interface_t * p_interface, ipv6_event_t * p_event
     }
 }
 
-
-static void led_value_get(coap_content_type_t content_type, char ** str)
+// Added by Sindre
+static char * returnString(int i)
 {
-		measuredTWIz = read_reg(0x36, 0x00); 
-		*str = itoa(measuredTWIz, 10);
+		char * navn = "Examplestring";
+		return &navn[i];
+}		
+
+// Added by Sindre
+static char * appendToString(char * originalString, const char * stringToAppend)
+{
+		if((originalString = malloc(strlen(stringToAppend)+1)) != NULL)	// Apperently this is NULL..?
+		{	
+			originalString[0] = '\0';  // ?? 
+			strcat(originalString, stringToAppend);
+		} 
+		else 
+		{
+			//stringToSend = "Malloc failed in appendToString!\n"; // originalString = 
+		}
+		
+}
+
+// Added by Sindre
+static void	start_measruing()
+{
 	
-	/*
-    if (content_type == COAP_CT_APP_JSON)
-    {
-        static char response_str_true[15] = {"{\"led3\": True}\0"};
-        static char response_str_false[16] = {"{\"led3\": False}\0"};
-        if((bool)LED_IS_ON(LED_THREE) == true)
-        {
-            *str = response_str_true;
-        }
-        else
-        {
-            *str = response_str_false;
-        }
-    }
-    // For all other use plain text
-    else
-    {
-        static char response_str[2];
-        memset(response_str, '\0', sizeof(response_str));
-        sprintf(response_str, "%d", (bool)LED_IS_ON(LED_THREE));
-        *str = response_str;
-    }*/
+	
+		//measuredTWIz = read_reg(READ_Z_AXIS, 0x00); 
+		//*str = itoa(measuredTWIz, 10);
+		
+		//char * new_measurement;
+		//new_measurement = itoa((read_reg(READ_Z_AXIS, 0x00)), 10);
+				
+		//char * currentMeasurement = itoa(read_reg(READ_Z_AXIS, 0x00), 10);
+		//stringToSend = currentMeasurement; 
+		
+		//stringToSend[0] = '\0';   // ensures the memory is an empty string
+    //strcat(stringToSend, currentMeasurement);
+		
+		//char * testString = itoa(1, 10);
+		//char * testString = "Sindre\0";
+		//const char * testString2 = "Leif\0";
+		//char * testString3;
+		//sprintf(testString3, "%d", (read_reg(READ_Z_AXIS, 0x00)));
+		//sprintf(stringToSend, "%s", "Sindre\0");
+		//strcpy(stringToSend, currentMeasurement);
+		
+		//char *ptr; 
+		//ptr = strcat(stringToSend, testString3); 
+		
+		// TEST: use of list
+		//valuesList[counter++] = currentMeasurement;
+		
+		
+		//strcat(stringToSend, testString); 
+		
+		//sumOfMeasurementsSinceLastCoAP += read_reg(READ_Z_AXIS, 0x00); 
+		//numberOfMeasurements++;
+		
+		//int internalCounter = 0; 
+		//appendToString(stringToSend, "Sindrergjmvn");
+		 
+		//char src[50];
+		//const char * src2 = "Leif\0";
+		//strcpy(src, "This is the string\0"); 
+		
+		//strcat(stringToSend, src);
+		//stringToSend = "Sindre\0"; 
+		//sprintf(stringToSend, "%d", 42);
+		
+		
+		int readread = read_reg(READ_Z_AXIS, 0x00);
+		
+		char stringa[30];
+		int fingers = 5;
+		int toes = 921;
+
+		sprintf(stringa, "Acceleration value: %d",  readread);
+		
+		*stringToSend = stringa; 
+		
+		
+		// THIS WORKS
+		
+		//char stringa[50];
+		//const char *one = "We";
+		//const char *two = "Are";
+		//char *three = "Creating\0";
+		//char *four = "a\0";
+		//char *five = "String\0";
+	
+		//sprintf(stringa, "%s %s %s %s %s", one, two, three, four, five);
+
+		//*stringToSend = stringa; 
+		
+		// TO HERE: THIS WORKS
+		}
+
+
+		
+static void acceleration_value_get(coap_content_type_t content_type, char ** str)
+{
+		*str = *stringToSend;
+		//stringToSend = "";
+		
+		// TEST: sum of array
+		//for (int i = 0; i < counter; i++)
+		//{
+		//		memcpy(stringToSend, valuesList, i); 
+		//		valuesList[i] = 0; 
+		//}
+	
+		//*str = itoa((sumOfMeasurementsSinceLastCoAP/numberOfMeasurements), 10); ///numberOfMeasurements), 10); 
+		//sumOfMeasurementsSinceLastCoAP = 0;  
+		//numberOfMeasurements = 0; 
+	
+		//measuredTWIz = read_reg(0x36, 0x00); 
+		//*str = itoa(measuredTWIz, 10);
+		
+		//char * newString1 = "Sindre ";
+		//char * newString2 = "er ";
+		//char * newString3 = "kul"; 
+	
+		//snprint(*str, "%s%s", newString2, newString1); 
+	
+		//strncpy(*str, "test807", sizeof(str));
+		//strncpy(*str, "kojhnbg", sizeof(str));
+		//strcpy(*str, newString2);
+
+		//gets(newString1); // Does not work
+		//gets(newString2); // Does not work
+
+		//strcat(*str, newString1);
+		//strcat(*str, newString2);
+		//strcat(*str, newString3); 
+  
+		//*str = "This is a test to see the values 212 58 9765 63 23 219 224"; 
+		//*str = "215 2010 154 123 15 215 214 852 950 121 111 215 2010 154 123 15 215 214 852 950 121	111 215 2010 154 123 15 215 214 852 950 121 111 215 2010 154 123 15 215 214 852 950 121 111"; 
+		
+		//*str = stringToSend; 
+		//counter = 0; 
 }
 
 
@@ -555,7 +675,7 @@ static void notify_all_led3_subscribers(coap_msg_type_t type)
         APP_ERROR_CHECK(err_code);
 
         char * response_str;
-        led_value_get(p_observer->ct, &response_str);
+        acceleration_value_get(p_observer->ct, &response_str);
         err_code = coap_message_payload_set(p_response, response_str, strlen(response_str));
         APP_ERROR_CHECK(err_code);
 
@@ -626,7 +746,7 @@ void well_known_core_callback(coap_resource_t * p_resource, coap_message_t * p_r
  *
  * @return NRF_SUCCESS or the reason of failure
  */
-static ret_code_t twi_master_init()	// This method should work, since values change when cables are disconnected
+static ret_code_t twi_master_init()	
 {
 	ret_code_t ret; // scl and sda changed according to http://devzone.nordicsemi.com/question/57120/connecting-altimeter-to-nrf52-dk-using-i2c
     const nrf_drv_twi_config_t config =
@@ -652,16 +772,16 @@ static ret_code_t twi_master_init()	// This method should work, since values cha
 static void accelerometer_init()
 {
 		// Minimum initialization sequence of the ADXL345
-		//write_reg(0x31, 0x00, 2);
-		//write_reg(0x2D, 0xFF, 2);	// 65532
-		//write_reg(0x2E, 0xFF, 2);
-		write_reg(0x1E, 0xFF, 2);	//	Setting X-AXIS offset, 0x00 to reset
-		//write_reg(0x1E, 0x00, 2);
-		//write_reg(0x1F, 0x00, 2);
-		//write_reg(0x20, 0xFF, 2);
 		
-		//start_reading(); 
+		//write_reg(DATA_FORMAT_CONTROL, 0x00, 2);
+		//write_reg(POWER_SAVING_INIT, 0xFF, 2);	// 65532
+		//write_reg(INTERRUPT_ENABLE_CONTROL, 0xFF, 2);
+		//write_reg(X_AXIS_OFFSET, 0xFF, 2);	//	Setting X-AXIS offset, 0x00 to reset
 		
+		//write_reg(X_AXIS_OFFSET, 0x00, 2);
+		//write_reg(Y_AXIS_OFFSET, 0x00, 2);
+		write_reg(Z_AXIS_OFFSET, 0xFF, 2);
+	
 }
 
 
@@ -779,7 +899,7 @@ static void led3_callback(coap_resource_t * p_resource, coap_message_t * p_reque
 
                 // Set response payload to the actual LED state.
                 char * response_str;
-                led_value_get(ct_to_use, &response_str);
+                acceleration_value_get(ct_to_use, &response_str);
                 err_code = coap_message_payload_set(p_response, response_str, strlen(response_str));
                 APP_ERROR_CHECK(err_code);
             }
@@ -1045,7 +1165,7 @@ static void app_coap_time_tick(iot_timer_time_in_ms_t wall_clock_value)
     if (m_led3.expire_time <= (0 + OBSERVE_NOTIFY_DELTA_MAX_AGE))
     {
         m_led3.expire_time = m_led3.max_age;
-// How often to send CON-ACK? 60 = once pr 60 seconds
+// How often to send CON-ACK? 60 = once pr 60 seconds ********************************************************************************************************************************************
         if (msg_count % 60 == 0)
         {
             notify_all_led3_subscribers(COAP_TYPE_CON);
@@ -1161,6 +1281,7 @@ int main(void)
 		// Added by Sindre
 		twi_master_init();
 		accelerometer_init();
+		//start_measruing();
 
 
 #ifdef COMMISSIONING_ENABLED
@@ -1225,6 +1346,7 @@ int main(void)
     // Enter main loop.
     for (;;)
     {
+				start_measruing(); 
         power_manage();
     }
 }
