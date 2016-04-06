@@ -1,0 +1,37 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{??}{nrf}{}]{nrf52Nordic}
+{Nordic Semiconductor:} nrf52 series soc.
+\newblock https://www.nordicsemi.com/Products/nRF52-Series-SoC.
+\newblock Accessed: 25-03-2015.
+
+\bibitem[\protect\citeauthoryear{??}{ras}{}]{raspberryPi2}
+{Raspberry Pi:} raspberry pi 2 model b.
+\newblock https://www.raspberrypi.org/products/raspberry-pi-2-model-b/.
+\newblock Accessed: 27-03-2015.
+
+\bibitem[\protect\citeauthoryear{Gomez, Oller, and Paradells}{Gomez
+  et~al.}{2012}]{gomez2012overview}
+Gomez, C., J.~Oller, and J.~Paradells (2012).
+\newblock Overview and evaluation of bluetooth low energy: An emerging
+  low-power wireless technology.
+\newblock {\em Sensors\/}~{\em 12\/}(9), 11734--11753.
+
+\bibitem[\protect\citeauthoryear{Hui and Culler}{Hui and
+  Culler}{2008}]{hui2008extending}
+Hui, J.~W. and D.~E. Culler (2008).
+\newblock Extending ip to low-power, wireless personal area networks.
+\newblock {\em Internet Computing, IEEE\/}~{\em 12\/}(4), 37--45.
+
+\bibitem[\protect\citeauthoryear{Mulligan}{Mulligan}{2007}]{mulligan20076lowpan}
+Mulligan, G. (2007).
+\newblock The 6lowpan architecture.
+\newblock In {\em Proceedings of the 4th workshop on Embedded networked
+  sensors}, pp.\  78--82. ACM.
+
+\bibitem[\protect\citeauthoryear{Shelby, Hartke, and Bormann}{Shelby
+  et~al.}{2014}]{shelby2014constrained}
+Shelby, Z., K.~Hartke, and C.~Bormann (2014).
+\newblock The constrained application protocol (coap).
+
+\end{thebibliography}
