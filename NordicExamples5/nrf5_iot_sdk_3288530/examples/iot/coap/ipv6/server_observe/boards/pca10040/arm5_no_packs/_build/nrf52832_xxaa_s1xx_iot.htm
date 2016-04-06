@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\_build\nrf52832_xxaa_s1xx_iot.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\_build\nrf52832_xxaa_s1xx_iot.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Tue Apr 05 19:41:58 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Wed Apr 06 10:31:00 2016
 <BR><P>
 <H3>Maximum Stack Usage =        684 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1284,8 +1284,8 @@ Global Symbols
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;echo_reply_send
 </UL>
 
-<P><STRONG><a name="[2e]"></a>main</STRONG> (Thumb, 430 bytes, Stack size 64 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 312<LI>Call Chain = main &rArr; ipv6_medium_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+<P><STRONG><a name="[2e]"></a>main</STRONG> (Thumb, 410 bytes, Stack size 40 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = main &rArr; ipv6_medium_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
 </UL>
 <BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_twi_tx
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_twi_rx
@@ -1590,7 +1590,7 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL>
-<P><STRONG><a name="[38]"></a>led3_callback</STRONG> (Thumb, 478 bytes, Stack size 104 bytes, main.o(i.led3_callback))
+<P><STRONG><a name="[38]"></a>led3_callback</STRONG> (Thumb, 476 bytes, Stack size 104 bytes, main.o(i.led3_callback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 588<LI>Call Chain = led3_callback &rArr; notify_all_led3_subscribers &rArr; coap_message_send &rArr; internal_coap_message_send &rArr; coap_transport_write &rArr; udp6_socket_sendto &rArr; ipv6_send &rArr; ble_6lowpan_interface_send &rArr; iphc_encode &rArr; iot_context_manager_get_by_addr &rArr; context_find_by_prefix &rArr; memcmp
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;coap_opt_uint_decode
@@ -1614,7 +1614,7 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.coap_endpoints_init)
 </UL>
-<P><STRONG><a name="[7e]"></a>notify_all_led3_subscribers</STRONG> (Thumb, 184 bytes, Stack size 48 bytes, main.o(i.notify_all_led3_subscribers))
+<P><STRONG><a name="[7e]"></a>notify_all_led3_subscribers</STRONG> (Thumb, 182 bytes, Stack size 48 bytes, main.o(i.notify_all_led3_subscribers))
 <BR><BR>[Stack]<UL><LI>Max Depth = 484<LI>Call Chain = notify_all_led3_subscribers &rArr; coap_message_send &rArr; internal_coap_message_send &rArr; coap_transport_write &rArr; udp6_socket_sendto &rArr; ipv6_send &rArr; ble_6lowpan_interface_send &rArr; iphc_encode &rArr; iot_context_manager_get_by_addr &rArr; context_find_by_prefix &rArr; memcmp
 </UL>
 <BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;coap_observe_server_next_get

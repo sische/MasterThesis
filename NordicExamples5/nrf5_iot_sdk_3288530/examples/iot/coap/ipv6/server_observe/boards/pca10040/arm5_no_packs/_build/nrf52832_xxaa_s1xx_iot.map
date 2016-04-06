@@ -2008,193 +2008,193 @@ Image Symbol Table
     i.le_role_encode                         0x00023afc   Section        0  ble_advdata.o(i.le_role_encode)
     le_role_encode                           0x00023afd   Thumb Code    84  ble_advdata.o(i.le_role_encode)
     i.led3_callback                          0x00023b50   Section        0  main.o(i.led3_callback)
-    led3_callback                            0x00023b51   Thumb Code   478  main.o(i.led3_callback)
-    i.list_deletions_handler                 0x00023d3c   Section        0  app_timer.o(i.list_deletions_handler)
-    list_deletions_handler                   0x00023d3d   Thumb Code   178  app_timer.o(i.list_deletions_handler)
-    i.list_insertions_handler                0x00023df8   Section        0  app_timer.o(i.list_insertions_handler)
-    list_insertions_handler                  0x00023df9   Thumb Code   196  app_timer.o(i.list_insertions_handler)
-    i.main                                   0x00023ec4   Section        0  main.o(i.main)
-    i.manuf_specific_data_encode             0x000240b8   Section        0  ble_advdata.o(i.manuf_specific_data_encode)
-    manuf_specific_data_encode               0x000240b9   Thumb Code   100  ble_advdata.o(i.manuf_specific_data_encode)
-    i.name_encode                            0x0002411c   Section        0  ble_advdata.o(i.name_encode)
-    name_encode                              0x0002411d   Thumb Code   156  ble_advdata.o(i.name_encode)
-    i.notify_all_led3_subscribers            0x000241b8   Section        0  main.o(i.notify_all_led3_subscribers)
-    notify_all_led3_subscribers              0x000241b9   Thumb Code   184  main.o(i.notify_all_led3_subscribers)
-    i.nrf_delay_ms                           0x0002427c   Section        0  nrf_delay.o(i.nrf_delay_ms)
-    i.nrf_drv_call_event_handler             0x00024298   Section        0  nrf_drv_twis.o(i.nrf_drv_call_event_handler)
-    nrf_drv_call_event_handler               0x00024299   Thumb Code    22  nrf_drv_twis.o(i.nrf_drv_call_event_handler)
-    i.nrf_drv_common_irq_enable              0x000242b4   Section        0  nrf_drv_common.o(i.nrf_drv_common_irq_enable)
-    i.nrf_drv_gpiote_in_event_enable         0x000242ec   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_event_enable)
-    i.nrf_drv_gpiote_in_init                 0x00024390   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_init)
-    i.nrf_drv_gpiote_in_is_set               0x00024448   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_is_set)
-    i.nrf_drv_gpiote_init                    0x0002445c   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_init)
-    i.nrf_drv_gpiote_is_init                 0x000244b0   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_is_init)
-    i.nrf_drv_twi_enable                     0x000244c4   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_enable)
-    i.nrf_drv_twi_init                       0x00024520   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_init)
-    i.nrf_drv_twi_int_handler                0x000245c4   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_int_handler)
-    nrf_drv_twi_int_handler                  0x000245c5   Thumb Code   216  nrf_drv_twi.o(i.nrf_drv_twi_int_handler)
-    i.nrf_drv_twi_rx                         0x000246a8   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_rx)
-    i.nrf_drv_twi_tx                         0x000246b8   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_tx)
-    i.nrf_drv_twis_check_bit                 0x000246c8   Section        0  nrf_drv_twis.o(i.nrf_drv_twis_check_bit)
-    nrf_drv_twis_check_bit                   0x000246c9   Thumb Code    22  nrf_drv_twis.o(i.nrf_drv_twis_check_bit)
-    i.nrf_drv_twis_event_bit_get             0x000246de   Section        0  nrf_drv_twis.o(i.nrf_drv_twis_event_bit_get)
-    nrf_drv_twis_event_bit_get               0x000246df   Thumb Code    26  nrf_drv_twis.o(i.nrf_drv_twis_event_bit_get)
-    i.nrf_drv_twis_process_error             0x000246f8   Section        0  nrf_drv_twis.o(i.nrf_drv_twis_process_error)
-    nrf_drv_twis_process_error               0x000246f9   Thumb Code    38  nrf_drv_twis.o(i.nrf_drv_twis_process_error)
-    i.nrf_drv_twis_state_machine             0x00024724   Section        0  nrf_drv_twis.o(i.nrf_drv_twis_state_machine)
-    nrf_drv_twis_state_machine               0x00024725   Thumb Code   544  nrf_drv_twis.o(i.nrf_drv_twis_state_machine)
-    i.nrf_free                               0x00024950   Section        0  mem_manager.o(i.nrf_free)
-    i.nrf_gpio_cfg                           0x00024990   Section        0  nrf_drv_gpiote.o(i.nrf_gpio_cfg)
-    nrf_gpio_cfg                             0x00024991   Thumb Code    34  nrf_drv_gpiote.o(i.nrf_gpio_cfg)
-    i.nrf_gpio_cfg_sense_set                 0x000249b2   Section        0  nrf_drv_gpiote.o(i.nrf_gpio_cfg_sense_set)
-    nrf_gpio_cfg_sense_set                   0x000249b3   Thumb Code    28  nrf_drv_gpiote.o(i.nrf_gpio_cfg_sense_set)
-    i.nrf_gpio_pin_set                       0x000249d0   Section        0  nrf_drv_twi.o(i.nrf_gpio_pin_set)
-    nrf_gpio_pin_set                         0x000249d1   Thumb Code    10  nrf_drv_twi.o(i.nrf_gpio_pin_set)
-    i.nrf_gpiote_event_clear                 0x000249e0   Section        0  nrf_drv_gpiote.o(i.nrf_gpiote_event_clear)
-    nrf_gpiote_event_clear                   0x000249e1   Thumb Code    16  nrf_drv_gpiote.o(i.nrf_gpiote_event_clear)
-    i.nrf_gpiote_event_is_set                0x000249f4   Section        0  nrf_drv_gpiote.o(i.nrf_gpiote_event_is_set)
-    nrf_gpiote_event_is_set                  0x000249f5   Thumb Code    12  nrf_drv_gpiote.o(i.nrf_gpiote_event_is_set)
-    i.nrf_mem_init                           0x00024a04   Section        0  mem_manager.o(i.nrf_mem_init)
-    i.nrf_mem_reserve                        0x00024a24   Section        0  mem_manager.o(i.nrf_mem_reserve)
-    i.nrf_twi_event_check                    0x00024ad8   Section        0  nrf_drv_twi.o(i.nrf_twi_event_check)
-    nrf_twi_event_check                      0x00024ad9   Thumb Code    10  nrf_drv_twi.o(i.nrf_twi_event_check)
-    i.nrf_uart_event_check                   0x00024ae2   Section        0  nrf_drv_uart.o(i.nrf_uart_event_check)
-    nrf_uart_event_check                     0x00024ae3   Thumb Code    10  nrf_drv_uart.o(i.nrf_uart_event_check)
-    i.nrf_uart_int_enable_check              0x00024aec   Section        0  nrf_drv_uart.o(i.nrf_uart_int_enable_check)
-    nrf_uart_int_enable_check                0x00024aed   Thumb Code    12  nrf_drv_uart.o(i.nrf_uart_int_enable_check)
-    i.nrf_uarte_event_check                  0x00024af8   Section        0  nrf_drv_uart.o(i.nrf_uarte_event_check)
-    nrf_uarte_event_check                    0x00024af9   Thumb Code    10  nrf_drv_uart.o(i.nrf_uarte_event_check)
-    i.observer_con_message_callback          0x00024b02   Section        0  main.o(i.observer_con_message_callback)
-    observer_con_message_callback            0x00024b03   Thumb Code    46  main.o(i.observer_con_message_callback)
-    i.on_ble_evt                             0x00024b30   Section        0  ipv6_medium_ble.o(i.on_ble_evt)
-    on_ble_evt                               0x00024b31   Thumb Code   100  ipv6_medium_ble.o(i.on_ble_evt)
-    i.on_error                               0x00024b98   Section        0  nrf_drv_twi.o(i.on_error)
-    on_error                                 0x00024b99   Thumb Code    68  nrf_drv_twi.o(i.on_error)
-    i.on_ipv6_medium_error                   0x00024be4   Section        0  main.o(i.on_ipv6_medium_error)
-    on_ipv6_medium_error                     0x00024be5   Thumb Code     2  main.o(i.on_ipv6_medium_error)
-    i.on_ipv6_medium_evt                     0x00024be8   Section        0  main.o(i.on_ipv6_medium_evt)
-    on_ipv6_medium_evt                       0x00024be9   Thumb Code    20  main.o(i.on_ipv6_medium_evt)
-    i.pbuffer_allocate                       0x00024c00   Section        0  iot_pbuffer.o(i.pbuffer_allocate)
-    pbuffer_allocate                         0x00024c01   Thumb Code    76  iot_pbuffer.o(i.pbuffer_allocate)
-    i.pbuffer_find                           0x00024c50   Section        0  iot_pbuffer.o(i.pbuffer_find)
-    pbuffer_find                             0x00024c51   Thumb Code    34  iot_pbuffer.o(i.pbuffer_find)
-    i.pbuffer_init                           0x00024c78   Section        0  iot_pbuffer.o(i.pbuffer_init)
-    pbuffer_init                             0x00024c79   Thumb Code    14  iot_pbuffer.o(i.pbuffer_init)
-    i.pin_in_use_by_port                     0x00024c88   Section        0  nrf_drv_gpiote.o(i.pin_in_use_by_port)
-    pin_in_use_by_port                       0x00024c89   Thumb Code    20  nrf_drv_gpiote.o(i.pin_in_use_by_port)
-    i.pin_in_use_by_te                       0x00024ca0   Section        0  nrf_drv_gpiote.o(i.pin_in_use_by_te)
-    pin_in_use_by_te                         0x00024ca1   Thumb Code    20  nrf_drv_gpiote.o(i.pin_in_use_by_te)
-    i.port_data_callback                     0x00024cb8   Section        0  coap_transport_ipv6.o(i.port_data_callback)
-    port_data_callback                       0x00024cb9   Thumb Code    68  coap_transport_ipv6.o(i.port_data_callback)
-    i.ra_input                               0x00024d00   Section        0  icmp6.o(i.ra_input)
-    ra_input                                 0x00024d01   Thumb Code   310  icmp6.o(i.ra_input)
-    i.rtc1_stop                              0x00024e38   Section        0  app_timer.o(i.rtc1_stop)
-    rtc1_stop                                0x00024e39   Thumb Code    52  app_timer.o(i.rtc1_stop)
-    i.rx_address_req                         0x00024e74   Section        0  nrf_drv_twi.o(i.rx_address_req)
-    rx_address_req                           0x00024e75   Thumb Code    76  nrf_drv_twi.o(i.rx_address_req)
-    i.rx_byte                                0x00024ec8   Section        0  nrf_drv_uart.o(i.rx_byte)
-    rx_byte                                  0x00024ec9   Thumb Code    28  nrf_drv_uart.o(i.rx_byte)
-    i.rx_done                                0x00024eec   Section        0  nrf_drv_twi.o(i.rx_done)
-    rx_done                                  0x00024eed   Thumb Code    50  nrf_drv_twi.o(i.rx_done)
-    i.rx_done_event                          0x00024f24   Section        0  nrf_drv_uart.o(i.rx_done_event)
-    rx_done_event                            0x00024f25   Thumb Code    32  nrf_drv_uart.o(i.rx_done_event)
-    i.rx_prepare                             0x00024f48   Section        0  nrf_drv_twi.o(i.rx_prepare)
-    rx_prepare                               0x00024f49   Thumb Code     4  nrf_drv_twi.o(i.rx_prepare)
-    i.send_error_response                    0x00024f4c   Section        0  coap.o(i.send_error_response)
-    send_error_response                      0x00024f4d   Thumb Code    66  coap.o(i.send_error_response)
-    i.service_data_encode                    0x00024f90   Section        0  ble_advdata.o(i.service_data_encode)
-    service_data_encode                      0x00024f91   Thumb Code   136  ble_advdata.o(i.service_data_encode)
-    i.softdevice_assertion_handler           0x00025018   Section        0  softdevice_handler.o(i.softdevice_assertion_handler)
-    i.softdevice_ble_evt_handler_set         0x00025024   Section        0  softdevice_handler.o(i.softdevice_ble_evt_handler_set)
-    i.softdevice_handler_init                0x00025038   Section        0  softdevice_handler.o(i.softdevice_handler_init)
-    i.softdevice_sys_evt_handler_set         0x00025068   Section        0  softdevice_handler.o(i.softdevice_sys_evt_handler_set)
-    i.state_machine                          0x0002507c   Section        0  nrf_drv_twi.o(i.state_machine)
-    state_machine                            0x0002507d   Thumb Code    68  nrf_drv_twi.o(i.state_machine)
-    i.sys_evt_dispatch                       0x000250cc   Section        0  ipv6_medium_ble.o(i.sys_evt_dispatch)
-    sys_evt_dispatch                         0x000250cd   Thumb Code     2  ipv6_medium_ble.o(i.sys_evt_dispatch)
-    i.timer_list_handler                     0x000250d0   Section        0  app_timer.o(i.timer_list_handler)
-    timer_list_handler                       0x000250d1   Thumb Code   134  app_timer.o(i.timer_list_handler)
-    i.timer_list_insert                      0x0002515c   Section        0  app_timer.o(i.timer_list_insert)
-    timer_list_insert                        0x0002515d   Thumb Code    56  app_timer.o(i.timer_list_insert)
-    i.timer_timeouts_check                   0x00025198   Section        0  app_timer.o(i.timer_timeouts_check)
-    timer_timeouts_check                     0x00025199   Thumb Code   128  app_timer.o(i.timer_timeouts_check)
-    i.twi_clear_bus                          0x00025220   Section        0  nrf_drv_twi.o(i.twi_clear_bus)
-    twi_clear_bus                            0x00025221   Thumb Code   170  nrf_drv_twi.o(i.twi_clear_bus)
-    i.twi_transfer                           0x000252d0   Section        0  nrf_drv_twi.o(i.twi_transfer)
-    twi_transfer                             0x000252d1   Thumb Code   352  nrf_drv_twi.o(i.twi_transfer)
-    i.tx_byte                                0x0002543c   Section        0  nrf_drv_uart.o(i.tx_byte)
-    tx_byte                                  0x0002543d   Thumb Code    28  nrf_drv_uart.o(i.tx_byte)
-    i.tx_complete                            0x00025460   Section        0  ble_6lowpan.o(i.tx_complete)
-    tx_complete                              0x00025461   Thumb Code    28  ble_6lowpan.o(i.tx_complete)
-    i.tx_done                                0x0002547c   Section        0  nrf_drv_twi.o(i.tx_done)
-    tx_done                                  0x0002547d   Thumb Code    32  nrf_drv_twi.o(i.tx_done)
-    i.tx_done_event                          0x000254a0   Section        0  nrf_drv_uart.o(i.tx_done_event)
-    tx_done_event                            0x000254a1   Thumb Code    30  nrf_drv_uart.o(i.tx_done_event)
-    i.tx_prepare                             0x000254c4   Section        0  nrf_drv_twi.o(i.tx_prepare)
-    tx_prepare                               0x000254c5   Thumb Code    28  nrf_drv_twi.o(i.tx_prepare)
-    i.tx_send                                0x000254e4   Section        0  ble_6lowpan.o(i.tx_send)
-    tx_send                                  0x000254e5   Thumb Code    84  ble_6lowpan.o(i.tx_send)
-    i.txrx_shorts_set_task_start             0x0002553c   Section        0  nrf_drv_twi.o(i.txrx_shorts_set_task_start)
-    txrx_shorts_set_task_start               0x0002553d   Thumb Code   128  nrf_drv_twi.o(i.txrx_shorts_set_task_start)
-    i.type_offset_get                        0x000255c4   Section        0  iot_pbuffer.o(i.type_offset_get)
-    type_offset_get                          0x000255c5   Thumb Code    34  iot_pbuffer.o(i.type_offset_get)
-    i.udp6_socket_allocate                   0x000255e8   Section        0  udp6.o(i.udp6_socket_allocate)
-    i.udp6_socket_app_data_set               0x00025634   Section        0  udp6.o(i.udp6_socket_app_data_set)
-    i.udp6_socket_bind                       0x00025674   Section        0  udp6.o(i.udp6_socket_bind)
-    i.udp6_socket_free                       0x000256f8   Section        0  udp6.o(i.udp6_socket_free)
-    i.udp6_socket_recv                       0x00025738   Section        0  udp6.o(i.udp6_socket_recv)
-    i.udp6_socket_sendto                     0x00025784   Section        0  udp6.o(i.udp6_socket_sendto)
-    i.udp_init                               0x000258cc   Section        0  udp6.o(i.udp_init)
-    i.udp_input                              0x000258fc   Section        0  udp6.o(i.udp_input)
-    i.udp_socket_init                        0x00025a68   Section        0  udp6.o(i.udp_socket_init)
-    udp_socket_init                          0x00025a69   Thumb Code    28  udp6.o(i.udp_socket_init)
-    i.uint16_encode                          0x00025a84   Section        0  ble_advdata.o(i.uint16_encode)
-    uint16_encode                            0x00025a85   Thumb Code    10  ble_advdata.o(i.uint16_encode)
-    i.user_id_get                            0x00025a90   Section        0  app_timer.o(i.user_id_get)
-    user_id_get                              0x00025a91   Thumb Code    62  app_timer.o(i.user_id_get)
-    i.user_op_alloc                          0x00025ad4   Section        0  app_timer.o(i.user_op_alloc)
-    user_op_alloc                            0x00025ad5   Thumb Code    40  app_timer.o(i.user_op_alloc)
-    i.uuid_list_encode                       0x00025afc   Section        0  ble_advdata.o(i.uuid_list_encode)
-    uuid_list_encode                         0x00025afd   Thumb Code    48  ble_advdata.o(i.uuid_list_encode)
-    i.uuid_list_sized_encode                 0x00025b2c   Section        0  ble_advdata.o(i.uuid_list_sized_encode)
-    uuid_list_sized_encode                   0x00025b2d   Thumb Code   158  ble_advdata.o(i.uuid_list_sized_encode)
-    i.well_known_core_callback               0x00025bcc   Section        0  main.o(i.well_known_core_callback)
-    .constdata                               0x00025c80   Section       68  main.o(.constdata)
-    m_iot_timer_tick_src_id                  0x00025c84   Data           4  main.o(.constdata)
-    m_led3_name                              0x00025c88   Data           5  main.o(.constdata)
-    m_lights_name                            0x00025c8d   Data           7  main.o(.constdata)
-    m_twi_master                             0x00025c94   Data           8  main.o(.constdata)
-    iot_timer_clients                        0x00025c9c   Data           8  main.o(.constdata)
-    local_routers_multicast_addr             0x00025ca4   Data          16  main.o(.constdata)
-    .constdata                               0x00025cc4   Section       16  main.o(.constdata)
-    list_of_clients                          0x00025cc4   Data          16  main.o(.constdata)
-    .constdata                               0x00025cd4   Section       52  nrf_drv_twi.o(.constdata)
-    m_default_config                         0x00025cd4   Data          16  nrf_drv_twi.o(.constdata)
-    m_states_len                             0x00025ce4   Data          20  nrf_drv_twi.o(.constdata)
-    .constdata                               0x00025d08   Section       16  nrf_drv_twi.o(.constdata)
-    m_idle                                   0x00025d08   Data          16  nrf_drv_twi.o(.constdata)
-    .constdata                               0x00025d18   Section       40  nrf_drv_twi.o(.constdata)
-    m_tx_suspended                           0x00025d18   Data          40  nrf_drv_twi.o(.constdata)
-    .constdata                               0x00025d40   Section       32  nrf_drv_twi.o(.constdata)
-    m_rx_suspended                           0x00025d40   Data          32  nrf_drv_twi.o(.constdata)
-    .constdata                               0x00025d60   Section       24  nrf_drv_twi.o(.constdata)
-    m_stopped                                0x00025d60   Data          24  nrf_drv_twi.o(.constdata)
-    .constdata                               0x00025d78   Section       24  nrf_drv_twi.o(.constdata)
-    m_error                                  0x00025d78   Data          24  nrf_drv_twi.o(.constdata)
-    .constdata                               0x00025d90   Section       24  nrf_drv_twis.o(.constdata)
-    m_const_inst                             0x00025d90   Data           4  nrf_drv_twis.o(.constdata)
-    m_config_default                         0x00025d94   Data          20  nrf_drv_twis.o(.constdata)
-    .constdata                               0x00025da8   Section        8  app_button.o(.constdata)
-    m_detection_delay_timer_id               0x00025da8   Data           4  app_button.o(.constdata)
-    .constdata                               0x00025db0   Section      112  mem_manager.o(.constdata)
-    m_block_size                             0x00025db0   Data          28  mem_manager.o(.constdata)
-    m_block_start                            0x00025dcc   Data          28  mem_manager.o(.constdata)
-    m_block_end                              0x00025de8   Data          28  mem_manager.o(.constdata)
-    m_block_mem_start                        0x00025e04   Data          28  mem_manager.o(.constdata)
-    .constdata                               0x00025e20   Section        8  ble_6lowpan.o(.constdata)
-    m_link_local_prefix                      0x00025e20   Data           2  ble_6lowpan.o(.constdata)
-    m_link_local_16_middle                   0x00025e22   Data           2  ble_6lowpan.o(.constdata)
-    m_hop_limit                              0x00025e24   Data           4  ble_6lowpan.o(.constdata)
+    led3_callback                            0x00023b51   Thumb Code   476  main.o(i.led3_callback)
+    i.list_deletions_handler                 0x00023d38   Section        0  app_timer.o(i.list_deletions_handler)
+    list_deletions_handler                   0x00023d39   Thumb Code   178  app_timer.o(i.list_deletions_handler)
+    i.list_insertions_handler                0x00023df4   Section        0  app_timer.o(i.list_insertions_handler)
+    list_insertions_handler                  0x00023df5   Thumb Code   196  app_timer.o(i.list_insertions_handler)
+    i.main                                   0x00023ec0   Section        0  main.o(i.main)
+    i.manuf_specific_data_encode             0x00024090   Section        0  ble_advdata.o(i.manuf_specific_data_encode)
+    manuf_specific_data_encode               0x00024091   Thumb Code   100  ble_advdata.o(i.manuf_specific_data_encode)
+    i.name_encode                            0x000240f4   Section        0  ble_advdata.o(i.name_encode)
+    name_encode                              0x000240f5   Thumb Code   156  ble_advdata.o(i.name_encode)
+    i.notify_all_led3_subscribers            0x00024190   Section        0  main.o(i.notify_all_led3_subscribers)
+    notify_all_led3_subscribers              0x00024191   Thumb Code   182  main.o(i.notify_all_led3_subscribers)
+    i.nrf_delay_ms                           0x00024254   Section        0  nrf_delay.o(i.nrf_delay_ms)
+    i.nrf_drv_call_event_handler             0x00024270   Section        0  nrf_drv_twis.o(i.nrf_drv_call_event_handler)
+    nrf_drv_call_event_handler               0x00024271   Thumb Code    22  nrf_drv_twis.o(i.nrf_drv_call_event_handler)
+    i.nrf_drv_common_irq_enable              0x0002428c   Section        0  nrf_drv_common.o(i.nrf_drv_common_irq_enable)
+    i.nrf_drv_gpiote_in_event_enable         0x000242c4   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_event_enable)
+    i.nrf_drv_gpiote_in_init                 0x00024368   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_init)
+    i.nrf_drv_gpiote_in_is_set               0x00024420   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_is_set)
+    i.nrf_drv_gpiote_init                    0x00024434   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_init)
+    i.nrf_drv_gpiote_is_init                 0x00024488   Section        0  nrf_drv_gpiote.o(i.nrf_drv_gpiote_is_init)
+    i.nrf_drv_twi_enable                     0x0002449c   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_enable)
+    i.nrf_drv_twi_init                       0x000244f8   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_init)
+    i.nrf_drv_twi_int_handler                0x0002459c   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_int_handler)
+    nrf_drv_twi_int_handler                  0x0002459d   Thumb Code   216  nrf_drv_twi.o(i.nrf_drv_twi_int_handler)
+    i.nrf_drv_twi_rx                         0x00024680   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_rx)
+    i.nrf_drv_twi_tx                         0x00024690   Section        0  nrf_drv_twi.o(i.nrf_drv_twi_tx)
+    i.nrf_drv_twis_check_bit                 0x000246a0   Section        0  nrf_drv_twis.o(i.nrf_drv_twis_check_bit)
+    nrf_drv_twis_check_bit                   0x000246a1   Thumb Code    22  nrf_drv_twis.o(i.nrf_drv_twis_check_bit)
+    i.nrf_drv_twis_event_bit_get             0x000246b6   Section        0  nrf_drv_twis.o(i.nrf_drv_twis_event_bit_get)
+    nrf_drv_twis_event_bit_get               0x000246b7   Thumb Code    26  nrf_drv_twis.o(i.nrf_drv_twis_event_bit_get)
+    i.nrf_drv_twis_process_error             0x000246d0   Section        0  nrf_drv_twis.o(i.nrf_drv_twis_process_error)
+    nrf_drv_twis_process_error               0x000246d1   Thumb Code    38  nrf_drv_twis.o(i.nrf_drv_twis_process_error)
+    i.nrf_drv_twis_state_machine             0x000246fc   Section        0  nrf_drv_twis.o(i.nrf_drv_twis_state_machine)
+    nrf_drv_twis_state_machine               0x000246fd   Thumb Code   544  nrf_drv_twis.o(i.nrf_drv_twis_state_machine)
+    i.nrf_free                               0x00024928   Section        0  mem_manager.o(i.nrf_free)
+    i.nrf_gpio_cfg                           0x00024968   Section        0  nrf_drv_gpiote.o(i.nrf_gpio_cfg)
+    nrf_gpio_cfg                             0x00024969   Thumb Code    34  nrf_drv_gpiote.o(i.nrf_gpio_cfg)
+    i.nrf_gpio_cfg_sense_set                 0x0002498a   Section        0  nrf_drv_gpiote.o(i.nrf_gpio_cfg_sense_set)
+    nrf_gpio_cfg_sense_set                   0x0002498b   Thumb Code    28  nrf_drv_gpiote.o(i.nrf_gpio_cfg_sense_set)
+    i.nrf_gpio_pin_set                       0x000249a8   Section        0  nrf_drv_twi.o(i.nrf_gpio_pin_set)
+    nrf_gpio_pin_set                         0x000249a9   Thumb Code    10  nrf_drv_twi.o(i.nrf_gpio_pin_set)
+    i.nrf_gpiote_event_clear                 0x000249b8   Section        0  nrf_drv_gpiote.o(i.nrf_gpiote_event_clear)
+    nrf_gpiote_event_clear                   0x000249b9   Thumb Code    16  nrf_drv_gpiote.o(i.nrf_gpiote_event_clear)
+    i.nrf_gpiote_event_is_set                0x000249cc   Section        0  nrf_drv_gpiote.o(i.nrf_gpiote_event_is_set)
+    nrf_gpiote_event_is_set                  0x000249cd   Thumb Code    12  nrf_drv_gpiote.o(i.nrf_gpiote_event_is_set)
+    i.nrf_mem_init                           0x000249dc   Section        0  mem_manager.o(i.nrf_mem_init)
+    i.nrf_mem_reserve                        0x000249fc   Section        0  mem_manager.o(i.nrf_mem_reserve)
+    i.nrf_twi_event_check                    0x00024ab0   Section        0  nrf_drv_twi.o(i.nrf_twi_event_check)
+    nrf_twi_event_check                      0x00024ab1   Thumb Code    10  nrf_drv_twi.o(i.nrf_twi_event_check)
+    i.nrf_uart_event_check                   0x00024aba   Section        0  nrf_drv_uart.o(i.nrf_uart_event_check)
+    nrf_uart_event_check                     0x00024abb   Thumb Code    10  nrf_drv_uart.o(i.nrf_uart_event_check)
+    i.nrf_uart_int_enable_check              0x00024ac4   Section        0  nrf_drv_uart.o(i.nrf_uart_int_enable_check)
+    nrf_uart_int_enable_check                0x00024ac5   Thumb Code    12  nrf_drv_uart.o(i.nrf_uart_int_enable_check)
+    i.nrf_uarte_event_check                  0x00024ad0   Section        0  nrf_drv_uart.o(i.nrf_uarte_event_check)
+    nrf_uarte_event_check                    0x00024ad1   Thumb Code    10  nrf_drv_uart.o(i.nrf_uarte_event_check)
+    i.observer_con_message_callback          0x00024ada   Section        0  main.o(i.observer_con_message_callback)
+    observer_con_message_callback            0x00024adb   Thumb Code    46  main.o(i.observer_con_message_callback)
+    i.on_ble_evt                             0x00024b08   Section        0  ipv6_medium_ble.o(i.on_ble_evt)
+    on_ble_evt                               0x00024b09   Thumb Code   100  ipv6_medium_ble.o(i.on_ble_evt)
+    i.on_error                               0x00024b70   Section        0  nrf_drv_twi.o(i.on_error)
+    on_error                                 0x00024b71   Thumb Code    68  nrf_drv_twi.o(i.on_error)
+    i.on_ipv6_medium_error                   0x00024bbc   Section        0  main.o(i.on_ipv6_medium_error)
+    on_ipv6_medium_error                     0x00024bbd   Thumb Code     2  main.o(i.on_ipv6_medium_error)
+    i.on_ipv6_medium_evt                     0x00024bc0   Section        0  main.o(i.on_ipv6_medium_evt)
+    on_ipv6_medium_evt                       0x00024bc1   Thumb Code    20  main.o(i.on_ipv6_medium_evt)
+    i.pbuffer_allocate                       0x00024bd8   Section        0  iot_pbuffer.o(i.pbuffer_allocate)
+    pbuffer_allocate                         0x00024bd9   Thumb Code    76  iot_pbuffer.o(i.pbuffer_allocate)
+    i.pbuffer_find                           0x00024c28   Section        0  iot_pbuffer.o(i.pbuffer_find)
+    pbuffer_find                             0x00024c29   Thumb Code    34  iot_pbuffer.o(i.pbuffer_find)
+    i.pbuffer_init                           0x00024c50   Section        0  iot_pbuffer.o(i.pbuffer_init)
+    pbuffer_init                             0x00024c51   Thumb Code    14  iot_pbuffer.o(i.pbuffer_init)
+    i.pin_in_use_by_port                     0x00024c60   Section        0  nrf_drv_gpiote.o(i.pin_in_use_by_port)
+    pin_in_use_by_port                       0x00024c61   Thumb Code    20  nrf_drv_gpiote.o(i.pin_in_use_by_port)
+    i.pin_in_use_by_te                       0x00024c78   Section        0  nrf_drv_gpiote.o(i.pin_in_use_by_te)
+    pin_in_use_by_te                         0x00024c79   Thumb Code    20  nrf_drv_gpiote.o(i.pin_in_use_by_te)
+    i.port_data_callback                     0x00024c90   Section        0  coap_transport_ipv6.o(i.port_data_callback)
+    port_data_callback                       0x00024c91   Thumb Code    68  coap_transport_ipv6.o(i.port_data_callback)
+    i.ra_input                               0x00024cd8   Section        0  icmp6.o(i.ra_input)
+    ra_input                                 0x00024cd9   Thumb Code   310  icmp6.o(i.ra_input)
+    i.rtc1_stop                              0x00024e10   Section        0  app_timer.o(i.rtc1_stop)
+    rtc1_stop                                0x00024e11   Thumb Code    52  app_timer.o(i.rtc1_stop)
+    i.rx_address_req                         0x00024e4c   Section        0  nrf_drv_twi.o(i.rx_address_req)
+    rx_address_req                           0x00024e4d   Thumb Code    76  nrf_drv_twi.o(i.rx_address_req)
+    i.rx_byte                                0x00024ea0   Section        0  nrf_drv_uart.o(i.rx_byte)
+    rx_byte                                  0x00024ea1   Thumb Code    28  nrf_drv_uart.o(i.rx_byte)
+    i.rx_done                                0x00024ec4   Section        0  nrf_drv_twi.o(i.rx_done)
+    rx_done                                  0x00024ec5   Thumb Code    50  nrf_drv_twi.o(i.rx_done)
+    i.rx_done_event                          0x00024efc   Section        0  nrf_drv_uart.o(i.rx_done_event)
+    rx_done_event                            0x00024efd   Thumb Code    32  nrf_drv_uart.o(i.rx_done_event)
+    i.rx_prepare                             0x00024f20   Section        0  nrf_drv_twi.o(i.rx_prepare)
+    rx_prepare                               0x00024f21   Thumb Code     4  nrf_drv_twi.o(i.rx_prepare)
+    i.send_error_response                    0x00024f24   Section        0  coap.o(i.send_error_response)
+    send_error_response                      0x00024f25   Thumb Code    66  coap.o(i.send_error_response)
+    i.service_data_encode                    0x00024f68   Section        0  ble_advdata.o(i.service_data_encode)
+    service_data_encode                      0x00024f69   Thumb Code   136  ble_advdata.o(i.service_data_encode)
+    i.softdevice_assertion_handler           0x00024ff0   Section        0  softdevice_handler.o(i.softdevice_assertion_handler)
+    i.softdevice_ble_evt_handler_set         0x00024ffc   Section        0  softdevice_handler.o(i.softdevice_ble_evt_handler_set)
+    i.softdevice_handler_init                0x00025010   Section        0  softdevice_handler.o(i.softdevice_handler_init)
+    i.softdevice_sys_evt_handler_set         0x00025040   Section        0  softdevice_handler.o(i.softdevice_sys_evt_handler_set)
+    i.state_machine                          0x00025054   Section        0  nrf_drv_twi.o(i.state_machine)
+    state_machine                            0x00025055   Thumb Code    68  nrf_drv_twi.o(i.state_machine)
+    i.sys_evt_dispatch                       0x000250a4   Section        0  ipv6_medium_ble.o(i.sys_evt_dispatch)
+    sys_evt_dispatch                         0x000250a5   Thumb Code     2  ipv6_medium_ble.o(i.sys_evt_dispatch)
+    i.timer_list_handler                     0x000250a8   Section        0  app_timer.o(i.timer_list_handler)
+    timer_list_handler                       0x000250a9   Thumb Code   134  app_timer.o(i.timer_list_handler)
+    i.timer_list_insert                      0x00025134   Section        0  app_timer.o(i.timer_list_insert)
+    timer_list_insert                        0x00025135   Thumb Code    56  app_timer.o(i.timer_list_insert)
+    i.timer_timeouts_check                   0x00025170   Section        0  app_timer.o(i.timer_timeouts_check)
+    timer_timeouts_check                     0x00025171   Thumb Code   128  app_timer.o(i.timer_timeouts_check)
+    i.twi_clear_bus                          0x000251f8   Section        0  nrf_drv_twi.o(i.twi_clear_bus)
+    twi_clear_bus                            0x000251f9   Thumb Code   170  nrf_drv_twi.o(i.twi_clear_bus)
+    i.twi_transfer                           0x000252a8   Section        0  nrf_drv_twi.o(i.twi_transfer)
+    twi_transfer                             0x000252a9   Thumb Code   352  nrf_drv_twi.o(i.twi_transfer)
+    i.tx_byte                                0x00025414   Section        0  nrf_drv_uart.o(i.tx_byte)
+    tx_byte                                  0x00025415   Thumb Code    28  nrf_drv_uart.o(i.tx_byte)
+    i.tx_complete                            0x00025438   Section        0  ble_6lowpan.o(i.tx_complete)
+    tx_complete                              0x00025439   Thumb Code    28  ble_6lowpan.o(i.tx_complete)
+    i.tx_done                                0x00025454   Section        0  nrf_drv_twi.o(i.tx_done)
+    tx_done                                  0x00025455   Thumb Code    32  nrf_drv_twi.o(i.tx_done)
+    i.tx_done_event                          0x00025478   Section        0  nrf_drv_uart.o(i.tx_done_event)
+    tx_done_event                            0x00025479   Thumb Code    30  nrf_drv_uart.o(i.tx_done_event)
+    i.tx_prepare                             0x0002549c   Section        0  nrf_drv_twi.o(i.tx_prepare)
+    tx_prepare                               0x0002549d   Thumb Code    28  nrf_drv_twi.o(i.tx_prepare)
+    i.tx_send                                0x000254bc   Section        0  ble_6lowpan.o(i.tx_send)
+    tx_send                                  0x000254bd   Thumb Code    84  ble_6lowpan.o(i.tx_send)
+    i.txrx_shorts_set_task_start             0x00025514   Section        0  nrf_drv_twi.o(i.txrx_shorts_set_task_start)
+    txrx_shorts_set_task_start               0x00025515   Thumb Code   128  nrf_drv_twi.o(i.txrx_shorts_set_task_start)
+    i.type_offset_get                        0x0002559c   Section        0  iot_pbuffer.o(i.type_offset_get)
+    type_offset_get                          0x0002559d   Thumb Code    34  iot_pbuffer.o(i.type_offset_get)
+    i.udp6_socket_allocate                   0x000255c0   Section        0  udp6.o(i.udp6_socket_allocate)
+    i.udp6_socket_app_data_set               0x0002560c   Section        0  udp6.o(i.udp6_socket_app_data_set)
+    i.udp6_socket_bind                       0x0002564c   Section        0  udp6.o(i.udp6_socket_bind)
+    i.udp6_socket_free                       0x000256d0   Section        0  udp6.o(i.udp6_socket_free)
+    i.udp6_socket_recv                       0x00025710   Section        0  udp6.o(i.udp6_socket_recv)
+    i.udp6_socket_sendto                     0x0002575c   Section        0  udp6.o(i.udp6_socket_sendto)
+    i.udp_init                               0x000258a4   Section        0  udp6.o(i.udp_init)
+    i.udp_input                              0x000258d4   Section        0  udp6.o(i.udp_input)
+    i.udp_socket_init                        0x00025a40   Section        0  udp6.o(i.udp_socket_init)
+    udp_socket_init                          0x00025a41   Thumb Code    28  udp6.o(i.udp_socket_init)
+    i.uint16_encode                          0x00025a5c   Section        0  ble_advdata.o(i.uint16_encode)
+    uint16_encode                            0x00025a5d   Thumb Code    10  ble_advdata.o(i.uint16_encode)
+    i.user_id_get                            0x00025a68   Section        0  app_timer.o(i.user_id_get)
+    user_id_get                              0x00025a69   Thumb Code    62  app_timer.o(i.user_id_get)
+    i.user_op_alloc                          0x00025aac   Section        0  app_timer.o(i.user_op_alloc)
+    user_op_alloc                            0x00025aad   Thumb Code    40  app_timer.o(i.user_op_alloc)
+    i.uuid_list_encode                       0x00025ad4   Section        0  ble_advdata.o(i.uuid_list_encode)
+    uuid_list_encode                         0x00025ad5   Thumb Code    48  ble_advdata.o(i.uuid_list_encode)
+    i.uuid_list_sized_encode                 0x00025b04   Section        0  ble_advdata.o(i.uuid_list_sized_encode)
+    uuid_list_sized_encode                   0x00025b05   Thumb Code   158  ble_advdata.o(i.uuid_list_sized_encode)
+    i.well_known_core_callback               0x00025ba4   Section        0  main.o(i.well_known_core_callback)
+    .constdata                               0x00025c58   Section       68  main.o(.constdata)
+    m_iot_timer_tick_src_id                  0x00025c5c   Data           4  main.o(.constdata)
+    m_led3_name                              0x00025c60   Data           5  main.o(.constdata)
+    m_lights_name                            0x00025c65   Data           7  main.o(.constdata)
+    m_twi_master                             0x00025c6c   Data           8  main.o(.constdata)
+    iot_timer_clients                        0x00025c74   Data           8  main.o(.constdata)
+    local_routers_multicast_addr             0x00025c7c   Data          16  main.o(.constdata)
+    .constdata                               0x00025c9c   Section       16  main.o(.constdata)
+    list_of_clients                          0x00025c9c   Data          16  main.o(.constdata)
+    .constdata                               0x00025cac   Section       52  nrf_drv_twi.o(.constdata)
+    m_default_config                         0x00025cac   Data          16  nrf_drv_twi.o(.constdata)
+    m_states_len                             0x00025cbc   Data          20  nrf_drv_twi.o(.constdata)
+    .constdata                               0x00025ce0   Section       16  nrf_drv_twi.o(.constdata)
+    m_idle                                   0x00025ce0   Data          16  nrf_drv_twi.o(.constdata)
+    .constdata                               0x00025cf0   Section       40  nrf_drv_twi.o(.constdata)
+    m_tx_suspended                           0x00025cf0   Data          40  nrf_drv_twi.o(.constdata)
+    .constdata                               0x00025d18   Section       32  nrf_drv_twi.o(.constdata)
+    m_rx_suspended                           0x00025d18   Data          32  nrf_drv_twi.o(.constdata)
+    .constdata                               0x00025d38   Section       24  nrf_drv_twi.o(.constdata)
+    m_stopped                                0x00025d38   Data          24  nrf_drv_twi.o(.constdata)
+    .constdata                               0x00025d50   Section       24  nrf_drv_twi.o(.constdata)
+    m_error                                  0x00025d50   Data          24  nrf_drv_twi.o(.constdata)
+    .constdata                               0x00025d68   Section       24  nrf_drv_twis.o(.constdata)
+    m_const_inst                             0x00025d68   Data           4  nrf_drv_twis.o(.constdata)
+    m_config_default                         0x00025d6c   Data          20  nrf_drv_twis.o(.constdata)
+    .constdata                               0x00025d80   Section        8  app_button.o(.constdata)
+    m_detection_delay_timer_id               0x00025d80   Data           4  app_button.o(.constdata)
+    .constdata                               0x00025d88   Section      112  mem_manager.o(.constdata)
+    m_block_size                             0x00025d88   Data          28  mem_manager.o(.constdata)
+    m_block_start                            0x00025da4   Data          28  mem_manager.o(.constdata)
+    m_block_end                              0x00025dc0   Data          28  mem_manager.o(.constdata)
+    m_block_mem_start                        0x00025ddc   Data          28  mem_manager.o(.constdata)
+    .constdata                               0x00025df8   Section        8  ble_6lowpan.o(.constdata)
+    m_link_local_prefix                      0x00025df8   Data           2  ble_6lowpan.o(.constdata)
+    m_link_local_16_middle                   0x00025dfa   Data           2  ble_6lowpan.o(.constdata)
+    m_hop_limit                              0x00025dfc   Data           4  ble_6lowpan.o(.constdata)
     .data                                    0x20002800   Section       40  main.o(.data)
     m_display_state                          0x20002800   Data           1  main.o(.data)
     s_line_num                               0x20002802   Data           2  main.o(.data)
@@ -2284,7 +2284,7 @@ Image Symbol Table
     m_evt_handler                            0x20002994   Data           4  ble_ipsp.o(.data)
     .bss                                     0x20002998   Section       32  main.o(.bss)
     m_iot_timer_tick_src_id_data             0x20002998   Data          32  main.o(.bss)
-    .bss                                     0x200029b8   Section     1532  main.o(.bss)
+    .bss                                     0x200029b8   Section     1232  main.o(.bss)
     buf                                      0x200029b8   Data          32  main.o(.bss)
     s_file_name                              0x200029d8   Data         128  main.o(.bss)
     APP_TIMER_BUF                            0x20002a58   Data         600  main.o(.bss)
@@ -2295,43 +2295,43 @@ Image Symbol Table
     ipv6_medium_init_params                  0x20002d80   Data          12  main.o(.bss)
     m_well_known_core                        0x20002d8c   Data         100  main.o(.bss)
     m_led3                                   0x20002df0   Data          52  main.o(.bss)
-    stringToSend                             0x20002e24   Data         400  main.o(.bss)
-    .bss                                     0x20002fb4   Section       88  nrf_drv_gpiote.o(.bss)
-    m_cb                                     0x20002fb4   Data          88  nrf_drv_gpiote.o(.bss)
-    .bss                                     0x2000300c   Section       24  nrf_drv_uart.o(.bss)
-    m_cb                                     0x2000300c   Data          24  nrf_drv_uart.o(.bss)
-    .bss                                     0x20003024   Section       24  nrf_drv_twi.o(.bss)
-    m_cb                                     0x20003024   Data          24  nrf_drv_twi.o(.bss)
-    .bss                                     0x2000303c   Section       12  nrf_drv_twis.o(.bss)
-    m_var_inst                               0x2000303c   Data          12  nrf_drv_twis.o(.bss)
-    .bss                                     0x20003048   Section      128  coap_observe.o(.bss)
-    m_observers                              0x20003048   Data         128  coap_observe.o(.bss)
-    .bss                                     0x200030c8   Section      480  coap_queue.o(.bss)
-    m_queue                                  0x200030c8   Data         480  coap_queue.o(.bss)
-    .bss                                     0x200032a8   Section      106  coap_resource.o(.bss)
-    m_scratch_buffer                         0x200032a8   Data         106  coap_resource.o(.bss)
-    .bss                                     0x20003314   Section      392  iot_context_manager.o(.bss)
-    m_context_table                          0x20003314   Data         392  iot_context_manager.o(.bss)
-    .bss                                     0x2000349c   Section      200  iot_pbuffer.o(.bss)
-    m_pbuffer                                0x2000349c   Data         200  iot_pbuffer.o(.bss)
-    .bss                                     0x20003564   Section       76  ipv6.o(.bss)
-    m_address_table                          0x20003564   Data          60  ipv6.o(.bss)
-    .bss                                     0x200035b0   Section      252  ipv6_medium_ble.o(.bss)
-    BLE_EVT_BUFFER                           0x200035b0   Data          72  ipv6_medium_ble.o(.bss)
-    m_gap_params                             0x200035f8   Data          20  ipv6_medium_ble.o(.bss)
-    m_adv_params                             0x2000360c   Data         160  ipv6_medium_ble.o(.bss)
-    .bss                                     0x200036ac   Section      132  udp6.o(.bss)
-    m_socket                                 0x200036ac   Data         132  udp6.o(.bss)
-    .bss                                     0x20003730   Section       32  app_button.o(.bss)
-    m_detection_delay_timer_id_data          0x20003730   Data          32  app_button.o(.bss)
-    .bss                                     0x20003750   Section     3072  mem_manager.o(.bss)
-    m_memory                                 0x20003750   Data        3072  mem_manager.o(.bss)
-    .bss                                     0x20004350   Section      236  ble_6lowpan.o(.bss)
-    m_instances                              0x20004350   Data         236  ble_6lowpan.o(.bss)
-    .bss                                     0x2000443c   Section     5132  ble_ipsp.o(.bss)
-    m_channel                                0x2000443c   Data          12  ble_ipsp.o(.bss)
-    m_rx_buffer                              0x20004448   Data        5120  ble_ipsp.o(.bss)
-    STACK                                    0x20005848   Section     8192  arm_startup_nrf52.o(STACK)
+    stringToSend                             0x20002e24   Data         100  main.o(.bss)
+    .bss                                     0x20002e88   Section       88  nrf_drv_gpiote.o(.bss)
+    m_cb                                     0x20002e88   Data          88  nrf_drv_gpiote.o(.bss)
+    .bss                                     0x20002ee0   Section       24  nrf_drv_uart.o(.bss)
+    m_cb                                     0x20002ee0   Data          24  nrf_drv_uart.o(.bss)
+    .bss                                     0x20002ef8   Section       24  nrf_drv_twi.o(.bss)
+    m_cb                                     0x20002ef8   Data          24  nrf_drv_twi.o(.bss)
+    .bss                                     0x20002f10   Section       12  nrf_drv_twis.o(.bss)
+    m_var_inst                               0x20002f10   Data          12  nrf_drv_twis.o(.bss)
+    .bss                                     0x20002f1c   Section      128  coap_observe.o(.bss)
+    m_observers                              0x20002f1c   Data         128  coap_observe.o(.bss)
+    .bss                                     0x20002f9c   Section      480  coap_queue.o(.bss)
+    m_queue                                  0x20002f9c   Data         480  coap_queue.o(.bss)
+    .bss                                     0x2000317c   Section      106  coap_resource.o(.bss)
+    m_scratch_buffer                         0x2000317c   Data         106  coap_resource.o(.bss)
+    .bss                                     0x200031e8   Section      392  iot_context_manager.o(.bss)
+    m_context_table                          0x200031e8   Data         392  iot_context_manager.o(.bss)
+    .bss                                     0x20003370   Section      200  iot_pbuffer.o(.bss)
+    m_pbuffer                                0x20003370   Data         200  iot_pbuffer.o(.bss)
+    .bss                                     0x20003438   Section       76  ipv6.o(.bss)
+    m_address_table                          0x20003438   Data          60  ipv6.o(.bss)
+    .bss                                     0x20003484   Section      252  ipv6_medium_ble.o(.bss)
+    BLE_EVT_BUFFER                           0x20003484   Data          72  ipv6_medium_ble.o(.bss)
+    m_gap_params                             0x200034cc   Data          20  ipv6_medium_ble.o(.bss)
+    m_adv_params                             0x200034e0   Data         160  ipv6_medium_ble.o(.bss)
+    .bss                                     0x20003580   Section      132  udp6.o(.bss)
+    m_socket                                 0x20003580   Data         132  udp6.o(.bss)
+    .bss                                     0x20003604   Section       32  app_button.o(.bss)
+    m_detection_delay_timer_id_data          0x20003604   Data          32  app_button.o(.bss)
+    .bss                                     0x20003624   Section     3072  mem_manager.o(.bss)
+    m_memory                                 0x20003624   Data        3072  mem_manager.o(.bss)
+    .bss                                     0x20004224   Section      236  ble_6lowpan.o(.bss)
+    m_instances                              0x20004224   Data         236  ble_6lowpan.o(.bss)
+    .bss                                     0x20004310   Section     5132  ble_ipsp.o(.bss)
+    m_channel                                0x20004310   Data          12  ble_ipsp.o(.bss)
+    m_rx_buffer                              0x2000431c   Data        5120  ble_ipsp.o(.bss)
+    STACK                                    0x20005720   Section     8192  arm_startup_nrf52.o(STACK)
 
     Global Symbols
 
@@ -2561,40 +2561,40 @@ Image Symbol Table
     ipv6_medium_eui64_get                    0x00023961   Thumb Code    96  ipv6_medium_ble.o(i.ipv6_medium_eui64_get)
     ipv6_medium_init                         0x000239c5   Thumb Code   140  ipv6_medium_ble.o(i.ipv6_medium_init)
     ipv6_send                                0x00023a59   Thumb Code    52  ipv6.o(i.ipv6_send)
-    main                                     0x00023ec5   Thumb Code   430  main.o(i.main)
-    nrf_delay_ms                             0x0002427d   Thumb Code    26  nrf_delay.o(i.nrf_delay_ms)
-    nrf_drv_common_irq_enable                0x000242b5   Thumb Code    56  nrf_drv_common.o(i.nrf_drv_common_irq_enable)
-    nrf_drv_gpiote_in_event_enable           0x000242ed   Thumb Code   150  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_event_enable)
-    nrf_drv_gpiote_in_init                   0x00024391   Thumb Code   170  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_init)
-    nrf_drv_gpiote_in_is_set                 0x00024449   Thumb Code    16  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_is_set)
-    nrf_drv_gpiote_init                      0x0002445d   Thumb Code    76  nrf_drv_gpiote.o(i.nrf_drv_gpiote_init)
-    nrf_drv_gpiote_is_init                   0x000244b1   Thumb Code    14  nrf_drv_gpiote.o(i.nrf_drv_gpiote_is_init)
-    nrf_drv_twi_enable                       0x000244c5   Thumb Code    84  nrf_drv_twi.o(i.nrf_drv_twi_enable)
-    nrf_drv_twi_init                         0x00024521   Thumb Code   150  nrf_drv_twi.o(i.nrf_drv_twi_init)
-    nrf_drv_twi_rx                           0x000246a9   Thumb Code    16  nrf_drv_twi.o(i.nrf_drv_twi_rx)
-    nrf_drv_twi_tx                           0x000246b9   Thumb Code    16  nrf_drv_twi.o(i.nrf_drv_twi_tx)
-    nrf_free                                 0x00024951   Thumb Code    56  mem_manager.o(i.nrf_free)
-    nrf_mem_init                             0x00024a05   Thumb Code    26  mem_manager.o(i.nrf_mem_init)
-    nrf_mem_reserve                          0x00024a25   Thumb Code   168  mem_manager.o(i.nrf_mem_reserve)
-    softdevice_assertion_handler             0x00025019   Thumb Code    12  softdevice_handler.o(i.softdevice_assertion_handler)
-    softdevice_ble_evt_handler_set           0x00025025   Thumb Code    14  softdevice_handler.o(i.softdevice_ble_evt_handler_set)
-    softdevice_handler_init                  0x00025039   Thumb Code    38  softdevice_handler.o(i.softdevice_handler_init)
-    softdevice_sys_evt_handler_set           0x00025069   Thumb Code    14  softdevice_handler.o(i.softdevice_sys_evt_handler_set)
-    udp6_socket_allocate                     0x000255e9   Thumb Code    68  udp6.o(i.udp6_socket_allocate)
-    udp6_socket_app_data_set                 0x00025635   Thumb Code    54  udp6.o(i.udp6_socket_app_data_set)
-    udp6_socket_bind                         0x00025675   Thumb Code   122  udp6.o(i.udp6_socket_bind)
-    udp6_socket_free                         0x000256f9   Thumb Code    56  udp6.o(i.udp6_socket_free)
-    udp6_socket_recv                         0x00025739   Thumb Code    66  udp6.o(i.udp6_socket_recv)
-    udp6_socket_sendto                       0x00025785   Thumb Code   314  udp6.o(i.udp6_socket_sendto)
-    udp_init                                 0x000258cd   Thumb Code    40  udp6.o(i.udp_init)
-    udp_input                                0x000258fd   Thumb Code   354  udp6.o(i.udp_input)
-    well_known_core_callback                 0x00025bcd   Thumb Code   176  main.o(i.well_known_core_callback)
-    Region$$Table$$Base                      0x00025e28   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00025e48   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x00023ec1   Thumb Code   410  main.o(i.main)
+    nrf_delay_ms                             0x00024255   Thumb Code    26  nrf_delay.o(i.nrf_delay_ms)
+    nrf_drv_common_irq_enable                0x0002428d   Thumb Code    56  nrf_drv_common.o(i.nrf_drv_common_irq_enable)
+    nrf_drv_gpiote_in_event_enable           0x000242c5   Thumb Code   150  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_event_enable)
+    nrf_drv_gpiote_in_init                   0x00024369   Thumb Code   170  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_init)
+    nrf_drv_gpiote_in_is_set                 0x00024421   Thumb Code    16  nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_is_set)
+    nrf_drv_gpiote_init                      0x00024435   Thumb Code    76  nrf_drv_gpiote.o(i.nrf_drv_gpiote_init)
+    nrf_drv_gpiote_is_init                   0x00024489   Thumb Code    14  nrf_drv_gpiote.o(i.nrf_drv_gpiote_is_init)
+    nrf_drv_twi_enable                       0x0002449d   Thumb Code    84  nrf_drv_twi.o(i.nrf_drv_twi_enable)
+    nrf_drv_twi_init                         0x000244f9   Thumb Code   150  nrf_drv_twi.o(i.nrf_drv_twi_init)
+    nrf_drv_twi_rx                           0x00024681   Thumb Code    16  nrf_drv_twi.o(i.nrf_drv_twi_rx)
+    nrf_drv_twi_tx                           0x00024691   Thumb Code    16  nrf_drv_twi.o(i.nrf_drv_twi_tx)
+    nrf_free                                 0x00024929   Thumb Code    56  mem_manager.o(i.nrf_free)
+    nrf_mem_init                             0x000249dd   Thumb Code    26  mem_manager.o(i.nrf_mem_init)
+    nrf_mem_reserve                          0x000249fd   Thumb Code   168  mem_manager.o(i.nrf_mem_reserve)
+    softdevice_assertion_handler             0x00024ff1   Thumb Code    12  softdevice_handler.o(i.softdevice_assertion_handler)
+    softdevice_ble_evt_handler_set           0x00024ffd   Thumb Code    14  softdevice_handler.o(i.softdevice_ble_evt_handler_set)
+    softdevice_handler_init                  0x00025011   Thumb Code    38  softdevice_handler.o(i.softdevice_handler_init)
+    softdevice_sys_evt_handler_set           0x00025041   Thumb Code    14  softdevice_handler.o(i.softdevice_sys_evt_handler_set)
+    udp6_socket_allocate                     0x000255c1   Thumb Code    68  udp6.o(i.udp6_socket_allocate)
+    udp6_socket_app_data_set                 0x0002560d   Thumb Code    54  udp6.o(i.udp6_socket_app_data_set)
+    udp6_socket_bind                         0x0002564d   Thumb Code   122  udp6.o(i.udp6_socket_bind)
+    udp6_socket_free                         0x000256d1   Thumb Code    56  udp6.o(i.udp6_socket_free)
+    udp6_socket_recv                         0x00025711   Thumb Code    66  udp6.o(i.udp6_socket_recv)
+    udp6_socket_sendto                       0x0002575d   Thumb Code   314  udp6.o(i.udp6_socket_sendto)
+    udp_init                                 0x000258a5   Thumb Code    40  udp6.o(i.udp_init)
+    udp_input                                0x000258d5   Thumb Code   354  udp6.o(i.udp_input)
+    well_known_core_callback                 0x00025ba5   Thumb Code   176  main.o(i.well_known_core_callback)
+    Region$$Table$$Base                      0x00025e00   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00025e20   Number         0  anon$$obj.o(Region$$Table)
     eui64_local_iid                          0x20002820   Data           8  main.o(.data)
     SystemCoreClock                          0x20002984   Data           4  system_nrf52.o(.data)
-    ipv6_addr_any                            0x200035a0   Data          16  ipv6.o(.bss)
-    __initial_sp                             0x20007848   Data           0  arm_startup_nrf52.o(STACK)
+    ipv6_addr_any                            0x20003474   Data          16  ipv6.o(.bss)
+    __initial_sp                             0x20007720   Data           0  arm_startup_nrf52.o(STACK)
 
 
 
@@ -2604,9 +2604,9 @@ Memory Map of the image
 
   Image Entry point : 0x0001f401
 
-  Load Region LR_IROM1 (Base: 0x0001f000, Size: 0x00006fe0, Max: 0x00061000, ABSOLUTE, COMPRESSED[0x00006e78])
+  Load Region LR_IROM1 (Base: 0x0001f000, Size: 0x00006fb8, Max: 0x00061000, ABSOLUTE, COMPRESSED[0x00006e50])
 
-    Execution Region ER_IROM1 (Base: 0x0001f000, Size: 0x00006e48, Max: 0x00061000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x0001f000, Size: 0x00006e20, Max: 0x00061000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2817,122 +2817,122 @@ Memory Map of the image
     0x00023aa6   0x00000048   Code   RO         3371    i.is_context_cover_iid  ble_6lowpan.lib(ble_6lowpan.o)
     0x00023aee   0x0000000e   Code   RO         1788    i.is_request        coap.o
     0x00023afc   0x00000054   Code   RO          514    i.le_role_encode    ble_advdata.o
-    0x00023b50   0x000001ec   Code   RO           17    i.led3_callback     main.o
-    0x00023d3c   0x000000bc   Code   RO         2993    i.list_deletions_handler  app_timer.o
-    0x00023df8   0x000000cc   Code   RO         2994    i.list_insertions_handler  app_timer.o
-    0x00023ec4   0x000001f4   Code   RO           18    i.main              main.o
-    0x000240b8   0x00000064   Code   RO          515    i.manuf_specific_data_encode  ble_advdata.o
-    0x0002411c   0x0000009c   Code   RO          516    i.name_encode       ble_advdata.o
-    0x000241b8   0x000000c4   Code   RO           19    i.notify_all_led3_subscribers  main.o
-    0x0002427c   0x0000001a   Code   RO          755    i.nrf_delay_ms      nrf_delay.o
-    0x00024296   0x00000002   PAD
-    0x00024298   0x0000001c   Code   RO         1594    i.nrf_drv_call_event_handler  nrf_drv_twis.o
-    0x000242b4   0x00000038   Code   RO          786    i.nrf_drv_common_irq_enable  nrf_drv_common.o
-    0x000242ec   0x000000a4   Code   RO          820    i.nrf_drv_gpiote_in_event_enable  nrf_drv_gpiote.o
-    0x00024390   0x000000b8   Code   RO          821    i.nrf_drv_gpiote_in_init  nrf_drv_gpiote.o
-    0x00024448   0x00000014   Code   RO          822    i.nrf_drv_gpiote_in_is_set  nrf_drv_gpiote.o
-    0x0002445c   0x00000054   Code   RO          824    i.nrf_drv_gpiote_init  nrf_drv_gpiote.o
-    0x000244b0   0x00000014   Code   RO          825    i.nrf_drv_gpiote_is_init  nrf_drv_gpiote.o
-    0x000244c4   0x0000005c   Code   RO         1429    i.nrf_drv_twi_enable  nrf_drv_twi.o
-    0x00024520   0x000000a4   Code   RO         1430    i.nrf_drv_twi_init  nrf_drv_twi.o
-    0x000245c4   0x000000e4   Code   RO         1431    i.nrf_drv_twi_int_handler  nrf_drv_twi.o
-    0x000246a8   0x00000010   Code   RO         1432    i.nrf_drv_twi_rx    nrf_drv_twi.o
-    0x000246b8   0x00000010   Code   RO         1433    i.nrf_drv_twi_tx    nrf_drv_twi.o
-    0x000246c8   0x00000016   Code   RO         1596    i.nrf_drv_twis_check_bit  nrf_drv_twis.o
-    0x000246de   0x0000001a   Code   RO         1601    i.nrf_drv_twis_event_bit_get  nrf_drv_twis.o
-    0x000246f8   0x0000002c   Code   RO         1609    i.nrf_drv_twis_process_error  nrf_drv_twis.o
-    0x00024724   0x0000022c   Code   RO         1612    i.nrf_drv_twis_state_machine  nrf_drv_twis.o
-    0x00024950   0x00000040   Code   RO         3146    i.nrf_free          mem_manager.o
-    0x00024990   0x00000022   Code   RO          837    i.nrf_gpio_cfg      nrf_drv_gpiote.o
-    0x000249b2   0x0000001c   Code   RO          839    i.nrf_gpio_cfg_sense_set  nrf_drv_gpiote.o
-    0x000249ce   0x00000002   PAD
-    0x000249d0   0x00000010   Code   RO         1435    i.nrf_gpio_pin_set  nrf_drv_twi.o
-    0x000249e0   0x00000014   Code   RO          840    i.nrf_gpiote_event_clear  nrf_drv_gpiote.o
-    0x000249f4   0x00000010   Code   RO          841    i.nrf_gpiote_event_is_set  nrf_drv_gpiote.o
-    0x00024a04   0x00000020   Code   RO         3148    i.nrf_mem_init      mem_manager.o
-    0x00024a24   0x000000b4   Code   RO         3149    i.nrf_mem_reserve   mem_manager.o
-    0x00024ad8   0x0000000a   Code   RO         1436    i.nrf_twi_event_check  nrf_drv_twi.o
-    0x00024ae2   0x0000000a   Code   RO         1028    i.nrf_uart_event_check  nrf_drv_uart.o
-    0x00024aec   0x0000000c   Code   RO         1029    i.nrf_uart_int_enable_check  nrf_drv_uart.o
-    0x00024af8   0x0000000a   Code   RO         1030    i.nrf_uarte_event_check  nrf_drv_uart.o
-    0x00024b02   0x0000002e   Code   RO           20    i.observer_con_message_callback  main.o
-    0x00024b30   0x00000068   Code   RO         2615    i.on_ble_evt        ipv6_medium_ble.o
-    0x00024b98   0x0000004c   Code   RO         1437    i.on_error          nrf_drv_twi.o
-    0x00024be4   0x00000002   Code   RO           21    i.on_ipv6_medium_error  main.o
-    0x00024be6   0x00000002   PAD
-    0x00024be8   0x00000018   Code   RO           22    i.on_ipv6_medium_evt  main.o
-    0x00024c00   0x00000050   Code   RO         2419    i.pbuffer_allocate  iot_pbuffer.o
-    0x00024c50   0x00000028   Code   RO         2420    i.pbuffer_find      iot_pbuffer.o
-    0x00024c78   0x0000000e   Code   RO         2421    i.pbuffer_init      iot_pbuffer.o
-    0x00024c86   0x00000002   PAD
-    0x00024c88   0x00000018   Code   RO          842    i.pin_in_use_by_port  nrf_drv_gpiote.o
-    0x00024ca0   0x00000018   Code   RO          843    i.pin_in_use_by_te  nrf_drv_gpiote.o
-    0x00024cb8   0x00000048   Code   RO         2207    i.port_data_callback  coap_transport_ipv6.o
-    0x00024d00   0x00000136   Code   RO         2266    i.ra_input          icmp6.o
-    0x00024e36   0x00000002   PAD
-    0x00024e38   0x0000003c   Code   RO         2995    i.rtc1_stop         app_timer.o
-    0x00024e74   0x00000054   Code   RO         1438    i.rx_address_req    nrf_drv_twi.o
-    0x00024ec8   0x00000024   Code   RO         1032    i.rx_byte           nrf_drv_uart.o
-    0x00024eec   0x00000038   Code   RO         1439    i.rx_done           nrf_drv_twi.o
-    0x00024f24   0x00000024   Code   RO         1033    i.rx_done_event     nrf_drv_uart.o
-    0x00024f48   0x00000004   Code   RO         1440    i.rx_prepare        nrf_drv_twi.o
-    0x00024f4c   0x00000042   Code   RO         1789    i.send_error_response  coap.o
-    0x00024f8e   0x00000002   PAD
-    0x00024f90   0x00000088   Code   RO          517    i.service_data_encode  ble_advdata.o
-    0x00025018   0x0000000c   Code   RO         3252    i.softdevice_assertion_handler  softdevice_handler.o
-    0x00025024   0x00000014   Code   RO         3253    i.softdevice_ble_evt_handler_set  softdevice_handler.o
-    0x00025038   0x00000030   Code   RO         3254    i.softdevice_handler_init  softdevice_handler.o
-    0x00025068   0x00000014   Code   RO         3257    i.softdevice_sys_evt_handler_set  softdevice_handler.o
-    0x0002507c   0x00000050   Code   RO         1441    i.state_machine     nrf_drv_twi.o
-    0x000250cc   0x00000002   Code   RO         2616    i.sys_evt_dispatch  ipv6_medium_ble.o
-    0x000250ce   0x00000002   PAD
-    0x000250d0   0x0000008c   Code   RO         2996    i.timer_list_handler  app_timer.o
-    0x0002515c   0x0000003c   Code   RO         2997    i.timer_list_insert  app_timer.o
-    0x00025198   0x00000088   Code   RO         2998    i.timer_timeouts_check  app_timer.o
-    0x00025220   0x000000b0   Code   RO         1442    i.twi_clear_bus     nrf_drv_twi.o
-    0x000252d0   0x0000016c   Code   RO         1443    i.twi_transfer      nrf_drv_twi.o
-    0x0002543c   0x00000024   Code   RO         1035    i.tx_byte           nrf_drv_uart.o
-    0x00025460   0x0000001c   Code   RO         3372    i.tx_complete       ble_6lowpan.lib(ble_6lowpan.o)
-    0x0002547c   0x00000024   Code   RO         1444    i.tx_done           nrf_drv_twi.o
-    0x000254a0   0x00000024   Code   RO         1036    i.tx_done_event     nrf_drv_uart.o
-    0x000254c4   0x00000020   Code   RO         1445    i.tx_prepare        nrf_drv_twi.o
-    0x000254e4   0x00000058   Code   RO         3373    i.tx_send           ble_6lowpan.lib(ble_6lowpan.o)
-    0x0002553c   0x00000088   Code   RO         1446    i.txrx_shorts_set_task_start  nrf_drv_twi.o
-    0x000255c4   0x00000022   Code   RO         2422    i.type_offset_get   iot_pbuffer.o
-    0x000255e6   0x00000002   PAD
-    0x000255e8   0x0000004c   Code   RO         2746    i.udp6_socket_allocate  udp6.o
-    0x00025634   0x00000040   Code   RO         2747    i.udp6_socket_app_data_set  udp6.o
-    0x00025674   0x00000084   Code   RO         2748    i.udp6_socket_bind  udp6.o
-    0x000256f8   0x00000040   Code   RO         2750    i.udp6_socket_free  udp6.o
-    0x00025738   0x0000004c   Code   RO         2751    i.udp6_socket_recv  udp6.o
-    0x00025784   0x00000148   Code   RO         2753    i.udp6_socket_sendto  udp6.o
-    0x000258cc   0x00000030   Code   RO         2754    i.udp_init          udp6.o
-    0x000258fc   0x0000016c   Code   RO         2755    i.udp_input         udp6.o
-    0x00025a68   0x0000001c   Code   RO         2756    i.udp_socket_init   udp6.o
-    0x00025a84   0x0000000a   Code   RO          518    i.uint16_encode     ble_advdata.o
-    0x00025a8e   0x00000002   PAD
-    0x00025a90   0x00000044   Code   RO         2999    i.user_id_get       app_timer.o
-    0x00025ad4   0x00000028   Code   RO         3000    i.user_op_alloc     app_timer.o
-    0x00025afc   0x00000030   Code   RO          519    i.uuid_list_encode  ble_advdata.o
-    0x00025b2c   0x0000009e   Code   RO          520    i.uuid_list_sized_encode  ble_advdata.o
-    0x00025bca   0x00000002   PAD
-    0x00025bcc   0x000000b4   Code   RO           23    i.well_known_core_callback  main.o
-    0x00025c80   0x00000044   Data   RO           26    .constdata          main.o
-    0x00025cc4   0x00000010   Data   RO           27    .constdata          main.o
-    0x00025cd4   0x00000034   Data   RO         1448    .constdata          nrf_drv_twi.o
-    0x00025d08   0x00000010   Data   RO         1449    .constdata          nrf_drv_twi.o
-    0x00025d18   0x00000028   Data   RO         1450    .constdata          nrf_drv_twi.o
-    0x00025d40   0x00000020   Data   RO         1451    .constdata          nrf_drv_twi.o
-    0x00025d60   0x00000018   Data   RO         1452    .constdata          nrf_drv_twi.o
-    0x00025d78   0x00000018   Data   RO         1453    .constdata          nrf_drv_twi.o
-    0x00025d90   0x00000018   Data   RO         1620    .constdata          nrf_drv_twis.o
-    0x00025da8   0x00000008   Data   RO         2839    .constdata          app_button.o
-    0x00025db0   0x00000070   Data   RO         3152    .constdata          mem_manager.o
-    0x00025e20   0x00000008   Data   RO         3375    .constdata          ble_6lowpan.lib(ble_6lowpan.o)
-    0x00025e28   0x00000020   Data   RO         3752    Region$$Table       anon$$obj.o
+    0x00023b50   0x000001e8   Code   RO           17    i.led3_callback     main.o
+    0x00023d38   0x000000bc   Code   RO         2993    i.list_deletions_handler  app_timer.o
+    0x00023df4   0x000000cc   Code   RO         2994    i.list_insertions_handler  app_timer.o
+    0x00023ec0   0x000001d0   Code   RO           18    i.main              main.o
+    0x00024090   0x00000064   Code   RO          515    i.manuf_specific_data_encode  ble_advdata.o
+    0x000240f4   0x0000009c   Code   RO          516    i.name_encode       ble_advdata.o
+    0x00024190   0x000000c4   Code   RO           19    i.notify_all_led3_subscribers  main.o
+    0x00024254   0x0000001a   Code   RO          755    i.nrf_delay_ms      nrf_delay.o
+    0x0002426e   0x00000002   PAD
+    0x00024270   0x0000001c   Code   RO         1594    i.nrf_drv_call_event_handler  nrf_drv_twis.o
+    0x0002428c   0x00000038   Code   RO          786    i.nrf_drv_common_irq_enable  nrf_drv_common.o
+    0x000242c4   0x000000a4   Code   RO          820    i.nrf_drv_gpiote_in_event_enable  nrf_drv_gpiote.o
+    0x00024368   0x000000b8   Code   RO          821    i.nrf_drv_gpiote_in_init  nrf_drv_gpiote.o
+    0x00024420   0x00000014   Code   RO          822    i.nrf_drv_gpiote_in_is_set  nrf_drv_gpiote.o
+    0x00024434   0x00000054   Code   RO          824    i.nrf_drv_gpiote_init  nrf_drv_gpiote.o
+    0x00024488   0x00000014   Code   RO          825    i.nrf_drv_gpiote_is_init  nrf_drv_gpiote.o
+    0x0002449c   0x0000005c   Code   RO         1429    i.nrf_drv_twi_enable  nrf_drv_twi.o
+    0x000244f8   0x000000a4   Code   RO         1430    i.nrf_drv_twi_init  nrf_drv_twi.o
+    0x0002459c   0x000000e4   Code   RO         1431    i.nrf_drv_twi_int_handler  nrf_drv_twi.o
+    0x00024680   0x00000010   Code   RO         1432    i.nrf_drv_twi_rx    nrf_drv_twi.o
+    0x00024690   0x00000010   Code   RO         1433    i.nrf_drv_twi_tx    nrf_drv_twi.o
+    0x000246a0   0x00000016   Code   RO         1596    i.nrf_drv_twis_check_bit  nrf_drv_twis.o
+    0x000246b6   0x0000001a   Code   RO         1601    i.nrf_drv_twis_event_bit_get  nrf_drv_twis.o
+    0x000246d0   0x0000002c   Code   RO         1609    i.nrf_drv_twis_process_error  nrf_drv_twis.o
+    0x000246fc   0x0000022c   Code   RO         1612    i.nrf_drv_twis_state_machine  nrf_drv_twis.o
+    0x00024928   0x00000040   Code   RO         3146    i.nrf_free          mem_manager.o
+    0x00024968   0x00000022   Code   RO          837    i.nrf_gpio_cfg      nrf_drv_gpiote.o
+    0x0002498a   0x0000001c   Code   RO          839    i.nrf_gpio_cfg_sense_set  nrf_drv_gpiote.o
+    0x000249a6   0x00000002   PAD
+    0x000249a8   0x00000010   Code   RO         1435    i.nrf_gpio_pin_set  nrf_drv_twi.o
+    0x000249b8   0x00000014   Code   RO          840    i.nrf_gpiote_event_clear  nrf_drv_gpiote.o
+    0x000249cc   0x00000010   Code   RO          841    i.nrf_gpiote_event_is_set  nrf_drv_gpiote.o
+    0x000249dc   0x00000020   Code   RO         3148    i.nrf_mem_init      mem_manager.o
+    0x000249fc   0x000000b4   Code   RO         3149    i.nrf_mem_reserve   mem_manager.o
+    0x00024ab0   0x0000000a   Code   RO         1436    i.nrf_twi_event_check  nrf_drv_twi.o
+    0x00024aba   0x0000000a   Code   RO         1028    i.nrf_uart_event_check  nrf_drv_uart.o
+    0x00024ac4   0x0000000c   Code   RO         1029    i.nrf_uart_int_enable_check  nrf_drv_uart.o
+    0x00024ad0   0x0000000a   Code   RO         1030    i.nrf_uarte_event_check  nrf_drv_uart.o
+    0x00024ada   0x0000002e   Code   RO           20    i.observer_con_message_callback  main.o
+    0x00024b08   0x00000068   Code   RO         2615    i.on_ble_evt        ipv6_medium_ble.o
+    0x00024b70   0x0000004c   Code   RO         1437    i.on_error          nrf_drv_twi.o
+    0x00024bbc   0x00000002   Code   RO           21    i.on_ipv6_medium_error  main.o
+    0x00024bbe   0x00000002   PAD
+    0x00024bc0   0x00000018   Code   RO           22    i.on_ipv6_medium_evt  main.o
+    0x00024bd8   0x00000050   Code   RO         2419    i.pbuffer_allocate  iot_pbuffer.o
+    0x00024c28   0x00000028   Code   RO         2420    i.pbuffer_find      iot_pbuffer.o
+    0x00024c50   0x0000000e   Code   RO         2421    i.pbuffer_init      iot_pbuffer.o
+    0x00024c5e   0x00000002   PAD
+    0x00024c60   0x00000018   Code   RO          842    i.pin_in_use_by_port  nrf_drv_gpiote.o
+    0x00024c78   0x00000018   Code   RO          843    i.pin_in_use_by_te  nrf_drv_gpiote.o
+    0x00024c90   0x00000048   Code   RO         2207    i.port_data_callback  coap_transport_ipv6.o
+    0x00024cd8   0x00000136   Code   RO         2266    i.ra_input          icmp6.o
+    0x00024e0e   0x00000002   PAD
+    0x00024e10   0x0000003c   Code   RO         2995    i.rtc1_stop         app_timer.o
+    0x00024e4c   0x00000054   Code   RO         1438    i.rx_address_req    nrf_drv_twi.o
+    0x00024ea0   0x00000024   Code   RO         1032    i.rx_byte           nrf_drv_uart.o
+    0x00024ec4   0x00000038   Code   RO         1439    i.rx_done           nrf_drv_twi.o
+    0x00024efc   0x00000024   Code   RO         1033    i.rx_done_event     nrf_drv_uart.o
+    0x00024f20   0x00000004   Code   RO         1440    i.rx_prepare        nrf_drv_twi.o
+    0x00024f24   0x00000042   Code   RO         1789    i.send_error_response  coap.o
+    0x00024f66   0x00000002   PAD
+    0x00024f68   0x00000088   Code   RO          517    i.service_data_encode  ble_advdata.o
+    0x00024ff0   0x0000000c   Code   RO         3252    i.softdevice_assertion_handler  softdevice_handler.o
+    0x00024ffc   0x00000014   Code   RO         3253    i.softdevice_ble_evt_handler_set  softdevice_handler.o
+    0x00025010   0x00000030   Code   RO         3254    i.softdevice_handler_init  softdevice_handler.o
+    0x00025040   0x00000014   Code   RO         3257    i.softdevice_sys_evt_handler_set  softdevice_handler.o
+    0x00025054   0x00000050   Code   RO         1441    i.state_machine     nrf_drv_twi.o
+    0x000250a4   0x00000002   Code   RO         2616    i.sys_evt_dispatch  ipv6_medium_ble.o
+    0x000250a6   0x00000002   PAD
+    0x000250a8   0x0000008c   Code   RO         2996    i.timer_list_handler  app_timer.o
+    0x00025134   0x0000003c   Code   RO         2997    i.timer_list_insert  app_timer.o
+    0x00025170   0x00000088   Code   RO         2998    i.timer_timeouts_check  app_timer.o
+    0x000251f8   0x000000b0   Code   RO         1442    i.twi_clear_bus     nrf_drv_twi.o
+    0x000252a8   0x0000016c   Code   RO         1443    i.twi_transfer      nrf_drv_twi.o
+    0x00025414   0x00000024   Code   RO         1035    i.tx_byte           nrf_drv_uart.o
+    0x00025438   0x0000001c   Code   RO         3372    i.tx_complete       ble_6lowpan.lib(ble_6lowpan.o)
+    0x00025454   0x00000024   Code   RO         1444    i.tx_done           nrf_drv_twi.o
+    0x00025478   0x00000024   Code   RO         1036    i.tx_done_event     nrf_drv_uart.o
+    0x0002549c   0x00000020   Code   RO         1445    i.tx_prepare        nrf_drv_twi.o
+    0x000254bc   0x00000058   Code   RO         3373    i.tx_send           ble_6lowpan.lib(ble_6lowpan.o)
+    0x00025514   0x00000088   Code   RO         1446    i.txrx_shorts_set_task_start  nrf_drv_twi.o
+    0x0002559c   0x00000022   Code   RO         2422    i.type_offset_get   iot_pbuffer.o
+    0x000255be   0x00000002   PAD
+    0x000255c0   0x0000004c   Code   RO         2746    i.udp6_socket_allocate  udp6.o
+    0x0002560c   0x00000040   Code   RO         2747    i.udp6_socket_app_data_set  udp6.o
+    0x0002564c   0x00000084   Code   RO         2748    i.udp6_socket_bind  udp6.o
+    0x000256d0   0x00000040   Code   RO         2750    i.udp6_socket_free  udp6.o
+    0x00025710   0x0000004c   Code   RO         2751    i.udp6_socket_recv  udp6.o
+    0x0002575c   0x00000148   Code   RO         2753    i.udp6_socket_sendto  udp6.o
+    0x000258a4   0x00000030   Code   RO         2754    i.udp_init          udp6.o
+    0x000258d4   0x0000016c   Code   RO         2755    i.udp_input         udp6.o
+    0x00025a40   0x0000001c   Code   RO         2756    i.udp_socket_init   udp6.o
+    0x00025a5c   0x0000000a   Code   RO          518    i.uint16_encode     ble_advdata.o
+    0x00025a66   0x00000002   PAD
+    0x00025a68   0x00000044   Code   RO         2999    i.user_id_get       app_timer.o
+    0x00025aac   0x00000028   Code   RO         3000    i.user_op_alloc     app_timer.o
+    0x00025ad4   0x00000030   Code   RO          519    i.uuid_list_encode  ble_advdata.o
+    0x00025b04   0x0000009e   Code   RO          520    i.uuid_list_sized_encode  ble_advdata.o
+    0x00025ba2   0x00000002   PAD
+    0x00025ba4   0x000000b4   Code   RO           23    i.well_known_core_callback  main.o
+    0x00025c58   0x00000044   Data   RO           26    .constdata          main.o
+    0x00025c9c   0x00000010   Data   RO           27    .constdata          main.o
+    0x00025cac   0x00000034   Data   RO         1448    .constdata          nrf_drv_twi.o
+    0x00025ce0   0x00000010   Data   RO         1449    .constdata          nrf_drv_twi.o
+    0x00025cf0   0x00000028   Data   RO         1450    .constdata          nrf_drv_twi.o
+    0x00025d18   0x00000020   Data   RO         1451    .constdata          nrf_drv_twi.o
+    0x00025d38   0x00000018   Data   RO         1452    .constdata          nrf_drv_twi.o
+    0x00025d50   0x00000018   Data   RO         1453    .constdata          nrf_drv_twi.o
+    0x00025d68   0x00000018   Data   RO         1620    .constdata          nrf_drv_twis.o
+    0x00025d80   0x00000008   Data   RO         2839    .constdata          app_button.o
+    0x00025d88   0x00000070   Data   RO         3152    .constdata          mem_manager.o
+    0x00025df8   0x00000008   Data   RO         3375    .constdata          ble_6lowpan.lib(ble_6lowpan.o)
+    0x00025e00   0x00000020   Data   RO         3752    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x20002800, Size: 0x00005048, Max: 0x0000d800, ABSOLUTE, COMPRESSED[0x00000030])
+    Execution Region RW_IRAM1 (Base: 0x20002800, Size: 0x00004f20, Max: 0x0000d800, ABSOLUTE, COMPRESSED[0x00000030])
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2961,25 +2961,26 @@ Memory Map of the image
     0x20002988   0x0000000c   Data   RW         3376    .data               ble_6lowpan.lib(ble_6lowpan.o)
     0x20002994   0x00000004   Data   RW         3405    .data               ble_6lowpan.lib(ble_ipsp.o)
     0x20002998   0x00000020   Zero   RW           24    .bss                main.o
-    0x200029b8   0x000005fc   Zero   RW           25    .bss                main.o
-    0x20002fb4   0x00000058   Zero   RW          844    .bss                nrf_drv_gpiote.o
-    0x2000300c   0x00000018   Zero   RW         1037    .bss                nrf_drv_uart.o
-    0x20003024   0x00000018   Zero   RW         1447    .bss                nrf_drv_twi.o
-    0x2000303c   0x0000000c   Zero   RW         1619    .bss                nrf_drv_twis.o
-    0x20003048   0x00000080   Zero   RW         2016    .bss                coap_observe.o
-    0x200030c8   0x000001e0   Zero   RW         2113    .bss                coap_queue.o
-    0x200032a8   0x0000006a   Zero   RW         2159    .bss                coap_resource.o
-    0x20003312   0x00000002   PAD
-    0x20003314   0x00000188   Zero   RW         2348    .bss                iot_context_manager.o
-    0x2000349c   0x000000c8   Zero   RW         2423    .bss                iot_pbuffer.o
-    0x20003564   0x0000004c   Zero   RW         2520    .bss                ipv6.o
-    0x200035b0   0x000000fc   Zero   RW         2617    .bss                ipv6_medium_ble.o
-    0x200036ac   0x00000084   Zero   RW         2757    .bss                udp6.o
-    0x20003730   0x00000020   Zero   RW         2838    .bss                app_button.o
-    0x20003750   0x00000c00   Zero   RW         3151    .bss                mem_manager.o
-    0x20004350   0x000000ec   Zero   RW         3374    .bss                ble_6lowpan.lib(ble_6lowpan.o)
-    0x2000443c   0x0000140c   Zero   RW         3403    .bss                ble_6lowpan.lib(ble_ipsp.o)
-    0x20005848   0x00002000   Zero   RW         3315    STACK               arm_startup_nrf52.o
+    0x200029b8   0x000004d0   Zero   RW           25    .bss                main.o
+    0x20002e88   0x00000058   Zero   RW          844    .bss                nrf_drv_gpiote.o
+    0x20002ee0   0x00000018   Zero   RW         1037    .bss                nrf_drv_uart.o
+    0x20002ef8   0x00000018   Zero   RW         1447    .bss                nrf_drv_twi.o
+    0x20002f10   0x0000000c   Zero   RW         1619    .bss                nrf_drv_twis.o
+    0x20002f1c   0x00000080   Zero   RW         2016    .bss                coap_observe.o
+    0x20002f9c   0x000001e0   Zero   RW         2113    .bss                coap_queue.o
+    0x2000317c   0x0000006a   Zero   RW         2159    .bss                coap_resource.o
+    0x200031e6   0x00000002   PAD
+    0x200031e8   0x00000188   Zero   RW         2348    .bss                iot_context_manager.o
+    0x20003370   0x000000c8   Zero   RW         2423    .bss                iot_pbuffer.o
+    0x20003438   0x0000004c   Zero   RW         2520    .bss                ipv6.o
+    0x20003484   0x000000fc   Zero   RW         2617    .bss                ipv6_medium_ble.o
+    0x20003580   0x00000084   Zero   RW         2757    .bss                udp6.o
+    0x20003604   0x00000020   Zero   RW         2838    .bss                app_button.o
+    0x20003624   0x00000c00   Zero   RW         3151    .bss                mem_manager.o
+    0x20004224   0x000000ec   Zero   RW         3374    .bss                ble_6lowpan.lib(ble_6lowpan.o)
+    0x20004310   0x0000140c   Zero   RW         3403    .bss                ble_6lowpan.lib(ble_ipsp.o)
+    0x2000571c   0x00000004   PAD
+    0x20005720   0x00002000   Zero   RW         3315    STACK               arm_startup_nrf52.o
 
 
 ==============================================================================
@@ -3009,7 +3010,7 @@ Image component sizes
       1266         78          0         16         76      23278   ipv6.o
        694         74          0         35        252      12224   ipv6_medium_ble.o
        116          0          0          0          0       2489   ipv6_utils.o
-      2074        200         84         40       1564     129823   main.o
+      2034        184         84         40       1264     129819   main.o
        392         40        112          8       3072      10904   mem_manager.o
        144          0          0          0          0       2055   nrf_delay.o
         56          0          0          0          0      27419   nrf_drv_common.o
@@ -3023,7 +3024,7 @@ Image component sizes
       1180         78          0          1        132      12763   udp6.o
 
     ----------------------------------------------------------------------
-     21560       1254       1472        392      14776     572545   Object Totals
+     21520       1238       1472        392      14476     572541   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         52          0          0          8          2          0   (incl. Padding)
 
@@ -3054,8 +3055,8 @@ Image component sizes
         44          0          0          0          0         80   uidiv.o
 
     ----------------------------------------------------------------------
-      5192        114          8         16       5368       3248   Library Totals
-         8          0          0          0          0          0   (incl. Padding)
+      5192        114          8         16       5372       3248   Library Totals
+         8          0          0          0          4          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -3065,7 +3066,7 @@ Image component sizes
        744         26          0          0          0        880   mc_w.l
 
     ----------------------------------------------------------------------
-      5192        114          8         16       5368       3248   Library Totals
+      5192        114          8         16       5372       3248   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -3074,15 +3075,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     26752       1368       1480        408      20144     551413   Grand Totals
-     26752       1368       1480         48      20144     551413   ELF Image Totals (compressed)
-     26752       1368       1480         48          0          0   ROM Totals
+     26712       1352       1480        408      19848     551409   Grand Totals
+     26712       1352       1480         48      19848     551409   ELF Image Totals (compressed)
+     26712       1352       1480         48          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                28232 (  27.57kB)
-    Total RW  Size (RW Data + ZI Data)             20552 (  20.07kB)
-    Total ROM Size (Code + RO Data + RW Data)      28280 (  27.62kB)
+    Total RO  Size (Code + RO Data)                28192 (  27.53kB)
+    Total RW  Size (RW Data + ZI Data)             20256 (  19.78kB)
+    Total ROM Size (Code + RO Data + RW Data)      28240 (  27.58kB)
 
 ==============================================================================
 

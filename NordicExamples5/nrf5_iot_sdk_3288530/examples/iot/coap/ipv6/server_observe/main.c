@@ -148,7 +148,7 @@ static uint32_t numberOfMeasurements = 0;
 static uint32_t sumOfMeasurementsSinceLastCoAP = 0;
 static uint32_t counter = 0; 
 
-static char * stringToSend[100]; 
+static char stringToSend[100]; 
 static char * valuesList[100]; 																															 
 																														 
 #ifdef COMMISSIONING_ENABLED
@@ -529,19 +529,19 @@ static void	start_measruing()
 		//stringToSend = "Sindre\0"; 
 		//sprintf(stringToSend, "%d", 42);
 		
-		
+				
 		int readread = read_reg(READ_Z_AXIS, 0x00);
 		
 		char stringa[30];
-		int fingers = 5;
-		int toes = 921;
+		int one = 5;
+		int two = 921;
 
-		sprintf(stringa, "Acceleration value: %d",  readread);
+		sprintf(stringToSend, "a %d", one);
 		
-		*stringToSend = stringa; 
+		//stringToSend = stringa; 
+		//sprintf(stringToSend, "%s", stringa);
 		
-		
-		// THIS WORKS
+		// THIS WORKS when static char * stringToSend; 
 		
 		//char stringa[50];
 		//const char *one = "We";
@@ -561,7 +561,7 @@ static void	start_measruing()
 		
 static void acceleration_value_get(coap_content_type_t content_type, char ** str)
 {
-		*str = *stringToSend;
+		*str = stringToSend;
 		//stringToSend = "";
 		
 		// TEST: sum of array
