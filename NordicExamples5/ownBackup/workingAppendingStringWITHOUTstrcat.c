@@ -529,8 +529,8 @@ static void	start_measruing()
 		//char *stringa = malloc( sizeof(char) * ( 100 + 1 ) );
 		//char * const anotherString = malloc( sizeof(char) * ( 100 + 1) );
 		//char aThird[30];
-		int one = 37;
-		int two = 65210;
+		int one = 3;
+		//int two = 210;
 	
 		//strcpy(stringa, intToChar(one));
 		
@@ -542,7 +542,7 @@ static void	start_measruing()
 		
 		//strcat(stringToSend, intToChar(one));
 		
-		sprintf(stringa, "%d ", two);
+		sprintf(stringa, "%d", one);
 		
 		for (int i = 0; i < 150; i++)
 		{	

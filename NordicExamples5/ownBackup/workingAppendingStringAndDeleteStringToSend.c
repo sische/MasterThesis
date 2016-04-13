@@ -148,10 +148,10 @@ static uint32_t numberOfMeasurements = 0;
 static uint32_t sumOfMeasurementsSinceLastCoAP = 0;
 static uint32_t counter = 0; 
 
-static char stringToSend[150]; 
+static char stringToSend[100]; 
 static char * valuesList[100]; 		
 
-static char newString[150];
+static char newString[100];
 static bool stringToSendOccupied = false; 
 																														 
 #ifdef COMMISSIONING_ENABLED
@@ -476,44 +476,6 @@ static char * appendToString(char * originalString, const char * stringToAppend)
 }
 
 // Added by Sindre
-char *intToChar2(int i)
-{	
-		char text[] = "StringX";
-		int digit;
-		for (digit = 0; digit < 10; ++digit)
-		{
-      text[6] = digit + '0';
-      puts(text);
-		}
-		//return *text;
-}
-
-// Added by Sindre
-static char *intToChar(int i)	// Just use sprintf instead? 
-{
-  char stringChar[10];
-  sprintf(stringChar, "%d", i);
-	//return stringChar;
-}
-
-
-
-// added by Sindre
-char *appendchar(char *szString, int strsize, char c)
-{
-    int len = strlen(szString);
-    if((len+1) < strsize)
-    {
-        szString[len++] = c;
-        szString[len] = '\0';
-        return szString;
-    }
-    return NULL;
-}
-
-
-
-// Added by Sindre
 static void	start_measruing()
 {
 		//measuredTWIz = read_reg(READ_Z_AXIS, 0x00); 
@@ -524,39 +486,34 @@ static void	start_measruing()
 		//int readread = read_reg(READ_Z_AXIS, 0x00);
 		//numberOfMeasurements++;
 	
-		char stringa[150]; 
-	  //const char anorhterString[100];
-		//char *stringa = malloc( sizeof(char) * ( 100 + 1 ) );
-		//char * const anotherString = malloc( sizeof(char) * ( 100 + 1) );
-		//char aThird[30];
-		int one = 37;
-		int two = 65210;
-	
-		//strcpy(stringa, intToChar(one));
-		
-		//strcpy(stringa, append("f", "q"));
-		
-		//char c = one + '0'; 
-		//appendchar(stringa, 100, c);
-		//appendchar(stringa, 100, ' ');
-		
-		//strcat(stringToSend, intToChar(one));
-		
-		sprintf(stringa, "%d ", two);
-		
-		for (int i = 0; i < 150; i++)
-		{	
-				if(stringa[i] == '\0')
-				{
-						break;
-				}
-				else
-				{
-				appendchar(stringToSend, 150, stringa[i]);
-				}
-		}
-		
+		char stringa[30]; 
+		const char anotherString[30] = "7";
+		char aThird[30];
+		int one = 5;
+		int two = 21;
 
+		//sprintf(stringa, "a %d", one);
+		
+		//stringToSend = stringa; 
+		//if (!stringToSendOccupied)
+		//{
+				//sprintf(anotherString, "%d ", one);
+				//sprintf(stringa, "%d ", two);
+			
+				//stringToSend[numberOfMeasurements] = '\0'; // Will not work if there are several digits in a number? 
+				//strcat(stringa, anotherString); // Not used
+		//strcat(stringToSend, anotherString);
+				
+				//strcpy(stringToSend, stringa);		
+		//}
+		
+		//strcpy(stringa, "42 ");
+		//strcpy(anotherString, "58 "); 
+		strcpy(stringa, anotherString);
+		
+		//strcpy(stringToSend, stringa); 
+		
+		strcat(stringToSend, stringa);
 
 		// THIS WORKS when static char * stringToSend is defined on top;
 		
@@ -578,8 +535,7 @@ static void	start_measruing()
 		
 static void acceleration_value_get(coap_content_type_t content_type, char ** str)
 {
-		//char per[30];
-		//*str = per;
+		//*str = "testString"; 
 	// WORKS
 		stringToSendOccupied = true; 
 	
