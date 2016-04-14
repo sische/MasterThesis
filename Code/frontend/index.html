@@ -19,12 +19,33 @@
 	<body>
 		<h2> Hei </h2>
 		<br><br><br><br>
+		<b>Acceleration data: </b>
+		<!--<canvas id="myChart" width="400" height="400"></canvas> -->
 
-		<canvas id="myChart" width="400" height="400"></canvas>
+		<script type="text/javascript">
 
-		
-
-
-		<script src="/home/sindre/Documents/Master/Chart.js/Chart.js"></script>		
+		$(document).ready(function()){
+			setTimeout(getCsv, 1000);
+			$function getCsv() {
+				var but = $(this);
+				$.ajax({
+					'type': "POST",
+					'url': "{{ url_for('ajaxReply', title=title) }}",
+					'dataType': "json",
+					'data': {'question': $(this).closest('.jumbotron').attr('id'),
+						'answer': $(this).text()},
+					'success': function(data) {
+						document.write({{ receivedNumber }})
+						}
+					},
+            	'error': function(error) {
+                	alert('error');
+        	    	}
+				});
+			});
+		});
+		</script>
+	
+		<!--<script src="/home/sindre/Documents/Master/Chart.js/Chart.js"></script>-->		
 	</body>
 </html>
