@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  12 APR 2016 13:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  16 APR 2016 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1584,7 +1584,7 @@ LaTeX Warning: Label `fig:adxl345' multiply defined.
 
 LaTeX Warning: Label `fig:adxl345' multiply defined.
 
-))
+) (./conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -1674,7 +1674,7 @@ e
 ))
 \c@lstlisting=\count329
 
-<./figs/ntnu-logo.pdf, id=108, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=120, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -1779,7 +1779,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 59.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [5]
-<ADXL345.png, id=343, 727.71875pt x 499.8675pt>
+<ADXL345.png, id=358, 727.71875pt x 499.8675pt>
 File: ADXL345.png Graphic file (type png)
  <use ADXL345.png>
 Package pdftex.def Info: ADXL345.png used on input line 105.
@@ -1793,11 +1793,11 @@ l.109 \newpage
                <./ADXL345.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 115.
+(hyperref)                removing `\gls' on input line 113.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 131.
+(hyperref)                removing `\gls' on input line 124.
 
 ) [7]
 \openout2 = `architecture.aux'.
@@ -1807,7 +1807,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ]
-<MasterArchitecture.png, id=361, 524.96124pt x 385.44pt>
+<MasterArchitecture.png, id=380, 524.96124pt x 385.44pt>
 File: MasterArchitecture.png Graphic file (type png)
 
 <use MasterArchitecture.png>
@@ -1825,7 +1825,7 @@ Overfull \hbox (3.47037pt too wide) in paragraph at lines 9--9
                                                   \fi \fi 
 l.13 \newpage
               <./MasterArchitecture.png>]
-<nrf52.png, id=370, 1208.515pt x 729.72626pt>
+<nrf52.png, id=389, 1208.515pt x 729.72626pt>
 File: nrf52.png Graphic file (type png)
  <use nrf52.png>
 Package pdftex.def Info: nrf52.png used on input line 27.
@@ -1835,7 +1835,7 @@ Overfull \hbox (22.7327pt too wide) in paragraph at lines 27--27
  [][] 
  []
 
-<pi3.png, id=371, 1053.9375pt x 664.4825pt>
+<pi3.png, id=390, 1053.9375pt x 664.4825pt>
 File: pi3.png Graphic file (type png)
  <use pi3.png>
 Package pdftex.def Info: pi3.png used on input line 33.
@@ -1848,7 +1848,7 @@ Overfull \hbox (4.88365pt too wide) in paragraph at lines 33--33
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<nrf-adxl.png, id=372, 696.6025pt x 929.4725pt>
+<nrf-adxl.png, id=391, 696.6025pt x 929.4725pt>
 File: nrf-adxl.png Graphic file (type png)
  <use nrf-adxl.png>
 Package pdftex.def Info: nrf-adxl.png used on input line 39.
@@ -1939,41 +1939,38 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
 (./conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: A2B9BE5A3D021A7A06D7B865D3BF7BF4;1683.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 828D1058FA936DFBD22FD43D0C6416A3;1514
-(rerunfilecheck)             After:  1F0B8A1FE23FE237BD3BDC12934ACFD6;1560.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 22273 strings out of 493304
- 325977 string characters out of 6139871
- 583622 words of memory out of 5000000
- 25021 multiletter control sequences out of 15000+600000
- 82737 words of font info for 116 fonts, out of 8000000 for 9000
+ 22302 strings out of 493304
+ 326418 string characters out of 6139871
+ 585504 words of memory out of 5000000
+ 25055 multiletter control sequences out of 15000+600000
+ 82087 words of font info for 111 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  58i,12n,48p,1753b,585s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/shar
-e/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmssbx10.pfb>
-Output written on main.pdf (35 pages, 5219886 bytes).
+pdfTeX warning (dest): name{glo:m2m} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvi
+ps/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/
+texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmssbx10.pfb>
+Output written on main.pdf (35 pages, 5218519 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 405 compressed objects within 5 object streams
- 100 named destinations out of 1000 (max. 500000)
- 19695 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 485 PDF objects out of 1000 (max. 8388607)
+ 425 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 19719 words of extra memory for PDF output out of 20736 (max. 10000000)
 

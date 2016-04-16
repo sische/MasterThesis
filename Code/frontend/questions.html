@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+{% if message != "" %}
+	<h3>{{ message }}</h3>
+{% endif %}
+
+{% for question in formatted %}
+	<div class="jumbotron" id="{{ question['id'] }}">
+		<p class="lead">{{ question['question'] }}</p>
+		{% for answer in question['answers'] %}
+			<p><button class="btn btn-primary btn-large reply_btn">{{ answer }}</button></p>
+		{% endfor %}
+	</div>
+{% endfor %}
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.reply_btn').click(function() {
+		var but = $(this);
+		$.ajax({
+			'type': "POST",
+			'url': "{{ url_for('ajaxReply', title=title) }}",
+			'dataType': "json",
+			'data': {'question': $(this).closest('.jumbotron').attr('id'),
+				'answer': $(this).text()},
+			'success': function(data) {
+				var change = "#" + data['id'];
+				if(data['correct']==true) {
+					$(change).css( "backgroundColor", "#007f52" );
+					but.css( "backgroundColor", "#274773" );
+					document.getElementById("score").innerHTML = data['nofCorrect'] + "/{{ tot }}";					
+				} else {
+					$(change).css( "backgroundColor", "#BC3E3E" );
+					but.css( "backgroundColor", "grey" );
+					document.getElementById("score").innerHTML = data['nofCorrect'] + "/{{ tot }}";	
+					//document.getElementById("fail").innerHTML = "You have picked wrong answer " + 'session["nofFail"]' + " time(s)";
+				}
+			},
+            'error': function(error) {
+                alert('error');
+            }
+		});
+	});
+});
+</script>
+{% endblock %}
