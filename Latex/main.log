@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  16 APR 2016 17:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  18 APR 2016 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1567,11 +1567,11 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \glo@main@file=\write5
 \openout5 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 25.
+Package glossaries Info: Writing glossary file main.glo on input line 26.
 \glo@acronym@file=\write6
 \openout6 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 25.
+Package glossaries Info: Writing glossary file main.acn on input line 26.
 
 (./main.aux (./abstract_english.aux) (./abstract_norwegian.aux) (./preface.aux)
 (./introduction.aux) (./background.aux) (./architecture.aux
@@ -1584,29 +1584,30 @@ LaTeX Warning: Label `fig:adxl345' multiply defined.
 
 LaTeX Warning: Label `fig:adxl345' multiply defined.
 
-) (./conclusion.aux))
+) (./measurements.aux) (./conclusion.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 28.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1622,7 +1623,7 @@ LaTeX Font Info:    ... okay on input line 27.
 \makeMPintoPDFobject=\count327
 \everyMPtoPDFconversion=\toks60
 )
-LaTeX Info: Redefining \microtypecontext on input line 27.
+LaTeX Info: Redefining \microtypecontext on input line 28.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1637,7 +1638,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring ON on input line 27.
+Package hyperref Info: Link coloring ON on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1649,10 +1650,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 27.
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -1674,13 +1675,13 @@ e
 ))
 \c@lstlisting=\count329
 
-<./figs/ntnu-logo.pdf, id=120, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=128, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
-Package pdftex.def Info: ./figs/ntnu-logo.pdf used on input line 33.
+Package pdftex.def Info: ./figs/ntnu-logo.pdf used on input line 34.
 (pdftex.def)             Requested size: 170.71652pt x 37.32436pt.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 33.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 34.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1688,14 +1689,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Calculating math sizes for size <11.49994> on input line 33
+LaTeX Font Info:    Calculating math sizes for size <11.49994> on input line 34
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11.49994> on input line 33.
+(Font)              <11.49994> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.04991> on input line 33.
+(Font)              <8.04991> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.74997> on input line 33.
+(Font)              <5.74997> on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1779,7 +1780,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 59.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [5]
-<ADXL345.png, id=358, 727.71875pt x 499.8675pt>
+<ADXL345.png, id=372, 727.71875pt x 499.8675pt>
 File: ADXL345.png Graphic file (type png)
  <use ADXL345.png>
 Package pdftex.def Info: ADXL345.png used on input line 105.
@@ -1807,7 +1808,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ]
-<MasterArchitecture.png, id=380, 524.96124pt x 385.44pt>
+<MasterArchitecture.png, id=401, 524.96124pt x 385.44pt>
 File: MasterArchitecture.png Graphic file (type png)
 
 <use MasterArchitecture.png>
@@ -1825,7 +1826,7 @@ Overfull \hbox (3.47037pt too wide) in paragraph at lines 9--9
                                                   \fi \fi 
 l.13 \newpage
               <./MasterArchitecture.png>]
-<nrf52.png, id=389, 1208.515pt x 729.72626pt>
+<nrf52.png, id=411, 1208.515pt x 729.72626pt>
 File: nrf52.png Graphic file (type png)
  <use nrf52.png>
 Package pdftex.def Info: nrf52.png used on input line 27.
@@ -1835,7 +1836,7 @@ Overfull \hbox (22.7327pt too wide) in paragraph at lines 27--27
  [][] 
  []
 
-<pi3.png, id=390, 1053.9375pt x 664.4825pt>
+<pi3.png, id=412, 1053.9375pt x 664.4825pt>
 File: pi3.png Graphic file (type png)
  <use pi3.png>
 Package pdftex.def Info: pi3.png used on input line 33.
@@ -1848,7 +1849,7 @@ Overfull \hbox (4.88365pt too wide) in paragraph at lines 33--33
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<nrf-adxl.png, id=391, 696.6025pt x 929.4725pt>
+<nrf-adxl.png, id=413, 696.6025pt x 929.4725pt>
 File: nrf-adxl.png Graphic file (type png)
  <use nrf-adxl.png>
 Package pdftex.def Info: nrf-adxl.png used on input line 39.
@@ -1865,39 +1866,51 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 44.
 
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.54 T
+      o set up the communication between these two, the two code examples TW...
+ <./nrf52.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 54.
+(hyperref)                removing `\gls' on input line 57.
 
-) [10pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-.2}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.91 \include{architecture}
-                            <./nrf52.png>] [11pdfTeX warning (ext4): destinatio
-n with the same identifier (name{figure.3.3}) has been already used, duplicate 
-ignored
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 61.
+
+) [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.91 \include{architecture}
+l.92 \include{architecture}
                             <./pi3.png>] [12pdfTeX warning (ext4): destination 
 with the same identifier (name{figure.3.4}) has been already used, duplicate ig
 nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.91 \include{architecture}
+l.92 \include{architecture}
                             <./nrf-adxl.png>]
-\openout2 = `conclusion.aux'.
+\openout2 = `measurements.aux'.
 
- (./conclusion.tex) [13
+ (./measurements.tex) [13
 
 
 
 ]
-(./main.bbl [14
+\openout2 = `conclusion.aux'.
+
+
+(./conclusion.tex [14
+
+
+
+]) [15] (./main.bbl [16
 
 
 ]
@@ -1919,7 +1932,7 @@ Underfull \hbox (badness 2922) in paragraph at lines 9--12
 b/.  Ac-cessed:
  []
 
-) [15]
+) [17]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -1932,45 +1945,48 @@ b/.  Ac-cessed:
 \tf@loa=\write11
 \openout11 = `main.loa'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
  (./main.aux (./abstract_english.aux) (./abstract_norwegian.aux)
 (./preface.aux) (./introduction.aux) (./background.aux) (./architecture.aux)
-(./conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A2B9BE5A3D021A7A06D7B865D3BF7BF4;1683.
+(./measurements.aux) (./conclusion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: CB2C17B036C14C191F0015C01954AA40;1802
+(rerunfilecheck)             After:  F8E796DF152AB87FD7ECF0655E1A3C09;1788.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
  ) 
 Here is how much of TeX's memory you used:
- 22302 strings out of 493304
- 326418 string characters out of 6139871
- 585504 words of memory out of 5000000
- 25055 multiletter control sequences out of 15000+600000
- 82087 words of font info for 111 fonts, out of 8000000 for 9000
+ 22327 strings out of 493304
+ 326816 string characters out of 6139871
+ 587214 words of memory out of 5000000
+ 25064 multiletter control sequences out of 15000+600000
+ 82347 words of font info for 113 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 58i,12n,48p,1753b,585s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:m2m} has been referenced but does not exist, 
-replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvi
-ps/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/
-texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmssbx10.pfb>
-Output written on main.pdf (35 pages, 5218519 bytes).
+ 58i,13n,48p,1753b,585s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/shar
+e/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmssbx10.pfb>
+Output written on main.pdf (37 pages, 5222059 bytes).
 PDF statistics:
- 485 PDF objects out of 1000 (max. 8388607)
- 425 compressed objects within 5 object streams
- 103 named destinations out of 1000 (max. 500000)
- 19719 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 455 compressed objects within 5 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 19735 words of extra memory for PDF output out of 20736 (max. 10000000)
 

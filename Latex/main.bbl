@@ -23,6 +23,13 @@ Hui, J.~W. and D.~E. Culler (2008).
 \newblock Extending ip to low-power, wireless personal area networks.
 \newblock {\em Internet Computing, IEEE\/}~{\em 12\/}(4), 37--45.
 
+\bibitem[\protect\citeauthoryear{Hunkeler, Truong, and Stanford-Clark}{Hunkeler
+  et~al.}{2008}]{hunkeler2008mqtt}
+Hunkeler, U., H.~L. Truong, and A.~Stanford-Clark (2008).
+\newblock Mqtt-s—a publish/subscribe protocol for wireless sensor networks.
+\newblock In {\em Communication systems software and middleware and workshops,
+  2008. comsware 2008. 3rd international conference on}, pp.\  791--798. IEEE.
+
 \bibitem[\protect\citeauthoryear{Mulligan}{Mulligan}{2007}]{mulligan20076lowpan}
 Mulligan, G. (2007).
 \newblock The 6lowpan architecture.

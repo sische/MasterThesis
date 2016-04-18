@@ -28,8 +28,10 @@
 \contentsline {section}{\numberline {3.1}Enabling \gls {6lowpan} and \gls {ble}}{10}{section.3.1}
 \contentsline {section}{\numberline {3.2}Connecting Raspberry Pi and nRF52}{11}{section.3.2}
 \contentsline {section}{\numberline {3.3}Connecting nRF52 and ADXL345}{11}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}\gls {i2c}}{11}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Problems}{11}{subsection.3.3.2}
-\contentsline {chapter}{\chapternumberline {4}Conclusion}{13}{chapter.4}
-\contentsline {chapter}{References}{15}{section*.9}
+\contentsline {subsection}{\numberline {3.3.1}\gls {spi}}{11}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}\gls {i2c}}{11}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Problems}{11}{subsection.3.3.3}
+\contentsline {chapter}{\chapternumberline {4}Measurements}{13}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{15}{chapter.5}
+\contentsline {chapter}{References}{17}{section*.9}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}

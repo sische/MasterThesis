@@ -94,9 +94,9 @@ In order to do collect data, a sensor needed to be connected to the Nordic Semic
 
 \begin{itemize}
   \item It is the same accelerometer built in on the Zolertia Z1 microcontroller
-  \item It can measure acceleration in the axis
-  \item It sends digital data directly
-  \item It supports both %\gls{i2c} and \gls{spi}, which makes it easy to connect to the nRF52. 
+  \item It can measure acceleration in all three axes, X, Y and Z.
+  \item It sends digital data right away. This means there is no need to use computational power to calculate digital values as needed if the data was captured by an analog accelerometer. 
+  \item It supports both \gls{i2c} and \gls{spi}, which makes it easy to connect to the nRF52. 
 \end{itemize}
 
 
@@ -129,7 +129,7 @@ Anotehr transport protocol that could be used in such a network of microcontroll
 
 \section{Software tools}
 
-As \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor (where?), for writing C programming. For other programming languages (for instance Python 3.1) \textit{Sublime Text 2} for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
+As \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor (where?), for writing C programming. For other programming languages (for instance Python 3.4, HTML, CSS, JavaScript, Flask and AJAX) \textit{Sublime Text 2} for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
 
 %\subsection{Connecting nRF52 and ADXL345}
 
