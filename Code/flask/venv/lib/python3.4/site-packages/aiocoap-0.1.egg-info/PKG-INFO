@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: aiocoap
+Version: 0.1
+Summary: Python CoAP library
+Home-page: UNKNOWN
+Author: Maciej Wasilak, Christian Amsüss
+Author-email: Christian Amsüss <c.amsuess@energyharvesting.at>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: coap,asyncio,iot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
