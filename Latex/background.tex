@@ -117,8 +117,6 @@ In order to do collect data, a sensor needed to be connected to the Nordic Semic
 \gls{coap} is a transport protocol designed to be used in constrained networks for \gls{m2m} communication. It is \gls{udp} based, and works good in low-power and lossy networks. It can be used with microcontrollers, and with \gls{ipv6} and \gls{6lowpan}. Both GET and PUSH functionality can be used, as well as \textit{observable} GET. This means that a server can "subscribe" to end notes in the network, and get updates either after a given timespan or when changes have been made. This therefore looked like a promising protocol to use, and was chosen as the first transport protocol to test the network \cite{shelby2014constrained}.
    
 
-\subsection{AioCoAP}
-
 
 
 \subsection{\gls{mqtt}}
@@ -126,6 +124,8 @@ In order to do collect data, a sensor needed to be connected to the Nordic Semic
 Anotehr transport protocol that could be used in such a network of microcontrollers is \gls{mqtt}. This is  known as a publish-subscribe based on \gls{tcp}, using a \gls{mqtt} broker. \gls{ntnu} does have a broker that is possible to use, or a broker can be rented from several other places. Here a 
 
 \cite{hunkeler2008mqtt}
+
+\subsection{\gls{radvd}}
 
 \section{Software tools}
 

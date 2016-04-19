@@ -12,4 +12,7 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Raspberry Pi 3}}{11}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Connected nRF52 -- ADXL345}}{12}{figure.3.4}
 \addvspace {10pt}
-\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces CoAP Client-Server communication example}}{14}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces CoAP Client-Server example Wireshark capture}}{14}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sequence diagram CoAP Client-Server example}}{15}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP Observable Server example}}{15}{figure.4.4}

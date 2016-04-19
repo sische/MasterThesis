@@ -21,8 +21,8 @@
 \contentsline {section}{\numberline {2.5}Adafruit ADXL345 Accelerometer}{6}{section.2.5}
 \contentsline {section}{\numberline {2.6}Transport protocols}{7}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}\gls {coap}}{7}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}AioCoAP}{7}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}\gls {mqtt}}{7}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.2}\gls {mqtt}}{7}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}\gls {radvd}}{7}{subsection.2.6.3}
 \contentsline {section}{\numberline {2.7}Software tools}{7}{section.2.7}
 \contentsline {chapter}{\chapternumberline {3}Architecture}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Enabling \gls {6lowpan} and \gls {ble}}{10}{section.3.1}
@@ -31,7 +31,11 @@
 \contentsline {subsection}{\numberline {3.3.1}\gls {spi}}{11}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}\gls {i2c}}{11}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Problems}{11}{subsection.3.3.3}
-\contentsline {chapter}{\chapternumberline {4}Measurements}{13}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{15}{chapter.5}
+\contentsline {chapter}{\chapternumberline {4}Coding, Measurements and Limitations}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Nordic Semiconductor Example code}{13}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}\gls {coap}}{13}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Observable \gls {coap}}{15}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Getting acceleration values}{15}{section.4.2}
+\contentsline {section}{\numberline {4.3}Bottle neck}{15}{section.4.3}
 \contentsline {chapter}{References}{17}{section*.9}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
