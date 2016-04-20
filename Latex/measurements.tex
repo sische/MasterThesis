@@ -3,7 +3,7 @@
 
 The general idea of the sensor network is to collect data from the accelerometer,
 
-\section{Nordic Semiconductor Example code}
+\section{Nordic Semiconductor example code}
 
 Nordic Semiconductor has provided several examples along with the nRF52-DK documentation, that can be used as a starting point when programming applications to the device. 
 
@@ -57,9 +57,38 @@ In the given Nordic example of a \gls{coap} observable server, this problem can 
     \label{fig:CoAPexample1}
 \end{figure}
 
+
+
+\subsection{Stable transfer rate}
+
+When the observable CoAP is working fine, the next step is to determine the optimal transfer rate of the connection. Since the number of messages sent has been halved, it should be possible use this as an advantage. However, the link in itself is quite slow. The limitations in \gls{ble} and \gls{6lowpan} makes this much slower than a normal \gls{ipv6} connection, and the \textit{ping} \gls{rtt} varies from 100 ms all the way up to over 600 ms. As a comparison, to \textit{ping google.com} from the same Raspberry Pi using \gls{ipv6} takes on average 15 ms. A comparison of this is shown in figure \ref{fig:pingComparison}. This is therefore a clear limitation of sending rate in the system. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{ping6test.png}    
+    \caption{Comparison: ping nRF52 and ping google.com}
+    \label{fig:pingComparison}
+\end{figure}
+
+
+In addition, at tests, the connection turns out to be quite unstable at maximal transfer rate. Even in the test of ping shown in figure \ref{fig:pingComparison} the connection between the Raspberry Pi and the nRF52 had 14 \% packet loss, 1 out of 7 packets. Other tests showed similar results, and that any sending rate much faster than once per second was more or less unstable when sending data. After a test period it was therefore decided that the best solution would be to gather data from sensors at a higher rate, and store them in the nRF52 temporarily. Every second all the measured values are being transferred to the Raspberry Pi, the temporarily values are deleted and the measurement continues. This has proven to be a very stable solution, with successful tests over several days. 
+
+
 \section{Getting acceleration values}
 
+As soon as the sending of values is being handled in a good way, the next step is to read acceleration values from the ADXL345 accelerometer, which is connected to the NRF52 using the \gls{i2c} interface. 
+
+Acceleration values can only be read from the ADXL345 if this has been correctly initialized at compile time. In order to do this, code to write to and read from the registers had to be added. The initializing process is described in the accelerometer data sheet \cite{adxlDataSheet}. In short, registers for \textit{data format control, initial power saving, interrupt enable control} and \textit{the offset of each axis} has to be written to in that order before the acceleration value from the different axes can be read.  
+
+In the solution proposed in this thesis the acceleration values are being read as often as possible, limited by the processing power of the nRF52, and then stores in a simple dynamical char array before being sent and reset after one second. 
 
 
-\section{Bottle neck}
+\section{Limitations}
+
+
+
+\section{Measurements}
+
+
+
 

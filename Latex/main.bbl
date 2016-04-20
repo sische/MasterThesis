@@ -1,14 +1,20 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{??}{adx}{}]{adxlDataSheet}
+{ADXL345:}digital accelerometer data sheet.
+\newblock
+  http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf.
+\newblock Accessed: 20-04-2016.
+
 \bibitem[\protect\citeauthoryear{??}{nrf}{}]{nrf52Nordic}
 {Nordic Semiconductor:} nrf52 series soc.
 \newblock https://www.nordicsemi.com/Products/nRF52-Series-SoC.
-\newblock Accessed: 25-03-2015.
+\newblock Accessed: 25-03-2016.
 
 \bibitem[\protect\citeauthoryear{??}{ras}{}]{raspberryPi2}
 {Raspberry Pi:} raspberry pi 2 model b.
 \newblock https://www.raspberrypi.org/products/raspberry-pi-2-model-b/.
-\newblock Accessed: 27-03-2015.
+\newblock Accessed: 27-03-2016.
 
 \bibitem[\protect\citeauthoryear{Gomez, Oller, and Paradells}{Gomez
   et~al.}{2012}]{gomez2012overview}
