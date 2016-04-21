@@ -8,7 +8,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces ADXL345 Accelerometer}}{6}{figure.2.1}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System architecture}}{9}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Nordic Semiconductor NRF52}}{10}{figure.3.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Nordic Semiconductor NRF52}}{11}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Raspberry Pi 3}}{11}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Connected nRF52 -- ADXL345}}{12}{figure.3.4}
 \addvspace {10pt}
@@ -17,3 +17,4 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Sequence diagram CoAP Client-Server example}}{15}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP Observable Server example}}{15}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{16}{figure.4.5}
+\addvspace {10pt}
