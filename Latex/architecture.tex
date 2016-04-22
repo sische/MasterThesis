@@ -31,32 +31,35 @@ A central part of the testing in this thesis will be to test the different limit
 The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite straight forward using the nRF52. Connection scheme is as follows (nRF52 -> ADXL345): 
 
 \begin{itemize}
-  \item 5V -- VIN			\textit{Power source}
-  \item GND -- GND 			\textit{Ground}
-  \item P0.27 -- SDA		\textit{\gls{i2c} SDA}
-  \item P0.26 -- SCL		\textit{\gls{i2c} SCL}
+  \item 5V -- VIN		\tab  	\textit{Power source, GREEN in Figure\ref{fig:nrf-adxl345}}
+  \item GND -- GND 		\tab 	\textit{Ground, RED in Figure \ref{fig:nrf-adxl345}}
+  \item P0.27 -- SDA	\tab	\textit{\gls{i2c} Serial Data Line}
+  \item P0.26 -- SCL	\tab 	\textit{\gls{i2c} Serial Clock Line}
 \end{itemize} 
-
-
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.32]{nrf52.png}    \caption{Nordic Semiconductor NRF52}
-    \label{fig:adxl345}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.35]{pi3.png}    \caption{Raspberry Pi 3}
-    \label{fig:adxl345}
-\end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.35]{nrf-adxl.png}    \caption{Connected nRF52 -- ADXL345}
-    \label{fig:adxl345}
+    \label{fig:nrf-adxl345}
 \end{figure}
+
+After this is done it is possible to write to and read from the registers of the accelerometer over the two SDA and SCL cables. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.32]{nrf52.png}    \caption{Nordic Semiconductor NRF52}
+    \label{fig:nrf52picture}
+\end{figure}
+
+The communication between the nRF52 in Figure \ref{fig:nrf52picture} and the Raspberry Pi in Figure \ref{fig:piPicture}, is done using \gls{6lowpan} over \gls{ble}. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.35]{pi3.png}    \caption{Raspberry Pi 3}
+    \label{fig:piPicture}
+\end{figure}
+
+
 
 
 \section{\gls{6lowpan} and \gls{ble}}

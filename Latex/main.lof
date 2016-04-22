@@ -8,9 +8,9 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces ADXL345 Accelerometer}}{6}{figure.2.1}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System architecture}}{9}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Nordic Semiconductor NRF52}}{11}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Raspberry Pi 3}}{11}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Connected nRF52 -- ADXL345}}{12}{figure.3.4}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345}}{11}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Nordic Semiconductor NRF52}}{12}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Raspberry Pi 3}}{12}{figure.3.4}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces CoAP Client-Server communication example}}{14}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces CoAP Client-Server example Wireshark capture}}{14}{figure.4.2}
