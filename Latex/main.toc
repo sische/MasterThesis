@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {3.3.1}\gls {spi}}{14}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}\gls {i2c}}{14}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Problems}{14}{subsection.3.3.3}
-\contentsline {chapter}{\chapternumberline {4}Coding, Measurements and Limitations}{15}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}Coding and Limitations}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Nordic Semiconductor example code}{15}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}\gls {coap}}{15}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Observable \gls {coap}}{17}{subsection.4.1.2}
@@ -39,7 +39,7 @@
 \contentsline {section}{\numberline {4.2}Getting acceleration values}{18}{section.4.2}
 \contentsline {section}{\numberline {4.3}Limitations}{19}{section.4.3}
 \contentsline {section}{\numberline {4.4}Measurements}{19}{section.4.4}
-\contentsline {chapter}{\chapternumberline {5}Results}{21}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}Measurements}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Maximize throughput}{21}{section.5.1}
 \contentsline {chapter}{References}{23}{section*.9}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}

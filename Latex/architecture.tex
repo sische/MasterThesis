@@ -31,10 +31,10 @@ A central part of the testing in this thesis will be to test the different limit
 The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite straight forward using the nRF52. Connection scheme is as follows (nRF52 -> ADXL345): 
 
 \begin{itemize}
-  \item 5V -- VIN		\tab  	\textit{Power source, GREEN in Figure\ref{fig:nrf-adxl345}}
-  \item GND -- GND 		\tab 	\textit{Ground, RED in Figure \ref{fig:nrf-adxl345}}
-  \item P0.27 -- SDA	\tab	\textit{\gls{i2c} Serial Data Line}
-  \item P0.26 -- SCL	\tab 	\textit{\gls{i2c} Serial Clock Line}
+  \item 5V -- VIN		\tab  	\textit{Power source, \textcolor{green}{green cable} in Figure\ref{fig:nrf-adxl345}}
+  \item GND -- GND 		\tab 	\textit{Ground, \textcolor{red}{red cable} in Figure \ref{fig:nrf-adxl345}}
+  \item P0.27 -- SDA	\tab	\textit{\gls{i2c} Serial Data Line, \textcolor{orange}{orange cable} in Figure \ref{fig:nrf-adxl345}}
+  \item P0.26 -- SCL	\tab 	\textit{\gls{i2c} Serial Clock Line, \textcolor{brown}{brown cable} in Figure \ref{fig:nrf-adxl345}}
 \end{itemize} 
 
 \begin{figure}[ht]
