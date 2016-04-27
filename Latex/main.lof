@@ -5,7 +5,7 @@
 \select@language {english}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces ADXL345 Accelerometer}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces ADXL345 Accelerometer}}{7}{figure.2.1}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System architecture}}{9}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345}}{11}{figure.3.2}

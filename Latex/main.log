@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  25 APR 2016 11:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  27 APR 2016 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1675,7 +1675,7 @@ e
 ))
 \c@lstlisting=\count329
 
-<./figs/ntnu-logo.pdf, id=156, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=172, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -1769,50 +1769,53 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4120) has occurred while \output is active []
 
  [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 59.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 61.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [5]
-<ADXL345.png, id=423, 727.71875pt x 499.8675pt>
+<ADXL345.png, id=445, 727.71875pt x 499.8675pt>
 File: ADXL345.png Graphic file (type png)
  <use ADXL345.png>
-Package pdftex.def Info: ADXL345.png used on input line 105.
+Package pdftex.def Info: ADXL345.png used on input line 112.
 (pdftex.def)             Requested size: 232.87476pt x 159.96086pt.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 120.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gls' on input line 135.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.109 \newpage
-               <./ADXL345.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 113.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 122.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 128.
-
-) [7]
+l.140 
+       <./ADXL345.png>]) [8]
 \openout2 = `architecture.aux'.
 
- (./architecture.tex [8
-
-
-
-]
-<MasterArchitecture.png, id=454, 524.96124pt x 385.44pt>
+ (./architecture.tex
+<MasterArchitecture.png, id=476, 524.96124pt x 385.44pt>
 File: MasterArchitecture.png Graphic file (type png)
 
 <use MasterArchitecture.png>
@@ -1823,20 +1826,24 @@ Overfull \hbox (3.47037pt too wide) in paragraph at lines 9--9
  [][] 
  []
 
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}
-) has been already used, duplicate ignored
+[9
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.13 \newpage
               <./MasterArchitecture.png>]
-<nrf-adxl.png, id=468, 696.6025pt x 929.4725pt>
+<nrf-adxl.png, id=490, 696.6025pt x 929.4725pt>
 File: nrf-adxl.png Graphic file (type png)
  <use nrf-adxl.png>
 Package pdftex.def Info: nrf-adxl.png used on input line 42.
 (pdftex.def)             Requested size: 243.81453pt x 325.32025pt.
 
-<nrf52.png, id=469, 1208.515pt x 729.72626pt>
+<nrf52.png, id=491, 1208.515pt x 729.72626pt>
 File: nrf52.png Graphic file (type png)
  <use nrf52.png>
 Package pdftex.def Info: nrf52.png used on input line 50.
@@ -1849,7 +1856,7 @@ Overfull \hbox (22.7327pt too wide) in paragraph at lines 50--50
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pi3.png, id=474, 1053.9375pt x 664.4825pt>
+<pi3.png, id=496, 1053.9375pt x 664.4825pt>
 File: pi3.png Graphic file (type png)
  <use pi3.png>
 Package pdftex.def Info: pi3.png used on input line 58.
@@ -1923,7 +1930,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 10.
 
-<CoAPExample.png, id=517, 893.3375pt x 310.15875pt>
+<CoAPExample.png, id=540, 893.3375pt x 310.15875pt>
 File: CoAPExample.png Graphic file (type png)
  <use CoAPExample.png>
 Package pdftex.def Info: CoAPExample.png used on input line 16.
@@ -1940,7 +1947,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-] <CoapEx1captureCropped2.png, id=533, 1391.1975pt x 540.0175pt>
+] <CoapEx1captureCropped2.png, id=555, 1391.1975pt x 540.0175pt>
 File: CoapEx1captureCropped2.png Graphic file (type png)
 
 <use CoapEx1captureCropped2.png>
@@ -1951,7 +1958,7 @@ Overfull \hbox (11.62834pt too wide) in paragraph at lines 32--33
  [][] 
  []
 
-<seq1.png, id=535, 1102.1175pt x 282.05376pt>
+<seq1.png, id=557, 1102.1175pt x 282.05376pt>
 File: seq1.png Graphic file (type png)
  <use seq1.png>
 Package pdftex.def Info: seq1.png used on input line 42.
@@ -1977,7 +1984,7 @@ l.48
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 49.
 
-<CoAPObservalbFigure2.png, id=546, 846.16125pt x 160.6pt>
+<CoAPObservalbFigure2.png, id=568, 846.16125pt x 160.6pt>
 File: CoAPObservalbFigure2.png Graphic file (type png)
 
 <use CoAPObservalbFigure2.png>
@@ -1988,7 +1995,7 @@ Overfull \hbox (33.69585pt too wide) in paragraph at lines 55--56
  [][] 
  []
 
-<ping6test.png, id=553, 739.76375pt x 487.8225pt>
+<ping6test.png, id=575, 739.76375pt x 487.8225pt>
 File: ping6test.png Graphic file (type png)
  <use ping6test.png>
 Package pdftex.def Info: ping6test.png used on input line 68.
@@ -2080,18 +2087,18 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 9F79EFF142E01DFCDDA62D3AD3D298FB;2261
-(rerunfilecheck)             After:  88AC5547AFA9339E45C08B9CB45A57E1;2327.
+(rerunfilecheck)             Before: F9C3642361B730BD7AD430B80A647FFA;2520
+(rerunfilecheck)             After:  48AEAE44FAA67A48A326D240D419AA3F;2584.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
- 22955 strings out of 493304
- 334019 string characters out of 6139871
- 590190 words of memory out of 5000000
- 25637 multiletter control sequences out of 15000+600000
+ 22994 strings out of 493304
+ 334658 string characters out of 6139871
+ 590660 words of memory out of 5000000
+ 25671 multiletter control sequences out of 15000+600000
  83624 words of font info for 121 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  58i,13n,72p,1753b,1136s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2105,10 +2112,10 @@ type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (43 pages, 5865228 bytes).
+Output written on main.pdf (43 pages, 5866755 bytes).
 PDF statistics:
- 667 PDF objects out of 1000 (max. 8388607)
- 590 compressed objects within 6 object streams
- 136 named destinations out of 1000 (max. 500000)
- 20840 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 690 PDF objects out of 1000 (max. 8388607)
+ 612 compressed objects within 7 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 20872 words of extra memory for PDF output out of 24883 (max. 10000000)
 

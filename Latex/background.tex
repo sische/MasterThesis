@@ -24,6 +24,8 @@ The protocol stack of \gls{ble} has two main parts, the controller and the host.
 In the case of the network used in this thesis, when the \gls{ble} slave has been connected to a master, it stops searching for other masters, and it is not possible to connect to several masters. This means that we are only able to create a \textit{star network}, not a \textit{mesh network}. This could possibly be an idea for improvement later. Other than this, \gls{ble} seems like a very good alternative in this project. 
 
 
+Check out: Mikhail Galeev - BLE
+
 \section{6LoWPAN}
 
 %To identify sensors and devices in low energy sensor and device networks, a new protocol was needed. 
@@ -90,6 +92,11 @@ Tomorrow’s Bluetooth Smart Solutions are going to ask a lot. The nRF52 Series 
 
 % https://www.nordicsemi.com/Products/nRF52-Series-SoC
 
+\subsection{Softdevice}
+
+
+
+
 \section{Adafruit ADXL345 Accelerometer}
 
 In order to do collect data, a sensor needed to be connected to the Nordic Semiconductor nRF52. The main thought behind the thesis was to measure vibrations, and a good accelerometer was needed. The Adafruit ADXL345 accelerometer was chosen for several reasons. 
@@ -123,7 +130,7 @@ In order to do collect data, a sensor needed to be connected to the Nordic Semic
 
 \subsection{\gls{mqtt}}
 
-Anotehr transport protocol that could be used in such a network of microcontrollers is \gls{mqtt}. This is  known as a publish-subscribe based on \gls{tcp}, using a \gls{mqtt} broker. \gls{ntnu} does have a broker that is possible to use, or a broker can be rented from several other places. Here a 
+Another transport protocol that could be used in such a network of microcontrollers is \gls{mqtt}. This is  known as a publish-subscribe based on \gls{tcp}, using a \gls{mqtt} broker. \gls{ntnu} does have a broker that is possible to use, or a broker can be rented from several other places. Here a 
 
 \cite{hunkeler2008mqtt}
 
