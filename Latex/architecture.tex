@@ -69,7 +69,6 @@ The communication between the nRF52 in Figure \ref{fig:nrf52picture} and the Ras
 \section{Connecting Raspberry Pi and nRF52}
 
 
-
 As a microcontroller the nRF52 works great, both as a low-power and powerful device. 
 
 To set up the communication between these two, the two code examples TWI and Observable server from Nordic Semiconductor was used as a starting point. It was however quite tricky to set connect these two together the first time. The following recipe is what worked best. 
@@ -221,7 +220,9 @@ As soon as the sending of values is being handled in a good way, the next step i
 
 Acceleration values can only be read from the ADXL345 if this has been correctly initialized at compile time. In order to do this, code to write to and read from the registers had to be added. The initializing process is described in the accelerometer data sheet \cite{adxlDataSheet}. In short, registers for \textit{data format control, initial power saving, interrupt enable control} and \textit{the offset of each axis} has to be written to in that order before the acceleration value from the different axes can be read.  
 
-In the solution proposed in this thesis the acceleration values are being read as often as possible, limited by the processing power of the nRF52, and then stores in a simple dynamical char array before being sent and reset after one second. 
+In the solution proposed in this thesis the acceleration values are being read as often as possible, limited by the processing power of the nRF52, and then stores in a simple dynamical char array before being sent and reset after one second. This turned out to be very time consuming and hard to solve in a good way, both because of problems with initializing the accelerometer correctly and making the nRF52 read and store the values fast enough to get proper data. The ideal solution would be to read at least 1000 values every second, to get a good starting point before analysing values. Neither the nRF52 or the ADXL345 turns out to be fast enough to do this in the implemented solution.  To not loose too much time on hardware problems, it was decided to focus more on analysing the data sent over the network communication with random generated data. 
+
+Since the network connection between the nRF52 and Raspberry Pi was already stable, it was easy to generate random values of fixed length to send on the nRF52, and do measurements to calculate the optimal throughput between these two. The next chapter will therefore describe the data analysis of the data sent through this network in detail, and how to optimize the percentage of usable data being transported.  
 
 
 

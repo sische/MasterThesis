@@ -34,9 +34,8 @@
 \contentsline {subsection}{\numberline {3.4.2}Observable \gls {coap}}{16}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Stable transfer rate}{16}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}Getting acceleration values}{17}{section.3.5}
-\contentsline {chapter}{\chapternumberline {4}Measurements}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}temp/notes}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Packet fragmentation}{19}{section.4.2}
-\contentsline {section}{\numberline {4.3}Goodput vs throughput}{20}{section.4.3}
-\contentsline {chapter}{References}{21}{section*.9}
+\contentsline {chapter}{\chapternumberline {4}Network Measurements}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Packet fragmentation}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Goodput vs throughput}{20}{section.4.2}
+\contentsline {chapter}{References}{23}{section*.9}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}

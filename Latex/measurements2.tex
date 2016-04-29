@@ -3,15 +3,15 @@
 
 This chapter will display the measured data from the accelerometer, and graphs, tables and figures to try to determine the most efficient solution. 
 
-\section{temp/notes}
+%\section{temp/notes}
 
-Trying to understand the details of a capture in Wireshark. 
+%Trying to understand the details of a capture in Wireshark. 
 
-Can fragmentation give us an advangate, if you can send more data pr header. 
+%Can fragmentation give us an advangate, if you can send more data pr header. 
 
-An empty char array sent over CoAP is 76 bytes. 
-19 bytes char array, 96 bytes
-21 bytes char array, 98 bytes. Adds only as much as needed. 
+%An empty char array sent over CoAP is 76 bytes. 
+%19 bytes char array, 96 bytes
+%21 bytes char array, 98 bytes. Adds only as much as needed. 
  
 
 
@@ -20,7 +20,16 @@ An empty char array sent over CoAP is 76 bytes.
 
 In Internet Routing, \textit{fragmentation} is known as the action of splitting data into smaller packets, to satisfy the maximal limits of the different technologies used (e.g. \gls{ble} and \gls{6lowpan} in the network described in this thesis). Each of these net packets needs header fields of a certain size, or other requirements.
 
-To better understand fragmentation, imagine a train with carriages. To be able to operate at all, the train needs a locomotive with an engine driver, a conductor and a cafe carriage. As soon as these things are already there, the company owning the train gets better and better off for every passenger buying a ticket. Eventually all the carriages will be full, and a decision has to be made if it will be profitable to fit another carriage. It will in general be most profitable to use as many carriages as the locomotive can handle, and to fill up every carriage as much as possible. It will however not be a good idea to connect another carriage if there will only be one additional passenger sitting there, since the extra weight of the carriage requires additional weight to the train set. 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{trainExample.png}    
+    \caption{Packet fragmentation - train comparison}
+    \label{fig:trainExample}
+\end{figure}
+
+To better understand fragmentation, imagine a train with carriages. To be able to operate at all, the train needs a locomotive with an engine driver, a conductor and a cafe carriage. As soon as these things are already there, the company owning the train gets better and better off for every passenger buying a ticket. Lets assume that every carriage can carry 4 employees and 27 passengers, to make it directly comparable to the \gls{ble} packets in the network. Eventually all the carriages will be full, and a decision has to be made if it will be profitable to fit another carriage. It will in general be most profitable to use as many carriages as the locomotive can handle, and to fill up every carriage as much as possible. It will however not be a good idea to connect another carriage if there will only be one additional passenger sitting there, since the extra weight of the carriage requires additional weight to the train set. 
+
+
 
 In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximal number of bytes compared to the number of packets sent. This is known as \gls{fragmentation}, to maximize \textit{goodput} vs \textit{throughput}. 
 
@@ -36,7 +45,7 @@ When sending \gls{ble} packets over the network, observations from the system sh
 \end{figure}
 
 
-Figure \ref{fig:goodputThroughputGraph} shows the correlation between goodput and throughput compared to the number of packets sent. In this particular case it makes no sense to send less than 50 bytes at once, since more than 50 \% of the data will be header files. But, since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%. This graph will therefore converge to the \textit{horizontal asymptote} of 87,1 \%, just as the graph shows after just a packet size of 200 bytes. 
+Figure \ref{fig:goodputThroughputGraph} shows the correlation between goodput and throughput compared to the number of packets sent. In this particular case it makes no sense to send less than 50 bytes at once, since more than 50 \% of the data will be header files. This is comparable to have a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%. This graph will therefore converge to the \textit{horizontal asymptote} of 87,1 \%, just as the graph shows after just a packet size of 200 bytes. 
 
 
 
