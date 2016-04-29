@@ -11,10 +11,10 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345}}{11}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Nordic Semiconductor NRF52}}{12}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Raspberry Pi 3}}{13}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces CoAP Client-Server communication example}}{15}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces CoAP Client-Server example Wireshark capture}}{15}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Sequence diagram CoAP Client-Server example}}{16}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces CoAP Observable Server example}}{16}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{17}{figure.3.9}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces CoAP Client-Server communication example}}{16}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces CoAP Client-Server example Wireshark capture}}{16}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Sequence diagram CoAP Client-Server example}}{17}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP Observable Server example}}{17}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{18}{figure.4.5}
-\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Goodput compared to throughput in \%}}{20}{figure.4.1}
