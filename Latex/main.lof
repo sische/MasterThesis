@@ -5,17 +5,17 @@
 \select@language {english}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces ADXL345 Accelerometer}}{7}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Raspberry Pi 3}}{5}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Nordic Semiconductor NRF52}}{6}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces ADXL345 Accelerometer}}{8}{figure.2.3}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces System architecture}}{9}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345}}{11}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Nordic Semiconductor NRF52}}{12}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Raspberry Pi 3}}{13}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces CoAP Client-Server communication example}}{15}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces CoAP Client-Server example Wireshark capture}}{15}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Sequence diagram CoAP Client-Server example}}{16}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces CoAP Observable Server example}}{16}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{17}{figure.3.9}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces System architecture}}{11}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces CoAP Client-Server communication example}}{15}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces CoAP Client-Server example Wireshark capture}}{16}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Sequence diagram CoAP Client-Server example}}{16}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces CoAP Observable Server example}}{17}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{17}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ping nRF52, different time}}{19}{figure.3.7}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Packet fragmentation - train comparison}}{19}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Goodput compared to throughput in \%}}{20}{figure.4.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Packet fragmentation - train comparison}}{21}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Goodput compared to throughput in \%}}{24}{figure.4.2}

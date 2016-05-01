@@ -12,14 +12,15 @@ The purpose of this thesis is to build an end to end system, to be able to trans
 
 \newpage
 
-There are two main limitations in a network such as this:
+There are in general three main limitations in a network such as this:
 
 \begin{itemize}
-  \item Computational power in the different nodes 
+  \item Computational power in the different nodes
+  \item Battery capacity of the end nodes
   \item Network limitations between the nodes
 \end{itemize}
 
-A central part of the testing in this thesis will be to test the different limitations, and to understand the pros and cons of doing computations in end nodes, compared to transferring information to a server with \textit{much} more computational power. Power usage is very often closely related to computational power, and will also be a central factor. The next section will contain a walk through of the system, from the smallest to the biggest component, to explain their computational and power capabilities, and how they can communicate efficiently. 
+A central part of the testing in this thesis will be to test the different limitations, and to understand the pros and cons of doing computations in end nodes, compared to transferring information to a server with \textit{much} more computational power. Power usage is very often closely related to computational power, and will also be a central factor. The next section will contain a walk-through of the system, from the smallest to the biggest component, to explain their computational and power capabilities, and how they can communicate efficiently. 
 
 %Computational power is closely related to power usage. The nRF52 microcontroller is battery powered using a small \textit{3V Lithium CR 2032} battery. Given this limitation the computational power will be limited as well. The optimal solutions therefore seems to handle as little data as possible here. 
 
@@ -37,45 +38,35 @@ The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite str
   \item P0.26 -- SCL	\tab 	\textit{\gls{i2c} Serial Clock Line, \textcolor{brown}{brown cable} in Figure \ref{fig:nrf-adxl345}}
 \end{itemize} 
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.35]{nrf-adxl.png}    \caption{Connected nRF52 -- ADXL345}
-    \label{fig:nrf-adxl345}
-\end{figure}
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[scale=0.35]{nrf-adxl.png}    \caption{Connected nRF52 -- ADXL345}
+%    \label{fig:nrf-adxl345}
+%\end{figure}
 
 After this is done it is possible to write to and read from the registers of the accelerometer over the two SDA and SCL cables. 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.32]{nrf52.png}    \caption{Nordic Semiconductor NRF52}
-    \label{fig:nrf52picture}
-\end{figure}
+
 
 The communication between the nRF52 in Figure \ref{fig:nrf52picture} and the Raspberry Pi in Figure \ref{fig:piPicture}, is done using \gls{6lowpan} over \gls{ble}. 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.35]{pi3.png}    \caption{Raspberry Pi 3}
-    \label{fig:piPicture}
-\end{figure}
 
 
 
-
-\section{\gls{6lowpan} and \gls{ble}}
+%\section{\gls{6lowpan} and \gls{ble}} % Moved to background
 
 
 
 \section{Connecting Raspberry Pi and nRF52}
 
 
-As a microcontroller the nRF52 works great, both as a low-power and powerful device. 
+%As a microcontroller the nRF52 works good in this network, both as a low-power and powerful device. 
 
-To set up the communication between these two, the two code examples TWI and Observable server from Nordic Semiconductor was used as a starting point. It was however quite tricky to set connect these two together the first time. The following recipe is what worked best. 
+To set up the communication between a Raspberry Pi and the nRF52, the two code examples TWI and Observable server from Nordic Semiconductor was used as a starting point. It was however quite tricky to set connect these two together the first time. The following recipe is what worked best. 
 
-Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable (Note: Feb. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. \textit{Ubuntu Mate} was therefore chosen as the best and most stable \gls{os}. When this is done a resizing of the file system is needed to use all the capacity of the memory card. 
+Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable (Note: Jan. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. \textit{Ubuntu Mate} was therefore chosen as the best and most stable \gls{os}. When this is done a resizing of the file system is needed to use all the capacity of the memory card. 
 
-To use \gls{ble}, install Bluez and radvd using \textit{apt-get}:
+To use \gls{ble}, install Bluez and radvd using \textit{apt-get} in a \textit{Unix terminal}:
 
 \begin{lstlisting}
 apt-get install radvd wireshark bluez
@@ -213,6 +204,13 @@ When the observable CoAP is working fine, the next step is to determine the opti
 
 In addition, at tests, the connection turns out to be quite unstable at maximal transfer rate. Even in the test of ping shown in figure \ref{fig:pingComparison} the connection between the Raspberry Pi and the nRF52 had 14 \% packet loss, 1 out of 7 packets. Other tests showed similar results, and that any sending rate much faster than once per second was more or less unstable when sending data. After a test period it was therefore decided that the best solution would be to gather data from sensors at a higher rate, and store them in the nRF52 temporarily. Every second all the measured values are being transferred to the Raspberry Pi, the temporarily values are deleted and the measurement continues. This has proven to be a very stable solution, with successful tests over several days. 
 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{packetLossPing166stk.png}    
+    \caption{Ping nRF52, different time}
+    \label{fig:ping2}
+\end{figure}
 
 \section{Getting acceleration values}
 

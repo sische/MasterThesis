@@ -1,7 +1,7 @@
 \chapter{Network Measurements}
 \label{chp:measurements2}
 
-This chapter will display the measured data from the accelerometer, and graphs, tables and figures to try to determine the most efficient solution. 
+This chapter will display the data sending rate from the nRF52 to the Raspberry Pi in the form of and graphs, tables and figures to try to determine the most efficient 
 
 %\section{temp/notes}
 
@@ -35,7 +35,68 @@ In this example, the locomotive and employees are the \gls{6lowpan} packet, that
 
 \section{Goodput vs throughput}
 
+\subsection{First measurement}
+
 When sending \gls{ble} packets over the network, observations from the system shows that the maximum packet size over \gls{ble} is 31 bytes. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 byte is needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} (known as \textit{goodput} and \textit{throughput}) data transferred therefore start out very poorly if the payload sent is very small. 
+
+Figure \ref{fig:goodputThroughputGraph} shows the correlation between goodput and throughput compared to the number of packets sent. In this particular case it makes no sense to send less than 50 bytes at once, since more than 50 \% of the data will be header files. This is comparable to have a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%. This graph will therefore converge to the \textit{horizontal asymptote} of 87,1 \%, just as the graph shows after just a packet size of 200 bytes. 
+
+
+\begin{center}
+ \begin{tabular}{||c c c c||} 
+ \hline
+ Goodput & Throughput & NON packet size & Correlation, good/through \\ [0.5ex] 
+ \hline\hline
+ 0 & 71 & 76 & 0 \\ 
+ \hline
+ 1 & 73 & 78 & 1,37 \\
+ \hline
+ 10 & 82 & 87 & 12,20 \\
+ \hline
+ 20 & 92 & 97 & 21,74 \\
+  \hline
+ 30 & 75 & 107 & 30,0 \\
+  \hline
+ 40 & 85 & 117 & 47,06 \\
+  \hline
+ 50 & 99 & 127 & 50,51 \\
+  \hline
+ 60 & 109 & 137 & 55,05 \\
+  \hline
+ 70 & 119 & 147 & 58,82 \\
+  \hline
+ 80 & 133 & 157 & 60,15 \\
+  \hline
+ 90 & 143 & 167 & 62,94 \\
+ \hline
+ 100 & 153 & 177 & 65,36 \\
+ \hline
+ 110 & 167 & 187 & 65,87 \\
+ \hline
+ 120 & 177 & 197 & 67,80 \\
+ \hline
+ 130 & 191 & 207 & 68,06 \\
+ \hline
+ 140 & 207 & 217 & 69,65 \\
+ \hline
+ 150 & 211 & 227 & 71,09 \\
+ \hline
+ 160 & 225 & 237 & 71,11 \\
+ \hline
+ 170 & 235 & 247 & 72,34 \\
+ \hline
+ 180 & 253 & 257 & 71,15 \\
+ \hline
+ 190 & 263 & 267 & 72,24 \\
+ \hline
+ 200 & 277 & 277 & 72,20 \\ [1ex] 
+ \hline
+\end{tabular}
+\caption{Measurements, BLE, constant length}
+\label{table:1}
+\end{center}
+
+
 
 \begin{figure}[ht]
     \centering
@@ -45,10 +106,11 @@ When sending \gls{ble} packets over the network, observations from the system sh
 \end{figure}
 
 
-Figure \ref{fig:goodputThroughputGraph} shows the correlation between goodput and throughput compared to the number of packets sent. In this particular case it makes no sense to send less than 50 bytes at once, since more than 50 \% of the data will be header files. This is comparable to have a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%. This graph will therefore converge to the \textit{horizontal asymptote} of 87,1 \%, just as the graph shows after just a packet size of 200 bytes. 
+\subsection{Discussion}
 
+Even though this first test was done with a very limited amount of data transferred, it is easy to see that the curve clearly flattens out to the asymptote of the graph at 87,1 \%. The next step would normally be to transfer a larger amount of data, just to verify that these assumptions are true. The limitations of transfer rate is not nearly yet met by either \gls{ble} or \gls{6lowpan}. This test will therefore be explained in the next section. 
 
-
+However, given that there is already a clear limit in figure \ref{fig:goodputThroughputGraph} even before the transfer rate reached 200 bytes, way before expected, it also makes sense to test various other transfer protocols. If it is possible to find a way of transportation that could give a higher mathematical maximum, and also get to this limit faster, it would be very profitable to the transfer of goodput in the system. Because the stable transfer interval at the moment is once every second, it also makes sense to test \gls{coap} with \gls{ack} for every packet, \textit{CON} instead of \textit{NON}. Maybe this means that the header files can be smaller for each packet, and that the useful amount of data sent true therefore will be higher. 
 
 
 

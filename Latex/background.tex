@@ -13,9 +13,9 @@ This thesis describes the setup and usage of an End-to-End \gls{iot} system. In 
 
 %\section{Challenges}
 
-\section{Bluetooth Low Energy}
+\section{Bluetooth Low Energy} Turtle up
 
-Read this: http://chapters.comsoc.org/vancouver/BTLER3.pdf 
+Read this: 
 
 \gls{ble} is a wireless technology for short range communication developed by the Bluetooth Special Interest Group \cite{gomez2012overview}. The idea was to create a low energy single-hop network solution for \glspl{pan}. A major advantage of this is that Bluetooth 4.0 is already a well established technology in cell phones, laptops and several other devices, and \gls{ble} can use several similarities with this. The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot} \cite{hui2008extending}.
 
@@ -24,7 +24,12 @@ The protocol stack of \gls{ble} has two main parts, the controller and the host.
 In the case of the network used in this thesis, when the \gls{ble} slave has been connected to a master, it stops searching for other masters, and it is not possible to connect to several masters. This means that we are only able to create a \textit{star network}, not a \textit{mesh network}. This could possibly be an idea for improvement later. Other than this, \gls{ble} seems like a very good alternative in this project. 
 
 
+
 Check out: Mikhail Galeev - BLE
+
+\subsection{\gls{hci}}
+
+\subsection{\gls{acl}}
 
 \section{6LoWPAN}
 
@@ -44,6 +49,14 @@ In addition to this, the paper argues that \gls{6lowpan} was developed to be use
 
 Developed by Element 14, the Raspberry Pi has become a central tool for many people wanting to get started using microcomputers. This was therefore a natural starting point for us as well. 
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.35]{pi3.png}    \caption{Raspberry Pi 3}
+    \label{fig:piPicture}
+\end{figure}
+
+
+
 The Raspberry Pi 2 model B+ is the second generation of its kind, and its \textit{ARMv7 processor} has approximately six times the performance of the predecessor \cite{raspberryPi2}. With a USB Bluetooth dongle connected, it is quite simple to enable both \gls{6lowpan} and \gls{ble}, given that the right Unix kernel has been used in the \gls{os} of the Pi.
 
 Later in this thesis, the processing power of the Pi compared to performing calculations in the end-points will be a central topic for discussion. 
@@ -57,6 +70,12 @@ Along with the Raspberry Pi, we needed a good and stable operating system with a
 The nRF52 is developed by Nordic Semiconductor, and is being described as a family of highly flexible, multi-protocol system on chip. 
 
 % Kok 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.32]{nrf52.png}    \caption{Nordic Semiconductor NRF52}
+    \label{fig:nrf52picture}
+\end{figure}
 
 \cite{nrf52Nordic}
 
