@@ -142,7 +142,7 @@ Nordic Semiconductor has provided several examples along with the nRF52-DK docum
 
 As a first step, the nRF52 needed to communicate with the Raspberry Pi. As explained in section 2.6, a good starting point for this is to use the \gls{coap} trasnport protocol, and the example of the use of this on the device. The \textit{CoAP Server} and \textit{CoAP Observer} was loaded into two different nRF52 devices, and both of them connected to the Raspberry Pi. Now \gls{radvd} had to be activated on the Pi, to be able to use this as a \textit{forwarding server}. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.47]{CoAPExample.png}    
     \caption{CoAP Client-Server communication example}
@@ -158,7 +158,7 @@ Figure \ref{fig:CoAPexample1} shows the initial CoAP example, by using two nRF52
 
 When packets are captured using \textit{Wireshark}, we get the following capture: 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.27]{CoapEx1captureCropped2.png}    
     \caption{CoAP Client-Server example Wireshark capture}
@@ -168,7 +168,7 @@ When packets are captured using \textit{Wireshark}, we get the following capture
 
 This gives us the sequence diagram shown in Figure \ref{fig:seq1}. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.27]{seq1.png}    
     \caption{Sequence diagram CoAP Client-Server example}
@@ -181,7 +181,7 @@ This works fine, but in the case of the system built in this thesis there is no 
 
 In the given Nordic example of a \gls{coap} observable server, this problem can be resolved. It is here easy to set up a server that can be observed by either a nRF52 client or a \gls{ble} forwarding server. The observable end point sends a \textit{CON-ACK request} in a given time interval to assure that the observing client is still there. As long as this message is being responded the server will continue to send data without any requirements of an \gls{ack}. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.47]{CoAPObservalbFigure2.png}    
     \caption{CoAP Observable Server example}
@@ -194,7 +194,7 @@ In the given Nordic example of a \gls{coap} observable server, this problem can 
 
 When the observable CoAP is working fine, the next step is to determine the optimal transfer rate of the connection. Since the number of messages sent has been halved, it should be possible use this as an advantage. However, the link in itself is quite slow. The limitations in \gls{ble} and \gls{6lowpan} makes this much slower than a normal \gls{ipv6} connection, and the \textit{ping} \gls{rtt} varies from 100 ms all the way up to over 600 ms. As a comparison, to \textit{ping google.com} from the same Raspberry Pi using \gls{ipv6} takes on average 15 ms. A comparison of this is shown in figure \ref{fig:pingComparison}. This is therefore a clear limitation of sending rate in the system. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{ping6test.png}    
     \caption{Comparison: ping nRF52 and ping google.com}
@@ -205,7 +205,7 @@ When the observable CoAP is working fine, the next step is to determine the opti
 In addition, at tests, the connection turns out to be quite unstable at maximal transfer rate. Even in the test of ping shown in figure \ref{fig:pingComparison} the connection between the Raspberry Pi and the nRF52 had 14 \% packet loss, 1 out of 7 packets. Other tests showed similar results, and that any sending rate much faster than once per second was more or less unstable when sending data. After a test period it was therefore decided that the best solution would be to gather data from sensors at a higher rate, and store them in the nRF52 temporarily. Every second all the measured values are being transferred to the Raspberry Pi, the temporarily values are deleted and the measurement continues. This has proven to be a very stable solution, with successful tests over several days. 
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{packetLossPing166stk.png}    
     \caption{Ping nRF52, different time}
@@ -223,5 +223,16 @@ In the solution proposed in this thesis the acceleration values are being read a
 Since the network connection between the nRF52 and Raspberry Pi was already stable, it was easy to generate random values of fixed length to send on the nRF52, and do measurements to calculate the optimal throughput between these two. The next chapter will therefore describe the data analysis of the data sent through this network in detail, and how to optimize the percentage of usable data being transported.  
 
 
+\section{Raspberry Pi to Network Computer or Server}
+
+When running the Unix based \gls{os} Ubuntu Mate, the raspberry Pi can be used more or less as a regular computer. This has a pre installed version of the most basic programs needed, for instance \textit{Mozilla Firefox Browser}, \textit{Pluma text editor} and \textit{Unix terminal}. This means that the user has several options on how to process data on this device: 
+
+\begin{itemize}
+  \item No computation: Forward all data directly to a computer with more computational power
+  \item Some computation: Analyse the data to find data that is not relevant to filter out
+  \item Full computation: Do a full analyse of the data. The results can then be posted directly to a server or displayed on a web page. 
+\end{itemize}
+
+Which of these three that is most relevant depends on the data, and how computational power is needed. 
 
 

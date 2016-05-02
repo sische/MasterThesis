@@ -1,7 +1,7 @@
 \chapter{Network Measurements}
 \label{chp:measurements2}
 
-This chapter will display the data sending rate from the nRF52 to the Raspberry Pi in the form of and graphs, tables and figures to try to determine the most efficient 
+This chapter will display the experiments conducted on data sending rate from the nRF52 to the Raspberry Pi in the form of and graphs, tables and figures to try to determine the most efficient combination of amount of data to send, sending frequency as well as protocols to use. 
 
 %\section{temp/notes}
 
@@ -18,7 +18,9 @@ This chapter will display the data sending rate from the nRF52 to the Raspberry 
 
 \section{Packet fragmentation}
 
-In Internet Routing, \textit{fragmentation} is known as the action of splitting data into smaller packets, to satisfy the maximal limits of the different technologies used (e.g. \gls{ble} and \gls{6lowpan} in the network described in this thesis). Each of these net packets needs header fields of a certain size, or other requirements.
+In Internet Routing, \textit{fragmentation} is known as the action of splitting data into smaller packets, to satisfy the maximal limits of the different technologies or protocols used (e.g. \gls{ble} and \gls{6lowpan} in the network described in this thesis). Each of these packets needs header fields of a certain size, or other requirements.
+
+To better understand fragmentation, imagine a train with carriages as shown in Figure \ref{fig:trainExample}. To be able to operate at all, the train needs a locomotive with an engine driver, a conductor and a cafe carriage. As soon as these things are already there, the company owning the train gets better and better off for every passenger buying a ticket. Lets assume that every carriage can carry 4 employees and 27 passengers, to make it directly comparable to the \gls{ble} packets in the network. Eventually all the carriages will be full, and a decision has to be made if it will be profitable to fit another carriage. It will in general be most profitable to use as many carriages as the locomotive can handle, and to fill up every carriage as much as possible. It will however not be a good idea to connect another carriage if there will only be one additional passenger sitting there, since the extra weight of the carriage adds unnecessary additional weight to the train set compared to the income. 
 
 \begin{figure}[ht]
     \centering
@@ -27,25 +29,20 @@ In Internet Routing, \textit{fragmentation} is known as the action of splitting 
     \label{fig:trainExample}
 \end{figure}
 
-To better understand fragmentation, imagine a train with carriages. To be able to operate at all, the train needs a locomotive with an engine driver, a conductor and a cafe carriage. As soon as these things are already there, the company owning the train gets better and better off for every passenger buying a ticket. Lets assume that every carriage can carry 4 employees and 27 passengers, to make it directly comparable to the \gls{ble} packets in the network. Eventually all the carriages will be full, and a decision has to be made if it will be profitable to fit another carriage. It will in general be most profitable to use as many carriages as the locomotive can handle, and to fill up every carriage as much as possible. It will however not be a good idea to connect another carriage if there will only be one additional passenger sitting there, since the extra weight of the carriage requires additional weight to the train set. 
+In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what to get the train working. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximal number of bytes compared to the number of packets sent. This is known as \textit{fragmentation}, to maximize \textit{goodput} vs \textit{throughput}. 
 
 
-
-In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximal number of bytes compared to the number of packets sent. This is known as \gls{fragmentation}, to maximize \textit{goodput} vs \textit{throughput}. 
-
-\section{Goodput vs throughput}
-
-\subsection{First measurement}
+\section{CoAP NON}
 
 When sending \gls{ble} packets over the network, observations from the system shows that the maximum packet size over \gls{ble} is 31 bytes. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 byte is needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} (known as \textit{goodput} and \textit{throughput}) data transferred therefore start out very poorly if the payload sent is very small. 
 
-Figure \ref{fig:goodputThroughputGraph} shows the correlation between goodput and throughput compared to the number of packets sent. In this particular case it makes no sense to send less than 50 bytes at once, since more than 50 \% of the data will be header files. This is comparable to have a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%. This graph will therefore converge to the \textit{horizontal asymptote} of 87,1 \%, just as the graph shows after just a packet size of 200 bytes. 
+Figure \ref{fig:goodputThroughputGraph} shows the correlation between goodput and throughput compared to the number of packets sent. In this particular case it makes no sense to send less than 50 bytes at once, since more than 50 \% of the data will be header files. This is comparable to have a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%. Mathematically, this is described as a \textit{horizontal asymptote} since the distance between the graph and \textit{y = 87,1} will approach zero after an infinite number of bytes has been transferred. The graph will therefore converge to 87,1 \%, just as shown in figure \ref{fig:goodputThroughputGraph}, even before packet size of 200 bytes.  
 
 
 \begin{center}
  \begin{tabular}{||c c c c||} 
  \hline
- Goodput & Throughput & NON packet size & Correlation, good/through \\ [0.5ex] 
+ Goodput & Throughput & NON packet size & (Goodput/Throughput)*100 \\ [0.5ex] 
  \hline\hline
  0 & 71 & 76 & 0 \\ 
  \hline
@@ -113,6 +110,15 @@ Even though this first test was done with a very limited amount of data transfer
 However, given that there is already a clear limit in figure \ref{fig:goodputThroughputGraph} even before the transfer rate reached 200 bytes, way before expected, it also makes sense to test various other transfer protocols. If it is possible to find a way of transportation that could give a higher mathematical maximum, and also get to this limit faster, it would be very profitable to the transfer of goodput in the system. Because the stable transfer interval at the moment is once every second, it also makes sense to test \gls{coap} with \gls{ack} for every packet, \textit{CON} instead of \textit{NON}. Maybe this means that the header files can be smaller for each packet, and that the useful amount of data sent true therefore will be higher. 
 
 
+\section{CoAP NON, with more data}
 
+\subsection{Discussion}
 
+\section{CoAP CON}
+
+\subsection{Discussion}
+
+\subsection{CoAP CON, with more data}
+
+\subsection{Discussion}
 

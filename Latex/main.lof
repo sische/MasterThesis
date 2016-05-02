@@ -15,7 +15,8 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Sequence diagram CoAP Client-Server example}}{16}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces CoAP Observable Server example}}{17}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{17}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Ping nRF52, different time}}{19}{figure.3.7}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ping nRF52, different time}}{20}{figure.3.7}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Packet fragmentation - train comparison}}{21}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Packet fragmentation - train comparison}}{22}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Goodput compared to throughput in \%}}{24}{figure.4.2}
+\addvspace {10pt}

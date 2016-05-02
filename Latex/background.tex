@@ -29,7 +29,7 @@ Check out: Mikhail Galeev - BLE
 
 \subsection{\gls{hci}}
 
-\subsection{\gls{acl}}
+\subsection{ACL}
 
 \section{6LoWPAN}
 
@@ -51,7 +51,8 @@ Developed by Element 14, the Raspberry Pi has become a central tool for many peo
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.35]{pi3.png}    \caption{Raspberry Pi 3}
+    \includegraphics[scale=0.35]{pi3.png}    
+    \caption{Raspberry Pi 3}
     \label{fig:piPicture}
 \end{figure}
 
@@ -71,9 +72,10 @@ The nRF52 is developed by Nordic Semiconductor, and is being described as a fami
 
 % Kok 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.32]{nrf52.png}    \caption{Nordic Semiconductor NRF52}
+    \includegraphics[scale=0.32]{nrf52.png}    
+    \caption{Nordic Semiconductor NRF52}
     \label{fig:nrf52picture}
 \end{figure}
 
@@ -128,7 +130,7 @@ In order to do collect data, a sensor needed to be connected to the Nordic Semic
 \end{itemize}
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.32]{ADXL345.png}    \caption{ADXL345 Accelerometer}
     \label{fig:adxl345}
@@ -138,12 +140,14 @@ In order to do collect data, a sensor needed to be connected to the Nordic Semic
 
 \section{Transport protocols}
 
+\subsection{Network layers}
+
 \subsection{\gls{coap}}
 
 %The \\ protocol is described in the documentation as follows: 
 
 \gls{coap} is a transport protocol designed to be used in constrained networks for \gls{m2m} communication. It is \gls{udp} based, and works good in low-power and lossy networks. It can be used with microcontrollers, and with \gls{ipv6} and \gls{6lowpan}. Both GET and PUSH functionality can be used, as well as \textit{observable} GET. This means that a server can "subscribe" to end notes in the network, and get updates either after a given timespan or when changes have been made. This therefore looked like a promising protocol to use, and was chosen as the first transport protocol to test the network \cite{shelby2014constrained}.
-   
+ 
 
 
 
@@ -154,6 +158,7 @@ Another transport protocol that could be used in such a network of microcontroll
 \cite{hunkeler2008mqtt}
 
 \subsection{\gls{radvd}}
+
 
 \section{Software tools}
 
