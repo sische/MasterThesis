@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  2 MAY 2016 16:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  3 MAY 2016 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1767,7 +1767,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 30.
 
-<pi3.png, id=452, 1053.9375pt x 664.4825pt>
+<pi3.png, id=454, 1053.9375pt x 664.4825pt>
 File: pi3.png Graphic file (type png)
  <use pi3.png>
 Package pdftex.def Info: pi3.png used on input line 54.
@@ -1781,7 +1781,7 @@ Overfull \hbox (4.88365pt too wide) in paragraph at lines 54--55
 Underfull \vbox (badness 2080) has occurred while \output is active []
 
  [4]
-<nrf52.png, id=467, 1208.515pt x 729.72626pt>
+<nrf52.png, id=469, 1208.515pt x 729.72626pt>
 File: nrf52.png Graphic file (type png)
  <use nrf52.png>
 Package pdftex.def Info: nrf52.png used on input line 77.
@@ -1811,7 +1811,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.90 
-      <./nrf52.png>] <ADXL345.png, id=483, 727.71875pt x 499.8675pt>
+      <./nrf52.png>] <ADXL345.png, id=485, 727.71875pt x 499.8675pt>
 File: ADXL345.png Graphic file (type png)
 
 <use ADXL345.png>
@@ -1847,7 +1847,7 @@ l.166
 
 
 ]
-<MasterArchitecture.png, id=519, 524.96124pt x 385.44pt>
+<MasterArchitecture.png, id=521, 524.96124pt x 385.44pt>
 File: MasterArchitecture.png Graphic file (type png)
 
 <use MasterArchitecture.png>
@@ -1900,7 +1900,7 @@ tooth/6lowpan_control[]
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 141.
 
-<CoAPExample.png, id=560, 893.3375pt x 310.15875pt>
+<CoAPExample.png, id=562, 893.3375pt x 310.15875pt>
 File: CoAPExample.png Graphic file (type png)
  <use CoAPExample.png>
 Package pdftex.def Info: CoAPExample.png used on input line 147.
@@ -1910,7 +1910,7 @@ Overfull \hbox (55.86868pt too wide) in paragraph at lines 147--148
  [][] 
  []
 
-[14] <CoapEx1captureCropped2.png, id=575, 1391.1975pt x 540.0175pt>
+[14] <CoapEx1captureCropped2.png, id=577, 1391.1975pt x 540.0175pt>
 File: CoapEx1captureCropped2.png Graphic file (type png)
 
 <use CoapEx1captureCropped2.png>
@@ -1921,7 +1921,7 @@ Overfull \hbox (11.62834pt too wide) in paragraph at lines 163--164
  [][] 
  []
 
-<seq1.png, id=577, 1102.1175pt x 282.05376pt>
+<seq1.png, id=579, 1102.1175pt x 282.05376pt>
 File: seq1.png Graphic file (type png)
  <use seq1.png>
 Package pdftex.def Info: seq1.png used on input line 173.
@@ -1937,7 +1937,7 @@ l.180 \subsection
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 180.
 
-<CoAPObservalbFigure2.png, id=588, 846.16125pt x 160.6pt>
+<CoAPObservalbFigure2.png, id=590, 846.16125pt x 160.6pt>
 File: CoAPObservalbFigure2.png Graphic file (type png)
 
 <use CoAPObservalbFigure2.png>
@@ -1961,7 +1961,7 @@ l.196
                                                   \fi \fi 
 l.196 
        <./CoapEx1captureCropped2.png> <./seq1.png>]
-<ping6test.png, id=599, 739.76375pt x 487.8225pt>
+<ping6test.png, id=601, 739.76375pt x 487.8225pt>
 File: ping6test.png Graphic file (type png)
  <use ping6test.png>
 Package pdftex.def Info: ping6test.png used on input line 199.
@@ -1984,7 +1984,7 @@ l.206
                                                   \fi \fi 
 l.206 
        <./CoAPObservalbFigure2.png> <./ping6test.png>]
-<packetLossPing166stk.png, id=606, 751.80875pt x 969.6225pt>
+<packetLossPing166stk.png, id=608, 751.80875pt x 969.6225pt>
 File: packetLossPing166stk.png Graphic file (type png)
 
 <use packetLossPing166stk.png>
@@ -2008,7 +2008,7 @@ l.117 \include{architecture}
                              <./packetLossPing166stk.png>]
 \openout2 = `measurements2.aux'.
 
- (./measurements2.tex <trainExample.png, id=628, 710.655pt x 275.0275pt>
+ (./measurements2.tex <trainExample.png, id=630, 710.655pt x 275.0275pt>
 File: trainExample.png Graphic file (type png)
  <use trainExample.png>
 Package pdftex.def Info: trainExample.png used on input line 27.
@@ -2065,7 +2065,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.94 \end{center}
                   <./trainExample.png>]
-<graph1.png, id=644, 1584.92125pt x 798.985pt>
+<graph1.png, id=646, 1584.92125pt x 798.985pt>
 File: graph1.png Graphic file (type png)
  <use graph1.png>
 Package pdftex.def Info: graph1.png used on input line 100.
@@ -2075,21 +2075,38 @@ Overfull \hbox (32.22934pt too wide) in paragraph at lines 100--101
  [][] 
  []
 
+<CONvsNON1.png, id=647, 857.2025pt x 772.8875pt>
+File: CONvsNON1.png Graphic file (type png)
+ <use CONvsNON1.png>
+Package pdftex.def Info: CONvsNON1.png used on input line 109.
+(pdftex.def)             Requested size: 385.73756pt x 347.79616pt.
+
+Overfull \hbox (21.73756pt too wide) in paragraph at lines 109--110
+ [][] 
+ []
+
 [23]) [24pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.121 \include{measurements2}
-                              <./graph1.png>]
+                              <./graph1.png>] [25pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.4.3}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.121 \include{measurements2}
+                              <./CONvsNON1.png>]
 \openout2 = `dataAnalysis.aux'.
 
- (./dataAnalysis.tex [25
+ (./dataAnalysis.tex [26
 
 
 
-])
-[26] (./main.bbl
+]
+[27]) [28] (./main.bbl
 bibitemlist
 
 Overfull \hbox (32.02689pt too wide) in paragraph at lines 4--8
@@ -2114,7 +2131,7 @@ Underfull \hbox (badness 2922) in paragraph at lines 15--18
 b/.  Ac-cessed:
  []
 
-) [27
+) [29
 
 
 ]
@@ -2137,15 +2154,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
 (./measurements2.aux) (./dataAnalysis.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 001BCE2C2BBD3B2A975C7AD539058884;3188.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 060A8613AF75B7EF3403997C4164839E;3176
-(rerunfilecheck)             After:  001BCE2C2BBD3B2A975C7AD539058884;3188.
 
 LaTeX Warning: There were undefined references.
 
@@ -2155,10 +2166,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 23089 strings out of 493304
- 336134 string characters out of 6139871
- 593552 words of memory out of 5000000
- 25749 multiletter control sequences out of 15000+600000
+ 23098 strings out of 493304
+ 336256 string characters out of 6139871
+ 593604 words of memory out of 5000000
+ 25754 multiletter control sequences out of 15000+600000
  84050 words of font info for 125 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  58i,12n,72p,1753b,1136s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2173,10 +2184,10 @@ nts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (45 pages, 4960824 bytes).
+Output written on main.pdf (47 pages, 4989184 bytes).
 PDF statistics:
- 749 PDF objects out of 1000 (max. 8388607)
- 669 compressed objects within 7 object streams
- 151 named destinations out of 1000 (max. 500000)
- 20954 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 760 PDF objects out of 1000 (max. 8388607)
+ 677 compressed objects within 7 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 20959 words of extra memory for PDF output out of 24883 (max. 10000000)
 
