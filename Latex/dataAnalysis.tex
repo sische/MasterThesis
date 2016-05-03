@@ -1,0 +1,32 @@
+\chapter{Data Anaysis discussion}
+\label{chp:dataAnalysis}
+
+IDEA: "Collect" the strings put out in the first chapter, which told us the challenges in a system of microcontrollers. This chapter could tell what we learned from the system, and what is still a challenge. Or should all of this be in the Result chapter? 
+
+\section{Data analysis in microcontrollers}
+
+\section{Computational Power}
+
+\subsection{Power consumption}
+
+
+\section{Devices used}
+
+
+\subsection{Raspberry Pi}
+
+
+
+\subsection{nRF52}
+
+The nRF52 is perhaps the biggest disappointment in the system, from the authors perspective. 
+
+
+As a comparison, take the successful hybrid car Toyota Prius. Even though the factory tells that the car is able to drive X kilometres per liter of fuel used, this is only possible for a trained driver in a fixed environment. The average driver can still use the car, but is not skilful enough to drive as careful when it comes to power usage. The average driver therefore ends up using up the batteries much faster than the test driver, and uses the petrol powered engine after this. It may still be more economical than a normal car, but it is worth discussing if this is optimal, given that a car with two engines is more heavy and expensive to make in a direct comparison with a fully petrol powered car. 
+
+Its the same story with the nRF52. A professional skilled programmer working on this specific device from Nordic Semiconductor will be able to use the low power abilities and still use do efficient computations. When starting from the example code for the device that is not optimized for power consumption and trying to make it do more and more work, the battery consumption simply is too much for this device. An average programmer will not have specific experience enough to program this device to be power efficient. 
+
+In the case of the system built in this thesis, the small CR 2033 batteries was drained so fast that an additional power source was needed to keep a stable and reliable system, since tests has shown that the probability of an nRF52 disconnecting from the connected \gls{ble} service is higher at low battery. This meant connecting either a power bank with higher capacity or drain power from an outlet using a micro \gls{usb}. In this case, it would have been able to use the Raspberry Pi right away, since this needs the same source of power. This means in the end, that the system only had low performance end points that still needed a power source. 
+
+
+  
