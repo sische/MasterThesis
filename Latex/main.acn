@@ -100,5 +100,5 @@
 (indexentry :tkey (("6LoWPAN" "\\glossentry{6lowpan}") ) :locref "{}{23}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("CoAP" "\\glossentry{coap}") ) :locref "{}{24}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("ACK" "\\glossentry{ack}") ) :locref "{}{24}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("BLE" "\\glossentry{ble}") ) :locref "{}{28}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("USB" "\\glossentry{usb}") ) :locref "{}{28}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("BLE" "\\glossentry{ble}") ) :locref "{}{30}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("USB" "\\glossentry{usb}") ) :locref "{}{30}" :attr "pageglsnumberformat" ) 
