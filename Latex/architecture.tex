@@ -1,19 +1,22 @@
 \chapter{System Architecture}
 \label{chp:architecture} 
 
-The purpose of this thesis is to build an end to end system, to be able to transfer data all the way from a sensor connected to a microcontroller to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read and transfer data efficiently. 
+The purpose of this thesis is to build an end-to-end system, to be able to transfer data all the way from a sensor connected to a microcontroller to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read and transfer data efficiently. 
 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.7]{MasterArchitecture.png}    \caption{System architecture}
+    \includegraphics[scale=0.7]{MasterArchitecture2.png}    \caption{System architecture}
     \label{fig:systemArchitecture}
 \end{figure}
 
-\newpage
+Figure \ref{fig:systemArchitecture} shows how the complete end-to-end system of this thesis is set up. In short terms, the \textit{Nordic Semiconductor nRF52} is connected to a  \textit{Raspberry Pi 3} using \gls{6lowpan} and \gls{ble}. This means that they are able to communicate using \gls{ipv6} addresses, even though the nRF52 only has a bluetooth antenna built in. The limitations of \gls{ble} means that the nRF52 can only connect to \textit{one} device at the time. Several of these put together are therefore forming a \textit{star network} using the \textit{Raspberry Pi} as a central point of connection. Computations can now either be done in the end nodes at the \textit{nRF52s}, at the \textit{Raspberry Pi}, or forwarded to a web server or another computer with more computational power. Data can also be displayed directly to a web page from the \textit{Raspberry Pi}. 
+ 
+%\newpage
 
 There are in general three main limitations in a network such as this:
 
+\renewcommand{\labelitemi}{$\textasteriskcentered$}
 \begin{itemize}
   \item Computational power in the different nodes
   \item Battery capacity of the end nodes
@@ -22,21 +25,21 @@ There are in general three main limitations in a network such as this:
 
 A central part of the testing in this thesis will be to test the different limitations, and to understand the pros and cons of doing computations in end nodes, compared to transferring information to a server with \textit{much} more computational power. Power usage is very often closely related to computational power, and will also be a central factor. The next section will contain a walk-through of the system, from the smallest to the biggest component, to explain their computational and power capabilities, and how they can communicate efficiently. 
 
-%Computational power is closely related to power usage. The nRF52 microcontroller is battery powered using a small \textit{3V Lithium CR 2032} battery. Given this limitation the computational power will be limited as well. The optimal solutions therefore seems to handle as little data as possible here. 
+Computational power is closely related to power usage. The nRF52 microcontroller is battery powered using a small \textit{3V Lithium CR 2032} battery. Given this limitation the computational power will be limited as well. The optimal solutions therefore seems to handle as little data as possible here. 
 
 
-%Figure \ref{fig:systemArchitecture} shows how the complete End-to-End system of this thesis is set up. In short terms, the \textit{ADXL345 Accelerometer} is connected to a \textit{Nordic Semiconductor nRF52} using the \gls{i2c} interface. This requires four cables (noted from nRF52 to ADXL345): 
 
-\section{Connecting nRF52 and ADXL345}
 
-The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite straight forward using the nRF52. Connection scheme is as follows (nRF52 -> ADXL345): 
+%\section{Connecting nRF52 and ADXL345}
 
-\begin{itemize}
-  \item 5V -- VIN		\tab  	\textit{Power source, \textcolor{green}{green cable} in Figure\ref{fig:nrf-adxl345}}
-  \item GND -- GND 		\tab 	\textit{Ground, \textcolor{red}{red cable} in Figure \ref{fig:nrf-adxl345}}
-  \item P0.27 -- SDA	\tab	\textit{\gls{i2c} Serial Data Line, \textcolor{orange}{orange cable} in Figure \ref{fig:nrf-adxl345}}
-  \item P0.26 -- SCL	\tab 	\textit{\gls{i2c} Serial Clock Line, \textcolor{brown}{brown cable} in Figure \ref{fig:nrf-adxl345}}
-\end{itemize} 
+%The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite straight forward using the nRF52. Connection scheme is as follows (nRF52 -> ADXL345): 
+
+%\begin{itemize}
+%  \item 5V -- VIN		\tab  	\textit{Power source, \textcolor{green}{green cable} in Figure\ref{fig:nrf-adxl345}}
+%  \item GND -- GND 		\tab 	\textit{Ground, \textcolor{red}{red cable} in Figure \ref{fig:nrf-adxl345}}
+ % \item P0.27 -- SDA	\tab	\textit{\gls{i2c} Serial Data Line, \textcolor{orange}{orange cable} in Figure \ref{fig:nrf-adxl345}}
+ % \item P0.26 -- SCL	\tab 	\textit{\gls{i2c} Serial Clock Line, \textcolor{brown}{brown cable} in Figure \ref{fig:nrf-adxl345}}
+%\end{itemize} 
 
 %\begin{figure}[ht]
 %    \centering
@@ -44,11 +47,9 @@ The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite str
 %    \label{fig:nrf-adxl345}
 %\end{figure}
 
-After this is done it is possible to write to and read from the registers of the accelerometer over the two SDA and SCL cables. 
+%After this is done it is possible to write to and read from the registers of the accelerometer over the two SDA and SCL cables. 
 
 
-
-The communication between the nRF52 in Figure \ref{fig:nrf52picture} and the Raspberry Pi in Figure \ref{fig:piPicture}, is done using \gls{6lowpan} over \gls{ble}. 
 
 
 
@@ -62,7 +63,7 @@ The communication between the nRF52 in Figure \ref{fig:nrf52picture} and the Ras
 
 %As a microcontroller the nRF52 works good in this network, both as a low-power and powerful device. 
 
-To set up the communication between a Raspberry Pi and the nRF52, the two code examples TWI and Observable server from Nordic Semiconductor was used as a starting point. It was however quite tricky to set connect these two together the first time. The following recipe is what worked best. 
+To set up the communication between a Raspberry Pi and the nRF52, the two code examples TWI and Observable server from Nordic Semiconductor was used as a starting point for coding on the nRF52. It was however quite tricky to set connect these two together the first time. The following recipe is what worked best. 
 
 Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable (Note: Jan. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. \textit{Ubuntu Mate} was therefore chosen as the best and most stable \gls{os}. When this is done a resizing of the file system is needed to use all the capacity of the memory card. 
 
@@ -74,7 +75,7 @@ apt-get upgrade
 apt-get update
 \end{lstlisting}
 
-To activate \gls{ipv6} forwarding, uncomment the following line in \textit{etc/sysctl.conf}
+To activate \gls{ipv6} forwarding, uncomment the following line (remove "\#") in the file \textit{etc/sysctl.conf}
 
 \begin{verbatim}
 net.ipv6.conf.all.forwarding=1
@@ -136,7 +137,7 @@ Using the basic example of the observable server it was easy to send \gls{coap} 
 
 \section{Nordic Semiconductor example code}
 
-Nordic Semiconductor has provided several examples along with the nRF52-DK documentation, that can be used as a starting point when programming applications to the device. 
+Nordic Semiconductor has provided several examples along with the nRF52-DK documentation, that can be used as a starting point when programming applications to the device. These files are written in the programming language \textit{C}. 
 
 \subsection{\gls{coap}}
 
@@ -175,11 +176,17 @@ This gives us the sequence diagram shown in Figure \ref{fig:seq1}.
     \label{fig:seq1}
 \end{figure}
 
-This works fine, but in the case of the system built in this thesis there is no need to receive a confirmation for every single message. The system is meant to be used with tools for analysing, and it is not essential that data needs to get to its destination right away. It therefore makes sense to send messages in an \textit{\gls{udp} fashion}, where packages are being sent right away without acknowledgement. This halves the number of packages sent, saves a lot of the network as well as actions needed to be done by the nRF52 where power consumption is a huge issue. Therefore the \textit{\gls{coap} Observable} function looked like an even better solution.   
+This works fine, and by writing a Python script running on the \textit{Raspberry Pi} it is possible to request data by \textit{GET messages} as soon as the \textit{nRF52} is ready. However, as shown in figure \ref{fig:pingComparison} and figure \ref{fig:ping2}, the network transfer rate can vary a lot. The limitations in \gls{ble} and \gls{6lowpan} makes this much slower than a normal \gls{ipv6} connection, and the \textit{ping} \gls{rtt} varies from 100 ms all the way up to over 600 ms. As a comparison, to \textit{ping google.com} from the same Raspberry Pi using \gls{ipv6} takes on average 15 ms. A comparison of this is shown in figure \ref{fig:pingComparison}. This is therefore a clear limitation of sending rate in the system. Because of this, the maximum transfer rate achieved in the system using the standard \gls{coap} server example is one message every 200 ms. 
+
+Using the standard \gls{coap}, described as \textit{CoAP CON} in this thesis, messages are sent with a "\gls{tcp} mindset". This means that every message sent by the client must receive an \gls {ack}. This is very stable, and ensures that every message gets to its destination, but it requires a lot of unnecessary computational power in the leaf node in systems where the importance of each message is not that high. The system is meant to be used with tools for analysing, and it is not essential that data needs to get to its destination right away. In these cases there is another alternative, known in this thesis as \textit{CoAP NON}. This is more like a "\textit{gls{udp} mindset}", where each packet does \textit{not} need an \gls{ack}. This halves the number of packages sent, saves a lot of the network as well as actions needed to be done by the nRF52 where power consumption is a huge issue. Therefore the \textit{\gls{coap} Observable} function looked very interesting, and will therefore be directly compared to \textit{standard gls{coap}} later in this thesis.   
+
+%To improve this, the best solution is to either 
+
+%This works fine, but in the case of the system built in this thesis there is no need to receive a confirmation for every single message.  It therefore makes sense to send messages in an \textit{\gls{udp} fashion}, where packages are being sent right away without acknowledgement. .   
 
 \subsection{Observable \gls{coap}}
 
-In the given Nordic example of a \gls{coap} observable server, this problem can be resolved. It is here easy to set up a server that can be observed by either a nRF52 client or a \gls{ble} forwarding server. The observable end point sends a \textit{CON-ACK request} in a given time interval to assure that the observing client is still there. As long as this message is being responded the server will continue to send data without any requirements of an \gls{ack}. 
+In the given Nordic example of a \gls{coap} observable server, the problem of unnecessary packets being sent can be resolved. Using this it is easy to set up a server that can be observed by either a nRF52 client or a \gls{ble} forwarding server. The observable end point sends a \textit{CON-ACK request} in a given time interval to assure that the observing client is still there. As long as this message is being responded the server will continue to send data without any requirements of an \gls{ack}. 
 
 \begin{figure}[ht]
     \centering
@@ -192,7 +199,7 @@ In the given Nordic example of a \gls{coap} observable server, this problem can 
 
 \subsection{Stable transfer rate}
 
-When the observable CoAP is working fine, the next step is to determine the optimal transfer rate of the connection. Since the number of messages sent has been halved, it should be possible use this as an advantage. However, the link in itself is quite slow. The limitations in \gls{ble} and \gls{6lowpan} makes this much slower than a normal \gls{ipv6} connection, and the \textit{ping} \gls{rtt} varies from 100 ms all the way up to over 600 ms. As a comparison, to \textit{ping google.com} from the same Raspberry Pi using \gls{ipv6} takes on average 15 ms. A comparison of this is shown in figure \ref{fig:pingComparison}. This is therefore a clear limitation of sending rate in the system. 
+When the observable CoAP is working fine, the next step is to determine the optimal transfer rate of the connection. Since the number of messages sent has been halved, it should be possible use this as an advantage. However, the link in itself is quite slow.
 
 \begin{figure}[ht]
     \centering
@@ -202,32 +209,36 @@ When the observable CoAP is working fine, the next step is to determine the opti
 \end{figure}
 
 
-In addition, at tests, the connection turns out to be quite unstable at maximal transfer rate. Even in the test of ping shown in figure \ref{fig:pingComparison} the connection between the Raspberry Pi and the nRF52 had 14 \% packet loss, 1 out of 7 packets. Other tests showed similar results, and that any sending rate much faster than once per second was more or less unstable when sending data. After a test period it was therefore decided that the best solution would be to gather data from sensors at a higher rate, and store them in the nRF52 temporarily. Every second all the measured values are being transferred to the Raspberry Pi, the temporarily values are deleted and the measurement continues. This has proven to be a very stable solution, with successful tests over several days. 
-
+When tested, the connection turns out to be quite unstable at maximal transfer rate. Even in the test of ping shown in figure \ref{fig:pingComparison} the connection between the Raspberry Pi and the nRF52 had 14 \% packet loss, 1 out of 7 packets. Other tests showed similar results, and that any sending rate much faster than once per second was more or less unstable when sending data. A more stable and quicker test was later done, as shown in \ref{fig:ping2}. After a test period it was therefore decided that the best solution would be to gather data from sensors at a higher rate, and store them in the nRF52 temporarily. Every second all the measured values are being transferred to the Raspberry Pi, the temporarily values are deleted and the measurement continues. This has proven to be a very stable solution, with successful tests over several days. 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.5]{packetLossPing166stk.png}    
+    \includegraphics[scale=0.4]{ping3.png}    
     \caption{Ping nRF52, different time}
     \label{fig:ping2}
 \end{figure}
 
-\section{Getting acceleration values}
+\newpage
 
-As soon as the sending of values is being handled in a good way, the next step is to read acceleration values from the ADXL345 accelerometer, which is connected to the NRF52 using the \gls{i2c} interface. 
+For \textit{CoAP CON} with \glspl{ack} however, the story is not the same. Here it is possible to \textit{GET} values as soon as the network allows, in best case every 200 ms during tests in this network. This makes quite a huge difference when testing the different protocols, as \textit{CoAP CON} can send a lot more \textit{goodput} per second, but \textit{CoAP NON} requires less power to send each message, and a much higher percentage of the packets sent through the network contains useful data. 
 
-Acceleration values can only be read from the ADXL345 if this has been correctly initialized at compile time. In order to do this, code to write to and read from the registers had to be added. The initializing process is described in the accelerometer data sheet \cite{adxlDataSheet}. In short, registers for \textit{data format control, initial power saving, interrupt enable control} and \textit{the offset of each axis} has to be written to in that order before the acceleration value from the different axes can be read.  
+%\section{Getting acceleration values}
 
-In the solution proposed in this thesis the acceleration values are being read as often as possible, limited by the processing power of the nRF52, and then stores in a simple dynamical char array before being sent and reset after one second. This turned out to be very time consuming and hard to solve in a good way, both because of problems with initializing the accelerometer correctly and making the nRF52 read and store the values fast enough to get proper data. The ideal solution would be to read at least 1000 values every second, to get a good starting point before analysing values. Neither the nRF52 or the ADXL345 turns out to be fast enough to do this in the implemented solution.  To not loose too much time on hardware problems, it was decided to focus more on analysing the data sent over the network communication with random generated data. 
+%As soon as the sending of values is being handled in a good way, the next step is to read acceleration values from the ADXL345 accelerometer, which is connected to the NRF52 using the \gls{i2c} interface. 
 
-Since the network connection between the nRF52 and Raspberry Pi was already stable, it was easy to generate random values of fixed length to send on the nRF52, and do measurements to calculate the optimal throughput between these two. The next chapter will therefore describe the data analysis of the data sent through this network in detail, and how to optimize the percentage of usable data being transported.  
+%Acceleration values can only be read from the ADXL345 if this has been correctly initialized at compile time. In order to do this, code to write to and read from the registers had to be added. The initializing process is described in the accelerometer data sheet \cite{adxlDataSheet}. In short, registers for \textit{data format control, initial power saving, interrupt enable control} and \textit{the offset of each axis} has to be written to in that order before the acceleration value from the different axes can be read.  
+
+%In the solution proposed in this thesis the acceleration values are being read as often as possible, limited by the processing power of the nRF52, and then stores in a simple dynamical char array before being sent and reset after one second. This turned out to be very time consuming and hard to solve in a good way, both because of problems with initializing the accelerometer correctly and making the nRF52 read and store the values fast enough to get proper data. The ideal solution would be to read at least 1000 values every second, to get a good starting point before analysing values. Neither the nRF52 or the ADXL345 turns out to be fast enough to do this in the implemented solution.  To not loose too much time on hardware problems, it was decided to focus more on analysing the data sent over the network communication with random generated data. 
+
+%Since the network connection between the nRF52 and Raspberry Pi was already stable, it was easy to generate random values of fixed length to send on the nRF52, and do measurements to calculate the optimal throughput between these two. The next chapter will therefore describe the data analysis of the data sent through this network in detail, and how to optimize the percentage of usable data being transported.  
 
 
 \section{Raspberry Pi to Network Computer or Server}
 
-When running the Unix based \gls{os} Ubuntu Mate, the raspberry Pi can be used more or less as a regular computer. This has a pre installed version of the most basic programs needed, for instance \textit{Mozilla Firefox Browser}, \textit{Pluma text editor} and \textit{Unix terminal}. This means that the user has several options on how to process data on this device: 
+When running the Unix based \gls{os} Ubuntu Mate, the raspberry Pi can be used more or less as a regular computer. This has a pre-installed version of the most basic programs needed, for instance \textit{Mozilla Firefox Browser}, \textit{Pluma text editor} and \textit{Unix terminal}. This means that the user has several options on how to process data on this device: 
 
 \begin{itemize}
+  \item No computation: All data arrives as useful data, and can be posted directly to a web page or a server for storage
   \item No computation: Forward all data directly to a computer with more computational power
   \item Some computation: Analyse the data to find data that is not relevant to filter out
   \item Full computation: Do a full analyse of the data. The results can then be posted directly to a server or displayed on a web page. 

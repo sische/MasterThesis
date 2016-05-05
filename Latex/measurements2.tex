@@ -31,12 +31,33 @@ To better understand fragmentation, imagine a train with carriages as shown in F
 
 In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what to get the train working. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximal number of bytes compared to the number of packets sent. This is known as \textit{fragmentation}, to maximize \textit{goodput} vs \textit{throughput}. 
 
+\section{CoAP CON}
+
+As explained in Chapter \ref{chp:architecture}, CoAP CON messages can be sent quite frequently, but every message needs to get an \gls{ack} before the next message can be sent. This means that it is quite fast, but a lot of packets needs to be send to get usable data through. 
+
+In this particular 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{wiresharkCoAPCON0byte.png}    
+    \caption{Wireshark capture, CoAP CON, 0 bytes goodput}
+    \label{fig:coapCON0200}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.45]{CoAP_CONgraph2.png}    
+    \caption{CoAP CON, 0-200 bytes sent}
+    \label{fig:coapCON0200}
+\end{figure}
+
+Figure \ref{fig:coapCON0200} shows the correlation between goodput and throughput compared to the number of packets sent.
 
 \section{CoAP NON}
 
 When sending \gls{ble} packets over the network, observations from the system shows that the maximum packet size over \gls{ble} is 31 bytes. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 byte is needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} (known as \textit{goodput} and \textit{throughput}) data transferred therefore start out very poorly if the payload sent is very small. 
 
-Figure \ref{fig:goodputThroughputGraph} shows the correlation between goodput and throughput compared to the number of packets sent. In this particular case it makes no sense to send less than 50 bytes at once, since more than 50 \% of the data will be header files. This is comparable to have a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%. Mathematically, this is described as a \textit{horizontal asymptote} since the distance between the graph and \textit{y = 87,1} will approach zero after an infinite number of bytes has been transferred. The graph will therefore converge to 87,1 \%, just as shown in figure \ref{fig:goodputThroughputGraph}, even before packet size of 200 bytes.  
+In this particular case it makes no sense to send less than 50 bytes at once, since more than 50 \% of the data will be header files. This is comparable to have a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%. Mathematically, this is described as a \textit{horizontal asymptote} since the distance between the graph and \textit{y = 87,1} will approach zero after an infinite number of bytes has been transferred. The graph will therefore converge to 87,1 \%, just as shown in figure \ref{fig:goodputThroughputGraph}, even before packet size of 200 bytes.  
 
 
 \begin{center}

@@ -7,8 +7,8 @@ A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: background.aux
 A level-1 auxiliary file: architecture.aux
-A level-1 auxiliary file: measurements.aux
 A level-1 auxiliary file: measurements2.aux
+A level-1 auxiliary file: dataAnalysis.aux
 The style file: chicago.bst
 Database file #1: main.bib
 I was expecting a `,' or a `}'---line 53 of file main.bib
