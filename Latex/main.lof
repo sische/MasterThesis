@@ -19,9 +19,12 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Packet fragmentation - train comparison}}{22}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Wireshark capture, CoAP CON, 0 bytes goodput}}{23}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces CoAP CON, 0-200 bytes sent}}{24}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Goodput compared to throughput in \%}}{25}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON}}{26}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces CON vs NON 0-200 bytes}}{27}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces CON vs NON 200-950 bytes}}{27}{figure.4.7}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Wireshark capture, CoAP CON, 100 bytes goodput}}{24}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP CON, 0-200 bytes sent}}{25}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Wireshark capture, CoAP CON, 700 bytes goodput}}{27}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CoAP CON, 200 bytes to 1 kB}}{28}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Goodput compared to throughput in \%}}{29}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CON vs NON}}{30}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces CON vs NON 0-200 bytes}}{31}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces CON vs NON 200-950 bytes}}{31}{figure.4.10}
 \addvspace {10pt}

@@ -39,11 +39,15 @@ Before these experiements started, the expected results was that sending a small
 
 When sending \gls{ble} packets over the network, observations from the system shows that the maximum packet size over \gls{ble} is 31 bytes. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 byte is needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} (known as \textit{goodput} and \textit{throughput}) data transferred therefore start out very poorly if the payload sent is very small.
 
-The best possible percentage of useful data we can hope to acheive will also be limited by this, 27 bytes goodput and 4 bytes header field. 
+The best possible percentage of useful data we can hope to acheive will also be limited by this, 27 bytes goodput and 4 bytes header field, shown in the following calculation.  
 
-\begin{verbatim}
-27/31*100% \approx 87,1 %
-\end{verbatim}
+\begin{align}
+    27/31*100\% \approx 87,1 \%
+\end{align}
+
+
+
+
 
 In the actual system the number will quite certain be a lot lower than this. Both because header files in \gls{6lowpan} packages needs some bytes, and because of other limitations. 
 
@@ -62,25 +66,31 @@ As explained in Chapter \ref{chp:architecture}, \gls{coap} CON messages can be s
 
 % Comment: Lage "utdrag", eller bare en liten del av Wireshark screenshot her, og legge hele i Appendix for å få det til å bli tydeligere? 
 
-Figure \ref{fig:coapCON0Wireshark} shows an excerpt of a capture of packets in Wireshark. The full capture can be seen in the Appendix (?). In this case an empty char array was sent, meaning an goodput equal to 0 byte. All of these bytes are therefore sent to route packages through the network. The maximum of 31 bytes per \gls{ble} packet have been exceeded twice, meaning that three packets needed to be sent. The first packet is labeled \textit{[Reassembled in #40]}, the second \textit{[Continuation to #38]} and the last \textit{Connection oriented channel}. After this, the \gls{ack} packages follows, two packages of 58 and 50 bytes, respectively. The last bytes received tells how many packages was completed, as a built in feature in \gls{ble}  \gls{hci}  and \gls{acl}. All of these packages can fit into one \gls{6lowpan packet}, since the total number of bytes are less than 270 bytes. 
 
-
-INSERT FIGURE SENDING 100 BYTES? 
-
-In FIGURE 100 BYTES, 100 bytes of goodput is being sent through. We can see that the same basic packages are needed are still there, but in addition the 100 bytes are added. This means that the percentage of useful data sent through is a lot higher, approximatley 55 \% in this case. By doing several experiments like this, it became possible to create the graph in 
-Figure \ref{fig:coapCON0200}.
+%something wrong
+Figure \ref{fig:coapCON0Wireshark} shows an excerpt of a capture of packets in Wireshark. The full capture can be seen in the Appendix (?). In this case an empty char array was sent, meaning an goodput equal to 0 byte. All of these bytes are therefore sent to route packages through the network. The maximum of 31 bytes per \gls{ble} packet have been exceeded twice, meaning that three packets needed to be sent. The first packet is labeled \textit{[Reassembled in \#40]}, the second \textit{[Continuation to \#38]} and the last \textit{Connection oriented channel}. After this, the \gls{ack} packages follows, two packages of 58 and 50 bytes, respectively. The last bytes received tells how many packages was completed, as a built in feature in \gls{ble}  \gls{hci}  and \gls{acl}. All of these packages can fit into one \gls{6lowpan} packet, since the total number of bytes are less than 270 bytes. 
 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.45]{CoAP_CONgraph2.png}    
+    \includegraphics[width=\textwidth]{wiresharkCON100bytes.png}    
+    \caption{Wireshark capture, CoAP CON, 100 bytes goodput}
+    \label{fig:coapCON100Wireshark}
+\end{figure}
+
+In figure \ref{fig:coapCON100Wireshark}, 100 bytes of goodput is being sent through. The same basic packages needed are still there, but in addition the 100 bytes of data is added. This means adding more \gls{ble} packets, but also that the percentage of useful data sent through is a lot higher, approximatley 55 \% in this case. By doing several experiments like this, it was possible to create the graph in Figure \ref{fig:coapCON0200}. This shows the correlation between goodput and throughput compared to the number of packets sent, measured every 10th byte from 0 byte to 200 bytes large packets.
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.43]{CoAP_CONgraph2.png}    
     \caption{CoAP CON, 0-200 bytes sent}
     \label{fig:coapCON0200}
 \end{figure}
 
-Figure \ref{fig:coapCON0200} shows the correlation between goodput and throughput compared to the number of packets sent, measured every 10th byte from 0 byte to 200 bytes large packets.
 
-In this particular case it makes no sense to send less than 50 bytes at once, since more than 50 \% of the data will be header files. This is comparable to have a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%. Mathematically, this is described as a \textit{horizontal asymptote} since the distance between the graph and \textit{y = 87,1} will approach zero after an infinite number of bytes has been transferred. The graph will therefore converge to 87,1 \%, just as shown in figure \ref{fig:goodputThroughputGraph}, even before packet size of 200 bytes.  
+
+In this particular case it makes no sense to send less than 50 bytes of useful data at once, since more than 50 \% of the bytes sent will be header files. This is comparable to having a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%, as shown in equation 4.1. Mathematically, this is described as a \textit{horizontal asymptote} since the distance between the graph and \textit{y = 87,1} will approach zero after an infinite number of bytes has been transferred. The graph will therefore converge to 87,1 \%, just as shown in figure \ref{fig:coapCON0200}, even before packet size of 200 bytes.  
 
 \subsection{Discussion}
 
@@ -90,28 +100,31 @@ Even though this first test was done with a very limited amount of data transfer
 However, given that there is already a clear limit in figure \ref{fig:goodputThroughputGraph} even before the transfer rate reached 200 bytes, way before expected, it also makes sense to test various other transfer protocols. If it is possible to find a way of transportation that could give a higher mathematical maximum, and also get to this limit faster, it would be very profitable to the transfer of goodput in the system. Because the stable transfer interval at the moment is once every second, it also makes sense to test \gls{coap} with \gls{ack} for every packet, \textit{CON} instead of \textit{NON}. Maybe this means that the header files can be smaller for each packet, and that the useful amount of data sent true therefore will be higher. 
 
 
-\section{CoAP NON, with more data}
+\section{CoAP CON with more data}
 
-\subsection{Discussion}
+To see what happened when the limit of a \gls{6lowpan} packet was breached, tests was being set up to send bigger amounts of data than 200 bytes. This would also be a good way to prove that the percentage of goodput will converge to 87,1 \%, only considering \gls{ble} packets. The following test and examples will therefore send a fixed number of bytes at once from 0 to 1000 bytes (1 kB), with a 50 byte interval. As before, the messages are being sent as soon as possible, meaning approximately  four messages per second using \gls{coap} \gls{con}. 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\textwidth]{wireshark_CoAP_CON700bytes.png}    
+    \includegraphics[width=\textwidth]{Wireshark700bytes2.png}    
     \caption{Wireshark capture, CoAP CON, 700 bytes goodput}
     \label{fig:coapCON700Wireshark}
 \end{figure}
 
-In figure \ref{fig:coapCON700Wireshark} a lot more data has been sent through. 
+Figure \ref{fig:coapCON700Wireshark} shows one of these cases, where 700 bytes of data are being sent at once. In total 889 bytes are being sent, with a \gls{con} packet size of 774 bytes. This gives a percentage of goodput at 78.74 \%. The maximum packet length of a \gls{6lowpan} packet in this system of 270 bytes is therefore exceeded, as we can see in the figure. After 8 \gls{ble} packages of 31 bytes each has been sent, there is only room for 22 bytes in the last packet before the \gls{6lowpan} packet is full. This is repeated several times, once for each \gls{6lowpan} packet, until the last \gls{ble} packets at the size of 17 bytes. After this the standard packages for \gls{ack} and \textit{Number of completed packages} follows. This is in general a good example on how fragmentation of packets works in this system. 
 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{plotCoAPCON200-k.png}    
+    \caption{CoAP CON, 200 bytes to 1 kB}
+    \label{fig:plotCoAPCON200toK}
+\end{figure}
+
+Using these results it was possible to plot the graph in figure \ref{fig:plotCoAPCON200toK}. 
 
 
 \section{CoAP NON}
-
-
-
-
-
-
 
 
 \begin{figure}[ht]
@@ -220,7 +233,7 @@ In figure \ref{fig:coapCON700Wireshark} a lot more data has been sent through.
  200 & 277 & 277 & 72,20 \\ [1ex] 
  \hline
 \end{tabular}
-\caption{Measurements, BLE, constant length}
+%\caption{Measurements, BLE, constant length}
 \label{table:1}
 \end{center}
 
