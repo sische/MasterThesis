@@ -42,9 +42,9 @@
 \contentsline {subsection}{\numberline {4.2.1}Discussion}{25}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}CoAP CON with more data}{26}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}CoAP NON}{26}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}CoAP NON, with more data}{27}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{30}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Time spent in network}{30}{section.4.4}
+\contentsline {subsection}{\numberline {4.3.1}CoAP NON, with more data}{28}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{31}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Time spent in network}{31}{section.4.4}
 \contentsline {chapter}{\chapternumberline {5}Data Anaysis discussion}{33}{chapter.5}
 \contentsline {section}{\numberline {5.1}Data analysis in microcontrollers}{33}{section.5.1}
 \contentsline {section}{\numberline {5.2}Computational Power}{33}{section.5.2}

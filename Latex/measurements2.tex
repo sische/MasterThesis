@@ -111,6 +111,58 @@ To see what happened when the limit of a \gls{6lowpan} packet was breached, test
     \label{fig:coapCON700Wireshark}
 \end{figure}
 
+\begin{table}[]
+\centering
+\caption{Wireshark CoAP CON 700 bytes}
+\label{coapCON700table}
+\begin{tabular}{lllll}
+\hline
+Number & Time    & Protocol & Length & Info                             \\ \hline
+%\rowcolor{blue} 
+53     & 3.2570  & CoAP     & 774    & ACK, MID:35081, 2.05 Content     \\
+%\rowcolor[HTML]{38FFF8} 
+54     & 3.2727  & CoAP     & 113    & CON, MID:35082, GET	              \\
+55     & 3.4671  & HCI\_ACL & 31     & Rcvd {[}Reassembled in \#63{]}   \\
+56     & 3.4747  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#55{]}  \\
+57     & 3.5374  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#55{]}  \\
+58     & 3.5375  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#55{]}  \\
+59     & 3.6077  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#55{]}  \\
+60     & 3.6078  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#55{]}  \\
+61     & 3.6767  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#55{]}  \\
+62     & 3.6782  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#55{]}  \\
+63     & 3.7533  & L2CAP    & 22     & Rcvd Connection oriented channel \\
+64     & 3.7534  & L2CAP    & 16     & Sent LE Flow Control             \\
+65     & 3.8172  & HCI\_EVT & 7      & Rcvd Number of Completed Packets \\
+66     & 3.8172  & HCI\_ACL & 31     & Rcvd {[}Reassembled in \#74{]}   \\
+67     & 3.8185  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#66{]}  \\
+68     & 3.9575  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#66{]}  \\
+69     & 3.9577  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#66{]}  \\
+70     & 4.0266  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#66{]}  \\
+71     & 4.0342  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#66{]}  \\
+72     & 4.0979  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#66{]}  \\
+73     & 4.0982  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#66{]}  \\
+74     & 4.1671  & L2CAP    & 22     & Rcvd Connection oriented channel \\
+75     & 4.2372  & HCI\_ACL & 31     & Rcvd {[}Reassembled in \#83{]}   \\
+76     & 4.2373  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#75{]}  \\
+77     & 4.3075  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#75{]}  \\
+78     & 4.3076  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#75{]}  \\
+79     & 4.3777  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#75{]}  \\
+80     & 4.4466  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#75{]}  \\
+81     & 4.4480  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#75{]}  \\
+82     & 4.4481  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#75{]}  \\
+83     & 4.5170  & L2CAP    & 22     & Rcvd Connection oriented channel \\
+84     & 4.5871  & HCI\_ACK & 31     & Rcvd {[}Reassembled in \#86{]}   \\
+85     & 4.5875  & HCI\_ACL & 31     & Rcvd {[}Continuation to \#84{]}  \\
+86     & 4.6574  & L2CAP    & 17     & Rcvd Connection oriented channel \\
+87     & 4.6731  & L2CAP    & 58     & Rcvd Connection oriented channel \\
+88     & 4.6732  & L2CAP    & 50     & Rcvd Connection oriented channel \\
+%\rowcolor[HTML]{38FFF8} 
+89     & 4.6577  & CoAP     & 774    & ACK, MID:35082, 2.05 Content     \\
+%\rowcolor[HTML]{38FFF8} 
+90     & 4.6729  & CoAP     & 113    & NON, MID:35083, GET              \\ \hline
+\end{tabular}
+\end{table}
+
 Figure \ref{fig:coapCON700Wireshark} shows one of these cases, where 700 bytes of data are being sent at once. In total 889 bytes are being sent, with a \gls{con} packet size of 774 bytes. This gives a percentage of goodput at 78.74 \%. The maximum packet length of a \gls{6lowpan} packet in this system of 270 bytes is therefore exceeded, as we can see in the figure. After 8 \gls{ble} packages of 31 bytes each has been sent, there is only room for 22 bytes in the last packet before the \gls{6lowpan} packet is full. This is repeated several times, once for each \gls{6lowpan} packet, until the last \gls{ble} packets at the size of 17 bytes. After this the standard packages for \gls{ack} and \textit{Number of completed packages} follows. This is in general a good example on how fragmentation of packets works in this system. 
 
 
@@ -254,11 +306,13 @@ Table \ref{coapNON700table} shows the packets captured in Wireshark when 700 byt
 The previous tests shows 
 
 
+Calcumate time for \gls{coap} \gls{non}, 700 bytes sent:
 
 \begin{align}
-    27/31*100\% \approx 87,1 \%
+    ((55.9578-54.7750)+(57.1476-55.9578)+\\(58.3379-57.1476))/3 = 1.1876
 \end{align}
 
+ 	0.1876/3 = 0.0625
 
 
 
