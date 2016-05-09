@@ -10,6 +10,7 @@ A level-1 auxiliary file: architecture.aux
 A level-1 auxiliary file: measurements2.aux
 A level-1 auxiliary file: dataAnalysis.aux
 The style file: chicago.bst
+A level-1 auxiliary file: appendix.aux
 Database file #1: main.bib
 I was expecting a `,' or a `}'---line 53 of file main.bib
  : @article{Author: 
@@ -21,13 +22,6 @@ Warning--to sort, need author or key in raspberryPi2
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--to sort, need author or key in nrf52Nordic
-Warning--no key, author in adxlDataSheet
-Warning--no author, editor, or organization in adxlDataSheet
-Warning--to sort, need author or key in adxlDataSheet
-Warning--no key, author in adxlDataSheet
-Warning--no author, editor, or organization in adxlDataSheet
-Warning--no key, author in adxlDataSheet
-Warning--no author, editor, or organization in adxlDataSheet
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--no key, author in nrf52Nordic
@@ -36,9 +30,6 @@ Warning--no key, author in raspberryPi2
 Warning--no author, editor, or organization in raspberryPi2
 Warning--no key, author in raspberryPi2
 Warning--no author, editor, or organization in raspberryPi2
-Warning--no key, author in adxlDataSheet
-Warning--no author, editor, or organization in adxlDataSheet
-Warning--empty year in adxlDataSheet
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--empty year in nrf52Nordic
@@ -48,45 +39,45 @@ Warning--empty year in raspberryPi2
 Warning--no journal in shelby2014constrained
 Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
-You've used 8 entries,
+You've used 7 entries,
             2861 wiz_defined-function locations,
-            666 strings with 6312 characters,
-and the built_in function-call counts, 4918 in all, are:
-= -- 443
+            662 strings with 6158 characters,
+and the built_in function-call counts, 4536 in all, are:
+= -- 405
 > -- 261
 < -- 2
 + -- 80
 - -- 84
-* -- 434
-:= -- 762
-add.period$ -- 25
-call.type$ -- 8
-change.case$ -- 52
-chr.to.int$ -- 8
-cite$ -- 53
-duplicate$ -- 161
-empty$ -- 367
+* -- 400
+:= -- 727
+add.period$ -- 22
+call.type$ -- 7
+change.case$ -- 47
+chr.to.int$ -- 7
+cite$ -- 38
+duplicate$ -- 145
+empty$ -- 323
 format.name$ -- 100
-if$ -- 976
+if$ -- 894
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 5
-newline$ -- 42
+newline$ -- 37
 num.names$ -- 50
-pop$ -- 69
+pop$ -- 57
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 89
 quote$ -- 0
-skip$ -- 141
+skip$ -- 132
 stack$ -- 0
-substring$ -- 288
-swap$ -- 57
+substring$ -- 264
+swap$ -- 52
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 160
-warning$ -- 33
+type$ -- 140
+warning$ -- 23
 while$ -- 48
 width$ -- 0
-write$ -- 105
+write$ -- 93
 (There was 1 error message)

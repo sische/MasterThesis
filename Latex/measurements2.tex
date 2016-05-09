@@ -68,7 +68,7 @@ As explained in Chapter \ref{chp:architecture}, \gls{coap} CON messages can be s
 
 
 %something wrong
-Figure \ref{fig:coapCON0Wireshark} shows an excerpt of a capture of packets in Wireshark. The full capture can be seen in the Appendix (?). In this case an empty char array was sent, meaning an goodput equal to 0 byte. All of these bytes are therefore sent to route packages through the network. The maximum of 31 bytes per \gls{ble} packet have been exceeded twice, meaning that three packets needed to be sent. The first packet is labeled \textit{[Reassembled in \#40]}, the second \textit{[Continuation to \#38]} and the last \textit{Connection oriented channel}. After this, the \gls{ack} packages follows, two packages of 58 and 50 bytes, respectively. The last bytes received tells how many packages was completed, as a built in feature in \gls{ble}  \gls{hci}  and \gls{acl}. All of these packages can fit into one \gls{6lowpan} packet, since the total number of bytes are less than 270 bytes. 
+Figure \ref{fig:coapCON0Wireshark} shows an excerpt of a capture of packets in Wireshark. The full capture can be seen in the Appendix \ref{chp:appendix}. In this case an empty char array was sent, meaning an goodput equal to 0 byte. All of these bytes are therefore sent to route packages through the network. The maximum of 31 bytes per \gls{ble} packet have been exceeded twice, meaning that three packets needed to be sent. The first packet is labeled \textit{[Reassembled in \#40]}, the second \textit{[Continuation to \#38]} and the last \textit{Connection oriented channel}. After this, the \gls{ack} packages follows, two packages of 58 and 50 bytes, respectively. The last bytes received tells how many packages was completed, as a built in feature in \gls{ble}  \gls{hci}  and \gls{acl}. All of these packages can fit into one \gls{6lowpan} packet, since the total number of bytes are less than 270 bytes. 
 
 
 \begin{figure}[ht]
@@ -100,7 +100,7 @@ Even though this first test was done with a very limited amount of data transfer
 However, given that there is already a clear limit in figure \ref{fig:goodputThroughputGraph} even before the transfer rate reached 200 bytes, way before expected, it also makes sense to test various other transfer protocols. If it is possible to find a way of transportation that could give a higher mathematical maximum, and also get to this limit faster, it would be very profitable to the transfer of goodput in the system. Because the stable transfer interval at the moment is once every second, it also makes sense to test \gls{coap} with \gls{ack} for every packet, \textit{CON} instead of \textit{NON}. Maybe this means that the header files can be smaller for each packet, and that the useful amount of data sent true therefore will be higher. 
 
 
-\section{CoAP CON with more data}
+\subsection{CoAP CON with more data}
 
 To see what happened when the limit of a \gls{6lowpan} packet was breached, tests was being set up to send bigger amounts of data than 200 bytes. This would also be a good way to prove that the percentage of goodput will converge to 87,1 \%, only considering \gls{ble} packets. The following test and examples will therefore send a fixed number of bytes at once from 0 to 1000 bytes (1 kB), with a 50 byte interval. As before, the messages are being sent as soon as possible, meaning approximately  four messages per second using \gls{coap} \gls{con}. 
 
@@ -116,32 +116,110 @@ Figure \ref{fig:coapCON700Wireshark} shows one of these cases, where 700 bytes o
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\textwidth]{plotCoAPCON200-k.png}    
-    \caption{CoAP CON, 200 bytes to 1 kB}
+    \includegraphics[width=\textwidth]{wireshark200-K_7.png}    
+    \caption{CoAP CON plot, 200 bytes to 1 kB}
     \label{fig:plotCoAPCON200toK}
 \end{figure}
 
-Using these results it was possible to plot the graph in figure \ref{fig:plotCoAPCON200toK}. 
+Using these results it was possible to plot the graph in figure \ref{fig:plotCoAPCON200toK}. Here it is easy to see the same trends as in  \ref{fig:coapCON0200}, but in more detail over a wider span of bytes sent. These results are as expected after the previous tests, and in compliance with the calculations done in equation 4.1. 
+
+In this example points in the graph was denoted every 50th byte sent. This gives us 
 
 
 \section{CoAP NON}
 
+In order to optimize the network, it makes sense to look into \gls{coap} \gls{non} in addition to \gls{con}. A \gls{non} request does not require a response in form of an \gls{ack}. This means that the 108 bytes sent to and handled by the end node can be skipped, which means less computational power and network capacity needed. This solution makes sense to use in networks where the demand for all data is low, since packets can be lost without the use of \glspl{ack}. 
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.25]{graph1.png}    
-    \caption{Goodput compared to throughput in \%}
-    \label{fig:goodputThroughputGraph}
-\end{figure}
+The basic idea was here to check if data could be sent even faster without \glspl{ack}. However, this system turned out to be quite unstable at these high rates, and chased after running for a few seconds. To get the system stable the sending rate was slowed down to once every second. 
 
+*Bilde 4 LEDs?*
 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.45]{CONvsNON1.png}    
-    \caption{CON vs NON}
-    \label{fig:CONvsNON}
+    \includegraphics[scale=0.40]{coapNON0Bytes_PartOfWireshark.png}    
+    \caption{CoAP NON 0 bytes Wireshark capture}
+    \label{fig:NON0bytesPartOfWireshark}
 \end{figure}
+
+\subsection{CoAP NON, with more data}
+
+A basic example of this connection is shown in figure \ref{fig:NON0bytesPartOfWireshark}. The entire Wireshark capture can be seen in Appendix \ref{chp:appendix}. This is directly comparable to figure \ref{fig:coapCON100Wireshark}, that shows a Wireshark capture of \gls{coap} \gls{con} packages. It is easy to see that a lot fewer packages needs to be sent using \gls{ble}, and no use of \glspl{ack}. The total amount of bytes sent is 31+31+9=71 bytes, meaning three \gls{ble} packages and one \gls{6lowpan} packet. This is less than half of what was needed using \gls{coap} \gls{con}, where the 108 \gls{ack} packages was needed in addition. The packets are still recognizable the same way as before, the first packet is labeled \textit{[Reassembled in \#40]}, the second \textit{[Continuation to \#38]} and the last \textit{Connection oriented channel}.
+
+Fewer packages sent means less energy used, less network capacity needed and less computational power in the end node. Hopefully this will lead to a higher percentage of goodput compared to throughput as well. 
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.40]{rsz_1coapnon_wireshark700fullscreen.png}    
+    \caption{CoAP NON 700 bytes Wireshark capture}
+    \label{fig:NON7000bytesFullWireshark}
+\end{figure}
+
+The same in the form of a table: 
+
+\begin{table}[]
+\centering
+\caption{Wireshark CoAP NON 700 bytes}
+\label{coapNON700table}
+\begin{tabular}{lllll}
+\hline
+Number & Time    & Protocol & Length & Info                             \\ \hline
+264    & 57.1476 & CoAP     & 777    & NON, MID:3, 2.05 Content         \\
+265    & 57.2177 & HCI\_ACL & 31     & Rcvd {[}Reassembled in \#273{]}  \\
+266    & 57.2178 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#265{]} \\
+267    & 57.2879 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#265{]} \\
+268    & 57.2943 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#265{]} \\
+269    & 57.3570 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#265{]} \\
+270    & 57.3583 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#265{]} \\
+271    & 57.4272 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#265{]} \\
+272    & 57.4286 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#265{]} \\
+273    & 57.4975 & L2CAP    & 22     & Rcvd Connection oriented channel \\
+274    & 57.4979 & L2CAP    & 16     & Sent LE Flow Control             \\
+275    & 57.5676 & HCI\_ACL & 31     & Rcvd {[}Reassembled in \#284{]}  \\
+276    & 57.5685 & HCI\_EVT & 7      & Rcvd Number of Completed Packets \\
+277    & 57.5753 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#275{]} \\
+278    & 57.6378 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#275{]} \\
+279    & 57.6379 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#275{]} \\
+279    & 57.7080 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#275{]} \\
+280    & 57.7082 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#275{]} \\
+281    & 57.7771 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#275{]} \\
+282    & 57.7785 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#275{]} \\
+283    & 57.7785 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#275{]} \\
+284    & 57.8474 & L2CAP    & 22     & Rcvd Connection oriented channel \\
+285    & 57.9176 & HCI\_ACL & 31     & Rcvd {[}Reassembled in \#293{]}  \\
+286    & 57.9176 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#285{]} \\
+287    & 57.9878 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#285{]} \\
+288    & 57.9879 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#285{]} \\
+289    & 58.0580 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#285{]} \\
+290    & 58.0581 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#285{]} \\
+291    & 58.1270 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#285{]} \\
+292    & 58.1284 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#285{]} \\
+293    & 58.1972 & L2CAP    & 22     & Rcvd Connection oriented channel \\
+294    & 58.2673 & HCI\_ACK & 31     & Rcvd {[}Reassembled in \#296{]}  \\
+295    & 58.2688 & HCI\_ACL & 31     & Rcvd {[}Continuation to \#294{]} \\
+296    & 58.3378 & L2CAP    & 20     & Rcvd Connection oriented channel \\
+297    & 58.3379 & CoAP     & 777    & NON, MID:4, 2.05 Content         \\ \hline
+\end{tabular}
+\end{table}
+
+Table \ref{coapNON700table} shows the packets captured in Wireshark when 700 bytes of data was sent through the network. 
+
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[scale=0.25]{graph1.png}    
+%    \caption{Goodput compared to throughput in \%}
+%    \label{fig:goodputThroughputGraph}
+%\end{figure}
+
+
+
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[scale=0.45]{CONvsNON1.png}    
+%    \caption{CON vs NON}
+%    \label{fig:CONvsNON}
+%\end{figure}
 
 
 \begin{figure}[ht]
@@ -167,73 +245,24 @@ Using these results it was possible to plot the graph in figure \ref{fig:plotCoA
 \end{figure}
 
 
-
-
 \subsection{Discussion}
 
 
 
+\section{Time spent in network}
 
-\section{CoAP CON}
-
-\subsection{Discussion}
-
-\subsection{CoAP CON, with more data}
-
-\subsection{Discussion}
+The previous tests shows 
 
 
-\begin{center}
- \begin{tabular}{||c c c c||} 
- \hline
- Goodput & Throughput & NON packet size & (Goodput/Throughput)*100 \\ [0.5ex] 
- \hline\hline
- 0 & 71 & 76 & 0 \\ 
- \hline
- 1 & 73 & 78 & 1,37 \\
- \hline
- 10 & 82 & 87 & 12,20 \\
- \hline
- 20 & 92 & 97 & 21,74 \\
-  \hline
- 30 & 75 & 107 & 30,0 \\
-  \hline
- 40 & 85 & 117 & 47,06 \\
-  \hline
- 50 & 99 & 127 & 50,51 \\
-  \hline
- 60 & 109 & 137 & 55,05 \\
-  \hline
- 70 & 119 & 147 & 58,82 \\
-  \hline
- 80 & 133 & 157 & 60,15 \\
-  \hline
- 90 & 143 & 167 & 62,94 \\
- \hline
- 100 & 153 & 177 & 65,36 \\
- \hline
- 110 & 167 & 187 & 65,87 \\
- \hline
- 120 & 177 & 197 & 67,80 \\
- \hline
- 130 & 191 & 207 & 68,06 \\
- \hline
- 140 & 207 & 217 & 69,65 \\
- \hline
- 150 & 211 & 227 & 71,09 \\
- \hline
- 160 & 225 & 237 & 71,11 \\
- \hline
- 170 & 235 & 247 & 72,34 \\
- \hline
- 180 & 253 & 257 & 71,15 \\
- \hline
- 190 & 263 & 267 & 72,24 \\
- \hline
- 200 & 277 & 277 & 72,20 \\ [1ex] 
- \hline
-\end{tabular}
-%\caption{Measurements, BLE, constant length}
-\label{table:1}
-\end{center}
+
+\begin{align}
+    27/31*100\% \approx 87,1 \%
+\end{align}
+
+
+
+
+
+
+
 
