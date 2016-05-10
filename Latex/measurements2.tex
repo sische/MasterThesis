@@ -14,11 +14,48 @@ This chapter will display the experiments conducted on data sending rate from th
 %21 bytes char array, 98 bytes. Adds only as much as needed. 
  
 
+\section{Initial limitations in the Network}
+
+\subsection{Stable transfer rate}
+
+As soon as the end nodes of the network can communicate with the Raspberry Pi, the next step is to test the transfer rate of the connection. To measure the network transfer rate, \textit{ping6} was used. This is a software tool used to test networks using \gls{ipv6} in a network. The results is measured in ms used for every \gls{rtt}. 
+
+\begin{verbatim}
+ping6 2001::2e6:6aff:fe64:54dd
+ping6 google.com
+\end{verbatim}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{ping6test.png}    
+    \caption{Comparison: ping nRF52 and ping google.com}
+    \label{fig:pingComparison}
+\end{figure}
+
+When tested, the connection turns out to be very slow and in some cases very unstable, especially at maximum transfer rate. In the test of ping shown in figure \ref{fig:pingComparison} the connection between the Raspberry Pi and the nRF52 had 14 \% packet loss, 1 out of 7 packets. Other test showed similar results, but the \gls{coap} \gls{con} has in general got a  higher stability at maximum sending rate than \gls{coap} \gls{non}. After a test period it was therefore decided that the best solution for \gls{non} would be to gather data from sensors at a higher rate, and store them in the nRF52 temporarily. Every second all the measured values are being transferred to the Raspberry Pi, the temporarily values are deleted and the measurement continues. This has proven to be a very stable solution, with successful tests over several days. \gls{con} can handle more frequent transportations than this in this system, on average 4 times per second. See the test shown in \todo{Make figure}. 
+
+\begin{equation} \label{avg_eq}
+    x_{n} = \frac{\sum\limits_{i=1}^n a_{i}}{n}
+\end{equation}
+
+Equation \ref{avg_eq} shows the standard way used to calculate an average of the measured values. Here \textit{a} is any real number and \textit{n} is any integer. 
+
+After a test period, the problems explained in \todo {Skriv om problemer med bt8 i Architecture?} was fixed. A more reliable test could then be performed, as shown in figure \ref{fig:ping2}. Using equation \ref{avg_eq} to calculate average gives an approximate average of 250 ms \gls{rtt}. This is very slow, and way beneath the transfer limitations of both \gls{ble}, \gls{6lowpan} and \gls{coap}, as explained in chapter \ref{chp:background} \todo{Skriv spesifikt om begrensninger for disse tre i background}. Another factor could be limited power supply and computational power, but it is not clear what is the main cause at this point. This will regardless be a huge limitation in the network. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{ping3.png}    
+    \caption{Ping nRF52, different time}
+    \label{fig:ping2}
+\end{figure}
 
 
-\section{Packet fragmentation}
+The conclusion from these initial tests is therefore that \gls{coap} \gls{con} is stable at at lower transfer interval than \gls{coap} \gls{non}, and can in best case cope with sending every 250th ms, which is very good compared to the high \gls{rtt}. \gls{non} has been so unstable at initial tests that it was decided to only send every second. This makes quite a huge difference when testing the different protocols, as \textit{CoAP CON} can send a lot more \textit{goodput} per second, but \textit{CoAP NON} requires less power to send each message, and a much higher percentage of the packets sent through the network contains useful data.
 
-In Internet Routing, \textit{fragmentation} is known as the action of splitting data into smaller packets, to satisfy the maximal limits of the different technologies or protocols used (e.g. \gls{ble} and \gls{6lowpan} in the network described in this thesis). Each of these packets needs header fields of a certain size, or other requirements.
+
+\subsection{Packet fragmentation}
+
+In Internet Routing, \textit{fragmentation} is known as the action of splitting data into smaller packets, to satisfy the maximal limits of the different technologies or protocols used (e.g. \gls{ble} and \gls{6lowpan} in the network described in this thesis). Each of these packets needs header fields of a certain size, or other requirements. In a network of microcontrollers used in this thesis fragmentation can be a factor that needs to be taken into account to optimize the goodput of the system. This will be a central part of the testing, and will therefore be explained in detail in the following section. 
 
 To better understand fragmentation, imagine a train with carriages as shown in Figure \ref{fig:trainExample}. To be able to operate at all, the train needs a locomotive with an engine driver, a conductor and a cafe carriage. As soon as these things are already there, the company owning the train gets better and better off for every passenger buying a ticket. Lets assume that every carriage can carry 4 employees and 27 passengers, to make it directly comparable to the \gls{ble} packets in the network. Eventually all the carriages will be full, and a decision has to be made if it will be profitable to fit another carriage. It will in general be most profitable to use as many carriages as the locomotive can handle, and to fill up every carriage as much as possible. It will however not be a good idea to connect another carriage if there will only be one additional passenger sitting there, since the extra weight of the carriage adds unnecessary additional weight to the train set compared to the income. 
 
@@ -29,21 +66,25 @@ To better understand fragmentation, imagine a train with carriages as shown in F
     \label{fig:trainExample}
 \end{figure}
 
-In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what to get the train working. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximal number of bytes compared to the number of packets sent. This is known as \textit{fragmentation}, to maximize \textit{goodput} vs \textit{throughput}. 
+In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what to get the train working. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximal number of bytes compared to the number of packets sent. This is known as \textit{fragmentation}, to maximize \textit{goodput} vs \textit{throughput}.
+ 
 
-\subsection{Description of measurements}
+
+\section{Description of measurements}
 
 The following sections will show experiments performed to to test if \textit{fragmentation} is a huge issiue when sending data through low energy networks, and which of the protocols described in chapter \ref{chp:background}  is the most efficient to use when the goal is to get as high \textit{googput} as possible. This will be done by sending data of constant length, capture packets using \textit{Wireshark}, and then increasing the packet size to see the changes. 
 
 Before these experiements started, the expected results was that sending a small amount of data at a time would not be preferable, because of the needed bytes to set up the connection, header files and so on. It was not known how big the packages needed to be before it would be considered \textit{profitable} to send. 
 
-When sending \gls{ble} packets over the network, observations from the system shows that the maximum packet size over \gls{ble} is 31 bytes. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 byte is needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} (known as \textit{goodput} and \textit{throughput}) data transferred therefore start out very poorly if the payload sent is very small.
+When sending \gls{ble} packets over the network, observations from the system shows that the maximum packet size over \gls{ble} is 31 bytes. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 byte is needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} (known as \textit{goodput} and \textit{throughput}) data transferred therefore start out very poorly if the payload sent is very small.The best possible percentage of useful data we can hope to acheive will also be limited by this, 27 bytes goodput and 4 bytes header field, shown in the following calculation.  
 
-The best possible percentage of useful data we can hope to acheive will also be limited by this, 27 bytes goodput and 4 bytes header field, shown in the following calculation.  
+\begin{equation} \label{percentage_eq} 
+	\delta = \frac{x_{2}}{x_{1}} * 100 \%
+\end{equation}
 
-\begin{align}
+\begin{equation}
     27/31*100\% \approx 87,1 \%
-\end{align}
+\end{equation}
 
 
 

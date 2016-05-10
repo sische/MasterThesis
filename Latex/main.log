@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  9 MAY 2016 19:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  10 MAY 2016 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1564,17 +1564,261 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count320
 \c@blind@pangrammax=\count321
 )
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count322
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xargs/xargs.sty
+Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
+\xargs@max=\count323
+\xargs@toksa=\toks59
+\xargs@toksb=\toks60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks61
+)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box72
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks62
+\pgfkeys@temptoks=\toks63
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks64
+))
+\pgf@x=\dimen204
+\pgf@y=\dimen205
+\pgf@xa=\dimen206
+\pgf@ya=\dimen207
+\pgf@xb=\dimen208
+\pgf@yb=\dimen209
+\pgf@xc=\dimen210
+\pgf@yc=\dimen211
+\w@pgf@writea=\write5
+\r@pgf@reada=\read2
+\c@pgf@counta=\count324
+\c@pgf@countb=\count325
+\c@pgf@countc=\count326
+\c@pgf@countd=\count327
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count328
+\pgfsyssoftpath@bigbuffer@items=\count329
+)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen212
+\pgfmath@count=\count330
+\pgfmath@box=\box73
+\pgfmath@toks=\toks65
+\pgfmath@stack@operand=\toks66
+\pgfmath@stack@operation=\toks67
+)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count331
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen213
+\pgf@picmaxx=\dimen214
+\pgf@picminy=\dimen215
+\pgf@picmaxy=\dimen216
+\pgf@pathminx=\dimen217
+\pgf@pathmaxx=\dimen218
+\pgf@pathminy=\dimen219
+\pgf@pathmaxy=\dimen220
+\pgf@xx=\dimen221
+\pgf@xy=\dimen222
+\pgf@yx=\dimen223
+\pgf@yy=\dimen224
+\pgf@zx=\dimen225
+\pgf@zy=\dimen226
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen227
+\pgf@path@lasty=\dimen228
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+Normal \dimen register pool exhausted, switching to extended pool.
+\pgf@shorten@end@additional=\dimen256
+\pgf@shorten@start@additional=\dimen257
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box74
+\pgf@hbox=\box75
+\pgf@layerbox@main=\box76
+\pgf@picture@serial@count=\count332
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen258
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen259
+\pgf@pt@y=\dimen260
+\pgf@pt@temp=\dimen261
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen262
+\pgf@sys@shading@range@num=\count333
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box77
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box78
+)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen263
+\pgf@nodesepend=\dimen264
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen265
+\pgffor@skip=\dimen266
+\pgffor@stack=\toks68
+\pgffor@toks=\toks69
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count334
+\pgfplotmarksize=\dimen267
+)
+\tikz@lastx=\dimen268
+\tikz@lasty=\dimen269
+\tikz@lastxsaved=\dimen270
+\tikz@lastysaved=\dimen271
+\tikzleveldistance=\dimen272
+\tikzsiblingdistance=\dimen273
+\tikz@figbox=\box79
+\tikz@tempbox=\box80
+\tikztreelevel=\count335
+\tikznumberofchildren=\count336
+\tikznumberofcurrentchild=\count337
+\tikz@fig@count=\count338
+
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count339
+\pgfmatrixcurrentcolumn=\count340
+\pgf@matrix@numberofcolumns=\count341
+)
+\tikz@expandcount=\count342
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
+hs.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryposit
+ioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
+)
+\c@@todonotes@numberoftodonotes=\count343
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 ) (./glossary.tex)
-\glo@main@file=\write5
-\openout5 = `main.glo'.
+\glo@main@file=\write6
+\openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 53.
-\glo@acronym@file=\write6
-\openout6 = `main.acn'.
+Package glossaries Info: Writing glossary file main.glo on input line 64.
+\glo@acronym@file=\write7
+\openout7 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 53.
+Package glossaries Info: Writing glossary file main.acn on input line 64.
  (./main.aux (./abstract_english.aux) (./abstract_norwegian.aux)
 (./preface.aux) (./introduction.aux) (./background.aux) (./architecture.aux
 
@@ -1586,43 +1830,43 @@ LaTeX Warning: Label `fig:CoAPexample1' multiply defined.
 ) (./measurements2.aux) (./dataAnalysis.aux) (./appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen204
-\scratchbox=\box72
-\nofMPsegments=\count323
-\nofMParguments=\count324
-\everyMPshowfont=\toks59
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen205
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
-\everyMPtoPDFconversion=\toks60
+\scratchcounter=\count344
+\scratchdimen=\dimen274
+\scratchbox=\box81
+\nofMPsegments=\count345
+\nofMParguments=\count346
+\everyMPshowfont=\toks70
+\MPscratchCnt=\count347
+\MPscratchDim=\dimen275
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
+\everyMPtoPDFconversion=\toks71
 )
-LaTeX Info: Redefining \microtypecontext on input line 55.
+LaTeX Info: Redefining \microtypecontext on input line 66.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1636,8 +1880,8 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring ON on input line 55.
+\AtBeginShipoutBox=\box82
+Package hyperref Info: Link coloring ON on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1645,17 +1889,17 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count328
+\c@section@level=\count350
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 55.
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \nameref on input line 66.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
 (./main.out) (./main.out)
-\@outlinefile=\write7
-\openout7 = `main.out'.
+\@outlinefile=\write8
+\openout8 = `main.out'.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -1672,15 +1916,16 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count329
+\c@lstlisting=\count351
 
-<./figs/ntnu-logo.pdf, id=209, 241.4922pt x 52.79724pt>
+ABD: EveryShipout initializing macros
+<./figs/ntnu-logo.pdf, id=216, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
-Package pdftex.def Info: ./figs/ntnu-logo.pdf used on input line 61.
+Package pdftex.def Info: ./figs/ntnu-logo.pdf used on input line 72.
 (pdftex.def)             Requested size: 170.71652pt x 37.32436pt.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 61.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 72.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1688,14 +1933,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Calculating math sizes for size <11.49994> on input line 61
+LaTeX Font Info:    Calculating math sizes for size <11.49994> on input line 72
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11.49994> on input line 61.
+(Font)              <11.49994> on input line 72.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.04991> on input line 61.
+(Font)              <8.04991> on input line 72.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.74997> on input line 61.
+(Font)              <5.74997> on input line 72.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1767,7 +2012,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 31.
 
-[3] <pi3.png, id=472, 1053.9375pt x 664.4825pt>
+[3] <pi3.png, id=481, 1053.9375pt x 664.4825pt>
 File: pi3.png Graphic file (type png)
  <use pi3.png>
 Package pdftex.def Info: pi3.png used on input line 55.
@@ -1781,7 +2026,7 @@ Overfull \hbox (4.88365pt too wide) in paragraph at lines 55--56
 Underfull \vbox (badness 2460) has occurred while \output is active []
 
  [4]
-<nrf52.png, id=488, 1208.515pt x 729.72626pt>
+<nrf52.png, id=496, 1208.515pt x 729.72626pt>
 File: nrf52.png Graphic file (type png)
  <use nrf52.png>
 Package pdftex.def Info: nrf52.png used on input line 78.
@@ -1809,7 +2054,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.99 
-      <./nrf52.png>] <ADXL345.png, id=503, 727.71875pt x 499.8675pt>
+      <./nrf52.png>] <ADXL345.png, id=511, 727.71875pt x 499.8675pt>
 File: ADXL345.png Graphic file (type png)
 
 <use ADXL345.png>
@@ -1845,7 +2090,7 @@ l.167
 
 
 ]
-<MasterArchitecture2.png, id=539, 524.96124pt x 319.1925pt>
+<MasterArchitecture2.png, id=547, 524.96124pt x 319.1925pt>
 File: MasterArchitecture2.png Graphic file (type png)
 
 <use MasterArchitecture2.png>
@@ -1905,7 +2150,7 @@ tooth/6lowpan_control[]
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 142.
 
-<CoAPExample.png, id=579, 893.3375pt x 310.15875pt>
+<CoAPExample.png, id=587, 893.3375pt x 310.15875pt>
 File: CoAPExample.png Graphic file (type png)
  <use CoAPExample.png>
 Package pdftex.def Info: CoAPExample.png used on input line 148.
@@ -1932,7 +2177,7 @@ LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
 LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
  157.
 
-<CoapEx1captureCropped2.png, id=594, 1391.1975pt x 540.0175pt>
+<CoapEx1captureCropped2.png, id=602, 1391.1975pt x 540.0175pt>
 File: CoapEx1captureCropped2.png Graphic file (type png)
 
 <use CoapEx1captureCropped2.png>
@@ -1943,7 +2188,7 @@ Overfull \hbox (11.62834pt too wide) in paragraph at lines 164--165
  [][] 
  []
 
-<seq1.png, id=596, 1102.1175pt x 282.05376pt>
+<seq1.png, id=604, 1102.1175pt x 282.05376pt>
 File: seq1.png Graphic file (type png)
  <use seq1.png>
 Package pdftex.def Info: seq1.png used on input line 174.
@@ -1965,7 +2210,7 @@ l.177 \end{figure}
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 187.
 
-<CoAPObservalbFigure2.png, id=619, 846.16125pt x 160.6pt>
+<CoAPObservalbFigure2.png, id=627, 846.16125pt x 160.6pt>
 File: CoAPObservalbFigure2.png Graphic file (type png)
 
 <use CoAPObservalbFigure2.png>
@@ -1981,282 +2226,283 @@ Overfull \hbox (33.69585pt too wide) in paragraph at lines 193--194
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.203 
-       <./seq1.png>] <ping6test.png, id=624, 739.76375pt x 487.8225pt>
-File: ping6test.png Graphic file (type png)
+l.216 
+       <./seq1.png>]
 
-<use ping6test.png>
-Package pdftex.def Info: ping6test.png used on input line 206.
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 218.
+
+
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 218.
+
+
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 219.
+
+
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 219.
+
+
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 220.
+
+
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 220.
+
+
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 221.
+
+
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 221.
+
+) [17pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.130 \include{architecture}
+                             <./CoAPObservalbFigure2.png>]
+\openout2 = `measurements2.aux'.
+
+ (./measurements2.tex [18
+
+
+
+] <ping6test.png, id=643, 739.76375pt x 487.8225pt>
+File: ping6test.png Graphic file (type png)
+ <use ping6test.png>
+Package pdftex.def Info: ping6test.png used on input line 30.
 (pdftex.def)             Requested size: 369.88097pt x 243.91064pt.
 
-Overfull \hbox (5.88097pt too wide) in paragraph at lines 206--207
+Overfull \hbox (5.88097pt too wide) in paragraph at lines 30--31
  [][] 
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.213 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.213 
-       <./CoAPObservalbFigure2.png> <./ping6test.png>]
-<ping3.png, id=632, 739.76375pt x 957.5775pt>
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 35.
+[19] <ping3.png, id=667, 739.76375pt x 957.5775pt>
 File: ping3.png Graphic file (type png)
  <use ping3.png>
-Package pdftex.def Info: ping3.png used on input line 216.
+Package pdftex.def Info: ping3.png used on input line 47.
 (pdftex.def)             Requested size: 295.90025pt x 383.02422pt.
- [18pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.221 \newpage
-               <./ping3.png>]
-
-LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 241.
-
-
-LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 241.
-
-
-LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 242.
-
-
-LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 242.
-
-
-LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 243.
-
-
-LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 243.
-
-
-LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 244.
-
-
-LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 244.
-
-) [19]
-\openout2 = `measurements2.aux'.
-
- (./measurements2.tex [20
-
-
-
-]
-<trainExample.png, id=653, 710.655pt x 275.0275pt>
-File: trainExample.png Graphic file (type png)
- <use trainExample.png>
-Package pdftex.def Info: trainExample.png used on input line 27.
-(pdftex.def)             Requested size: 355.32663pt x 137.51341pt.
-
-Underfull \vbox (badness 2573) has occurred while \output is active []
-
- [21]
-Underfull \vbox (badness 5417) has occurred while \output is active []
-
- [22pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.46 \end{align}
-                 <./trainExample.png>]
-<wiresharkCoAPCON0byte.png, id=673, 992.70876pt x 530.98375pt>
+l.54 
+      <./ping6test.png>] [21pdfTeX warning (ext4): destination with the same id
+entifier (name{figure.4.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.59 
+      <./ping3.png>] <trainExample.png, id=697, 710.655pt x 275.0275pt>
+File: trainExample.png Graphic file (type png)
+
+<use trainExample.png>
+Package pdftex.def Info: trainExample.png used on input line 64.
+(pdftex.def)             Requested size: 355.32663pt x 137.51341pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.76 
+      <./trainExample.png>]
+<wiresharkCoAPCON0byte.png, id=712, 992.70876pt x 530.98375pt>
 File: wiresharkCoAPCON0byte.png Graphic file (type png)
 
 <use wiresharkCoAPCON0byte.png>
-Package pdftex.def Info: wiresharkCoAPCON0byte.png used on input line 62.
+Package pdftex.def Info: wiresharkCoAPCON0byte.png used on input line 103.
 (pdftex.def)             Requested size: 364.0pt x 194.69463pt.
- [23pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.72 
-      <./wiresharkCoAPCON0byte.png>]
-<wiresharkCON100bytes.png, id=690, 992.70876pt x 888.31876pt>
+ [23]
+<wiresharkCON100bytes.png, id=727, 992.70876pt x 888.31876pt>
 File: wiresharkCON100bytes.png Graphic file (type png)
 
 <use wiresharkCON100bytes.png>
-Package pdftex.def Info: wiresharkCON100bytes.png used on input line 76.
+Package pdftex.def Info: wiresharkCON100bytes.png used on input line 117.
 (pdftex.def)             Requested size: 364.0pt x 325.71788pt.
 
-<CoAP_CONgraph2.png, id=694, 903.375pt x 451.6875pt>
+<CoAP_CONgraph2.png, id=731, 903.375pt x 451.6875pt>
 File: CoAP_CONgraph2.png Graphic file (type png)
  <use CoAP_CONgraph2.png>
-Package pdftex.def Info: CoAP_CONgraph2.png used on input line 86.
+Package pdftex.def Info: CoAP_CONgraph2.png used on input line 127.
 (pdftex.def)             Requested size: 388.44368pt x 194.22183pt.
 
-Overfull \hbox (24.44368pt too wide) in paragraph at lines 86--87
+Overfull \hbox (24.44368pt too wide) in paragraph at lines 127--128
  [][] 
  []
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.94 
-      <./wiresharkCON100bytes.png>]
-
-LaTeX Warning: Reference `fig:goodputThroughputGraph' on page 25 undefined on i
-nput line 100.
-
-[25pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
-}) has been already used, duplicate ignored
+l.135 
+       <./wiresharkCoAPCON0byte.png>] [25pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.4.5}) has been already used, duplicate ignor
+ed
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.101 
-       <./CoAP_CONgraph2.png>]
-<Wireshark700bytes2.png, id=715, 992.70876pt x 958.58125pt>
+l.141 H
+       owever, given that there is already a clear limit in figure \ref{fig:...
+ <./wiresharkCON100bytes.png>]
+
+LaTeX Warning: Reference `fig:goodputThroughputGraph' on page 26 undefined on i
+nput line 141.
+
+<Wireshark700bytes2.png, id=752, 992.70876pt x 958.58125pt>
 File: Wireshark700bytes2.png Graphic file (type png)
 
 <use Wireshark700bytes2.png>
-Package pdftex.def Info: Wireshark700bytes2.png used on input line 109.
+Package pdftex.def Info: Wireshark700bytes2.png used on input line 150.
 (pdftex.def)             Requested size: 364.0pt x 351.48088pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 114.
+               Default added (so using `tbp') on input line 155.
 
 
-LaTeX Warning: Float too large for page by 31.74239pt on input line 164.
+LaTeX Warning: Float too large for page by 31.74239pt on input line 205.
 
-<wireshark200-K_7.png, id=724, 433.62pt x 289.08pt>
-File: wireshark200-K_7.png Graphic file (type png)
- <use wireshark200-K_7.png>
-Package pdftex.def Info: wireshark200-K_7.png used on input line 171.
-(pdftex.def)             Requested size: 364.0pt x 242.67998pt.
 
-[26] [27pdfTeX warning (ext4): destination with the same identifier (name{table
-.4.1}) has been already used, duplicate ignored
+Underfull \vbox (badness 1584) has occurred while \output is active []
+
+ [26pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.186 
-      ] <coapNON0Bytes_PartOfWireshark.png, id=743, 865.2325pt x 54.2025pt>
+l.208 
+       <./CoAP_CONgraph2.png>] [27pdfTeX warning (ext4): destination with the s
+ame identifier (name{table.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.208 
+      ] <wireshark200-K_7.png, id=770, 433.62pt x 289.08pt>
+File: wireshark200-K_7.png Graphic file (type png)
+
+<use wireshark200-K_7.png>
+Package pdftex.def Info: wireshark200-K_7.png used on input line 212.
+(pdftex.def)             Requested size: 364.0pt x 242.67998pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 
+       <./Wireshark700bytes2.png>] [29pdfTeX warning (ext4): destination with t
+he same identifier (name{figure.4.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.227 
+       <./wireshark200-K_7.png>]
+<coapNON0Bytes_PartOfWireshark.png, id=791, 865.2325pt x 54.2025pt>
 File: coapNON0Bytes_PartOfWireshark.png Graphic file (type png)
 
 <use coapNON0Bytes_PartOfWireshark.png>
-Package pdftex.def Info: coapNON0Bytes_PartOfWireshark.png used on input line 1
-92.
+Package pdftex.def Info: coapNON0Bytes_PartOfWireshark.png used on input line 2
+33.
 (pdftex.def)             Requested size: 346.08687pt x 21.6806pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-5}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.200 
-       <./Wireshark700bytes2.png>]
-<rsz_1coapnon_wireshark700fullscreen.png, id=761, 963.6pt x 602.25pt>
+<rsz_1coapnon_wireshark700fullscreen.png, id=804, 963.6pt x 602.25pt>
 File: rsz_1coapnon_wireshark700fullscreen.png Graphic file (type png)
 
 <use rsz_1coapnon_wireshark700fullscreen.png>
 Package pdftex.def Info: rsz_1coapnon_wireshark700fullscreen.png used on input 
-line 206.
+line 247.
 (pdftex.def)             Requested size: 385.43317pt x 240.89572pt.
 
-Overfull \hbox (21.43317pt too wide) in paragraph at lines 206--207
+Overfull \hbox (21.43317pt too wide) in paragraph at lines 247--248
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 213.
+               Default added (so using `tbp') on input line 254.
 
 
-Overfull \hbox (2.36002pt too wide) in paragraph at lines 217--256
+Overfull \hbox (2.36002pt too wide) in paragraph at lines 258--297
  [][] 
  []
 
-<NONvsCON_0-200.png, id=763, 1170.774pt x 633.0852pt>
+<NONvsCON_0-200.png, id=806, 1170.774pt x 633.0852pt>
 File: NONvsCON_0-200.png Graphic file (type png)
  <use NONvsCON_0-200.png>
-Package pdftex.def Info: NONvsCON_0-200.png used on input line 279.
+Package pdftex.def Info: NONvsCON_0-200.png used on input line 320.
 (pdftex.def)             Requested size: 409.77704pt x 221.58315pt.
 
-Overfull \hbox (45.77704pt too wide) in paragraph at lines 279--280
+Overfull \hbox (45.77704pt too wide) in paragraph at lines 320--321
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.282 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.4.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.282 \end{figure}
-                   <./wireshark200-K_7.png> <./coapNON0Bytes_PartOfWireshark.pn
-g>] [30pdfTeX warning (ext4): destination with the same identifier (name{table.
-4.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.282 \end{figure}
-                  ]
-<NON-CON_200-950GRAPH.png, id=773, 1170.774pt x 633.0852pt>
+<NON-CON_200-950GRAPH.png, id=807, 1170.774pt x 633.0852pt>
 File: NON-CON_200-950GRAPH.png Graphic file (type png)
 
 <use NON-CON_200-950GRAPH.png>
-Package pdftex.def Info: NON-CON_200-950GRAPH.png used on input line 294.
+Package pdftex.def Info: NON-CON_200-950GRAPH.png used on input line 335.
 (pdftex.def)             Requested size: 409.77704pt x 221.58315pt.
 
-Overfull \hbox (45.77704pt too wide) in paragraph at lines 294--295
+Overfull \hbox (45.77704pt too wide) in paragraph at lines 335--336
  [][] 
  []
 
-) [31pdfTeX warning (ext4): destination with the same identifier (name{figure.4
-.8}) has been already used, duplicate ignored
+) [30pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.123 \include{measurements2}
+l.134 \include{measurements2}
+                              <./coapNON0Bytes_PartOfWireshark.png>] [31pdfTeX 
+warning (ext4): destination with the same identifier (name{table.4.2}) has been
+ already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.134 \include{measurements2}
+                             ] [32pdfTeX warning (ext4): destination with the s
+ame identifier (name{figure.4.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.134 \include{measurements2}
                               <./rsz_1coapnon_wireshark700fullscreen.png>]
-[32pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9
-}) has been already used, duplicate ignored
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.123 \include{measurements2}
+l.134 \include{measurements2}
                              pdfTeX warning (ext4): destination with the same i
-dentifier (name{figure.4.10}) has been already used, duplicate ignored
+dentifier (name{figure.4.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.123 \include{measurements2}
+l.134 \include{measurements2}
                               <./NONvsCON_0-200.png> <./NON-CON_200-950GRAPH.pn
 g>]
 \openout2 = `dataAnalysis.aux'.
 
- (./dataAnalysis.tex [33
+ (./dataAnalysis.tex [34
 
 
 
-]) [34] (./main.bbl
+] [35]) [36] (./main.bbl
 bibitemlist
 
 Overfull \hbox (28.28802pt too wide) in paragraph at lines 4--7
@@ -2275,41 +2521,41 @@ Underfull \hbox (badness 2922) in paragraph at lines 9--12
 b/.  Ac-cessed:
  []
 
-) [35
+) [37
 
 
 ]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex [36
+ (./appendix.tex [38
 
 
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-\tf@toc=\write8
-\openout8 = `main.toc'.
+ [39]
+\tf@toc=\write9
+\openout9 = `main.toc'.
 
-\tf@lof=\write9
-\openout9 = `main.lof'.
+\tf@lof=\write10
+\openout10 = `main.lof'.
 
-\tf@lot=\write10
-\openout10 = `main.lot'.
+\tf@lot=\write11
+\openout11 = `main.lot'.
 
-\tf@loa=\write11
-\openout11 = `main.loa'.
+\tf@loa=\write12
+\openout12 = `main.loa'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
 
 (./main.aux (./abstract_english.aux) (./abstract_norwegian.aux) (./preface.aux)
 (./introduction.aux) (./background.aux) (./architecture.aux)
 (./measurements2.aux) (./dataAnalysis.aux) (./appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C8ABD24ED47767A45DF4D3E01F0C1AFB;3192.
+(rerunfilecheck)             Checksum: 035D45D21AFC3C6E3B8E3844F356A47D;3274.
 
 
 LaTeX Warning: There were undefined references.
@@ -2317,31 +2563,35 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
  ) 
 Here is how much of TeX's memory you used:
- 23242 strings out of 493304
- 338821 string characters out of 6139871
- 603770 words of memory out of 5000000
- 25857 multiletter control sequences out of 15000+600000
- 84747 words of font info for 130 fonts, out of 8000000 for 9000
+ 31654 strings out of 493304
+ 509840 string characters out of 6139871
+ 847106 words of memory out of 5000000
+ 34057 multiletter control sequences out of 15000+600000
+ 87688 words of font info for 131 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 58i,13n,72p,1753b,1888s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (55 pages, 6162394 bytes).
+ 69i,13n,78p,1753b,1891s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/f
+onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+ri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
+
+Output written on main.pdf (57 pages, 6219586 bytes).
 PDF statistics:
- 900 PDF objects out of 1000 (max. 8388607)
- 791 compressed objects within 8 object streams
- 172 named destinations out of 1000 (max. 500000)
- 20994 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 960 PDF objects out of 1000 (max. 8388607)
+ 844 compressed objects within 9 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 21526 words of extra memory for PDF output out of 24883 (max. 10000000)
 
