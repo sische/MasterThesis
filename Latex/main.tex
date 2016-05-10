@@ -5,18 +5,19 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 %\usepackage[table,xcdraw]{color}
-%\documentclass[xcolor=table]{beamer}
-%\usepackage{xcolor}
-%\newcommand\myworries[1]{\textcolor{red}{#1}}
+%\usepackage[table]{xcolor}
 \usepackage{lipsum}                     
 \usepackage{xargs}                      
 \usepackage{xcolor}
+
+\usepackage[euler]{textgreek}
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
 \newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
 \newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
 \newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
 
 %\graphicspath{/figs}
 \graphicspath{ {/home/sindre/Documents/Master/MasterThesis/Latex/figs} }
@@ -67,6 +68,7 @@
 \selectlanguage{english}
 \pagenumbering{roman}
 \pagestyle{plain}
+$lim_{n\to\infty}$
 
 %% Only for the project; comment out the line below for the master's thesis; the front page will be generated automatically by DAIM
 \titleITEM
