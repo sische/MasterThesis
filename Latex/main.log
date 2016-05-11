@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  11 MAY 2016 15:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  11 MAY 2016 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2832,13 +2832,8 @@ File: NON0to200plotx09_thickerLineGRAY.png Graphic file (type png)
 Package pdftex.def Info: NON0to200plotx09_thickerLineGRAY.png used on input lin
 e 312.
 (pdftex.def)             Requested size: 351.23134pt x 182.36084pt.
-
-
-LaTeX Warning: Reference `fig:coapCON100Wireshark' on page 29 undefined on inpu
-t line 321.
-
-[29pdfTeX warning (ext4): destination with the same identifier (name{table.4.4}
-) has been already used, duplicate ignored
+ [29pdfTeX warning (ext4): destination with the same identifier (name{table.4.4
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2852,10 +2847,10 @@ l.322
        <./NON0to200plotx09_thickerLineGRAY.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 333.
+               Default added (so using `tbp') on input line 335.
 
 
-Overfull \hbox (2.36002pt too wide) in paragraph at lines 337--376
+Overfull \hbox (2.36002pt too wide) in paragraph at lines 339--378
  [][] 
  []
 
@@ -2864,46 +2859,46 @@ Overfull \hbox (2.36002pt too wide) in paragraph at lines 337--376
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.378 \newpage
+l.380 \newpage
               ]
-<NON_0toKplotx09_thickerLineGRAY.png, id=862, 351.2322pt x 182.3613pt>
+<NON_0toKplotx09_thickerLineGRAY.png, id=866, 351.2322pt x 182.3613pt>
 File: NON_0toKplotx09_thickerLineGRAY.png Graphic file (type png)
 
 <use NON_0toKplotx09_thickerLineGRAY.png>
 Package pdftex.def Info: NON_0toKplotx09_thickerLineGRAY.png used on input line
- 386.
+ 388.
 (pdftex.def)             Requested size: 351.23134pt x 182.36084pt.
 
-<NON_200toKplotx09_thickerLineGRAY.png, id=863, 351.2322pt x 189.8292pt>
+<NON_200toKplotx09_thickerLineGRAY.png, id=867, 351.2322pt x 189.8292pt>
 File: NON_200toKplotx09_thickerLineGRAY.png Graphic file (type png)
 
 <use NON_200toKplotx09_thickerLineGRAY.png>
 Package pdftex.def Info: NON_200toKplotx09_thickerLineGRAY.png used on input li
-ne 393.
+ne 395.
 (pdftex.def)             Requested size: 351.23134pt x 189.82872pt.
 
-<CONvsNONplot_0-200_thickerGRAY.png, id=864, 351.2322pt x 189.8292pt>
+<CONvsNONplot_0-200_thickerGRAY.png, id=868, 351.2322pt x 189.8292pt>
 File: CONvsNONplot_0-200_thickerGRAY.png Graphic file (type png)
 
 <use CONvsNONplot_0-200_thickerGRAY.png>
 Package pdftex.def Info: CONvsNONplot_0-200_thickerGRAY.png used on input line 
-427.
+429.
 (pdftex.def)             Requested size: 351.23134pt x 189.82872pt.
 
-<CONvsNONplot_0-k_thickerGRAY.png, id=865, 351.2322pt x 189.8292pt>
+<CONvsNONplot_0-k_thickerGRAY.png, id=869, 351.2322pt x 189.8292pt>
 File: CONvsNONplot_0-k_thickerGRAY.png Graphic file (type png)
 
 <use CONvsNONplot_0-k_thickerGRAY.png>
 Package pdftex.def Info: CONvsNONplot_0-k_thickerGRAY.png used on input line 43
-4.
+6.
 (pdftex.def)             Requested size: 351.23134pt x 189.82872pt.
 
-<CONvsNONplot_200-k_thickerGRAY.png, id=866, 351.2322pt x 182.3613pt>
+<CONvsNONplot_200-k_thickerGRAY.png, id=870, 351.2322pt x 182.3613pt>
 File: CONvsNONplot_200-k_thickerGRAY.png Graphic file (type png)
 
 <use CONvsNONplot_200-k_thickerGRAY.png>
 Package pdftex.def Info: CONvsNONplot_200-k_thickerGRAY.png used on input line 
-441.
+443.
 (pdftex.def)             Requested size: 351.23134pt x 182.36084pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2913,14 +2908,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.454 C
+l.456 C
        alcumate time for \gls{coap} \gls{non}, 700 bytes sent:pdfTeX warning (e
 xt4): destination with the same identifier (name{figure.4.8}) has been already 
 used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.454 C
+l.456 C
        alcumate time for \gls{coap} \gls{non}, 700 bytes sent: <./NON_0toKplotx
 09_thickerLineGRAY.png> <./NON_200toKplotx09_thickerLineGRAY.png>] [33pdfTeX wa
 rning (ext4): destination with the same identifier (name{figure.4.9}) has been 
@@ -2928,13 +2923,13 @@ already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.458 \end{equation}
+l.460 \end{equation}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{figure.4.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.458 \end{equation}
+l.460 \end{equation}
                      <./CONvsNONplot_0-200_thickerGRAY.png> <./CONvsNONplot_0-k
 _thickerGRAY.png>]) [34pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.4.11}) has been already used, duplicate ignored
@@ -3016,25 +3011,22 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 230BBE47F716470F1437C4E06826F48E;3643
-(rerunfilecheck)             After:  04E97916572D85BF4112B4C6A3B7111A;3643.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: 04E97916572D85BF4112B4C6A3B7111A;3643
+(rerunfilecheck)             After:  AD9CB327297AC4354A764DDCFCABA6FF;3643.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
  ) 
 Here is how much of TeX's memory you used:
- 32840 strings out of 493304
- 529304 string characters out of 6139871
- 857599 words of memory out of 5000000
- 35186 multiletter control sequences out of 15000+600000
+ 32845 strings out of 493304
+ 529430 string characters out of 6139871
+ 857679 words of memory out of 5000000
+ 35190 multiletter control sequences out of 15000+600000
  92499 words of font info for 135 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  69i,13n,78p,1753b,1976s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section*.19} has been referenced but does not exi
+pdfTeX warning (dest): name{section*.20} has been referenced but does not exi
 st, replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
@@ -3054,10 +3046,10 @@ usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmtt9.pfb>
-Output written on main.pdf (60 pages, 5342346 bytes).
+Output written on main.pdf (60 pages, 5342911 bytes).
 PDF statistics:
- 1041 PDF objects out of 1200 (max. 8388607)
- 918 compressed objects within 10 object streams
- 201 named destinations out of 1000 (max. 500000)
+ 1045 PDF objects out of 1200 (max. 8388607)
+ 922 compressed objects within 10 object streams
+ 202 named destinations out of 1000 (max. 500000)
  22081 words of extra memory for PDF output out of 24883 (max. 10000000)
 
