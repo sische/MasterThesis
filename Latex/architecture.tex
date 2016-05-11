@@ -121,7 +121,7 @@ This command will scan for \gls{ble} devices nearby, and find the bluetooth addr
 
 \begin{verbatim}
 echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
-echo "connect 0211:22FF:FE33:4455 1" > /sys/kernel/debug/bluetooth/6lowpan_control
+echo "connect 0211:22FF:FE33:4455 1" > /sys/kernel/debug/bluetooth\\/6lowpan_control
 service radvd restart
 \end{verbatim}
 
@@ -134,6 +134,14 @@ ping6 2001::0211:22FF:FE33:4455
 
 Using the basic example of the observable server it was easy to send \gls{coap} messages without the need of an \gls{ack} for every message. 
 
+\subsection{Connection challenges}
+
+\begin{verbatim}
+ping6 2001:bt8::0211:22FF:FE33:4455
+\end{verbatim}
+
+
+\todo{Descibe bt8-problem and devzone.nordicsemi.com and infocenter.nordicsemi.com}
 
 \section{Nordic Semiconductor example code}
 
@@ -149,6 +157,7 @@ As a first step, the nRF52 needed to communicate with the Raspberry Pi. As expla
     \caption{CoAP Client-Server communication example}
     \label{fig:CoAPexample1}
 \end{figure}
+\todo{Remove "Figure 1" from image}
 
 Figure \ref{fig:CoAPexample1} shows the initial CoAP example, by using two nRF52 devices, \gls{ble} over \gls{6lowpan} and a \gls{ble} enabled router (Raspberry Pi) on both ends in this case. As the figure \ref{fig:CoAPexample1} shows, the code example for the \gls{coap} client includes two different cases: 
 
@@ -176,6 +185,8 @@ This gives us the sequence diagram shown in Figure \ref{fig:seq1}.
     \label{fig:seq1}
 \end{figure}
 
+\todo{Create new sequence diagram}
+
 This works fine, and by writing a Python script running on the \textit{Raspberry Pi} it is possible to request data by \textit{GET messages} as soon as the \textit{nRF52} is ready. However, as shown in figure \ref{fig:pingComparison} and figure \ref{fig:ping2}, the network transfer rate can vary a lot. The limitations in \gls{ble} and \gls{6lowpan} makes this much slower than a normal \gls{ipv6} connection, and the \textit{ping} \gls{rtt} varies from 100 ms all the way up to over 600 ms. As a comparison, to \textit{ping google.com} from the same Raspberry Pi using \gls{ipv6} takes on average 15 ms. A comparison of this is shown in figure \ref{fig:pingComparison}. This is therefore a clear limitation of sending rate in the system. Because of this, the maximum transfer rate achieved in the system using the standard \gls{coap} server example is one message every 200 ms. 
 
 Using the standard \gls{coap}, described as \textit{CoAP CON} in this thesis, messages are sent with a "\gls{tcp} mindset". This means that every message sent by the client must receive an \gls {ack}. This is very stable, and ensures that every message gets to its destination, but it requires a lot of unnecessary computational power in the leaf node in systems where the importance of each message is not that high. The system is meant to be used with tools for analysing, and it is not essential that data needs to get to its destination right away. In these cases there is another alternative, known in this thesis as \textit{CoAP NON}. This is more like a "\textit{gls{udp} mindset}", where each packet does \textit{not} need an \gls{ack}. This halves the number of packages sent, saves a lot of the network as well as actions needed to be done by the nRF52 where power consumption is a huge issue. Therefore the \textit{\gls{coap} Observable} function looked very interesting, and will therefore be directly compared to \textit{standard gls{coap}} later in this thesis.   
@@ -194,9 +205,11 @@ In the given Nordic example of a \gls{coap} observable server, the problem of un
     \caption{CoAP Observable Server example}
     \label{fig:CoAPexample1}
 \end{figure}
+\todo{Remove "Figure 1" from image}
 
 
 
+\todo{Create new sequence diagram for Observable as well}
 
 
 %\section{Getting acceleration values}
