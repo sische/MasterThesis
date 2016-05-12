@@ -107,18 +107,19 @@ $lim_{n\to\infty}$
 \cleardoublepage
 
 %% include if relevant
-\listofalgorithms
-\addcontentsline{toc}{chapter}{List of Algorithms}
-\cleardoublepage
-
-%% include if relevant
-%\printglossary[title=List of Symbols, style=long]
+%\listofalgorithms
+%\addcontentsline{toc}{chapter}{List of Algorithms}
 %\cleardoublepage
-%\glsaddall[]
+
 
 %% include if relevant
 \printglossary[title=List of Acronyms,type=\acronymtype] % prints just the list of acronyms
 \cleardoublepage
+
+%% include if relevant
+\printglossary[title=Glossary, style=long]
+\cleardoublepage
+\glsaddall[]
 
 \pagenumbering{arabic}
 \pagestyle{ruled}

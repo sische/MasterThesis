@@ -1,4 +1,27 @@
-Warning: File 'main.glo' is empty.
-Have you used any entries defined in glossary 'main'?
-Remember to use package option 'nomain' if you
-don't want to use the main glossary.
+;; This logfile was generated automatically by `xindy'
+;; at 12.05.2016  17:50:12
+;; Indexstyle: "/tmp/WBnA_6d598", Rawindex: "/tmp/vmpx1payjy", Output: "main.gls"
+
+
+Building indexentry-tree:
+Hierdepth of index is :TREE
+
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+
+Forming letter-groups:
+Letter-group: "€" -> "A"
+Letter-group: "¼Ëœ52" -> "N"
+Letter-group: "È€Ë€„Ã´€" -> "P"
+Letter-group: "¨Ë—†ÚË¨ë" -> "D"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "€" -> "A"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¨Ë—†ÚË¨ë" -> "D"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¼Ëœ52" -> "N"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "È€Ë€„Ã´€" -> "P"
+WARNING: location-reference "{}{i}" did match multiple location-classes! (taking first one)

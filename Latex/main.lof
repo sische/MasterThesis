@@ -19,13 +19,12 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Ping nRF52, different time}}{21}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Packet fragmentation - train comparison}}{22}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP CON, 0-200 bytes sent}}{26}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CoAP CON plot, 200 bytes to 1 kB}}{28}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces NON 0-200 bytes }}{29}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces NON 0-1000 bytes}}{32}{figure.4.7}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON 0-200 bytes}}{28}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CoAP CON plot, 200 bytes to 1 kB}}{30}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces NON 0-1000 bytes}}{31}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces NON 200-1000 bytes}}{32}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces CON vs NON 0-200 bytes}}{33}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces CON vs NON 0-1000 bytes}}{33}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces CON vs NON 200-1000 bytes}}{34}{figure.4.11}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces CON vs NON 0-1000 bytes}}{32}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces CON vs NON 200-1000 bytes}}{33}{figure.4.10}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

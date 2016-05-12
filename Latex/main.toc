@@ -5,8 +5,8 @@
 \select@language {english}
 \contentsline {chapter}{List of Figures}{xi}{section*.1}
 \contentsline {chapter}{List of Tables}{xiii}{section*.2}
-\contentsline {chapter}{List of Algorithms}{xv}{chapter*.3}
-\contentsline {chapter}{List of Acronyms}{xvii}{section*.4}
+\contentsline {chapter}{List of Acronyms}{xv}{section*.3}
+\contentsline {chapter}{Glossary}{xvii}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Methodology}{1}{section.1.2}
@@ -31,6 +31,7 @@
 \contentsline {subsection}{\numberline {2.6.4}\gls {radvd}}{9}{subsection.2.6.4}
 \contentsline {section}{\numberline {2.7}Software tools}{9}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Other}{9}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Abbreviations used in the rest of this thesis}{9}{subsection.2.7.2}
 \contentsline {chapter}{\chapternumberline {3}System Architecture}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{12}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Connection challenges}{14}{subsection.3.1.1}
@@ -43,22 +44,23 @@
 \contentsline {subsection}{\numberline {4.1.1}Stable transfer rate}{19}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Packet fragmentation}{22}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Description of measurements}{23}{section.4.2}
-\contentsline {section}{\numberline {4.3}CoAP CON}{24}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Discussion}{25}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}CoAP CON with more data}{26}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}CoAP NON}{28}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}CoAP NON, with more data}{29}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Discussion}{33}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Comparison}{33}{section.4.5}
+\contentsline {section}{\numberline {4.3}CoAP}{24}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Discussion}{26}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{27}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{29}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Discussion}{32}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Comparison}{32}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{33}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}BLE}{33}{section.4.5}
 \contentsline {section}{\numberline {4.6}Time spent in network}{33}{section.4.6}
-\contentsline {chapter}{\chapternumberline {5}Data Anaysis discussion}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Data analysis in microcontrollers}{35}{section.5.1}
-\contentsline {section}{\numberline {5.2}Computational Power}{35}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Power consumption}{35}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Devices used}{35}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Raspberry Pi}{35}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}nRF52}{35}{subsection.5.3.2}
-\contentsline {chapter}{References}{37}{section*.21}
+\contentsline {chapter}{\chapternumberline {5}Data Anaysis discussion}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Data analysis in microcontrollers}{37}{section.5.1}
+\contentsline {section}{\numberline {5.2}Computational Power}{37}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Power consumption}{37}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Ease of use}{37}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Raspberry Pi}{37}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}nRF52}{37}{subsection.5.3.2}
+\contentsline {chapter}{References}{39}{section*.23}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{39}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{41}{appendix.B}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{41}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{43}{appendix.B}

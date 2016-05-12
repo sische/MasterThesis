@@ -9,9 +9,10 @@
 \addvspace {10pt}
 \contentsline {table}{\numberline {4.1}{\ignorespaces Wireshark CoAP CON 0 bytes}}{24}{table.4.1}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Wireshark CoAP CON 100 bytes}}{25}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Wireshark CoAP CON 700 bytes}}{27}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Wireshark CoAP NON 0 bytes}}{29}{table.4.4}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Wireshark CoAP NON 700 bytes}}{31}{table.4.5}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Wireshark CoAP NON 0 bytes}}{27}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Wireshark CoAP NON 100 bytes}}{28}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Wireshark CoAP CON 700 bytes}}{34}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Wireshark CoAP NON 700 bytes}}{35}{table.4.6}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

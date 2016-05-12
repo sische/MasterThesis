@@ -11,6 +11,7 @@ A level-1 auxiliary file: measurements2.aux
 A level-1 auxiliary file: dataAnalysis.aux
 The style file: chicago.bst
 A level-1 auxiliary file: appendix.aux
+A level-1 auxiliary file: appendixB.aux
 Database file #1: main.bib
 I was expecting a `,' or a `}'---line 53 of file main.bib
  : @article{Author: 
@@ -41,7 +42,7 @@ Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
 You've used 7 entries,
             2861 wiz_defined-function locations,
-            662 strings with 6158 characters,
+            663 strings with 6171 characters,
 and the built_in function-call counts, 4536 in all, are:
 = -- 405
 > -- 261
