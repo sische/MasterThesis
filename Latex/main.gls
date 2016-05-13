@@ -29,10 +29,14 @@
 \glossentry{directrix}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
 \glsXpageXglsnumberformat{}{26}}}\glsgroupskip
+\glsgroupheading{M}\relax\glsresetentrylist
+\glossentry{messageCode}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{i}}}\relax\glsresetentrylist
+\glossentry{messageType}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{i}}}\glsgroupskip
 \glsgroupheading{N}\relax\glsresetentrylist
 \glossentry{nRF52}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{5}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{i}}}\glsgroupskip
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossentry{parabola}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 

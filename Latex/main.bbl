@@ -1,14 +1,14 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{??}{new}{}]{newark}
+{Newark:} element 14.
+\newblock https://www.newark.com/.
+\newblock Accessed: 13-05-2016.
+
 \bibitem[\protect\citeauthoryear{??}{nrf}{}]{nrf52Nordic}
 {Nordic Semiconductor:} nrf52 series soc.
 \newblock https://www.nordicsemi.com/Products/nRF52-Series-SoC.
 \newblock Accessed: 25-03-2016.
-
-\bibitem[\protect\citeauthoryear{??}{ras}{}]{raspberryPi2}
-{Raspberry Pi:} raspberry pi 2 model b.
-\newblock https://www.raspberrypi.org/products/raspberry-pi-2-model-b/.
-\newblock Accessed: 27-03-2016.
 
 \bibitem[\protect\citeauthoryear{Gomez, Oller, and Paradells}{Gomez
   et~al.}{2012}]{gomez2012overview}
@@ -29,6 +29,11 @@ Hunkeler, U., H.~L. Truong, and A.~Stanford-Clark (2008).
 \newblock Mqtt-s—a publish/subscribe protocol for wireless sensor networks.
 \newblock In {\em Communication systems software and middleware and workshops,
   2008. comsware 2008. 3rd international conference on}, pp.\  791--798. IEEE.
+
+\bibitem[\protect\citeauthoryear{Kushalnagar, Montenegro, Culler, and
+  Hui}{Kushalnagar et~al.}{2007}]{kushalnagar2007transmission}
+Kushalnagar, N., G.~Montenegro, D.~E. Culler, and J.~W. Hui (2007).
+\newblock Transmission of ipv6 packets over ieee 802.15. 4 networks.
 
 \bibitem[\protect\citeauthoryear{Mulligan}{Mulligan}{2007}]{mulligan20076lowpan}
 Mulligan, G. (2007).

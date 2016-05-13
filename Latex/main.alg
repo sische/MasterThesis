@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 12.05.2016  17:50:12
-;; Indexstyle: "/tmp/XXlFn8NNqp", Rawindex: "/tmp/ah6AFvh8HV", Output: "main.acr"
+;; at 13.05.2016  20:37:48
+;; Indexstyle: "/tmp/Ruh0CKP_tn", Rawindex: "/tmp/DciXJebeRc", Output: "main.acr"
 
 
 Building indexentry-tree:
@@ -37,9 +37,14 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
-Letter-group: "¤†¨" -> "H"
 Letter-group: "†Ã€È" -> "C"
 Letter-group: "»ÊÚÚ" -> "M"
 Letter-group: "Ë€å" -> "R"
@@ -48,25 +53,32 @@ Letter-group: "€†®" -> "A"
 Letter-group: "€†´" -> "A"
 Letter-group: "„´—" -> "B"
 Letter-group: "†Ã¼" -> "C"
+Letter-group: "†Èà" -> "C"
 Letter-group: "¼Ð" -> "D"
 Letter-group: "à¨" -> "G"
+Letter-group: "¤†¨" -> "H"
 Letter-group: "¨2†" -> "I"
 Letter-group: "¨†»Èå6" -> "I"
 Letter-group: "¨—" -> "I"
 Letter-group: "¨ÃÚ" -> "I"
 Letter-group: "¨Èå4" -> "I"
 Letter-group: "¨Èå6" -> "I"
+Letter-group: "¨Ð»" -> "I"
 Letter-group: "´€¼" -> "L"
+Letter-group: "´2†€È" -> "L"
 Letter-group: "»2»" -> "M"
+Letter-group: "»Úà" -> "M"
 Letter-group: "¼È" -> "N"
 Letter-group: "¼Ã¼" -> "N"
 Letter-group: "¼Ú¼à" -> "N"
 Letter-group: "È€¼" -> "P"
 Letter-group: "¨†»È" -> "I"
 Letter-group: "ÃÐ" -> "O"
+Letter-group: "Ë€»" -> "R"
 Letter-group: "ËÚÚ" -> "R"
 Letter-group: "ÐÈ¨" -> "S"
 Letter-group: "ÚœÚÈ" -> "T"
+Letter-group: "Ú»€" -> "T"
 Letter-group: "àÈ" -> "U"
 Letter-group: "àÐ„" -> "U"
 Letter-group: "Ú†È" -> "T"
@@ -87,7 +99,7 @@ Letter-group: "¤†¨" -> "H"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¨2†" -> "I"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "´€¼" -> "L"
+Letter-group: "´2†€È" -> "L"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "»2»" -> "M"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)

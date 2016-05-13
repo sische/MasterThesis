@@ -4,6 +4,5 @@
 (indexentry :tkey (("directrix" "\\glossentry{directrix}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Message type" "\\glossentry{messageType}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Message code" "\\glossentry{messageCode}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{5}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("parabola" "\\glossentry{parabola}") ) :locref "{}{26}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("directrix" "\\glossentry{directrix}") ) :locref "{}{26}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("parabola" "\\glossentry{parabola}") ) :locref "{}{28}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("directrix" "\\glossentry{directrix}") ) :locref "{}{28}" :attr "pageglsnumberformat" ) 

@@ -15,52 +15,49 @@
 \contentsline {subsection}{\numberline {1.3.2}Objectives}{1}{subsection.1.3.2}
 \contentsline {section}{\numberline {1.4}Structure}{1}{section.1.4}
 \contentsline {chapter}{\chapternumberline {2}Background}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Bluetooth Low Energy (Bluetooth Smart)}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}\gls {hci}}{4}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}ACL}{4}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}6LoWPAN}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Raspberry Pi}{4}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Ubuntu Mate}{5}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}nRF52}{5}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Softdevice}{7}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Adafruit ADXL345 Accelerometer}{7}{section.2.5}
-\contentsline {section}{\numberline {2.6}Transport protocols}{8}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Network layers}{8}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}\gls {coap}}{8}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}\gls {mqtt}}{8}{subsection.2.6.3}
-\contentsline {subsection}{\numberline {2.6.4}\gls {radvd}}{9}{subsection.2.6.4}
-\contentsline {section}{\numberline {2.7}Software tools}{9}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Other}{9}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Abbreviations used in the rest of this thesis}{9}{subsection.2.7.2}
-\contentsline {chapter}{\chapternumberline {3}System Architecture}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{12}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Connection challenges}{14}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Nordic Semiconductor example code}{14}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}\gls {coap}}{14}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Observable \gls {coap}}{17}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Raspberry Pi to Network Computer or Server}{17}{section.3.3}
-\contentsline {chapter}{\chapternumberline {4}Network Measurements}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Initial limitations in the Network}{19}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Stable transfer rate}{19}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Packet fragmentation}{22}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Description of measurements}{23}{section.4.2}
-\contentsline {section}{\numberline {4.3}CoAP}{24}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Discussion}{26}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{27}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{29}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Discussion}{32}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Comparison}{32}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{33}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}BLE}{33}{section.4.5}
-\contentsline {section}{\numberline {4.6}Time spent in network}{33}{section.4.6}
-\contentsline {chapter}{\chapternumberline {5}Data Anaysis discussion}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Data analysis in microcontrollers}{37}{section.5.1}
-\contentsline {section}{\numberline {5.2}Computational Power}{37}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Power consumption}{37}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Ease of use}{37}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Raspberry Pi}{37}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}nRF52}{37}{subsection.5.3.2}
-\contentsline {chapter}{References}{39}{section*.23}
+\contentsline {section}{\numberline {2.1}Bluetooth Low Energy}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}6LoWPAN}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Raspberry Pi}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}nRF52}{6}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Softdevice}{9}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Adafruit ADXL345 Accelerometer}{9}{section.2.5}
+\contentsline {section}{\numberline {2.6}Transport protocols}{10}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Network layers}{10}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}\gls {coap}}{10}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}\gls {mqtt}}{10}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}\gls {radvd}}{11}{subsection.2.6.4}
+\contentsline {section}{\numberline {2.7}Software tools}{11}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Other}{11}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Abbreviations used in the rest of this thesis}{11}{subsection.2.7.2}
+\contentsline {chapter}{\chapternumberline {3}System Architecture}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{14}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Connection challenges}{16}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Nordic Semiconductor example code}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}\gls {coap}}{16}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Observable \gls {coap}}{19}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Raspberry Pi to Network Computer or Server}{19}{section.3.3}
+\contentsline {chapter}{\chapternumberline {4}Network Measurements}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Initial limitations in the Network}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Stable transfer rate}{21}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Packet fragmentation}{24}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Description of measurements}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}CoAP}{26}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Discussion}{28}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{29}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{31}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Discussion}{34}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Comparison}{34}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{35}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}BLE}{35}{section.4.5}
+\contentsline {section}{\numberline {4.6}Time spent in network}{35}{section.4.6}
+\contentsline {chapter}{\chapternumberline {5}Data Anaysis discussion}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Data analysis in microcontrollers}{39}{section.5.1}
+\contentsline {section}{\numberline {5.2}Computational Power}{39}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Power consumption}{39}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Ease of use}{39}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Raspberry Pi}{39}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}nRF52}{39}{subsection.5.3.2}
+\contentsline {chapter}{References}{41}{section*.24}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{41}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{43}{appendix.B}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{43}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{45}{appendix.B}

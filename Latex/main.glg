@@ -1,11 +1,13 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 12.05.2016  17:50:12
-;; Indexstyle: "/tmp/WBnA_6d598", Rawindex: "/tmp/vmpx1payjy", Output: "main.gls"
+;; at 13.05.2016  20:37:48
+;; Indexstyle: "/tmp/18SzS9dGcO", Rawindex: "/tmp/jXGR1Npm2J", Output: "main.gls"
 
 
 Building indexentry-tree:
 Hierdepth of index is :TREE
 
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -16,10 +18,14 @@ Letter-group: "€" -> "A"
 Letter-group: "¼Ëœ52" -> "N"
 Letter-group: "È€Ë€„Ã´€" -> "P"
 Letter-group: "¨Ë—†ÚË¨ë" -> "D"
+Letter-group: "»—ÐÐ€— ÚíÈ—" -> "M"
+Letter-group: "»—ÐÐ€— †Ã—" -> "M"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "€" -> "A"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¨Ë—†ÚË¨ë" -> "D"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "»—ÐÐ€— †Ã—" -> "M"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¼Ëœ52" -> "N"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)

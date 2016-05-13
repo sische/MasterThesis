@@ -17,68 +17,76 @@ I was expecting a `,' or a `}'---line 53 of file main.bib
  : @article{Author: 
  :                  Sindre Schei year:2016,
 I'm skipping whatever remains of this entry
-Warning--no key, author in raspberryPi2
-Warning--no author, editor, or organization in raspberryPi2
-Warning--to sort, need author or key in raspberryPi2
+You're missing a field name---line 106 of file main.bib
+ : 
+ : % title = {{Nordic Semiconductor:} nRF52 Prewiev},%
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--no key, author in newark
+Warning--no author, editor, or organization in newark
+Warning--to sort, need author or key in newark
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--to sort, need author or key in nrf52Nordic
+Warning--no key, author in newark
+Warning--no author, editor, or organization in newark
+Warning--no key, author in newark
+Warning--no author, editor, or organization in newark
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
-Warning--no key, author in raspberryPi2
-Warning--no author, editor, or organization in raspberryPi2
-Warning--no key, author in raspberryPi2
-Warning--no author, editor, or organization in raspberryPi2
+Warning--no key, author in newark
+Warning--no author, editor, or organization in newark
+Warning--empty year in newark
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--empty year in nrf52Nordic
-Warning--no key, author in raspberryPi2
-Warning--no author, editor, or organization in raspberryPi2
-Warning--empty year in raspberryPi2
+Warning--no journal in kushalnagar2007transmission
+Warning--no number and no volume in kushalnagar2007transmission
+Warning--page numbers missing in kushalnagar2007transmission
 Warning--no journal in shelby2014constrained
 Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
-You've used 7 entries,
+You've used 8 entries,
             2861 wiz_defined-function locations,
-            663 strings with 6171 characters,
-and the built_in function-call counts, 4536 in all, are:
-= -- 405
-> -- 261
+            665 strings with 6271 characters,
+and the built_in function-call counts, 5280 in all, are:
+= -- 458
+> -- 339
 < -- 2
-+ -- 80
-- -- 84
-* -- 400
-:= -- 727
-add.period$ -- 22
-call.type$ -- 7
-change.case$ -- 47
-chr.to.int$ -- 7
-cite$ -- 38
-duplicate$ -- 145
-empty$ -- 323
-format.name$ -- 100
-if$ -- 894
++ -- 104
+- -- 108
+* -- 478
+:= -- 868
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 56
+chr.to.int$ -- 8
+cite$ -- 42
+duplicate$ -- 160
+empty$ -- 356
+format.name$ -- 128
+if$ -- 1029
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 5
-newline$ -- 37
-num.names$ -- 50
-pop$ -- 57
+missing$ -- 6
+newline$ -- 41
+num.names$ -- 60
+pop$ -- 64
 preamble$ -- 1
-purify$ -- 89
+purify$ -- 104
 quote$ -- 0
-skip$ -- 132
+skip$ -- 149
 stack$ -- 0
-substring$ -- 264
-swap$ -- 52
+substring$ -- 284
+swap$ -- 56
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 140
-warning$ -- 23
-while$ -- 48
+type$ -- 160
+warning$ -- 26
+while$ -- 54
 width$ -- 0
-write$ -- 93
-(There was 1 error message)
+write$ -- 104
+(There were 2 error messages)
