@@ -39,7 +39,7 @@ The protocol stack of \gls{ble} has two main parts, the controller and the host,
     \label{fig:BLEdataUnitStructure}
 \end{figure}
 
-Figure \ref{fig:BLEdataUnitStructure} shows the data unit structure in \gls{ble}, meaning the different fields that can be used in a packet. The header fields of 4 bytes of access addresses and \gls{l2cap} will be central topics of discussion later in this thesis. The figure shows that the maximal packet size in a network like this is 31 bytes per packet.  In the case of the network presented here, when the \gls{ble} slave has been connected to a master, it stops searching for other masters, and it is not possible to connect to several masters. This means that we are only able to create a \textit{star network}, not a \textit{mesh network}. This could possibly be an idea for improvement later. Other than this, \gls{ble} seems like a very good alternative in this project. 
+Figure \ref{fig:BLEdataUnitStructure} shows the data unit structure in \gls{ble}, meaning the different fields that can be used in a packet. The header fields of 4 \gls{byte} of access addresses and \gls{l2cap} will be central topics of discussion later in this thesis. The figure shows that the maximal packet size in a network like this is 31 bytes per packet.  In the case of the network presented here, when the \gls{ble} slave has been connected to a master, it stops searching for other masters, and it is not possible to connect to several masters. This means that we are only able to create a \textit{star network}, not a \textit{mesh network}. This could possibly be an idea for improvement later. Other than this, \gls{ble} seems like a very good alternative in this project. 
 
 %Check out: Mikhail Galeev - BLE
 
@@ -134,8 +134,7 @@ In other words much more different options than will be used in this system. The
 Figure \ref{fig:nrf52chipDetail} shows how the different parts are placed on the chip. 
 
 % https://www.nordicsemi.com/Products/nRF52-Series-SoC
-
-\subsection{Softdevice}
+In order to run compiled code on the nRF52, a preprogrammed \textit{Soft device} has to be loaded onto the chip. There are several versions that can be downloaded from http://www.nordicsemi.com. 
 
 
 
@@ -162,15 +161,52 @@ In order to do collect data, a sensor needed to be connected to the Nordic Semic
 
 \section{Transport protocols}
 
-\subsection{Network layers}
+In order to transfer data from the end nodes to the central points of the network, either for analysing or already analysed data, a fast, efficient and stable transport protocol has to be used. This is a central aspect in this network, because the limitations of sending rate is thought to be one of the main limitations, either in the form of limits of data at once or number ofsendings pr second. The protocol needs to be stable and energy efficient and work with both \gls{ble} and \gls{6lowpan}. Luckily, Nordic Semiconductor provides example code and examples on how to get started with this.
 
 \subsection{\gls{coap}}
 
 %The \\ protocol is described in the documentation as follows: 
 
-\gls{coap} is a transport protocol designed to be used in constrained networks for \gls{m2m} communication. It is \gls{udp} based, and works good in low-power and lossy networks. It can be used with microcontrollers, and with \gls{ipv6} and \gls{6lowpan}. Both GET and PUSH functionality can be used, as well as \textit{observable} GET. This means that a server can "subscribe" to end notes in the network, and get updates either after a given timespan or when changes have been made. This therefore looked like a promising protocol to use, and was chosen as the first transport protocol to test the network \cite{shelby2014constrained}.
- 
+\gls{coap} is a transport protocol designed to be used in constrained networks for \gls{m2m} communication. It is \gls{udp} based, and works good in low-power and lossy networks. It can be used with microcontrollers, and with \gls{ipv6} and \gls{6lowpan}. Both GET and PUSH functionality can be used, as well as \textit{observable} GET. This means that a server can "subscribe" to end notes in the network, and get updates either after a given timespan or when changes have been made. This therefore looked like a promising protocol to use, and was chosen as the main transport protocol to test in the network \cite{shelby2014constrained}.
 
+The main technical features described in \gls{coap} is as follows: 
+
+\begin{itemize}
+	\item Web protocol fulfilling M2M requirements in constrained
+      environments
+	\item UDP binding with optional reliability supporting unicast
+      and multicast requests.
+	\item Asynchronous message exchanges.
+	\item Low header overhead and parsing complexity.
+	\item URI and Content-type support.
+	\item Simple proxy and caching capabilities.
+	\item A stateless HTTP mapping, allowing proxies to be built providing
+      access to CoAP resources via HTTP in a uniform way or for HTTP
+      simple interfaces to be realized alternatively over CoAP.
+	\item Security binding to Datagram Transport Layer Security (DTLS).	
+\end{itemize}
+
+
+CoAP has several similarities with working over \gls{http}, with the same client and server roles. The client sends a request, and the server sends a response back. Many of the response codes are also very similar, with \textit{404: Not found} as the best known. When \gls{m2m} communication is used, both participants sometimes needs to be both client and server, and the \gls {coap} protocol handles this with a two-layer approach. \todo{make figure of CoAP Layering}. There are four different main messages defined in CoAP, being described as follows: 
+
+   Confirmable
+	  \textit{Some messages require an acknowledgement.  These messages are
+      called "Confirmable".  When no packets are lost, each Confirmable
+      message elicits exactly one return message of type Acknowledgement
+      or type Reset.}
+
+   Non-confirmable Message
+      Some other messages do not require an acknowledgement.  This is
+      particularly true for messages that are repeated regularly for
+      application requirements, such as repeated readings from a sensor.
+
+   Acknowledgement Message
+      An Acknowledgement message acknowledges that a specific
+      Confirmable message arrived.  By itself, an Acknowledgement
+      message does not indicate success or failure of any request
+      encapsulated in the Confirmable message, but the Acknowledgement
+      message may also carry a Piggybacked Response (see below).
+      
 
 
 \subsection{\gls{mqtt}}

@@ -25,10 +25,13 @@
 \glsgroupheading{A}\relax\glsresetentrylist
 \glossentry{A_B^Q}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}}}\glsgroupskip
+\glsgroupheading{B}\relax\glsresetentrylist
+\glossentry{byte}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{i}}}\glsgroupskip
 \glsgroupheading{D}\relax\glsresetentrylist
 \glossentry{directrix}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{26}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{28}}}\glsgroupskip
 \glsgroupheading{M}\relax\glsresetentrylist
 \glossentry{messageCode}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}}}\relax\glsresetentrylist
@@ -40,5 +43,5 @@
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossentry{parabola}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{26}}}%
+\glsXpageXglsnumberformat{}{28}}}%
 \end{theglossary}\glossarypostamble
