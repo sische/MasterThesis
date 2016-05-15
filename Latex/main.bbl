@@ -10,6 +10,11 @@
 \newblock https://www.nordicsemi.com/Products/nRF52-Series-SoC.
 \newblock Accessed: 25-03-2016.
 
+\bibitem[\protect\citeauthoryear{Chown and Venaas}{Chown and
+  Venaas}{2011}]{chown2011rogue}
+Chown, T. and S.~Venaas (2011).
+\newblock Rogue ipv6 router advertisement problem statement.
+
 \bibitem[\protect\citeauthoryear{Gomez, Oller, and Paradells}{Gomez
   et~al.}{2012}]{gomez2012overview}
 Gomez, C., J.~Oller, and J.~Paradells (2012).

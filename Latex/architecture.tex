@@ -1,7 +1,7 @@
 \chapter{System Architecture}
 \label{chp:architecture} 
 
-The purpose of this thesis is to build an end-to-end system, to be able to transfer data all the way from a sensor connected to a microcontroller to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read and transfer data efficiently. 
+The purpose of this thesis is to build an end-to-end system, to be able to transfer data all the way from sensors connected to a microcontroller to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read and transfer data efficiently. 
 
 
 \begin{figure}[ht]
@@ -11,7 +11,7 @@ The purpose of this thesis is to build an end-to-end system, to be able to trans
     \label{fig:systemArchitecture}
 \end{figure}
 
-Figure \ref{fig:systemArchitecture} shows how the complete end-to-end system of this thesis is set up. In short terms, the \textit{Nordic Semiconductor nRF52} is connected to a  \textit{Raspberry Pi 3} using \gls{6lowpan} and \gls{ble}. This means that they are able to communicate using \gls{ipv6} addresses, even though the nRF52 only has a bluetooth antenna built in. The limitations of \gls{ble} means that the nRF52 can only connect to \textit{one} device at the time. Several of these put together are therefore forming a \textit{star network} using the \textit{Raspberry Pi} as a central point of connection. Computations can now either be done in the end nodes at the \textit{nRF52s}, at the \textit{Raspberry Pi}, or forwarded to a web server or another computer with more computational power. Data can also be displayed directly to a web page from the \textit{Raspberry Pi}. 
+Figure \ref{fig:systemArchitecture} shows how the complete end-to-end system of this thesis is set up. In short terms, the \textit{Nordic Semiconductor nRF52} is connected to a  \textit{Raspberry Pi 3} using \gls{6lowpan} and \gls{ble}. This means that they are able to communicate using \gls{ipv6} addresses, even though the nRF52 only has a bluetooth antenna built in, as shown in figure \ref{fig:nrf52chipDetail}. The limitations of \gls{ble} means that the nRF52 can only connect to \textit{one} device at the time. Several of these put together are therefore forming a \textit{star network} using the \textit{Raspberry Pi} as a central point of connection. Computations can now either be done in the end nodes at the \textit{nRF52s}, at the \textit{Raspberry Pi}, or forwarded to a web server or another computer with more computational power. Data can also be displayed directly to a web page from the \textit{Raspberry Pi}. 
  
 %\newpage
 
@@ -29,36 +29,6 @@ A central part of the testing in this thesis will be to test the different limit
 Computational power is closely related to power usage. The nRF52 microcontroller is battery powered using a small \textit{3V Lithium CR 2032} battery. Given this limitation the computational power will be limited as well. The optimal solutions therefore seems to handle as little data as possible here. 
 
 
-
-
-%\section{Connecting nRF52 and ADXL345}
-
-%The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite straight forward using the nRF52. Connection scheme is as follows (nRF52 -> ADXL345): 
-
-%\begin{itemize}
-%  \item 5V -- VIN		\tab  	\textit{Power source, \textcolor{green}{green cable} in Figure\ref{fig:nrf-adxl345}}
-%  \item GND -- GND 		\tab 	\textit{Ground, \textcolor{red}{red cable} in Figure \ref{fig:nrf-adxl345}}
- % \item P0.27 -- SDA	\tab	\textit{\gls{i2c} Serial Data Line, \textcolor{orange}{orange cable} in Figure \ref{fig:nrf-adxl345}}
- % \item P0.26 -- SCL	\tab 	\textit{\gls{i2c} Serial Clock Line, \textcolor{brown}{brown cable} in Figure \ref{fig:nrf-adxl345}}
-%\end{itemize} 
-
-%\begin{figure}[ht]
-%    \centering
-%    \includegraphics[scale=0.35]{nrf-adxl.png}    \caption{Connected nRF52 -- ADXL345}
-%    \label{fig:nrf-adxl345}
-%\end{figure}
-
-%After this is done it is possible to write to and read from the registers of the accelerometer over the two SDA and SCL cables. 
-
-
-
-
-
-
-%\section{\gls{6lowpan} and \gls{ble}} % Moved to background
-
-
-
 \section{Connecting Raspberry Pi and nRF52}
 
 
@@ -66,15 +36,26 @@ Computational power is closely related to power usage. The nRF52 microcontroller
 
 To set up the communication between a Raspberry Pi and the nRF52, the two code examples TWI and Observable server from Nordic Semiconductor was used as a starting point for coding on the nRF52. It was however quite tricky to set connect these two together the first time. The following recipe is what worked best. 
 
-Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable (Note: Jan. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. \textit{Ubuntu Mate} was therefore chosen as the best and most stable \gls{os}. When this is done a resizing of the file system is needed to use all the capacity of the memory card. 
+Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable (Note: Jan. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. \textit{Ubuntu Mate} was therefore chosen as the best and most stable \gls{os}. When this is done a resizing of the file system is needed to use all the capacity of the memory card. This is not necessary, but recommended to be able to use more than 4GB of the memory card. To resize, run the following commands
+
+\begin{verbatim}
+sudo fdisk /dev/mmcblk0
+\end{verbatim}
+
+Delete partition (d,2), and run the following after a reboot
+
+\begin{verbatim}
+sudo resize2fs /dev/mmcblk0p2
+\end{verbatim}
 
 To use \gls{ble}, install Bluez and radvd using \textit{apt-get} in a \textit{Unix terminal}:
 
-\begin{lstlisting}
+\begin{verbatim}
 apt-get install radvd wireshark bluez
 apt-get upgrade
 apt-get update
-\end{lstlisting}
+\end{verbatim}
+%\end{lstlisting}
 
 To activate \gls{ipv6} forwarding, uncomment the following line (remove "\#") in the file \textit{etc/sysctl.conf}
 
@@ -118,13 +99,22 @@ It is now possible to use the \textit{hcitool} command.
 hcitool lescan
 \end{verbatim}
 
-This command will scan for \gls{ble} devices nearby, and find the bluetooth address, for instance \textit{0211:22FF:FE33:4455}. To connect, run the following: 
+This command will scan for \gls{ble} devices nearby, and find the bluetooth address, for instance \textit{0211:22FF:FE33:4455}. The normal procedure in this case would be to run the following command: 
 
 \begin{verbatim}
 echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
-echo "connect 0211:22FF:FE33:4455 1" > /sys/kernel/debug/bluetooth\\/6lowpan_control
+hcitool lecc 0211:22FF:FE33:4455
 service radvd restart
 \end{verbatim}
+
+This command never established a stable connection in this system. It was not possible to test the connection, and each connected device became automatically disconnected after about 15 seconds. The reason for this was never found. Instead it was possible to not use \textit{hcitool} for this part, and the following commands worked fine:
+
+\begin{verbatim}[xleftmargin=.5in]
+\noindent echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
+\noindentecho "connect 0211:22FF:FE33:4455 1" > /sys/kernel/
+debug/bluetooth/6lowpan_control
+service radvd restart
+\end{verbatim} \todo{FIX verbatim}
 
 The command \textit{hcitool con} shows the connected \gls{ble} devices. If the device is connected, the connection can be tested by typing
 
@@ -133,7 +123,28 @@ ping6 2001::0211:22FF:FE33:4455
 \end{verbatim}
 
 
-Using the basic example of the observable server it was easy to send \gls{coap} messages without the need of an \gls{ack} for every message. 
+Using the basic examples provided by Nordic Semiconductor described in chapter \ref{chp:architecture}.3, it was now possible to send messages both using \gls{coap} \gls{con} and \gls{non}.  
+
+
+\section{Connecting nRF52 and ADXL345}
+
+The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite straight forward using the nRF52. Connection scheme is as follows (nRF52 -> ADXL345): 
+
+\begin{itemize}
+  \item 5V -- VIN		\tab  	\textit{Power source, \textcolor{green}{green cable} in Figure\ref{fig:nrf-adxl345}}
+  \item GND -- GND 		\tab 	\textit{Ground, \textcolor{red}{red cable} in Figure \ref{fig:nrf-adxl345}}
+  \item P0.27 -- SDA	\tab	\textit{\gls{i2c} Serial Data Line, \textcolor{orange}{orange cable} in Figure \ref{fig:nrf-adxl345}}
+  \item P0.26 -- SCL	\tab 	\textit{\gls{i2c} Serial Clock Line, \textcolor{brown}{brown cable} in Figure \ref{fig:nrf-adxl345}}
+\end{itemize} 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.35]{nrf-adxl.png}    \caption{Connected nRF52 -- ADXL345}
+    \label{fig:nrf-adxl345}
+\end{figure}
+
+After this is done it is possible to write to and read from the registers of the accelerometer over the two SDA and SCL cables. 
+
 
 \subsection{Connection challenges}
 
@@ -143,6 +154,10 @@ ping6 2001:bt8::0211:22FF:FE33:4455
 
 
 \todo{Descibe bt8-problem and devzone.nordicsemi.com and infocenter.nordicsemi.com}
+
+\todo{Describe why I dropped the accelerometer}
+
+
 
 \section{Nordic Semiconductor example code}
 

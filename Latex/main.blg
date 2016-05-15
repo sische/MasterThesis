@@ -13,16 +13,15 @@ The style file: chicago.bst
 A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: appendixB.aux
 Database file #1: main.bib
-I was expecting a `,' or a `}'---line 53 of file main.bib
+I was expecting a `,' or a `}'---line 59 of file main.bib
  : @article{Author: 
  :                  Sindre Schei year:2016,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 106 of file main.bib
+You're missing a field name---line 112 of file main.bib
  : 
  : % title = {{Nordic Semiconductor:} nRF52 Prewiev},%
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "chown2011rogue"
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
 Warning--to sort, need author or key in newark
@@ -43,51 +42,54 @@ Warning--empty year in newark
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--empty year in nrf52Nordic
+Warning--no journal in chown2011rogue
+Warning--no number and no volume in chown2011rogue
+Warning--page numbers missing in chown2011rogue
 Warning--no journal in kushalnagar2007transmission
 Warning--no number and no volume in kushalnagar2007transmission
 Warning--page numbers missing in kushalnagar2007transmission
 Warning--no journal in shelby2014constrained
 Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
-You've used 8 entries,
+You've used 9 entries,
             2861 wiz_defined-function locations,
-            666 strings with 6285 characters,
-and the built_in function-call counts, 5280 in all, are:
-= -- 458
-> -- 339
+            669 strings with 6365 characters,
+and the built_in function-call counts, 5922 in all, are:
+= -- 513
+> -- 391
 < -- 2
-+ -- 104
-- -- 108
-* -- 478
-:= -- 868
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 56
-chr.to.int$ -- 8
-cite$ -- 42
-duplicate$ -- 160
-empty$ -- 356
-format.name$ -- 128
-if$ -- 1029
++ -- 120
+- -- 128
+* -- 531
+:= -- 989
+add.period$ -- 26
+call.type$ -- 9
+change.case$ -- 63
+chr.to.int$ -- 9
+cite$ -- 46
+duplicate$ -- 175
+empty$ -- 389
+format.name$ -- 152
+if$ -- 1144
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 41
-num.names$ -- 60
-pop$ -- 64
+missing$ -- 7
+newline$ -- 45
+num.names$ -- 70
+pop$ -- 69
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 117
 quote$ -- 0
-skip$ -- 149
+skip$ -- 171
 stack$ -- 0
-substring$ -- 284
-swap$ -- 56
+substring$ -- 304
+swap$ -- 60
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 160
-warning$ -- 26
-while$ -- 54
+type$ -- 180
+warning$ -- 29
+while$ -- 64
 width$ -- 0
-write$ -- 104
+write$ -- 115
 (There were 2 error messages)

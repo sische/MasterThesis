@@ -260,23 +260,15 @@ Another transport protocol that could be used in such a network of microcontroll
 
 \cite{hunkeler2008mqtt}
 
-\subsection{\gls{radvd}}
-
-\cite{chown2011rogue}. 
 
 
 \section{Software tools}
 
 
-As \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor (where?), for writing C programming. For other programming languages (for instance Python 3.4, HTML, CSS, JavaScript, Flask and AJAX) \textit{Sublime Text 2} for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
+As \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor (where?), for writing C programming. For other programming languages (for instance Python 3.4) \textit{Sublime Text 2} for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
 
-\subsection{Other}
+\gls{radvd} is a software tool that can be used to advertise \gls{ipv6} addresses in a local network, using \gls{ndp} \cite{chown2011rogue}. . This is being used to multicast and forward packets in this network. When a packet is sent from an end node to another, the communication needs to go through the central point in the star network, the Raspberry Pi in this case. Here, \gls{radvd} ensures that the packages are being routed to the right end point, or the right nRF52 in this system. 
 
-Wireshark, Firefox, GitHub
-
-
-\subsection{Abbreviations used in the rest of this thesis}
-
-
+Other software used to set up, monitor and test this network include Mozilla Firefox with Copper \todo{image?} to get basic communication with nRF52 from the Pi without the use of a script or terminal. Wireshark has been used to capture packets sent through the network, and GitHub has been used both as a backup solution. 
 
 
