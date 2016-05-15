@@ -32,7 +32,7 @@
 \glsgroupheading{D}\relax\glsresetentrylist
 \glossentry{directrix}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{30}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{29}}}\glsgroupskip
 \glsgroupheading{M}\relax\glsresetentrylist
 \glossentry{messageCode}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}}}\relax\glsresetentrylist
@@ -44,5 +44,5 @@
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossentry{parabola}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{30}}}%
+\glsXpageXglsnumberformat{}{29}}}%
 \end{theglossary}\glossarypostamble

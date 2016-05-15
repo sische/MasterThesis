@@ -232,6 +232,9 @@ Other messages used is \textit{GET, PUT, POST and DELETE}, to get or change data
     \label{fig:NONOackSeqDiagram}
 \end{figure}
 
+Figure \ref{fig:NONOackSeqDiagram} shows the basic message sequence between the client and the server in a \gls{coap} \gls{con} network. Every request CON message needs to be given an ack back. Figure \ref{fig:CoAPMessageFormat} shows the same for \gls{non}, where no \glspl{ack} are needed. The same initial set up with con and ack messages are still needed, to establish a connection between the client and server before a stream of \gls{non} messages can be sent. This means a much more unreliable connection than using \gls{con}, since messages can be dropped without either the client or the server gets notified. This works in systems where every message does not need to get to its destination, for instance in a sensor based network like the network presented in this thesis. A message ID is still provided to every message to remove duplicated messages, but dropped messages are lost data. If the packages sent contained data that could not be dropped, for instance containing crucial patient information from censors on a patients body, this is not a good solution. In that case the reliable solution \textit{must} be used. 
+
+\todo{Show examples of setting up coap NON needs acks first? Wireshark without bluetooth-sniffing?}
 
 \begin{figure}[ht]
     \centering
@@ -249,7 +252,7 @@ Other messages used is \textit{GET, PUT, POST and DELETE}, to get or change data
     \label{fig:CoAPUsageOfMessageTypes}
 \end{figure}
 
-
+Figure \ref{fig:CoAPUsageOfMessageTypes} summarizes the different message types used in \gls{coap}. The default setting for an empty message is that it is a \textit{reset} message or an \gls{ack}. The only exception is the use of \textit{ping}, to test the \gls{rtt} in the network. In this case the empty message will work as a \gls{con}.
 
 \subsection{\gls{mqtt}}
 
@@ -259,8 +262,11 @@ Another transport protocol that could be used in such a network of microcontroll
 
 \subsection{\gls{radvd}}
 
+\cite{chown2011rogue}. 
+
 
 \section{Software tools}
+
 
 As \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor (where?), for writing C programming. For other programming languages (for instance Python 3.4, HTML, CSS, JavaScript, Flask and AJAX) \textit{Sublime Text 2} for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
 

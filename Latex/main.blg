@@ -22,6 +22,7 @@ You're missing a field name---line 106 of file main.bib
  : % title = {{Nordic Semiconductor:} nRF52 Prewiev},%
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "chown2011rogue"
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
 Warning--to sort, need author or key in newark
@@ -50,7 +51,7 @@ Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
 You've used 8 entries,
             2861 wiz_defined-function locations,
-            665 strings with 6271 characters,
+            666 strings with 6285 characters,
 and the built_in function-call counts, 5280 in all, are:
 = -- 458
 > -- 339
