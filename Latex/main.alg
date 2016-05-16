@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 16.05.2016  13:16:08
-;; Indexstyle: "/tmp/v9_JyDgiR3", Rawindex: "/tmp/69cRSvV3gh", Output: "main.acr"
+;; at 16.05.2016  14:14:38
+;; Indexstyle: "/tmp/Wx6mS82eqR", Rawindex: "/tmp/vPtiMWgdf0", Output: "main.acr"
 
 
 Building indexentry-tree:
@@ -46,12 +46,11 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
-Letter-group: "†Ã€È" -> "C"
-Letter-group: "»ÊÚÚ" -> "M"
 Letter-group: "6´ÃæÈ€¼" -> "glsnumbers"
 Letter-group: "€†®" -> "A"
 Letter-group: "€†´" -> "A"
 Letter-group: "„´—" -> "B"
+Letter-group: "†Ã€È" -> "C"
 Letter-group: "†Ã¼" -> "C"
 Letter-group: "†Èà" -> "C"
 Letter-group: "¼Ð" -> "D"
@@ -68,6 +67,7 @@ Letter-group: "¨Ð»" -> "I"
 Letter-group: "´€¼" -> "L"
 Letter-group: "´2†€È" -> "L"
 Letter-group: "»2»" -> "M"
+Letter-group: "»ÊÚÚ" -> "M"
 Letter-group: "»Úà" -> "M"
 Letter-group: "¼È" -> "N"
 Letter-group: "¼Ã¼" -> "N"
@@ -118,5 +118,4 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ú†È" -> "T"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "àÈ" -> "U"
-WARNING: location-reference "{}{x}" did match multiple location-classes! (taking first one)
 WARNING: location-reference "{}{i}" did match multiple location-classes! (taking first one)

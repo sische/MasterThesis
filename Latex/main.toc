@@ -47,6 +47,7 @@
 \contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{41}{subsection.4.4.1}
 \contentsline {section}{\numberline {4.5}BLE}{41}{section.4.5}
 \contentsline {section}{\numberline {4.6}Time spent in network}{41}{section.4.6}
+\contentsline {section}{\numberline {4.7}Quantity test}{42}{section.4.7}
 \contentsline {chapter}{\chapternumberline {5}Data Anaysis discussion}{45}{chapter.5}
 \contentsline {section}{\numberline {5.1}Data analysis in microcontrollers}{45}{section.5.1}
 \contentsline {section}{\numberline {5.2}Computational Power}{45}{section.5.2}
@@ -54,7 +55,7 @@
 \contentsline {section}{\numberline {5.3}Ease of use}{45}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Raspberry Pi}{45}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}nRF52}{45}{subsection.5.3.2}
-\contentsline {chapter}{References}{47}{section*.32}
+\contentsline {chapter}{References}{47}{section*.33}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{49}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}Appendix B}{51}{appendix.B}

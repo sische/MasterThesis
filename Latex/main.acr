@@ -73,9 +73,7 @@
 \glsXpageXglsnumberformat{}{46}}}\glsgroupskip
 \glsgroupheading{C}\relax\glsresetentrylist
 \glossentry{coap}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{i}\delimN 
-\glsXpageXglsnumberformat{}{ix}\delimN 
-\glsXpageXglsnumberformat{}{x}, 
+\glsXpageXglsnumberformat{}{i}, 
 \glsXpageXglsnumberformat{}{10}\delimR 
 \glsXpageXglsnumberformat{}{12}\delimN 
 \glsXpageXglsnumberformat{}{18}\delimN 
@@ -165,8 +163,7 @@
 \glsXpageXglsnumberformat{}{10}\delimN 
 \glsXpageXglsnumberformat{}{11}}}\relax\glsresetentrylist
 \glossentry{mqtt}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{i}\delimN 
-\glsXpageXglsnumberformat{}{ix}, 
+\glsXpageXglsnumberformat{}{i}, 
 \glsXpageXglsnumberformat{}{13}}}\relax\glsresetentrylist
 \glossentry{mtu}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 

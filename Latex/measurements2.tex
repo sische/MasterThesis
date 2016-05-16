@@ -269,9 +269,6 @@ Using these measurements the following plot could be drawn.
 Figure \ref{fig:CONvsNON0-200} shows the comparison between sending between 0 and 200 bytes of useful data through the network at once. Keep in mind that this does not show sending rate per time (which will be discussed in chapter \todo{write chapter}), but percentage of the data sent that is useful data. \gls{con} can be sent much more often than \gls{non} in practice. It could therefore maybe be expected that this could give \gls{non} an advantage. \todo{<- Re-write}. \gls{non} does not need to send \glspl{ack} for every package, which should be an advantage concerning to maximize throughput. Still it is the more complex and more frequently sent \gls{con} that gets the best results in this test, with a small margin. 
 
 
-
-
-
 \subsection{CoAP, testing with more data}
 
 Table \ref{coapCON700table} shows a bigger and more complex case, where 700 bytes of data are being sent at once. In total 889 bytes are being sent, with a \gls{con} packet size of 774 bytes. This gives a percentage of goodput at 78.74 \%. The maximum packet length of a \gls{6lowpan} packet in this system of 270 bytes is therefore exceeded, as we can see in the figure. After 8 \gls{ble} packages of 31 bytes each has been sent, there is only room for 22 bytes in the last packet before the \gls{6lowpan} packet is full. This is repeated several times, once for each \gls{6lowpan} packet, until the last \gls{ble} packets at the size of 17 bytes. After this the standard packages for \gls{ack} and \textit{Number of completed packages} follows. This is in general a good example on how fragmentation of packets works in this system. 
@@ -473,6 +470,9 @@ The entire scope of the tests done on \gls{coap} \gls{non} in this system is sho
 
 \subsection{Goodput per time interval}
 
+Previous sections in this chapter has shown the percentage of bytes sent through that has been goodput, useful data, compared to the total amount of bytes. This is a good overview of how the protocols are able to exploit the network, and tells a lot about the different protocols. In a real world scenario however, the actual \textit{throughput per time} would be more relevant, since this tells how much data can be transported for every second.
+
+
 
 \section{BLE}
 
@@ -480,6 +480,7 @@ The entire scope of the tests done on \gls{coap} \gls{non} in this system is sho
 \section{Time spent in network}
 
 The previous tests shows 
+
 
 
 Calcumate time for \gls{coap} \gls{non}, 700 bytes sent:
@@ -491,8 +492,10 @@ Calcumate time for \gls{coap} \gls{non}, 700 bytes sent:
  	0.1876/3 = 0.0625
 
 
+\section{Quantity test}
+
+This section will show a test of several nRF52 devices connected to the same Pi at the same time, to ensure stability and performance in the network. Even though this puts more pressure on both the network and the Pi, it is not expected to be considerably noticed in the transportation of packets. 
 
 
-
-
+\todo{Do measurements of several nRF52s. Write new python script to gather data from all of these. Add this to the Appendix}
 
