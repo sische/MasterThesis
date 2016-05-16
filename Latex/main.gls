@@ -32,7 +32,7 @@
 \glsgroupheading{D}\relax\glsresetentrylist
 \glossentry{directrix}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{29}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{33}}}\glsgroupskip
 \glsgroupheading{M}\relax\glsresetentrylist
 \glossentry{messageCode}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}}}\relax\glsresetentrylist
@@ -44,5 +44,8 @@
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossentry{parabola}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{29}}}%
+\glsXpageXglsnumberformat{}{33}}}\glsgroupskip
+\glsgroupheading{R}\relax\glsresetentrylist
+\glossentry{Raspberry Pi}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{i}}}%
 \end{theglossary}\glossarypostamble

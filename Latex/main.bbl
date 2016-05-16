@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{??}{adx}{}]{adxlDataSheet}
+{ADXL345:}digital accelerometer data sheet.
+\newblock
+  http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf.
+\newblock Accessed: 20-04-2016.
+
 \bibitem[\protect\citeauthoryear{??}{new}{}]{newark}
 {Newark:} element 14.
 \newblock https://www.newark.com/.
