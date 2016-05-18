@@ -472,9 +472,31 @@ The entire scope of the tests done on \gls{coap} \gls{non} in this system is sho
 
 Previous sections in this chapter has shown the percentage of bytes sent through that has been goodput, useful data, compared to the total amount of bytes. This is a good overview of how the protocols are able to exploit the network, and tells a lot about the different protocols. In a real world scenario however, the actual \textit{throughput per time} would be more relevant, since this tells how much data can be transported for every second.
 
+\gls{coap} \gls{con} and \gls{non} has been compared in this thesis, but in the system build \gls{non} was quite unstable at high transfer rates, as explained in chapter \ref{chp:architecture}.1. Because of this, \gls{con} seems like a better solution only considering the number of bytes transferred per second. As it turns out, this depends. 
+
+As seen in Table \todo{insert table}, this might be a too early conclusion.
+
+The table shows timestamps of packets received on the Raspberry Pi, sent with both \gls{con} and \gls{non}. Packets was captured with Wireshark, and the timestamp is created by Wireshark on the form \textit{number of seconds since start of capture}. The first value for each packet size in the table therefore approximately notes the number of seconds from the connection starts until the first packet containing useful data has arrived \footnote{values far off from the expected results due to e.g. connection issues have been excluded in calculations }. The first thing that is noticeable here is the big difference before useful data can be received. Equation \ref{averageStartTimeCON} shows the calculations of average start time on \gls{con}, which is a lot higher than for \gls{non} shown in equation \ref{averageStartTimeNON}. The main reason for this is that the \gls{non} needs to have a connection establishment using \gls{con} packets with \glspl{ack} without data before \gls{non} packets can be transferred. In addition severe connection issues was experienced in a much higher grade using \gls{non} than \gls{con}, especially for packets larger than 500 bytes, as shown in table \todo{Refer to table}.  
 
 
-\section{BLE}
+\begin{equation} \label{averageStartTimeCON}
+     \frac{3.4677+2.2425+4.0885+5.2941+3.3297+1.3398+4.6184+3.257+3.4062}{9} \approx 3.4493
+\end{equation}
+
+
+\begin{equation} \label{averageStartTimeNON}
+	\frac{10.1609+10.0567+9.4627+8.5798+28.3489+29.069}{6} \approx 15.9463
+\end{equation}
+
+Figure \todo{Tegn graf om hvor mange pakker som kan sendes per sekund} 
+
+\todo{Tegn graf om hvor lang tid det tar aa sende x andtall pakker, feks 13 eller 15?}
+
+
+
+
+
+%\section{BLE}
 
 
 \section{Time spent in network}
