@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{??}{abo}{}]{aboutNordic}
+{About:} nordic semiconductor.
+\newblock https://www.nordicsemi.com/eng/About-us.
+\newblock Accessed: 19-05-2016.
+
 \bibitem[\protect\citeauthoryear{??}{adx}{}]{adxlDataSheet}
 {ADXL345:}digital accelerometer data sheet.
 \newblock
@@ -15,6 +20,11 @@
 {Nordic Semiconductor:} nrf52 series soc.
 \newblock https://www.nordicsemi.com/Products/nRF52-Series-SoC.
 \newblock Accessed: 25-03-2016.
+
+\bibitem[\protect\citeauthoryear{Ashton}{Ashton}{2009}]{ashton2009internet}
+Ashton, K. (2009).
+\newblock That ‘internet of things’ thing.
+\newblock {\em RFiD Journal\/}~{\em 22\/}(7), 97--114.
 
 \bibitem[\protect\citeauthoryear{Chown and Venaas}{Chown and
   Venaas}{2011}]{chown2011rogue}

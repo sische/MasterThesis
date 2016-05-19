@@ -4,36 +4,37 @@
 \select@language {norsk}
 \select@language {english}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Example of IoT architecture}}{2}{figure.1.1}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces BLE protocol stack}}{4}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces BLE Data Unit Structure}}{4}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Raspberry Pi 3}}{6}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Nordic Semiconductor nRF52 }}{7}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Nordic Semiconductor nRF52 chip in detail }}{9}{figure.2.5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces ADXL345 Accelerometer}}{10}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Sequence diagram CoAP}}{12}{figure.2.7}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces CON CoAP client server sequence diagram}}{12}{figure.2.8}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces NON CoAP client server sequence diagram}}{13}{figure.2.9}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces CoAP message format}}{13}{figure.2.10}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces CoAP usage of message types}}{14}{figure.2.11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces BLE protocol stack}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces BLE Data Unit Structure}}{6}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Raspberry Pi 3}}{8}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Nordic Semiconductor nRF52 }}{9}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Nordic Semiconductor nRF52 chip in detail }}{11}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces ADXL345 Accelerometer}}{12}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sequence diagram CoAP}}{14}{figure.2.7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces CON CoAP client server sequence diagram}}{14}{figure.2.8}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces NON CoAP client server sequence diagram}}{15}{figure.2.9}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces CoAP message format}}{15}{figure.2.10}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces CoAP usage of message types}}{16}{figure.2.11}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces System architecture}}{15}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345}}{20}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces CoAP Client-Server communication example}}{21}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces CoAP Client-Server example Wireshark capture}}{22}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Sequence diagram CoAP Client-Server example}}{22}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces CoAP Observable Server example}}{23}{figure.3.6}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces System architecture}}{17}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345}}{22}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces CoAP Client-Server communication example}}{23}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces CoAP Client-Server example Wireshark capture}}{24}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Sequence diagram CoAP Client-Server example}}{24}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces CoAP Observable Server example}}{25}{figure.3.6}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{28}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ping nRF52, different time}}{29}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Packet fragmentation - train comparison}}{30}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP CON, 0-200 bytes sent}}{34}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON 0-200 bytes}}{36}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces CoAP CON plot, 200 bytes to 1 kB}}{38}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces NON 0-1000 bytes}}{39}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces NON 200-1000 bytes}}{40}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces CON vs NON 0-1000 bytes}}{40}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces CON vs NON 200-1000 bytes}}{41}{figure.4.10}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{30}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ping nRF52, different time}}{31}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Packet fragmentation - train comparison}}{32}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP CON, 0-200 bytes sent}}{36}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON 0-200 bytes}}{38}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CoAP CON plot, 200 bytes to 1 kB}}{40}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces NON 0-1000 bytes}}{41}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces NON 200-1000 bytes}}{42}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces CON vs NON 0-1000 bytes}}{42}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces CON vs NON 200-1000 bytes}}{43}{figure.4.10}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

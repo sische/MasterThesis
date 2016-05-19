@@ -13,15 +13,18 @@ The style file: chicago.bst
 A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: appendixB.aux
 Database file #1: main.bib
-I was expecting a `,' or a `}'---line 59 of file main.bib
+I was expecting a `,' or a `}'---line 68 of file main.bib
  : @article{Author: 
  :                  Sindre Schei year:2016,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 112 of file main.bib
+You're missing a field name---line 121 of file main.bib
  : 
  : % title = {{Nordic Semiconductor:} nRF52 Prewiev},%
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--no key, author in aboutNordic
+Warning--no author, editor, or organization in aboutNordic
+Warning--to sort, need author or key in aboutNordic
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
 Warning--to sort, need author or key in newark
@@ -31,6 +34,10 @@ Warning--to sort, need author or key in nrf52Nordic
 Warning--no key, author in adxlDataSheet
 Warning--no author, editor, or organization in adxlDataSheet
 Warning--to sort, need author or key in adxlDataSheet
+Warning--no key, author in aboutNordic
+Warning--no author, editor, or organization in aboutNordic
+Warning--no key, author in aboutNordic
+Warning--no author, editor, or organization in aboutNordic
 Warning--no key, author in adxlDataSheet
 Warning--no author, editor, or organization in adxlDataSheet
 Warning--no key, author in adxlDataSheet
@@ -43,6 +50,9 @@ Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
+Warning--no key, author in aboutNordic
+Warning--no author, editor, or organization in aboutNordic
+Warning--empty year in aboutNordic
 Warning--no key, author in adxlDataSheet
 Warning--no author, editor, or organization in adxlDataSheet
 Warning--empty year in adxlDataSheet
@@ -61,45 +71,45 @@ Warning--page numbers missing in kushalnagar2007transmission
 Warning--no journal in shelby2014constrained
 Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
-You've used 10 entries,
+You've used 12 entries,
             2861 wiz_defined-function locations,
-            674 strings with 6531 characters,
-and the built_in function-call counts, 6304 in all, are:
-= -- 551
-> -- 391
+            687 strings with 6733 characters,
+and the built_in function-call counts, 7257 in all, are:
+= -- 640
+> -- 417
 < -- 2
-+ -- 120
-- -- 128
-* -- 565
-:= -- 1024
-add.period$ -- 29
-call.type$ -- 10
-change.case$ -- 68
-chr.to.int$ -- 10
-cite$ -- 61
-duplicate$ -- 191
-empty$ -- 433
-format.name$ -- 152
-if$ -- 1226
++ -- 126
+- -- 138
+* -- 645
+:= -- 1164
+add.period$ -- 35
+call.type$ -- 12
+change.case$ -- 79
+chr.to.int$ -- 12
+cite$ -- 77
+duplicate$ -- 225
+empty$ -- 520
+format.name$ -- 162
+if$ -- 1411
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 7
-newline$ -- 50
-num.names$ -- 70
-pop$ -- 81
+missing$ -- 8
+newline$ -- 60
+num.names$ -- 80
+pop$ -- 96
 preamble$ -- 1
-purify$ -- 128
+purify$ -- 151
 quote$ -- 0
-skip$ -- 180
+skip$ -- 206
 stack$ -- 0
-substring$ -- 328
-swap$ -- 65
+substring$ -- 394
+swap$ -- 76
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 200
-warning$ -- 39
-while$ -- 64
+type$ -- 240
+warning$ -- 49
+while$ -- 76
 width$ -- 0
-write$ -- 127
+write$ -- 152
 (There were 2 error messages)
