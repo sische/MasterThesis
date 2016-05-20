@@ -39,7 +39,7 @@
 \contentsline {subsection}{\numberline {4.1.2}Packet fragmentation}{31}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Description of measurements}{33}{section.4.2}
 \contentsline {section}{\numberline {4.3}CoAP}{33}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Discussion}{35}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Discussion}{36}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{37}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{39}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Discussion}{42}{subsection.4.3.4}

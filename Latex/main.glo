@@ -7,5 +7,5 @@
 (indexentry :tkey (("Byte" "\\glossentry{byte}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Message code" "\\glossentry{messageCode}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Byte" "\\glossentry{byte}") ) :locref "{}{6}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("parabola" "\\glossentry{parabola}") ) :locref "{}{35}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("directrix" "\\glossentry{directrix}") ) :locref "{}{35}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("parabola" "\\glossentry{parabola}") ) :locref "{}{36}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("directrix" "\\glossentry{directrix}") ) :locref "{}{36}" :attr "pageglsnumberformat" ) 
