@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {2.1}Bluetooth Low Energy}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}6LoWPAN}{7}{section.2.2}
 \contentsline {section}{\numberline {2.3}Raspberry Pi}{7}{section.2.3}
-\contentsline {section}{\numberline {2.4}nRF52}{8}{section.2.4}
+\contentsline {section}{\numberline {2.4}nRF52}{9}{section.2.4}
 \contentsline {section}{\numberline {2.5}Adafruit ADXL345 Accelerometer}{11}{section.2.5}
 \contentsline {section}{\numberline {2.6}Transport protocols}{12}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}\gls {coap}}{12}{subsection.2.6.1}
@@ -45,8 +45,8 @@
 \contentsline {subsection}{\numberline {4.3.4}Discussion}{42}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}Comparison}{42}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{43}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Time spent in network}{44}{section.4.5}
-\contentsline {section}{\numberline {4.6}Quantity test}{44}{section.4.6}
+\contentsline {subsection}{\numberline {4.4.2}Comparison power usage}{46}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Quantity test}{46}{section.4.5}
 \contentsline {chapter}{\chapternumberline {5}Data Anaysis discussion}{49}{chapter.5}
 \contentsline {section}{\numberline {5.1}Data analysis in microcontrollers}{49}{section.5.1}
 \contentsline {section}{\numberline {5.2}Computational Power}{49}{section.5.2}

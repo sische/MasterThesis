@@ -32,11 +32,13 @@
 \glsgroupheading{D}\relax\glsresetentrylist
 \glossentry{directrix}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{35}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{36}}}\glsgroupskip
 \glsgroupheading{M}\relax\glsresetentrylist
 \glossentry{messageCode}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}}}\relax\glsresetentrylist
 \glossentry{messageType}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{i}}}\relax\glsresetentrylist
+\glossentry{microcontroller}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}}}\glsgroupskip
 \glsgroupheading{N}\relax\glsresetentrylist
 \glossentry{nRF52}{\glossaryentrynumbers{\relax 
@@ -44,8 +46,15 @@
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossentry{parabola}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{35}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{36}}}\relax\glsresetentrylist
+\glossentry{payload}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{i}, 
+\glsXpageXglsnumberformat{}{44}}}\glsgroupskip
 \glsgroupheading{R}\relax\glsresetentrylist
 \glossentry{Raspberry Pi}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{i}}}%
+\glsXpageXglsnumberformat{}{i}}}\glsgroupskip
+\glsgroupheading{S}\relax\glsresetentrylist
+\glossentry{singleBoardComputer}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{i}, 
+\glsXpageXglsnumberformat{}{8}}}%
 \end{theglossary}\glossarypostamble
