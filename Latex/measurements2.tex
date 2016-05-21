@@ -514,8 +514,7 @@ In this case both plots starts at \textit{0 byte/second}, since the payload is 0
 
 \subsection{Comparison power usage}
 
-These previous two tests shows the throughput per time, while the tests earlier in the thesis has focused on goodput compared to throughput, how much of the data sent is useful data. Since these glspl{microcontroller} are used as end nodes in the network, it is natural to assume that they will run on battery power only. In this case it is preferable that they do as little work as possible, meaning also handle as few packets as possible. It will therefore be compared how many packets that needs to go through the end nodes in the different cases, \gls{con} and \gls{non} \footnote{Before the test, it was clear that fewer packets are needed using \gls{non}, since no \glspl{ack} are required. The test is therefore done to see \textit{how much} fewer packets are needed here}. 
-
+These previous two tests shows the throughput per time, while the tests earlier in the thesis has focused on goodput compared to throughput, how much of the data sent is useful data. Since these glspl{microcontroller} are used as end nodes in the network, it is natural to assume that they will run on battery power only. In this case it is preferable that they do as little work as possible, meaning also handle as few packets as possible. It will therefore be compared how many packets that needs to go through the end nodes in the different cases, \gls{con} and \gls{non} \footnote{Before the test, it was clear that fewer packets are needed using \gls{non}, since no \glspl{ack} are required. The test is therefore done to see \textit{how much} fewer packets are needed here}.
 
 
 
@@ -525,4 +524,39 @@ This section will show a test of several nRF52 devices connected to the same Pi 
 
 
 \todo{Do measurements of several nRF52s. Write new python script to gather data from all of these. Add this to the Appendix}
+
+
+\section{Summary}
+
+As a summary of this chapter, the pros and cons will be directly compared to get a more clear understanding of the discoveries that has been made. 
+
+
+\begin{table}
+\begin{tabularx}{\linewidth}{>{\parskip1ex}X@{\kern4\tabcolsep}>{\parskip1ex}X}
+\toprule
+\hfil\bfseries Pros CoAP CON
+&
+\hfil\bfseries Pros CoAP NON
+\\\cmidrule(r{3\tabcolsep}){1-1}\cmidrule(l{-\tabcolsep}){2-2}
+
+%% PROS, seperated by empty line or \par
+It's nice\par
+
+
+&
+
+%% CONS, seperated by empty line or \par
+F\par
+It's really ugly\par
+
+
+
+
+
+\\\bottomrule
+\end{tabularx}
+\caption{Positive aspects of CoAP CON and NON compared}
+\end{table}
+
+
 

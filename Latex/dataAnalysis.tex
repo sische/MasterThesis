@@ -1,15 +1,49 @@
-\chapter{Data Anaysis discussion}
+\chapter{Discussion}
 \label{chp:dataAnalysis}
 
 \todo{IDEA: "Collect" the strings put out in the first chapter, which told us the challenges in a system of microcontrollers. This chapter could tell what we learned from the system, and what is still a challenge. Or should all of this be in the Result chapter? }
 
+\section{Set up network}
+
+\noindent \textbf{O.1: Build a star network of microcontrollers}
+
+This objective was fulfilled by using the Raspberry Pi as a central node and nRF52s as end nodes. Central points in the solution was the use of a version of Linux with pre configured kernel of version 4.15 or later on Raspberry Pi 3. In addition it was important to understand how prefix in gls{ipv6} works, and how this can be used on a bluetooth device.
+
+
+\noindent \textbf{R.1: Which technologies and transport protocols are suitable in such a network?}
+
+
+\section{Gather sensor data}
+
+\noindent\textbf{O.2: Connect sensors to the end-nodes to collect data}
+
+This objective was partially fulfilled. An accelerometer was connected to two of the end points in the network, with the goal of gathering vibration data to be sent through the network. Problems with getting the accelerometer to communicate properly with the end node, meaning that it was possible to gather acceleration data, but not as frequently as expected. Getting reliable vibration data was therefore not possible. Due to these problems, in addition to that the scope of this thesis has a limited time frame, it was decided to measure the different aspects of the network with simulated data. This would eliminate the possibility of margin of error due to sensor error, and can easily be added later by future work with a larger time frame. 
+
+
+\section{Send data through network}
+
+\noindent\textbf{O.3: Gather information of the data sent through the network}
+
+This object was fulfilled by using both Python scripts and Wireshark on the Raspberry Pi to measure the packets sent through the network. 
+
+\section{Analyse data}
+
+\noindent\textbf{O.4: Analyse and discuss the gathered information}
+
+This object was fulfilled by analysing the data by printing out table and plotting graphs. Using basic tools like this it was easy to document both the differences and similarities in the different protocols tested 
+
+
+
+
+
+
 \section{Data analysis in microcontrollers}
 
-\section{Computational Power}
+
 
 \subsection{Power consumption}
 
-Windows error message: "The device needs more data than the computer can supply". 
+
 
 \section{Ease of use}
 
@@ -30,4 +64,5 @@ Its the same story with the nRF52. A professional skilled programmer working on 
 In the case of the system built in this thesis, the small CR 2033 batteries was drained so fast that an additional power source was needed to keep a stable and reliable system, since tests has shown that the probability of an nRF52 disconnecting from the connected \gls{ble} service is higher at low battery. This meant connecting either a power bank with higher capacity or drain power from an outlet using a micro \gls{usb}. In this case, it would have been able to use the Raspberry Pi right away, since this needs the same source of power. This means in the end, that the system only had low performance end points that still needed a power source. 
 
 
-  
+
+
