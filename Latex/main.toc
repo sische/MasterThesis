@@ -3,10 +3,10 @@
 \select@language {english}
 \select@language {norsk}
 \select@language {english}
-\contentsline {chapter}{List of Figures}{xiii}{section*.1}
-\contentsline {chapter}{List of Tables}{xv}{section*.2}
-\contentsline {chapter}{List of Acronyms}{xvii}{section*.3}
-\contentsline {chapter}{Glossary}{xix}{section*.5}
+\contentsline {chapter}{List of Figures}{xi}{section*.1}
+\contentsline {chapter}{List of Tables}{xiii}{section*.2}
+\contentsline {chapter}{List of Acronyms}{xv}{section*.3}
+\contentsline {chapter}{Glossary}{xvii}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Scope and Objectives}{3}{section.1.2}
@@ -42,12 +42,12 @@
 \contentsline {subsection}{\numberline {4.3.1}Discussion}{38}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{39}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{41}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Discussion}{44}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Comparison}{44}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{45}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Comparison power usage}{48}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Quantity test}{48}{section.4.5}
-\contentsline {section}{\numberline {4.6}Summary}{48}{section.4.6}
+\contentsline {subsection}{\numberline {4.3.4}Discussion}{46}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Comparison}{46}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{47}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Comparison power usage}{50}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Quantity test}{50}{section.4.5}
+\contentsline {section}{\numberline {4.6}Summary}{50}{section.4.6}
 \contentsline {chapter}{\chapternumberline {5}Discussion}{53}{chapter.5}
 \contentsline {section}{\numberline {5.1}Set up network}{53}{section.5.1}
 \contentsline {section}{\numberline {5.2}Gather sensor data}{53}{section.5.2}
@@ -66,4 +66,4 @@
 \contentsline {chapter}{References}{59}{section*.38}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{61}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{63}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{65}{appendix.B}

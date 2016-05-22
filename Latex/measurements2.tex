@@ -271,9 +271,13 @@ Figure \ref{fig:CONvsNON0-200} shows the comparison between sending between 0 an
 
 \subsection{CoAP, testing with more data}
 
-Table \ref{coapCON700table} shows a bigger and more complex case, where 700 bytes of data are being sent at once. In total 889 bytes are being sent, with a \gls{con} packet size of 774 bytes. This gives a percentage of goodput at 78.74 \%. The maximum packet length of a \gls{6lowpan} packet in this system of 270 bytes is therefore exceeded, as we can see in the figure. After 8 \gls{ble} packages of 31 bytes each has been sent, there is only room for 22 bytes in the last packet before the \gls{6lowpan} packet is full. This is repeated several times, once for each \gls{6lowpan} packet, until the last \gls{ble} packets at the size of 17 bytes. After this the standard packages for \gls{ack} and \textit{Number of completed packages} follows. This is in general a good example on how fragmentation of packets works in this system. 
+Table \ref{coapCON700table} shows a bigger and more complex case, where a payload of 700 byte is being sent at once. In total 889 bytes are being sent in this process, with a \gls{con} packet size of 774 bytes. This gives a percentage of goodput at 78.74 \%. The maximum packet length of a \gls{6lowpan} packet in this system of 270 bytes is therefore exceeded. This can be seen in the table, after 8 \gls{ble} packages of 31 bytes each has been sent, there is only room for 22 bytes in the last packet before the \gls{6lowpan} packet has reached its maximal capacity. This is repeated several times, once for each \gls{6lowpan} packet, until the last \gls{ble} packets at the size of 17 bytes. After this the standard packages for \gls{ack} and \textit{Number of completed packages} follows. This is in general a good example on how fragmentation of packets works in this system. 
 
-\begin{table}[h]
+
+
+\newpage
+
+\begin{table}[H]
 \centering
 \caption{Wireshark CoAP CON 700 bytes}
 \label{coapCON700table}
@@ -350,7 +354,7 @@ In this example points in the graph was denoted every 50th byte sent. This gives
  
 
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Wireshark CoAP NON 700 bytes}
 \label{coapNON700table}
@@ -536,11 +540,11 @@ As a summary of this chapter, the pros and cons will be directly compared to get
 \toprule
 \hfil\bfseries Pros CoAP CON
 &
-\hfil\bfseries Pros CoAP NON
+\hfil\bfseries Cons CoAP CON
 \\\cmidrule(r{3\tabcolsep}){1-1}\cmidrule(l{-\tabcolsep}){2-2}
 
 %% PROS, seperated by empty line or \par
-It's nice\par
+\par
 
 
 &
@@ -558,5 +562,24 @@ It's really ugly\par
 \caption{Positive aspects of CoAP CON and NON compared}
 \end{table}
 
+\begin{table}[h]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{ccccl}
+\cline{1-4}
+\multicolumn{1}{|c|}{\textbf{Case}}                                                                                       & \multicolumn{1}{c|}{\textbf{CON}} & \multicolumn{1}{c|}{\textbf{NON}} & \multicolumn{1}{c|}{\textbf{Comments}}                                                                                      &  \\ \cline{1-4}
+\multicolumn{1}{|c|}{Need of ACKs}                                                                                        & \multicolumn{1}{c|}{Yes}          & \multicolumn{1}{c|}{No}           & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Accational connection \\ test at 16+7+7 bytes\\  in both cases\end{tabular}} &  \\ \cline{1-4}
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Minimum number of \\ bytes needed for \\ empty CoAP message\end{tabular}} & \multicolumn{1}{c|}{74+104}       & \multicolumn{1}{c|}{76}           & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textless 500 byte\end{tabular}}                   & \multicolumn{1}{c|}{X}            & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Almost 3x faster\\ payload \textless 10 byte\end{tabular}}                   &  \\ \cline{1-4}
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textgreater 500 byte\end{tabular}}                & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{X}            & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}On average 0,2 s faster\\ for payload \textgreater 600 byte\end{tabular}}    &  \\ \cline{1-4}
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]} \\ to send 200 bytes payload\end{tabular}}     & \multicolumn{1}{c|}{0,66}         & \multicolumn{1}{c|}{1,00}         & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]}\\  to send 700 bytes payload\end{tabular}}     & \multicolumn{1}{c|}{1,35}         & \multicolumn{1}{c|}{1,15}         & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Highest measured \\ goodput {[}bytes{]} \\ per second\end{tabular}}       & \multicolumn{1}{c|}{554}          & \multicolumn{1}{c|}{642}          & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Overall best stability\\ in the network\end{tabular}}                     & \multicolumn{1}{c|}{X}            & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Assumed lowest \\ power concumption\end{tabular}}                         & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{X}            & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
+\multicolumn{1}{l}{}                                                                                                      & \multicolumn{1}{l}{}              & \multicolumn{1}{l}{}              & \multicolumn{1}{l}{}                                                                                                        & 
+\end{tabular}
+\end{table}
 
 
