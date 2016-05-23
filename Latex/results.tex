@@ -5,6 +5,8 @@
 
 In this thesis I have used \glspl{microcontroller}, sensors and \glspl{singleBoardComputer} to build and an \gls{iot} network and test the choices when transporting data through the network, and discussed analysis of data with respect to power usage. 
 
+The results described in chapter \ref{chp:dataAnalysis} shows that both versions of \gls{coap} tested works in a network like this, but they have different qualities and should therefore be used in different settings. \gls{con} is most efficient to send small chunks of data where the extra power usage to send \glspl{ack} isn't a problem. \gls{non} is the most efficient for payloads bigger than 500 bytes, where the average sending frequency was 200 ms faster than the same size using \gls{con}.  
+
 \section{Future Work}
 
 \subsection{Microcontrollers}

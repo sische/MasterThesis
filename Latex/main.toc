@@ -45,9 +45,10 @@
 \contentsline {subsection}{\numberline {4.3.4}Discussion}{46}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}Comparison}{46}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{47}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Comparison power usage}{50}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Quantity test}{50}{section.4.5}
-\contentsline {section}{\numberline {4.6}Summary}{50}{section.4.6}
+\contentsline {subsection}{\numberline {4.4.2}Best and worst case}{50}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Comparison power usage}{51}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Quantity test}{51}{section.4.5}
+\contentsline {section}{\numberline {4.6}Summary}{51}{section.4.6}
 \contentsline {chapter}{\chapternumberline {5}Discussion}{53}{chapter.5}
 \contentsline {section}{\numberline {5.1}Set up network}{53}{section.5.1}
 \contentsline {section}{\numberline {5.2}Gather sensor data}{54}{section.5.2}
@@ -62,7 +63,7 @@
 \contentsline {section}{\numberline {6.1}Future Work}{57}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{57}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Sensors}{57}{subsection.6.1.2}
-\contentsline {chapter}{References}{59}{section*.38}
+\contentsline {chapter}{References}{59}{section*.40}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{61}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}Appendix B}{65}{appendix.B}
