@@ -16,3 +16,5 @@
 (indexentry :tkey (("directrix" "\\glossentry{directrix}") ) :locref "{}{38}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Payload" "\\glossentry{payload}") ) :locref "{}{48}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Payload" "\\glossentry{payload}") ) :locref "{}{48}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Microcontroller" "\\glossentry{microcontroller}") ) :locref "{}{57}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Single-board computer" "\\glossentry{singleBoardComputer}") ) :locref "{}{57}" :attr "pageglsnumberformat" ) 

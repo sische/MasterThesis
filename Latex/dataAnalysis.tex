@@ -12,7 +12,9 @@ This objective was fulfilled by using the Raspberry Pi as a central node and nRF
 
 \noindent \textbf{R.1: Which technologies and transport protocols are suitable in such a network?}
 
-\gls{ble} 
+\gls{ble} is the obvious network technology to use to the end nodes, simply because this is the only antenna fitted to the nRF52. This version of bluetooth is designed to use a minimal amount of energy and still be reliable and fast, which is central criterias in such a network. As a result of this \gls{6lowpan} also seemed like a suitable communication protocol, both because it is made to work together with \gls{ble} and because it is an up an coming technology that is assumed to be more and more used in the coming years. In the application layer the two main choices was between \gls{coap} and \gls{mqtt}. Because of time restrictions \gls{coap} was chosen to be studied in depth in this thesis, which worked as expected. 
+
+\newpage
 
 \section{Gather sensor data}
 
@@ -20,12 +22,13 @@ This objective was fulfilled by using the Raspberry Pi as a central node and nRF
 
 This objective was partially fulfilled. An accelerometer was connected to two of the end points in the network, with the goal of gathering vibration data to be sent through the network. Problems with getting the accelerometer to communicate properly with the end node, meaning that it was possible to gather acceleration data, but not as frequently as expected. Getting reliable vibration data was therefore not possible. Due to these problems, in addition to that the scope of this thesis has a limited time frame, it was decided to measure the different aspects of the network with simulated data. This would eliminate the possibility of margin of error due to sensor error, and can easily be added later by future work with a larger time frame. 
 
+Even though this objective was not fully completed, a lot of coding was done on the nRF52 to be able to initialize and use the accelerometer connected. This code can be useful for later projects in future works, and important methods from the code will therefore be included in appendix \ref{chp:appendixc}.  
 
 \section{Send data through network}
 
 \noindent\textbf{O.3: Gather information of the data sent through the network}
 
-This object was fulfilled by using both Python scripts and Wireshark on the Raspberry Pi to measure the packets sent through the network. 
+This object was fulfilled by using both Python scripts and Wireshark on the Raspberry Pi to measure the packets sent through the network. Python scripts 
 
 \section{Analyse data}
 
