@@ -183,7 +183,7 @@ In this particular case shown in \ref{fig:coapCON0200} it makes no sense to send
 
 \subsection{Discussion}
 
-Even though this first test was done with a very limited amount of data transferred, it is easy to see that the curve clearly flattens out and forms the shape of a \textit{\gls{parabola}} with a vertical \textit{\gls{directrix}} at \textit{x = 0}. The next step would be to transfer a larger amount of data, to verify that the assumptions that the graph will converge to the asymptotic value \textit{y = 87,1} when $lim_{x\to\infty}$. The limitations of transfer rate is not nearly yet met by either \gls{ble} or \gls{6lowpan}. This test will therefore be explained in the next section. 
+Even though this first test was done with a very limited amount of data transferred, it is easy to see that the curve clearly flattens out and forms the shape of a \textit{parabola} with a vertical \textit{directrix} at \textit{x = 0}. The next step would be to transfer a larger amount of data, to verify that the assumptions that the graph will converge to the asymptotic value \textit{y = 87,1} when $lim_{x\to\infty}$. The limitations of transfer rate is not nearly yet met by either \gls{ble} or \gls{6lowpan}. This test will therefore be explained in the next section. 
 
 
 Since there is already a clear trend in the form of the graph in figure \ref{fig:coapCON0200} even before the transfer rate reaches 200 bytes, it makes sense to also test the other version included in \gls{coap}, \gls{con}. If it is possible to find a way of transportation that could give a higher mathematical maximum, and also get to this limit faster, it could be very profitable to the system. It also makes sense to test \gls{coap} \gls{non} because it doesn’t need to send an \gls{ack} for every packet, as \gls{con} does. Maybe this means that the header files can be split up in another way, and that the useful amount of data sent through therefore will be higher. 
@@ -516,59 +516,70 @@ From the other approach, it is possible to look at how many bytes it is possible
 In this case both plots starts at \textit{0 byte/second}, since the payload is 0. After this, the graphs have quite different forms. \gls{non} has a very linear rise, all the way up to 600 byte payload. This makes sence, since figure \ref{fig:timeUsedPRpacket} shows that all up to this size has taken \textit{1} second. \gls{con} can transfer more often, and this difference can clearly be seen here. When transferring a payload of 100 byte, is almost three times faster at \textit{305 byte/second} compared to \textit{108 byte/second} using \gls{non}. The conclusion here will then be the same as in the last graph, \gls{coap} \gls{con} is much more efficient for a small amount of data, but for payload bigger than 500 byte \gls{non} is preferable. 
 
 
-\subsection{Best and worst case}
+\subsection{Bytes sent through network, best and worst case}
 
-The main argument for trying the \gls{non} version of \gls{coap} in this network, was that fewer bytes needed to be sent through the network, meaning less overall usage of the network. This is very relevant in a case where the network should be taken to its maximum capacity with several sensors and \glspl{microcontroller}. But, as seen in figure \ref{fig:bestCaseworstCase}, this turns out not to always be the case. The figure shows best and worst case of how many bytes that needs to be sent to transfer a given number of \gls{payload}. For example, using \gls{non} it takes 576 byte to transfer 500 byte payload in best case, but 856 byte in worst case. This is because of the architecture of the two different versions of \gls{coap}. Even though \gls{non} does not require \glspl{ack}, underlying parts of the bluetooth architecture like \gls{acl} adds on some support for this. Also, to prevevent a situation where the end node sends data forever without anyone receiving the data, \gls{ack} messages are still being sent regularly, approximately every 15th second in this network. This means, as shown in figure \ref{fig:bestCaseworstCase}, that \gls{non} \textit{normally} requires a lower amount of bytes to transport a given \gls{payload}, but in \textit{worst case scenario} it needs even more bytes than \gls{con}. 
+These previous two tests shows the throughput per time, while the tests earlier in the thesis has focused on goodput compared to throughput, how much of the data sent is useful data. Since these \glspl{microcontroller} are used as end nodes in the network, it is natural to assume that they will run on battery power only. In this case it is preferable that they do as little work as possible, meaning also handle as few packets as possible. It will therefore be compared how many packets that needs to go through the end nodes in the different cases, \gls{con} and \gls{non} \footnote{Before the test, it was clear that fewer packets are needed using \gls{non}, since no \glspl{ack} are required. The test is therefore done to see \textit{how much} fewer packets are needed here}.
 
-Sending payload of 500 byte in each case, NON gives an average of XXX, while CON does not. \todo{this}. 
+The main argument for trying the \gls{non} version of \gls{coap} in this network, was that fewer bytes needed to be sent through the network, meaning less overall usage of the network. This is very relevant in a case where the network should be taken to its maximum capacity with several sensors and \glspl{microcontroller}. 
 
-\todo{Change figure, 400 bytes NON worst case is wrong}
+But, as seen in figure \ref{fig:bestCaseworstCase}, this turns out not to always be the case. The figure shows best and worst case of how many bytes that needs to be sent to transfer a given number of \gls{payload}. For example, using \gls{non} it takes 576 byte to transfer 500 byte payload in best case, but 856 byte in worst case. This is because of the architecture of the two different versions of \gls{coap}. Even though \gls{non} does not require \glspl{ack}, underlying parts of the bluetooth architecture like \gls{acl} adds on some support for this. Also, to prevevent a situation where the end node sends data forever without anyone receiving the data, \gls{ack} messages are still being sent regularly, approximately every 15th second in this network. This means, as shown in figure \ref{fig:bestCaseworstCase}, that \gls{non} \textit{normally} requires a lower amount of bytes to transport a given \gls{payload}, but in \textit{worst case scenario} it needs even more bytes than \gls{con}. 
+
+
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=1.0]{bestCaseworstCase.png}    
+    \includegraphics[scale=1.0]{bestCaseworstCase2.png}    
     \caption{Number of bytes per second}
     \label{fig:bestCaseworstCase}
 \end{figure}
 
+The main question to comparison comes down to how often the worst case occurs in comparison to best case. Sending payload of 500 byte in both cases, \gls{non} results in most best case scenarios, while \gls{con} results in \textit{only} worst case scenarios. In specific numbers, this gives an average of \textit{598 bytes} sent for \gls{non}, and \textit{791 bytes}. This gives us on average: 
+
+\begin{equation} \label{bestWorstEquation}
+	\frac{500 byte payload}{\frac{791 bytes * 15 packets}{15}}*100 \% \approx 63,21 \% payload
+\end{equation}
+
+\begin{equation} \label{bestWorstEquation2}
+\frac{500 byte payload}{\frac{(576 bytes * 13 packets)+(856 bytes * 2 packets)}{15}}*100 \% \approx 83,56 \% payload
+\end{equation}
+
+From these results it can be concluded that even though \gls{non} is considerably worse in worst case than \gls{con}, 
 
 
-\subsection{Comparison power usage}
-
-These previous two tests shows the throughput per time, while the tests earlier in the thesis has focused on goodput compared to throughput, how much of the data sent is useful data. Since these glspl{microcontroller} are used as end nodes in the network, it is natural to assume that they will run on battery power only. In this case it is preferable that they do as little work as possible, meaning also handle as few packets as possible. It will therefore be compared how many packets that needs to go through the end nodes in the different cases, \gls{con} and \gls{non} \footnote{Before the test, it was clear that fewer packets are needed using \gls{non}, since no \glspl{ack} are required. The test is therefore done to see \textit{how much} fewer packets are needed here}.
 
 
 
-\section{Quantity test}
+
+\section{Quantity test} \todo{Remove?}
 
 This section will show a test of several nRF52 devices connected to the same Pi at the same time, to ensure stability and performance in the network. Even though this puts more pressure on both the network and the Pi, it is not expected to be considerably noticed in the transportation of packets. 
 
 
-\todo{Do measurements of several nRF52s. Write new python script to gather data from all of these. Add this to the Appendix}
-
-
 \section{Summary}
 
-As a summary of this chapter, the pros and cons will be directly compared to get a more clear understanding of the discoveries that has been made. 
+As a summary of this chapter, the positive and negative aspects of the two versions of \gls{coap} that has been tested will be be directly compared to get a more clear understanding of the discoveries that has been made. The results are shown in \ref{ComparisonTable}.  
 
 
-\begin{table}[H]
+
+\begin{table}[]
 \centering
-\caption{My caption}
-\label{my-label}
-\begin{tabular}{ccccl}
+\caption{Comparison of CON and NON}
+\label{ComparisonTable}
+\begin{tabular}{|c|c|c|c|l}
 \cline{1-4}
-\multicolumn{1}{|c|}{\textbf{Case}}                                                                                       & \multicolumn{1}{c|}{\textbf{CON}} & \multicolumn{1}{c|}{\textbf{NON}} & \multicolumn{1}{c|}{\textbf{Comments}}                                                                                      &  \\ \cline{1-4}
-\multicolumn{1}{|c|}{Need of ACKs}                                                                                        & \multicolumn{1}{c|}{Yes}          & \multicolumn{1}{c|}{No}           & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Accational connection \\ test at 16+7+7 bytes\\  in both cases\end{tabular}} &  \\ \cline{1-4}
-\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Minimum number of \\ bytes needed for \\ empty CoAP message\end{tabular}} & \multicolumn{1}{c|}{74+104}       & \multicolumn{1}{c|}{76}           & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
-\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textless 500 byte\end{tabular}}                   & \multicolumn{1}{c|}{X}            & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Almost 3x faster\\ payload \textless 10 byte\end{tabular}}                   &  \\ \cline{1-4}
-\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textgreater 500 byte\end{tabular}}                & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{X}            & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}On average 0,2 s faster\\ for payload \textgreater 600 byte\end{tabular}}    &  \\ \cline{1-4}
-\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]} \\ to send 200 bytes payload\end{tabular}}     & \multicolumn{1}{c|}{0,66}         & \multicolumn{1}{c|}{1,00}         & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
-\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]}\\  to send 700 bytes payload\end{tabular}}     & \multicolumn{1}{c|}{1,35}         & \multicolumn{1}{c|}{1,15}         & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
-\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Highest measured \\ goodput {[}bytes{]} \\ per second\end{tabular}}       & \multicolumn{1}{c|}{554}          & \multicolumn{1}{c|}{642}          & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
-\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Overall best stability\\ in the network\end{tabular}}                     & \multicolumn{1}{c|}{X}            & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
-\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Assumed lowest \\ power concumption\end{tabular}}                         & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{X}            & \multicolumn{1}{c|}{}                                                                                                       &  \\ \cline{1-4}
-\multicolumn{1}{l}{}                                                                                                      & \multicolumn{1}{l}{}              & \multicolumn{1}{l}{}              & \multicolumn{1}{l}{}                                                                                                        & 
+\textbf{Case}                                                                                                                               & \textbf{CON}               & \textbf{NON}               & \textbf{Comments}                                                                                                                       &  \\ \cline{1-4}
+Need of ACKs                                                                                                                                & \textcolor{red}{Yes}                        &  \textcolor{green}{No}                         & \begin{tabular}[c]{@{}c@{}}Accational connection \\ test at 16+7+7 bytes\\  in both cases\end{tabular}                                  &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Minimum number of \\ bytes needed for \\ empty CoAP message\end{tabular}                                         & \textcolor{red}{74+104}                     & \textcolor{green}{76}                         &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textless 500 byte\end{tabular}                                                           & \textcolor{green}{X}                          &                            & \begin{tabular}[c]{@{}c@{}}Almost 3x faster\\ payload \textless 10 byte\end{tabular}                                                    &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textgreater 500 byte\end{tabular}                                                        &                            & \textcolor{green}{X}                          & \begin{tabular}[c]{@{}c@{}}On average 0,2 s faster\\ for payload \textgreater 600 byte\end{tabular}                                     &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]} \\ to send 200 bytes payload\end{tabular}                                             & \textcolor{green}{0,66}                       & \textcolor{red}{1,00}                       &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]}\\  to send 700 bytes payload\end{tabular}                                             & \textcolor{red}{1,35}                       & \textcolor{green}{1,15}                       &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Highest measured \\ goodput {[}bytes{]} \\ per second\end{tabular}                                               & \textcolor{red}{554}                        & \textcolor{green}{642}                        &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Overall best stability\\ in the network\end{tabular}                                                             & \textcolor{green}{X}                          &                            &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Calculated lowest \\ power concumption\end{tabular}                                                              &                            & \textcolor{green}{X}                          &                                                                                                                                         &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}\% payload of all packets\\ sent through network\\ (in case of 500 byte sent)\end{tabular}} & \multicolumn{1}{l|}{\textcolor{red}{63,21}} & \multicolumn{1}{l|}{\textcolor{green}{83,56}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}On average 20\% more \\ efficient in the number \\ of packet sent in total\end{tabular}} &  \\ \cline{1-4}
 \end{tabular}
 \end{table}
+
+Table \ref{ComparisonTable} shows all the main results found in conjunction with the comparison of \gls{coap} \gls{con} and \gls{non} in the network presented in this thesis. Results from the table shows that in 7 of the 10 cases presented, \gls{non} shows the best results.  This should still not be a final result without discussion. As discussed in chapter \todo{Add chapter ref}, \gls{non} has been considerably more unstable than \gls{con} during the test period. It was not possible to get a stable connection when sending more frequently than once every second, and the connection became unstable if the payload was greater than 800 bytes. As a conclusion from this table it is clear to say that \gls{non} works best if the conditions are right, sending data every second with a payload between 500 and 800 bytes. In other cases than this, \gls{con} works better in the practical experiments presented. 
 
 

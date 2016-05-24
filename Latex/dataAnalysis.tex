@@ -7,7 +7,7 @@
 
 \noindent \textbf{O.1: Build a star network of microcontrollers}
 
-This objective was fulfilled by using the Raspberry Pi as a central node and nRF52s as end nodes. Central points in the solution was the use of a version of Linux with pre configured kernel of version 4.15 or later on Raspberry Pi 3. In addition it was important to understand how prefix in gls{ipv6} works, and how this can be used on a bluetooth device.
+This objective was fulfilled by using the Raspberry Pi as a central node and nRF52s as end nodes. Central points in the solution was the use of a version of Linux with pre-configured kernel of version 4.15 or later on Raspberry Pi 3. In addition it was important to understand how prefix in gls{ipv6} works, and how this can be used on a bluetooth device. In this solution the end nodes woth \glspl{nRF52} works as servers, while the central Raspberry Pi works as a client requesting services from these servers. 
 
 
 \noindent \textbf{R.1: Which technologies and transport protocols are suitable in such a network?}
@@ -24,24 +24,33 @@ This objective was partially fulfilled. An accelerometer was connected to two of
 
 Even though this objective was not fully completed, a lot of coding was done on the nRF52 to be able to initialize and use the accelerometer connected. This code can be useful for later projects in future works, and important methods from the code will therefore be included in appendix \ref{chp:appendixc}.  
 
+
+
 \section{Send data through network}
 
 \noindent\textbf{O.3: Gather information of the data sent through the network}
 
-This object was fulfilled by using both Python scripts and Wireshark on the Raspberry Pi to measure the packets sent through the network. Python scripts 
+This object was fulfilled by using both Python scripts and Wireshark on the Raspberry Pi to measure the packets sent through the network. Different Python scripts was used to get data from the servers, save data locally after receiving, drawing graphs directly to represent the data, or forward the data to another device or online storage facility. All these code samples can be seen in appendix \ref{chp:appendix}. Wireshark was used to monitor the live capture of packets, and to manually do a detailed analysis of how packets where fragmented differently in the different scenarios. 
+
+\noindent\textbf{R.2: What are the main limitations when it comes to transporting data?}
+
+Already in the first tests of \textit{ping} shown in chapter \ref{chp:measurements2}.1.1, it became clear that the major limitation in this network would be the initial transfer speed. This was not expected, and was not included as one of the main objectives in this thesis, which concentrates more on the analysing the data sent through the network, and transport protocols used. This problem is assumed to be caused by a problem in a lower level of the protocol stack, and will be left for future work to solve. Other than this, limitations found has been to get the network stable. Several of the solutions tested was not able to transfer data at all, or only for a very short period (< 20 seconds). But when a stable solution is found the link can be open as long as needed, successful tests have been stable for several days. During these tests it was discovered that the message ID implemented in \gls{coap} uses an 16 bit counter. After 65536 messages have been sent the counter will be reset, and changed to 18 bits. This did not affect the performance in this system, and will most likely not be a problem in other systems either. 
+
+\noindent\textbf{R.3: Are the microcontrollers powerful enough to gather data this frequently?}
+
+To gather detailed acceleration data to be analysed in another node of the network, it is assumed that a measuring frequency of 1MHz is needed, which is 1000 times every second. \todo{Source?}. The maximum achieved in this system was to call a method from the main loop 11 times every second, and then read a measured values from the accelerometer 150 times for each of these 11 method calls. This adds up to 1650 measuring points every second in a best case scenario. Yes, this is fast enough to gather data, even though problems explained in chapter \ref{chp:architecture} means this practical experiment will be left for future work in this thesis. The programming code referred to here can be seen in appendix \ref{chp:appendixc}. 
+
 
 \section{Analyse data}
 
 \noindent\textbf{O.4: Analyse and discuss the gathered information}
 
-This object was fulfilled by analysing the data by printing out table and plotting graphs. Using basic tools like this it was easy to document both the differences and similarities in the different protocols tested 
+This object was fulfilled by analysing the data by printing out table and plotting graphs. Using basic tools like this it was possible to document both the differences and similarities in the different protocols tested in this thesis. The results where presented and discussed in detail in chapter \ref{chp:measurements2}.
 
+\noindent\textbf{R.4: Could data analysing be done in the end nodes in this network?}
 
+Referring to the result from research question R.3, where the maximum capacity of the \gls{microcontroller} is needed to capture acceleration data from the accelerometer to get the desired quality of the data, and forward this to a central node. The end nodes are running on battery power, and is already consuming a lot of energy. To do even more calculations in these nodes will not be preferable in this network. The answer is therefore no, more detailed analysing and representation of the data should be done in a central node with more computational power and better access to power sources. 
 
-
-
-
-\section{Data analysis in microcontrollers}
 
 
 
@@ -58,14 +67,13 @@ This object was fulfilled by analysing the data by printing out table and plotti
 
 \subsection{nRF52}
 
-The nRF52 is perhaps the biggest disappointment in the system, from the authors perspective. 
 
 
-As a comparison, take the successful hybrid car Toyota Prius. Even though the factory tells that the car is able to drive X kilometres per liter of fuel used, this is only possible for a trained driver in a fixed environment. The average driver can still use the car, but is not skilful enough to drive as careful when it comes to power usage. The average driver therefore ends up using up the batteries much faster than the test driver, and uses the petrol powered engine after this. It may still be more economical than a normal car, but it is worth discussing if this is optimal, given that a car with two engines is more heavy and expensive to make in a direct comparison with a fully petrol powered car. 
+%As a comparison, take the successful hybrid car Toyota Prius. Even though the factory tells that the car is able to drive X kilometres per liter of fuel used, this is only possible for a trained driver in a fixed environment. The average driver can still use the car, but is not skilful enough to drive as careful when it comes to power usage. The average driver therefore ends up using up the batteries much faster than the test driver, and uses the petrol powered engine after this. It may still be more economical than a normal car, but it is worth discussing if this is optimal, given that a car with two engines is more heavy and expensive to make in a direct comparison with a fully petrol powered car. 
 
-Its the same story with the nRF52. A professional skilled programmer working on this specific device from Nordic Semiconductor will be able to use the low power abilities and still use do efficient computations. When starting from the example code for the device that is not optimized for power consumption and trying to make it do more and more work, the battery consumption simply is too much for this device. An average programmer will not have specific experience enough to program this device to be power efficient. 
+%Its the same story with the nRF52. A professional skilled programmer working on this specific device from Nordic Semiconductor will be able to use the low power abilities and still use do efficient computations. When starting from the example code for the device that is not optimized for power consumption and trying to make it do more and more work, the battery consumption simply is too much for this device. An average programmer will not have specific experience enough to program this device to be power efficient. 
 
-In the case of the system built in this thesis, the small CR 2033 batteries was drained so fast that an additional power source was needed to keep a stable and reliable system, since tests has shown that the probability of an nRF52 disconnecting from the connected \gls{ble} service is higher at low battery. This meant connecting either a power bank with higher capacity or drain power from an outlet using a micro \gls{usb}. In this case, it would have been able to use the Raspberry Pi right away, since this needs the same source of power. This means in the end, that the system only had low performance end points that still needed a power source. 
+In the case of the system built in this thesis, the small CR 2033 batteries was drained so fast that an additional power source was needed to keep a stable and reliable system, since tests has shown that the probability of an nRF52 disconnecting from the connected \gls{ble} service is higher at low battery. This meant connecting either a power bank with higher capacity or drain power from an outlet using a micro \gls{usb}. %In this case, it would have been able to use the Raspberry Pi right away, since this needs the same source of power. This means in the end, that the system only had low performance end points that still needed a power source. 
 
 
 

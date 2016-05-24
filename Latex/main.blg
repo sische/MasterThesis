@@ -9,9 +9,11 @@ A level-1 auxiliary file: background.aux
 A level-1 auxiliary file: architecture.aux
 A level-1 auxiliary file: measurements2.aux
 A level-1 auxiliary file: dataAnalysis.aux
+A level-1 auxiliary file: results.aux
 The style file: chicago.bst
 A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: appendixB.aux
+A level-1 auxiliary file: appendixc.aux
 Database file #1: main.bib
 I was expecting a `,' or a `}'---line 68 of file main.bib
  : @article{Author: 
@@ -73,7 +75,7 @@ Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
 You've used 12 entries,
             2861 wiz_defined-function locations,
-            687 strings with 6733 characters,
+            689 strings with 6757 characters,
 and the built_in function-call counts, 7257 in all, are:
 = -- 640
 > -- 417

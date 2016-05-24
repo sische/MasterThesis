@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 21.05.2016  17:13:50
-;; Indexstyle: "/tmp/AMPK8oyXQM", Rawindex: "/tmp/dl4msJeUuM", Output: "main.gls"
+;; at 24.05.2016  14:56:45
+;; Indexstyle: "/tmp/bpqymdL2ib", Rawindex: "/tmp/FLPiQoNhOt", Output: "main.gls"
 
 
 Building indexentry-tree:
@@ -14,16 +14,10 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
-Letter-group: "€" -> "A"
 Letter-group: "¼Ëœ52" -> "N"
-Letter-group: "Ë€ÐÈ„—ËËíÈ¨" -> "R"
-Letter-group: "È€Ë€„Ã´€" -> "P"
-Letter-group: "¨Ë—†ÚË¨ë" -> "D"
+Letter-group: "Ë€ÐÈ„—ËËí È¨" -> "R"
 Letter-group: "»—ÐÐ€— ÚíÈ—" -> "M"
 Letter-group: "È€í´Ã€" -> "P"
 Letter-group: "»¨†ËÃ†Ã¼ÚËÃ´´—Ë" -> "M"
@@ -31,19 +25,15 @@ Letter-group: "Ð¨¼´—„Ã€Ë †Ã»ÈàÚ—Ë" -> "S"
 Letter-group: "„íÚ—" -> "B"
 Letter-group: "»—ÐÐ€— †Ã—" -> "M"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "€" -> "A"
-sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "„íÚ—" -> "B"
-sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "¨Ë—†ÚË¨ë" -> "D"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "»—ÐÐ€— †Ã—" -> "M"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¼Ëœ52" -> "N"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "È€Ë€„Ã´€" -> "P"
+Letter-group: "È€í´Ã€" -> "P"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "Ë€ÐÈ„—ËËíÈ¨" -> "R"
+Letter-group: "Ë€ÐÈ„—ËËí È¨" -> "R"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ð¨¼´—„Ã€Ë †Ã»ÈàÚ—Ë" -> "S"
 WARNING: location-reference "{}{i}" did match multiple location-classes! (taking first one)
