@@ -2,12 +2,12 @@
 \label{chp:measurements2}
 
 
-This chapter will display the experiments conducted on data sending rate from the nRF52 to the Raspberry Pi in the form of and graphs, tables and figures to try to determine the most efficient combination of amount of data to send, sending frequency as well as protocols to use. 
+This chapter will display the experiments performed concerning data sending rate from the nRF52 to the Raspberry Pi in the form of graphs, tables and figures. The goal will be to determine the most efficient combination when it comes to amount of data to send at a time, sending frequency and protocols to use in the different situations. 
 
 %\section{temp/notes}
 
 %Trying to understand the details of a capture in Wireshark. 
-
+ 
 %Can fragmentation give us an advangate, if you can send more data pr header. 
 
 %An empty char array sent over CoAP is 76 bytes. 
@@ -19,7 +19,7 @@ This chapter will display the experiments conducted on data sending rate from th
 
 \subsection{Stable transfer rate}
 
-As soon as the end nodes of the network can communicate with the Raspberry Pi, the next step is to test the transfer rate of the connection. To measure the network transfer rate, \textit{ping6} was used. This is a software tool used to test networks using \gls{ipv6} in a network. The results is measured in ms used for every \gls{rtt}. 
+As soon as the end nodes of the network could communicate with the Raspberry Pi using \gls{coap}, the next step was to test the transfer rate of the connection. To measure the network transfer rate, \textit{ping6} was used. This is a software tool used to test networks using \gls{ipv6} in a network. The results is measured in ms used for every \acrlong{rtt}. %\gls{rtt}?
 
 \begin{verbatim}
 ping6 2001::2e6:6aff:fe64:54dd
@@ -28,20 +28,22 @@ ping6 google.com
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.5]{ping6test.png}    
+    \includegraphics[width=1.0\textwidth]{ping6test.png}    
     \caption{Comparison: ping nRF52 and ping google.com}
     \label{fig:pingComparison}
 \end{figure}
 
 When tested, the connection turns out to be very slow and in some cases very unstable, especially at maximum transfer rate. In the test of ping shown in figure \ref{fig:pingComparison} the connection between the Raspberry Pi and the nRF52 had 14 \% packet loss, 1 out of 7 packets. Other test showed similar results, but the \gls{coap} \gls{con} has in general got a  higher stability at maximum sending rate than \gls{coap} \gls{non}. After a test period it was therefore decided that the best solution for \gls{non} would be to gather data from sensors at a higher rate, and store them in the nRF52 temporarily. Every second all the measured values are being transferred to the Raspberry Pi, the temporarily values are deleted and the measurement continues. This has proven to be a very stable solution, with successful tests over several days. \gls{con} can handle more frequent transportations than this in this system, on average 4 times per second. See the test shown in chapter \ref{chp:measurements2}.6. \todo{Make figure}. 
 
-\begin{equation} \label{avg_eq}
-    \overline{x}_{n} = \frac{\sum\limits_{i=1}^n x_{i}}{n}
-\end{equation}
+%\begin{equation} \label{avg_eq}
+%    \overline{x}_{n} = \frac{\sum\limits_{i=1}^n x_{i}}{n}
+%\end{equation}
 
-Equation \ref{avg_eq} shows the standard way used to calculate an average of the measured values. Here \textit{a} is any real number and \textit{n} is any integer. 
+%Equation \ref{avg_eq} shows the standard way used to calculate an average of the measured values. Here \textit{a} is any real number and \textit{n} is any integer. 
 
-After a test period, the problems explained in \todo {Skriv om problemer med bt8 i Architecture?} was fixed. A more reliable test could then be performed, as shown in figure \ref{fig:ping2}. Using equation \ref{avg_eq} to calculate average gives an approximate average of 250 ms \gls{rtt}. This is very slow, and way beneath the transfer limitations of both \gls{ble}, \gls{6lowpan} and \gls{coap}, as explained in chapter \ref{chp:background} \todo{Skriv spesifikt om begrensninger for disse tre i background}. Another factor could be limited power supply and computational power, but it is not clear what is the main cause at this point. This will regardless be a huge limitation in the network. 
+%After a test period, the problems explained in was fixed. A more reliable test could then be performed, as shown in figure \ref{fig:ping2}. Using equation \ref{avg_eq} to calculate average gives 
+
+Results from this first test period showed an approximate average of 250 ms \gls{rtt}. These measurements was performed over using different versions of \glspl{nRF52}, and a different amount of these devices connected to the central Raspberry Pi at once. This is considered quite slow in such a system, and way beneath the transfer limitations of both \gls{ble}, \gls{6lowpan} and \gls{coap}, as explained in chapter \ref{chp:background} \todo{Skriv spesifikt om begrensninger for disse tre i background}. Another factor could be limited power supply and computational power, but it is not clear what is the main cause at this point. This will regardless be a huge limitation in the network. 
 
 \begin{figure}[ht]
     \centering
@@ -51,12 +53,12 @@ After a test period, the problems explained in \todo {Skriv om problemer med bt8
 \end{figure}
 
 
-The conclusion from these initial tests is therefore that \gls{coap} \gls{con} is stable at at lower transfer interval than \gls{coap} \gls{non}, and can in best case cope with sending every 250th ms, which is very good compared to the high \gls{rtt}. \gls{non} has been so unstable at initial tests that it was decided to only send every second. This makes quite a huge difference when testing the different protocols, as \textit{CoAP CON} can send a lot more \textit{goodput} per second, but \textit{CoAP NON} requires less power to send each message, and a much higher percentage of the packets sent through the network contains useful data.
+The general conclusion from these initial tests is therefore that \gls{coap} \gls{con} is stable at at lower transfer interval than \gls{coap} \gls{non}. \gls{con} can in best case send a message every 250\textsuperscript{th} ms, which is very good compared to the high \gls{rtt} in this network. \gls{non} has shown unstable results in the initial tests. Because of this, it was decided to only send messages once every second. This makes quite a huge difference when testing the different protocols. From this starting point it was expected that \gls{con} can send a lot more \textit{goodput} per second, but \gls{non} requires less power to send each message. In addition it was expected that \gls{non} will get a higher percentage of goodput compared through the total throughput, since no \glspl{ack} are required in this solution.
 
 
 \subsection{Packet fragmentation}
 
-In Internet Routing, \textit{fragmentation} is known as the action of splitting data into smaller packets, to satisfy the maximal limits of the different technologies or protocols used (e.g. \gls{ble} and \gls{6lowpan} in the network described in this thesis). Each of these packets needs header fields of a certain size, or other requirements. In a network of microcontrollers used in this thesis fragmentation can be a factor that needs to be taken into account to optimize the goodput of the system. This will be a central part of the testing, and will therefore be explained in detail in the following section. 
+In Internet Routing, \textit{fragmentation} is known as the action of splitting data into smaller packets, to satisfy the maximal limits of the different technologies or protocols used (e.g. \gls{ble} and \gls{6lowpan} in the network described in this thesis). Each of these packets needs header fields of a certain size, or other requirements. In a network of \glspl{microcontroller} described in this thesis, fragmentation can be a factor that needs to be taken into account to optimize the goodput of the system. This will be a central part of the testing, and will therefore be explained in detail in the following section. 
 
 To better understand fragmentation, imagine a train with carriages as shown in Figure \ref{fig:trainExample}. To be able to operate at all, the train needs a locomotive with an engine driver, a conductor and a cafe carriage. As soon as these things are already there, the company owning the train gets better and better off for every passenger buying a ticket. Lets assume that every carriage can carry 4 employees and 27 passengers, to make it directly comparable to the \gls{ble} packets in the network. Eventually all the carriages will be full, and a decision has to be made if it will be profitable to fit another carriage. It will in general be most profitable to use as many carriages as the locomotive can handle, and to fill up every carriage as much as possible. It will however not be a good idea to connect another carriage if there will only be one additional passenger sitting there, since the extra weight of the carriage adds unnecessary additional weight to the train set compared to the income. 
 
@@ -467,7 +469,7 @@ The entire scope of the tests done on \gls{coap} \gls{non} in this system is sho
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=1.0]{CONvsNONplot_200-k_thickerGRAY.png}    
+    \includegraphics[scale=1.0]{CONvsNON200-1000thick.png}    
     \caption{CON vs NON 200-1000 bytes}
     \label{fig:CONvsNON200-1000}
 \end{figure}
@@ -490,7 +492,7 @@ There are in general two ways to measure throughput compared to time. Either by 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=1.0]{timeUsedPRpacket.png}    
+    \includegraphics[scale=1.0]{timeUsedPRpacket2.png}    
     \caption{Time used per packet}
     \label{fig:timeUsedPRpacket}
 \end{figure}
@@ -556,7 +558,7 @@ This section will show a test of several nRF52 devices connected to the same Pi 
 
 \section{Summary}
 
-As a summary of this chapter, the positive and negative aspects of the two versions of \gls{coap} that has been tested will be be directly compared to get a more clear understanding of the discoveries that has been made. The results are shown in \ref{ComparisonTable}.  
+As a summary of this chapter, the positive and negative aspects of the two versions of \gls{coap} that has been tested will be be directly compared to get a more clear understanding of the discoveries that has been made. The results are shown in \ref{ComparisonTable}.   
 
 
 
@@ -567,16 +569,16 @@ As a summary of this chapter, the positive and negative aspects of the two versi
 \begin{tabular}{|c|c|c|c|l}
 \cline{1-4}
 \textbf{Case}                                                                                                                               & \textbf{CON}               & \textbf{NON}               & \textbf{Comments}                                                                                                                       &  \\ \cline{1-4}
-Need of ACKs                                                                                                                                & \textcolor{red}{Yes}                        &  \textcolor{green}{No}                         & \begin{tabular}[c]{@{}c@{}}Accational connection \\ test at 16+7+7 bytes\\  in both cases\end{tabular}                                  &  \\ \cline{1-4}
-\begin{tabular}[c]{@{}c@{}}Minimum number of \\ bytes needed for \\ empty CoAP message\end{tabular}                                         & \textcolor{red}{74+104}                     & \textcolor{green}{76}                         &                                                                                                                                         &  \\ \cline{1-4}
-\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textless 500 byte\end{tabular}                                                           & \textcolor{green}{X}                          &                            & \begin{tabular}[c]{@{}c@{}}Almost 3x faster\\ payload \textless 10 byte\end{tabular}                                                    &  \\ \cline{1-4}
-\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textgreater 500 byte\end{tabular}                                                        &                            & \textcolor{green}{X}                          & \begin{tabular}[c]{@{}c@{}}On average 0,2 s faster\\ for payload \textgreater 600 byte\end{tabular}                                     &  \\ \cline{1-4}
-\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]} \\ to send 200 bytes payload\end{tabular}                                             & \textcolor{green}{0,66}                       & \textcolor{red}{1,00}                       &                                                                                                                                         &  \\ \cline{1-4}
-\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]}\\  to send 700 bytes payload\end{tabular}                                             & \textcolor{red}{1,35}                       & \textcolor{green}{1,15}                       &                                                                                                                                         &  \\ \cline{1-4}
-\begin{tabular}[c]{@{}c@{}}Highest measured \\ goodput {[}bytes{]} \\ per second\end{tabular}                                               & \textcolor{red}{554}                        & \textcolor{green}{642}                        &                                                                                                                                         &  \\ \cline{1-4}
-\begin{tabular}[c]{@{}c@{}}Overall best stability\\ in the network\end{tabular}                                                             & \textcolor{green}{X}                          &                            &                                                                                                                                         &  \\ \cline{1-4}
-\begin{tabular}[c]{@{}c@{}}Calculated lowest \\ power concumption\end{tabular}                                                              &                            & \textcolor{green}{X}                          &                                                                                                                                         &  \\ \cline{1-4}
-\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}\% payload of all packets\\ sent through network\\ (in case of 500 byte sent)\end{tabular}} & \multicolumn{1}{l|}{\textcolor{red}{63,21}} & \multicolumn{1}{l|}{\textcolor{green}{83,56}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}On average 20\% more \\ efficient in the number \\ of packet sent in total\end{tabular}} &  \\ \cline{1-4}
+Need of ACKs                                                                                                                                & Yes                        &  \textbf{No}                         & \begin{tabular}[c]{@{}c@{}}Accational connection \\ test at 16+7+7 bytes\\  in both cases\end{tabular}                                  &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Minimum number of \\ bytes needed for \\ empty CoAP message\end{tabular}                                         & 74+104                     &\textbf{76}                         &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textless 500 byte\end{tabular}                                                           & \textbf{X}                          &                            & \begin{tabular}[c]{@{}c@{}}Almost 3x faster\\ payload \textless 10 byte\end{tabular}                                                    &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Fastest for payload \\ \textgreater 500 byte\end{tabular}                                                        &                            & \textbf{X}                          & \begin{tabular}[c]{@{}c@{}}On average 0,2 s faster\\ for payload \textgreater 600 byte\end{tabular}                                     &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]} \\ to send 200 bytes payload\end{tabular}                                             & \textbf{0,66}                       & 1,00                       &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Average time {[}seconds{]}\\  to send 700 bytes payload\end{tabular}                                             & 1,35                       & \textbf{1,15}                       &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Highest measured \\ goodput {[}bytes{]} \\ per second\end{tabular}                                               & 554                        & \textbf{642}                        &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Overall best stability\\ in the network\end{tabular}                                                             & \textbf{X}                          &                            &                                                                                                                                         &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}c@{}}Calculated lowest \\ power concumption\end{tabular}                                                              &                            & \textbf{X}                          &                                                                                                                                         &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}\% payload of all packets\\ sent through network\\ (in case of 500 byte sent)\end{tabular}} & \multicolumn{1}{l|}{63,21} & \multicolumn{1}{l|}{\textbf{83,56}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}On average 20\% more \\ efficient in the number \\ of packet sent in total\end{tabular}} &  \\ \cline{1-4}
 \end{tabular}
 \end{table}
 

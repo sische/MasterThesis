@@ -3,10 +3,10 @@
 \select@language {english}
 \select@language {norsk}
 \select@language {english}
-\contentsline {chapter}{List of Figures}{xi}{section*.1}
-\contentsline {chapter}{List of Tables}{xiii}{section*.2}
-\contentsline {chapter}{List of Acronyms}{xv}{section*.3}
-\contentsline {chapter}{Glossary}{xvii}{section*.5}
+\contentsline {chapter}{List of Figures}{xiii}{section*.1}
+\contentsline {chapter}{List of Tables}{xv}{section*.2}
+\contentsline {chapter}{List of Acronyms}{xvii}{section*.3}
+\contentsline {chapter}{Glossary}{xix}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Scope and Objectives}{3}{section.1.2}
@@ -28,6 +28,7 @@
 \contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{20}{section.3.1}
 \contentsline {section}{\numberline {3.2}Connecting nRF52 and ADXL345}{23}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Connection challenges}{23}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}bt8}{23}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Nordic Semiconductor example code}{23}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}\gls {coap}}{24}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Observable \gls {coap}}{27}{subsection.3.3.2}
@@ -61,7 +62,7 @@
 \contentsline {section}{\numberline {6.1}Future Work}{57}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{57}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Sensors}{57}{subsection.6.1.2}
-\contentsline {chapter}{References}{59}{section*.40}
+\contentsline {chapter}{References}{59}{section*.39}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{61}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}Appendix B}{65}{appendix.B}
