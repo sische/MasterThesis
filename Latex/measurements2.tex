@@ -69,13 +69,13 @@ To better understand fragmentation, imagine a train with carriages as shown in F
     \label{fig:trainExample}
 \end{figure}
 
-In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what to get the train working. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximal number of bytes compared to the number of packets sent. This is known as \textit{fragmentation}, fragmenting data into smaller pieces to satisfy the maximal limitations of packet sizes in the different protocols. This can be exploited by a system developer to maximize \textit{goodput} vs \textit{throughput} in the network.
+In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what to get the train working. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximal number of bytes compared to the number of packets sent. This is known as fragmentation, fragmenting data into smaller pieces to satisfy the maximal limitations of packet sizes in the different protocols. This can be exploited by a system developer to maximize \gls{goodput} compared to \gls{throughput} in the network.
  
 
 
 \section{Description of measurements}
 
-The following sections will show experiments performed to to test if \textit{fragmentation} is a huge issiue when sending data through low energy networks, and which of the protocols described in chapter \ref{chp:background}  is the most efficient to use when the goal is to get as high \textit{googput} as possible. This will be done by sending data of constant length, capture packets using \textit{Wireshark}, and then increasing the packet size to see the changes. 
+The following sections will discuss experiments performed to to test if fragmentation is a major issue when sending data through low energy networks, and which of the protocols described in chapter \ref{chp:background}  is the most efficient to use when the goal is to get as high \gls{goodput} as possible. Data will be sent through the network, containing a payload of constant length. Wireshark will be a central , and then increasing the packet size to see the changes. These problems are central in the discussion of objective O.3 and O.4. 
 
 Before these experiements started, the expected results was that sending a small amount of data at a time would not be preferable, because of the needed bytes to set up the connection, header files and so on. It was not known how big the packages needed to be before it would be considered \textit{profitable} to send. 
 
@@ -209,6 +209,7 @@ A \gls{coap} \gls{non} request does not require a response in form of an \gls{ac
 \todo{4 LEDs image?}
 
 \begin{table}[ht]
+\small
 \centering
 \caption{Wireshark CoAP NON 0 bytes}
 \label{coapNON0table}
@@ -229,6 +230,7 @@ A basic example of the \gls{coap} \gls{non} connection is shown in table \ref{co
 Fewer packages sent means less energy used, less network capacity needed and less computational power in the end node. Hopefully this will lead to a higher percentage of goodput compared to throughput as well. it would therefore be interesting to compare the rest of the measured values.
 
 \begin{table}[]
+\small
 \centering
 \caption{Wireshark CoAP NON 100 bytes}
 \label{coapNON100table}
@@ -280,6 +282,7 @@ Table \ref{coapCON700table} shows a bigger and more complex case, where a payloa
 \newpage
 
 \begin{table}[H]
+\small
 \centering
 \caption{Wireshark CoAP CON 700 bytes}
 \label{coapCON700table}
@@ -357,6 +360,7 @@ In this example points in the graph was denoted every 50th byte sent. This gives
 
 
 \begin{table}[H]
+\small
 \centering
 \caption{Wireshark CoAP NON 700 bytes}
 \label{coapNON700table}

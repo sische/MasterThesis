@@ -1,11 +1,13 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 24.05.2016  14:56:45
-;; Indexstyle: "/tmp/bpqymdL2ib", Rawindex: "/tmp/FLPiQoNhOt", Output: "main.gls"
+;; at 25.05.2016  19:36:26
+;; Indexstyle: "/tmp/ATLX_iCd9K", Rawindex: "/tmp/qMnA8J2TV0", Output: "main.gls"
 
 
 Building indexentry-tree:
 Hierdepth of index is :TREE
 
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -20,12 +22,16 @@ Letter-group: "¼Ëœ52" -> "N"
 Letter-group: "Ë€ÐÈ„—ËËí È¨" -> "R"
 Letter-group: "»—ÐÐ€— ÚíÈ—" -> "M"
 Letter-group: "È€í´Ã€" -> "P"
+Letter-group: "ÃÃÈàÚ" -> "G"
+Letter-group: "Ú¤ËÃà¤ÈàÚ" -> "T"
 Letter-group: "»¨†ËÃ†Ã¼ÚËÃ´´—Ë" -> "M"
 Letter-group: "Ð¨¼´—„Ã€Ë †Ã»ÈàÚ—Ë" -> "S"
 Letter-group: "„íÚ—" -> "B"
 Letter-group: "»—ÐÐ€— †Ã—" -> "M"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "„íÚ—" -> "B"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "ÃÃÈàÚ" -> "G"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "»—ÐÐ€— †Ã—" -> "M"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -36,4 +42,6 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ë€ÐÈ„—ËËí È¨" -> "R"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ð¨¼´—„Ã€Ë †Ã»ÈàÚ—Ë" -> "S"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ú¤ËÃà¤ÈàÚ" -> "T"
 WARNING: location-reference "{}{i}" did match multiple location-classes! (taking first one)
