@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  26 MAY 2016 22:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  26 MAY 2016 22:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2988,12 +2988,12 @@ LaTeX Warning: No positions in optional float specifier.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.252 
-      ] <CONvsNONplot_0-200_thickerGRAY.png, id=1051, 351.2322pt x 189.8292pt>
-File: CONvsNONplot_0-200_thickerGRAY.png Graphic file (type png)
+      ] <CONvsNONplot_0-200_thicker2.png, id=1051, 351.2322pt x 189.8292pt>
+File: CONvsNONplot_0-200_thicker2.png Graphic file (type png)
 
-<use CONvsNONplot_0-200_thickerGRAY.png>
-Package pdftex.def Info: CONvsNONplot_0-200_thickerGRAY.png used on input line 
-268.
+<use CONvsNONplot_0-200_thicker2.png>
+Package pdftex.def Info: CONvsNONplot_0-200_thicker2.png used on input line 268
+.
 (pdftex.def)             Requested size: 351.23134pt x 189.82872pt.
  [42pdfTeX warning (ext4): destination with the same identifier (name{table.4.4
 }) has been already used, duplicate ignored
@@ -3007,7 +3007,7 @@ l.274
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.274 
-       <./CONvsNONplot_0-200_thickerGRAY.png>] [43]
+       <./CONvsNONplot_0-200_thicker2.png>] [43]
 Overfull \vbox (36.42517pt too high) has occurred while \output is active []
 
 
@@ -3295,7 +3295,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
  35091 strings out of 493304
- 566554 string characters out of 6139871
+ 566539 string characters out of 6139871
  941791 words of memory out of 5000000
  37064 multiletter control sequences out of 15000+600000
  120809 words of font info for 170 fonts, out of 8000000 for 9000
@@ -3318,7 +3318,7 @@ usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (89 pages, 6489035 bytes).
+Output written on main.pdf (89 pages, 6505076 bytes).
 PDF statistics:
  1735 PDF objects out of 2073 (max. 8388607)
  1556 compressed objects within 16 object streams
