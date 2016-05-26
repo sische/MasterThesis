@@ -3,10 +3,10 @@
 \select@language {english}
 \select@language {norsk}
 \select@language {english}
-\contentsline {chapter}{List of Figures}{xiii}{section*.1}
-\contentsline {chapter}{List of Tables}{xv}{section*.2}
-\contentsline {chapter}{List of Acronyms}{xvii}{section*.3}
-\contentsline {chapter}{Glossary}{xix}{section*.5}
+\contentsline {chapter}{List of Figures}{xi}{section*.1}
+\contentsline {chapter}{List of Tables}{xiii}{section*.2}
+\contentsline {chapter}{List of Acronyms}{xv}{section*.3}
+\contentsline {chapter}{Glossary}{xvii}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Scope and Objectives}{3}{section.1.2}
@@ -15,57 +15,63 @@
 \contentsline {subsection}{\numberline {1.2.3}Research Questions}{4}{subsection.1.2.3}
 \contentsline {section}{\numberline {1.3}Structure}{4}{section.1.3}
 \contentsline {chapter}{\chapternumberline {2}Background}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Bluetooth Low Energy}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}6LoWPAN}{9}{section.2.2}
-\contentsline {section}{\numberline {2.3}Raspberry Pi}{9}{section.2.3}
-\contentsline {section}{\numberline {2.4}nRF52}{11}{section.2.4}
-\contentsline {section}{\numberline {2.5}Adafruit ADXL345 Accelerometer}{13}{section.2.5}
-\contentsline {section}{\numberline {2.6}Transport protocols}{14}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}\gls {coap}}{14}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}\gls {mqtt}}{17}{subsection.2.6.2}
-\contentsline {section}{\numberline {2.7}Software tools}{18}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Wireshark}{18}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Copper}{18}{subsection.2.7.2}
-\contentsline {chapter}{\chapternumberline {3}System Architecture}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{20}{section.3.1}
-\contentsline {section}{\numberline {3.2}Connecting nRF52 and ADXL345}{23}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Connection challenges}{23}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}bt8}{23}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Nordic Semiconductor example code}{23}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}\gls {coap}}{24}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Observable \gls {coap}}{27}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Getting acceleration values}{27}{section.3.4}
-\contentsline {section}{\numberline {3.5}From Raspberry Pi to Network Computer or Server}{28}{section.3.5}
-\contentsline {chapter}{\chapternumberline {4}Network Measurements}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Initial limitations in the Network}{31}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Stable transfer rate}{31}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Packet fragmentation}{33}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Description of measurements}{35}{section.4.2}
-\contentsline {section}{\numberline {4.3}CoAP}{35}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Discussion}{38}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{39}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{41}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Discussion}{46}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Comparison}{46}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{47}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Bytes sent through network, best and worst case}{50}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Quantity test}{51}{section.4.5}
-\contentsline {section}{\numberline {4.6}Summary}{51}{section.4.6}
-\contentsline {chapter}{\chapternumberline {5}Discussion}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Set up network}{53}{section.5.1}
-\contentsline {section}{\numberline {5.2}Gather sensor data}{54}{section.5.2}
-\contentsline {section}{\numberline {5.3}Send data through network}{54}{section.5.3}
-\contentsline {section}{\numberline {5.4}Analyse data}{55}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Power consumption}{56}{subsection.5.4.1}
-\contentsline {section}{\numberline {5.5}Ease of use}{56}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{56}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}nRF52}{56}{subsection.5.5.2}
-\contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{57}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{57}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{57}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Sensors}{57}{subsection.6.1.2}
-\contentsline {chapter}{References}{59}{section*.39}
+\contentsline {section}{\numberline {2.1}Hardware}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Raspberry Pi}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}nRF52}{8}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Adafruit ADXL345 Accelerometer}{10}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Additional computational power}{11}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Alternative devices}{12}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}Communication technologies}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Bluetooth Low Energy}{12}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}6LoWPAN}{14}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Other alternatives}{15}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Transport protocols}{15}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}CoAP}{16}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}MQTT}{19}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Software tools}{19}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Wireshark}{20}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Copper}{20}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Other}{20}{subsection.2.4.3}
+\contentsline {chapter}{\chapternumberline {3}System Architecture}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{22}{section.3.1}
+\contentsline {section}{\numberline {3.2}Connecting nRF52 and ADXL345}{25}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Connection challenges}{26}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}bt8}{26}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Nordic Semiconductor example code}{26}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}\gls {coap}}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Observable \gls {coap}}{29}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Getting acceleration values}{29}{section.3.4}
+\contentsline {section}{\numberline {3.5}From Raspberry Pi to Network Computer or Server}{30}{section.3.5}
+\contentsline {chapter}{\chapternumberline {4}Network Measurements}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Initial limitations in the Network}{33}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Stable transfer rate}{33}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Packet fragmentation}{35}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Description of measurements}{37}{section.4.2}
+\contentsline {section}{\numberline {4.3}CoAP}{37}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Discussion}{40}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{41}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{43}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Discussion}{48}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Comparison}{48}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{49}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Bytes sent through network, best and worst case}{52}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Quantity test}{53}{section.4.5}
+\contentsline {section}{\numberline {4.6}Summary}{53}{section.4.6}
+\contentsline {chapter}{\chapternumberline {5}Discussion}{55}{chapter.5}
+\contentsline {section}{\numberline {5.1}Set up network}{55}{section.5.1}
+\contentsline {section}{\numberline {5.2}Gather sensor data}{56}{section.5.2}
+\contentsline {section}{\numberline {5.3}Send data through network}{56}{section.5.3}
+\contentsline {section}{\numberline {5.4}Analyse data}{57}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Power consumption}{58}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Ease of use}{58}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{58}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}nRF52}{58}{subsection.5.5.2}
+\contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{59}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{59}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Sensors}{59}{subsection.6.1.2}
+\contentsline {chapter}{References}{61}{section*.38}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{61}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{65}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Appendix C}{67}{appendix.C}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{63}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{67}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Appendix C}{69}{appendix.C}

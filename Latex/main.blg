@@ -21,8 +21,17 @@ I was expecting a `,' or a `}'---line 68 of file main.bib
 I'm skipping whatever remains of this entry
 You're missing a field name---line 121 of file main.bib
  : 
- : % title = {{Nordic Semiconductor:} nRF52 Prewiev},%
+ : % title = {{Nordic Semiconductor:} Development tools and Software},
 (Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 135 of file main.bib
+ : 
+ : @misc{adxlDataSheet,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 149 of file main.bib
+ :  title = {{Nordic Semiconductor:} nRF52 Prewiev},
+ :                                                  %
 I'm skipping whatever remains of this entry
 Warning--no key, author in aboutNordic
 Warning--no author, editor, or organization in aboutNordic
@@ -33,6 +42,18 @@ Warning--to sort, need author or key in newark
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--to sort, need author or key in nrf52Nordic
+Warning--no key, author in softDevice
+Warning--no author, editor, or organization in softDevice
+Warning--to sort, need author or key in softDevice
+Warning--no key, author in ant
+Warning--no author, editor, or organization in ant
+Warning--to sort, need author or key in ant
+Warning--no key, author in mqttWebsite
+Warning--no author, editor, or organization in mqttWebsite
+Warning--to sort, need author or key in mqttWebsite
+Warning--no key, author in nordicSoftwareTools
+Warning--no author, editor, or organization in nordicSoftwareTools
+Warning--to sort, need author or key in nordicSoftwareTools
 Warning--no key, author in adxlDataSheet
 Warning--no author, editor, or organization in adxlDataSheet
 Warning--to sort, need author or key in adxlDataSheet
@@ -44,26 +65,54 @@ Warning--no key, author in adxlDataSheet
 Warning--no author, editor, or organization in adxlDataSheet
 Warning--no key, author in adxlDataSheet
 Warning--no author, editor, or organization in adxlDataSheet
+Warning--no key, author in ant
+Warning--no author, editor, or organization in ant
+Warning--no key, author in ant
+Warning--no author, editor, or organization in ant
+Warning--no key, author in mqttWebsite
+Warning--no author, editor, or organization in mqttWebsite
+Warning--no key, author in mqttWebsite
+Warning--no author, editor, or organization in mqttWebsite
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
+Warning--no key, author in nordicSoftwareTools
+Warning--no author, editor, or organization in nordicSoftwareTools
+Warning--no key, author in nordicSoftwareTools
+Warning--no author, editor, or organization in nordicSoftwareTools
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
-Warning--no key, author in aboutNordic
-Warning--no author, editor, or organization in aboutNordic
-Warning--empty year in aboutNordic
+Warning--no key, author in softDevice
+Warning--no author, editor, or organization in softDevice
+Warning--no key, author in softDevice
+Warning--no author, editor, or organization in softDevice
+Warning--no key, author in nordicSoftwareTools
+Warning--no author, editor, or organization in nordicSoftwareTools
+Warning--empty year in nordicSoftwareTools
 Warning--no key, author in adxlDataSheet
 Warning--no author, editor, or organization in adxlDataSheet
 Warning--empty year in adxlDataSheet
+Warning--no key, author in ant
+Warning--no author, editor, or organization in ant
+Warning--empty year in ant
+Warning--no key, author in mqttWebsite
+Warning--no author, editor, or organization in mqttWebsite
+Warning--empty year in mqttWebsite
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
 Warning--empty year in newark
+Warning--no key, author in aboutNordic
+Warning--no author, editor, or organization in aboutNordic
+Warning--empty year in aboutNordic
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
 Warning--empty year in nrf52Nordic
+Warning--no key, author in softDevice
+Warning--no author, editor, or organization in softDevice
+Warning--empty year in softDevice
 Warning--no journal in chown2011rogue
 Warning--no number and no volume in chown2011rogue
 Warning--page numbers missing in chown2011rogue
@@ -73,45 +122,45 @@ Warning--page numbers missing in kushalnagar2007transmission
 Warning--no journal in shelby2014constrained
 Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
-You've used 12 entries,
+You've used 16 entries,
             2861 wiz_defined-function locations,
-            689 strings with 6757 characters,
-and the built_in function-call counts, 7257 in all, are:
-= -- 640
+            703 strings with 7194 characters,
+and the built_in function-call counts, 8738 in all, are:
+= -- 780
 > -- 417
 < -- 2
 + -- 126
 - -- 138
-* -- 645
-:= -- 1164
-add.period$ -- 35
-call.type$ -- 12
-change.case$ -- 79
-chr.to.int$ -- 12
-cite$ -- 77
-duplicate$ -- 225
-empty$ -- 520
+* -- 781
+:= -- 1292
+add.period$ -- 43
+call.type$ -- 16
+change.case$ -- 98
+chr.to.int$ -- 16
+cite$ -- 137
+duplicate$ -- 289
+empty$ -- 696
 format.name$ -- 162
-if$ -- 1411
+if$ -- 1727
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 8
-newline$ -- 60
+newline$ -- 76
 num.names$ -- 80
-pop$ -- 96
+pop$ -- 150
 preamble$ -- 1
-purify$ -- 151
+purify$ -- 195
 quote$ -- 0
-skip$ -- 206
+skip$ -- 243
 stack$ -- 0
-substring$ -- 394
-swap$ -- 76
+substring$ -- 490
+swap$ -- 96
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 240
-warning$ -- 49
+type$ -- 320
+warning$ -- 89
 while$ -- 76
 width$ -- 0
-write$ -- 152
-(There were 2 error messages)
+write$ -- 191
+(There were 4 error messages)
