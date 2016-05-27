@@ -1,23 +1,25 @@
 \chapter{System Architecture}
 \label{chp:architecture} 
 
-The purpose of this thesis is to build an end-to-end system, to be able to transfer data all the way from sensors connected to a microcontroller to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read and transfer data efficiently. 
-
+The purpose of this thesis is to build an end-to-end system, to be able to transfer data all the way from sensors connected to a \gls{microcontroller} to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read and transfer data efficiently. 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.7]{MasterArchitecture2.png}    
-    \caption{System architecture}
-    \label{fig:systemArchitecture}
+    \includegraphics[width=0.85\textwidth]{architectureIntro3.png}    
+    \caption{End-to-End architecture in the presented system}
+    \label{fig:systemArchitectureThisSystem}
 \end{figure}
 
-Figure \ref{fig:systemArchitecture} shows how the complete end-to-end system of this thesis is set up. In short terms, the \textit{Nordic Semiconductor nRF52} is connected to a  \textit{Raspberry Pi 3} using \gls{6lowpan} and \gls{ble}. This means that they are able to communicate using \gls{ipv6} addresses, even though the nRF52 only has a bluetooth antenna built in, as shown in figure \ref{fig:nrf52chipDetail}. The limitations of \gls{ble} means that the nRF52 can only connect to \textit{one} device at the time. Several of these put together are therefore forming a \textit{star network} using the \textit{Raspberry Pi} as a central point of connection. Computations can now either be done in the end nodes at the \textit{nRF52s}, at the \textit{Raspberry Pi}, or forwarded to a web server or another computer with more computational power. Data can also be displayed directly to a web page from the \textit{Raspberry Pi}. 
+
+Figure \ref{fig:systemArchitectureThisSystem} shows how the complete end-to-end system of this thesis is set up. In short terms, the \textit{Nordic Semiconductor nRF52} is connected to a  \textit{Raspberry Pi 3} using \gls{6lowpan} and \gls{ble}. This means that they are able to communicate using \gls{ipv6} addresses, even though the nRF52 only has a bluetooth antenna built in, as shown in figure \ref{fig:nrf52chipDetail}. The limitations of \gls{ble} means that the nRF52 can only connect to \textit{one} device at the time. Several of these put together are therefore forming a \textit{star network} using the \textit{Raspberry Pi} as a central point of connection. Computations can now either be done in the end nodes at the \textit{nRF52s}, at the \textit{Raspberry Pi}, or forwarded to a web server or another computer with more computational power. Data can also be displayed directly to a web page from the \textit{Raspberry Pi}. 
  
 %\newpage
 
+
+
 There are in general three main limitations in a network such as this:
 
-\renewcommand{\labelitemi}{$\textasteriskcentered$}
+%\renewcommand{\labelitemi}{$\textasteriskcentered$}
 \begin{itemize}
   \item Computational power in the different nodes
   \item Battery capacity of the end nodes
@@ -158,7 +160,7 @@ The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite str
 After this is done it is possible to write to and read from the registers of the accelerometer over the two SDA and SCL cables. 
 
 
-\subsection{Connection challenges}
+\subsection{Connection Challenges}
 
 Following instructions from a representative from Nordic Semiconductor, the bt0 interface was set up using the recommended \gls{ipv6} prefix: \textit{2001:bt8::1/64} in in the file \textit{etc/sysctrl.conf}, and after that trying to connect and test the connected devices using addresses on the form: 
 
@@ -186,8 +188,8 @@ As a first step, the nRF52 needed to communicate with the Raspberry Pi. As expla
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.47]{CoAPExample.png}    
-    \caption{CoAP Client-Server communication example}
+    \includegraphics[width=1.0\textwidth]{CoAPExample2.png}    
+    \caption{CoAP Client-Server communication example \cite{nordicNrfDocumentation}}
     \label{fig:CoAPexample1}
 \end{figure}
 \todo{Remove "Figure 1" from image}
@@ -235,9 +237,21 @@ In the given Nordic example of a \gls{coap} observable server, the problem of un
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.47]{CoAPObservalbFigure2.png}    
-    \caption{CoAP Observable Server example}
+    \caption{CoAP Observable Server example \cite{nordicNrfDocumentation}}
     \label{fig:CoAPexample2}
 \end{figure}
+
+%\todo{Remove "Figure 1" from image}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.47]{CoAPObservableServerExample2.png}    
+    \caption{CoAP Observable Server example \cite{nordicNrfDocumentation}}
+    \label{fig:CoAPexample3}
+\end{figure}
+
+
+
 \todo{Remove "Figure 1" from image}
 
 

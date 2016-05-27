@@ -17,13 +17,15 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces CoAP NON, set up sequence, Wireshark capture}}{18}{figure.2.9}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces CoAP message format}}{18}{figure.2.10}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces MQTT subscription sequence diagram}}{19}{figure.2.11}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces \textsc {Copper example}}}{20}{figure.2.12}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces System architecture}}{21}{figure.3.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces End-to-End architecture in the presented system}}{21}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345 2}}{25}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces CoAP Client-Server communication example}}{27}{figure.3.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces CoAP Client-Server communication example \cite {nordicNrfDocumentation}}}{27}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces CoAP Client-Server example Wireshark capture}}{28}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Sequence diagram CoAP Client-Server example}}{28}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces CoAP Observable Server example}}{29}{figure.3.6}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces CoAP Observable Server example \cite {nordicNrfDocumentation}}}{29}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces CoAP Observable Server example \cite {nordicNrfDocumentation}}}{29}{figure.3.7}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{34}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Ping nRF52, different time}}{35}{figure.4.2}
@@ -40,6 +42,7 @@
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Number of bytes per second}}{53}{figure.4.13}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Complete system architecture}}{60}{figure.6.1}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

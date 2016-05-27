@@ -1,6 +1,6 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{??}{nor}{}]{nordicSoftwareTools}
+\bibitem[\protect\citeauthoryear{??}{nor}{a}]{nordicSoftwareTools}
 
 
 \bibitem[\protect\citeauthoryear{??}{adx}{}]{adxlDataSheet}
@@ -28,6 +28,11 @@
 {Nordic semiconductor:} about us.
 \newblock https://www.nordicsemi.com/eng/About-us.
 \newblock Accessed: 19-05-2016.
+
+\bibitem[\protect\citeauthoryear{??}{nor}{b}]{nordicNrfDocumentation}
+{Nordic Semiconductor:} iot sdk documentation.
+\newblock
+  https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk52.v0.9.1%2Fexamples.html.
 
 \bibitem[\protect\citeauthoryear{??}{nrf}{}]{nrf52Nordic}
 {Nordic Semiconductor:} nrf52 series soc.
