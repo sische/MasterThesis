@@ -149,18 +149,15 @@ Figure \ref{fig:BLEdataUnitStructure} shows the data unit structure in \gls{ble}
 %Check out: Mikhail Galeev - BLE
 
 \subsection{6LoWPAN}
+\todo{Write even more in this section?}
 
-%To identify sensors and devices in low energy sensor and device networks, a new protocol was needed. 
-
-\gls{6lowpan} is a defined protocol for using \gls{ipv6} in low energy networks, to identify sensors and devices, as defined in the IEEE 802.15.4. To use the Internet Protocol in low energy networks in addition to standard networks was proposed by Geoff Mulligan and the 6LoWPAN Working Group. This was chosen because it seemed like a simple and smart protocol definition. Since packets in this network can end up being forwarded all the way from a \ref{microcontroller} to a central computer through several nodes without being changed, it makes sense to use the same base protocol for all links. In \cite{mulligan20076lowpan}, the advantage of \gls{6lowpan} is explained as 
+\gls{6lowpan} is a defined protocol for using \gls{ipv6} in low energy networks, to identify sensors and devices, as defined in the IEEE 802.15.4. To use the Internet Protocol in low energy networks in addition to standard networks was proposed by Geoff Mulligan and the 6LoWPAN Working Group. This was chosen because it seemed like a simple and smart protocol definition. Since packets in this network can end up being forwarded all the way from a \ref{microcontroller} to a central computer through several nodes without being changed, it makes sense to use the same base protocol for all links. In \cite{mulligan20076lowpan}, the advantage of \gls{6lowpan} is explained as not too big to be used in small networks with a small header field, and more flexible to network sized compared to \textit{Zigbee} and \textit{Zensys}. 
 
 \noindent\textit{Utilizing IP  in these networks and pushing it to the very edge of the network devices flattens the naming and addressing hierarchy and  thereby  simplifies  the  connectivity  model. This obviates the need  for  complex  gateways  that,  in  the  past,  were  necessary  to translate   between   proprietary   protocols   and   standard   Internet Protocols and instead can be replaced with much simpler bridges and  routers,  both  of  which  are  well  understood, well  developed and  widely  available  technologies \cite{mulligan20076lowpan}.}
 
 
 \gls{6lowpan} was developed to be used in small sensor networks, and implementations can fit into 32Kb flash memory parts. The \gls{mtu} is given to be 1280 byte, and it also uses a complex header comparison mechanism that allows the transmission of \gls{ipv6} packets in 4 bytes, much less than the standard \gls{ipv6} 40 bytes. This is done by using stacked headers, same as in the \gls{ipv6} model, rather than defining a specific header as for \gls{ipv4}. The device can send only the required part of the stack header, and does not need to include header fields for networking and fragmentation \cite{hui2008extending}. The maximum packet size of the physical layer is set to be 127 bytes, far below the limit of 1280 byte \cite{kushalnagar2007transmission}. It is expected that other layers will produce packets of the desired size to fit the system. In the system presented in this thesis by the example code on the nRF52 is the side set to 270 bytes for every packet, as will be shown in practical examples and tests later in the thesis. 
-
-
-%The \gls{6lowpan} architecture was developed to allow \gls{ipv6} packets to be sent over low energy networks.  
+  
 
 \subsection{Other alternatives}
 
@@ -210,10 +207,11 @@ Figure \ref{fig:NONOackSeqDiagram} shows the basic message sequence between the 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.6]{NONOackSeqDiagram.png}    
+    \includegraphics[scale=0.6]{NONOackSeqDiagram2.png}    
     \caption{NON CoAP set up sequence diagram}
     \label{fig:NONOackSeqDiagram}
 \end{figure}
+
 
 Figure \ref{fig:CoAPMessageFormat} shows the same for \gls{non}, where no \glspl{ack} are needed. The same initial set up with con and ack messages are still needed, to establish a connection between the client and server before a stream of \gls{non} messages can be sent. This means a much more unreliable connection than using \gls{con}, since messages can be dropped without either the client or the server gets notified. Systems where a few packets can be lost without difficulties, for instance in a sensor based network like the network presented in this thesis, can use this as an advantage. A message ID is still provided to every message to remove duplicated messages, but dropped messages are lost data. If the packages sent contained data that could not be dropped, for instance containing crucial patient information from censors on a patients body, this is not a good solution. The more reliable solution \gls{con} is a much better alternative in this case. These differences are the same as being experienced in the \gls{iot} system described in this thesis, which can be seen in figure \ref{fig:CoAPNONwiresharkSetUp}. A \gls{con} message is sent several times, to set up the initial connection. When an \gls{ack} is received as a response, the continuous transportation of \gls{non} packets without \glspl{ack} can begin. 
 
@@ -267,13 +265,9 @@ An alterntive transport protocol in a system such as this is \gls{mqtt}. This is
 
 As \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor in \cite{nordicSoftwareTools}, for writing C programming. For other programming languages (for instance Python 3.4)  Text 2 for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
 
-\subsection{Wireshark}
+Wireshark is a software tool used to analyse networks and capture packets sent with different technologies \cite{lamping2004wireshark}. Later the data can be filtered and analysed, for instance by filtering out all packets except \gls{coap} and \gls{ble}, which was used in this case. Wireshark has been one of the most important tools to be able to analyse data to such an extent as done in this thesis. An example of use is shown in \ref{fig:CoAPNONwiresharkSetUp}. 
 
-Wireshark is a software tool to analyse networks and capture packets sent using different technologies 
-
-\subsection{Copper}
-
-Copper is a generic browser which can be used in \textit{Firefox}. It is 
+Copper is a generic browser which can be used in \textit{Firefox}. It is Made to be used in \gls{iot} networks based on \gls{coap}, just like this network. Using Copper it was easy to use GET and PUT messages, as well as observing a server by using a simple \gls{gui}. By removing the need of using terminal commands and programming scripts this makes the system easier to use with less computer knowledge. An example of the program can be seen in figure \ref{fig:copperExample}. 
 \cite{kovatsch2011demo}
 
 \begin{figure}[ht]
@@ -283,8 +277,6 @@ Copper is a generic browser which can be used in \textit{Firefox}. It is
     \label{fig:copperExample}
 \end{figure}
 
-\gls{radvd} is a software tool that can be used to advertise \gls{ipv6} addresses in a local network, using \gls{ndp} \cite{chown2011rogue}. . This is being used to multicast and forward packets in this network. When a packet is sent from an end node to another, the communication needs to go through the central point in the star network, the Raspberry Pi in this case. Here, \gls{radvd} ensures that the packages are being routed to the right end point, or the right nRF52 in this system. 
+\gls{radvd} is a software tool that can be used to advertise \gls{ipv6} addresses in a local network, using \gls{ndp} \cite{chown2011rogue}. This is being used to multicast and forward packets in this network. When a packet is sent from an end node to another, the communication needs to go through the central point in the star network, the Raspberry Pi in this case. Here, \gls{radvd} ensures that the packages are being routed to the right end point, or the right nRF52 in this system. To make the most basic figures in this thesis the web based tool \textit{draw.io} was used, unless other is specified. \textit{polt.ly} was used to draw the graphs used. All the images of devices in the network has been taken by the author. 
 
-Other software used to set up, monitor and test this network include Mozilla Firefox with Copper \todo{image?} to get basic communication with nRF52 from the Pi without the use of a script or terminal. Wireshark has been used to capture packets sent through the network, and GitHub has been used both as a backup solution. To make the most basic figures in this thesis the web based tool \textit{draw.io} was used, unless other is specified. \textit{polt.ly} was used to draw the graphs used. All the images of devices in the network has been taken by the author. 
 
-\subsection{Other}

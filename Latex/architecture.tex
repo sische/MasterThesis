@@ -1,7 +1,7 @@
 \chapter{System Architecture}
 \label{chp:architecture} 
 
-The purpose of this thesis is to build an end-to-end system, to be able to transfer data all the way from sensors connected to a \gls{microcontroller} to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read and transfer data efficiently. 
+The purpose of this thesis is to build an end-to-end system, that will be able to transfer data all the way from sensors connected to a \gls{microcontroller} to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read and transfer data efficiently. 
 
 \begin{figure}[ht]
     \centering
@@ -11,24 +11,17 @@ The purpose of this thesis is to build an end-to-end system, to be able to trans
 \end{figure}
 
 
-Figure \ref{fig:systemArchitectureThisSystem} shows how the complete end-to-end system of this thesis is set up. In short terms, the \textit{Nordic Semiconductor nRF52} is connected to a  \textit{Raspberry Pi 3} using \gls{6lowpan} and \gls{ble}. This means that they are able to communicate using \gls{ipv6} addresses, even though the nRF52 only has a bluetooth antenna built in, as shown in figure \ref{fig:nrf52chipDetail}. The limitations of \gls{ble} means that the nRF52 can only connect to \textit{one} device at the time. Several of these put together are therefore forming a \textit{star network} using the \textit{Raspberry Pi} as a central point of connection. Computations can now either be done in the end nodes at the \textit{nRF52s}, at the \textit{Raspberry Pi}, or forwarded to a web server or another computer with more computational power. Data can also be displayed directly to a web page from the \textit{Raspberry Pi}. 
- 
-%\newpage
+Figure \ref{fig:systemArchitectureThisSystem} shows how the complete end-to-end system of this thesis is set up. In short terms, the \textit{Nordic Semiconductor nRF52} is connected to a  \textit{Raspberry Pi 3} using \gls{6lowpan} and \gls{ble}. This means that they are able to communicate using \gls{ipv6} addresses, even though the nRF52 only has a bluetooth antenna built in, as shown in figure \ref{fig:nrf52chipDetail}. The limitations of \gls{ble} means that the nRF52 can only connect to \textit{one} device at the time. Several of these put together are therefore forming a star network using the \textit{Raspberry Pi} as a central point of connection. Computations can now either be done in the end nodes at the \textit{nRF52s}, at the \textit{Raspberry Pi}, or forwarded to a web server or another computer with more computational power. Data can also be displayed directly to a web page from the \textit{Raspberry Pi}. There are in general three main limitations in a network such as this:
 
-
-
-There are in general three main limitations in a network such as this:
-
-%\renewcommand{\labelitemi}{$\textasteriskcentered$}
 \begin{itemize}
   \item Computational power in the different nodes
   \item Battery capacity of the end nodes
   \item Network limitations between the nodes
 \end{itemize}
 
-A central part of the testing in this thesis will be to test the different limitations, and to understand the pros and cons of doing computations in end nodes, compared to transferring information to a server with \textit{much} more computational power. Power usage is very often closely related to computational power, and will also be a central factor. The next section will contain a walk-through of the system, from the smallest to the biggest component, to explain their computational and power capabilities, and how they can communicate efficiently. 
 
-Computational power is closely related to power usage. The nRF52 microcontroller is battery powered using a small \textit{3V Lithium CR 2032} battery. Given this limitation the computational power will be limited as well. The optimal solutions therefore seems to handle as little data as possible here. 
+A central part of the testing in this thesis will be to test the different limitations, and to understand the pros and cons of doing computations in end nodes, compared to transferring information to a server with \textit{much} more computational power. Power usage is very often closely related to computational power, and will also be a central factor. The next section will contain a walk-through of the system, and discuss these three main limitations in each node and the links between them.
+
 
 
 \section{Connecting Raspberry Pi and nRF52}
@@ -59,7 +52,7 @@ apt-get update
 \end{verbatim}
 %\end{lstlisting}
 
-To activate \gls{ipv6} forwarding, uncomment the following line (remove "\#") in the file \textit{etc/sysctl.conf}
+To activate \gls{ipv6} forwarding, uncomment the following line (remove "\#") in the file \textit{/etc/sysctl.conf}
 
 \begin{verbatim}
 net.ipv6.conf.all.forwarding=1
@@ -95,38 +88,43 @@ bluetooth_6lowpan
 radvd
 \end{verbatim}
 
-It is now possible to use the \textit{hcitool} command. 
+When the system starts, these modules will be automatically loaded. After this it is possible to use the \textit{hcitool} command. This is a tool designed to connect and keep track of connected devices, both through standard bluetooth and \gls{ble}. 
 
 \begin{verbatim}
 hcitool lescan
 \end{verbatim}
 
-This command will scan for \gls{ble} devices nearby, and find the bluetooth address, for instance \textit{0211:22FF:FE33:4455}. The normal procedure in this case would be to run the following command: 
+\textit{lescan} will scan for \gls{ble} devices nearby, and find the bluetooth address, for instance \textit{00:AA:11:BB:22:CC}. The normal procedure in this case would be to run the following command: 
 
 \begin{verbatim}
 echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
-hcitool lecc 0211:22FF:FE33:4455
+hcitool lecc 00:AA:11:BB:22:CC
 service radvd restart
 \end{verbatim}
 
 This command never established a stable connection in this system. It was not possible to test the connection, and each connected device became automatically disconnected after about 15 seconds. The reason for this was never found. Instead it was possible to not use \textit{hcitool} for this part, and the following commands worked fine:
 
-\begin{verbatim}
-echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
-echo "connect 0211:22FF:FE33:4455 1" > /sys/kernel/
-debug/bluetooth/6lowpan_control
+\begin{verbatim}[breaklines]
+cd /sys/kernel/debug/bluetooth
+echo 1 > 6lowpan_enable
+echo "connect 00:AA:11:BB:22:CC 1" > 6lowpan_control
 service radvd restart
 \end{verbatim} 
-\todo{FIX verbatim new line? }
 
 The command \textit{hcitool con} shows the connected \gls{ble} devices. If the device is connected, the connection can be tested by typing:
 
 \begin{verbatim}
-ping6 2001::0211:22FF:FE33:4455
+ping6 2001::02AA:11FF:FEBB:22CC
 \end{verbatim}
 
 
-Using the basic examples provided by Nordic Semiconductor described in chapter \ref{chp:architecture}.3, it was now possible to send messages both using \gls{coap} \gls{con} and \gls{non}.  
+Note that \textit{2001::02AA:11FF:FEBB:22CC} is the full \gls{ipv6} address of the device when the bluetooth address is \textit{00:AA:11:BB:22:CC} in this system. The \gls{ipv6} address can be used to route packets using \gls{6lowpan}. Using the basic examples provided by Nordic Semiconductor described in chapter \ref{chp:architecture}.3, it was now possible to send messages both using \gls{coap} \gls{con} and \gls{non}.  
+
+Computational power is closely related to power usage. The nRF52 microcontroller is battery powered using a small \textit{3V Lithium CR 2032} battery. Given this limitation the computational power will be limited as well. The optimal solutions therefore seems to handle as little data as possible here. 
+
+\section{From Raspberry Pi to Network Computer or Server}
+
+When running the Unix based \gls{os} Ubuntu Mate, the raspberry Pi can be used more or less as a regular computer. This has a pre-installed version of the most basic programs needed, for instance \textit{Mozilla Firefox Browser}, \textit{Pluma text editor} and \textit{Unix terminal}. 
 
 
 \section{Connecting nRF52 and ADXL345}
@@ -135,12 +133,25 @@ Using the basic examples provided by Nordic Semiconductor described in chapter \
 
 The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite straight forward using the nRF52. Connection scheme is as follows (nRF52 -> ADXL345): 
 
-\begin{itemize}
-  \item 5V -- VIN		\tab  	\textit{Power source, \textbf{\textcolor{green}{green cable}} in Figure \ref{fig:nrf-adxl345}}
-  \item GND -- GND 		\tab 	\textit{Ground, \textbf{\textcolor{red}{red cable}} in Figure \ref{fig:nrf-adxl345}}
-  \item P0.27 -- SDA	\tab	\textit{\gls{i2c} Serial Data Line, \textbf{\textcolor{orange}{orange cable}} in Figure \ref{fig:nrf-adxl345}}
-  \item P0.26 -- SCL	\tab 	\textit{\gls{i2c} Serial Clock Line, \textbf{\textcolor{brown}{brown cable}} in Figure \ref{fig:nrf-adxl345}}
-\end{itemize} 
+%\begin{itemize}
+%  \item 5V    -- VIN		\tab  	Power source, \textbf{\textcolor{green}{green cable}} in Figure \ref{fig:nrf-adxl345}
+%  \item GND -- GND 		\tab 	Ground, \textbf{\textcolor{red}{red cable}} in Figure \ref{fig:nrf-adxl345}
+%  \item P0.27 -- SDA	\tab	\gls{i2c} Serial Data Line, \textbf{\textcolor{orange}{orange cable}} in Figure \ref{fig:nrf-adxl345}
+%  \item P0.26 -- SCL	\tab 	\gls{i2c} Serial Clock Line, \textbf{\textcolor{brown}{brown cable}} in Figure \ref{fig:nrf-adxl345}
+%\end{itemize} 
+
+\begin{table}[H]
+\centering
+\caption{Connection nRF52 to ADXL345}
+\label{nRF52ADXL345connection}
+\begin{tabular}{ll}
+\textbf{Pin connection} & \textbf{Explanation}                                                                                            \\
+5V - VIN               & Power source, \textbf{\textcolor{green}{green cable}} in Figure \ref{fig:nrf-adxl345}                   \\
+GND - GND           0   & Ground, \textbf{\textcolor{red}{red cable}} in Figure \ref{fig:nrf-adxl345}                             \\
+P0.27 - SDA            & \gls{i2c} Serial Data Line, \textbf{\textcolor{orange}{orange cable}} in Figure \ref{fig:nrf-adxl345} \\
+P0.26 - SCL            & \gls{i2c} Serial Clock Line, \textbf{\textcolor{brown}{brown cable}} in Figure \ref{fig:nrf-adxl345} 
+\end{tabular}
+\end{table}
 
 %\begin{figure}[ht]
 %    \centering
@@ -152,7 +163,7 @@ The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite str
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.6\textwidth]{connectionADXL-nrf3.png}    
+    \includegraphics[width=0.6\textwidth]{connectionADXL-nrf4.png}    
     \caption{Connected nRF52 -- ADXL345 2}
     \label{fig:nrf-adxl345}
 \end{figure}
@@ -160,9 +171,24 @@ The ADXL345 Accelerometer used was connected using \gls{i2c}, which is quite str
 After this is done it is possible to write to and read from the registers of the accelerometer over the two SDA and SCL cables. 
 
 
+
+
+\section{Discussion}
+
+This means that the user has several options on how to process data on this device: 
+
+\begin{itemize}
+  \item No computation: All data arrives as useful data, and can be posted directly to a web page or a server for storage
+  \item No computation: Forward all data directly to a computer with more computational power
+  \item Some computation: Analyse the data to find data that is not relevant to filter out
+  \item Full computation: Do a full analyse of the data. The results can then be posted directly to a server or displayed on a web page. 
+\end{itemize}
+
+Which of these four options that is most relevant depends on the data, and how computational power is needed. It is possible to run the Raspberry Pi from a power bank, but this has not been tested in this project. When set up without a battery as power source, the Pi is the first node that could possibly do computations without having to take power limitations as a great concern. The main limitation is therefore computational power, while the main limitation may be battery power on the nRF52. It therefore makes sense to do some easy computation on this device. For instance, if this network is being used to measure vibrations, it is reasonable to assume about 1000 acceleration values every second, which represents a measuring rate of 1 kHz. It would then be perfectly reasonable to assume that the Pi could go through these values, and calculate whether or not the current acceleration value has breached a given threshold. This result can then be displayed directly on a web page or a connected monitor from the Pi. If however the system is to calculate \textit{patterns} in the acceleration values several values needs to be compared together. The need of complex algorithms to find these patterns is expected, before the results can be displayed. In this case it is reasonable to assume that the Pi would need additional computational power. The Pi can then be set up as a forwarding device, that forward data directly to a computer with more computational power. 
+
 \subsection{Connection Challenges}
 
-Following instructions from a representative from Nordic Semiconductor, the bt0 interface was set up using the recommended \gls{ipv6} prefix: \textit{2001:bt8::1/64} in in the file \textit{etc/sysctrl.conf}, and after that trying to connect and test the connected devices using addresses on the form: 
+Following instructions from a representative from Nordic Semiconductor, the bt0 interface was set up using the recommended \gls{ipv6} prefix: \textit{2001:bt8::1/64} in in the file \textit{/etc/sysctrl.conf}, and after that trying to connect and test the connected devices using addresses on the form: 
 
 \begin{verbatim}
 ping6 2001:bt8::0211:22FF:FE33:4455
@@ -178,7 +204,7 @@ This turned out not to work on the \gls{ipv6} network used on \gls{ntnu}, where 
 
 
 
-\section{Nordic Semiconductor example code}
+\subsection{Nordic Semiconductor example code}
 
 Nordic Semiconductor has provided several examples along with the nRF52-DK documentation, that can be used as a starting point when programming applications to the device. These files are written in the programming language \textit{C}. 
 
@@ -192,7 +218,7 @@ As a first step, the nRF52 needed to communicate with the Raspberry Pi. As expla
     \caption{CoAP Client-Server communication example \cite{nordicNrfDocumentation}}
     \label{fig:CoAPexample1}
 \end{figure}
-\todo{Remove "Figure 1" from image}
+
 
 Figure \ref{fig:CoAPexample1} shows the initial CoAP example, by using two nRF52 devices, \gls{ble} over \gls{6lowpan} and a \gls{ble} enabled router (Raspberry Pi) on both ends in this case. As the figure \ref{fig:CoAPexample1} shows, the code example for the \gls{coap} client includes two different cases: 
 
@@ -234,12 +260,12 @@ Using the standard \gls{coap}, described as \textit{CoAP CON} in this thesis, me
 
 In the given Nordic example of a \gls{coap} observable server, the problem of unnecessary packets being sent can be resolved. Using this it is easy to set up a server that can be observed by either a nRF52 client or a \gls{ble} forwarding server. The observable end point sends a \textit{CON-ACK request} in a given time interval to assure that the observing client is still there. As long as this message is being responded the server will continue to send data without any requirements of an \gls{ack}. 
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.47]{CoAPObservalbFigure2.png}    
-    \caption{CoAP Observable Server example \cite{nordicNrfDocumentation}}
-    \label{fig:CoAPexample2}
-\end{figure}
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[scale=0.47]{CoAPObservalbFigure2.png}    
+%    \caption{CoAP Observable Server example \cite{nordicNrfDocumentation}}
+%    \label{fig:CoAPexample2}
+%\end{figure}
 
 %\todo{Remove "Figure 1" from image}
 
@@ -259,7 +285,7 @@ In the given Nordic example of a \gls{coap} observable server, the problem of un
 \todo{Create new sequence diagram for Observable as well}
 
 
-\section{Getting acceleration values}
+\subsection{Getting acceleration values}
 
 As soon as the sending of values is being handled in a good way, the next step is to read acceleration values from the ADXL345 accelerometer, which is connected to the NRF52 using the \gls{i2c} interface. 
 
@@ -270,18 +296,3 @@ In the solution proposed in this thesis the acceleration values are being read a
 Since the network connection between the nRF52 and Raspberry Pi was already stable, it was easy to generate random values of fixed length to send on the nRF52, and do measurements to calculate the optimal throughput between these two. The next chapter will therefore describe the data analysis of the data sent through this network in detail, and how to optimize the percentage of usable data being transported.  
 
 \todo{Describe why not to gather acceleration values in this project}
-
-
-\section{From Raspberry Pi to Network Computer or Server}
-
-When running the Unix based \gls{os} Ubuntu Mate, the raspberry Pi can be used more or less as a regular computer. This has a pre-installed version of the most basic programs needed, for instance \textit{Mozilla Firefox Browser}, \textit{Pluma text editor} and \textit{Unix terminal}. This means that the user has several options on how to process data on this device: 
-
-\begin{itemize}
-  \item No computation: All data arrives as useful data, and can be posted directly to a web page or a server for storage
-  \item No computation: Forward all data directly to a computer with more computational power
-  \item Some computation: Analyse the data to find data that is not relevant to filter out
-  \item Full computation: Do a full analyse of the data. The results can then be posted directly to a server or displayed on a web page. 
-\end{itemize}
-
-Which of these four options that is most relevant depends on the data, and how computational power is needed. It is possible to run the Raspberry Pi from a power bank, but this has not been tested in this project. When set up without a battery as power source, the Pi is the first node that could possibly do computations without having to take power limitations as a great concern. The main limitation is therefore computational power, while the main limitation may be battery power on the nRF52. It therefore makes sense to do some easy computation on this device. For instance, if this network is being used to measure vibrations, it is reasonable to assume about 1000 acceleration values every second, which represents a measuring rate of 1 kHz. It would then be perfectly reasonable to assume that the Pi could go through these values, and calculate whether or not the current acceleration value has breached a given threshold. This result can then be displayed directly on a web page or a connected monitor from the Pi. If however the system is to calculate \textit{patterns} in the acceleration values several values needs to be compared together. The need of complex algorithms to find these patterns is expected, before the results can be displayed. In this case it is reasonable to assume that the Pi would need additional computational power. The Pi can then be set up as a forwarding device, that forward data directly to a computer with more computational power. 
-

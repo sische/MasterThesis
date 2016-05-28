@@ -74,10 +74,22 @@ Hunkeler, U., H.~L. Truong, and A.~Stanford-Clark (2008).
 \newblock In {\em Communication systems software and middleware and workshops,
   2008. comsware 2008. 3rd international conference on}, pp.\  791--798. IEEE.
 
+\bibitem[\protect\citeauthoryear{Kovatsch}{Kovatsch}{2011}]{kovatsch2011demo}
+Kovatsch, M. (2011).
+\newblock Demo abstract: human-coap interaction with copper.
+\newblock In {\em Distributed Computing in Sensor Systems and Workshops
+  (DCOSS), 2011 International Conference on}, pp.\  1--2. IEEE.
+
 \bibitem[\protect\citeauthoryear{Kushalnagar, Montenegro, Culler, and
   Hui}{Kushalnagar et~al.}{2007}]{kushalnagar2007transmission}
 Kushalnagar, N., G.~Montenegro, D.~E. Culler, and J.~W. Hui (2007).
 \newblock Transmission of ipv6 packets over ieee 802.15. 4 networks.
+
+\bibitem[\protect\citeauthoryear{Lamping and Warnicke}{Lamping and
+  Warnicke}{2004}]{lamping2004wireshark}
+Lamping, U. and E.~Warnicke (2004).
+\newblock Wireshark user's guide.
+\newblock {\em Interface\/}~{\em 4\/}(6).
 
 \bibitem[\protect\citeauthoryear{Mulligan}{Mulligan}{2007}]{mulligan20076lowpan}
 Mulligan, G. (2007).

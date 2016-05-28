@@ -20,16 +20,15 @@
 \contentsline {figure}{\numberline {2.12}{\ignorespaces \textsc {Copper example}}}{20}{figure.2.12}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces End-to-End architecture in the presented system}}{21}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345 2}}{25}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces CoAP Client-Server communication example \cite {nordicNrfDocumentation}}}{27}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces CoAP Client-Server example Wireshark capture}}{28}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Sequence diagram CoAP Client-Server example}}{28}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces CoAP Observable Server example \cite {nordicNrfDocumentation}}}{29}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces CoAP Observable Server example \cite {nordicNrfDocumentation}}}{29}{figure.3.7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345 2}}{26}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces CoAP Client-Server communication example \cite {nordicNrfDocumentation}}}{28}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces CoAP Client-Server example Wireshark capture}}{29}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Sequence diagram CoAP Client-Server example}}{29}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces CoAP Observable Server example \cite {nordicNrfDocumentation}}}{30}{figure.3.6}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{34}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ping nRF52, different time}}{35}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Packet fragmentation - train comparison}}{36}{figure.4.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{35}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ping nRF52, different time}}{36}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Packet fragmentation - train comparison}}{37}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP CON, 0-200 bytes sent}}{40}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON 0-200 bytes}}{42}{figure.4.5}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces CoAP CON plot, 200 bytes to 1 kB}}{45}{figure.4.6}

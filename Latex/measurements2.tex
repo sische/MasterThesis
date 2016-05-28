@@ -13,6 +13,28 @@ This chapter will display the experiments performed concerning data sending rate
 %An empty char array sent over CoAP is 76 bytes. 
 %19 bytes char array, 96 bytes
 %21 bytes char array, 98 bytes. Adds only as much as needed. 
+
+\section{Description of measurements}
+
+The following sections will discuss if \textit{fragmentation} is a major issue when sending data through low energy networks, and which of the protocols described in chapter \ref{chp:background}  is the most efficient to use when the goal is to get as high \gls{goodput} as possible. Data will be sent through the network, containing a payload of constant length. Wireshark will be a central , and then increasing the packet size to see the changes. These problems are central in the discussion of objective O.3 and O.4. 
+
+Before these experiements started, the expected results was that sending a small amount of data at a time would not be preferable, because of the needed bytes to set up the connection, header files and so on. It was not known how big the packages needed to be before it would be considered \textit{profitable} to send. 
+
+When sending \gls{ble} packets over the network, observations from the system shows that the maximum packet size over \gls{ble} is 31 bytes. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 byte is needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} (known as \textit{goodput} and \textit{throughput}) data transferred therefore start out very poorly if the payload sent is very small.The best possible percentage of useful data we can hope to acheive will also be limited by this, 27 bytes goodput and 4 bytes header field, shown in the following calculation.  
+
+\begin{equation} \label{percentage_eq} 
+	\delta = \frac{x_{2}}{x_{1}} * 100 \%
+\end{equation}
+
+Equation \ref{percentage_eq} shows the standard way used to calculate the percentage, \textdelta , that the natural number \textit{x\textsubscript{2}} is of the total amount \textit{x\textsubscript{1}}. 
+
+\begin{equation}
+    \frac{27 b}{31 b}*100 \% = 87,094776 \% \approx 87,1 \%
+\end{equation}
+
+
+
+In the actual system the number will quite certain be a lot lower than this because \gls{6lowpan} packets also require some additional fields for each packet. 
  
 
 \section{Initial limitations in the Network}
@@ -71,31 +93,6 @@ To better understand fragmentation, imagine a train with carriages as shown in F
 
 In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what to get the train working. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximal number of bytes compared to the number of packets sent. This is known as fragmentation, fragmenting data into smaller pieces to satisfy the maximal limitations of packet sizes in the different protocols. This can be exploited by a system developer to maximize \gls{goodput} compared to \gls{throughput} in the network.
  
-
-
-\section{Description of measurements}
-
-The following sections will discuss experiments performed to to test if fragmentation is a major issue when sending data through low energy networks, and which of the protocols described in chapter \ref{chp:background}  is the most efficient to use when the goal is to get as high \gls{goodput} as possible. Data will be sent through the network, containing a payload of constant length. Wireshark will be a central , and then increasing the packet size to see the changes. These problems are central in the discussion of objective O.3 and O.4. 
-
-Before these experiements started, the expected results was that sending a small amount of data at a time would not be preferable, because of the needed bytes to set up the connection, header files and so on. It was not known how big the packages needed to be before it would be considered \textit{profitable} to send. 
-
-When sending \gls{ble} packets over the network, observations from the system shows that the maximum packet size over \gls{ble} is 31 bytes. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 byte is needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} (known as \textit{goodput} and \textit{throughput}) data transferred therefore start out very poorly if the payload sent is very small.The best possible percentage of useful data we can hope to acheive will also be limited by this, 27 bytes goodput and 4 bytes header field, shown in the following calculation.  
-
-\begin{equation} \label{percentage_eq} 
-	\delta = \frac{x_{2}}{x_{1}} * 100 \%
-\end{equation}
-
-Equation \ref{percentage_eq} shows the standard way used to calculate the percentage, \textdelta , that the natural number \textit{x\textsubscript{2}} is of the total amount \textit{x\textsubscript{1}}. 
-
-\begin{equation}
-    \frac{27 b}{31 b}*100 \% = 87,094776 \% \approx 87,1 \%
-\end{equation}
-
-
-
-
-
-In the actual system the number will quite certain be a lot lower than this. Both because header files in \gls{6lowpan} packages needs to use some of the capacity, and because of other limitations\todo{Like what?}. 
 
 
 \section{CoAP}
