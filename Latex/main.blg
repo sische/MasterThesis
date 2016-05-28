@@ -26,15 +26,20 @@ You're missing a field name---line 139 of file main.bib
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 153 of file main.bib
  : 
+ : @misc{ubuntuMate,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 159 of file main.bib
+ : 
  : @misc{adxlDataSheet,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 169 of file main.bib
+I was expecting a `,' or a `}'---line 175 of file main.bib
  :  
  :  note = {Accessed: 27-01-16}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 173 of file main.bib
+You're missing a field name---line 179 of file main.bib
  :  title = {{Nordic Semiconductor:} nRF52 Prewiev},
  :                                                  %
 I'm skipping whatever remains of this entry
@@ -62,6 +67,9 @@ Warning--to sort, need author or key in mqttWebsite
 Warning--no key, author in nordicSoftwareTools
 Warning--no author, editor, or organization in nordicSoftwareTools
 Warning--to sort, need author or key in nordicSoftwareTools
+Warning--no key, author in ubuntuMate
+Warning--no author, editor, or organization in ubuntuMate
+Warning--to sort, need author or key in ubuntuMate
 Warning--no key, author in adxlDataSheet
 Warning--no author, editor, or organization in adxlDataSheet
 Warning--to sort, need author or key in adxlDataSheet
@@ -99,6 +107,10 @@ Warning--no key, author in softDevice
 Warning--no author, editor, or organization in softDevice
 Warning--no key, author in softDevice
 Warning--no author, editor, or organization in softDevice
+Warning--no key, author in ubuntuMate
+Warning--no author, editor, or organization in ubuntuMate
+Warning--no key, author in ubuntuMate
+Warning--no author, editor, or organization in ubuntuMate
 Warning--no key, author in nordicSoftwareTools
 Warning--no author, editor, or organization in nordicSoftwareTools
 Warning--empty year in nordicSoftwareTools
@@ -126,6 +138,9 @@ Warning--empty year in nrf52Nordic
 Warning--no key, author in softDevice
 Warning--no author, editor, or organization in softDevice
 Warning--empty year in softDevice
+Warning--no key, author in ubuntuMate
+Warning--no author, editor, or organization in ubuntuMate
+Warning--empty year in ubuntuMate
 Warning--no journal in chown2011rogue
 Warning--no number and no volume in chown2011rogue
 Warning--page numbers missing in chown2011rogue
@@ -136,45 +151,45 @@ Warning--page numbers missing in lamping2004wireshark
 Warning--no journal in shelby2014constrained
 Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
-You've used 19 entries,
+You've used 20 entries,
             2861 wiz_defined-function locations,
-            718 strings with 7653 characters,
-and the built_in function-call counts, 10360 in all, are:
-= -- 929
+            721 strings with 7804 characters,
+and the built_in function-call counts, 10724 in all, are:
+= -- 963
 > -- 495
 < -- 3
 + -- 149
 - -- 168
-* -- 907
-:= -- 1558
-add.period$ -- 52
-call.type$ -- 19
-change.case$ -- 116
-chr.to.int$ -- 18
-cite$ -- 152
-duplicate$ -- 348
-empty$ -- 819
+* -- 941
+:= -- 1589
+add.period$ -- 53
+call.type$ -- 20
+change.case$ -- 121
+chr.to.int$ -- 19
+cite$ -- 167
+duplicate$ -- 364
+empty$ -- 863
 format.name$ -- 196
-if$ -- 2043
+if$ -- 2121
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 10
-newline$ -- 90
+newline$ -- 93
 num.names$ -- 100
-pop$ -- 173
+pop$ -- 187
 preamble$ -- 1
-purify$ -- 229
+purify$ -- 240
 quote$ -- 0
-skip$ -- 296
+skip$ -- 305
 stack$ -- 0
-substring$ -- 566
-swap$ -- 116
+substring$ -- 590
+swap$ -- 121
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 376
-warning$ -- 98
+type$ -- 396
+warning$ -- 108
 while$ -- 99
 width$ -- 0
-write$ -- 229
-(There were 5 error messages)
+write$ -- 237
+(There were 6 error messages)

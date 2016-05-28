@@ -33,13 +33,13 @@
 \contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{22}{section.3.1}
 \contentsline {section}{\numberline {3.2}From Raspberry Pi to Network Computer or Server}{25}{section.3.2}
 \contentsline {section}{\numberline {3.3}Connecting nRF52 and ADXL345}{25}{section.3.3}
-\contentsline {section}{\numberline {3.4}Discussion}{25}{section.3.4}
+\contentsline {section}{\numberline {3.4}Discussion}{26}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Connection Challenges}{27}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}bt8}{27}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Nordic Semiconductor example code}{27}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}\gls {coap}}{27}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.3}Nordic Semiconductor example code}{28}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}\gls {coap}}{28}{subsection.3.4.4}
 \contentsline {subsection}{\numberline {3.4.5}Observable \gls {coap}}{30}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Getting acceleration values}{30}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.6}Getting acceleration values}{31}{subsection.3.4.6}
 \contentsline {chapter}{\chapternumberline {4}Network Measurements}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Description of measurements}{33}{section.4.1}
 \contentsline {section}{\numberline {4.2}Initial limitations in the Network}{34}{section.4.2}

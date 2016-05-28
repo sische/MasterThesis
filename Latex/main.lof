@@ -20,7 +20,7 @@
 \contentsline {figure}{\numberline {2.12}{\ignorespaces \textsc {Copper example}}}{20}{figure.2.12}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces End-to-End architecture in the presented system}}{21}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345 2}}{26}{figure.3.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345}}{26}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces CoAP Client-Server communication example \cite {nordicNrfDocumentation}}}{28}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces CoAP Client-Server example Wireshark capture}}{29}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Sequence diagram CoAP Client-Server example}}{29}{figure.3.5}

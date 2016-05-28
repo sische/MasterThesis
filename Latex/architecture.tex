@@ -1,17 +1,19 @@
 \chapter{System Architecture}
 \label{chp:architecture} 
 
-The purpose of this thesis is to build an end-to-end system, that will be able to transfer data all the way from sensors connected to a \gls{microcontroller} to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read and transfer data efficiently. 
+The purpose of this thesis is to build an end-to-end system, that will be able to transfer data all the way from sensors connected to a \gls{microcontroller} to a server. This chapter will describe in detail how the different components of the system has been connected together, and how the different protocols has been configured to read, process and transfer data efficiently. 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.85\textwidth]{architectureIntro3.png}    
+    \includegraphics[width=0.89\textwidth]{architectureIntro4.png}    
     \caption{End-to-End architecture in the presented system}
     \label{fig:systemArchitectureThisSystem}
 \end{figure}
 
 
-Figure \ref{fig:systemArchitectureThisSystem} shows how the complete end-to-end system of this thesis is set up. In short terms, the \textit{Nordic Semiconductor nRF52} is connected to a  \textit{Raspberry Pi 3} using \gls{6lowpan} and \gls{ble}. This means that they are able to communicate using \gls{ipv6} addresses, even though the nRF52 only has a bluetooth antenna built in, as shown in figure \ref{fig:nrf52chipDetail}. The limitations of \gls{ble} means that the nRF52 can only connect to \textit{one} device at the time. Several of these put together are therefore forming a star network using the \textit{Raspberry Pi} as a central point of connection. Computations can now either be done in the end nodes at the \textit{nRF52s}, at the \textit{Raspberry Pi}, or forwarded to a web server or another computer with more computational power. Data can also be displayed directly to a web page from the \textit{Raspberry Pi}. There are in general three main limitations in a network such as this:
+Figure \ref{fig:systemArchitectureThisSystem} shows how the complete end-to-end system of this thesis is set up. In short terms, the \gls{ADXL345} accelerometer is connected to the \gls{nRF52}, using the \gls{i2c} interface. The \gls{nRF52} is connected to a  \gls{Raspberry Pi} using \gls{6lowpan} and \gls{ble}. The \gls{Raspberry Pi} is connected to the \gls{lan}, and can therefore forward data to a central stationary computer if additional computational power is needed. Otherwise the results can be sent to the web, to a screen or anywhere else. Several \glspl{microcontroller} can possibly be connected to a Pi at the time, forming a star network. Up to eight connections has been tested successfully in this network. 
+ 
+\noindent There are in general three main limitations in a network such as this:
 
 \begin{itemize}
   \item Computational power in the different nodes
@@ -19,8 +21,12 @@ Figure \ref{fig:systemArchitectureThisSystem} shows how the complete end-to-end 
   \item Network limitations between the nodes
 \end{itemize}
 
+%Computations can now either be done in the end nodes at the \textit{nRF52s}, at the \textit{Raspberry Pi}, or forwarded to a web server or another computer with more computational power. Data can also be displayed directly to a web page from the \textit{Raspberry Pi}.
 
-A central part of the testing in this thesis will be to test the different limitations, and to understand the pros and cons of doing computations in end nodes, compared to transferring information to a server with \textit{much} more computational power. Power usage is very often closely related to computational power, and will also be a central factor. The next section will contain a walk-through of the system, and discuss these three main limitations in each node and the links between them.
+%This means that they are able to communicate using \gls{ipv6} addresses, even though the nRF52 only has a bluetooth antenna built in, as shown in figure \ref{fig:nrf52chipDetail}. The limitations of \gls{ble} means that the nRF52 can only connect to \textit{one} device at the time. Several of these put together are therefore forming a star network using the \textit{Raspberry Pi} as a central point of connection. 
+
+
+A central part of the testing in this thesis will be to test the different limitations, and to understand the pros and cons of doing computations in end nodes, compared to transferring information to a server with much more computational power. Power usage is very often closely related to computational power, and will also be a central factor. The next section will contain a walk-through of the system, and discuss these three main limitations in each node and the links between them.
 
 
 
@@ -28,10 +34,9 @@ A central part of the testing in this thesis will be to test the different limit
 
 
 %As a microcontroller the nRF52 works good in this network, both as a low-power and powerful device. 
+Since its not possible to connect a screen to the \gls{nRF52}, it makes sense to connect this to the Pi first, before measuring values. To set up the communication between a \gls{Raspberry Pi} and the \gls{nRF52}, the two code examples TWI and Observable server from Nordic Semiconductor was used as a starting point for coding on the nRF52. It was however quite tricky to connect these two together the first time. Following is a listing of unix terminal commands that was run on the \gls{Raspberry Pi} to get the system up and running \cite{nordicNrfDocumentation}. 
 
-To set up the communication between a Raspberry Pi and the nRF52, the two code examples TWI and Observable server from Nordic Semiconductor was used as a starting point for coding on the nRF52. It was however quite tricky to set connect these two together the first time. The following recipe is what worked best. 
-
-Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable (Note: Jan. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. \textit{Ubuntu Mate} was therefore chosen as the best and most stable \gls{os}. When this is done a resizing of the file system is needed to use all the capacity of the memory card. This is not necessary, but recommended to be able to use more than 4GB of the memory card. To resize, run the following commands
+Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable (Note: Jan. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. Ubuntu Mate was therefore chosen as the best and most stable \gls{os}, and was being installed on the memory card from another computer \cite{ubuntuMate}. When this is done, a resizing of the file system is needed to use all the capacity of the memory card. This is not crucial to get the \gls{os} up and running, but recommended to be able to use more than 4GB of the memory card. Recommended size of the memory card is 16GB. To resize, after the initial boot of the \gls{os} on the \gls{Raspberry Pi}, run the following commands
 
 \begin{verbatim}
 sudo fdisk /dev/mmcblk0
@@ -43,29 +48,38 @@ Delete partition (d,2), and run the following after a reboot
 sudo resize2fs /dev/mmcblk0p2
 \end{verbatim}
 
-To use \gls{ble}, install Bluez and radvd using \textit{apt-get} in a \textit{Unix terminal}:
+All the following commands require admin rights on the system. Its therefore easier to type in the following command to temporarily become a \textit{super user}. Alternatively type in \textit{sudo} before every command in the rest of the recipe.
 
 \begin{verbatim}
-apt-get install radvd wireshark bluez
+sudo su
+\end{verbatim} 
+
+It should now be possible to exploit the whole memory card, and start downloading and activating services needed in the system. To use \gls{ble}, install Bluez and radvd using \textit{apt-get}:
+
+\begin{verbatim}
+apt-get install radvd
+apt-get install bluez
 apt-get upgrade
 apt-get update
 \end{verbatim}
 %\end{lstlisting}
 
-To activate \gls{ipv6} forwarding, uncomment the following line (remove "\#") in the file \textit{/etc/sysctl.conf}
+\gls{ipv6} forwarding is needed to let the end nodes discover each other through the central node in the star network. To activate this, uncomment the following line (remove "\#") in the file \textit{/etc/sysctl.conf}
 
 \begin{verbatim}
 net.ipv6.conf.all.forwarding=1
 \end{verbatim}
 
-Add the \textit{bt0 interface} in \textit{radvd.conf}:
+To find the \gls{ipv6} prefix in the network, run the command \textit{ifconfig}. Find a field named \textit{inet6 addr}, and write down the first and last number on this line (For instance 2001 and /64). 
+The communication will in this case go through a custom designed interface. This will be named bt0. Start by creating the \textit{radvd.conf}-file, and open it for editing. 
 
 \begin{verbatim}
 touch /etc/radvd.conf
 pico /etc/radvd.conf
 \end{verbatim} 
 
-Write in the bt0 interface
+
+Write in the following bt0 interface. Replace the number 2001 and /64 with the numbers found in the previous step. 
 
 \begin{verbatim}
 interface bt0
@@ -88,7 +102,7 @@ bluetooth_6lowpan
 radvd
 \end{verbatim}
 
-When the system starts, these modules will be automatically loaded. After this it is possible to use the \textit{hcitool} command. This is a tool designed to connect and keep track of connected devices, both through standard bluetooth and \gls{ble}. 
+When the system is booted after this, these modules will be automatically loaded. After this it is possible to use the \textit{hcitool} command. This is a tool designed to connect and keep track of connected devices, both through standard bluetooth and \gls{ble}. 
 
 \begin{verbatim}
 hcitool lescan
@@ -164,7 +178,7 @@ P0.26 - SCL            & \gls{i2c} Serial Clock Line, \textbf{\textcolor{brown}{
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth]{connectionADXL-nrf4.png}    
-    \caption{Connected nRF52 -- ADXL345 2}
+    \caption{Connected nRF52 -- ADXL345}
     \label{fig:nrf-adxl345}
 \end{figure}
 

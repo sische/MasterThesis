@@ -44,6 +44,10 @@
 \newblock https://www.nordicsemi.com/eng/Products/S110-SoftDevice-v7.0.
 \newblock Accessed: 26-05-2016.
 
+\bibitem[\protect\citeauthoryear{??}{ubu}{}]{ubuntuMate}
+{Ubuntu Mate:} installation for raspberry pi, howpublished =
+  {https://ubuntu-mate.org/raspberry-pi/}, note = {Accessed: 31-01-2016}.
+
 \bibitem[\protect\citeauthoryear{Ashton}{Ashton}{2009}]{ashton2009internet}
 Ashton, K. (2009).
 \newblock That ‘internet of things’ thing.
