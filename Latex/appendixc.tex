@@ -27,6 +27,65 @@ int main(void){
 
 \newpage
 
+\textit{accelerometer\_init} will initialize the different registers to be able to read from the accelerometer. These registers should first be defined in a header file along with information about the slave address and which \gls{nRF52} pins that represented SCL and SDA, to clarify the code. 
+
+\begin{lstlisting}[language=C]
+// Part of header file: 
+
+	#define ADXL345_SLAVE_ADDRESS			0x53
+		
+    #define TWI_SCL_M						27   //!< Master SCL pin
+    #define TWI_SDA_M						26   //!< Master SDA pin
+		
+	#define X_AXIS_OFFSET					0x1E
+	#define Y_AXIS_OFFSET					0x1F
+	#define Z_AXIS_OFFSET					0x20
+	#define DATA_RATE_AND_POWER_INIT		0x2C
+	#define POWER_SAVING_INIT				0x2D
+	#define INTERRUPT_ENABLE_CONTROL		0x2E
+	#define DATA_FORMAT_CONTROL				0x31
+	#define READ_X_AXIS						0x32
+	#define READ_Y_AXIS						0x34
+	#define READ_Z_AXIS						0x36
+\end{lstlisting}
+
+\begin{lstlisting}[language=C]
+
+// Initialize accelerometer in main.c file: 
+
+static void accelerometer_init()
+{
+	write_reg(DATA_FORMAT_CONTROL, 0x00, 2);
+	write_reg(POWER_SAVING_INIT, 0xFF, 2);
+	write_reg(INTERRUPT_ENABLE_CONTROL, 0xFF, 2);
+	write_reg(X_AXIS_OFFSET, 0xFF, 2);
+	write_reg(Y_AXIS_OFFSET, 0xFF, 2);
+	write_reg(Z_AXIS_OFFSET, 0xFF, 2);	
+}
+
+\end{lstlisting}
+
+The initialization of the accelerometer calls the function \textit{write\_reg}, which is used to write to a register. 
+
+\begin{lstlisting}[language=C]
+static uint32_t write_reg(uint8_t register_address, uint8_t data_to_write, uint8_t size) 
+{		
+	ret_code_t ret;
+	
+    uint8_t addr8 = (uint8_t)register_address;
+    ret = nrf_drv_twi_tx(&m_twi_master, ADXL345_SLAVE_ADDRESS, &addr8, 1, true);
+    if(NRF_SUCCESS != ret)
+    {
+        break;
+    }
+    ret = nrf_drv_twi_tx(&m_twi_master, ADXL345_SLAVE_ADDRESS, &data_to_write, size, false);
+    return ret;
+}
+
+\end{lstlisting}
+
+After this initialisation process is successful, the \textit{start\_measuring} can begin. 
+
 \begin{lstlisting}[language=C]
 
 static void start_measuring()
@@ -53,7 +112,7 @@ static void start_measuring()
 		{
 			if (!stringToSendOccupied)
 			{
-				appendCchar(stringToSend, 150, stringa[i]);
+				appendChar(stringToSend, 150, stringa[i]);
 			}
 		}
 	}
@@ -61,6 +120,32 @@ static void start_measuring()
 }
 
 \end{lstlisting}
+
+This method calls the function \textit{read\_reg}, to read the registers that have been set to update earlier. 
+
+\begin{lstlisting}[language=C]
+
+static uint16_t read_reg(uint8_t register_address, uint8_t data_returnValue) 
+{
+	uint16_t rd;
+	ret_code_t ret;
+	uint8_t buff[2];
+    uint8_t addr8 = (uint8_t)register_address;
+    
+    ret = nrf_drv_twi_tx(&m_twi_master, ADXL345_SLAVE_ADDRESS, &addr8, 1, true);
+    if(NRF_SUCCESS != ret)
+    {
+        break;
+    }
+    ret = nrf_drv_twi_rx(&m_twi_master, ADXL345_SLAVE_ADDRESS, buff, 2, false);
+	rd = (uint16_t)(buff[0] | (buff[1] << 8));
+    
+    return rd;	
+}
+
+\end{lstlisting}
+
+After this it is possible to get the acceleration value from another point in the code, to be stores in a char array \textit{*str} until it is being sent. 
 
 
 \begin{lstlisting}[language=C]
@@ -78,3 +163,5 @@ static void acceleration_value_get(coap_content_type_t content_type, char ** str
 
 
 \end{lstlisting}
+
+

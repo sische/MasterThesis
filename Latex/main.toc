@@ -31,45 +31,41 @@
 \contentsline {section}{\numberline {2.4}Software tools}{19}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}System Architecture}{21}{chapter.3}
 \contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{22}{section.3.1}
-\contentsline {section}{\numberline {3.2}From Raspberry Pi to Network Computer or Server}{25}{section.3.2}
-\contentsline {section}{\numberline {3.3}Connecting nRF52 and ADXL345}{25}{section.3.3}
-\contentsline {section}{\numberline {3.4}Discussion}{26}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Connection Challenges}{27}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}bt8}{27}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Nordic Semiconductor example code}{28}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}\gls {coap}}{28}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Observable \gls {coap}}{30}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Getting acceleration values}{31}{subsection.3.4.6}
-\contentsline {chapter}{\chapternumberline {4}Network Measurements}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Description of measurements}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Initial limitations in the Network}{34}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Stable transfer rate}{34}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Packet fragmentation}{36}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}CoAP}{37}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Discussion}{40}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{41}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{43}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Discussion}{48}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Comparison}{48}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{49}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Bytes sent through network, best and worst case}{52}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Quantity test}{53}{section.4.5}
-\contentsline {section}{\numberline {4.6}Summary}{53}{section.4.6}
-\contentsline {chapter}{\chapternumberline {5}Discussion}{55}{chapter.5}
-\contentsline {section}{\numberline {5.1}Set up network}{55}{section.5.1}
-\contentsline {section}{\numberline {5.2}Gather sensor data}{56}{section.5.2}
-\contentsline {section}{\numberline {5.3}Send data through network}{56}{section.5.3}
-\contentsline {section}{\numberline {5.4}Analyse data}{57}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Power consumption}{58}{subsection.5.4.1}
-\contentsline {section}{\numberline {5.5}Ease of use}{58}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{58}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}nRF52}{58}{subsection.5.5.2}
-\contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{59}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{59}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Sensors}{59}{subsection.6.1.2}
-\contentsline {chapter}{References}{61}{section*.35}
+\contentsline {section}{\numberline {3.2}Raspberry Pi to Network Computer or Server}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Connecting nRF52 and ADXL345}{26}{section.3.3}
+\contentsline {section}{\numberline {3.4}Discussion}{29}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Connection Challenges}{30}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Ease of use}{30}{subsection.3.4.2}
+\contentsline {chapter}{\chapternumberline {4}Network Measurements}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Description of measurements}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Possible limitations in the Network}{32}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Stable transfer rate}{32}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Packet fragmentation}{34}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}CoAP}{35}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Discussion}{38}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{39}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{41}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Discussion}{46}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Comparison}{46}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{47}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Bytes sent through network, best and worst case}{50}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Quantity test}{51}{section.4.5}
+\contentsline {section}{\numberline {4.6}Summary}{51}{section.4.6}
+\contentsline {chapter}{\chapternumberline {5}Discussion}{53}{chapter.5}
+\contentsline {section}{\numberline {5.1}Set up network}{53}{section.5.1}
+\contentsline {section}{\numberline {5.2}Gather sensor data}{54}{section.5.2}
+\contentsline {section}{\numberline {5.3}Send data through network}{54}{section.5.3}
+\contentsline {section}{\numberline {5.4}Analyse data}{55}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Power consumption}{56}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Ease of use}{56}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{56}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}nRF52}{56}{subsection.5.5.2}
+\contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{57}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{57}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Sensors}{57}{subsection.6.1.2}
+\contentsline {chapter}{References}{59}{section*.29}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{63}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{67}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Appendix C}{69}{appendix.C}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{61}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{65}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Appendix C}{67}{appendix.C}

@@ -17,31 +17,27 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces CoAP NON, set up sequence, Wireshark capture}}{18}{figure.2.9}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces CoAP message format}}{18}{figure.2.10}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces MQTT subscription sequence diagram}}{19}{figure.2.11}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces \textsc {Copper example}}}{20}{figure.2.12}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Copper example}}{20}{figure.2.12}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces End-to-End architecture in the presented system}}{21}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Connected nRF52 -- ADXL345}}{26}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces CoAP Client-Server communication example \cite {nordicNrfDocumentation}}}{28}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces CoAP Client-Server example Wireshark capture}}{29}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Sequence diagram CoAP Client-Server example}}{29}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces CoAP Observable Server example \cite {nordicNrfDocumentation}}}{30}{figure.3.6}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{35}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ping nRF52, different time}}{36}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Packet fragmentation - train comparison}}{37}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP CON, 0-200 bytes sent}}{40}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON 0-200 bytes}}{42}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces CoAP CON plot, 200 bytes to 1 kB}}{45}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces NON 0-1000 bytes}}{47}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces NON 200-1000 bytes}}{48}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces CON vs NON 0-1000 bytes}}{48}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces CON vs NON 200-1000 bytes}}{49}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Time used per packet}}{50}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Number of bytes per second}}{51}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Number of bytes per second}}{53}{figure.4.13}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison: ping nRF52 and ping google.com}}{33}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ping nRF52, different time}}{34}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Packet fragmentation - train comparison}}{35}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP CON, 0-200 bytes sent}}{38}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON 0-200 bytes}}{40}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CoAP CON plot, 200 bytes to 1 kB}}{43}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces NON 0-1000 bytes}}{45}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces NON 200-1000 bytes}}{46}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces CON vs NON 0-1000 bytes}}{46}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces CON vs NON 200-1000 bytes}}{47}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Time used per packet}}{48}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Number of bytes per second}}{49}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Number of bytes per second}}{51}{figure.4.13}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Complete system architecture}}{60}{figure.6.1}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Complete system architecture}}{58}{figure.6.1}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
