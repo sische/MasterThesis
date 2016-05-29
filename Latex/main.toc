@@ -41,7 +41,7 @@
 \contentsline {section}{\numberline {4.2}Possible limitations in the Network}{32}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Stable transfer rate}{32}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Packet fragmentation}{34}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}CoAP}{35}{section.4.3}
+\contentsline {section}{\numberline {4.3}Measurements}{35}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Discussion}{38}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{39}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{41}{subsection.4.3.3}

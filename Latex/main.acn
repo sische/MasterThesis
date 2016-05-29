@@ -237,6 +237,7 @@
 (indexentry :tkey (("HCI" "\\glossentry{hci}") ) :locref "{}{36}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("ACL" "\\glossentry{acl}") ) :locref "{}{36}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("6LoWPAN" "\\glossentry{6lowpan}") ) :locref "{}{36}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("CON" "\\glossentry{con}") ) :locref "{}{37}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("BLE" "\\glossentry{ble}") ) :locref "{}{37}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("BLE" "\\glossentry{ble}") ) :locref "{}{38}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("6LoWPAN" "\\glossentry{6lowpan}") ) :locref "{}{38}" :attr "pageglsnumberformat" ) 

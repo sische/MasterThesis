@@ -51,6 +51,7 @@
 (indexentry :tkey (("goodput" "\\glossentry{goodput}") ) :locref "{}{31}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{32}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("goodput" "\\glossentry{goodput}") ) :locref "{}{33}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("packet" "\\glossentry{packet}") ) :locref "{}{34}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("microcontroller" "\\glossentry{microcontroller}") ) :locref "{}{34}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("goodput" "\\glossentry{goodput}") ) :locref "{}{35}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("throughput" "\\glossentry{throughput}") ) :locref "{}{35}" :attr "pageglsnumberformat" ) 

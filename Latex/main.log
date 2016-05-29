@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  29 MAY 2016 22:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  29 MAY 2016 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main
+**main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
@@ -2766,7 +2766,7 @@ Underfull \vbox (badness 7685) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.69 
-      <./ping3.png>] <trainExample.png, id=970, 710.655pt x 275.0275pt>
+      <./ping3.png>] <trainExample.png, id=971, 710.655pt x 275.0275pt>
 File: trainExample.png Graphic file (type png)
 
 <use trainExample.png>
@@ -2800,11 +2800,11 @@ Underfull \vbox (badness 2626) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.153 
-      ] <CoAPCON_0-200_Thicker2.png, id=1005, 351.2322pt x 189.8292pt>
-File: CoAPCON_0-200_Thicker2.png Graphic file (type png)
+      ] <CoAPCON_0-200_Thicker3.png, id=1007, 351.2322pt x 189.8292pt>
+File: CoAPCON_0-200_Thicker3.png Graphic file (type png)
 
-<use CoAPCON_0-200_Thicker2.png>
-Package pdftex.def Info: CoAPCON_0-200_Thicker2.png used on input line 157.
+<use CoAPCON_0-200_Thicker3.png>
+Package pdftex.def Info: CoAPCON_0-200_Thicker3.png used on input line 157.
 (pdftex.def)             Requested size: 351.23134pt x 189.82872pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2821,7 +2821,7 @@ gure.4.4}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.185 \subsection
-                 {CoAP NON comparison} <./CoAPCON_0-200_Thicker2.png>]
+                 {CoAP NON comparison} <./CoAPCON_0-200_Thicker3.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 196.
 
@@ -2835,7 +2835,7 @@ LaTeX Warning: No positions in optional float specifier.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.232 
-      ] <CONvsNONplot_0-200_thicker2.png, id=1072, 351.2322pt x 189.8292pt>
+      ] <CONvsNONplot_0-200_thicker2.png, id=1074, 351.2322pt x 189.8292pt>
 File: CONvsNONplot_0-200_thicker2.png Graphic file (type png)
 
 <use CONvsNONplot_0-200_thicker2.png>
@@ -2864,7 +2864,7 @@ Overfull \vbox (36.42517pt too high) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.316 
-      ] <CON0toK_thickerGRAY.png, id=1104, 351.2322pt x 189.8292pt>
+      ] <CON0toK_thickerGRAY.png, id=1106, 351.2322pt x 189.8292pt>
 File: CON0toK_thickerGRAY.png Graphic file (type png)
 
 <use CON0toK_thickerGRAY.png>
@@ -2889,7 +2889,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.388 \newpage
               ]
-<NON_0toKplotx09_thickerLineGRAY.png, id=1129, 351.2322pt x 182.3613pt>
+<NON_0toKplotx09_thickerLineGRAY.png, id=1131, 351.2322pt x 182.3613pt>
 File: NON_0toKplotx09_thickerLineGRAY.png Graphic file (type png)
 
 <use NON_0toKplotx09_thickerLineGRAY.png>
@@ -2897,7 +2897,7 @@ Package pdftex.def Info: NON_0toKplotx09_thickerLineGRAY.png used on input line
  403.
 (pdftex.def)             Requested size: 351.23134pt x 182.36084pt.
 
-<NON_200toKplotx09_thickerLineGRAY.png, id=1134, 351.2322pt x 189.8292pt>
+<NON_200toKplotx09_thickerLineGRAY.png, id=1136, 351.2322pt x 189.8292pt>
 File: NON_200toKplotx09_thickerLineGRAY.png Graphic file (type png)
 
 <use NON_200toKplotx09_thickerLineGRAY.png>
@@ -2905,7 +2905,7 @@ Package pdftex.def Info: NON_200toKplotx09_thickerLineGRAY.png used on input li
 ne 413.
 (pdftex.def)             Requested size: 351.23134pt x 189.82872pt.
 
-<CONvsNONplot_0-k_thickerGRAY.png, id=1135, 351.2322pt x 189.8292pt>
+<CONvsNONplot_0-k_thickerGRAY.png, id=1137, 351.2322pt x 189.8292pt>
 File: CONvsNONplot_0-k_thickerGRAY.png Graphic file (type png)
 
 <use CONvsNONplot_0-k_thickerGRAY.png>
@@ -2919,7 +2919,7 @@ Package pdftex.def Info: CONvsNONplot_0-k_thickerGRAY.png used on input line 44
                                                   \fi \fi 
 l.452 \end{figure}
                    <./NON_0toKplotx09_thickerLineGRAY.png>]
-<CONvsNON200-1000thick.png, id=1144, 351.2322pt x 189.8292pt>
+<CONvsNON200-1000thick.png, id=1146, 351.2322pt x 189.8292pt>
 File: CONvsNON200-1000thick.png Graphic file (type png)
 
 <use CONvsNON200-1000thick.png>
@@ -2957,7 +2957,7 @@ ne 471.
                                                   \fi \fi 
 l.472 
        <./CONvsNON200-1000thick.png>]
-<timeUsedPRpacket2.png, id=1180, 351.2322pt x 189.8292pt>
+<timeUsedPRpacket2.png, id=1182, 351.2322pt x 189.8292pt>
 File: timeUsedPRpacket2.png Graphic file (type png)
 
 <use timeUsedPRpacket2.png>
@@ -2970,7 +2970,7 @@ Package pdftex.def Info: timeUsedPRpacket2.png used on input line 479.
                                                   \fi \fi 
 l.485 
        <./timeUsedPRpacket2.png>]
-<bytesPRSecond2.png, id=1207, 351.2322pt x 189.8292pt>
+<bytesPRSecond2.png, id=1209, 351.2322pt x 189.8292pt>
 File: bytesPRSecond2.png Graphic file (type png)
 
 <use bytesPRSecond2.png>
@@ -2986,7 +2986,7 @@ Underfull \vbox (badness 3568) has occurred while \output is active []
                                                   \fi \fi 
 l.508 
        <./bytesPRSecond2.png>]
-<bestCaseworstCase2.png, id=1243, 351.2322pt x 189.8292pt>
+<bestCaseworstCase2.png, id=1245, 351.2322pt x 189.8292pt>
 File: bestCaseworstCase2.png Graphic file (type png)
 
 <use bestCaseworstCase2.png>
@@ -3024,7 +3024,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout2 = `results.aux'.
 
  (./results.tex
-<ArchitectureChapIntro1.png, id=1330, 753.81625pt x 475.7775pt>
+<ArchitectureChapIntro1.png, id=1332, 753.81625pt x 475.7775pt>
 File: ArchitectureChapIntro1.png Graphic file (type png)
 
 <use ArchitectureChapIntro1.png>
@@ -3134,7 +3134,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 071FB59DFA762533FF5324F9B3884202;2181.
+(rerunfilecheck)             Checksum: 2D65CFF0A568153F475BB12890ED15F6;2189.
 
 
 LaTeX Warning: There were undefined references.
@@ -3148,7 +3148,7 @@ Here is how much of TeX's memory you used:
  37206 multiletter control sequences out of 15000+600000
  111987 words of font info for 167 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 69i,14n,78p,1749b,2050s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,14n,78p,1753b,2050s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -3164,10 +3164,10 @@ s/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (88 pages, 6063358 bytes).
+Output written on main.pdf (88 pages, 6070267 bytes).
 PDF statistics:
- 1833 PDF objects out of 2073 (max. 8388607)
- 1658 compressed objects within 17 object streams
+ 1835 PDF objects out of 2073 (max. 8388607)
+ 1660 compressed objects within 17 object streams
  560 named destinations out of 1000 (max. 500000)
  30667 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -63,7 +63,7 @@ ping6 google.com
 
 \subsection{Packet fragmentation}
 
-\noindent In Internet Routing, fragmentation is known as the action of splitting data into smaller packets, to satisfy the maximal limits of the different technologies or protocols used (e.g. \gls{ble} and \gls{6lowpan} in the network described in this thesis). Each of these packets needs header fields of a certain size, or other requirements. In a network of \glspl{microcontroller} described in this thesis, fragmentation can be a factor that needs to be taken into account to optimize the goodput of the system. This will be a central part of the testing, and will therefore be explained in detail in the following section. 
+\noindent In Internet Routing, fragmentation is known as the action of splitting data into smaller \glspl{packet}, to satisfy the maximal limits of the different technologies or protocols used (e.g. \gls{ble} and \gls{6lowpan} in the network described in this thesis). Each of these packets needs header fields of a certain size, or other requirements. In a network of \glspl{microcontroller} described in this thesis, fragmentation can be a factor that needs to be taken into account to optimize the goodput of the system. This will be a central part of the testing, and will therefore be explained in detail in the following section. 
 
 \noindent To better understand fragmentation, imagine a train with carriages as shown in Figure \ref{fig:trainExample}. To be able to operate at all, the train needs a locomotive with an engine driver, a conductor and a cafe carriage. As soon as these things are already there, the company owning the train gets better and better off for every passenger buying a ticket. Lets assume that every carriage can carry 4 employees and 27 passengers, to make it directly comparable to the \gls{ble} packets in the network. Eventually all the carriages will be full, and a decision has to be made if it will be profitable to fit another carriage. It will in general be most profitable to use as many carriages as the locomotive can handle, and to fill up every carriage as much as possible. It will however not be a good idea to connect another carriage if there will only be one additional passenger sitting there, since the extra weight of the carriage adds unnecessary additional weight to the train set compared to the income. 
 
@@ -78,7 +78,7 @@ ping6 google.com
  
 
 
-\section{CoAP}
+\section{Measurements}
 
 \noindent As explained in Chapter \ref{chp:measurements2}.1.1, \gls{coap} can be split into two different main sections. \gls{con} messages can be sent quite frequently, but every message needs to get an \gls{ack} before the next message can be sent. This means that it is quite fast, but a lot of packets needs to be transported through to get usable data at the other end. The other alternative is \gls{non}, where each message does \textit{not} need an \gls{ack}. 
 
@@ -149,12 +149,12 @@ Number & Time   & Protocol & Length & Info                             \\ \hline
 \end{tabular}
 \end{table}
 
-\noindent In table \ref{coapCON100table}, 100 bytes of goodput is being sent through. The same basic packages needed are still there, but in addition the 100 bytes of data is added. This means adding more \gls{ble} packets, but also that the percentage of useful data sent through is a lot higher, approximatley 55 \% in this case. By doing several experiments like this, it was possible to create the graph in Figure \ref{fig:coapCON0200}. This shows the correlation between goodput and throughput compared to the number of packets sent, measured every 10th byte from 0 byte to 200 bytes large packets.
+\noindent In table \ref{coapCON100table}, 100 bytes of goodput is being sent through using \gls{con}. The same basic packages needed are still there, but in addition the 100 bytes of data is added. This means adding more \gls{ble} packets, but also that the percentage of useful data sent through is a lot higher, approximatley 55 \% in this case. By doing several experiments like this, it was possible to create the graph in Figure \ref{fig:coapCON0200}. This shows the correlation between goodput and throughput compared to the number of packets sent, measured every 10th byte from 0 byte to 200 bytes large packets.
 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=1.0]{CoAPCON_0-200_Thicker2.png}    
+    \includegraphics[scale=1.0]{CoAPCON_0-200_Thicker3.png}    
     \caption{CoAP CON, 0-200 bytes sent}
     \label{fig:coapCON0200}
 \end{figure}
