@@ -30,14 +30,16 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces CoAP CON plot, 200 bytes to 1 kB}}{43}{figure.4.6}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces NON 0-1000 bytes}}{45}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces NON 200-1000 bytes}}{46}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces CON vs NON 0-1000 bytes}}{46}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces CON vs NON 200-1000 bytes}}{47}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Time used per packet}}{48}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Number of bytes per second}}{49}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Number of bytes per second}}{51}{figure.4.13}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Goodpyt compared to payload CoAP CON}}{47}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Goodpyt compared to payload CoAP NON}}{48}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces CON vs NON 0-1000 bytes}}{49}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces CON vs NON 200-1000 bytes}}{49}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Time used per packet}}{50}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Number of bytes per second}}{50}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Number of bytes per second}}{51}{figure.4.15}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Complete system architecture}}{58}{figure.6.1}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Complete system architecture}}{60}{figure.6.1}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
