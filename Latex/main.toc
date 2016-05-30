@@ -41,11 +41,12 @@
 \contentsline {section}{\numberline {4.2}Possible limitations in the Network}{32}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Stable transfer rate}{32}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Packet fragmentation}{34}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Measurements}{35}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Discussion}{38}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}CoAP NON comparison}{39}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}CoAP, testing with more data}{41}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Discussion}{46}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.3}Measurements}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}CoAP CON}{36}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{38}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}CoAP NON}{39}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}CoAP, testing with more data}{41}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Discussion}{46}{subsection.4.3.5}
 \contentsline {section}{\numberline {4.4}Comparison}{46}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Goodput per time interval}{46}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Bytes sent through network, best and worst case}{50}{subsection.4.4.2}

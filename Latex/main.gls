@@ -50,9 +50,9 @@
 \glsXpageXglsnumberformat{}{21}\delimN 
 \glsXpageXglsnumberformat{}{22}\delimN 
 \glsXpageXglsnumberformat{}{34}\delimN 
-\glsXpageXglsnumberformat{}{50}\delimN 
-\glsXpageXglsnumberformat{}{55}\delimN 
-\glsXpageXglsnumberformat{}{57}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{51}\delimN 
+\glsXpageXglsnumberformat{}{57}\delimN 
+\glsXpageXglsnumberformat{}{59}}}\glsgroupskip
 \glsgroupheading{N}\relax\glsresetentrylist
 \glossentry{nRF52}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
@@ -65,15 +65,16 @@
 \glsXpageXglsnumberformat{}{29}\delimN 
 \glsXpageXglsnumberformat{}{31}\delimN 
 \glsXpageXglsnumberformat{}{32}\delimN 
-\glsXpageXglsnumberformat{}{53}\delimN 
-\glsXpageXglsnumberformat{}{68}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{55}\delimN 
+\glsXpageXglsnumberformat{}{70}}}\glsgroupskip
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossentry{packet}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{i}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{i}, 
+\glsXpageXglsnumberformat{}{34}}}\relax\glsresetentrylist
 \glossentry{payload}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
 \glsXpageXglsnumberformat{}{48}\delimN 
-\glsXpageXglsnumberformat{}{50}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{51}}}\glsgroupskip
 \glsgroupheading{R}\relax\glsresetentrylist
 \glossentry{Raspberry Pi}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
@@ -88,7 +89,7 @@
 \glossentry{singleBoardComputer}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
 \glsXpageXglsnumberformat{}{7}\delimN 
-\glsXpageXglsnumberformat{}{57}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{59}}}\glsgroupskip
 \glsgroupheading{T}\relax\glsresetentrylist
 \glossentry{throughput}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
