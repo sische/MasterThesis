@@ -26,17 +26,15 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Ping nRF52, different time}}{34}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Packet fragmentation - train comparison}}{35}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces CoAP CON, 0-200 bytes sent}}{38}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON 0-200 bytes}}{41}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces CoAP CON plot, 200 bytes to 1 kB}}{43}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces NON 0-1000 bytes}}{45}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces NON 200-1000 bytes}}{46}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Goodpyt compared to payload CoAP CON}}{47}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Goodpyt compared to payload CoAP NON}}{48}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces CON vs NON 0-1000 bytes}}{49}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces CON vs NON 200-1000 bytes}}{49}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Time used per packet}}{50}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Number of bytes per second}}{50}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Number of bytes per second}}{51}{figure.4.15}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON 0-200 bytes}}{40}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CON vs NON 0-1000 bytes}}{45}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Time used to transfer payload CON}}{46}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Time used to transfer payload NON}}{47}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Average time to transfer payload, CON vs NON}}{48}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Goodput compared to payload CoAP CON}}{50}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Goodpyt compared to payload CoAP NON}}{51}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Number of bytes per second}}{51}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Goodput for given payload, CON vs NON}}{52}{figure.4.13}
 \addvspace {10pt}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Complete system architecture}}{60}{figure.6.1}

@@ -158,12 +158,12 @@ Number & Time   & Protocol & Length & Info                             \\ \hline
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=1.0]{CoAPCON_0-200_Thicker3.png}    
+    \includegraphics[width=1.0\textwidth]{CoAPCON_0-200_Thicker4.png}    
     \caption{CoAP CON, 0-200 bytes sent}
     \label{fig:coapCON0200}
 \end{figure}
 
-\noindent In this particular case shown in figure \ref{fig:coapCON0200} it makes no sense to send less than 50 bytes of useful data at once, since more than 50 \% of the bytes sent will be header files. This is comparable to having a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%, as shown in equation 4.1. In mathematics, this is described as a \textit{horizontal asymptote} since the distance between the graph and \textit{y = 87,1} would have approached zero after an infinite number of bytes has been transferred, if the only limitation was \gls{ble} packets. In this network other limitations like \gls{6lowpan} header files needs to be considered as well. The graph will still approach 87,1 \%, just as the values climbing in figure \ref{fig:coapCON0200}, even before the \gls{payload} has reached 200 bytes.   TEST
+\noindent In this particular case shown in figure \ref{fig:coapCON0200} it makes no sense to send less than 50 bytes of useful data at once, since more than 50 \% of the bytes sent will be header files. This is comparable to having a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%, as shown in equation 4.1. In mathematics, this is described as a \textit{horizontal asymptote} since the distance between the graph and \textit{y = 87,1} would have approached zero after an infinite number of bytes has been transferred, if the only limitation was \gls{ble} packets. In this network other limitations like \gls{6lowpan} header files needs to be considered as well. The graph will still approach 87,1 \%, just as the values climbing in figure \ref{fig:coapCON0200}, even before the \gls{payload} has reached 200 bytes. 
 
 %\begin{figure}[ht]
 %    \centering
@@ -174,7 +174,7 @@ Number & Time   & Protocol & Length & Info                             \\ \hline
 
 \subsection{CoAP NON}
 
-\noindent A \gls{coap} \gls{non} request does not require a response in form of an \gls{ack}. This means that the 108 bytes sent to and handled by the end node can be skipped, which means less computational power in the end node and network capacity to the node is needed. This solution makes sense to use in networks where the demand for all data is low, since packets can be lost without the use of \glspl{ack}. As explained in chapter \ref{chp:measurements2}.1.1, the transfer frequency is limited using \gls{non} in this system, due to unstable results in tests at the beginning of the set up. The transfer rate is therefore set to one per second for this protocol. 
+\noindent A \gls{coap} \gls{non} request does not require a response in form of an \gls{ack}. This means that the 108 bytes sent to and handled by the end node can be skipped, which means less computational power in the end node and network capacity to the node is needed. This solution makes sense to use in networks where the demand for all data is low, since packets can be lost without the use of \glspl{ack}. As explained in chapter \ref{chp:measurements2}.1.1, the transfer frequency is limited using \gls{non} in this system, due to \todo{Due to Max.age} unstable results in tests at the beginning of the set up. The transfer rate is therefore set to one per second for this protocol. 
 
 \begin{table}[ht]
 \small
@@ -195,7 +195,7 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 
 \noindent A basic example of the \gls{coap} \gls{non} connection is shown in table \ref{coapNON0table}. The entire Wireshark capture can be seen in Appendix \ref{chp:appendix}. This is directly comparable to table \ref{coapCON0table}, that shows a Wireshark capture of \gls{coap} \gls{con} packages. It is easy to see that a lot fewer packages needs to be sent using \gls{ble}, without the use of \glspl{ack}. The total amount of bytes sent is 31+31+9=71 bytes, meaning three \gls{ble} packages and one \gls{6lowpan} packet, and a total \gls{con} packet size of 76 bytes. This is less than half of what was needed using \gls{coap} \gls{con}, where the 108 \gls{ack} packages was needed in addition. The packets are still recognizable the same way as before, the first packet is labeled \textit{[Reassembled in \#40]}, the second \textit{[Continuation to \#38]} and the last \textit{Connection oriented channel}.
 
-\noindent Fewer packages sent means less energy used, less network capacity needed and less computational power in the end node. Hopefully this will lead to a higher percentage of goodput compared to throughput as well. it would therefore be interesting to compare the rest of the measured values.
+\noindent Fewer packages sent means less energy used in end nodes, less network capacity needed and less computational power in the end node. Hopefully this will lead to a higher percentage of goodput \todo{skal det stå goodput her?} compared to throughput as well. it would therefore be interesting to compare the rest of the measured values.
 
 \begin{table}[H]
 \small
@@ -230,25 +230,24 @@ Number & Time    & Protocol & Length & Info   							  \\ \hline
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=1.0]{CONvsNONplot_0-200_thicker2.png}    
+    \includegraphics[width=1.0\textwidth]{CONvsNONplot_0-200_thicker3.png}    
     \caption{CON vs NON 0-200 bytes}
     \label{fig:CONvsNON0-200}
 \end{figure}
 
-\noindent Figure \ref{fig:CONvsNON0-200} shows the comparison between sending between 0 and 200 bytes of useful data through the network at once. Keep in mind that this does not show sending rate per time (which will be discussed in chapter \todo{write chapter}), but percentage of the data sent that is useful data. \gls{con} can be sent much more often than \gls{non} in practice. It could therefore maybe be expected that this could give \gls{non} an advantage. \todo{<- Re-write}. \gls{non} does not need to send \glspl{ack} for every package, which should be an advantage concerning to maximize throughput. Still it is the more complex and more frequently sent \gls{con} that gets the best results in this test, with a small margin. 
+\noindent Figure \ref{fig:CONvsNON0-200} shows the comparison between sending between 0 and 200 bytes of useful data through the network at once. Keep in mind that this does not show sending rate per time (which will be discussed in chapter \ref{chp:measurements2}.4), but percentage of the data sent that is useful data. \gls{con} can be sent much more often than \gls{non} in practice. It could therefore maybe be expected that this could give \gls{non} an advantage. \todo{<- Re-write}. \gls{non} does not need to send \glspl{ack} for every package, which should be an advantage concerning to maximize throughput. Still it is the more complex and more frequently sent \gls{con} that gets the best results in this test, with a small margin. 
 
 \subsection{Discussion}
 
-\noindent Even though this first test was done with a very limited amount of data transferred, it is easy to see that the curve clearly flattens out and forms the shape of a \textit{parabola} with a vertical \textit{directrix} at \textit{x = 0}. Several \gls{ble} packets have been fragmented and sent during these test, without the graph showing a special \gls{payload} size where this gives a noticeable result. This means that the fragmentation of \gls{ble} packets does not have a major impact of the \% of data throughput in this system. More data needs to be sent at once to check if the same can be said for fragmentation of \gls{6lowpan} packets. The next step would be to transfer a larger amount of data, to verify that the assumptions that the graph will converge to the asymptotic value \textit{y = 87,1} when $lim_{x\to\infty}$. The limitations of transfer rate is not nearly yet met by either \gls{ble} or \gls{6lowpan}.  This test will therefore be explained in the next section. 
+\noindent Even though these first tests was done with a very limited amount of data transferred, it is easy to see that the curves clearly flattens out and forms the shape of a \textit{parabola} with a vertical \textit{directrix} at \textit{x = 0}. Several \gls{ble} packets have been fragmented and sent during these test, without the graph showing a special \gls{payload} size where this gives a noticeable result. This means that the fragmentation of \gls{ble} packets does not have a major impact of the \% of payload compared to throughput in this system. More data needs to be sent at once to check if the same can be said for fragmentation of \gls{6lowpan} packets. The next step will be to transfer a larger amount of data, to verify that the assumptions that the graph will converge to the asymptotic value \textit{y = 87,1} when $lim_{x\to\infty}$. The limitations of transfer rate is not nearly yet met by either \gls{ble} or \gls{6lowpan}.  This test will therefore be explained in the next section. 
+
+%\noindent There is already a clear trend in the form of the graph in figure \ref{fig:coapCON0200} even before the transfer rate reaches 200 bytes, but for small \glspl{payload} it is not very effective in these tests. If it is possible to find a way of transportation that could give a higher mathematical maximum, and also get to this limit faster, it could be very profitable to the system. It also makes sense to test \gls{coap} \gls{non} because it doesn’t need to send an \gls{ack} for every packet, as \gls{con} does. Maybe this means that the header files can be split up in another way, and that the useful amount of data sent through therefore will be higher. 
 
 
-\noindent Since there is already a clear trend in the form of the graph in figure \ref{fig:coapCON0200} even before the transfer rate reaches 200 bytes, it makes sense to also test the other version included in \gls{coap}, \gls{non}. If it is possible to find a way of transportation that could give a higher mathematical maximum, and also get to this limit faster, it could be very profitable to the system. It also makes sense to test \gls{coap} \gls{non} because it doesn’t need to send an \gls{ack} for every packet, as \gls{con} does. Maybe this means that the header files can be split up in another way, and that the useful amount of data sent through therefore will be higher. 
+\noindent To see what happened when the limit of a \gls{6lowpan} packet was breached in the system, tests will be set up to send larger amounts of data than 200 bytes. This will also be a good way to test if the percentage of goodput will converge to 87,1 \%, only considering \gls{ble} packets. The following test and examples will therefore send a fixed number of bytes at once from 0 to 1000 bytes (1 kB), with a 50 byte interval. As before, the messages are being sent as soon as possible, meaning approximately four messages per second on average using \gls{coap} \gls{con}. In addition will \gls{non} be tested in detail. 
 
 
-\noindent To see what happened when the limit of a \gls{6lowpan} packet was breached in the system, tests was being set up to send larger amounts of data than 200 bytes. This would also be a good way to test if the percentage of goodput will converge to 87,1 \%, only considering \gls{ble} packets. The following test and examples will therefore send a fixed number of bytes at once from 0 to 1000 bytes (1 kB), with a 50 byte interval. As before, the messages are being sent as soon as possible, meaning approximately four messages per second on average using \gls{coap} \gls{con}. In addition will \gls{non} be tested in detail. 
-
-
-\subsection{CoAP, transport time}
+\subsection{Tests with more data}
 
 \noindent Table \ref{coapCON700table} shows a bigger and more complex case, where a payload of 700 byte is being sent at once. In total 889 bytes are being sent in this process, with a \gls{con} packet size of 774 bytes. This gives a percentage of goodput at 78.74 \%. The maximum packet length of a \gls{6lowpan} packet in this system of 270 bytes is therefore exceeded. This can be seen in the table, after 8 \gls{ble} packages of 31 bytes each has been sent, there is only room for 22 bytes in the last packet before the \gls{6lowpan} packet has reached its maximal capacity. This is repeated several times, once for each \gls{6lowpan} packet, until the last \gls{ble} packets at the size of 17 bytes. After this the standard packages for \gls{ack} and \textit{Number of completed packages} follows. This is in general a good example on how of packets works in this system. 
 
@@ -308,18 +307,17 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 \end{table}
 
 
-\newpage
+%\newpage
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=\textwidth]{CON0toK_thickerGRAY.png}    
-    \caption{CoAP CON plot, 200 bytes to 1 kB}
-    \label{fig:plotCoAPCON200toK}
-\end{figure}
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[width=\textwidth]{CON0toK_thickerGRAY.png}    
+%    \caption{CoAP CON plot, 200 bytes to 1 kB}
+%    \label{fig:plotCoAPCON200toK}
+%\end{figure}
 
-\noindent Using these results it was possible to plot the graph in figure \ref{fig:plotCoAPCON200toK} \todo{Make graph more clear}. Here it is easy to see the same trends as in  \ref{fig:coapCON0200}, but in more detail over a wider span of bytes sent. These results are as expected after the previous tests, and in compliance with the calculations done in equation 4.1. 
+\noindent Using these results it was possible to plot the graph in figure \ref{fig:plotCoAPCON200toK} \todo{Make graph more clear}. Here it is easy to see the same trends as in  \ref{fig:coapCON0200}, but in more detail over a wider span of bytes sent. These results are as expected after the previous tests, and in compliance with the calculations done concerning horizontal asymptote.  
 
-\noindent In this example points in the graph was denoted every 50th byte sent. This gives us \todo{set in graph for 0-1000 before this, to see the flatness?}
 
 
 %\begin{figure}[ht]
@@ -329,7 +327,14 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 %    \label{fig:NON7000bytesFullWireshark}
 %\end{figure}
 
- 
+\noindent Table \ref{coapNON700table} shows the case where 700 bytes where sent at once through the network, using \gls{coap} \gls{non}. The \gls{non} packet size is at 777 bytes, which is as expected from the previous tests. This means 4 bytes larger than the same test using \gls{con}, meaning an additional header field. 
+
+\begin{equation} \label{lessThanHAlfAPercentCalculation}
+    \frac{78,47}{78,74} \approx 0,9966  \rightarrow 100 \% - 99,66 \% = 0,34 \%
+\end{equation}
+
+
+\noindent Calculations in equation \ref{lessThanHAlfAPercentCalculation} show that the goodput here is 78,47 \%, compared to 78,74 \% in \gls{con}. The difference between these two is \textit{0,34 \%}, which in this case is considered \textit{very} small. This can also be seen clearly in \ref{fig:NON0-kb}. Because of this, it was concluded that the results for using \gls{non} and \gls{con} can be considered as negligible for transmissions larger than 1 kB. Tests with larger amounts of data than this at once was therefore not conducted in this project. 
 
 
 \begin{table}[H]
@@ -378,41 +383,137 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 \end{tabular}
 \end{table}
 
-\newpage
-
-\noindent Table \ref{coapNON700table} shows the case where 700 bytes where sent at once through the network, using \gls{coap} \gls{non}. The \gls{non} packet size is at 777 bytes, which is as expected from the previous tests. This means 4 bytes larger than the same test using \gls{con}, meaning an additional header field. 
-
-\begin{equation} \label{lessThanHAlfAPercentCalculation}
-    \frac{78,47}{78,74} \approx 0,9966  \rightarrow 100 \% - 99,66 \% = 0,34 \%
-\end{equation}
-
-
-\noindent Calculations in equation \ref{lessThanHAlfAPercentCalculation} show that the goodput here is 78,47 \%, compared to 78,74 \% in \gls{con}. The difference between these two is \textit{0,34 \%}, which in this case is considered \textit{very} small. This can also be seen clearly in \ref{fig:CONvsNON0-1000}. Because of this, it was concluded that the results for using \gls{non} and \gls{con} can be considered as negligible for transmissions larger than 1 kB. Tests with larger amounts of data than this at once was therefore not conducted in this project.  
-
 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=1.0]{NON_0toKplotx09_thickerLineGRAY.png}    
-    \caption{NON 0-1000 bytes}
+    \includegraphics[width=1.0\textwidth]{CONvsNON0tokilobytes.png}    
+    \caption{CON vs NON 0-1000 bytes}
     \label{fig:NON0-kb}
 \end{figure}
 
-\noindent The entire scope of the tests done on \gls{coap} \gls{non} in this system is shown in figure \ref{fig:NON0-kb}. Given these results, it can be concluded that to send less data than 200 bytes at the time is not preferable, since the percentage of goodput compared to the total amount sent can be very low. On the other hand, the graph stabilizes around 75-80 \%. Given these measurements it looks like 400 bytes and bigger packets are preferable in this system. The system shows no signs of weakness as the packet size grows, and it will therefore be possible to send as large packets as needed until the limitations of \gls{ble} with the same amount of goodput at about 80 \%. 
+\noindent The entire scope of the tests done on \gls{coap} \gls{non} in this system is shown in figure \ref{fig:NON0-kb}. Given these results, it can be concluded that to send less data than 200 bytes at the time is not preferable, since the percentage of goodput compared to the total amount sent can be very low. On the other hand, the graph stabilizes around 75-80 \%. Given these measurements it looks like 400 bytes and bigger packets are preferable in this system. The system shows no signs of weakness as the packet size grows, and it will therefore in theory be possible to send as large packets as needed until the limitations of \gls{ble} with the same amount of goodput at about 80 \%. This was however never achieved in this configuration of the network, but should be possible to do as future work. 
 
-\todo{Remove figure 4.8 200-1000?}
-\begin{figure}[ht]
+
+%\todo{Remove figure 4.8 200-1000?}
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[scale=1.0]{NON_200toKplotx09_thickerLineGRAY.png}    
+%    \caption{NON 200-1000 bytes}
+%    \label{fig:NON200-kb}
+%\end{figure}
+
+
+
+
+%\subsection{Discussion}
+
+%\section{Comparison}
+
+
+
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[scale=1.0]{CONvsNONplot_0-k_thickerGRAY.png}    
+%    \caption{CON vs NON 0-1000 bytes}
+%    \label{fig:CONvsNON0-1000}
+%\end{figure}
+
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[scale=1.0]{CONvsNON200-1000thick.png}    
+%    \caption{CON vs NON 200-1000 bytes}
+%    \label{fig:CONvsNON200-1000}
+%\end{figure}
+
+%\todo{Insert graph of ALL bytes sent?}
+
+\section{Goodput}
+
+\noindent Previous sections in this chapter has shown the percentage of payload compared to the total throughput, to measure if fragmentation was a major concern in this network. This is a good overview of how the protocols are able to exploit the network, and tells a lot about the different protocols. In a real world scenario however, the actual \textit{throughput per time} would be more relevant, since this tells how much data can be transported for every second. A was of measuring this is known as \textit{\gls{goodput}}, measured in bytes per second.  
+
+%\noindent \gls{coap} \gls{con} and \gls{non} has been compared in this thesis, but in the system build \gls{non} was quite unstable at high transfer rates, as explained in chapter \ref{chp:architecture}.1. Because of this, \gls{con} seems like a better solution only considering the number of bytes transferred per second. 
+
+%As seen in Table \todo{insert table}, this might be a too early conclusion.
+
+%\noindent The table shows timestamps of packets received on the Raspberry Pi, sent with both \gls{con} and \gls{non}. Packets was captured with Wireshark, and the timestamp is created by Wireshark on the form \textit{number of seconds since start of capture}. The first value for each packet size in the table therefore approximately notes the number of seconds from the connection starts until the first packet containing useful data has arrived \footnote{values far off from the expected results due to e.g. connection issues have been excluded in calculations }. The first thing that is noticeable here is the big difference before useful data can be received. 
+
+%\noindent Equation \ref{averageStartTimeCON} shows the calculations of average start time on \gls{con}, which is a lot higher than for \gls{non} shown in equation \ref{averageStartTimeNON}. The main reason for this is that the \gls{non} needs to have a connection establishment using \gls{con} packets with \glspl{ack} without data before \gls{non} packets can be transferred. In addition severe connection issues was experienced in a much higher grade using \gls{non} than \gls{con}, especially for packets larger than 500 bytes, as shown in table \todo{Refer to table}.  
+
+%\todo{Re-write}  
+
+\noindent There are several ways to measure throughput compared to time used. For instance by calculating the number of seconds it takes to transfer a known number of bytes, or the number of bytes that are transported on average every second, or to calculate \gls{goodput}. To calculate this, measurements shown in table \todo{Insert table?} was used. This represent measurements done several times, and graphs used here are drawn by average values\footnote{All measurements can be seen on GitHub: \url{https://github.com/sische/MasterThesis}}. 
+
+The numbers used to to represent the following tests, has been measured by sending a considerable amount of packets through the network. In most cases more than 100 \gls{coap} packets was sent for each constant payload, and  found the minimum, average and maximum value for both the time used to transfer a packet and the \gls{goodput} in each case. The exception is for \gls{non} with a payload larger than 650 bytes. In these cases the network was too unstable to do the same amount of data. These values (NON > 650 bytes payload) is therefore not as certain as the rest considering amount of packets sent. The rest of the experiment is well documented data, which can be found on \url{https://github.com/sische/MasterThesis/measurements}.  
+
+\begin{figure}[h!]
     \centering
-    \includegraphics[scale=1.0]{NON_200toKplotx09_thickerLineGRAY.png}    
-    \caption{NON 200-1000 bytes}
-    \label{fig:NON200-kb}
+    \includegraphics[width=1.0\textwidth]{bytesPrSecondNew2.png}    
+    \caption{Time used to transfer payload CON}
+    \label{fig:bytesPRSecond3}
+\end{figure}
+\todo{FLIP verdier for max og avg i 100 byte payload,}
+
+Figure \ref{fig:bytesPRSecond3} shows the minimum, average and maximum time it took to send a constant payload through the network. The min. and max. values are relevant to see the stability in the network, how much it can be trusted. A system carrying important data needs a stable transfer rate at all times, not only a good average value. In this case the most extreme jump comes at 350 bytes, where the max. value is almost 1 second, while the average is approximately 0.7 seconds. Both the average and minimum graph has a quite linear development, with the exception of 900 bytes.   \todo{Don't now, should i remove it?} The lowest transfer rate for \gls{con} is when the payload is below 100 bytes. The transfer time at this payload is about 300 ms, which seems logical concerning the ping tests in the beginning of the chapter at 250 ms. The slowest transfer time is the max value when transferring 950 bytes, when the time is approaching 2 seconds.  
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{bytesPrSecondNewNON.png}    
+    \caption{Time used to transfer payload NON}
+    \label{fig:bytesPRSecond4}
 \end{figure}
 
+The same test, time used to transfer a given payload, can be seen for \gls{non} in figure \ref{fig:bytesPRSecond4}. This test definitely shows a more unstable connection, even though the average transfer time is very stable. Because of \todo{reasons}, the fastest transfer frequency achieved in the system was 1 second. On average the transfer rate is impressively close to this, but the min and max values vary a lot. All the way from 0.85 seconds to 1.2 seconds in both 300 and 400 bytes payload. 600 bytes is the maximum payload where the system is still able to transfer data at 1 second rate, after this the graph starts to climb for larger payloads. 
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{avgTimeCONNON.png}    
+    \caption{Average time to transfer payload, CON vs NON}
+    \label{fig:avgTimeCONNON}
+\end{figure}
+
+%\begin{figure}[h!]
+%    \centering
+%    \includegraphics[width=1.0\textwidth]{bytesPRSecond3.png}    
+%    \caption{Number of bytes per second}
+%    \label{fig:bytesPRSecond2}
+%\end{figure}
+
+\noindent To get a better understanding of this comparison, take a look at the graph in figure \ref{fig:timeUsedPRpacket}. As explained in chapter \ref{chp:architecture}, tests has shown that \gls{coap} \gls{non} is only stable in this system if the transfer frequency is set fixed to once every second. \gls{coap} \gls{con} on the other hand can transfer more often if the \gls{payload} is small. The figure shows how long it takes for the different protocols to transfer a fixed number of bytes of useful data. For instance, it only takes \textit{0.35} seconds to transfer 100 bytes goodput in \gls{con}, while this takes \textit{1} second using \gls{non}. However, as the graph shows, if the goodput is 500 byte, both versions of the protocol uses \textit{1} second to transfer the data. When the \gls{payload} reaches 600 byte, \gls{con} needs to use \textit{1.12} seconds to transfer the data, while \gls{non} still is able to unly use \textit{1} second. After this \gls{con} is about \textit{150 ms} slower than \textit{non} to transfer the same payload, as both plots rise with linear growth. In this case it is quite easy to see a trend - \gls{con} is definitely faster at small rates of data, below 500 byte. If the payload is bigger than this, gls{non} will be preferable, only taking the time to transfer a given number of data one way into account. 
+
+\noindent From the other approach, it is possible to look at how many bytes it is possible to send every second using the two different versions of the protocol.Figure \ref{fig:bytesPRSecond2}  shows the direct correlation between the number of bytes sent every second. For instance: using \gls{coap} \gls{con}, it takes on average 7.93 seconds to transport 15 packets of 200 bytes goodput. 
+
+\begin{equation} \label{CONexampleFig411}
+	\frac{200 byte * 15 packets}{7.93 seconds} \approx 378 byte/second
+\end{equation}
+
+
+
+\noindent In this case both plots starts at \textit{0 byte/second}, since the payload is 0. After this, the graphs have quite different forms. \gls{non} has a very linear rise, all the way up to 600 byte payload. This makes sence, since figure \ref{fig:timeUsedPRpacket} shows that all up to this size has taken \textit{1} second. \gls{con} can transfer more often, and this difference can clearly be seen here. When transferring a payload of 100 byte, is almost three times faster at \textit{305 byte/second} compared to \textit{108 byte/second} using \gls{non}. The conclusion here will then be the same as in the last graph, \gls{coap} \gls{con} is much more efficient for a small amount of data, but for payload bigger than 500 byte \gls{non} is preferable. 
+
+
+
+
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[width=1.0\textwidth]{timeUsedPRpacket3.png}    
+%    \caption{Time used per packet, OLD}
+%    \label{fig:timeUsedPRpacket}
+%\end{figure}
+
+\subsection{Bytes sent through network, best and worst case}
+
+\noindent These previous two tests shows the throughput per time, while the tests earlier in the thesis has focused on goodput compared to throughput, how much of the data sent is useful data. Since these \glspl{microcontroller} are used as end nodes in the network, it is natural to assume that they will run on battery power only. In this case it is preferable that they do as little work as possible, meaning also handle as few packets as possible. It will therefore be compared how many packets that needs to go through the end nodes in the different cases, \gls{con} and \gls{non} \footnote{Before the test, it was clear that fewer packets are needed using \gls{non}, since no \glspl{ack} are required. The test is therefore done to see \textit{how much} fewer packets are needed here}.
+
+\noindent The main argument for trying the \gls{non} version of \gls{coap} in this network, was that fewer bytes needed to be sent through the network, meaning less overall usage of the network. This is very relevant in a case where the network should be taken to its maximum capacity with several sensors and \glspl{microcontroller}. 
+
+\noindent But, as seen in figure \ref{fig:bestCaseworstCase}, this turns out not to always be the case. The figure shows best and worst case of how many bytes that needs to be sent to transfer a given number of \gls{payload}. For example, using \gls{non} it takes 576 byte to transfer 500 byte payload in best case, but 856 byte in worst case. This is because of the architecture of the two different versions of \gls{coap}. Even though \gls{non} does not require \glspl{ack}, underlying parts of the bluetooth architecture like \gls{acl} adds on some support for this. Also, to prevevent a situation where the end node sends data forever without anyone receiving the data, \gls{ack} messages are still being sent regularly, approximately every 15th second in this network. This means, as shown in figure \ref{fig:bestCaseworstCase}, that \gls{non} \textit{normally} requires a lower amount of bytes to transport a given \gls{payload}, but in \textit{worst case scenario} it needs even more bytes than \gls{con}. 
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1.0\textwidth]{goodput_payload_CON.png}    
-    \caption{Goodpyt compared to payload CoAP CON}
+    \caption{Goodput compared to payload CoAP CON}
     \label{fig:goodPayload_CON}
 \end{figure}
 
@@ -423,79 +524,6 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
     \label{fig:goodPayload_NON}
 \end{figure}
 
-\subsection{Discussion}
-
-\section{Comparison}
-
-
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=1.0]{CONvsNONplot_0-k_thickerGRAY.png}    
-    \caption{CON vs NON 0-1000 bytes}
-    \label{fig:CONvsNON0-1000}
-\end{figure}
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=1.0]{CONvsNON200-1000thick.png}    
-    \caption{CON vs NON 200-1000 bytes}
-    \label{fig:CONvsNON200-1000}
-\end{figure}
-
-\todo{Insert graph of ALL bytes sent?}
-
-\subsection{Goodput per time interval}
-
-\noindent Previous sections in this chapter has shown the percentage of bytes sent through that has been goodput, useful data, compared to the total amount of bytes. This is a good overview of how the protocols are able to exploit the network, and tells a lot about the different protocols. In a real world scenario however, the actual \textit{throughput per time} would be more relevant, since this tells how much data can be transported for every second.
-
-\noindent \gls{coap} \gls{con} and \gls{non} has been compared in this thesis, but in the system build \gls{non} was quite unstable at high transfer rates, as explained in chapter \ref{chp:architecture}.1. Because of this, \gls{con} seems like a better solution only considering the number of bytes transferred per second. As it turns out, this depends. 
-
-As seen in Table \todo{insert table}, this might be a too early conclusion.
-
-\noindent The table shows timestamps of packets received on the Raspberry Pi, sent with both \gls{con} and \gls{non}. Packets was captured with Wireshark, and the timestamp is created by Wireshark on the form \textit{number of seconds since start of capture}. The first value for each packet size in the table therefore approximately notes the number of seconds from the connection starts until the first packet containing useful data has arrived \footnote{values far off from the expected results due to e.g. connection issues have been excluded in calculations }. The first thing that is noticeable here is the big difference before useful data can be received. Equation \ref{averageStartTimeCON} shows the calculations of average start time on \gls{con}, which is a lot higher than for \gls{non} shown in equation \ref{averageStartTimeNON}. The main reason for this is that the \gls{non} needs to have a connection establishment using \gls{con} packets with \glspl{ack} without data before \gls{non} packets can be transferred. In addition severe connection issues was experienced in a much higher grade using \gls{non} than \gls{con}, especially for packets larger than 500 bytes, as shown in table \todo{Refer to table}.  
-
-\todo{Re-write} 
-
-\noindent There are in general two ways to measure throughput compared to time. Either by calculating the number of seconds it takes to transfer a known number of bytes, or the number of bytes that are transported on average every second. To calculate this, measurements shown in table \todo{Insert table?} was used. This represent measurements done several times, and graphs used here are drawn by average values\footnote{All measurements can be seen on GitHub: \url{https://github.com/sische/MasterThesis}}. 
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=1.0]{timeUsedPRpacket2.png}    
-    \caption{Time used per packet}
-    \label{fig:timeUsedPRpacket}
-\end{figure}
-
-To get a better understanding of this comparison, take a look at the graph in figure \ref{fig:timeUsedPRpacket}. As explained in chapter \ref{chp:architecture}, tests has shown that \gls{coap} \gls{non} is only stable in this system if the transfer frequency is set fixed to once every second. \gls{coap} \gls{con} on the other hand can transfer more often if the \gls{payload} is small. The figure shows how long it takes for the different protocols to transfer a fixed number of bytes of useful data. For instance, it only takes \textit{0.35} seconds to transfer 100 bytes goodput in \gls{con}, while this takes \textit{1} second using \gls{non}. However, as the graph shows, if the goodput is 500 byte, both versions of the protocol uses \textit{1} second to transfer the data. When the \gls{payload} reaches 600 byte, \gls{con} needs to use \textit{1.12} seconds to transfer the data, while \gls{non} still is able to unly use \textit{1} second. After this \gls{con} is about \textit{150 ms} slower than \textit{non} to transfer the same payload, as both plots rise with linear growth. In this case it is quite easy to see a trend - \gls{con} is definitely faster at small rates of data, below 500 byte. If the payload is bigger than this, gls{non} will be preferable, only taking the time to transfer a given number of data one way into account. 
-
-From the other approach, it is possible to look at how many bytes it is possible to send every second using the two different versions of the protocol.Figure \ref{fig:bytesPRSecond2}  shows the direct correlation between the number of bytes sent every second. For instance: using \gls{coap} \gls{con}, it takes on average 7.93 seconds to transport 15 packets of 200 bytes goodput. 
-
-\begin{equation} \label{CONexampleFig411}
-	\frac{200 byte * 15 packets}{7.93 seconds} \approx 378 byte/second
-\end{equation}
-
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=1.0]{bytesPRSecond2.png}    
-    \caption{Number of bytes per second}
-    \label{fig:bytesPRSecond2}
-\end{figure}
-
-
-
-In this case both plots starts at \textit{0 byte/second}, since the payload is 0. After this, the graphs have quite different forms. \gls{non} has a very linear rise, all the way up to 600 byte payload. This makes sence, since figure \ref{fig:timeUsedPRpacket} shows that all up to this size has taken \textit{1} second. \gls{con} can transfer more often, and this difference can clearly be seen here. When transferring a payload of 100 byte, is almost three times faster at \textit{305 byte/second} compared to \textit{108 byte/second} using \gls{non}. The conclusion here will then be the same as in the last graph, \gls{coap} \gls{con} is much more efficient for a small amount of data, but for payload bigger than 500 byte \gls{non} is preferable. 
-
-
-\subsection{Bytes sent through network, best and worst case}
-
-These previous two tests shows the throughput per time, while the tests earlier in the thesis has focused on goodput compared to throughput, how much of the data sent is useful data. Since these \glspl{microcontroller} are used as end nodes in the network, it is natural to assume that they will run on battery power only. In this case it is preferable that they do as little work as possible, meaning also handle as few packets as possible. It will therefore be compared how many packets that needs to go through the end nodes in the different cases, \gls{con} and \gls{non} \footnote{Before the test, it was clear that fewer packets are needed using \gls{non}, since no \glspl{ack} are required. The test is therefore done to see \textit{how much} fewer packets are needed here}.
-
-The main argument for trying the \gls{non} version of \gls{coap} in this network, was that fewer bytes needed to be sent through the network, meaning less overall usage of the network. This is very relevant in a case where the network should be taken to its maximum capacity with several sensors and \glspl{microcontroller}. 
-
-But, as seen in figure \ref{fig:bestCaseworstCase}, this turns out not to always be the case. The figure shows best and worst case of how many bytes that needs to be sent to transfer a given number of \gls{payload}. For example, using \gls{non} it takes 576 byte to transfer 500 byte payload in best case, but 856 byte in worst case. This is because of the architecture of the two different versions of \gls{coap}. Even though \gls{non} does not require \glspl{ack}, underlying parts of the bluetooth architecture like \gls{acl} adds on some support for this. Also, to prevevent a situation where the end node sends data forever without anyone receiving the data, \gls{ack} messages are still being sent regularly, approximately every 15th second in this network. This means, as shown in figure \ref{fig:bestCaseworstCase}, that \gls{non} \textit{normally} requires a lower amount of bytes to transport a given \gls{payload}, but in \textit{worst case scenario} it needs even more bytes than \gls{con}. 
-
-
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=1.0]{bestCaseworstCase2.png}    
@@ -503,7 +531,7 @@ But, as seen in figure \ref{fig:bestCaseworstCase}, this turns out not to always
     \label{fig:bestCaseworstCase}
 \end{figure}
 
-The main question to comparison comes down to how often the worst case occurs in comparison to best case. Sending payload of 500 byte in both cases, \gls{non} results in most best case scenarios, while \gls{con} results in \textit{only} worst case scenarios. In specific numbers, this gives an average of \textit{598 bytes} sent for \gls{non}, and \textit{791 bytes}. This gives us on average: 
+\noindent The main question to comparison comes down to how often the worst case occurs in comparison to best case. Sending payload of 500 byte in both cases, \gls{non} results in most best case scenarios, while \gls{con} results in \textit{only} worst case scenarios. In specific numbers, this gives an average of \textit{598 bytes} sent for \gls{non}, and \textit{791 bytes}. This gives us on average: 
 
 \begin{equation} \label{bestWorstEquation}
 	\frac{500 byte payload}{\frac{791 bytes * 15 packets}{15}}*100 \% \approx 63,21 \% payload
@@ -513,21 +541,21 @@ The main question to comparison comes down to how often the worst case occurs in
 \frac{500 byte payload}{\frac{(576 bytes * 13 packets)+(856 bytes * 2 packets)}{15}}*100 \% \approx 83,56 \% payload
 \end{equation}
 
-From these results it can be concluded that even though \gls{non} is considerably worse in worst case than \gls{con}, 
+\noindent From these results it can be concluded that even though \gls{non} is considerably worse in worst case than \gls{con}, 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.0\textwidth]{payloadGoodput_CONNON.png}    
+    \caption{Goodput for given payload, CON vs NON}
+    \label{fig:payloadGoodput_CONNON}
+\end{figure}
 
 
-
-
-
-
-\section{Quantity test} \todo{Remove?}
-
-This section will show a test of several nRF52 devices connected to the same Pi at the same time, to ensure stability and performance in the network. Even though this puts more pressure on both the network and the Pi, it is not expected to be considerably noticed in the transportation of packets. 
 
 
 \section{Summary}
 
-As a summary of this chapter, the positive and negative aspects of the two versions of \gls{coap} that has been tested will be be directly compared to get a more clear understanding of the discoveries that has been made. The results are shown in \ref{ComparisonTable}.   
+\noindent As a summary of this chapter, the positive and negative aspects of the two versions of \gls{coap} that has been tested will be be directly compared to get a more clear understanding of the discoveries that has been made. The results are shown in \ref{ComparisonTable}.   
 
 
 
@@ -551,6 +579,6 @@ Need of ACKs                                                                    
 \end{tabular}
 \end{table}
 
-Table \ref{ComparisonTable} shows all the main results found in conjunction with the comparison of \gls{coap} \gls{con} and \gls{non} in the network presented in this thesis. Results from the table shows that in 7 of the 10 cases presented, \gls{non} shows the best results.  This should still not be a final result without discussion. As discussed in chapter \todo{Add chapter ref}, \gls{non} has been considerably more unstable than \gls{con} during the test period. It was not possible to get a stable connection when sending more frequently than once every second, and the connection became unstable if the payload was greater than 800 bytes. As a conclusion from this table it is clear to say that \gls{non} works best if the conditions are right, sending data every second with a payload between 500 and 800 bytes. In other cases than this, \gls{con} works better in the practical experiments presented. 
+\noindent Table \ref{ComparisonTable} shows all the main results found in conjunction with the comparison of \gls{coap} \gls{con} and \gls{non} in the network presented in this thesis. Results from the table shows that in 7 of the 10 cases presented, \gls{non} shows the best results.  This should still not be a final result without discussion. As discussed in chapter \todo{Add chapter ref}, \gls{non} has been considerably more unstable than \gls{con} during the test period. It was not possible to get a stable connection when sending more frequently than once every second, and the connection became unstable if the payload was greater than 800 bytes. As a conclusion from this table it is clear to say that \gls{non} works best if the conditions are right, sending data every second with a payload between 500 and 800 bytes. In other cases than this, \gls{con} works better in the practical experiments presented. 
 
 
