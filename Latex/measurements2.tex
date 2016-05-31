@@ -129,7 +129,7 @@ Number & Time   & Protocol & Length & Info                             \\ \hline
 \noindent Note that packet number 46 and 47 in table \ref{coapCON0table} has got a timestamp that indicates that they originally was sent from the end node in the network as packet number 41 and 42, but used longer time than the other packets sent through the network at the same time. The main reason for this is of course that they are bigger than the rest of the packets, but since the network limit should be much higher than this it can may be seen as a weakness that this gives a clear impact even at these small values.  \todo{Remove this section..?}
 
 
-\begin{table}[]
+\begin{table}[H]
 \centering
 \caption{Wireshark CoAP CON 100 bytes}
 \label{coapCON100table}
@@ -153,7 +153,7 @@ Number & Time   & Protocol & Length & Info                             \\ \hline
 \end{tabular}
 \end{table}
 
-\noindent In table \ref{coapCON100table}, 100 bytes of \gls{payload} is being sent through the network using \gls{con}. The same basic packages needed are still there, but in addition the 100 bytes of data is added. This means adding more \gls{ble} packets, but also that the percentage of useful data sent through is a lot higher, approximatley 55 \% in this case. By doing several experiments like this, it was possible to create the graph in Figure \ref{fig:coapCON0200}. This shows the correlation between \gls{payload} and \gls{throughput} compared to the number of packets sent, measured every 10th byte from 0 byte to 200 bytes large packets. Several tests have been performed to test the fragmentation of packets, but it is always the same for a constant \gls{payload} \footnote{All the measured data can be found on \url{https://www.github.com/sische/MasterThesis}}.
+\noindent In table \ref{coapCON100table}, 100 bytes of \gls{payload} is being sent through the network using \gls{con}. The same basic packages needed are still there, but in addition the 100 bytes of data is added. This means adding more \gls{ble} packets, but also that the percentage of useful data sent through is a lot higher, approximatley 55 \% in this case. By doing several experiments like this, it was possible to create the graph in Figure \ref{fig:coapCON0200}. This shows the correlation between \gls{payload} and \gls{throughput} compared to the number of packets sent, measured every 10th byte from 0 byte to 200 bytes large packets. Several tests have been performed to test the fragmentation of packets, which show that the fragmentation is always done the same way for a \gls{payload} of a fixed size. The packet sizes therefore take one of the measurements as a point of referance \footnote{All the measured data can be found on \url{https://www.github.com/sische/MasterThesis}}.
 
 
 \begin{figure}[ht]
@@ -163,19 +163,7 @@ Number & Time   & Protocol & Length & Info                             \\ \hline
     \label{fig:coapCON0200}
 \end{figure}
 
-\noindent In this particular case shown in figure \ref{fig:coapCON0200} it makes no sense to send less than 50 bytes of useful data at once, since more than 50 \% of the bytes sent will be header files. This is comparable to having a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%, as shown in equation 4.1. In mathematics, this is described as a \textit{horizontal asymptote} since the distance between the graph and \textit{y = 87,1} will approach zero after an infinite number of bytes has been transferred. The graph will therefore converge to 87,1 \%, just as the values climbing in figure \ref{fig:coapCON0200}, even before the \gls{payload} has reached 200 bytes.  
-
-\subsection{Discussion}
-
-\noindent Even though this first test was done with a very limited amount of data transferred, it is easy to see that the curve clearly flattens out and forms the shape of a \textit{parabola} with a vertical \textit{directrix} at \textit{x = 0}. Several \gls{ble} packets have been fragmented and sent during these test, without the graph showing a special \gls{payload} size where this gives a noticeable result. This means that the fragmentation of \gls{ble} packets does not have a major impact of the \% of data throughput in this system. More data needs to be sent at once to check if the same can be said for fragmentation of \gls{6lowpan} packets. The next step would be to transfer a larger amount of data, to verify that the assumptions that the graph will converge to the asymptotic value \textit{y = 87,1} when $lim_{x\to\infty}$. The limitations of transfer rate is not nearly yet met by either \gls{ble} or \gls{6lowpan}.  This test will therefore be explained in the next section. 
-
-
-\noindent Since there is already a clear trend in the form of the graph in figure \ref{fig:coapCON0200} even before the transfer rate reaches 200 bytes, it makes sense to also test the other version included in \gls{coap} \gls{con}. If it is possible to find a way of transportation that could give a higher mathematical maximum, and also get to this limit faster, it could be very profitable to the system. It also makes sense to test \gls{coap} \gls{non} because it doesn’t need to send an \gls{ack} for every packet, as \gls{con} does. Maybe this means that the header files can be split up in another way, and that the useful amount of data sent through therefore will be higher. 
-
-
-%\subsection{CoAP CON with more data}
-
-\noindent To see what happened when the limit of a \gls{6lowpan} packet was breached in the system, tests was being set up to send larger amounts of data than 200 bytes. This would also be a good way to test if the percentage of goodput will converge to 87,1 \%, only considering \gls{ble} packets. The following test and examples will therefore send a fixed number of bytes at once from 0 to 1000 bytes (1 kB), with a 50 byte interval. As before, the messages are being sent as soon as possible, meaning approximately four messages per second on average using \gls{coap} \gls{con}. In addition will \gls{non} be tested in detail. 
+\noindent In this particular case shown in figure \ref{fig:coapCON0200} it makes no sense to send less than 50 bytes of useful data at once, since more than 50 \% of the bytes sent will be header files. This is comparable to having a locomotive and full crew at disposal, but only a few or none paying passengers. The best possible result is to have every carriage full, with 27 passengers and 4 employees. Since at least 4 bytes out of every 31 sent needs to be used to header information, the best possible result will be 87,1 \%, as shown in equation 4.1. In mathematics, this is described as a \textit{horizontal asymptote} since the distance between the graph and \textit{y = 87,1} would have approached zero after an infinite number of bytes has been transferred, if the only limitation was \gls{ble} packets. In this network other limitations like \gls{6lowpan} header files needs to be considered as well. The graph will still approach 87,1 \%, just as the values climbing in figure \ref{fig:coapCON0200}, even before the \gls{payload} has reached 200 bytes.   
 
 %\begin{figure}[ht]
 %    \centering
@@ -205,7 +193,7 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 \end{table}
 
 
-\noindent A basic example of the \gls{coap} \gls{non} connection is shown in table \ref{coapNON0table}. The entire Wireshark capture can be seen in Appendix \ref{chp:appendix}. This is directly comparable to table \ref{coapCON0table}, that shows a Wireshark capture of \gls{coap} \gls{con} packages. It is easy to see that a lot fewer packages needs to be sent using \gls{ble}, without the use of \glspl{ack}. The total amount of bytes sent is 31+31+9=71 bytes, meaning three \gls{ble} packages and one \gls{6lowpan} packet. This is less than half of what was needed using \gls{coap} \gls{con}, where the 108 \gls{ack} packages was needed in addition. The packets are still recognizable the same way as before, the first packet is labeled \textit{[Reassembled in \#40]}, the second \textit{[Continuation to \#38]} and the last \textit{Connection oriented channel}.
+\noindent A basic example of the \gls{coap} \gls{non} connection is shown in table \ref{coapNON0table}. The entire Wireshark capture can be seen in Appendix \ref{chp:appendix}. This is directly comparable to table \ref{coapCON0table}, that shows a Wireshark capture of \gls{coap} \gls{con} packages. It is easy to see that a lot fewer packages needs to be sent using \gls{ble}, without the use of \glspl{ack}. The total amount of bytes sent is 31+31+9=71 bytes, meaning three \gls{ble} packages and one \gls{6lowpan} packet, and a total \gls{con} packet size of 76 bytes. This is less than half of what was needed using \gls{coap} \gls{con}, where the 108 \gls{ack} packages was needed in addition. The packets are still recognizable the same way as before, the first packet is labeled \textit{[Reassembled in \#40]}, the second \textit{[Continuation to \#38]} and the last \textit{Connection oriented channel}.
 
 \noindent Fewer packages sent means less energy used, less network capacity needed and less computational power in the end node. Hopefully this will lead to a higher percentage of goodput compared to throughput as well. it would therefore be interesting to compare the rest of the measured values.
 
@@ -228,10 +216,7 @@ Number & Time    & Protocol & Length & Info   							  \\ \hline
 \end{tabular}
 \end{table}
 
-\noindent Table \ref{coapNON100table} shows the case where 100 bytes of data are sent using \gls{coap} \gls{non}. This is directly comparable to the test shown in table \ref{coapCON100table}, where the same amount of data is sent over \gls{con}. The overall structure is the same as before. Since it is only one packet noted \textit{Reassembled in \#n}, which marks the beginning of a new \gls{6lowpan} packet. The total amount sent must therefore be under 270 bytes, which makes sense. The \gls{non} packet size is here 177 bytes, compared to 173 bytes in \gls{con}, which represents one more header field of 4 bytes needed in \gls{non}. Overall a small difference in the packets containing data, but as expected a lot more packets needs to be sent in total in \gls{con}.
-
-
-\noindent Using these measurements the following plot could be drawn. 
+\noindent Table \ref{coapNON100table} shows the case where 100 bytes of data are sent using \gls{coap} \gls{non}. This is directly comparable to the test shown in table \ref{coapCON100table}, where the same amount of data is sent over \gls{con}. The overall structure is the same as before. Since it is only one packet noted \textit{Reassembled in \#n}, which marks the beginning of a new \gls{6lowpan} packet. The total amount sent must therefore be under 270 bytes, which makes sense. The \gls{non} packet size is here 177 bytes, compared to 173 bytes in \gls{con}, which represents one more header field of 4 bytes needed in \gls{non}. Overall a small difference in the packets containing data, but as expected a lot more packets needs to be sent in total in \gls{con}. Using these measurements the following plot could be drawn. 
 
 %\begin{figure}[ht]
 %    \centering
@@ -252,14 +237,22 @@ Number & Time    & Protocol & Length & Info   							  \\ \hline
 
 \noindent Figure \ref{fig:CONvsNON0-200} shows the comparison between sending between 0 and 200 bytes of useful data through the network at once. Keep in mind that this does not show sending rate per time (which will be discussed in chapter \todo{write chapter}), but percentage of the data sent that is useful data. \gls{con} can be sent much more often than \gls{non} in practice. It could therefore maybe be expected that this could give \gls{non} an advantage. \todo{<- Re-write}. \gls{non} does not need to send \glspl{ack} for every package, which should be an advantage concerning to maximize throughput. Still it is the more complex and more frequently sent \gls{con} that gets the best results in this test, with a small margin. 
 
+\subsection{Discussion}
 
-\subsection{CoAP, testing with more data}
-
-\noindent Table \ref{coapCON700table} shows a bigger and more complex case, where a payload of 700 byte is being sent at once. In total 889 bytes are being sent in this process, with a \gls{con} packet size of 774 bytes. This gives a percentage of goodput at 78.74 \%. The maximum packet length of a \gls{6lowpan} packet in this system of 270 bytes is therefore exceeded. This can be seen in the table, after 8 \gls{ble} packages of 31 bytes each has been sent, there is only room for 22 bytes in the last packet before the \gls{6lowpan} packet has reached its maximal capacity. This is repeated several times, once for each \gls{6lowpan} packet, until the last \gls{ble} packets at the size of 17 bytes. After this the standard packages for \gls{ack} and \textit{Number of completed packages} follows. This is in general a good example on how fragmentation of packets works in this system. 
-
+\noindent Even though this first test was done with a very limited amount of data transferred, it is easy to see that the curve clearly flattens out and forms the shape of a \textit{parabola} with a vertical \textit{directrix} at \textit{x = 0}. Several \gls{ble} packets have been fragmented and sent during these test, without the graph showing a special \gls{payload} size where this gives a noticeable result. This means that the fragmentation of \gls{ble} packets does not have a major impact of the \% of data throughput in this system. More data needs to be sent at once to check if the same can be said for fragmentation of \gls{6lowpan} packets. The next step would be to transfer a larger amount of data, to verify that the assumptions that the graph will converge to the asymptotic value \textit{y = 87,1} when $lim_{x\to\infty}$. The limitations of transfer rate is not nearly yet met by either \gls{ble} or \gls{6lowpan}.  This test will therefore be explained in the next section. 
 
 
-\newpage
+\noindent Since there is already a clear trend in the form of the graph in figure \ref{fig:coapCON0200} even before the transfer rate reaches 200 bytes, it makes sense to also test the other version included in \gls{coap}, \gls{non}. If it is possible to find a way of transportation that could give a higher mathematical maximum, and also get to this limit faster, it could be very profitable to the system. It also makes sense to test \gls{coap} \gls{non} because it doesn’t need to send an \gls{ack} for every packet, as \gls{con} does. Maybe this means that the header files can be split up in another way, and that the useful amount of data sent through therefore will be higher. 
+
+
+\noindent To see what happened when the limit of a \gls{6lowpan} packet was breached in the system, tests was being set up to send larger amounts of data than 200 bytes. This would also be a good way to test if the percentage of goodput will converge to 87,1 \%, only considering \gls{ble} packets. The following test and examples will therefore send a fixed number of bytes at once from 0 to 1000 bytes (1 kB), with a 50 byte interval. As before, the messages are being sent as soon as possible, meaning approximately four messages per second on average using \gls{coap} \gls{con}. In addition will \gls{non} be tested in detail. 
+
+
+\subsection{CoAP, transport time}
+
+\noindent Table \ref{coapCON700table} shows a bigger and more complex case, where a payload of 700 byte is being sent at once. In total 889 bytes are being sent in this process, with a \gls{con} packet size of 774 bytes. This gives a percentage of goodput at 78.74 \%. The maximum packet length of a \gls{6lowpan} packet in this system of 270 bytes is therefore exceeded. This can be seen in the table, after 8 \gls{ble} packages of 31 bytes each has been sent, there is only room for 22 bytes in the last packet before the \gls{6lowpan} packet has reached its maximal capacity. This is repeated several times, once for each \gls{6lowpan} packet, until the last \gls{ble} packets at the size of 17 bytes. After this the standard packages for \gls{ack} and \textit{Number of completed packages} follows. This is in general a good example on how of packets works in this system. 
+
+
 
 \begin{table}[H]
 \small
