@@ -31,13 +31,13 @@
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Time used to transfer payload CON}}{46}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Time used to transfer payload NON}}{47}{figure.4.8}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Average time to transfer payload, CON vs NON}}{48}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Goodput compared to payload CoAP CON}}{50}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Goodpyt compared to payload CoAP NON}}{51}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Number of bytes per second}}{51}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Goodput for given payload, CON vs NON}}{52}{figure.4.13}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Goodput compared to payload CoAP CON}}{49}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Goodpyt compared to payload CoAP NON}}{49}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Goodput for given payload, CON vs NON}}{50}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Number of bytes per second}}{51}{figure.4.13}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Complete system architecture}}{60}{figure.6.1}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Complete system architecture}}{62}{figure.6.1}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

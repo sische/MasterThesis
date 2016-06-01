@@ -4,14 +4,14 @@
 
 \section{Motivation}
 
-Internet of Things (IoT) is a general term describing a network of small devices connected to the Internet with either a direct connection or using a forwarding device as a central point of connection. The term includes all sort of devices, from small sensors and microcontrollers to everyday smart objects, from phones and glasses to cars and buildings. A common factor for all of these is \gls{m2m} communication, where machines can communicate with each other without Human-computer interaction. The term \gls{iot} was first used by Kevin Ashton in 1999 \cite{ashton2009internet}, when describing a global network of objects. He later explained how he thinks that most of the data contained on the Internet today will be overtaken by the amount of sensor collected data with \gls{m2m} communication in the future. Both with this as an argument, and the high interest for smart devices and sensors in the general population, it can be said with a high certainty that this will be a central part of the coming years of the Internet. 
+\noindent Internet of Things (IoT) is a general term describing a network of small devices connected to the Internet with either a direct connection or using a forwarding device as a central point of connection. The term includes all sort of devices, from small sensors and microcontrollers to everyday smart objects, from phones and glasses to cars and buildings. A common factor for all of these is \gls{m2m} communication, where machines can communicate with each other without Human-computer interaction. The term \gls{iot} was first used by Kevin Ashton in 1999 \cite{ashton2009internet}, when describing a global network of objects. He later explained how he thinks that most of the data contained on the Internet today will be overtaken by the amount of sensor collected data with \gls{m2m} communication in the future. Both with this as an argument, and the high interest for smart devices and sensors in the general population, it can be said with a high certainty that this will be a central part of the coming years of the Internet. 
 
-In order for this development from a network mostly based on human made material to a network based more on data from sensors using \gls{m2m} communication, several factors have to be considered. It is natural to believe that most end nodes must be battery powered for practical reasons. If a complete system contains hundreds of sensors and microcontrollers it would be impracticable to set up a power cable to all of these. For a users perspective, it would also be very annoying to have to change these batteries very often. Because of this, the available computational power in the end nodes is very limited, and should be limited further as much as possible to increase the battery life. 
+\noindent In order for this development from a network mostly based on human made material to a network based more on data from sensors using \gls{m2m} communication, several factors have to be considered. It is natural to believe that most end nodes must be battery powered for practical reasons. If a complete system contains hundreds of sensors and microcontrollers it would be impracticable to set up a power cable to all of these. For a users perspective, it would also be very annoying to have to change these batteries very often. Because of this, the available computational power in the end nodes is very limited, and should be limited further as much as possible to increase the battery life. 
 
-A very central point of discussion in any gls{iot} system will therefore be how to transport data as efficient as possible. Raw data from sensors are seldom useful to an end user, therefore the data also needs to be analysed and often represented in another form before it can be useful to the user. A device in the network therefore needs to analyse the data, find out what is important or unimportant, find patterns, draw graphs or figures and forward the results a monitor, a web page or to be stored on a server to be used later. Should this process of analysing take place in the end nodes, or is it more preferable to forward raw data to a central component of the network? Or maybe in some cases this is not even enough, but the central computer needs even more computational power from a supercomputer, before data can be displayed?  
+\noindent A very central point of discussion in any gls{iot} system will therefore be how to transport data as efficient as possible. Raw data from sensors are seldom useful to an end user, therefore the data also needs to be analysed and often represented in another form before it can be useful to the user. A device in the network therefore needs to analyse the data, find out what is important or unimportant, find patterns, draw graphs or figures and forward the results a monitor, a web page or to be stored on a server to be used later. Should this process of analysing take place in the end nodes, or is it more preferable to forward raw data to a central component of the network? Or maybe in some cases this is not even enough, but the central computer needs even more computational power from a supercomputer, before data can be displayed?  
 
 
-In order for this to works in a proper way, a number of things are needed. Protocols, batteries, so on so on. 
+\noindent In order for this to works in a proper way, a number of things are needed. Protocols, batteries, so on so on. 
 
 
 \begin{figure}[ht]
@@ -21,13 +21,13 @@ In order for this to works in a proper way, a number of things are needed. Proto
     \label{iotExampleArchitecture}
 \end{figure}
 
-Figure \ref{iotExampleArchitecture} shows an example architecture of \gls{iot}. Here a sensor (or in real life scenarios most likely several sensors) is connected to a \gls{microcontroller} by a standard interface using cables. 
+\noindent Figure \ref{iotExampleArchitecture} shows an example architecture of \gls{iot}. Here a sensor (or in real life scenarios most likely several sensors) is connected to a \gls{microcontroller} by a standard interface using cables. 
 
 
 
 %is known as the concept of connecting everyday physical devices to the Internet. It is natural to assume that the popularity and development within this field will increase in the following years. This means that more and more things will be able to communicate over the Internet. In the process of developing IoT, an important part is to build reliable and scalable networks, and understanding where data should be processed concerning power consumptions and costs of transferring data in different parts of the network.
 
-A central prosecutor in developing technologies to be used is Nordic Semiconductor. As described on their web page: 
+\noindent A central prosecutor in developing technologies to be used is Nordic Semiconductor. As described on their web page: 
 
 \begin{displayquote}
 \textit{The future of electronics is wireless and portable due to an almost insatiable consumer demand for ever greater levels of freedom and flexibility. Nordic Semiconductor is playing a key role in the realization of that future, by providing ultra low power (ULP) wireless chips that can run for a long time from small power sources, like watch batteries \cite{aboutNordic}.}
@@ -45,7 +45,7 @@ This
 
 \subsection{Scope}
 
-This thesis will mainly focus on the best way of optimizing transportation and analysing of data in an IoT network. The goal is to find the optimal solution on how to treat data, concerning:
+\noindent This thesis will mainly focus on the best way of optimizing transportation and analysing of data in an IoT network. The goal is to find the optimal solution on how to treat data, concerning:
 
 \begin{itemize}
 	\item Gathering data from sensor efficiently, both concerning time and power consumption
@@ -60,37 +60,37 @@ To achieve this, some explanation of background protocols, devices used and netw
 
 \noindent \textbf{O.1: Build a star network of microcontrollers}
 
-This is the most elementary objective, to build a network that can be tested. All the other objectives are dependent in this.  
+\noindent This is the most elementary objective, to build a network that can be tested. All the other objectives are dependent in this.  
 
 \noindent\textbf{O.2: Connect sensors to the end-nodes to collect data}
 
-Objective two involves gathering real data. To do this, some kind of sensor is needed, and needs to be correctly configured to the end node to be sure that the data read can be trusted and reliable. Objective three and four can still be successful without this, since simulated data can be a replacement.  
+\noindent Objective two involves gathering real data. To do this, some kind of sensor is needed, and needs to be correctly configured to the end node to be sure that the data read can be trusted and reliable. Objective three and four can still be successful without this, since simulated data can be a replacement.  
 
 \noindent\textbf{O.3: Gather information of the data sent through the network}
 
-Objective three is to find tools or write programming code to gather and analyse the data sent through the network, and present these in a way that makes it easy to spot the advanates or disadvantages of the different protocols and technologies. 
+\noindent Objective three is to find tools or write programming code to gather and analyse the data sent through the network, and present these in a way that makes it easy to spot the advanates or disadvantages of the different protocols and technologies. 
 
 \noindent\textbf{O.4: Analyse and discuss the gathered information}
 
-Objective four involves discussing the given results, and use these to draw conclusions of how to optimize the network and propose solutions, improvements or further work. 
+\noindent Objective four involves discussing the given results, and use these to draw conclusions of how to optimize the network and propose solutions, improvements or further work. 
 
 \subsection{Research Questions}
 
 \noindent \textbf{R.1: Which transport protocols are suitable in such a network?}
 
-To answer this question, the network must be built and tested, to see if there are any noticeable differences in the protocols tested.
+\noindent To answer this question, the network must be built and tested, to see if there are any noticeable differences in the protocols tested.
 
 \noindent\textbf{R.2: What are the main limitations when it comes to transporting data?}
 
-This question must be answered by measuring time spent in the different parts of the network during routing of packets, to determine the bottle neck of the network or system. 
+\noindent This question must be answered by measuring time spent in the different parts of the network during routing of packets, to determine the bottle neck of the network or system. 
 
 \noindent\textbf{R.3: Are the microcontrollers powerful enough to gather data this frequently?}
 
-This is not specified in the documentation of the microcontrollers, since this depends on the network, the type of sensor and the type of data. To answer this question, the sensors must therefore gather data at a higher and higher rate to see if it is possible to reach an acceptable sampling rate. 
+\noindent This is not specified in the documentation of the microcontrollers, since this depends on the network, the type of sensor and the type of data. To answer this question, the sensors must therefore gather data at a higher and higher rate to see if it is possible to reach an acceptable sampling rate. 
 
 \noindent\textbf{R.4: Could data analysing be done in the end nodes in this network?}
 
-This is dependent on the result from R.3. This might be possible if results tells that the microcontrollers can easily handle the gathering of data and still have power to do calculations. The alternative is to forward raw data to a central node. 
+\noindent This is dependent on the result from R.3. This might be possible if results tells that the microcontrollers can easily handle the gathering of data and still have power to do calculations. The alternative is to forward raw data to a central node. 
 
 \section{Structure}
 
