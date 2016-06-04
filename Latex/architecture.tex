@@ -144,7 +144,7 @@ ping6 2001::02AA:11FF:FEBB:22CC
 
 \section{Connecting nRF52 and ADXL345}
 
-\noindent The \gls{ADXL345} used was connected using \gls{i2c}, which is quite straight forward using the nRF52. Connection scheme is as follows (nRF52 -> ADXL345): 
+\noindent The \gls{ADXL345} used was connected using \gls{i2c}, which is supported by the \gls{nRF52}. Connection scheme is as follows (\gls{nRF52} $\,\to\,$ \gls{ADXL345}): 
 
 \begin{table}[H]
 \centering
@@ -159,17 +159,10 @@ P0.26 - SCL            & \gls{i2c} Serial Clock Line, \textbf{\textcolor{brown}{
 \end{tabular}
 \end{table}
 
-%\begin{figure}[ht]
-%    \centering
-%    \includegraphics[scale=0.35]{nrf-adxl.png}    
-%    \caption{Connected nRF52 -- ADXL345}
-%    \label{fig:nrf-adxl345}
-%\end{figure}
-
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.62\textwidth]{connectionADXL-nrf4.png}    
+    \includegraphics[width=0.62\textwidth]{connectionADXL-nrf5.png}    
     \caption{Connected nRF52 -- ADXL345}
     \label{fig:nrf-adxl345}
 \end{figure}
