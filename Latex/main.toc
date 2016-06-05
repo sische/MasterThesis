@@ -46,26 +46,28 @@
 \contentsline {subsection}{\numberline {4.3.2}CoAP NON}{38}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Discussion}{40}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Tests with more data}{41}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Transfer rates}{45}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Time used to transfer payload}{45}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.3.5}Discussion}{44}{subsection.4.3.5}
+\contentsline {section}{\numberline {4.4}Transfer rates}{46}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Time used to transfer payload}{46}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Goodput}{48}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Bytes sent through network, best and worst case}{51}{subsection.4.4.3}
-\contentsline {chapter}{\chapternumberline {5}Discussion}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Set up network}{53}{section.5.1}
-\contentsline {section}{\numberline {5.2}Gather sensor data}{54}{section.5.2}
-\contentsline {section}{\numberline {5.3}Send data through network}{54}{section.5.3}
-\contentsline {section}{\numberline {5.4}Analyse data}{55}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Measurements}{55}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Power consumption}{57}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Ease of use}{57}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{57}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}nRF52}{57}{subsection.5.5.2}
-\contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{59}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{59}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Sensors}{59}{subsection.6.1.2}
-\contentsline {chapter}{References}{61}{section*.26}
+\contentsline {section}{\numberline {4.5}Discussion}{53}{section.4.5}
+\contentsline {chapter}{\chapternumberline {5}Discussion}{55}{chapter.5}
+\contentsline {section}{\numberline {5.1}Set up network}{55}{section.5.1}
+\contentsline {section}{\numberline {5.2}Gather sensor data}{56}{section.5.2}
+\contentsline {section}{\numberline {5.3}Send data through network}{56}{section.5.3}
+\contentsline {section}{\numberline {5.4}Analyse data}{57}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Measurements}{57}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Power consumption}{59}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Ease of use}{59}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{59}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}nRF52}{59}{subsection.5.5.2}
+\contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{61}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{61}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Sensors}{61}{subsection.6.1.2}
+\contentsline {chapter}{References}{63}{section*.23}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{63}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{67}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Appendix C}{69}{appendix.C}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{65}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{69}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Appendix C}{73}{appendix.C}

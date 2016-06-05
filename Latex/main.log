@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  4 JUN 2016 20:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  5 JUN 2016 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2224,7 +2224,11 @@ Package csquotes Info: Redefining alias 'default' -> 'norsk'.
  (./main.aux (./abstract_english.aux) (./abstract_norwegian.aux)
 (./preface.aux) (./introduction.aux) (./background.aux) (./architecture.aux)
 (./measurements2.aux) (./dataAnalysis.aux) (./results.aux) (./appendix.aux)
-(./appendixB.aux) (./appendixc.aux))
+(./appendixB.aux
+
+LaTeX Warning: Label `goodputTimeCON' multiply defined.
+
+) (./appendixc.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
@@ -2241,8 +2245,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 75.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 75.
@@ -2323,7 +2326,7 @@ e
 \c@lstlisting=\count360
 
 ABD: EveryShipout initializing macros
-<./figs/ntnu-logo.pdf, id=147, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=151, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -2408,7 +2411,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<introductionIoT2.png, id=413, 693.59125pt x 418.56375pt>
+<introductionIoT2.png, id=422, 693.59125pt x 418.56375pt>
 File: introductionIoT2.png Graphic file (type png)
 
 <use introductionIoT2.png>
@@ -2431,7 +2434,7 @@ Underfull \vbox (badness 2564) has occurred while \output is active []
 
 
 
-] <pi3.png, id=462, 1053.9375pt x 664.4825pt>
+] <pi3.png, id=471, 1053.9375pt x 664.4825pt>
 File: pi3.png Graphic file (type png)
 
 <use pi3.png>
@@ -2442,7 +2445,7 @@ Overfull \hbox (4.88365pt too wide) in paragraph at lines 26--27
  [][] 
  []
 
-[7] <nRF522.png, id=482, 1181.41376pt x 743.77875pt>
+[7] <nRF522.png, id=491, 1181.41376pt x 743.77875pt>
 File: nRF522.png Graphic file (type png)
  <use nRF522.png>
 Package pdftex.def Info: nRF522.png used on input line 40.
@@ -2459,7 +2462,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 58.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<nrf52Detailed.png, id=496, 395.4775pt x 316.18124pt>
+<nrf52Detailed.png, id=505, 395.4775pt x 316.18124pt>
 File: nrf52Detailed.png Graphic file (type png)
  <use nrf52Detailed.png>
 Package pdftex.def Info: nrf52Detailed.png used on input line 71.
@@ -2478,7 +2481,7 @@ e same identifier (name{figure.2.3}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.89   \item I
               t supports both \gls{i2c} and \gls{spi}, which makes it easy t...
- <./nrf52Detailed.png>] <adxl345imagge.png, id=521, 424.58624pt x 347.2975pt>
+ <./nrf52Detailed.png>] <adxl345imagge.png, id=530, 424.58624pt x 347.2975pt>
 File: adxl345imagge.png Graphic file (type png)
 
 <use adxl345imagge.png>
@@ -2494,7 +2497,7 @@ l.114
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 127.
 
-<BLEprotocolStack.png, id=542, 537.00626pt x 264.99pt>
+<BLEprotocolStack.png, id=551, 537.00626pt x 264.99pt>
 File: BLEprotocolStack.png Graphic file (type png)
 
 <use BLEprotocolStack.png>
@@ -2505,7 +2508,7 @@ Overfull \hbox (11.90181pt too wide) in paragraph at lines 131--132
  [][] 
  []
 
-[12] <BLEdataUnitStructure.png, id=564, 606.265pt x 194.7275pt>
+[12] <BLEdataUnitStructure.png, id=573, 606.265pt x 194.7275pt>
 File: BLEdataUnitStructure.png Graphic file (type png)
 
 <use BLEdataUnitStructure.png>
@@ -2537,14 +2540,14 @@ LaTeX Warning: Reference `microcontroller' on page 14 undefined on input line 1
                                                   \fi \fi 
 l.160 
        <./BLEdataUnitStructure.png>] [15]
-<CONclientserver.png, id=646, 304.13625pt x 304.13625pt>
+<CONclientserver.png, id=655, 304.13625pt x 304.13625pt>
 File: CONclientserver.png Graphic file (type png)
 
 <use CONclientserver.png>
 Package pdftex.def Info: CONclientserver.png used on input line 201.
 (pdftex.def)             Requested size: 182.48315pt x 182.48315pt.
 
-<NONOackSeqDiagram2.png, id=650, 300.12125pt x 304.13625pt>
+<NONOackSeqDiagram2.png, id=659, 300.12125pt x 304.13625pt>
 File: NONOackSeqDiagram2.png Graphic file (type png)
 
 <use NONOackSeqDiagram2.png>
@@ -2563,7 +2566,7 @@ l.217
                                                   \fi \fi 
 l.217 
        <./CONclientserver.png> <./NONOackSeqDiagram2.png>]
-<coapCONwiresharksetUpSequence.png, id=676, 798.985pt x 316.18124pt>
+<coapCONwiresharksetUpSequence.png, id=686, 798.985pt x 316.18124pt>
 File: coapCONwiresharksetUpSequence.png Graphic file (type png)
 
 <use coapCONwiresharksetUpSequence.png>
@@ -2571,7 +2574,7 @@ Package pdftex.def Info: coapCONwiresharksetUpSequence.png used on input line 2
 20.
 (pdftex.def)             Requested size: 364.0pt x 144.04602pt.
 
-<CoAPMessageFormat.png, id=680, 484.81125pt x 163.61125pt>
+<CoAPMessageFormat.png, id=690, 484.81125pt x 163.61125pt>
 File: CoAPMessageFormat.png Graphic file (type png)
 
 <use CoAPMessageFormat.png>
@@ -2593,7 +2596,7 @@ l.251
                                                   \fi \fi 
 l.251 
        <./coapCONwiresharksetUpSequence.png> <./CoAPMessageFormat.png>]
-<mqttSeqDiagram.png, id=693, 514.92375pt x 304.13625pt>
+<mqttSeqDiagram.png, id=702, 514.92375pt x 304.13625pt>
 File: mqttSeqDiagram.png Graphic file (type png)
 
 <use mqttSeqDiagram.png>
@@ -2606,7 +2609,7 @@ Package pdftex.def Info: mqttSeqDiagram.png used on input line 255.
                                                   \fi \fi 
 l.272 
        <./mqttSeqDiagram.png>]
-<CopperExample.png, id=721, 703.62875pt x 431.6125pt>
+<CopperExample.png, id=730, 703.62875pt x 431.6125pt>
 File: CopperExample.png Graphic file (type png)
  <use CopperExample.png>
 Package pdftex.def Info: CopperExample.png used on input line 275.
@@ -2622,7 +2625,7 @@ l.139 \include{background}
 \openout2 = `architecture.aux'.
 
  (./architecture.tex
-<architectureIntro4.png, id=734, 487.8225pt x 363.3575pt>
+<architectureIntro4.png, id=743, 487.8225pt x 363.3575pt>
 File: architectureIntro4.png Graphic file (type png)
 
 <use architectureIntro4.png>
@@ -2649,7 +2652,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 [22] [23] [24] [25]
-<connectionADXL-nrf5.png, id=811, 555.07375pt x 809.0225pt>
+<connectionADXL-nrf5.png, id=820, 555.07375pt x 809.0225pt>
 File: connectionADXL-nrf5.png Graphic file (type png)
 
 <use connectionADXL-nrf5.png>
@@ -2731,7 +2734,7 @@ LaTeX Warning: Marginpar on page 30 moved by 15.13544pt.
 
 
 ] [32]
-<ping3.png, id=939, 739.76375pt x 957.5775pt>
+<ping3.png, id=948, 739.76375pt x 957.5775pt>
 File: ping3.png Graphic file (type png)
  <use ping3.png>
 Package pdftex.def Info: ping3.png used on input line 56.
@@ -2745,7 +2748,7 @@ Underfull \vbox (badness 1997) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.68 
-      <./ping3.png>] <trainExample.png, id=972, 710.655pt x 275.0275pt>
+      <./ping3.png>] <trainExample.png, id=981, 710.655pt x 275.0275pt>
 File: trainExample.png Graphic file (type png)
 
 <use trainExample.png>
@@ -2768,7 +2771,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.127 
-      ] <CoAPCON_0-200_Thicker4.png, id=1020, 1626.075pt x 879.285pt>
+      ] <CoAPCON_0-200_Thicker4.png, id=1029, 1626.075pt x 879.285pt>
 File: CoAPCON_0-200_Thicker4.png Graphic file (type png)
 
 <use CoAPCON_0-200_Thicker4.png>
@@ -2785,31 +2788,31 @@ Underfull \vbox (badness 1019) has occurred while \output is active []
 l.166 
       ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 183.
+(Font)              <9> on input line 185.
  [38pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.196 
+l.198 
        <./CoAPCON_0-200_Thicker4.png>] [39pdfTeX warning (ext4): destination wi
 th the same identifier (name{table.4.3}) has been already used, duplicate ignor
 ed
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.219 
+l.221 
       pdfTeX warning (ext4): destination with the same identifier (name{table.4
 .4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.219 
-      ] <CONvsNONplot_0-200_thicker3.png, id=1078, 1626.075pt x 879.285pt>
+l.221 
+      ] <CONvsNONplot_0-200_thicker3.png, id=1087, 1626.075pt x 879.285pt>
 File: CONvsNONplot_0-200_thicker3.png Graphic file (type png)
 
 <use CONvsNONplot_0-200_thicker3.png>
-Package pdftex.def Info: CONvsNONplot_0-200_thicker3.png used on input line 232
+Package pdftex.def Info: CONvsNONplot_0-200_thicker3.png used on input line 234
 .
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
  [40pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
@@ -2817,7 +2820,7 @@ Package pdftex.def Info: CONvsNONplot_0-200_thicker3.png used on input line 232
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.242 
+l.246 
        <./CONvsNONplot_0-200_thicker3.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2830,155 +2833,151 @@ Overfull \vbox (36.42517pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.307 
+l.311 
       ]
-
-LaTeX Warning: Reference `fig:plotCoAPCON200toK' on page 43 undefined on input 
-line 318.
-
-
-LaTeX Warning: Marginpar on page 43 moved by 0.4217pt.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
-<CONvsNON0tokilobytes.png, id=1143, 1626.075pt x 879.285pt>
-File: CONvsNON0tokilobytes.png Graphic file (type png)
-
-<use CONvsNON0tokilobytes.png>
-Package pdftex.def Info: CONvsNON0tokilobytes.png used on input line 389.
-(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44pdfTeX warning (ext4): destination with the same identifier (name{table.4.6
+ [43pdfTeX warning (ext4): destination with the same identifier (name{table.4.6
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.392 \end{figure}
-                  ] [45pdfTeX warning (ext4): destination with the same identif
-ier (name{figure.4.5}) has been already used, duplicate ignored
+l.361 
+      ] <CONvsNON0tokilobytes.png, id=1170, 1626.075pt x 879.285pt>
+File: CONvsNON0tokilobytes.png Graphic file (type png)
+
+<use CONvsNON0tokilobytes.png>
+Package pdftex.def Info: CONvsNON0tokilobytes.png used on input line 395.
+(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
+ [44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.447 
+l.441 
        <./CONvsNON0tokilobytes.png>]
-<bytesPrSecondNew2.png, id=1165, 1626.075pt x 879.285pt>
+
+LaTeX Warning: Reference `goodputTimeNON' on page 46 undefined on input line 45
+2.
+
+<bytesPrSecondNew2.png, id=1205, 1626.075pt x 879.285pt>
 File: bytesPrSecondNew2.png Graphic file (type png)
 
 <use bytesPrSecondNew2.png>
-Package pdftex.def Info: bytesPrSecondNew2.png used on input line 452.
+Package pdftex.def Info: bytesPrSecondNew2.png used on input line 456.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
- [46pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<bytesPrSecondNewNON.png, id=1209, 1626.075pt x 879.285pt>
+File: bytesPrSecondNewNON.png Graphic file (type png)
+
+<use bytesPrSecondNewNON.png>
+Package pdftex.def Info: bytesPrSecondNewNON.png used on input line 467.
+(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[46]
+
+LaTeX Warning: Marginpar on page 47 moved by 0.4217pt.
+
+
+Underfull \vbox (badness 2735) has occurred while \output is active []
+
+ [47pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.459 
-       <./bytesPrSecondNew2.png>]
-
-LaTeX Warning: Marginpar on page 47 moved by 0.4217pt.
-
-<bytesPrSecondNewNON.png, id=1177, 1626.075pt x 879.285pt>
-File: bytesPrSecondNewNON.png Graphic file (type png)
-
-<use bytesPrSecondNewNON.png>
-Package pdftex.def Info: bytesPrSecondNewNON.png used on input line 463.
-(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
-
-<avgTimeCONNON.png, id=1183, 1626.075pt x 879.285pt>
-File: avgTimeCONNON.png Graphic file (type png)
- <use avgTimeCONNON.png>
-Package pdftex.def Info: avgTimeCONNON.png used on input line 473.
-(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[47pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7
-}) has been already used, duplicate ignored
+l.473 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.489 
-       <./bytesPrSecondNewNON.png>]
-<goodput_payload_CON.png, id=1202, 1626.075pt x 879.285pt>
+l.473 
+       <./bytesPrSecondNew2.png> <./bytesPrSecondNewNON.png>]
+<avgTimeCONNON.png, id=1232, 1626.075pt x 879.285pt>
+File: avgTimeCONNON.png Graphic file (type png)
+ <use avgTimeCONNON.png>
+Package pdftex.def Info: avgTimeCONNON.png used on input line 477.
+(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
+
+<goodput_payload_CON.png, id=1244, 1626.075pt x 879.285pt>
 File: goodput_payload_CON.png Graphic file (type png)
 
 <use goodput_payload_CON.png>
-Package pdftex.def Info: goodput_payload_CON.png used on input line 496.
+Package pdftex.def Info: goodput_payload_CON.png used on input line 500.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
-
-<goodput_payload_NON.png, id=1203, 1626.075pt x 879.285pt>
-File: goodput_payload_NON.png Graphic file (type png)
-
-<use goodput_payload_NON.png>
-Package pdftex.def Info: goodput_payload_NON.png used on input line 503.
-(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[48pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8
-}) has been already used, duplicate ignored
+ [48pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.512 
-       <./avgTimeCONNON.png>]
-Underfull \vbox (badness 2735) has occurred while \output is active []
+l.503 \end{figure}
+                   <./avgTimeCONNON.png>]
+<goodput_payload_NON.png, id=1251, 1626.075pt x 879.285pt>
+File: goodput_payload_NON.png Graphic file (type png)
 
+<use goodput_payload_NON.png>
+Package pdftex.def Info: goodput_payload_NON.png used on input line 507.
+(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
  [49pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.512 
+l.514 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.512 
+l.514 
        <./goodput_payload_CON.png> <./goodput_payload_NON.png>]
-<payloadGoodput_CONNON.png, id=1242, 1626.075pt x 879.285pt>
+<payloadGoodput_CONNON.png, id=1284, 1626.075pt x 879.285pt>
 File: payloadGoodput_CONNON.png Graphic file (type png)
 
 <use payloadGoodput_CONNON.png>
-Package pdftex.def Info: payloadGoodput_CONNON.png used on input line 518.
+Package pdftex.def Info: payloadGoodput_CONNON.png used on input line 522.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
- [50pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [50]
+<bestCaseworstCase3.png, id=1300, 1626.075pt x 879.285pt>
+File: bestCaseworstCase3.png Graphic file (type png)
+
+<use bestCaseworstCase3.png>
+Package pdftex.def Info: bestCaseworstCase3.png used on input line 545.
+(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
+ [51pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.532 \newpage
-               <./payloadGoodput_CONNON.png>]
-<bestCaseworstCase3.png, id=1260, 1626.075pt x 879.285pt>
-File: bestCaseworstCase3.png Graphic file (type png)
-
-<use bestCaseworstCase3.png>
-Package pdftex.def Info: bestCaseworstCase3.png used on input line 541.
-(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
- [51pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-12}) has been already used, duplicate ignored
+l.551 
+       <./payloadGoodput_CONNON.png>] [52pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.4.12}) has been already used, duplicate igno
+red
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.547 
-       <./bestCaseworstCase3.png>]) [52]
+l.568 
+       <./bestCaseworstCase3.png>]) [53]
 \openout2 = `dataAnalysis.aux'.
 
- (./dataAnalysis.tex [53
+ (./dataAnalysis.tex [54
 
 
 
-] [54]
+] [55] [56]
 Underfull \vbox (badness 2662) has occurred while \output is active []
 
- [55]
+ [57]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 64.
@@ -2986,27 +2985,27 @@ LaTeX Warning: No positions in optional float specifier.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56pdfTeX warning (ext4): destination with the same identifier (name{table.5.1
+ [58pdfTeX warning (ext4): destination with the same identifier (name{table.5.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.85 
-     ]) [57]
+     ]) [59]
 \openout2 = `results.aux'.
 
- (./results.tex [58
+ (./results.tex [60
 
 
 
 ]
-<ArchitectureChapIntro1.png, id=1379, 753.81625pt x 475.7775pt>
+<ArchitectureChapIntro1.png, id=1428, 753.81625pt x 475.7775pt>
 File: ArchitectureChapIntro1.png Graphic file (type png)
 
 <use ArchitectureChapIntro1.png>
 Package pdftex.def Info: ArchitectureChapIntro1.png used on input line 17.
 (pdftex.def)             Requested size: 364.0pt x 229.73543pt.
-) [59] [60pdfTeX warning (ext4): destination with the same identifier (name{fig
+) [61] [62pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -3043,29 +3042,29 @@ Overfull \hbox (39.01819pt too wide) in paragraph at lines 37--40
 .nordicsemi.com/eng/Products/S110-
  []
 
-[61
+[63
 
 
-]) [62]
+]) [64]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
-) [63
+) [65
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
+ [66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65])
-[66]
+ [67])
+[68]
 \openout2 = `appendixB.aux'.
 
- (./appendixB.tex <0byteCONwireshark.png, id=1546, 963.6pt x 1156.32pt>
+ (./appendixB.tex <0byteCONwireshark.png, id=1596, 963.6pt x 1156.32pt>
 File: 0byteCONwireshark.png Graphic file (type png)
 
 <use 0byteCONwireshark.png>
@@ -3076,12 +3075,34 @@ Overfull \hbox (36.40222pt too wide) in paragraph at lines 10--11
  [][] 
  []
 
-) [67
+[69
 
 
 
-] [68pdfTeX warning (ext4): destination with the same identifier (name{figure.B
-.1}) has been already used, duplicate ignored
+]
+Overfull \hbox (35.16455pt too wide) in paragraph at lines 77--101
+ [][] 
+ []
+
+
+Overfull \hbox (35.16455pt too wide) in paragraph at lines 110--131
+ [][] 
+ []
+
+) [70pdfTeX warning (ext4): destination with the same identifier (name{table.B.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.164 \include{appendixB}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{table.B.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.164 \include{appendixB}
+                         ] [71pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.B.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3089,18 +3110,19 @@ l.164 \include{appendixB}
                           <./0byteCONwireshark.png>]
 \openout2 = `appendixc.aux'.
 
- (./appendixc.tex [69
+ (./appendixc.tex [72
 
 
 
 ]
+[73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
+ [74]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71])
-[72]
+ [75])
+[76]
 \tf@toc=\write10
 \openout10 = `main.toc'.
 
@@ -3125,43 +3147,47 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 2B9AA0BBDD8EF1617C6B28BE5FCA5C34;2079
-(rerunfilecheck)             After:  2F2E3BEF12713F1E32A37AD0331CB795;2079.
+(rerunfilecheck)             Before: C23A83DBBEBAC7069EC24CBABE20A535;2136
+(rerunfilecheck)             After:  37EA6C0FC007F9D8D43A25CC1C7D4AC1;2136.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 35274 strings out of 493304
- 568470 string characters out of 6139871
- 943911 words of memory out of 5000000
- 37189 multiletter control sequences out of 15000+600000
- 111903 words of font info for 166 fonts, out of 8000000 for 9000
+ 35269 strings out of 493304
+ 568155 string characters out of 6139871
+ 943792 words of memory out of 5000000
+ 37178 multiletter control sequences out of 15000+600000
+ 114897 words of font info for 167 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  69i,14n,78p,1990b,2050s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section*.27} has been referenced but does not exi
+pdfTeX warning (dest): name{section*.24} has been referenced but does not exi
 st, replaced by a fixed one
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
 exmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-t
 s1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (90 pages, 6511430 bytes).
+ts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx7.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmtt9.pfb>
+Output written on main.pdf (94 pages, 6541082 bytes).
 PDF statistics:
- 1890 PDF objects out of 2073 (max. 8388607)
- 1712 compressed objects within 18 object streams
- 559 named destinations out of 1000 (max. 500000)
- 30651 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1952 PDF objects out of 2073 (max. 8388607)
+ 1769 compressed objects within 18 object streams
+ 564 named destinations out of 1000 (max. 500000)
+ 31171 words of extra memory for PDF output out of 35830 (max. 10000000)
 
