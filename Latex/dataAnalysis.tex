@@ -1,13 +1,11 @@
 \chapter{Discussion}
 \label{chp:dataAnalysis}
 
-\todo{IDEA: "Collect" the strings put out in the first chapter, which told us the challenges in a system of microcontrollers. This chapter could tell what we learned from the system, and what is still a challenge. Or should all of this be in the Result chapter? }
-
 \section{Set up network}
 
 \noindent \textbf{O.1: Build a star network of microcontrollers}
 
-This objective was fulfilled by using the Raspberry Pi as a central node and nRF52s as end nodes. Central points in the solution was the use of a version of Linux with pre-configured kernel of version 4.15 or later on Raspberry Pi 3. In addition it was important to understand how prefix in gls{ipv6} works, and how this can be used on a bluetooth device. In this solution the end nodes woth \glspl{nRF52} works as servers, while the central Raspberry Pi works as a client requesting services from these servers. 
+This objective was fulfilled by using the Raspberry Pi as a central node and nRF52s as end nodes. Central points in the solution was the use of a version of Linux \gls{os} with pre-configured kernel of version 4.15 or later on the \gls{Raspberry Pi}. In addition it was important to understand how prefix in gls{ipv6} works, and how this can be used to identify a device connected using \gls{ble}. In this solution the end nodes woth \glspl{nRF52} works as servers, while the central Raspberry Pi works as a client requesting services from these servers. 
 
 
 \noindent \textbf{R.1: Which technologies and transport protocols are suitable in such a network?}
@@ -50,15 +48,14 @@ This object was fulfilled by analysing the data by printing out table and plotti
 
 \noindent\textbf{R.4: Could data analysing be done in the end nodes in this network?}
 
-Referring to the result from research question R.3, where the maximum capacity of the \gls{microcontroller} is needed to capture acceleration data from the accelerometer to get the desired quality of the data, and forward this to a central node. The end nodes are running on battery power, and is already consuming a lot of energy. To do even more calculations in these nodes will not be preferable in this network. The answer is therefore no, more detailed analysing and representation of the data should be done in a central node with more computational power and better access to power sources. 
+Referring to the result from research question R.3. The maximum capacity of the \gls{microcontroller} is needed to capture acceleration data from the accelerometer, get the desired quality of the data, and forward this to a central node. The end nodes are running on battery power, and is already consuming a lot of energy. To do even more calculations in these nodes will not be preferable in this network. This will be possible if the node is one of many nodes in a complete network, where every node gets some time of sleep between every measurement. Even here it is probably not a good idea, concerning the use of batteries. The answer is therefore no, more detailed analysing and representation of the data should be done in a central node with more computational power and better access to power sources. 
 
+\newpage
 \subsection{Measurements}
 
 \todo{Write more about problems, too slow network throughput, to unstable. }
 
 \noindent As a summary of the measurements performed in this thesis, the positive and negative aspects of the two versions of \gls{coap} that has been tested will be be directly compared to get a more clear understanding of the differences, advantages and disadvantages.
-
-
 
 
 \begin{table}[]
@@ -81,15 +78,12 @@ Need of ACKs                                                                    
 \end{tabular}
 \end{table}
 
+
 \noindent Table \ref{ComparisonTable} shows a summary of the main results found in the comparison of \gls{coap} \gls{con} and \gls{non} in the network presented in this thesis. Results from the table shows that in 7 of the 10 cases presented, \gls{non} shows the best results.  This should still not be a final result without discussion. As discussed in chapter \todo{Add chapter ref}, \gls{non} has been considerably more unstable than \gls{con} during the test period. It was not possible to get a stable connection when sending more frequently than once every second, and the connection became unstable if the payload was greater than 800 bytes. As a conclusion from this table it is clear to say that \gls{non} works best if the conditions are right, sending data every second with a payload between 500 and 700 bytes. In other cases than this, \gls{con} works better in the practical experiments presented.
 
-Looking at the network in general using \gls{coap}, the slowest transfer time is 2 seconds to transfer 1 kB of \gls{payload}. This is considered very slow through a network like this. \gls{ble} has a given \gls{mtu} of 1 MB per second, far beyond what has been achieved in the tests presented here. The highest achieved \gls{goodput} was about 500 bytes/second, or 1/2 MB/second. \gls{ble} is therefore not the main limitation in the network. \gls{coap} creates the messages sent, but should not influence on the network throughput, if not the action of making the packets in the end node is the limitation. \gls{6lowpan} is only used as a way of transporting data in the network, and will therefore not affect the throughput in the system. Final possibility is that the limitation is in the computational power of one of the devices communicating with each other. In this case it makes sense to assume the \gls{nRF52}, both since this is the sending part of the network needing to process the data and construct the packets being sent, and because it has significantly less power capacity than the \gls{Raspberry Pi}.
+\noindent Looking at the network in general using \gls{coap}, the slowest transfer time is 2 seconds to transfer 1 kB of \gls{payload}. This is considered very slow through a network like this. \gls{ble} has a given \gls{mtu} of 1 MB per second, far beyond what has been achieved in the tests presented here. The highest achieved \gls{goodput} was about 500 bytes/second, or 1/2 MB/second. \gls{ble} is therefore not the main limitation in the network. \gls{coap} creates the messages sent, but should not influence on the network throughput, if not the action of making the packets in the end node is the limitation. \gls{6lowpan} is only used as a way of transporting data in the network, and will therefore not affect the throughput in the system. Final possibility is that the limitation is in the computational power of one of the devices communicating with each other. In this case it makes sense to assume the \gls{nRF52}, both since this is the sending part of the network needing to process the data and construct the packets being sent, and because it has significantly less power capacity than the \gls{Raspberry Pi}.
 
-It brings the question up for discussion if it is profitable to send data larger than 1 kB at all. If the sending rate keeps climbing at the same rate as measured here, with a rate of 1 second slower for every 500 bytes. As a comparison it will take 1000 seconds to transfer 500 kb, which is more than 15 minutes. 
-
-
-\subsection{Power consumption}
-
+\noindent This brings the question up for discussion if it is profitable to send data larger than 1 kB at all. If the sending rate keeps climbing at the same rate as measured here, with a rate of 1 second slower for every 500 bytes. As a comparison it will take 1000 seconds to transfer 500 kb, which is more than 15 minutes. 
 
 
 \section{Ease of use}
@@ -97,17 +91,13 @@ It brings the question up for discussion if it is profitable to send data larger
 
 \subsection{Raspberry Pi}
 
+As a central device for the \glspl{microcontroller}, the \gls{Raspberry Pi} has worked great. There are several good options when it comes to choosing an \gls{os} that can be customised for a specific system, and several good guides that makes this a simple and fast small device for most end users. 
 
 
 \subsection{nRF52}
 
+The \gls{nRF52} requires a lot more experience both in programming and general understanding of computers to be used properly than the \gls{Raspberry Pi}. Online documentation is available and is usually very good, but also some times a bit confusing and messy. A great tool is the Nordic Semiconductor forum specially designed for questions regarding this and other Nordic devices\footnote{\url{https://devzone.nordicsemi.com}}. Example code is also provided by Nordic, to show how the device can be used with different technologies. These works as a starting point, but it is very time consuming and difficult for an end user without specific experience on this device to familiarize themselves with how this code works, in order to change to something else instead. The example code used as an example in this thesis was not optimized for battery consumption, and as a result the small battery drained very fast during the testing. This is of course possible to optimize for an experienced used, but should be taken into account for the average end user of such a device in a complete system. 
 
-
-%As a comparison, take the successful hybrid car Toyota Prius. Even though the factory tells that the car is able to drive X kilometres per liter of fuel used, this is only possible for a trained driver in a fixed environment. The average driver can still use the car, but is not skilful enough to drive as careful when it comes to power usage. The average driver therefore ends up using up the batteries much faster than the test driver, and uses the petrol powered engine after this. It may still be more economical than a normal car, but it is worth discussing if this is optimal, given that a car with two engines is more heavy and expensive to make in a direct comparison with a fully petrol powered car. 
-
-%Its the same story with the nRF52. A professional skilled programmer working on this specific device from Nordic Semiconductor will be able to use the low power abilities and still use do efficient computations. When starting from the example code for the device that is not optimized for power consumption and trying to make it do more and more work, the battery consumption simply is too much for this device. An average programmer will not have specific experience enough to program this device to be power efficient. 
-
-In the case of the system built in this thesis, the small CR 2033 batteries was drained so fast that an additional power source was needed to keep a stable and reliable system, since tests has shown that the probability of an nRF52 disconnecting from the connected \gls{ble} service is higher at low battery. This meant connecting either a power bank with higher capacity or drain power from an outlet using a micro \gls{usb}. %In this case, it would have been able to use the Raspberry Pi right away, since this needs the same source of power. This means in the end, that the system only had low performance end points that still needed a power source. 
 
 
 

@@ -57,16 +57,13 @@
 \contentsline {section}{\numberline {5.2}Gather sensor data}{56}{section.5.2}
 \contentsline {section}{\numberline {5.3}Send data through network}{56}{section.5.3}
 \contentsline {section}{\numberline {5.4}Analyse data}{57}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Measurements}{57}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Power consumption}{59}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.1}Measurements}{58}{subsection.5.4.1}
 \contentsline {section}{\numberline {5.5}Ease of use}{59}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{59}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}nRF52}{59}{subsection.5.5.2}
 \contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{61}{chapter.6}
 \contentsline {section}{\numberline {6.1}Future Work}{62}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{62}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Sensors}{62}{subsection.6.1.2}
-\contentsline {chapter}{References}{63}{section*.21}
+\contentsline {chapter}{References}{63}{section*.20}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{65}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}Appendix B}{69}{appendix.B}
