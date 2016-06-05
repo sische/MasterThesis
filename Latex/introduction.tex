@@ -16,7 +16,7 @@
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.52]{introductionIoT2.png}    
+    \includegraphics[width=0.9\textwidth]{introductionIoT2.png}    
     \caption{Example of IoT architecture}
     \label{iotExampleArchitecture}
 \end{figure}
@@ -27,29 +27,30 @@
 
 %is known as the concept of connecting everyday physical devices to the Internet. It is natural to assume that the popularity and development within this field will increase in the following years. This means that more and more things will be able to communicate over the Internet. In the process of developing IoT, an important part is to build reliable and scalable networks, and understanding where data should be processed concerning power consumptions and costs of transferring data in different parts of the network.
 
-\noindent A central prosecutor in developing technologies to be used is Nordic Semiconductor. As described on their web page: 
+\noindent A central prosecutor in developing technologies to be used is Nordic Semiconductor. Having one of the world leading companies developing \gls{microcontroller} based in Trondheim, is also a motivation, it seems like a perfect opportunity for a project on \gls{ntnu}. 
+%As described on Nordics web page: 
 
-\begin{displayquote}
-\textit{The future of electronics is wireless and portable due to an almost insatiable consumer demand for ever greater levels of freedom and flexibility. Nordic Semiconductor is playing a key role in the realization of that future, by providing ultra low power (ULP) wireless chips that can run for a long time from small power sources, like watch batteries \cite{aboutNordic}.}
-\end{displayquote}
+%\begin{displayquote}
+%\textit{The future of electronics is wireless and portable due to an almost insatiable consumer demand for ever greater levels of freedom and flexibility. Nordic Semiconductor is playing a key role in the realization of that future, by providing ultra low power (ULP) wireless chips that can run for a long time from small power sources, like watch batteries \cite{aboutNordic}.}
+%\end{displayquote}
 
-This 
+
 
 %\section{Methodology}
 
 %Remove? 
 
-
+\newpage
 
 \section{Scope and Objectives}
 
 \subsection{Scope}
 
-\noindent This thesis will mainly focus on the best way of optimizing transportation and analysing of data in an IoT network. The goal is to find the optimal solution on how to treat data, concerning:
+\noindent This thesis will mainly focus on the best way of optimizing transportation and analysing of data in an \gls{iot} network. The goal is to find the optimal solution on how to treat data, and central points of discussion will be:
 
 \begin{itemize}
-	\item Gathering data from sensor efficiently, both concerning time and power consumption
-	\item Transporting data efficiently, concerning power consumption and optimal throughput, both concerning time spent and amount of useful data that gets through
+	\item How to gather data from sensor efficiently, both concerning time and power consumption
+	\item How to transport data efficiently, concerning power consumption and optimal throughput, both concerning time spent and amount of useful data that gets through
 	\item Where in the network it is preferable to analyse the raw data, concerning energy consumption and time spent in total
 \end{itemize}
 
@@ -80,7 +81,7 @@ To achieve this, some explanation of background protocols, devices used and netw
 
 \noindent To answer this question, the network must be built and tested, to see if there are any noticeable differences in the protocols tested.
 
-\noindent\textbf{R.2: What are the main limitations when it comes to transporting data?}
+\noindent\textbf{R.2: What are the main limitations concerning transporting data?}
 
 \noindent This question must be answered by measuring time spent in the different parts of the network during routing of packets, to determine the bottle neck of the network or system. 
 

@@ -3,15 +3,8 @@
 
 Appendix B contains screenshots and detailed figures from the measurements done in the network built in this thesis. This is meant to be a supplement to the figures presented earlier in the thesis to give the reader a deeper understanding of the system. In addition to the measurements presented here, all data gathered from the system and code used will be public GitHub, \url{http://github.com/sische/MasterThesis}. 
 
-The following capture shows a part of a Wireshark capture, as described in chapter \ref{chp:measurements2}.1. This capture shows a \gls{payload} of 0 byte sent using \gls{coap} \gls{non}, and was the base for values used in table \ref{coapCON0table}. 
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=1.1\textwidth]{0byteCONwireshark.png}    
-    \caption{Wireshark capture, 0 bytes C. }
-    \label{fig:wireshark0byteCONappendixB}
-\end{figure}
-
+The following two tables present values discussed in chapter 4. These are minimum, average and maximum values of goodput and time between each \gls{coap} packet, using both \gls{con} and \gls{non}. These values have been found by monitoring more than 100 packets in each case. 
 
 %\begin{center}
 % \begin{tabular}{||c c c c||} 
@@ -129,4 +122,15 @@ The following capture shows a part of a Wireshark capture, as described in chapt
 850              & 556.62               & 591.37               & 609.83               & 1.39              & 1.44              & 1.53              \\ \hline
 \end{tabular}
 \end{table}
+
+
+
+The following capture shows a part of a Wireshark capture, as described in chapter \ref{chp:measurements2}.1. This capture shows a \gls{payload} of 0 byte sent using \gls{coap} \gls{non}, and was the base for values used in table \ref{coapCON0table}. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.1\textwidth]{0byteCONwireshark.png}    
+    \caption{Wireshark capture, 0 bytes C. }
+    \label{fig:wireshark0byteCONappendixB}
+\end{figure}
 

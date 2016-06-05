@@ -124,7 +124,8 @@
 \subsection{Bluetooth Low Energy}
 
 \noindent \gls{ble}, also known as \textit{Bluetooth Smart}, is a wireless technology for short range communication developed by the Bluetooth Special Interest Group. The idea was to create a low energy single-hop network solution for \glspl{pan}. A major advantage of this solution is that Bluetooth 4.0 already is a well established technology in cell phones, laptops and several other devices. This means that few changes needs to be made to these devices to be able to work with bluetooth smart. Still to this date, a device that only implements \gls{ble} is not able to communicate with a device that only implements classic Bluetooth \cite{gomez2012overview}.
-The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot} \cite{hui2008extending} \todo{Denne linken snakker om 6lowpan, flytte til etter jeg har presentert 6LoWPAN?}.
+The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot} \cite{hui2008extending} 
+%\todo{Denne linken snakker om 6lowpan, flytte til etter jeg har presentert 6LoWPAN?}.
 
 \begin{figure}[ht]
     \centering
@@ -149,7 +150,7 @@ The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot
 %Check out: Mikhail Galeev - BLE
 
 \subsection{6LoWPAN}
-\todo{Write even more in this section?}
+%\todo{Write even more in this section?}
 
 \noindent \gls{6lowpan} is a defined protocol for using \gls{ipv6} in low energy networks, to identify sensors and devices, as defined in the IEEE 802.15.4. To use the Internet Protocol in low energy networks in addition to standard networks was proposed by Geoff Mulligan and the 6LoWPAN Working Group. This was chosen because it seemed like a simple and smart protocol definition. Since packets in this network can end up being forwarded all the way from a \ref{microcontroller} to a central computer through several nodes without being changed, it makes sense to use the same base protocol for all links. In \cite{mulligan20076lowpan}, the advantage of \gls{6lowpan} is explained as not too big to be used in small networks with a small header field, and more flexible to network sized compared to \textit{Zigbee} and \textit{Zensys}. 
 
@@ -176,7 +177,9 @@ The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot
 
 \noindent \gls{coap} is a transport protocol designed to be used in constrained networks for \gls{m2m} communication. It is \gls{udp} based, and works good in low-power and lossy networks. It can be used with microcontrollers, and with \gls{ipv6} and \gls{6lowpan}. Both GET and PUSH functionality can be used, as well as \textit{observable} GET. This means that a server can "subscribe" to end notes in the network, and get updates either after a given timespan or when changes have been made. This therefore looked like a promising protocol to use, and was chosen as the main transport protocol to test in the network \cite{shelby2014constrained}. The main technical features described in \gls{coap} includes fulfilling \gls{m2m} requirements, support of asynchronous messages, gls{udp} based communication and stateless mapping to \gls{http}. 
 
-\noindent CoAP has several similarities with \gls{http}, using the same client and server roles. The client sends a request, and the server sends a response back. Many of the response codes are also very similar, with \textit{404: Not found} as the best known. When \gls{m2m} communication is used, both participants sometimes needs to be both client and server, and the \gls {coap} protocol handles this with a two-layer approach. \todo{make figure of CoAP Layering}. There are four different main messages defined in gls{coap} \cite{shelby2014constrained}. 
+\noindent CoAP has several similarities with \gls{http}, using the same client and server roles. The client sends a request, and the server sends a response back. Many of the response codes are also very similar, with \textit{404: Not found} as the best known. When \gls{m2m} communication is used, both participants sometimes needs to be both client and server, and the \gls {coap} protocol handles this with a two-layer approach. There are four different main messages defined in gls{coap} \cite{shelby2014constrained}. 
+
+%\todo{make figure of CoAP Layering}.
 
 \begin{itemize}
 	\item A Confirmable message, \gls{con}, require one \gls{ack} for every packet received. If a message is not received correctly, the receiver will ask for exactly return message of the type Acknowledgement. 
