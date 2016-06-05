@@ -449,17 +449,18 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 
 %\todo{Re-write}  
 
-\noindent There are several ways to measure throughput compared to time used. For instance by calculating the number of seconds it takes to transfer a known number of bytes, or the number of bytes that are transported on average every second. To calculate this, values from measurements shown in table \ref{goodputTimeCON} and \ref{goodputTimeNON} in appendix \ref{chp:appendixb} was used. The numbers shown in these tables and used in the following experiments have been measured by sending a considerable amount of packets through the network \footnote{All measurements can be seen on GitHub: \url{https://github.com/sische/MasterThesis}}. In most cases more than 100 \gls{coap} packets was sent for each constant payload, to find the minimum, average and maximum value for both the time used to transfer a packet and the \gls{goodput} in each case. The rest of the experiment is well documented data, based on measured values which can be found on \url{https://github.com/sische/MasterThesis/measurements}.  
+\noindent There are several ways to measure throughput compared to time used. For instance by calculating the number of seconds it takes to transfer a known number of bytes, or the number of bytes that are transported on average every second. To calculate this, values from measurements shown in table \ref{goodputTimeCON} and \ref{goodputTimeNON} in appendix \ref{chp:appendixb} was used. The numbers shown in these tables and used in the following experiments have been measured by sending a considerable amount of packets through the network\footnote{All measurements can be seen on GitHub: \url{https://github.com/sische/MasterThesis}}. In most cases more than 100 \gls{coap} packets was sent for each constant payload, to find the minimum, average and maximum value for both the time used to transfer a packet and the \gls{goodput} in each case. 
+%The rest of the experiment is well documented data, based on measured values which can be found on \url{https://github.com/sische/MasterThesis/measurements}.  
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=1.0\textwidth]{bytesPrSecondNew2.png}    
+    \includegraphics[width=1.0\textwidth]{bytesPrSecondNew3.png}    
     \caption{Time used to transfer payload CON}
     \label{fig:bytesPRSecond3}
 \end{figure}
-\todo{FLIP verdier for max og avg i 100 byte payload,}
 
-\noindent Figure \ref{fig:bytesPRSecond3} shows the minimum, average and maximum time it took to send a constant payload through the network using \gls{con}. This variation from minimum to maximum time used is relevant to see the stability in the network, how much it can be trusted. A system carrying important data needs a stable transfer rate at all times, not only a good average value. In this case the most extreme jump comes at 350 bytes, where the max. value is almost 1 second, while the average is approximately 0.7 seconds. Both the average and minimum graph has a quite linear development, with the exception of 900 bytes. \todo{Don't now exactly why, should i remove it?} The lowest transfer rate for \gls{con} is when the payload is below 100 bytes. The transfer time at this payload is about 300 ms, which seems logical concerning the ping tests in the beginning of the chapter at 250 ms. The slowest transfer time is the max value when transferring 950 bytes, when the time is approaching 2 seconds, which is considered quite slow through a network like this. 
+
+\noindent Figure \ref{fig:bytesPRSecond3} shows the minimum, average and maximum time it took to send a constant payload through the network using \gls{con}. This variation is relevant to see the stability in the network, how much it can be trusted. A system carrying important data needs a stable transfer rate at all times, not only a good average value. In this case the largest deviation from the average value is at 350 bytes, where the max. value is almost 1 second, while the average is approximately 0.7 seconds. Both the average and minimum graph has a quite linear development, with the exception of 900 bytes. \todo{Don't now exactly why, should i remove it?} The lowest transfer rate for \gls{con} is when the payload is below 100 bytes. The transfer time at this payload is about 300 ms, which seems logical concerning the ping tests in the beginning of the chapter at 250 ms. The slowest transfer time is the max value when transferring 950 bytes, when the time is approaching 2 seconds, which is considered quite slow through a network like this. 
 
 
 \begin{figure}[h!]
@@ -469,7 +470,7 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
     \label{fig:bytesPRSecond4}
 \end{figure}
 
-\noindent Time used to transfer a given payload using \gls{non} can be seen in figure \ref{fig:bytesPRSecond4}. This test graph shows a more unstable connection, even though the average transfer time is very stable. Because of problems concerning max-age of \gls{non} packets in \gls{non} \todo{Endre etter beskrevet i architecture?}, the fastest transfer frequency achieved in the system was 1 second. On average the transfer rate is very close to this, but the min and max values vary a lot. All the way from 0.85 seconds to 1.2 seconds in both 300 and 400 bytes payload. 600 bytes is the maximum payload where the system is still able to transfer data at 1 second rate, after this the graph starts to climb for larger payloads. For \gls{non} with a payload larger than 650 bytes, the network was too unstable to do the same amount of data as in previous tests. These values (NON > 650 bytes payload) are therefore not as certain as the rest of the tests considering amount of packets sent.
+\noindent Time used to transfer a given payload using \gls{non} can be seen in figure \ref{fig:bytesPRSecond4}. Even thought there are some slight variations from min. to max. time used, the average transfer frequency is very stable. Because of the described difficulties concerning Max-Age of the measured field in \gls{non}, the fastest transfer frequency achieved in the system was 1 second. On average the transfer rate is very close to this, but the min and max values vary a lot. All the way from 0.85 seconds to 1.2 seconds in both 300 and 400 bytes payload. 600 bytes is the maximum payload where the system is still able to transfer data at 1 second rate, after this the graph starts to climb for larger payloads. For \gls{non} with a payload larger than 650 bytes, the network was too unstable to do the same amount of data as in previous tests. These values (NON > 650 bytes payload) are therefore not as certain as the rest of the tests considering amount of packets sent.
 
 
 \begin{figure}[h!]
@@ -491,9 +492,15 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 
 \noindent To get a direct comparison of this data, the average values from \gls{con} and \gls{non} are being compared in figure \ref{fig:avgTimeCONNON}. This makes the differences between the two are easy to spot. It takes \textit{0.4} seconds to transfer 100 bytes goodput in \gls{con}, while this takes \textit{1} second using \gls{non}. However, as the graph shows, if the goodput is 500 byte, both versions of the protocol uses \textit{1} second to transfer the data. When the \gls{payload} reaches 600 byte, \gls{con} needs to use \textit{1.15} seconds to transfer the data, while \gls{non} is still able to only use \textit{1} second. After this \gls{con} is about \textit{150 ms} slower than \textit{non} to transfer the same payload, but this gap closes as the payload gets higher. In this case it is quite easy to see a trend - \gls{con} is definitely faster at small rates of data, below 500 byte. If the payload is bigger than this, gls{non} will be preferable, only taking the time to transfer a given number of data one way into account.
 
-\subsection{Goodput}
+%\subsection{Discussion}
 
-\noindent From another approach, it is possible to look at how many bytes that can be sent for every given time using the two different versions of the protocol. Figure \ref{fig:goodPayload_CON}  shows the direct correlation between the number of bytes sent every second. 
+%Previous graphical figures shows  
+\todo{Write in end-discussion}
+
+
+%\subsection{Goodput}
+
+\noindent From another approach, it is possible to look at how many bytes that can be sent for every given time using the two different versions of the protocol. This is profitable because this will show which payload size that gives the maximal \gls{throughput} for every time interval, and can possibly be exploited by both a developer and an end user in such a system. Figure \ref{fig:goodPayload_CON} shows the direct correlation between the number of bytes sent every second. 
 
 \begin{figure}[ht]
     \centering
@@ -515,7 +522,7 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 \noindent In the same case using \gls{non}, the graph starts to climb almost linear with a climbing rate of 100 bytes/second added for every 100 byte payload added, as seen in figure \ref{fig:goodPayload_NON}. This makes sense, given that the transfer interval is constant at once per second for \gls{payload} sizes from 0 to 600 bytes. Variation to min and max values occurs, but not more than expected compared to previous results. The highest achieved \gls{goodput} is 608 bytes/second, almost exactly the same as the maximum achieved in \gls{con}. For \glspl{payload} higher than this the \gls{goodput} drops down to about 580 and stays more or less constant there \footnote{Keep in mind that measurements for payload > 650 bytes in NON are unstable links, and does not rely on the same number of measurements as the rest of the tests}.
 
 
-\noindent The direct comparison of the average values of \gls{goodput} using \gls{con} and \gls{non} can be seen in figure \ref{fig:payloadGoodput_CONNON}. In this case both plots starts at \textit{0 byte/second}, since the payload is 0. After this, the graphs have quite different forms. \gls{non} has a very linear rise, all the way up to 600 byte payload. When transferring a payload of 100 bytes, \gls{con} is almost three times faster at \textit{305 bytes/second} compared to \textit{108 byte/second} using \gls{non}. \gls{con} therefore looks much more efficient for a small amount of data, but for payload bigger than 500 byte \gls{non} is preferable in this system.
+\noindent The direct comparison of the average values of \gls{goodput} using \gls{con} and \gls{non} can be seen in figure \ref{fig:payloadGoodput_CONNON}. In this case both plots starts at 0 bytes/second, since the payload is 0. After this, the graphs have quite different forms. \gls{non} has a very linear rise, all the way up to 600 byte payload. When transferring a payload of 100 bytes, \gls{con} is almost three times faster at \textit{305 bytes/second} compared to \textit{108 byte/second} using \gls{non}. \gls{con} therefore looks much more efficient for a small amount of data, but for payload bigger than 500 byte \gls{non} is preferable in this system.
 
 \begin{figure}[ht]
     \centering
@@ -554,7 +561,9 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 
 
 
-\noindent The main question to comparison comes down to how often the worst case occurs in comparison to best case. Sending payload of 500 byte in both cases, \gls{non} results in most best case scenarios, while \gls{con} results in \textit{only} worst case scenarios. In specific numbers, this gives an average of \textit{598 bytes} sent for \gls{non}, and \textit{791 bytes}. This gives us the following equations to calculate how much of the total bytes sent that constitutes of the \gls{payload}. \todo{Gjør igjen med mer data?}
+\noindent The main question to comparison comes down to how often the worst case occurs in comparison to best case. Sending payload of 500 byte in both cases, \gls{non} results in most best case scenarios, while \gls{con} results in \textit{only} worst case scenarios. In specific numbers, this gives an average of \textit{598 bytes} sent for \gls{non}, and \textit{791 bytes}. This gives us the following equations to calculate how much of the total bytes sent that constitutes of the \gls{payload}. These calculations are based on measurements similar to the one shown in table \ref{coapNON700table} and \ref{coapCON700table}\footnote{The complete table containing the measurements can be found on \url{https://www.github.com/sische/MasterThesis/measurements}}. 
+
+
 
 \begin{equation} \label{bestWorstEquation}
 	\frac{500 \, byte \, payload}{\frac{791 \, bytes \,*\, 15 \, packets}{15}}\,*\,100 \% \approx 63,21 \%\, payload \, (CON)
@@ -568,8 +577,12 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 
 
 
-\section{Discussion}
+\section{Chapter Summary}
 
-In this chapter the most central experiments performed in the project has been presented and compared. 
+In this chapter the most central experiments performed in the project has been presented and compared. The first problem up for discussion was if fragmentation of packets is a major issue in an \gls{iot} network like the network presented in this thesis. \Glspl{payload} from 0 to 1000 bytes was sent through the network, and the fragmented packets sent was being captured on the client side using Wireshark. Figure \ref{fig:NON0-kb} shows the comparison between \gls{con} and \gls{non}. This both show that there are very small differences between the two versions of the protocol, and that fragmentation of packets is not a major issue in such a network. 
+
+The next experiments focused on \gls{goodput} in the system, how much data can be sent per second. \gls{con} is faster at small \glspl{payload}, mostly because this is requested by GET-requests. At approximately 500 bytes \gls{payload} gls{con} start to use longer than 1 second to transfer, and is being bypassed by \gls{non}, which can send 600 bytes in one second. After this, both versions starts to climb with approximately a rate of 1 second per 500 bytes of \gls{payload}. Comparisons to the capacity of the different technologies are being discussed, to find out that these results are much lower than expected. Another comparison experiment presented shows that between 500 and 900 bytes \gls{payload} in \gls{con}, while 600 bytes \gls{payload} is the optimal for \gls{non}. This gives a maximal \gls{goodput} of approximately 600 bytes/second. 
+
+Because there are different additional protocols in the two versions of \gls{coap}, the amount of bytes sent in total through the network is not constant, even though the \gls{payload} is constant. Measurements show that \gls{non} require the least packets in best case, but also the most in worst case. Despite this, \gls{non} most of the time manages to stay on best case, giving it the best \% payload of all packets sent at 500 bytes, with 83,56 \% compared to 63,21 \% in \gls{con}.   
 
 

@@ -1,12 +1,13 @@
 \select@language {norsk}
 \select@language {english}
 \select@language {english}
+\select@language {english}
 \select@language {norsk}
 \select@language {english}
-\contentsline {chapter}{List of Figures}{xi}{section*.1}
-\contentsline {chapter}{List of Tables}{xiii}{section*.2}
-\contentsline {chapter}{List of Acronyms}{xv}{section*.3}
-\contentsline {chapter}{Glossary}{xvii}{section*.5}
+\contentsline {chapter}{List of Figures}{ix}{section*.1}
+\contentsline {chapter}{List of Tables}{xi}{section*.2}
+\contentsline {chapter}{List of Acronyms}{xiii}{section*.3}
+\contentsline {chapter}{Glossary}{xv}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Scope and Objectives}{3}{section.1.2}
@@ -49,9 +50,8 @@
 \contentsline {subsection}{\numberline {4.3.5}Discussion}{44}{subsection.4.3.5}
 \contentsline {section}{\numberline {4.4}Transfer rates}{46}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Time used to transfer payload}{46}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Goodput}{48}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Bytes sent through network, best and worst case}{51}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Discussion}{53}{section.4.5}
+\contentsline {subsection}{\numberline {4.4.2}Bytes sent through network, best and worst case}{51}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Chapter Summary}{53}{section.4.5}
 \contentsline {chapter}{\chapternumberline {5}Discussion}{55}{chapter.5}
 \contentsline {section}{\numberline {5.1}Set up network}{55}{section.5.1}
 \contentsline {section}{\numberline {5.2}Gather sensor data}{56}{section.5.2}
@@ -63,10 +63,10 @@
 \contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{59}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}nRF52}{59}{subsection.5.5.2}
 \contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{61}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{61}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Sensors}{61}{subsection.6.1.2}
-\contentsline {chapter}{References}{63}{section*.23}
+\contentsline {section}{\numberline {6.1}Future Work}{62}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Microcontrollers}{62}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Sensors}{62}{subsection.6.1.2}
+\contentsline {chapter}{References}{63}{section*.21}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{65}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}Appendix B}{69}{appendix.B}
