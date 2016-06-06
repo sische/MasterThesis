@@ -25,9 +25,9 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Ping nRF52, different time}}{34}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Packet fragmentation - train comparison}}{35}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces CoAP CON, 0-200 bytes sent}}{38}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces CON vs NON 0-200 bytes}}{40}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CON vs NON 0-1000 bytes}}{45}{figure.4.5}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces CoAP CON with ACKs, 0-200 bytes sent}}{38}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CON with ACKs vs NON 0-200 bytes}}{40}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CON with ACKs vs NON 0-1000 bytes}}{45}{figure.4.5}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Time used to transfer payload CON}}{46}{figure.4.6}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Time used to transfer payload NON}}{47}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Average time to transfer payload, CON vs NON}}{48}{figure.4.8}

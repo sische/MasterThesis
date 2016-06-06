@@ -1,3 +1,4 @@
+(indexentry :tkey (("IoT" "\\glossentry{iot}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("CoAP" "\\glossentry{coap}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("IoT" "\\glossentry{iot}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("6LoWPAN" "\\glossentry{6lowpan}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
