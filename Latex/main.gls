@@ -50,8 +50,9 @@
 \glsXpageXglsnumberformat{}{i}}}\relax\glsresetentrylist
 \glossentry{microcontroller}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{2}\delimN 
-\glsXpageXglsnumberformat{}{10}\delimN 
+\glsXpageXglsnumberformat{}{1}\delimR 
+\glsXpageXglsnumberformat{}{4}\delimN 
+\glsXpageXglsnumberformat{}{8}\delimN 
 \glsXpageXglsnumberformat{}{21}\delimN 
 \glsXpageXglsnumberformat{}{22}\delimN 
 \glsXpageXglsnumberformat{}{34}\delimN 
@@ -64,7 +65,7 @@
 \glossentry{nRF52}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
 \glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{11}\delimN 
+\glsXpageXglsnumberformat{}{10}\delimN 
 \glsXpageXglsnumberformat{}{12}\delimN 
 \glsXpageXglsnumberformat{}{15}\delimN 
 \glsXpageXglsnumberformat{}{21}\delimN 
@@ -112,7 +113,6 @@
 \glsgroupheading{S}\relax\glsresetentrylist
 \glossentry{singleBoardComputer}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{7}\delimN 
 \glsXpageXglsnumberformat{}{61}}}\glsgroupskip
 \glsgroupheading{T}\relax\glsresetentrylist
 \glossentry{throughput}{\glossaryentrynumbers{\relax 
