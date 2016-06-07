@@ -1,5 +1,7 @@
 (indexentry :tkey (("microcontroller" "\\glossentry{microcontroller}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("goodput" "\\glossentry{goodput}") ) :locref "{}{ii}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("single-board computer" "\\glossentry{singleBoardComputer}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("microcontroller" "\\glossentry{microcontroller}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("goodput" "\\glossentry{goodput}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Raspberry Pi" "\\glossentry{Raspberry Pi}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("ADXL345 Accelerometer" "\\glossentry{ADXL345}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 

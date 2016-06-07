@@ -27,8 +27,8 @@
 \contentsline {subsection}{\numberline {2.2.2}6LoWPAN}{14}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Other alternatives}{15}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Transport protocols}{15}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}CoAP}{16}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}MQTT}{19}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.1}CoAP}{15}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}MQTT}{18}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Software tools}{19}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}System Architecture}{21}{chapter.3}
 \contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{22}{section.3.1}
