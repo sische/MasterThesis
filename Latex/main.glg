@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 05.06.2016  22:27:44
-;; Indexstyle: "/tmp/6J2T7wl2aM", Rawindex: "/tmp/HkcWdx48Vb", Output: "main.gls"
+;; at 07.06.2016  11:00:10
+;; Indexstyle: "/tmp/MeqRPoooF4", Rawindex: "/tmp/H2MC9MnbEc", Output: "main.gls"
 
 
 Building indexentry-tree:
@@ -20,15 +20,15 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
+Letter-group: "»¨†ËÃ†Ã¼ÚËÃ´´—Ë" -> "M"
+Letter-group: "Ð¨¼´—„Ã€Ë †Ã»ÈàÚ—Ë" -> "S"
+Letter-group: "ÃÃÈàÚ" -> "G"
 Letter-group: "¼Ëœ52" -> "N"
 Letter-group: "Ë€ÐÈ„—ËËí È¨" -> "R"
 Letter-group: "€ë´345 €††—´—ËÃ»—Ú—Ë" -> "A"
 Letter-group: "»—ÐÐ€— ÚíÈ—" -> "M"
 Letter-group: "È€í´Ã€" -> "P"
-Letter-group: "ÃÃÈàÚ" -> "G"
 Letter-group: "Ú¤ËÃà¤ÈàÚ" -> "T"
-Letter-group: "»¨†ËÃ†Ã¼ÚËÃ´´—Ë" -> "M"
-Letter-group: "Ð¨¼´—„Ã€Ë †Ã»ÈàÚ—Ë" -> "S"
 Letter-group: "„íÚ—" -> "B"
 Letter-group: "»—ÐÐ€— †Ã—" -> "M"
 Letter-group: "È€†®—Ú" -> "P"

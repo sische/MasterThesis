@@ -50,6 +50,7 @@
 (indexentry :tkey (("IoT" "\\glossentry{iot}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("M2M" "\\glossentry{m2m}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("M2M" "\\glossentry{m2m}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("IoT" "\\glossentry{iot}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("IoT" "\\glossentry{iot}") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("NTNU" "\\glossentry{ntnu}") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("IoT" "\\glossentry{iot}") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 

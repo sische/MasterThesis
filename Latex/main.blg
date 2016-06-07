@@ -43,9 +43,6 @@ You're missing a field name---line 199 of file main.bib
  :  title = {{Nordic Semiconductor:} nRF52 Prewiev},
  :                                                  %
 I'm skipping whatever remains of this entry
-Warning--no key, author in aboutNordic
-Warning--no author, editor, or organization in aboutNordic
-Warning--to sort, need author or key in aboutNordic
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
 Warning--to sort, need author or key in newark
@@ -70,10 +67,6 @@ Warning--to sort, need author or key in nordicNrfDocumentation
 Warning--no key, author in ubuntuMate
 Warning--no author, editor, or organization in ubuntuMate
 Warning--to sort, need author or key in ubuntuMate
-Warning--no key, author in aboutNordic
-Warning--no author, editor, or organization in aboutNordic
-Warning--no key, author in aboutNordic
-Warning--no author, editor, or organization in aboutNordic
 Warning--no key, author in ant
 Warning--no author, editor, or organization in ant
 Warning--no key, author in ant
@@ -116,9 +109,6 @@ Warning--empty year in mqttWebsite
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
 Warning--empty year in newark
-Warning--no key, author in aboutNordic
-Warning--no author, editor, or organization in aboutNordic
-Warning--empty year in aboutNordic
 Warning--no key, author in nordicNrfDocumentation
 Warning--no author, editor, or organization in nordicNrfDocumentation
 Warning--empty year in nordicNrfDocumentation
@@ -142,45 +132,45 @@ Warning--page numbers missing in lamping2004wireshark
 Warning--no journal in shelby2014constrained
 Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
-You've used 21 entries,
+You've used 20 entries,
             2861 wiz_defined-function locations,
-            729 strings with 7822 characters,
-and the built_in function-call counts, 11386 in all, are:
-= -- 1012
+            724 strings with 7709 characters,
+and the built_in function-call counts, 11004 in all, are:
+= -- 974
 > -- 547
 < -- 3
 + -- 163
 - -- 188
-* -- 986
-:= -- 1754
-add.period$ -- 56
-call.type$ -- 21
-change.case$ -- 128
-chr.to.int$ -- 20
-cite$ -- 155
-duplicate$ -- 382
-empty$ -- 895
+* -- 952
+:= -- 1719
+add.period$ -- 53
+call.type$ -- 20
+change.case$ -- 123
+chr.to.int$ -- 19
+cite$ -- 140
+duplicate$ -- 366
+empty$ -- 851
 format.name$ -- 216
-if$ -- 2224
+if$ -- 2142
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 12
-newline$ -- 98
+newline$ -- 93
 num.names$ -- 120
-pop$ -- 181
+pop$ -- 169
 preamble$ -- 1
-purify$ -- 253
+purify$ -- 242
 quote$ -- 0
-skip$ -- 330
+skip$ -- 321
 stack$ -- 0
-substring$ -- 623
-swap$ -- 127
+substring$ -- 599
+swap$ -- 122
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 416
-warning$ -- 99
+type$ -- 396
+warning$ -- 89
 while$ -- 120
 width$ -- 0
-write$ -- 251
+write$ -- 239
 (There were 6 error messages)

@@ -19,7 +19,7 @@ The following sections will discuss if \textit{fragmentation} is a major issue w
 
 \noindent During measurements in the physical system, the actual result will probably be considerably lower than this, because \gls{6lowpan} and \gls{coap} packets could require some additional fields for each packet. There are also other additional protocols in \gls{ble} that will require some packets, like the occasional \glspl{ack} from ACL. It is also logical to expect some other disturbing factors in a real world wireless network. 
 
-\section{Possible limitations in the Network}
+\section{Possible limitations in the network}
 
 \subsection{Stable transfer rate}
 
@@ -532,7 +532,7 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1.0\textwidth]{goodput_payload_NON.png}    
-    \caption{Goodpyt compared to payload CoAP NON}
+    \caption{Goodput compared to payload CoAP NON}
     \label{fig:goodPayload_NON}
 \end{figure}
 
@@ -597,7 +597,7 @@ Number & Time    & Protocol & Length & Info                             \\ \hlin
 
 
 
-\section{Chapter Summary}
+\section{Chapter summary}
 
 \noindent In this chapter the most central experiments performed in the project has been presented and compared. The first problem up for discussion was if fragmentation of packets is a major issue in an \gls{iot} network like the network presented in this thesis. \Glspl{payload} from 0 to 1000 bytes was sent through the network, and the fragmented packets sent was being captured on the client side using Wireshark. Figure \ref{fig:NON0-kb} shows the comparison between \gls{con} and \gls{non}. This both show that there are very small differences between the two versions of the protocol, and that fragmentation of packets is not a major issue in such a network. 
 

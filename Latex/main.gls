@@ -37,8 +37,9 @@
 \glsXpageXglsnumberformat{}{i}, 
 \glsXpageXglsnumberformat{}{44}\delimN 
 \glsXpageXglsnumberformat{}{46}\delimN 
-\glsXpageXglsnumberformat{}{49}\delimN 
+\glsXpageXglsnumberformat{}{48}\delimR 
 \glsXpageXglsnumberformat{}{50}\delimN 
+\glsXpageXglsnumberformat{}{52}\delimN 
 \glsXpageXglsnumberformat{}{53}\delimN 
 \glsXpageXglsnumberformat{}{59}\delimN 
 \glsXpageXglsnumberformat{}{61}}}\glsgroupskip
@@ -56,6 +57,7 @@
 \glsXpageXglsnumberformat{}{34}\delimN 
 \glsXpageXglsnumberformat{}{51}\delimN 
 \glsXpageXglsnumberformat{}{57}\delimN 
+\glsXpageXglsnumberformat{}{59}\delimN 
 \glsXpageXglsnumberformat{}{61}\delimN 
 \glsXpageXglsnumberformat{}{62}}}\glsgroupskip
 \glsgroupheading{N}\relax\glsresetentrylist
@@ -72,9 +74,10 @@
 \glsXpageXglsnumberformat{}{31}\delimN 
 \glsXpageXglsnumberformat{}{33}\delimN 
 \glsXpageXglsnumberformat{}{55}\delimN 
+\glsXpageXglsnumberformat{}{56}\delimN 
 \glsXpageXglsnumberformat{}{59}\delimN 
 \glsXpageXglsnumberformat{}{62}\delimN 
-\glsXpageXglsnumberformat{}{76}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{74}}}\glsgroupskip
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossentry{packet}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
@@ -89,9 +92,10 @@
 \glsXpageXglsnumberformat{}{48}\delimN 
 \glsXpageXglsnumberformat{}{50}\delimR 
 \glsXpageXglsnumberformat{}{53}\delimN 
+\glsXpageXglsnumberformat{}{57}\delimN 
 \glsXpageXglsnumberformat{}{59}\delimN 
 \glsXpageXglsnumberformat{}{61}\delimN 
-\glsXpageXglsnumberformat{}{71}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{70}}}\glsgroupskip
 \glsgroupheading{R}\relax\glsresetentrylist
 \glossentry{Raspberry Pi}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
@@ -102,6 +106,8 @@
 \glsXpageXglsnumberformat{}{28}\delimN 
 \glsXpageXglsnumberformat{}{29}\delimN 
 \glsXpageXglsnumberformat{}{31}\delimN 
+\glsXpageXglsnumberformat{}{55}\delimN 
+\glsXpageXglsnumberformat{}{56}\delimN 
 \glsXpageXglsnumberformat{}{59}}}\glsgroupskip
 \glsgroupheading{S}\relax\glsresetentrylist
 \glossentry{singleBoardComputer}{\glossaryentrynumbers{\relax 
