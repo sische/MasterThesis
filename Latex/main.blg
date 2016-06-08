@@ -15,31 +15,31 @@ A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: appendixB.aux
 A level-1 auxiliary file: appendixc.aux
 Database file #1: main.bib
-I was expecting a `,' or a `}'---line 68 of file main.bib
+I was expecting a `,' or a `}'---line 76 of file main.bib
  : @article{Author: 
  :                  Sindre Schei year:2016,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 159 of file main.bib
+You're missing a field name---line 167 of file main.bib
  : 
  : % title = {{Nordic Semiconductor:} Development tools and Software},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 173 of file main.bib
+I was expecting a `,' or a `}'---line 181 of file main.bib
  : 
  : @misc{ubuntuMate,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 179 of file main.bib
+I was expecting a `,' or a `}'---line 187 of file main.bib
  : 
  : @misc{adxlDataSheet,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 195 of file main.bib
+I was expecting a `,' or a `}'---line 209 of file main.bib
  :  
  :  note = {Accessed: 27-01-16}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 199 of file main.bib
+You're missing a field name---line 213 of file main.bib
  :  title = {{Nordic Semiconductor:} nRF52 Prewiev},
  :                                                  %
 I'm skipping whatever remains of this entry
@@ -61,6 +61,9 @@ Warning--to sort, need author or key in mqttWebsite
 Warning--no key, author in nordicSoftwareTools
 Warning--no author, editor, or organization in nordicSoftwareTools
 Warning--to sort, need author or key in nordicSoftwareTools
+Warning--no key, author in copper2
+Warning--no author, editor, or organization in copper2
+Warning--to sort, need author or key in copper2
 Warning--no key, author in nordicNrfDocumentation
 Warning--no author, editor, or organization in nordicNrfDocumentation
 Warning--to sort, need author or key in nordicNrfDocumentation
@@ -71,6 +74,10 @@ Warning--no key, author in ant
 Warning--no author, editor, or organization in ant
 Warning--no key, author in ant
 Warning--no author, editor, or organization in ant
+Warning--no key, author in copper2
+Warning--no author, editor, or organization in copper2
+Warning--no key, author in copper2
+Warning--no author, editor, or organization in copper2
 Warning--no key, author in mqttWebsite
 Warning--no author, editor, or organization in mqttWebsite
 Warning--no key, author in mqttWebsite
@@ -103,6 +110,9 @@ Warning--empty year in nordicSoftwareTools
 Warning--no key, author in ant
 Warning--no author, editor, or organization in ant
 Warning--empty year in ant
+Warning--no key, author in copper2
+Warning--no author, editor, or organization in copper2
+Warning--empty year in copper2
 Warning--no key, author in mqttWebsite
 Warning--no author, editor, or organization in mqttWebsite
 Warning--empty year in mqttWebsite
@@ -129,48 +139,49 @@ Warning--no journal in kushalnagar2007transmission
 Warning--no number and no volume in kushalnagar2007transmission
 Warning--page numbers missing in kushalnagar2007transmission
 Warning--page numbers missing in lamping2004wireshark
+Warning--page numbers missing in montenegro2007transmission
 Warning--no journal in shelby2014constrained
 Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
-You've used 20 entries,
+You've used 22 entries,
             2861 wiz_defined-function locations,
-            724 strings with 7709 characters,
-and the built_in function-call counts, 11004 in all, are:
-= -- 974
-> -- 547
+            733 strings with 8017 characters,
+and the built_in function-call counts, 12141 in all, are:
+= -- 1067
+> -- 625
 < -- 3
-+ -- 163
-- -- 188
-* -- 952
-:= -- 1719
-add.period$ -- 53
-call.type$ -- 20
-change.case$ -- 123
-chr.to.int$ -- 19
-cite$ -- 140
-duplicate$ -- 366
-empty$ -- 851
-format.name$ -- 216
-if$ -- 2142
++ -- 187
+- -- 212
+* -- 1066
+:= -- 1897
+add.period$ -- 59
+call.type$ -- 22
+change.case$ -- 137
+chr.to.int$ -- 21
+cite$ -- 157
+duplicate$ -- 398
+empty$ -- 929
+format.name$ -- 244
+if$ -- 2362
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 12
-newline$ -- 93
-num.names$ -- 120
-pop$ -- 169
+missing$ -- 13
+newline$ -- 103
+num.names$ -- 130
+pop$ -- 187
 preamble$ -- 1
-purify$ -- 242
+purify$ -- 268
 quote$ -- 0
-skip$ -- 321
+skip$ -- 347
 stack$ -- 0
-substring$ -- 599
-swap$ -- 122
+substring$ -- 643
+swap$ -- 132
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 396
-warning$ -- 89
-while$ -- 120
+type$ -- 436
+warning$ -- 100
+while$ -- 126
 width$ -- 0
-write$ -- 239
+write$ -- 264
 (There were 6 error messages)

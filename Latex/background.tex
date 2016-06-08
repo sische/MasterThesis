@@ -108,7 +108,7 @@
 
 \subsection{Alternative devices}
 
-An alternative for the Raspberry Pi was never considered, since this is a well known device with a good reputation. This should be easy to use, easy to find advice and help when needed, and easy get hold on devices when needed. There are of course other alternatives available\footnote{For instance the Ardurino Uno, Banana Pi or the BeagleBone Black} that could have been considered if there where any problems with the Raspberry Pi. The main contestant to replace the nRF52 was the Zolertia Z1 microcontroller \todo{Fix ref}. This was a good alternative to use since it already has got an accelerometer fitted on the board, but does not have the same computational power as the \gls{nRF52}. \todo{ref}
+An alternative for the Raspberry Pi was never considered, since this is a well known device with a good reputation. This should be easy to use, easy to find advice and help when needed, and easy get hold on devices when needed. There are of course other alternatives available\footnote{For instance the Ardurino Uno, Banana Pi or the BeagleBone Black} that could have been considered if there where any problems with the Raspberry Pi. The main contestant to replace the nRF52 was the Zolertia Z1\footnote{\url{http://zolertia.io/product/hardware/z1-platform}} microcontroller. This was a good alternative to use since it already has got an accelerometer fitted on the board, but does not have the same computational power as the \gls{nRF52}. 
 
 %Should there have been any problems with the nRF52 the Zolertia Z1 would have been a natural contestant as a replacement. ADXL345 is the same accelerometer built in on the Zolertia Z1 microcontroller. This was therefore a natural choise when these two microcontroller where considered the main candidates in the network. If future works will do similar tests later, the results will be comparable between these two. 
 
@@ -120,13 +120,13 @@ An alternative for the Raspberry Pi was never considered, since this is a well k
 \subsection{Bluetooth Low Energy}
 
 \noindent \gls{ble}, also known as \textit{Bluetooth Smart}, is a wireless technology for short range communication developed by the Bluetooth Special Interest Group. The idea was to create a low energy single-hop network solution for \glspl{pan}. A major advantage of this solution is that Bluetooth 4.0 is already a well established technology in cell phones, laptops and several other devices. This means that few changes needs to be made to these devices in order to be able to work with bluetooth smart. However, to this date, a device that only implements \gls{ble} is not able to communicate with a device that only implements classic Bluetooth \cite{gomez2012overview}.
-The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot} \cite{hui2008extending} \todo{continue from here?}
+The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot} \cite{hui2008extending}, as one of the most central technologies in the further development. %\todo{continue from here?} 
 %\todo{Denne linken snakker om 6lowpan, flytte til etter jeg har presentert 6LoWPAN?}.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.7]{BLEprotocolStack.png}    
-    \caption{BLE protocol stack}
+    \caption{BLE protocol stack \cite{gomez2012overview}}
     \label{fig:BLEprotocolStack}
 \end{figure}
 
@@ -137,30 +137,34 @@ The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.7]{BLEdataUnitStructure.png}    
-    \caption{BLE Data Unit Structure}
+    \caption{BLE Data Unit Structure \cite{gomez2012overview}}
     \label{fig:BLEdataUnitStructure}
 \end{figure}
 
 \noindent Figure \ref{fig:BLEdataUnitStructure} shows the data unit structure in \gls{ble}, meaning the different fields that can be used in a packet \cite{gomez2012overview}. The header fields of 4 \gls{byte} of access addresses and \gls{l2cap} will be central topics of discussion later in this thesis. In the case of the network presented here, when the \gls{ble} slave has been connected to a master, it stops searching for other connectable points. This means that it is not possible to connect to several masters, and it will only be possible create a \textit{star network}, not a \textit{mesh network}. A mesh network would in many cases be preferable, since \gls{ble} is considered a \gls{pan} with a very limited range. In a mesh network end nodes can communicate with each other, meaning they can span a larger area without the need of a central and common point of connection. Other than this, \gls{ble} seems like a very good alternative in this project. 
 
-%Check out: Mikhail Galeev - BLE
+%Check out: Mikhail Galeev - BLE 
 
 \subsection{6LoWPAN}
 %\todo{Write even more in this section?}
 
-\noindent \gls{6lowpan} is a defined protocol for using \gls{ipv6} in low energy networks, to identify sensors and devices, as defined in the IEEE 802.15.4 \todo{Wrong according to David, fix}. To use The Internet Protocol in low energy networks in addition to standard networks was proposed by Geoff Mulligan and the 6LoWPAN Working Group. This was chosen because it seemed like a simple and smart protocol definition. Since packets in this network can end up being forwarded all the way from a \gls{microcontroller} to a central computer through several nodes without being changed, it makes sense to use the same base protocol for all links. In \cite{mulligan20076lowpan}, the advantage of \gls{6lowpan} is explained as not too big to be used in small networks with a small header field, and more flexible to network sized compared to \textit{Zigbee} and \textit{Zensys}. \todo{add refs for Zigbee and Zensys}
+\noindent \gls{6lowpan} is a defined protocol for using \gls{ipv6} in low energy networks, to identify sensors and devices over  IEEE 802.15.4, as defined in RFC 4944 \cite{montenegro2007transmission}. To use The Internet Protocol in low energy networks in addition to standard networks was proposed by Geoff Mulligan and the 6LoWPAN Working Group. This was chosen because it seemed like a simple and smart protocol definition. Since packets in this network can end up being forwarded all the way from a \gls{microcontroller} to a central computer through several nodes without being changed, it makes sense to use the same base protocol for all links. In \cite{mulligan20076lowpan}, the advantage of \gls{6lowpan} is explained as not too big to be used in small networks with a small header field, and more flexible to network sized compared to \textit{Zigbee\footnote{http://www.zigbee.org/}} and \textit{Zensys\footnote{http://www.zensys.com/main.html}}. 
 
 \noindent\textit{Utilizing IP  in these networks and pushing it to the very edge of the network devices flattens the naming and addressing hierarchy and  thereby  simplifies  the  connectivity  model. This obviates the need  for  complex  gateways  that,  in  the  past,  were  necessary  to translate   between   proprietary   protocols   and   standard   Internet Protocols and instead can be replaced with much simpler bridges and  routers,  both  of  which  are  well  understood, well  developed and  widely  available  technologies \cite{mulligan20076lowpan}.}
 
 
-\noindent \gls{6lowpan} was developed to be used in small sensor networks, and implementations can fit into 32Kb flash memory parts. The \gls{mtu} is given to be 1280\todo{Double check numbers in this section!} byte, and it also uses a complex header comparison mechanism that allows the transmission of \gls{ipv6} packets in 4 bytes, much less than the standard \gls{ipv6} 40 bytes. This is done by using stacked headers, same as in the \gls{ipv6} model, rather than defining a specific header as for \gls{ipv4}. The device can send only the required part of the stack header, and does not need to include header fields for networking and fragmentation \cite{hui2008extending}. The maximum packet size of the physical layer is set to be 127 bytes, far below the limit of 1280 byte \cite{kushalnagar2007transmission}. It is expected that other layers will produce packets of the desired size to fit the system. In the system presented in this thesis by the example code on the nRF52 is the side set to 270 bytes for every packet, as will be shown in practical examples and tests later in the thesis. 
-  
+\noindent \gls{6lowpan} was developed to be used in small sensor networks, and implementations can fit into 32Kb flash memory parts. The \gls{mtu} is given to be 1280 byte, and it also uses a complex header comparison mechanism that allows the transmission of \gls{ipv6} packets in 4 bytes, much less than the standard \gls{ipv6} 40 bytes. This is done by using stacked headers, same as in the \gls{ipv6} model, rather than defining a specific header as for \gls{ipv4}. The device can send only the required part of the stack header, and does not need to include header fields for networking and fragmentation \cite{hui2008extending}. The maximum packet size of the physical layer is set to be 127 bytes, far below the limit of 1280 byte \cite{kushalnagar2007transmission}. It is expected that other layers will produce packets of the desired size to fit the system. In the system presented in this thesis by the example code on the nRF52 is the side set to 270 bytes for every packet, as will be shown in practical examples and tests later in the thesis. 
+%\todo{Double check numbers in this section!}
 
 \subsection{Other alternatives}
 
-\noindent \textit{ANT} was the main other alternative to \gls{ble} when network protocols where chosen. It also uses  the 2,4 GHz ISM band, and is made to be used in sensor based networks \cite{ant} \todo{change this ref}. It is supported by the \gls{nRF52}, and could be used with a \gls{Raspberry Pi} if an ANT \gls{usb} dongle is fitted. This would have solved the \gls{ble} problem with not being able to connect several devices together in a mesh network, since ANT supports this. Other than this the difference is not very large. \gls{ble} is, on the other hand, supported by other mobile devices, meaning it is possible to use a mobile application developed by Nordic Semiconductor to test the connection. This was assumed to be a very useful feature, and was one of the main reasons why \gls{ble} was chosen. 
+\noindent \textit{ANT} was the main other alternative to \gls{ble} when network protocols where chosen. It also uses  the 2,4 GHz ISM band, and is made to be used in sensor based networks \cite{ant}. It is supported by the \gls{nRF52}, and could be used with a \gls{Raspberry Pi} if an ANT \gls{usb} dongle is fitted. This would have solved the \gls{ble} problem with not being able to connect several devices together in a mesh network, since ANT supports this. Other than this the difference is not very large. \gls{ble} is, on the other hand, supported by other mobile devices, meaning it is possible to use a mobile application developed by Nordic Semiconductor to test the connection. This was assumed to be a very useful feature, and was one of the main reasons why \gls{ble} was chosen. 
+%\todo{change this ref, {ant}}
 
-\noindent Two other contestants, other than \gls{6lowpan}, were \textit{Zigbee} and \textit{Zensys}, being compared directly in \cite{mulligan20076lowpan}. The major factors here are that \gls{6lowpan} has a network size of \todo{add numbers, 2in64th compared to the others} than the others, supports Internet connectivity using routers as well as the use of \gls{udp} and \gls{tcp}, supports low amounts of \gls{ram} and small headers \cite{mulligan20076lowpan}. 
+
+\noindent Two other contestants, other than \gls{6lowpan}, were \textit{Zigbee} and \textit{Zensys}, being compared directly in \cite{mulligan20076lowpan}. The major factors here are that \gls{6lowpan} has a network size bigger than the others, supports Internet connectivity using routers as well as the use of \gls{udp} and \gls{tcp}, supports low amounts of \gls{ram} and small headers \cite{mulligan20076lowpan}. 
+
+%\todo{add numbers, 2in64th compared to the others}
 
 
 \section{Transport protocols}
@@ -170,7 +174,7 @@ The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot
 \subsection{CoAP}
 
 %The \\ protocol is described in the documentation as follows: 
-
+ 
 \noindent \gls{coap} is a transport protocol designed to be used in constrained networks for \gls{m2m} communication. It is \gls{udp} based, and works well in low-power and lossy networks. It can be used with \glspl{microcontroller}, and with \gls{ipv6} and \gls{6lowpan}. Both GET and PUSH functionalities can be used, as well as \textit{observable} GET. Other commands used in \gls{coap} are GET, PUT, POST and DELETE, to get or change data. This means that a server can "subscribe" to end nodes in the network, and get updates either after a given time span or when changes have been made. This therefore looked like a promising protocol to use, and was chosen as the main transport protocol to test in the network \cite{shelby2014constrained}. The main technical features described in \gls{coap} include fulfilling \gls{m2m} requirements, support of asynchronous messages, \gls{udp} based communication and stateless mapping to \gls{http}. 
 
 \noindent CoAP has several similarities with \gls{http}, using the same client and server roles. The client sends a request, and the server sends a response back. Many of the response codes are also very similar, with \textit{404: Not found} as the best known. When \gls{m2m} communication is used, both participants sometimes need to be both client and server, and the \gls {coap} protocol handles this with a two-layer approach. There are four different main messages defined in \gls{coap} \cite{shelby2014constrained}. 
@@ -197,7 +201,7 @@ The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.6]{CONclientserver.png}    
-    \caption{CON CoAP set up sequence diagram}
+    \caption{CON CoAP set up sequence diagram \cite{shelby2014constrained}}
     \label{fig:CONclientserver}
 \end{figure}
 
@@ -206,12 +210,12 @@ The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.6]{NONOackSeqDiagram2.png}    
-    \caption{NON CoAP set up sequence diagram}
+    \caption{NON CoAP set up sequence diagram \cite{shelby2014constrained}}
     \label{fig:NONOackSeqDiagram}
 \end{figure}
 
 
-\noindent Figure \ref{fig:CoAPMessageFormat} shows the same for \gls{non}, where no \glspl{ack} are needed. The same initial set up with \gls{con} and \gls{ack} messages are still needed, to establish a connection between the client and server before a stream of \gls{non} messages can be sent. This means a much more unreliable connection than using \gls{con}, since messages can be dropped without either the client or the server gets notified. Systems where a few packets can be lost without difficulties, for instance in a sensor based network like the network presented in this thesis, can use this as an advantage. A message ID is still provided to every message to remove duplicated messages, but dropped messages are lost data. If the sent packages contained data that could not be dropped, for instance containing crucial patient information from sensors on a patients body, this is not a good solution. The more reliable solution \gls{con} is a much better alternative in this case. These differences are the same as being experienced in the \gls{iot} system described in this thesis, which can be seen in figure \ref{fig:CoAPNONwiresharkSetUp}. A \gls{con} message is sent several times, to set up the initial connection. When an \gls{ack} is received as a response, the continuous transportation of \gls{non} packets without \glspl{ack} can begin. \todo{Comment: Okey, but not clear why for the last part. Change?} 
+\noindent Figure \ref{fig:CoAPMessageFormat} shows the same for \gls{non}, where no \glspl{ack} are needed. The same initial set up with \gls{con} and \gls{ack} messages are still needed, to establish a connection between the client and server before a stream of \gls{non} messages can be sent. This means a much more unreliable connection than using \gls{con}, since messages can be dropped without either the client or the server gets notified. Systems where a few packets can be lost without difficulties, for instance in a sensor based network like the network presented in this thesis, can use this as an advantage. A message ID is still provided to every message to remove duplicated messages, but dropped messages are lost data. If the sent packages contained data that could not be dropped, for instance containing crucial patient information from sensors on a patients body, this is not a good solution. The more reliable solution \gls{con} is a much better alternative in this case. These differences are the same as being experienced in the \gls{iot} system described in this thesis, which can be seen in figure \ref{fig:CoAPNONwiresharkSetUp}. A \gls{con} message is sent several times, to set up the initial connection. When an \gls{ack} is received as a response, the continuous transportation of \gls{non} packets without \glspl{ack} can begin. %\todo{Comment: Okey, but not clear why for the last part. Change?} 
 
 \begin{figure}[ht]
     \centering
@@ -224,12 +228,12 @@ The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot
 
 \noindent The message format used in \gls{coap} is very simple, and can be seen in figure \ref{fig:CoAPMessageFormat}. The 4 first byte are header files, followed by optional tokens and options. When these are not being used, like in this network, the minimal header size of either 4 or 5 bytes. This is a huge advantage in \gls{iot} networks.
 
-\todo{Change figure to include bytes}
+%\todo{Change figure to include bytes}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.6]{CoAPMessageFormat.png}    
-    \caption{CoAP message format}
+    \caption{CoAP message format \cite{shelby2014constrained}}
     \label{fig:CoAPMessageFormat}
 \end{figure}
 
@@ -252,21 +256,21 @@ The 6LoWPAN Working Group has recognized the importance if \gls{ble} in \gls{iot
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{mqttSeqDiagram.png}    
-    \caption{MQTT subscription sequence diagram}
+    \caption{MQTT subscription sequence diagram \cite{hunkeler2008mqtt}}
     \label{fig:mqttSeqDiagram}
 \end{figure}
 
 \noindent \gls{mqtt} supports end-to-end \gls{qos}, and has a simple and good message architecture. This protocol would also be possible to use in the testbit. Because of the limited time frame of this thesis however, it was decided to study \gls{coap} in depth first, and leave the testing of \gls{mqtt} to future work. 
 
 
-
+\newpage
 \section{Software tools}
 
 \noindent As an \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor in \cite{nordicSoftwareTools}, for writing C programming. For other programming languages (for instance Python 3.4) Sublime Text 2 for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
 
 \noindent Wireshark is a software tool used to analyse networks and capture packets sent with different technologies \cite{lamping2004wireshark}. Later the data can be filtered and analysed, for instance by filtering out all packets except \gls{coap} and \gls{ble}, which was used in this case. Wireshark has been one of the most important tools to be able to analyse data to such an extent as done in this thesis. An example of use is shown in figure \ref{fig:CoAPNONwiresharkSetUp}. 
 
-\noindent Copper \todo{Add ref in footnote} is a generic browser which can be used in \textit{Firefox} \todo{ref}. It is Made to be used in \gls{iot} networks based on \gls{coap}, just like this network. Using Copper it was easy to use GET and PUT messages, as well as observing a server by using a simple \gls{gui}. By removing the need of using terminal commands and programming scripts this makes the system easier to use with less development effort outside the scope of this thesis. An example of the \gls{gui} can be seen in figure \ref{fig:copperExample} 
+\noindent \textit{Copper}\footnote{\url{http://people.inf.ethz.ch/~mkovatsc/copper.php}} is a generic browser which can be used in \textit{Firefox} browser \cite{copper2}. It is made to be used in \gls{iot} networks based on \gls{coap}, just like this network. Using Copper it was easy to use GET and PUT messages, as well as observing a server by using a simple \gls{gui}. By removing the need of using terminal commands and programming scripts this makes the system easier to use with less development effort outside the scope of this thesis. An example of the \gls{gui} can be seen in figure \ref{fig:copperExample} 
 \cite{kovatsch2011demo}.
 
 \begin{figure}[ht]

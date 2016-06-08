@@ -8,6 +8,11 @@
   {http://electronicdesign.com/mobile/what-s-difference-between-bluetooth-low-energy-and-ant},
   note = {Accessed: 26-05-2016}.
 
+\bibitem[\protect\citeauthoryear{??}{cop}{}]{copper2}
+{Copper (Cu): } coap under-agent for firefox.
+\newblock http://people.inf.ethz.ch/~mkovatsc/copper.php.
+\newblock Accessed: 29-05-2016.
+
 \bibitem[\protect\citeauthoryear{??}{mqt}{}]{mqttWebsite}
 {MQTT:} web page.
 \newblock http://mqtt.org.
@@ -88,6 +93,12 @@ Kushalnagar, N., G.~Montenegro, D.~E. Culler, and J.~W. Hui (2007).
 Lamping, U. and E.~Warnicke (2004).
 \newblock Wireshark user's guide.
 \newblock {\em Interface\/}~{\em 4\/}(6).
+
+\bibitem[\protect\citeauthoryear{Montenegro, Kushalnagar, Hui, and
+  Culler}{Montenegro et~al.}{2007}]{montenegro2007transmission}
+Montenegro, G., N.~Kushalnagar, J.~Hui, and D.~Culler (2007).
+\newblock Transmission of ipv6 packets over ieee 802.15. 4 networks.
+\newblock {\em Internet proposed standard RFC\/}~{\em 4944}.
 
 \bibitem[\protect\citeauthoryear{Mulligan}{Mulligan}{2007}]{mulligan20076lowpan}
 Mulligan, G. (2007).

@@ -37,8 +37,9 @@
 
 \noindent\textbf{R.3: Are the microcontrollers powerful enough to gather data this frequently?}
 
-\noindent To gather detailed acceleration data to be analysed in another node of the network, it is assumed that a measuring frequency of 1MHz is needed \todo{Why?}. The maximum achieved in this system was to call a method from the main loop 11 times every second, and then read a measured values from the accelerometer 150 times for each of these 11 method calls. This adds up to 1650 measuring points every second in a best case scenario. Yes, this is fast enough to gather data, even though problems explained in chapter \ref{chp:architecture} means this practical experiment will be left for future work in this thesis. The programming code referred to here can be seen in appendix \ref{chp:appendixc}. 
+\noindent To gather detailed acceleration data to be analysed in another node of the network, it is assumed that a measuring frequency of 1MHz is needed. The maximum achieved in this system was to call a method from the main loop 11 times every second, and then read a measured values from the accelerometer 150 times for each of these 11 method calls. This adds up to 1650 measuring points every second in a best case scenario. Yes, this is fast enough to gather data, even though problems explained in chapter \ref{chp:architecture} means this practical experiment will be left for future work in this thesis. The programming code referred to here can be seen in appendix \ref{chp:appendixc}. 
 
+ %\todo{Why 1MHz?}
 
 \section{Analyse data}
 
@@ -48,7 +49,8 @@
 
 \noindent\textbf{R.4: Could data analysis be done in the end nodes in this network?}
 
-\noindent Referring to the result from research question R.3. The maximum capacity of the \gls{microcontroller} is needed to capture acceleration data from the accelerometer, get the desired quality of the data, and forward this to a central node. The end nodes were running on battery power. \todo{Remove parts about battery power?} To do even more calculations in these nodes will not be preferable in this network. This will be possible if the node is one of many nodes in a complete network, where every node gets some time of sleep between every measurement. Even here it is probably not a good idea, concerning the use of batteries. The answer is therefore no, more detailed analysing and representation of the data should be done in a central node with more computational power and better access to power sources. 
+\noindent Referring to the result from research question R.3. The maximum capacity of the \gls{microcontroller} is needed to capture acceleration data from the accelerometer, get the desired quality of the data, and forward this to a central node. The end nodes were running on battery power. To do even more calculations in these nodes will not be preferable in this network. This will be possible if the node is one of many nodes in a complete network, where every node gets some time of sleep between every measurement. Even here it is probably not a good idea, concerning the use of batteries. The answer is therefore no, more detailed analysing and representation of the data should be done in a central node with more computational power and better access to power sources. 
+% \todo{Remove parts about battery power?}
 
 \newpage
 \subsection{Measurements}

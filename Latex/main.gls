@@ -35,6 +35,7 @@
 \glsgroupheading{G}\relax\glsresetentrylist
 \glossentry{goodput}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
+\glsXpageXglsnumberformat{}{32}\delimN 
 \glsXpageXglsnumberformat{}{44}\delimN 
 \glsXpageXglsnumberformat{}{46}\delimN 
 \glsXpageXglsnumberformat{}{48}\delimR 
@@ -53,6 +54,8 @@
 \glsXpageXglsnumberformat{}{1}\delimR 
 \glsXpageXglsnumberformat{}{4}\delimN 
 \glsXpageXglsnumberformat{}{8}\delimN 
+\glsXpageXglsnumberformat{}{13}\delimN 
+\glsXpageXglsnumberformat{}{15}\delimN 
 \glsXpageXglsnumberformat{}{21}\delimN 
 \glsXpageXglsnumberformat{}{22}\delimN 
 \glsXpageXglsnumberformat{}{34}\delimN 
@@ -64,10 +67,9 @@
 \glsgroupheading{N}\relax\glsresetentrylist
 \glossentry{nRF52}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{10}\delimN 
+\glsXpageXglsnumberformat{}{9}\delimR 
 \glsXpageXglsnumberformat{}{12}\delimN 
-\glsXpageXglsnumberformat{}{15}\delimN 
+\glsXpageXglsnumberformat{}{14}\delimN 
 \glsXpageXglsnumberformat{}{21}\delimN 
 \glsXpageXglsnumberformat{}{22}\delimN 
 \glsXpageXglsnumberformat{}{26}\delimR 
@@ -82,7 +84,7 @@
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossentry{packet}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{33}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{34}}}\relax\glsresetentrylist
 \glossentry{payload}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
 \glsXpageXglsnumberformat{}{31}\delimN 
@@ -100,11 +102,11 @@
 \glsgroupheading{R}\relax\glsresetentrylist
 \glossentry{Raspberry Pi}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
+\glsXpageXglsnumberformat{}{11}\delimN 
 \glsXpageXglsnumberformat{}{12}\delimN 
-\glsXpageXglsnumberformat{}{15}\delimN 
+\glsXpageXglsnumberformat{}{14}\delimN 
 \glsXpageXglsnumberformat{}{21}\delimN 
 \glsXpageXglsnumberformat{}{22}\delimN 
-\glsXpageXglsnumberformat{}{28}\delimN 
 \glsXpageXglsnumberformat{}{29}\delimN 
 \glsXpageXglsnumberformat{}{31}\delimN 
 \glsXpageXglsnumberformat{}{55}\delimN 
