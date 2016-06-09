@@ -1,7 +1,7 @@
 \chapter{Background}
 \label{chp:background} 
 
-\noindent This thesis describes the setup and usage of an end-to-end \gls{iot} system. In order for this to be set up and reproduced by others later on, a detailed description of components, sensors and protocols used is provided. This chapter will go through the background information of the devices, technologies and protocols used, and why these where chosen over other alternatives. 
+\noindent This thesis describes the setup and usage of an end-to-end \gls{iot} system. In order for the testbed to be set up and reproduced by others later on, a detailed description of components, sensors and protocols used, is provided. This chapter will undergo the background information of the devices, technologies and protocols used, and why these where chosen over other alternatives. 
 
 %\section{Internet of Things} % Tjae
 
@@ -15,11 +15,11 @@
 
 \section{Hardware}
 
-\noindent The hardware section will go through the physical devices used to build the \gls{iot} network, which is central to solve objective O.1. 
+\noindent The hardware section will undergo the physical devices used to build the \gls{iot} network, which is central to solve objective O.1. 
 
 \subsection{Raspberry Pi}
 
-\noindent Developed by Newark Element 14, the Raspberry Pi has become a central tool for many people wanting to get started using small computers \cite{newark}. The device has been known as a single-board computer specially designed for small network projects and to be used as an educational tool used all the way from elementary schools to higher-education research environments such as here at \gls{ntnu}. This was therefore a natural device to use as a starting point in this system as well. 
+\noindent Developed by Newark Element 14, the Raspberry Pi has become a central tool for many people wanting to get started using small computers \cite{newark}. The device has been known as a single-board computer specially designed for small network projects. It can be used as an educational tool used all the way from elementary schools to higher-education research environments, such as here at \gls{ntnu}. This was therefore a natural device to use as a starting point in the testbed. 
 
 \begin{figure}[ht]
     \centering
@@ -28,11 +28,11 @@
     \label{fig:piPicture}
 \end{figure}
 
-\noindent The Raspberry Pi is the size of a credit card. Model 3 of this was released in February 2016, just in time to become a part of the system set up in this project. This includes a \gls{cpu} speed of 1,2 GHz and 1 GB of \gls{ram}. This makes it approximately 12 times faster than the first Raspberry Pi. Both Bluetooth and WiFi are included, and it was quite easy to set up, given that the right Linux kernel has been used in the \gls{os} of the Pi. Along with the Raspberry Pi, a good and stable operating system with a kernel that supported the \gls{6lowpan} architecture was needed. For this, Ubuntu Mate version 15.10 with kernel version 4.15 was chosen, and used on the Raspberry Pi. As other versions of Ubuntu, this is Linux based, and has a complete \gls{gui} of a full \gls{os}. The set up of this will be explained in chapter \ref{chp:architecture}.1. 
+\noindent The Raspberry Pi is the size of a credit card. Model 3 of this was released in February 2016, just in time to become a part of the system set up in this project. This includes a \gls{cpu} speed of 1,2 GHz and 1 GB of \gls{ram}. This makes it approximately 12 times faster than the first Raspberry Pi. Both Bluetooth and WiFi are included, and it was quite easy to set up, given that the right Linux kernel has been used in the \gls{os} of the Pi. Along with the Raspberry Pi, a good and stable operating system with a kernel that supported the \gls{6lowpan} architecture were needed. For this, Ubuntu Mate version 15.10 with kernel version 4.15 was chosen, and used on the Raspberry Pi. As other versions of Ubuntu, this is Linux based, and has a complete \gls{gui} of a full \gls{os}. %The set up of this will be explained in chapter \ref{chp:architecture}.1. 
 
 \subsection{nRF52}
 
-\noindent The most central device of this network is the \gls{microcontroller} used as end-node, the nRF52 developed by Nordic Semiconductor with the \gls{iot} development kit. This is presented as a family of highly flexible, multi-protocol system-on-chip devices. 
+\noindent The most central device of this network is the \gls{microcontroller} used as end-node, the nRF52 developed by Nordic Semiconductor with the \gls{iot} development kit. It is presented as a family of highly flexible, multi-protocol system-on-chip devices. 
 
 
 \begin{figure}[ht]
@@ -43,7 +43,7 @@
 \end{figure}
 
 
-\noindent This device has been advertised as a powerful multiprotocol single chip solution, with both a 32-bit ARM Cortex processor, a 512kB flash and 64kB of flash memory. The building blocks of the chip in its entirety are shown in \ref{fig:nrf52chipDetail}. The key features mentioned by Nordic Semiconductor \cite{nrf52Nordic} that will be relevant in this network are: 
+\noindent This device has been advertised as a powerful multiprotocol single chip solution, with both a 32-bit ARM Cortex processor, a 512kB flash, and 64kB of flash memory. The key features mentioned by Nordic Semiconductor \cite{nrf52Nordic} that will be relevant in this network are: 
 
 \begin{itemize}
 	\item Multi-protocol 2.4GHz radio
@@ -54,7 +54,7 @@
 \end{itemize}
 
 
-\noindent The most interesting points here are the processing power, the flash storage and \gls{ram}, the \gls{i2c} and \gls{spi} buses and the bluetooth antenna. In this project, three different versions of the \gls{nRF52}, named (from oldest to newest) \textit{PCA10036 V1.0.0, PCA10040 V0.9.0} and \textit{PCA10040 V1.0.1} were used. All three shows similar results when tested in this system, and Nordic Semiconductor reported that the only significant change is that newer versions should be more stable. Almost all tests in this thesis have been done by using PCA10040 V0.9.0. 
+\noindent The most interesting points here are the processing power, the flash storage and \gls{ram}, the \gls{i2c} and \gls{spi} buses, and the bluetooth antenna. In this project, three different versions of the \gls{nRF52}, named (from oldest to newest) \textit{PCA10036 V1.0.0, PCA10040 V0.9.0} and \textit{PCA10040 V1.0.1} were used. All three shows similar results when tested in this system, and Nordic Semiconductor reported that the only significant change is that newer versions should be more stable. Almost all tests in this thesis have been done by using PCA10040 V0.9.0. 
 
 %\cite{nrf52Nordic2}
 
@@ -78,7 +78,7 @@
 
 \begin{itemize}
   \item It can measure acceleration in all three axes, X, Y and Z.
-  \item It sends digital data right away. This means there is no need to use computational power to calculate digital values as needed if the data was captured by an analog accelerometer. 
+  \item It sends digital data immediately, therefore it is no need to use computational power to calculate digital values as needed if the data was captured by an analog accelerometer. 
   \item It supports both \gls{i2c} and \gls{spi}, which makes it possible to connect to the nRF52. 
   \item It supports voltage of 3.3V-5.0V, which fits within the range of output from the nRF52.  
 \end{itemize}
@@ -99,12 +99,12 @@
     \label{fig:adxl345}
 \end{figure}
 
-\noindent When connecting to the \gls{nRF52}, using the \gls{i2c} interface was chosen because it is simple with few cables, supports an acceptable bit rate and several sensors in the same link. 
+\noindent When connecting to the \gls{nRF52}, using the \gls{i2c} interface was chosen because it is simple with few cables, supports an acceptable bit rate, and several sensors in the same link. 
 %Ports VIN, GND, SDA and SCL will be used in this connection, which will be explained in detail in chapter \ref{chp:architecture}. 
 
 \subsection{Additional computational power}
 
-\noindent The devices presented so far are small network devices, reaching from limited computational power to a more powerful central device. These devices can be used as end nodes or more central nodes in an \gls{iot} network. The Raspberry Pi has already network connectivity, and can therefore be used as the final node before the results are presented on a screen, a web page or to be stored on a server. In many cases however, it will be an advantage to include another node with considerably more computational power before the results are being published. This both limits the computations needed to be done at the Raspberry Pi, and means that the systems are able to do more deep analyses of the gathered data, without the fear of a system overload. A central stationary computer, a supercomputer or computational power from a web service like \gls{aws} are possible solutions. In this network a standard stationary computer running a Linux Ubuntu based system was used as this node. Because of the limited time provided for this thesis the scope focuses mostly on data analysis and transportation between small nodes in an end-to-end \gls{iot} system. The results were mostly obtained and calculated on the Raspberry Pi, meaning this last central node was not extensively used in this solution, but could be a central topic for future projects aiming for a more complex data analysis. 
+\noindent The devices presented so far are small network devices, reaching from limited computational power to a more powerful central device. These devices can be used as end nodes or more central nodes in an \gls{iot} network. The \gls{Raspberry Pi} has already network connectivity, and can therefore be used as the final node before the results are presented on a screen, a web page, or to be stored on a server. In many cases however, it will be an advantage to include another node with considerably more computational power before the results are being published. This both limits the computations needed to be done at the \gls{Raspberry Pi}, and means that the systems are able to do more deep analyses of the gathered data, without the fear of a system overload. A central stationary computer, a supercomputer or computational power from a web service like \gls{aws} are possible solutions. In this network a standard stationary computer running a Linux Ubuntu based system was used as this node. Because of the limited time provided for this thesis, the scope focuses mostly on data analysis and transportation between small nodes in an end-to-end \gls{iot} system. The results were mostly obtained and calculated on the \gls{Raspberry Pi}, meaning this last central node was not extensively used in this solution, but could be a central topic for future projects aiming for a more complex data analysis. 
 
 \subsection{Alternative devices}
 
@@ -119,7 +119,7 @@ An alternative for the Raspberry Pi was never considered, since this is a well k
 
 \subsection{Bluetooth Low Energy}
 
-\noindent \gls{ble}, also known as \textit{Bluetooth Smart}, is a wireless technology for short range communication developed by the Bluetooth Special Interest Group. The idea was to create a low energy single-hop network solution for \glspl{pan}. A major advantage of this solution is that Bluetooth 4.0 is already a well established technology in cell phones, laptops and several other devices. This means that few changes needs to be made to these devices in order to be able to work with bluetooth smart. However, to this date, a device that only implements \gls{ble} is not able to communicate with a device that only implements classic Bluetooth \cite{gomez2012overview}.
+\noindent \gls{ble}, also known as \textit{Bluetooth Smart}, is a wireless technology for short range communication developed by the Bluetooth Special Interest Group. The idea was to create a low energy single-hop network solution for \glspl{pan}. A major advantage of this solution is that Bluetooth 4.0 is already a well established technology in cell phones, laptops and several other devices. This means that few changes needs to be made to these devices, in order to be able to work with bluetooth smart. However, to this date, a device that only implements \gls{ble} is not able to communicate with a device that only implements classic Bluetooth \cite{gomez2012overview}.
 The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot} \cite{hui2008extending}, as one of the most central technologies in the further development. %\todo{continue from here?} 
 %\todo{Denne linken snakker om 6lowpan, flytte til etter jeg har presentert 6LoWPAN?}.
 
@@ -130,7 +130,7 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
     \label{fig:BLEprotocolStack}
 \end{figure}
 
-\noindent The protocol stack of \gls{ble} has two main parts, the controller and the host, as shown in \ref{fig:BLEprotocolStack} \cite{gomez2012overview}. In the testbit, the \gls{Raspberry Pi} represents the controller (master) \gls{nRF52} the host (slave). The communication between these is done through the standard \gls{hci}, a bluetooth protocol. All slaves are in sleep mode by default, and are woken up by the master when communication is needed. Links are being identified by a randomly generated 32-bit code, and the \gls{ism} band used is 2,4 GHz \cite{gomez2012overview}. Other protocols include \gls{l2cap} used to multiplex data between higher protocol layers, and the segmentation and reassembly of packets. From here packets are being passed to the \gls{hci}, which is the interface used to communicate between the two \gls{ble} devices. This is being used in conjunction with \gls{acl}, which is used to create the \gls{tdma} scheme used to transfer packets over the network link, as well as controlling uptime of the end nodes, as this link is set to disconnect automatically after a given time period if there is no activity on the link. Concrete examples of these protocols will be shown later in the thesis. 
+\noindent The protocol stack of \gls{ble} has two main parts, the controller and the host, as shown in \ref{fig:BLEprotocolStack} \cite{gomez2012overview}. In the testbit, the \gls{Raspberry Pi} represents the controller (master), \gls{nRF52} the host (slave). The communication between these components are done through the standard \gls{hci}, a bluetooth protocol. All slaves are in sleep mode by default, and are woken up by the master when these components are needed. Links are being identified by a randomly generated 32-bit code, and the \gls{ism} band used is 2,4 GHz \cite{gomez2012overview}. Other protocols include \gls{l2cap} used to multiplex data between higher protocol layers, and the segmentation and reassembly of packets. From here packets are being passed to the \gls{hci}, which is the interface used to communicate between the two \gls{ble} devices. This is being used in conjunction with \gls{acl}, which is used to create the \gls{tdma} scheme used to transfer packets over the network link, as well as controlling uptime of the end nodes, as this link is set to disconnect automatically after a given time period if there is no activity on the link. Concrete examples of these protocols will be shown later in the thesis. 
 
 
 
@@ -141,28 +141,28 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
     \label{fig:BLEdataUnitStructure}
 \end{figure}
 
-\noindent Figure \ref{fig:BLEdataUnitStructure} shows the data unit structure in \gls{ble}, meaning the different fields that can be used in a packet \cite{gomez2012overview}. The header fields of 4 \gls{byte} of access addresses and \gls{l2cap} will be central topics of discussion later in this thesis. In the case of the network presented here, when the \gls{ble} slave has been connected to a master, it stops searching for other connectable points. This means that it is not possible to connect to several masters, and it will only be possible create a \textit{star network}, not a \textit{mesh network}. A mesh network would in many cases be preferable, since \gls{ble} is considered a \gls{pan} with a very limited range. In a mesh network end nodes can communicate with each other, meaning they can span a larger area without the need of a central and common point of connection. Other than this, \gls{ble} seems like a very good alternative in this project. 
+\noindent Figure \ref{fig:BLEdataUnitStructure} shows the data unit structure in \gls{ble}, meaning the different fields that can be used in a packet \cite{gomez2012overview}. The header fields of 4 \gls{byte} of access addresses and \gls{l2cap} will be central topics of discussion later in this thesis. In the case of the network presented here, when the \gls{ble} slave has been connected to a master, it stops searching for other connectable points. This means that it is not possible to connect to several masters, and it will only be possible to create a \textit{star network}, not a \textit{mesh network}. A mesh network would in many cases be preferable, since \gls{ble} is considered a \gls{pan} with a very limited range. In a mesh network end nodes can communicate with each other, meaning they can span a larger area without the need of a central and common point of connection. Otherwise, \gls{ble} seems like a very good alternative in this project. 
 
 %Check out: Mikhail Galeev - BLE 
 
 \subsection{6LoWPAN}
 %\todo{Write even more in this section?}
 
-\noindent \gls{6lowpan} is a defined protocol for using \gls{ipv6} in low energy networks, to identify sensors and devices over  IEEE 802.15.4, as defined in RFC 4944 \cite{montenegro2007transmission}. To use The Internet Protocol in low energy networks in addition to standard networks was proposed by Geoff Mulligan and the 6LoWPAN Working Group. This was chosen because it seemed like a simple and smart protocol definition. Since packets in this network can end up being forwarded all the way from a \gls{microcontroller} to a central computer through several nodes without being changed, it makes sense to use the same base protocol for all links. In \cite{mulligan20076lowpan}, the advantage of \gls{6lowpan} is explained as not too big to be used in small networks with a small header field, and more flexible to network sized compared to \textit{Zigbee\footnote{http://www.zigbee.org/}} and \textit{Zensys\footnote{http://www.zensys.com/main.html}}. 
+\noindent \gls{6lowpan} is a defined protocol for using \gls{ipv6} in low energy networks, to identify sensors and devices over  IEEE 802.15.4, as defined in RFC 4944 \cite{montenegro2007transmission}. To use The Internet Protocol in low energy networks in addition to standard networks was proposed by Geoff Mulligan and the 6LoWPAN Working Group\cite{mulligan20076lowpan}. It was chosen because it seemed like a simple and smart protocol definition. Since packets in this network can end up being forwarded all the way from a \gls{microcontroller} to a central computer through several nodes without being changed, it makes sense to use the same base protocol for all links. In \cite{mulligan20076lowpan}, the advantage of \gls{6lowpan} is explained as not too big to be used in small networks with a small header field, and more flexible to network sized compared to \textit{Zigbee\footnote{http://www.zigbee.org/}} and \textit{Zensys\footnote{http://www.zensys.com/main.html}}. 
 
 \noindent\textit{Utilizing IP  in these networks and pushing it to the very edge of the network devices flattens the naming and addressing hierarchy and  thereby  simplifies  the  connectivity  model. This obviates the need  for  complex  gateways  that,  in  the  past,  were  necessary  to translate   between   proprietary   protocols   and   standard   Internet Protocols and instead can be replaced with much simpler bridges and  routers,  both  of  which  are  well  understood, well  developed and  widely  available  technologies \cite{mulligan20076lowpan}.}
 
 
-\noindent \gls{6lowpan} was developed to be used in small sensor networks, and implementations can fit into 32Kb flash memory parts. The \gls{mtu} is given to be 1280 byte, and it also uses a complex header comparison mechanism that allows the transmission of \gls{ipv6} packets in 4 bytes, much less than the standard \gls{ipv6} 40 bytes. This is done by using stacked headers, same as in the \gls{ipv6} model, rather than defining a specific header as for \gls{ipv4}. The device can send only the required part of the stack header, and does not need to include header fields for networking and fragmentation \cite{hui2008extending}. The maximum packet size of the physical layer is set to be 127 bytes, far below the limit of 1280 byte \cite{kushalnagar2007transmission}. It is expected that other layers will produce packets of the desired size to fit the system. In the system presented in this thesis by the example code on the nRF52 is the side set to 270 bytes for every packet, as will be shown in practical examples and tests later in the thesis. 
+\noindent \gls{6lowpan} was developed to be used in small sensor networks, and implementations can fit into 32Kb flash memory parts. The \gls{mtu} is given to be 1280 byte, and it also uses a complex header comparison mechanism that allows the transmission of \gls{ipv6} packets in 4 bytes, much less than the standard \gls{ipv6} 40 bytes. This is done by using stacked headers, same as in the \gls{ipv6} model, rather than defining a specific header as for \gls{ipv4}. The device can send only the required part of the stack header, and does not need to include header fields for networking and fragmentation \cite{hui2008extending}. The maximum packet size of the physical layer is set to be 127 bytes, far below the limit of 1280 byte \cite{kushalnagar2007transmission}. It is expected that other layers will produce packets of the desired size to fit the system. In the example code on the nRF52 in the testbit this is set to 270 bytes for every packet This will be shown in practical examples and tests later in the thesis. 
 %\todo{Double check numbers in this section!}
 
 \subsection{Other alternatives}
 
-\noindent \textit{ANT} was the main other alternative to \gls{ble} when network protocols where chosen. It also uses  the 2,4 GHz ISM band, and is made to be used in sensor based networks \cite{ant}. It is supported by the \gls{nRF52}, and could be used with a \gls{Raspberry Pi} if an ANT \gls{usb} dongle is fitted. This would have solved the \gls{ble} problem with not being able to connect several devices together in a mesh network, since ANT supports this. Other than this the difference is not very large. \gls{ble} is, on the other hand, supported by other mobile devices, meaning it is possible to use a mobile application developed by Nordic Semiconductor to test the connection. This was assumed to be a very useful feature, and was one of the main reasons why \gls{ble} was chosen. 
+\noindent \textit{ANT} was the other main alternative to \gls{ble} when network protocols where chosen. It also uses the 2,4 GHz ISM band, and is made to be used in sensor based networks \cite{ant}. It is supported by the \gls{nRF52}, and could be used with a \gls{Raspberry Pi} if an ANT \gls{usb} dongle is fitted. This would have solved the \gls{ble} problem not being able to connect several devices together in a mesh network, since ANT supports this. Other than this the difference is small. \gls{ble} is, on the other hand, supported by other mobile devices, meaning it is possible to use a mobile application developed by Nordic Semiconductor to test the connection. One of the main intentions from \gls{item} when the problem description was written was to test \gls{ble} in such a setting, therefore this was chosen. 
 %\todo{change this ref, {ant}}
 
 
-\noindent Two other contestants, other than \gls{6lowpan}, were \textit{Zigbee} and \textit{Zensys}, being compared directly in \cite{mulligan20076lowpan}. The major factors here are that \gls{6lowpan} has a network size bigger than the others, supports Internet connectivity using routers as well as the use of \gls{udp} and \gls{tcp}, supports low amounts of \gls{ram} and small headers \cite{mulligan20076lowpan}. 
+\noindent Two other contestants, other than \gls{6lowpan}, were \textit{Zigbee} and \textit{Zensys}, being compared directly in \cite{mulligan20076lowpan}. The major factors here are that \gls{6lowpan} has a network size bigger than the others. It supports Internet connectivity using routers, the use of \gls{udp} and \gls{tcp}, low amounts of \gls{ram} and small headers \cite{mulligan20076lowpan}. 
 
 %\todo{add numbers, 2in64th compared to the others}
 
@@ -175,7 +175,7 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
 
 %The \\ protocol is described in the documentation as follows: 
  
-\noindent \gls{coap} is a transport protocol designed to be used in constrained networks for \gls{m2m} communication. It is \gls{udp} based, and works well in low-power and lossy networks. It can be used with \glspl{microcontroller}, and with \gls{ipv6} and \gls{6lowpan}. Both GET and PUSH functionalities can be used, as well as \textit{observable} GET. Other commands used in \gls{coap} are GET, PUT, POST and DELETE, to get or change data. This means that a server can "subscribe" to end nodes in the network, and get updates either after a given time span or when changes have been made. This therefore looked like a promising protocol to use, and was chosen as the main transport protocol to test in the network \cite{shelby2014constrained}. The main technical features described in \gls{coap} include fulfilling \gls{m2m} requirements, support of asynchronous messages, \gls{udp} based communication and stateless mapping to \gls{http}. 
+\noindent \gls{coap} is a transport protocol designed to be used in constrained networks for \gls{m2m} communication. It is \gls{udp} based, and works well in low-power and lossy networks. It can be used with \glspl{microcontroller}, and with \gls{ipv6} and \gls{6lowpan}. Both GET and PUSH functionalities can be used, as well as \textit{observable} GET. Other commands used in \gls{coap} are GET, PUT, POST and DELETE, to get or change data. This means that a server can "subscribe" to end nodes in the network, and get updates either after a given time span or when changes have been made. Therefore, this seemed like a promising protocol to use, and was chosen as the main transport protocol in the network test\cite{shelby2014constrained}. The main technical features described in \gls{coap} include fulfilling \gls{m2m} requirements, support of asynchronous messages, \gls{udp} based communication and stateless mapping to \gls{http}. 
 
 \noindent CoAP has several similarities with \gls{http}, using the same client and server roles. The client sends a request, and the server sends a response back. Many of the response codes are also very similar, with \textit{404: Not found} as the best known. When \gls{m2m} communication is used, both participants sometimes need to be both client and server, and the \gls {coap} protocol handles this with a two-layer approach. There are four different main messages defined in \gls{coap} \cite{shelby2014constrained}. 
 
@@ -185,17 +185,9 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
 	\item A Confirmable message, \gls{con}, requires one \gls{ack} for every packet received. If a message is not received correctly, the receiver will ask for exactly return message of the type Acknowledgement. 
 	\item A Non-confirmable message, \gls{non}, does not require an \gls{ack}. This may result in a higher possibility of a packet getting lost, especially in lossy networks, but it requires less capacity from the network and should in general be faster. 
 	\item An Acknowledgement acknowledges that a specific \gls{con} packet has reached its destination. 
-	\item A Reset message tells the sender that a specific message was received, but some content is missing in order to to be able to understand it, for instance if the receiver has had a reboot during the transmission. An empty Reset message represents a ping test of \gls{rtt}, which will be used when testing a connection. 
+	\item A Reset message tells the sender that a specific message was received, but some content is missing in order to to be able to fully understand it. For instance if the receiver has had a reboot during the transmission. An empty Reset message represents a ping test of \gls{rtt}, which will be used when testing a connection. 
 \end{itemize}
        
-
-%Figure \ref{fig:layersCoAP} 
-%\begin{figure}[ht]
-%    \centering
-%    \includegraphics[scale=0.5]{seqDiagramCoAP.png}    
-%    \caption{Layers in CoAP}
-%    \label{fig:layersCoAP}
-%\end{figure}
 
 
 \begin{figure}[ht]
@@ -226,7 +218,7 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
 
 %\todo{Show examples of setting up coap NON needs acks first? Wireshark without bluetooth-sniffing?}
 
-\noindent The message format used in \gls{coap} is very simple, and can be seen in figure \ref{fig:CoAPMessageFormat}. The 4 first byte are header files, followed by optional tokens and options. When these are not being used, like in this network, the minimal header size of either 4 or 5 bytes. This is a huge advantage in \gls{iot} networks.
+\noindent The message format used in \gls{coap} is very simple, and can be seen in figure \ref{fig:CoAPMessageFormat}. The 4 first byte are header files, followed by optional tokens and options. When these are not being used, like in this network, the minimal header size will be either 4 or 5 bytes. This is a huge advantage in \gls{iot} networks.
 
 %\todo{Change figure to include bytes}
 
@@ -260,13 +252,13 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
     \label{fig:mqttSeqDiagram}
 \end{figure}
 
-\noindent \gls{mqtt} supports end-to-end \gls{qos}, and has a simple and good message architecture. This protocol would also be possible to use in the testbit. Because of the limited time frame of this thesis however, it was decided to study \gls{coap} in depth first, and leave the testing of \gls{mqtt} to future work. 
+\noindent \gls{mqtt} supports end-to-end \gls{qos}, and has a simple and effective message architecture. This protocol would also be possible to use in the testbit. Because of the limited time frame of this thesis however, it was decided to study \gls{coap} in depth first, and leave the testing of \gls{mqtt} to future work. 
 
 
 \newpage
 \section{Software tools}
 
-\noindent As an \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor in \cite{nordicSoftwareTools}, for writing C programming. For other programming languages (for instance Python 3.4) Sublime Text 2 for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
+\noindent As an \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor in \cite{nordicSoftwareTools}, for writing C programming. For other programming languages, (for instance Python 3.4), Sublime Text 2 for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
 
 \noindent Wireshark is a software tool used to analyse networks and capture packets sent with different technologies \cite{lamping2004wireshark}. Later the data can be filtered and analysed, for instance by filtering out all packets except \gls{coap} and \gls{ble}, which was used in this case. Wireshark has been one of the most important tools to be able to analyse data to such an extent as done in this thesis. An example of use is shown in figure \ref{fig:CoAPNONwiresharkSetUp}. 
 
@@ -280,6 +272,6 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
     \label{fig:copperExample}
 \end{figure}
 
-\noindent \gls{radvd} is a software tool that can be used to advertise \gls{ipv6} addresses in a local network, using \gls{ndp} \cite{chown2011rogue}. This is being used to multicast and forward packets in this network. When a packet is sent from an end node to another, the communication needs to go through the central point in the star network, the Raspberry Pi in this case. Here, \gls{radvd} ensures that the packages are being routed to the right end point, or the right nRF52 in this system. To make the most basic figures in this thesis the web based tool \textit{draw.io} was used, unless no other is specified. \textit{polt.ly} was used to draw the graphs used. All the images of another devices in the network have been taken by the author. 
+\noindent \gls{radvd} is a software tool that can be used to advertise \gls{ipv6} addresses in a local network, using \gls{ndp} \cite{chown2011rogue}. It is being used to multicast and forward packets in this network. When a packet is sent from an end node to another, the communication needs to go through the central point in the star network, the Raspberry Pi in this case. Here, \gls{radvd} ensures that the packages are being routed to the right end point, or the right nRF52 in this system. To make the most basic figures in this thesis the web based tool \textit{draw.io} was used, unless no other is specified. \textit{polt.ly} was used to draw the graphs used. All the images of another devices in the network have been taken by the author. 
 
 
