@@ -14,7 +14,8 @@
 \contentsline {subsection}{\numberline {1.2.1}Scope}{3}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Objectives}{3}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Research Questions}{4}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Structure}{4}{section.1.3}
+\contentsline {section}{\numberline {1.3}Methodology}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}Structure}{5}{section.1.4}
 \contentsline {chapter}{\chapternumberline {2}Background}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Hardware}{7}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Raspberry Pi}{7}{subsection.2.1.1}
@@ -61,7 +62,7 @@
 \contentsline {subsection}{\numberline {5.5.2}nRF52}{59}{subsection.5.5.2}
 \contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{61}{chapter.6}
 \contentsline {section}{\numberline {6.1}Future work}{62}{section.6.1}
-\contentsline {chapter}{References}{63}{section*.12}
+\contentsline {chapter}{References}{63}{section*.13}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{65}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}Appendix B}{69}{appendix.B}

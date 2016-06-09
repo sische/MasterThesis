@@ -8,22 +8,25 @@
 
 \noindent A develop from a network mostly based on human made material to a network based more on data from sensors using \gls{m2m} communication, require that several factors needs to be considered. It is natural to believe that most end nodes must be battery powered for practical reasons. If a complete system contains hundreds of sensors and \glspl{microcontroller} it would be impractical to set up a power cable to all of these. From a users perspective, it would also be very annoying to have to change these batteries very often. Because of this, the available computational power in the end nodes is very limited, and should be limited further as much as possible to increase the battery life. 
 
-\noindent A very central point of discussion in any \gls{iot} system will be how to transport data as efficient as possible. Raw data from sensors are seldom useful to an end user. Therefore, the data needs to be analysed and often represented in another form before it can be useful to the user. A device in the network needs to analyse the data, find out what is important or unimportant, search for patterns, draw graphs or figures and forward the results to a monitor, a web page, or to be stored on a server to be used later. Arguments will be presented to discuss if the process of analysing data should take place in the end nodes, or if it is more preferable to forward raw data to a central component of the network. 
+\noindent A central point of discussion in any \gls{iot} system will be how to transport data as efficient as possible. Raw data from sensors are seldom useful to an end user. Therefore, the data needs to be analysed and often represented in another form before it can be useful to the user. A device in the network needs to analyse the data, find out what is important or not, search for patterns, draw graphs or figures and forward the results to a monitor, a web page, or to be stored on a server to be used later. Arguments will be presented to discuss if the process of analysing data should take place in the end nodes, or if it is more preferable to forward raw data to a central component of the network. 
 
+\noindent A central company in developing technologies to be used is Nordic Semiconductor. Having one of the world leading companies developing \gls{microcontroller} based in Trondheim, is also a motivation. To use locally developed devices seemed like a perfect opportunity for a project on \gls{ntnu}. 
 
+%introductionIoT2.png
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.9\textwidth]{introductionIoT2.png}    
+    \includegraphics[width=0.9\textwidth]{architectureIntro4.png}    
     \caption{Example of IoT architecture}
     \label{iotExampleArchitecture}
 \end{figure}
 
+
 \noindent Figure \ref{iotExampleArchitecture} shows an example architecture of \gls{iot}. Here a sensor, (or in real life scenarios most likely several sensors), is connected to a \gls{microcontroller} by a standard interface using cables. 
+\todo{Skriv om arkitekturen i systemet}
 
 
 
 
-\noindent A central company in developing technologies to be used is Nordic Semiconductor. Having one of the world leading companies developing \gls{microcontroller} based in Trondheim, is also a motivation. To use locally developed devices seemed like a perfect opportunity for a project on \gls{ntnu}. 
 %As described on Nordics web page: 
 
 %\begin{displayquote}
@@ -36,10 +39,8 @@
 
 %Remove? 
 
-\newpage
+%\newpage
 % \todo{methodology}
-%\section{Methodology}
-
 
 
 \section{Scope and objectives}
@@ -93,6 +94,19 @@
 \noindent\textbf{R.4: Could data analysis be done in the end nodes in this network?}
 
 \noindent This is dependent on the result from R.3. This might be possible if the results reveal that the \glspl{microcontroller} can easily handle the gathering of data and still have power to do calculations. The alternative is to forward raw data to a central node. 
+
+\section{Methodology}
+
+How did you collect or generate the data?
+
+How did you analyse the data? 
+
+The research methodology used in this thesis can be split into three main parts. The first phase was to build and configure a complete end-to-end \gls{iot} system. This included finding the most appropriate devices and technology that could be used in such a system. 
+
+After the different devices has been connected and configured to communicate with each other, the next phase of the methodology is to transfer data between the different nodes. Data was collected using Wireshark, and programming code for the different devices in the testbit. 
+
+The third and final phase was to analyse the data captures in the previous phase. This was done by organizing data in tables and drawing graphs to find similarities, differences and patterns in the data. Several different examples where conducted and discussed in this phase. 
+
 
 \section{Structure}
 
