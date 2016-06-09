@@ -68,7 +68,7 @@
 (indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{31}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Raspberry Pi" "\\glossentry{Raspberry Pi}") ) :locref "{}{31}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("payload" "\\glossentry{payload}") ) :locref "{}{31}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("goodput" "\\glossentry{goodput}") ) :locref "{}{32}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("payload" "\\glossentry{payload}") ) :locref "{}{32}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("payload" "\\glossentry{payload}") ) :locref "{}{32}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{33}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Raspberry Pi" "\\glossentry{Raspberry Pi}") ) :locref "{}{33}" :attr "pageglsnumberformat" ) 

@@ -35,7 +35,6 @@
 \contentsline {section}{\numberline {3.2}Raspberry Pi to Network Computer or Server}{25}{section.3.2}
 \contentsline {section}{\numberline {3.3}Connecting nRF52 and ADXL345}{26}{section.3.3}
 \contentsline {section}{\numberline {3.4}Discussion}{29}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Connection Challenges}{30}{subsection.3.4.1}
 \contentsline {chapter}{\chapternumberline {4}Network Measurements}{31}{chapter.4}
 \contentsline {section}{\numberline {4.1}Description of measurements}{31}{section.4.1}
 \contentsline {section}{\numberline {4.2}Possible limitations in the network}{32}{section.4.2}
