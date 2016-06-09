@@ -182,10 +182,11 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
 %\todo{make figure of CoAP Layering}.
 
 \begin{itemize}
-	\item A Confirmable message, \gls{con}, requires one \gls{ack} for every packet received. If a message is not received correctly, the receiver will ask for exactly return message of the type Acknowledgement. 
+	\item A Confirmable message, \gls{con}, requires one \gls{ack} for every message received. If a message is not received correctly, the receiver will ask for exactly one return message of the type Acknowledgement. 
 	\item A Non-confirmable message, \gls{non}, does not require an \gls{ack}. This may result in a higher possibility of a packet getting lost, especially in lossy networks, but it requires less capacity from the network and should in general be faster. 
-	\item An Acknowledgement acknowledges that a specific \gls{con} packet has reached its destination. 
-	\item A Reset message tells the sender that a specific message was received, but some content is missing in order to to be able to fully understand it. For instance if the receiver has had a reboot during the transmission. An empty Reset message represents a ping test of \gls{rtt}, which will be used when testing a connection. 
+	\item An Acknowledgement confirms that a specific \gls{con} packet has reached its destination. 
+	\item A Reset message tells the sender that a specific message was received, but some content is missing in order to to be able to fully understand it. For instance if the receiver has had a reboot during the transmission. 
+	\item An empty Reset message represents a ping test of \gls{rtt}, which will be used when testing a connection. 
 \end{itemize}
        
 
@@ -255,14 +256,14 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
 \noindent \gls{mqtt} supports end-to-end \gls{qos}, and has a simple and effective message architecture. This protocol would also be possible to use in the testbit. Because of the limited time frame of this thesis however, it was decided to study \gls{coap} in depth first, and leave the testing of \gls{mqtt} to future work. 
 
 
-\newpage
+%\newpage
 \section{Software tools}
 
-\noindent As an \gls{ide}, the \textit{KEIL Vision} was used, as recommended by Nordic Semiconductor in \cite{nordicSoftwareTools}, for writing C programming. For other programming languages, (for instance Python 3.4), Sublime Text 2 for Windows and Linux was used, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
+\noindent As an \gls{ide}, we used \textit{KEIL Vision}, as recommended by Nordic Semiconductor in \cite{nordicSoftwareTools}, for writing C programming. For other programming languages, (for instance Python 3.4), we used Sublime Text 2 for Windows and Linux, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
 
 \noindent Wireshark is a software tool used to analyse networks and capture packets sent with different technologies \cite{lamping2004wireshark}. Later the data can be filtered and analysed, for instance by filtering out all packets except \gls{coap} and \gls{ble}, which was used in this case. Wireshark has been one of the most important tools to be able to analyse data to such an extent as done in this thesis. An example of use is shown in figure \ref{fig:CoAPNONwiresharkSetUp}. 
 
-\noindent \textit{Copper}\footnote{\url{http://people.inf.ethz.ch/~mkovatsc/copper.php}} is a generic browser which can be used in \textit{Firefox} browser \cite{copper2}. It is made to be used in \gls{iot} networks based on \gls{coap}, just like this network. Using Copper it was easy to use GET and PUT messages, as well as observing a server by using a simple \gls{gui}. By removing the need of using terminal commands and programming scripts this makes the system easier to use with less development effort outside the scope of this thesis. An example of the \gls{gui} can be seen in figure \ref{fig:copperExample} 
+\noindent \textit{Copper}\cite{copper2} is a generic browser which can be used in \textit{Firefox} browser \cite{copper2}. It is made to be used in \gls{iot} networks based on \gls{coap}, just like this network. Using Copper it was easy to use GET and PUT messages, as well as observing a server by using a simple \gls{gui}. By removing the need of using terminal commands and programming scripts this makes the system easier to use with less development effort outside the scope of this thesis. An example of the \gls{gui} can be seen in figure \ref{fig:copperExample} 
 \cite{kovatsch2011demo}.
 
 \begin{figure}[ht]

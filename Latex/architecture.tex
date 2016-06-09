@@ -13,7 +13,7 @@
 
 \noindent Figure \ref{fig:systemArchitectureThisSystem} shows how the complete end-to-end system of this thesis is set up. In short terms, the \gls{ADXL345} is connected to the \gls{nRF52}, using the \gls{i2c} interface. The \gls{nRF52} is connected to a  \gls{Raspberry Pi} using \gls{6lowpan} and \gls{ble}. The \gls{Raspberry Pi} is connected to the \gls{lan}, and can therefore forward data to a central stationary computer if additional computational power is needed. Otherwise the results can be sent to the web, to a screen or anywhere else. Several \glspl{microcontroller} can possibly be connected to a Pi at the time, forming a star network. Up to eight connections have been tested successfully in this network. 
  
-\noindent There are in general three main limitations in a network such as this:
+\noindent There are three main limitations in a system as this:
 
 \begin{itemize}
   \item Computational power in the different nodes
@@ -34,7 +34,9 @@
 
 
 %As a microcontroller the nRF52 works good in this network, both as a low-power and powerful device. 
-\noindent Since its not possible to connect a screen to the \gls{nRF52}, it makes sense to connect this to the Pi first, before measuring values. To set up the communication between a \gls{Raspberry Pi} and the \gls{nRF52}, the two code examples TWI and Observable server from Nordic Semiconductor were used as a starting point for coding on the nRF52. It was however not straight forward to connect these two together the first time. Following is a listing of Linux terminal commands that was run on the \gls{Raspberry Pi} to get the system up and running \cite{nordicNrfDocumentation}. 
+\noindent Since its not possible to connect a screen to the \gls{nRF52}, it makes sense to connect this to the Pi first, before measuring values. To set up the communication between a \gls{Raspberry Pi} and the \gls{nRF52}, the two code examples TWI and Observable server from Nordic Semiconductor were used as a starting point for coding on the nRF52. It was however not straight forward to connect these two together the first time. Following is a listing of Linux terminal commands for the \gls{Raspberry Pi} to get the system up and running \cite{nordicNrfDocumentation}. 
+
+\todo{move!}
 
 \noindent Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable version, (Note: Jan. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. Ubuntu Mate was therefore chosen as the best and most stable \gls{os}, and was installed on the memory card from another computer \cite{ubuntuMate}. When this is done, a resizing of the file system is needed to use all the capacity of the memory card. This is not crucial to get the \gls{os} up and running, but recommended to be able to use more than 4GB of the memory card. Recommended size of the memory card is 16GB. To resize, after the initial boot of the \gls{os} on the \gls{Raspberry Pi}, run the following commands: 
 \todo{Remove commands to Appendix}
@@ -135,11 +137,11 @@ ping6 2001::02AA:11FF:FEBB:22CC
 
 \noindent Note that \textit{2001::02AA:11FF:FEBB:22CC} is the full \gls{ipv6} address of the device when the bluetooth address is \textit{00:AA:11:BB:22:CC} in this system. The \gls{ipv6} address can be used to route packets using \gls{6lowpan}. Using the basic examples provided by Nordic Semiconductor described in chapter \ref{chp:architecture}.3, it was now possible to send messages both using \gls{coap} \gls{con} and \gls{non}.  
 
-\noindent Computational power is closely related to power usage. The nRF52 microcontroller is battery powered using a small \textit{3V Lithium CR 2032} battery. Given this limitation the computational power will be limited as well. The optimal solutions therefore seems to handle as little data as possible here. 
+\noindent The nRF52 microcontroller is battery powered using a small \textit{3V Lithium CR 2032} battery. Given this limitation the computational power will be limited as well. A point of discussion will therefore be if it is profitable to handle data here, or if this should be done by more powerful nodes in the network. 
 
 \section{Raspberry Pi to Network Computer or Server} 
 
-\noindent When running the Linux based \gls{os} Ubuntu Mate, the raspberry Pi can be used more or less like a regular computer. This \gls{os} has a pre-installed version of the most basic programs needed, for instance \textit{Mozilla Firefox Browser}, \textit{Pluma text editor} and \textit{Linux terminal}. In this system it has been connected to the \gls{lan} using either a wireless or a wired connection. This makes the link from the Pi to another computer very stable and quick, capable of much higher transfer rates than the other links discussed in the system. Since neither the Pi nor the central computer is battery powered in the testbit, this is not an option. Using a forwarding script it is simple to forward data either to the computer or directly to a location on the web, as shown in \ref{fig:systemArchitectureThisSystem}. All these factors implicates that these links will not be a bottle neck in the system. Since this is higher level computer programming and not as limited concerning computational power or battery usage, it will be more interesting to look at the other links in more detail in this thesis. To test these links with higher capacity in more detail will therefore be left to future works, discussed in chapter \ref{chp:results}. 
+\noindent When running the Linux based \gls{os} Ubuntu Mate, the \gls{Raspberry Pi} can be used more or less like a regular computer. This \gls{os} has a pre-installed version of the most basic programs needed, for instance \textit{Mozilla Firefox Browser}, \textit{Pluma text editor} and \textit{Linux terminal}. In this system it has been connected to the \gls{lan} using either a wireless or a wired connection. This makes the link from the Pi to another computer very stable and quick, capable of much higher transfer rates than the other links discussed in the system. Since neither the Pi nor the central computer is battery powered in the testbit, this is not an option. Using a forwarding script it is simple to forward data either to the computer or directly to a location on the web, as shown in \ref{fig:systemArchitectureThisSystem}. All these factors implicates that these links will not be a bottle neck in the system. Since this is higher level computer programming and not as limited concerning computational power or battery usage, it will be more interesting to look at the other links in more detail in this thesis. To test these links with higher capacity in more detail will therefore be left to future works, discussed in chapter \ref{chp:results}. 
 
 \newpage
 
@@ -216,12 +218,13 @@ static uint16_t read_reg(uint8_t register_address, uint8_t data_returnValue)
 \noindent Now the full system shown in figure \ref{fig:systemArchitectureThisSystem} has been connected. Due to problems explained in the previous section, the rest of the thesis will focus mainly on the link between the \gls{nRF52} and the \gls{Raspberry Pi}, with the option of using extra computational power from the stationary computer or a web service if necessary. The central point of discussion at this point is how to process and analyse data in the system. The main options to consider in all the different devices concerning how much computation to do in this link are the following: 
 
 \begin{itemize}
-  \item No computation: All data arrives as useful data, and can be posted directly to a web page or a server for storage
+  \item Useful raw data: All data arrives as useful data, and can be posted directly to a web page or a server for storage
   \item No computation: Forward all data directly to a computer with more computational power
   \item Some computation: Analyse the data to find data that is not relevant to filter out
   \item Full computation: Do a full analysis of the data. The results can then be posted directly to a server or displayed on a web page. 
 \end{itemize}
 
+\todo{Forenkle. Se Franks kommentarer.}
 \noindent The most relevant option of these four depends on the data, and on how much computational power is needed. It is possible to run the Raspberry Pi from a power bank, but this has not been tested in this project. When set up without a battery as power source, the Pi is the first node that could possibly do computations without having to take power limitations as a major concern. The main limitation is therefore computational power, while the main limitation may be battery power on the nRF52. It therefore makes sense to do some easy computation on this device. For instance, if this network is being used to measure vibrations, it is reasonable to assume that measurements more frequent than once every 100 \textit{ms} is needed. Any less frequent than this and vibrations could be missed, especially if it is periodical. It would then be perfectly reasonable to assume that the Pi could go through these values, and calculate whether or not the current acceleration value has breached a given threshold. This result can then be displayed directly on a web page or a connected monitor from the Pi. If however the system is to calculate \textit{patterns} in the acceleration values, several values needs to be compared together. The need of complex algorithms to find these patterns is expected, before the results can be displayed. In this case it is reasonable to assume that the Pi would need additional computational power. The Pi can then be set up as a forwarding device, that forward data directly to a computer with more computational power. 
 
 
