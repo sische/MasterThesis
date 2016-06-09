@@ -201,6 +201,7 @@
 (indexentry :tkey (("CON" "\\glossentry{con}") ) :locref "{}{25}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("NON" "\\glossentry{non}") ) :locref "{}{25}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("OS" "\\glossentry{os}") ) :locref "{}{25}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("OS" "\\glossentry{os}") ) :locref "{}{25}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("LAN" "\\glossentry{lan}") ) :locref "{}{25}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("I2C" "\\glossentry{i2c}") ) :locref "{}{26}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("I2C" "\\glossentry{i2c}") ) :locref "{}{26}" :attr "pageglsnumberformat" ) 

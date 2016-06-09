@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  9 JUN 2016 14:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  9 JUN 2016 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2625,7 +2625,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 [22] [23] [24] [25]
-<connectionADXL-nrf5.png, id=869, 555.07375pt x 809.0225pt>
+<connectionADXL-nrf5.png, id=870, 555.07375pt x 809.0225pt>
 File: connectionADXL-nrf5.png Graphic file (type png)
 
 <use connectionADXL-nrf5.png>
@@ -2661,7 +2661,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ] [32]
-<ping4.png, id=992, 738.76pt x 362.35374pt>
+<ping4.png, id=995, 738.76pt x 362.35374pt>
 File: ping4.png Graphic file (type png)
  <use ping4.png>
 Package pdftex.def Info: ping4.png used on input line 62.
@@ -2679,7 +2679,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.69 
-      <./ping4.png>] <trainExample.png, id=1022, 710.655pt x 275.0275pt>
+      <./ping4.png>] <trainExample.png, id=1025, 710.655pt x 275.0275pt>
 File: trainExample.png Graphic file (type png)
 
 <use trainExample.png>
@@ -2700,7 +2700,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.161 
-      ] <CON0-200withAcks.png, id=1076, 1626.075pt x 879.285pt>
+      ] <CON0-200withAcks.png, id=1079, 1626.075pt x 879.285pt>
 File: CON0-200withAcks.png Graphic file (type png)
 
 <use CON0-200withAcks.png>
@@ -2733,7 +2733,7 @@ l.241
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.241 
-      ] <CONNONvs0-200acks.png, id=1138, 1626.075pt x 879.285pt>
+      ] <CONNONvs0-200acks.png, id=1141, 1626.075pt x 879.285pt>
 File: CONNONvs0-200acks.png Graphic file (type png)
 
 <use CONNONvs0-200acks.png>
@@ -2774,7 +2774,7 @@ LaTeX Warning: Reference `fig:NON0-kb' on page 44 undefined on input line 402.
 
 LaTeX Warning: Reference `fig:NON0-kb' on page 44 undefined on input line 424.
 
-[44] <CONNON0-kwithACK.png, id=1229, 1626.075pt x 879.285pt>
+[44] <CONNON0-kwithACK.png, id=1232, 1626.075pt x 879.285pt>
 File: CONNON0-kwithACK.png Graphic file (type png)
 
 <use CONNON0-kwithACK.png>
@@ -2794,7 +2794,7 @@ Underfull \vbox (badness 7981) has occurred while \output is active []
                                                   \fi \fi 
 l.453 
        <./CONNON0-kwithACK.png>]
-<bytesPrSecondNew3.png, id=1258, 1626.075pt x 879.285pt>
+<bytesPrSecondNew3.png, id=1261, 1626.075pt x 879.285pt>
 File: bytesPrSecondNew3.png Graphic file (type png)
 
 <use bytesPrSecondNew3.png>
@@ -2807,14 +2807,14 @@ Package pdftex.def Info: bytesPrSecondNew3.png used on input line 461.
                                                   \fi \fi 
 l.468 
        <./bytesPrSecondNew3.png>]
-<bytesPrSecondNewNON.png, id=1269, 1626.075pt x 879.285pt>
+<bytesPrSecondNewNON.png, id=1272, 1626.075pt x 879.285pt>
 File: bytesPrSecondNewNON.png Graphic file (type png)
 
 <use bytesPrSecondNewNON.png>
 Package pdftex.def Info: bytesPrSecondNewNON.png used on input line 472.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
 
-<avgTimeCONNON.png, id=1274, 1626.075pt x 879.285pt>
+<avgTimeCONNON.png, id=1277, 1626.075pt x 879.285pt>
 File: avgTimeCONNON.png Graphic file (type png)
  <use avgTimeCONNON.png>
 Package pdftex.def Info: avgTimeCONNON.png used on input line 482.
@@ -2827,14 +2827,14 @@ Package pdftex.def Info: avgTimeCONNON.png used on input line 482.
                                                   \fi \fi 
 l.485 \end{figure}
                    <./bytesPrSecondNewNON.png>]
-<goodput_payload_CON.png, id=1294, 1626.075pt x 879.285pt>
+<goodput_payload_CON.png, id=1297, 1626.075pt x 879.285pt>
 File: goodput_payload_CON.png Graphic file (type png)
 
 <use goodput_payload_CON.png>
 Package pdftex.def Info: goodput_payload_CON.png used on input line 511.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
 
-<goodput_payload_NON.png, id=1295, 1626.075pt x 879.285pt>
+<goodput_payload_NON.png, id=1298, 1626.075pt x 879.285pt>
 File: goodput_payload_NON.png Graphic file (type png)
 
 <use goodput_payload_NON.png>
@@ -2866,7 +2866,7 @@ l.525
                                                   \fi \fi 
 l.525 
        <./goodput_payload_CON.png> <./goodput_payload_NON.png>]
-<payloadGoodput_CONNON.png, id=1333, 1626.075pt x 879.285pt>
+<payloadGoodput_CONNON.png, id=1336, 1626.075pt x 879.285pt>
 File: payloadGoodput_CONNON.png Graphic file (type png)
 
 <use payloadGoodput_CONNON.png>
@@ -2879,7 +2879,7 @@ Package pdftex.def Info: payloadGoodput_CONNON.png used on input line 533.
                                                   \fi \fi 
 l.547 \newpage
                <./payloadGoodput_CONNON.png>]
-<bestCaseworstCase3.png, id=1351, 1626.075pt x 879.285pt>
+<bestCaseworstCase3.png, id=1354, 1626.075pt x 879.285pt>
 File: bestCaseworstCase3.png Graphic file (type png)
 
 <use bestCaseworstCase3.png>
@@ -2983,7 +2983,7 @@ Overfull \hbox (35.16455pt too wide) in paragraph at lines 103--124
  [][] 
  []
 
-<0byteCONwireshark.png, id=1710, 963.6pt x 1156.32pt>
+<0byteCONwireshark.png, id=1713, 963.6pt x 1156.32pt>
 File: 0byteCONwireshark.png Graphic file (type png)
 
 <use 0byteCONwireshark.png>
@@ -3054,11 +3054,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 35208 strings out of 493304
- 565808 string characters out of 6139871
- 937718 words of memory out of 5000000
+ 35206 strings out of 493304
+ 565784 string characters out of 6139871
+ 937734 words of memory out of 5000000
  37131 multiletter control sequences out of 15000+600000
- 91816 words of font info for 149 fonts, out of 8000000 for 9000
+ 91686 words of font info for 148 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  69i,14n,78p,1753b,2050s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -3075,10 +3075,10 @@ mf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
 /type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmtt9.pfb>
-Output written on main.pdf (94 pages, 6291495 bytes).
+Output written on main.pdf (94 pages, 6291640 bytes).
 PDF statistics:
- 2053 PDF objects out of 2073 (max. 8388607)
- 1872 compressed objects within 19 object streams
+ 2056 PDF objects out of 2073 (max. 8388607)
+ 1875 compressed objects within 19 object streams
  559 named destinations out of 1000 (max. 500000)
  27572 words of extra memory for PDF output out of 29859 (max. 10000000)
 

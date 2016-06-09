@@ -62,6 +62,7 @@
 (indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{28}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("ADXL345 accelerometer" "\\glossentry{ADXL345}") ) :locref "{}{28}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{28}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{28}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{29}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("Raspberry Pi" "\\glossentry{Raspberry Pi}") ) :locref "{}{29}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{31}" :attr "pageglsnumberformat" ) 
