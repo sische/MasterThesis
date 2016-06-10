@@ -10,7 +10,7 @@
 
 \noindent \textbf{R.1: Which technologies and transport protocols are suitable in such a network?}
 
-\noindent \gls{ble} was chosen over ANT, as explained in chapter \ref{chp:background}.2.3. Bluetooth is a widely used technology that is very interesting in an \gls{iot} setting, and was therefore the obvious choice in this network. The \gls{ble} version of bluetooth is designed to use a minimal amount of energy and still be reliable and fast, which is central criteria in the testbit. As a result of this \gls{6lowpan} also seemed like a suitable communication protocol, both because it is made to work together with \gls{ble}, and because it is an up an coming technology that is assumed to be more and more used in the coming years. \textit{Zigbee} and \textit{Zensys} was the main other options, which did not seem as fit in this case mostly because of different solutions in routing. In the application layer the two main choices was between \gls{coap} and \gls{mqtt}. Because of time restrictions \gls{coap} was chosen to be studied in depth in this thesis. 
+\noindent \gls{ble} was chosen over ANT, as explained in chapter \ref{chp:background}.2.3. Bluetooth is a widely used technology that is very interesting in an \gls{iot} setting, and was therefore the obvious choice in this network. The \gls{ble} version of Bluetooth is designed to use a minimal amount of energy and still be reliable and fast, which is central criteria in the testbit. As a result of this \gls{6lowpan} also seemed like a suitable communication protocol, both because it is made to work together with \gls{ble}, and because it is an up an coming technology that is assumed to be more and more used in the coming years. \textit{Zigbee} and \textit{Zensys} were the main other options, which did not seem as fit in this case mostly because of different solutions in routing. In the application layer the two main choices was between \gls{coap} and \gls{mqtt}. Because of time restrictions \gls{coap} was chosen to be studied in depth in this thesis. 
 
 \newpage
 
@@ -29,7 +29,7 @@
 
 \noindent\textbf{O.3: Gather information of the data sent through the network}
 
-\noindent This object was fulfilled by using both Python scripts and Wireshark on the \gls{Raspberry Pi} to measure the packets sent through the network. Different Python scripts was used to get data from the servers, save data locally after receiving, drawing graphs directly to represent the data, or to forward the data to another device or online storage facility. The most central of these code samples can be seen in appendix \ref{chp:appendix}. Wireshark was used to monitor the live capture of packets, and to manually do a detailed analysis of how packets where fragmented differently in the different scenarios. 
+\noindent This object was fulfilled by using both Python scripts and Wireshark on the \gls{Raspberry Pi} to measure the packets sent through the network. Different Python scripts were used to get data from the servers, save data locally after receiving, drawing graphs directly to represent the data, or to forward the data to another device or online storage facility. The most central of these code samples can be seen in appendix \ref{chp:appendix}. Wireshark was used to monitor the live capture of packets, and to manually do a detailed analysis of how packets where fragmented differently in the different scenarios. 
 
 \noindent\textbf{R.2: What are the main limitations concerning transporting data?}
 
@@ -37,7 +37,7 @@
 
 \noindent\textbf{R.3: Are the microcontrollers powerful enough to gather data this frequently?}
 
-\noindent To gather detailed acceleration data to be analysed in another node of the network, it is assumed that a measuring frequency of 1MHz is needed. The maximum achieved in this system was to call a method from the main loop 11 times every second, and then read a measured values from the accelerometer 150 times for each of these 11 method calls. This adds up to 1650 measuring points every second in a best case scenario. Yes, this is fast enough to gather data, even though problems explained in chapter \ref{chp:architecture} means this practical experiment will be left for future work in this thesis. The programming code referred to here can be seen in appendix \ref{chp:appendixc}. 
+\noindent To gather detailed acceleration data to be analysed in another node of the network, we assume that a measuring frequency of 1MHz is needed. The maximum achieved in this system was to call a method from the main loop 11 times every second, and then read a measured values from the accelerometer 150 times for each of these 11 method calls. This adds up to 1650 measuring points every second in a best case scenario. Yes, this is fast enough to gather data, even though problems explained in chapter \ref{chp:architecture} means this practical experiment will be left for future work in this thesis. The programming code referred to here can be seen in appendix \ref{chp:appendixc}. 
 
  %\todo{Why 1MHz?}
 
