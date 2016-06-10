@@ -15,6 +15,7 @@
 (indexentry :tkey (("message code" "\\glossentry{messageCode}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("packet" "\\glossentry{packet}") ) :locref "{}{i}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("microcontroller" "\\glossentry{microcontroller}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("microcontroller" "\\glossentry{microcontroller}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("microcontroller" "\\glossentry{microcontroller}") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("microcontroller" "\\glossentry{microcontroller}") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("nRF52" "\\glossentry{nRF52}") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 

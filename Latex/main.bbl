@@ -1,14 +1,17 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{??}{cop}{}]{copper2}
-{Copper (Cu): CoAP user-agent for Firefox}.
-
 \bibitem[\protect\citeauthoryear{??}{adx}{2016}]{adxlDataSheet}
  (2016).
 \newblock {ADXL345: Digital Accelerometer Data Sheet}.
 \newblock
   \url{http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf}.
 \newblock Accessed: 20-04-2016.
+
+\bibitem[\protect\citeauthoryear{??}{cop}{2016}]{copper3}
+ (2016).
+\newblock {Copper: CoAP user-agent for Firefox}.
+\newblock \url{http://people.inf.ethz.ch/~mkovatsc/copper.php}.
+\newblock Accessed: 29-05-2016.
 
 \bibitem[\protect\citeauthoryear{??}{mqt}{2016}]{mqttWebsite}
  (2016).

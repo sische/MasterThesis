@@ -1,7 +1,7 @@
 \chapter{Background}
 \label{chp:background} 
 
-\noindent This thesis describes the setup and usage of an end-to-end \gls{iot} system. In order for the testbed to be set up and reproduced by others later on, a detailed description of components, sensors and protocols used, is provided. This chapter will undergo the background information of the devices, technologies and protocols used, and why these where chosen over other alternatives. EXAMPLE: \cite{nord}. 
+\noindent This thesis describes the setup and usage of an end-to-end \gls{iot} system. In order for the testbed to be set up and reproduced by others, a detailed description of components, sensors and protocols used, is provided. This chapter will undergo the background information of the devices, technologies and protocols used, and why these were chosen over other alternatives. EXAMPLE: \cite{nord}. 
 
 %\section{Internet of Things} % Tjae
 
@@ -19,7 +19,7 @@
 
 \subsection{Raspberry Pi}
 
-\noindent Developed by Newark Element 14, the Raspberry Pi has become a central tool for many people wanting to get started using small computers \cite{newark}. The device has been known as a single-board computer specially designed for small network projects. It can be used as an educational tool used all the way from elementary schools to higher-education research environments, such as here at \gls{ntnu}. This was therefore a natural device to use as a starting point in the testbed. 
+\noindent Developed by Newark Element 14, the Raspberry Pi has become a central tool for many people wanting to get started using small computers \cite{newark}. The device has been known as a single-board computer specially designed for small network projects. It can be used as an educational tool used all the way from elementary schools to higher-education research environments, such as here at \gls{ntnu}. This was a natural device to use as a starting point in the testbed. 
 
 \begin{figure}[ht]
     \centering
@@ -28,7 +28,7 @@
     \label{fig:piPicture}
 \end{figure}
 
-\noindent The Raspberry Pi is the size of a credit card. Model 3 of this was released in February 2016, just in time to become a part of the system set up in this project. This includes a \gls{cpu} speed of 1,2 GHz and 1 GB of \gls{ram}. This makes it approximately 12 times faster than the first Raspberry Pi. Both Bluetooth and WiFi are included, and it was quite easy to set up, given that the right Linux kernel has been used in the \gls{os} of the Pi. Along with the Raspberry Pi, a good and stable operating system with a kernel that supported the \gls{6lowpan} architecture were needed. For this, Ubuntu Mate version 15.10 with kernel version 4.15 was chosen, and used on the Raspberry Pi. As other versions of Ubuntu, this is Linux based, and has a complete \gls{gui} of a full \gls{os}. %The set up of this will be explained in chapter \ref{chp:architecture}.1. 
+\noindent The Raspberry Pi is the size of a credit card. Model 3 of this was released in February 2016, just in time to become a part of the system set up in this project. This includes a \gls{cpu} speed of 1,2 GHz and 1 GB of \gls{ram}. It is approximately 12 times faster than the first Raspberry Pi. Both Bluetooth and WiFi are included, and it was quite easy to set up, given that the right Linux kernel has been used in the \gls{os} of the Pi. Along with the Raspberry Pi, a good and stable operating system with a kernel that supported the \gls{6lowpan} architecture were needed. For this, Ubuntu Mate version 15.10 with kernel version 4.15 was chosen, and used on the Raspberry Pi. As other versions of Ubuntu, this is Linux based and has a complete \gls{gui} of a full \gls{os}. %The set up of this will be explained in chapter \ref{chp:architecture}.1. 
 
 \subsection{nRF52}
 
@@ -49,12 +49,12 @@
 	\item Multi-protocol 2.4GHz radio
 	\item Application development independent from protocol stack
 	\item Full set of digital interfaces including \gls{spi} and \gls{i2c}
-	\item Low cost external crystal 32MHz ± 40ppm for Bluetooth, ± 50ppm for ANT
+	\item Low-cost external crystal 32MHz ± 40ppm for Bluetooth, ± 50ppm for ANT
 	\item Wide supply voltage range (1.7 V to 3.6 V)
 \end{itemize}
 
 
-\noindent The most interesting points here are the processing power, the flash storage and \gls{ram}, the \gls{i2c} and \gls{spi} buses, and the bluetooth antenna. In this project, three different versions of the \gls{nRF52}, named (from oldest to newest) \textit{PCA10036 V1.0.0, PCA10040 V0.9.0} and \textit{PCA10040 V1.0.1} were used. All three shows similar results when tested in this system, and Nordic Semiconductor reported that the only significant change is that newer versions should be more stable. Almost all tests in this thesis have been done by using PCA10040 V0.9.0. 
+\noindent The most interesting points here are the processing power, the flash storage and \gls{ram}, the \gls{i2c} and \gls{spi} buses, and the Bluetooth antenna. In this project, we used three different versions of the \gls{nRF52}, named (from oldest to newest) \textit{PCA10036 V1.0.0, PCA10040 V0.9.0} and \textit{PCA10040 V1.0.1}. All three shows similar results when tested in this system, and Nordic Semiconductor reported that the only significant change is that newer versions should be more stable. Almost all tests in this thesis have been done by using PCA10040 V0.9.0. 
 
 %\cite{nrf52Nordic2}
 
@@ -69,16 +69,16 @@
 %\noindent Figure \ref{fig:nrf52chipDetail} shows how the different sections are distributed on the nRF52832 \gls{soc} \ref{fig:nrf52chipDetail}.  
 
 % https://www.nordicsemi.com/Products/nRF52-Series-SoC
-\noindent A SoftDevice is a precompiled binary software that implements \gls{ble} on the nRF52. This means that the user can start to work directly in a standard C language interface, which is independent from the Soft Device implementation \cite{softDevice}. This makes it possible for users to write standard programming code instead of requiring a deep knowledge of device specific configurations. There are several versions of SoftDevices to the nRF52 that can be downloaded from Nordic Semiconductors website\footnote{\url{http://www.nordicsemi.com}}. 
+\noindent A SoftDevice is a precompiled binary software that implements \gls{ble} on the nRF52. This means that the user can start to work directly in a standard C language interface, which is independent of the Soft Device implementation \cite{softDevice}. This makes it possible for users to write standard programming code instead of requiring a deep knowledge of device-specific configurations. There are several versions of SoftDevices to the nRF52 that can be downloaded from Nordic Semiconductors website\footnote{\url{http://www.nordicsemi.com}}. 
 
 
 \subsection{Adafruit ADXL345 Accelerometer}
 
-\noindent As seen in the previous section, the nRF52 have several possibilities when it comes to radio communication. In addition to this, an external sensor was needed to collect data. Supporting both the \gls{i2c} and \gls{spi}, the nRF52 has got most of the standard interfaces needed. Objectives presented in the introduction to this thesis says that it would be preferable both to collect, transport and analyse data in this network. The sensor chosen to do this was the ADXL345 accelerometer from Adafriut \cite{adxlDataSheet}. This was selected for the following main reasons:  
+\noindent As seen in the previous section, the nRF52 have several possibilities when it comes to radio communication. In addition to this, an external sensor was needed to collect data. Supporting both the \gls{i2c} and \gls{spi}, the nRF52 has got most of the standard interfaces needed. Objectives presented in the introduction to this thesis says that it would be preferable both to collect, transport and analyse data in this network. The sensor we chose to do this was the ADXL345 accelerometer from Adafriut \cite{adxlDataSheet}. This was selected for the following main reasons:  
 
 \begin{itemize}
   \item It can measure acceleration in all three axes, X, Y and Z.
-  \item It sends digital data immediately, therefore it is no need to use computational power to calculate digital values as needed if the data was captured by an analog accelerometer. 
+  \item It sends digital data immediately, which means no need to use computational power to calculate digital values as needed if the data was captured by an analog accelerometer. 
   \item It supports both \gls{i2c} and \gls{spi}, which makes it possible to connect to the nRF52. 
   \item It supports voltage of 3.3V-5.0V, which fits within the range of output from the nRF52.  
 \end{itemize}
@@ -99,19 +99,20 @@
     \label{fig:adxl345}
 \end{figure}
 
-\noindent When connecting to the \gls{nRF52}, using the \gls{i2c} interface was chosen because it is simple with few cables, supports an acceptable bit rate, and several sensors in the same link. 
+\noindent When connecting to the \gls{nRF52}, using the \gls{i2c} interface was chosen because it is simple with few cables, it supports an acceptable bit rate, and several sensors in the same link. 
 %Ports VIN, GND, SDA and SCL will be used in this connection, which will be explained in detail in chapter \ref{chp:architecture}. 
 
 \subsection{Additional computational power}
 
-\noindent The devices presented so far are small network devices, reaching from limited computational power to a more powerful central device. These devices can be used as end nodes or more central nodes in an \gls{iot} network. The \gls{Raspberry Pi} has already network connectivity, and can therefore be used as the final node before the results are presented on a screen, a web page, or to be stored on a server. In many cases however, it will be an advantage to include another node with considerably more computational power before the results are being published. This both limits the computations needed to be done at the \gls{Raspberry Pi}, and means that the systems are able to do more deep analyses of the gathered data, without the fear of a system overload. A central stationary computer, a supercomputer or computational power from a web service like \gls{aws} are possible solutions. In this network a standard stationary computer running a Linux Ubuntu based system was used as this node. Because of the limited time provided for this thesis, the scope focuses mostly on data analysis and transportation between small nodes in an end-to-end \gls{iot} system. The results were mostly obtained and calculated on the \gls{Raspberry Pi}, meaning this last central node was not extensively used in this solution, but could be a central topic for future projects aiming for a more complex data analysis. 
+\noindent The devices presented so far are small network devices, reaching from limited computational power to a more powerful central device. These devices can be used as end nodes or more central nodes in an \gls{iot} network. The \gls{Raspberry Pi} has already network connectivity, and can be used as the final node before the results are presented on a screen, a web page, or to be stored on a server. In many cases it will be an advantage to include another node with considerably more computational power before the results are being published. This both limits the computations needed to be done at the \gls{Raspberry Pi} and means that the systems are able to do more deep analyses of the gathered data, without the fear of a system overload. A central stationary computer, a supercomputer or computational power from a web service like \gls{aws} are possible solutions. In this network, a standard stationary computer running a Linux Ubuntu-based system was used as this node. Because of the limited time provided for this thesis, the scope focuses mostly on data analysis and transportation between small nodes in an end-to-end \gls{iot} system. The results were mostly obtained and calculated on the \gls{Raspberry Pi}, meaning this last central node was not extensively used in this solution, but could be a central topic for future projects aiming for a more complex data analysis. 
 
 \subsection{Alternative devices}
 
-An alternative for the Raspberry Pi was never considered, since this is a well known device with a good reputation. This should be easy to use, easy to find advice and help when needed, and easy get hold on devices when needed. There are of course other alternatives available\footnote{For instance the Ardurino Uno, Banana Pi or the BeagleBone Black} that could have been considered if there where any problems with the Raspberry Pi. The main contestant to replace the nRF52 was the Zolertia Z1\footnote{\url{http://zolertia.io/product/hardware/z1-platform}} microcontroller. This was a good alternative to use since it already has got an accelerometer fitted on the board, but does not have the same computational power as the \gls{nRF52}. 
+An alternative for the Raspberry Pi was never considered since this is a well-known device with a good reputation. This should be easily to use, easy to find advice and help when needed, and easy get hold on devices when needed. There are of course other alternatives available\footnote{For instance the Ardurino Uno, Banana Pi or the BeagleBone Black} that could have been considered if there where any problems with the Raspberry Pi. The main contestant to replace the nRF52 was the Zolertia Z1\footnote{\url{http://zolertia.io/product/hardware/z1-platform}} microcontroller. This was a good alternative to use since it already has got an accelerometer fitted on the board, but does not have the same computational power as the \gls{nRF52}. 
 
 %Should there have been any problems with the nRF52 the Zolertia Z1 would have been a natural contestant as a replacement. ADXL345 is the same accelerometer built in on the Zolertia Z1 microcontroller. This was therefore a natural choise when these two microcontroller where considered the main candidates in the network. If future works will do similar tests later, the results will be comparable between these two. 
 
+%start here
 
 \section{Communication technologies}
 
@@ -263,7 +264,7 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
 
 \noindent Wireshark is a software tool used to analyse networks and capture packets sent with different technologies \cite{lamping2004wireshark}. Later the data can be filtered and analysed, for instance by filtering out all packets except \gls{coap} and \gls{ble}, which was used in this case. Wireshark has been one of the most important tools to be able to analyse data to such an extent as done in this thesis. An example of use is shown in figure \ref{fig:CoAPNONwiresharkSetUp}. 
 
-\noindent \textit{Copper}\cite{copper2} is a generic browser which can be used in \textit{Firefox} browser \cite{copper2}. It is made to be used in \gls{iot} networks based on \gls{coap}, just like this network. Using Copper it was easy to use GET and PUT messages, as well as observing a server by using a simple \gls{gui}. By removing the need of using terminal commands and programming scripts this makes the system easier to use with less development effort outside the scope of this thesis. An example of the \gls{gui} can be seen in figure \ref{fig:copperExample} 
+\noindent \textit{Copper}\cite{copper3} is a generic browser which can be used in \textit{Firefox} browser. It is made to be used in \gls{iot} networks based on \gls{coap}, just like this network. Using Copper it was easy to use GET and PUT messages, as well as observing a server by using a simple \gls{gui}. By removing the need of using terminal commands and programming scripts this makes the system easier to use with less development effort outside the scope of this thesis. An example of the \gls{gui} can be seen in figure \ref{fig:copperExample} 
 \cite{kovatsch2011demo}.
 
 \begin{figure}[ht]

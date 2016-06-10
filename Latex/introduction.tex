@@ -4,11 +4,11 @@
 
 \section{Motivation}
 
-\noindent Internet of Things (IoT) is a general term describing a network of small devices connected to the Internet with either a direct connection, or using a forwarding device as a central point of connection. The term includes all sort of devices, from small sensors and microcontrollers to everyday smart objects, from phones and glasses to cars and buildings. A common factor for all of these is \gls{m2m} communication, where machines can communicate with each other without Human-computer interaction. The term \gls{iot} was first used by Kevin Ashton in 1999 \cite{ashton2009internet}, describing a global network of objects. He later explained how he predicted that most of the data contained on the Internet today will be overtaken by the amount of sensor collected data with \gls{m2m} communication in the future. Both with this as an argument, and the high interest for smart devices and sensors in the general population, it may be said with a high certainty that this will be a central part of the coming years of the Internet. 
+\noindent Internet of Things (IoT) is a general term describing a network of small devices connected to the Internet with either a direct connection or using a forwarding device as a central point of connection. The term includes all sort of devices, from small sensors and \glspl{microcontroller} to everyday smart objects, from phones and glasses to cars and buildings. A common factor for all of these is \gls{m2m} communication, where machines can communicate with each other without Human-computer interaction. Kevin Ashton first used the term \gls{iot} in 1999 \cite{ashton2009internet}, describing a global network of objects. He later explained how he predicted that most of the data contained on the Internet today will be bypassed by the amount of sensor collected data with \gls{m2m} communication in the future. Both with this as an argument, and the high interest for smart devices and sensors in the general population, it may be said with a great certainty that this will be a central part of the coming years of the Internet. 
 
-\noindent A develop from a network mostly based on human made material to a network based more on data from sensors using \gls{m2m} communication, require that several factors needs to be considered. It is natural to believe that most end nodes must be battery powered for practical reasons. If a complete system contains hundreds of sensors and \glspl{microcontroller} it would be impractical to set up a power cable to all of these. From a users perspective, it would also be very annoying to have to change these batteries very often. Because of this, the available computational power in the end nodes is very limited, and should be limited further as much as possible to increase the battery life. 
+\noindent Developing from a network mostly based on human-made material to a system based on data from sensors using \gls{m2m} communication, require that several factors are considered. It is natural to believe that most end nodes must be battery powered for practical reasons. If a complete system contains hundreds of sensors and \glspl{microcontroller}, it would be impractical to set up a power cable to all of these. From a users perspective, it would also be very annoying to have to change these batteries very often. Because of this, the available computational power in the end nodes is very limited, and should be limited further as much as possible to increase the battery life. 
 
-\noindent A central point of discussion in any \gls{iot} system will be how to transport data as efficient as possible. Raw data from sensors are seldom useful to an end user. Therefore, the data needs to be analysed and often represented in another form before it can be useful to the user. A device in the network needs to analyse the data, find out what is important or not, search for patterns, draw graphs or figures and forward the results to a monitor, a web page, or to be stored on a server to be used later. Arguments will be presented to discuss if the process of analysing data should take place in the end nodes, or if it is more preferable to forward raw data to a central component of the network. 
+\noindent A central point of discussion in any \gls{iot} system will be how to transport data as efficient as possible. Raw data from sensors are seldom useful to an end user. Therefore, the data need to be analysed and often represented in another form before it can be useful to the user. A device in the network need to analyse the data, find out what is important or not, search for patterns, draw graphs or figures and forward the results to a monitor, a web page, or to be stored on a server to be used later. Arguments will be presented to discuss if the process of analysing data should take place in the end nodes, or if it is preferable to forward raw data to a central component of the network. 
 
 
 %introductionIoT2.png
@@ -19,7 +19,7 @@
     \label{iotExampleArchitecture}
 \end{figure}
 
-\noindent Figure \ref{iotExampleArchitecture} shows the system, testbit, that will be constructed in this thesis. It consists of a sensor connected to a \gls{microcontroller} using the standard gls{i2c} cable interface. The \gls{microcontroller} used is the \gls{nRF52} from Nordic Semiconductor, which is connected to a \gls{Raspberry Pi}. The communication between these are using \gls{ble}, gls{6lowpan} and \gls{coap}. Both these devices and the technologies used will be described in chapter \ref{chp:background}. The \gls{Raspberry Pi} is connected to the Internet using \gls{ipv4}, and can in addition forward the data to a stationary computer if more computational power is needed. 
+\noindent Figure \ref{iotExampleArchitecture} shows the system, testbit, that will be constructed in this thesis. It consists of a sensor connected to a \gls{microcontroller} using the standard \gls{i2c} cable interface. The \gls{microcontroller} used is the \gls{nRF52} from Nordic Semiconductor, which is connected to a \gls{Raspberry Pi}. The communication link between these is using \gls{ble}, \gls{6lowpan} and \gls{coap}. Both these devices and the technologies used will be described in chapter \ref{chp:background}. The \gls{Raspberry Pi} is connected to the Internet using \gls{ipv4}, and can forward the data to a stationary computer if more computational power is needed. 
 
 
 
@@ -44,7 +44,7 @@
 
 \subsection{Scope}
 
-\noindent This thesis will mainly focus on the best way of optimizing transportation and analysing data in a network. The goal is to find the optimal solution on how to treat data. Central points of discussion will be:
+0\noindent This thesis will mainly focus on the best way of optimizing transportation and analysing data in a network. The goal is to find the optimal solution on how to treat data. Central points of discussion will be:
 
 \begin{itemize}
 	\item How to gather data from sensors efficiently, both concerning time and power consumption
@@ -52,33 +52,33 @@
 	\item To find where in the network it is preferable to analyse the raw data, concerning energy consumption and time spent in total
 \end{itemize}
 
-\noindent To achieve these central points, some explanation of background protocols, used devices and network topology will be addressed as well, in addition to low-level details needed to set up the system architecture, in order to maintain a stable and reliable network. 
+\noindent To achieve these central points mentioned, some explanation of background protocols, used devices and network topology will be addressed as well, in addition to low-level details needed to set up the system architecture, to maintain a stable and reliable network. 
 
 
 \subsection{Objectives}
 
 \noindent \textbf{O.1: Build a star network of \glspl{microcontroller}}
 
-\noindent This is the most elementary objective, to build a network that can be tested. All the other objectives are dependent on this.  
+\noindent This is the most primary objective, to build a network that can be tested. All the other objectives are dependent on this.  
 
 \noindent\textbf{O.2: Connect sensors to the end-nodes to collect data}
 
-\noindent Objective two involves gathering real data. To do this, some kind of sensor is needed, and needs to be correctly configured for the end node to be sure that the read data can be trusted and reliable. Objective three and four can still be successful without this, since simulated data can be a replacement.  
+\noindent Objective two involves gathering real data. To do this, a sensor is needed which must be configured correctly for the end node to be sure that the read data can be trusted and reliable. Objective three and four can still be successful without this objective since simulated data can be a replacement. 
 
 \noindent\textbf{O.3: Gather information of the data sent through the network}
 
-\noindent Objective three is to find tools or write programming code to gather and analyse the data sent through the network, and present these in a way that makes it easy to spot the advantages or disadvantages of the different protocols and technologies. 
+\noindent Objective three is to find tools or write programming code to gather and analyse the data sent through the network and present these in a way that makes it easy to spot the advantages or disadvantages of the different protocols and technologies. 
 
 \newpage
 \noindent\textbf{O.4: Analyse and discuss the gathered information}
 
-\noindent Objective four involves discussing the given results, and use these to discuss and draw conclusions on how to optimize the network and propose solutions, improvements or further work. 
+\noindent Objective four involves discussing the presented results, and use these to discuss and draw conclusions on how to optimize the network and propose solutions, improvements or further work. 
 
 \subsection{Research Questions}
 
-\noindent \textbf{R.1: Which transport protocols are suitable in such a network?}
+\noindent \textbf{R.1: Which transport protocols are suitable for such a system?}
 
-\noindent To answer this question, the network must be built and tested, to see if there are any noticeable differences in the tested protocols.
+\noindent To answer this question, the system must be built and tested, to see if there are any noticeable differences in the tested protocols.
 
 \noindent\textbf{R.2: What are the main limitations concerning transporting data?}
 
@@ -86,35 +86,31 @@
 
 \noindent\textbf{R.3: Are the \glspl{microcontroller} powerful enough to gather data this frequently?}
 
-\noindent This is not specified in the documentation of the \glspl{microcontroller}, since this depends on the network, the type of sensor and the type of data. To answer this question, the sensors must therefore gather data at an even higher rate to see if it is possible to reach an acceptable rate of sampling. 
+\noindent This is not specified in the documentation of the \glspl{microcontroller} since this depends on the network, the type of sensor and the type of data. To answer this question, the sensors must gather data at an even higher rate to see if it is possible to reach an acceptable rate of sampling. 
 
 \noindent\textbf{R.4: Could data analysis be done in the end nodes in this network?}
 
-\noindent This is dependent on the result from R.3. This might be possible if the results reveal that the \glspl{microcontroller} can easily handle the gathering of data and still have power to do calculations. The alternative is to forward raw data to a central node. 
+\noindent This question is dependent on the result from R.3. It might be possible to do this if the results reveal that the \glspl{microcontroller} can easily handle the gathering of the data and still have the power to do calculations. The alternative is to forward raw data to a central node. 
 
 \section{Methodology}
 
-How did you collect or generate the data?
-
-How did you analyse the data? 
-
 The research methodology used in this thesis can be split into three main parts. The first phase was to build and configure a complete end-to-end \gls{iot} system. This included finding the most appropriate devices and technology that could be used in such a system. 
 
-After the different devices has been connected and configured to communicate with each other, the next phase of the methodology is to transfer data between the different nodes. Data was collected using Wireshark, and programming code for the different devices in the testbit. 
+After the different devices have been connected and configured to communicate with each other, the next phase of the methodology is to transfer data between the different nodes. Data was collected using Wireshark, and programming code for the different devices in the testbit. 
 
-The third and final phase was to analyse the data captures in the previous phase. This was done by organizing data in tables and drawing graphs to find similarities, differences and patterns in the data. Several different examples where conducted and discussed in this phase. 
+The third and final phase were to analyse the data captured in the previous phase. This was done by organizing data in tables and drawing graphs to find similarities, differences and patterns in the data. Several different examples where conducted and discussed in this phase. 
 
 
 \section{Structure}
 
 
-\noindent \textbf{Chapter \ref{chp:background}} describes the technical background of technologies, protocols and devices needed to understand the rest of this thesis, and explains why some solutions were chosen over others in this particular network. This chapter answers objective O.1 in detail, and discusses research questions R.1 and R.2. 
+\noindent \textbf{Chapter \ref{chp:background}} describes the technical background of technologies, protocols and devices needed to understand the rest of this thesis, and explains why we chose some solutions over others in this particular network. This chapter answers objective O.1 in detail and discusses research questions R.1 and R.2. 
 
-\noindent \textbf{Chapter \ref{chp:architecture}} describes in detail how the different components of the network are connected and set up to communicate with each other. This chapter answers objective O.2, and discusses research question R.2 further. 
+\noindent \textbf{Chapter \ref{chp:architecture}} describes in detail how the different components of the network are connected and set up to communicate with each other. This chapter answers objective O.2 and discusses research question R.2 further. 
 
-\noindent \textbf{Chapter \ref{chp:measurements2}} describes, explains and discusses the performed network measurements using tables and graphs of gathered data as a central point of discussion. This chapter answers objective O.3 and discusses the research questions R.3 and R.4. The chapter concludes that both \gls{coap} \gls{con} and \gls{non}, have their advantages in different scenarios, which is summarized in chapter \ref{chp:measurements2}.6. \gls{con} has still been without doubt the most reliable when tested in this network. 
+\noindent \textbf{Chapter \ref{chp:measurements2}} describes, explains and discusses the performed network measurements using tables and graphs of gathered data as a central point of discussion. This chapter answers objective O.3 and discusses the research questions R.3 and R.4. The chapter concludes that both \gls{coap} \gls{con} and \gls{non}, have their advantages in different scenarios, which is summarized in chapter \ref{chp:measurements2}.6. \gls{con} has still been the most reliable when tested in this network. 
 
-\noindent \textbf{Chapter \ref{chp:dataAnalysis}} discusses the results found in chapter \ref{chp:measurements2} further, by going through the central points of the objectives. It discusses what was most successful, what could have been better and what should be considered for future works. At the end the chapter contains an overall evaluation of the used devices and technologies, and how the experience gained in this project can be used in the future. 
+\noindent \textbf{Chapter \ref{chp:dataAnalysis}} discusses the results found in chapter \ref{chp:measurements2} further, by going through the central points of the objectives. It discusses what was most successful, what could have been better and what should be considered for future works. The end of the chapter contains an overall evaluation of the used devices and technologies, and how the experience gained in this project can be used in the future. 
 
 \noindent \textbf{Chapter \ref{chp:results}} summarizes the entire work conducted in this project and presents the final conclusion. In the end, possible future works are discussed. 
 
