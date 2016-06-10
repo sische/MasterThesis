@@ -62,7 +62,7 @@
 \contentsline {subsection}{\numberline {5.5.2}nRF52}{59}{subsection.5.5.2}
 \contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{61}{chapter.6}
 \contentsline {section}{\numberline {6.1}Future work}{62}{section.6.1}
-\contentsline {chapter}{References}{63}{section*.15}
+\contentsline {chapter}{References}{63}{section*.16}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{65}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}Appendix B}{69}{appendix.B}

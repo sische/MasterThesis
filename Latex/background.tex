@@ -1,7 +1,7 @@
 \chapter{Background}
 \label{chp:background} 
 
-\noindent This thesis describes the setup and usage of an end-to-end \gls{iot} system. In order for the testbed to be set up and reproduced by others later on, a detailed description of components, sensors and protocols used, is provided. This chapter will undergo the background information of the devices, technologies and protocols used, and why these where chosen over other alternatives. 
+\noindent This thesis describes the setup and usage of an end-to-end \gls{iot} system. In order for the testbed to be set up and reproduced by others later on, a detailed description of components, sensors and protocols used, is provided. This chapter will undergo the background information of the devices, technologies and protocols used, and why these where chosen over other alternatives. EXAMPLE: \cite{nord}. 
 
 %\section{Internet of Things} % Tjae
 
@@ -74,7 +74,7 @@
 
 \subsection{Adafruit ADXL345 Accelerometer}
 
-\noindent As seen in the previous section, the nRF52 have several possibilities when it comes to radio communication. In addition to this, an external sensor was needed to collect data. Supporting both the \gls{i2c} and \gls{spi}, the nRF52 has got most of the standard interfaces needed. Objectives presented in the introduction to this thesis says that it would be preferable both to collect, transport and analyse data in this network. The sensor chosen to do this was the ADXL345 accelerometer from Adafriut. This was selected for the following main reasons:  
+\noindent As seen in the previous section, the nRF52 have several possibilities when it comes to radio communication. In addition to this, an external sensor was needed to collect data. Supporting both the \gls{i2c} and \gls{spi}, the nRF52 has got most of the standard interfaces needed. Objectives presented in the introduction to this thesis says that it would be preferable both to collect, transport and analyse data in this network. The sensor chosen to do this was the ADXL345 accelerometer from Adafriut \cite{adxlDataSheet}. This was selected for the following main reasons:  
 
 \begin{itemize}
   \item It can measure acceleration in all three axes, X, Y and Z.
@@ -158,7 +158,7 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
 
 \subsection{Other alternatives}
 
-\noindent \textit{ANT} was the other main alternative to \gls{ble} when network protocols where chosen. It also uses the 2,4 GHz ISM band, and is made to be used in sensor based networks \cite{ant}. It is supported by the \gls{nRF52}, and could be used with a \gls{Raspberry Pi} if an ANT \gls{usb} dongle is fitted. This would have solved the \gls{ble} problem not being able to connect several devices together in a mesh network, since ANT supports this. Other than this the difference is small. \gls{ble} is, on the other hand, supported by other mobile devices, meaning it is possible to use a mobile application developed by Nordic Semiconductor to test the connection. One of the main intentions from \gls{item} when the problem description was written was to test \gls{ble} in such a setting, therefore this was chosen. 
+\noindent \textit{ANT} was the other main alternative to \gls{ble} when network protocols where chosen. It also uses the 2,4 GHz ISM band, and is made to be used in sensor based networks \todo{cite ANT}. It is supported by the \gls{nRF52}, and could be used with a \gls{Raspberry Pi} if an ANT \gls{usb} dongle is fitted. This would have solved the \gls{ble} problem not being able to connect several devices together in a mesh network, since ANT supports this. Other than this the difference is small. \gls{ble} is, on the other hand, supported by other mobile devices, meaning it is possible to use a mobile application developed by Nordic Semiconductor to test the connection. One of the main intentions from \gls{item} when the problem description was written was to test \gls{ble} in such a setting, therefore this was chosen. 
 %\todo{change this ref, {ant}}
 
 
@@ -259,7 +259,7 @@ The 6LoWPAN Working Group has recognized the importance of \gls{ble} in \gls{iot
 %\newpage
 \section{Software tools}
 
-\noindent As an \gls{ide}, we used \textit{KEIL Vision}, as recommended by Nordic Semiconductor in \cite{nordicSoftwareTools}, for writing C programming. For other programming languages, (for instance Python 3.4), we used Sublime Text 2 for Windows and Linux, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
+\noindent As an \gls{ide}, we used \textit{KEIL Vision}, as recommended by Nordic Semiconductor in \cite{nord}, for writing C programming. For other programming languages, (for instance Python 3.4), we used Sublime Text 2 for Windows and Linux, as well as \textit{Pluma} for Ubuntu Mate on the Raspberry Pi. 
 
 \noindent Wireshark is a software tool used to analyse networks and capture packets sent with different technologies \cite{lamping2004wireshark}. Later the data can be filtered and analysed, for instance by filtering out all packets except \gls{coap} and \gls{ble}, which was used in this case. Wireshark has been one of the most important tools to be able to analyse data to such an extent as done in this thesis. An example of use is shown in figure \ref{fig:CoAPNONwiresharkSetUp}. 
 

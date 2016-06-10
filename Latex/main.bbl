@@ -1,46 +1,58 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{??}{nor}{a}]{nordicSoftwareTools}
-
-
-\bibitem[\protect\citeauthoryear{??}{ant}{}]{ant}
-{ANT and BLE:} whats the main difference?, howpublished =
-  {http://electronicdesign.com/mobile/what-s-difference-between-bluetooth-low-energy-and-ant},
-  note = {Accessed: 26-05-2016}.
-
 \bibitem[\protect\citeauthoryear{??}{cop}{}]{copper2}
-{Copper (Cu): } coap under-agent for firefox.
-\newblock http://people.inf.ethz.ch/~mkovatsc/copper.php.
-\newblock Accessed: 29-05-2016.
+{Copper (Cu): CoAP user-agent for Firefox}.
 
-\bibitem[\protect\citeauthoryear{??}{mqt}{}]{mqttWebsite}
-{MQTT:} web page.
-\newblock http://mqtt.org.
+\bibitem[\protect\citeauthoryear{??}{adx}{2016}]{adxlDataSheet}
+ (2016).
+\newblock {ADXL345: Digital Accelerometer Data Sheet}.
+\newblock
+  \url{http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf}.
+\newblock Accessed: 20-04-2016.
+
+\bibitem[\protect\citeauthoryear{??}{mqt}{2016}]{mqttWebsite}
+ (2016).
+\newblock {MQTT: Web page}.
+\newblock \url{http://mqtt.org}.
 \newblock Accessed: 07-04-2016.
 
-\bibitem[\protect\citeauthoryear{??}{new}{}]{newark}
-{Newark:} element 14.
-\newblock https://www.newark.com/.
+\bibitem[\protect\citeauthoryear{??}{new}{2016}]{newark}
+ (2016).
+\newblock {Newark: Element 14}.
+\newblock \url{https://www.newark.com/}.
 \newblock Accessed: 13-05-2016.
 
-\bibitem[\protect\citeauthoryear{??}{nor}{b}]{nordicNrfDocumentation}
-{Nordic Semiconductor:} iot sdk documentation.
+\bibitem[\protect\citeauthoryear{??}{nor}{2016a}]{nord}
+ (2016a).
+\newblock {Nordic Semiconductor:} development tools and software.
 \newblock
-  https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk52.v0.9.1%2Fexamples.html.
+  \url{https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF52832/Development-tools-and-Software/}.
+\newblock [Accessed: 12-04-2016].
 
-\bibitem[\protect\citeauthoryear{??}{nrf}{}]{nrf52Nordic}
-{Nordic Semiconductor:} nrf52 series soc.
-\newblock https://www.nordicsemi.com/Products/nRF52-Series-SoC.
+\bibitem[\protect\citeauthoryear{??}{nor}{2016b}]{nordicNrfDocumentation}
+ (2016b).
+\newblock {Nordic Semiconductor: IoT SDK Documentation}.
+\newblock \url
+  {https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk52.v0.9.1%2Fexamples.html}.
+\newblock Accessed: 27-01-16.
+
+\bibitem[\protect\citeauthoryear{??}{nrf}{2016}]{nrf52Nordic}
+ (2016).
+\newblock {Nordic Semiconductor: nRF52 Series SoC}.
+\newblock \url{https://www.nordicsemi.com/Products/nRF52-Series-SoC}.
 \newblock Accessed: 25-03-2016.
 
-\bibitem[\protect\citeauthoryear{??}{sof}{}]{softDevice}
-{Nordic Semiconductor:} s110 softdevice.
-\newblock https://www.nordicsemi.com/eng/Products/S110-SoftDevice-v7.0.
+\bibitem[\protect\citeauthoryear{??}{sof}{2016}]{softDevice}
+ (2016).
+\newblock {Nordic Semiconductor:} s110 softdevice.
+\newblock \url{https://www.nordicsemi.com/eng/Products/S110-SoftDevice-v7.0}.
 \newblock Accessed: 26-05-2016.
 
-\bibitem[\protect\citeauthoryear{??}{ubu}{}]{ubuntuMate}
-{Ubuntu Mate:} installation for raspberry pi, howpublished =
-  {https://ubuntu-mate.org/raspberry-pi/}, note = {Accessed: 31-01-2016}.
+\bibitem[\protect\citeauthoryear{??}{ubu}{2016}]{ubuntuMate}
+ (2016).
+\newblock {Ubuntu Mate: Installation for Raspberry Pi}.
+\newblock https://ubuntu-mate.org/raspberry-pi/.
+\newblock Accessed: 31-01-2016.
 
 \bibitem[\protect\citeauthoryear{Ashton}{Ashton}{2009}]{ashton2009internet}
 Ashton, K. (2009).
@@ -103,8 +115,8 @@ Montenegro, G., N.~Kushalnagar, J.~Hui, and D.~Culler (2007).
 \bibitem[\protect\citeauthoryear{Mulligan}{Mulligan}{2007}]{mulligan20076lowpan}
 Mulligan, G. (2007).
 \newblock The 6lowpan architecture.
-\newblock In {\em Proceedings of the 4th workshop on Embedded networked
-  sensors}, pp.\  78--82. ACM.
+\newblock In {\em Proceedings of the 4th Workshop on Embedded Networked
+  Sensors, EmNets 2007, Cork, Ireland, June 25-26, 2007}, pp.\  78--82.
 
 \bibitem[\protect\citeauthoryear{Semiconductors}{Semiconductors}{2000}]{semiconductors2000i2c}
 Semiconductors, P. (2000).
