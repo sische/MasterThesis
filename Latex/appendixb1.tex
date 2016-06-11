@@ -1,0 +1,104 @@
+\chapter{Appendix B}
+\label{chp:appendixb1}
+
+Appendix B contains detailed description on how to connect and configure the different devices in the testbed. 
+
+\noindent Following is a listing of Linux terminal commands for the \gls{Raspberry Pi} to get the testbed up and running \cite{nordicNrfDocumentation}. 
+
+\noindent Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable version, (Note: Jan. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. Ubuntu Mate was therefore chosen as the best and most stable \gls{os}, and was installed on the memory card from another computer \cite{ubuntuMate}. When this is done, a resizing of the file system is needed to use all the capacity of the memory card. This is not crucial to get the \gls{os} up and running, but recommended to be able to use more than 4GB of the memory card. Recommended size of the memory card is 16GB. To resize, after the initial boot of the \gls{os} on the \gls{Raspberry Pi}, run the following commands: 
+
+\begin{verbatim}
+sudo fdisk /dev/mmcblk0
+\end{verbatim}
+
+\noindent Delete partition (d,2), and run the following after a reboot
+
+\begin{verbatim}
+sudo resize2fs /dev/mmcblk0p2
+\end{verbatim}
+
+\noindent All the following commands require admin rights on the system. It is therefore easier to type in the following command to temporarily become a \textit{super user}. Alternatively type in \textit{sudo} before every command in the rest of the recipe.
+
+\begin{verbatim}
+sudo su
+\end{verbatim} 
+
+\noindent It should now be possible to exploit the whole memory card, and start downloading and activating services needed in the system. To use \gls{ble}, install Bluez and radvd using \textit{apt-get}:
+
+\begin{verbatim}
+apt-get install radvd
+apt-get install bluez
+apt-get upgrade
+apt-get update
+\end{verbatim}
+%\end{lstlisting}
+
+\noindent \gls{ipv6} forwarding is needed to let the end nodes discover each other through the central node in the star network. To activate this, uncomment the following line (remove "\#") in the file \textit{/etc/sysctl.conf}
+
+\begin{verbatim}
+net.ipv6.conf.all.forwarding=1
+\end{verbatim}
+
+\noindent To find the \gls{ipv6} prefix in the network, run the command \textit{ifconfig}. Find a field named \textit{inet6 addr}, and write down the first and last number on this line (For instance 2001 and /64). 
+The communication will in this case go through a custom designed interface. This will be named bt0. Start by creating the \textit{radvd.conf}-file, and open it for editing. 
+
+\begin{verbatim}
+touch /etc/radvd.conf
+pico /etc/radvd.conf
+\end{verbatim} 
+
+
+\noindent Write in the following bt0 interface. Replace the number 2001 and /64 with the numbers found in the previous step. 
+
+\begin{verbatim}
+interface bt0
+{
+    AdvSendAdvert on;
+    prefix 2001::/64
+    {
+        AdvOnLink off;
+        AdvAutonomous on;
+        AdvRouterAddr on;
+    };
+};
+\end{verbatim} 
+
+\noindent To mount the modules \textit{bluetooth\_6lowpan, 6lowpan and radvd}, add the following to \textit{/etc/modules}. If the file does not exist, create it by entering \textit{touch /etc/modules} first. 
+
+\begin{verbatim}
+bluetooth_6lowpan
+6lowpan
+radvd
+\end{verbatim}
+
+\noindent When the system is booted, these modules will be automatically loaded. The \textit{hcitool} command should now be available. This is a tool designed to connect and keep track of connected devices, both through standard bluetooth and \gls{ble}. 
+
+\begin{verbatim}
+hcitool lescan
+\end{verbatim}
+
+\noindent \textit{lescan} will scan for \gls{ble} devices nearby, and find the bluetooth address, for instance \textit{00:AA:11:BB:22:CC}. The normal procedure in this case would be to run the following command: 
+
+\begin{verbatim}
+echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
+\color{red}{hcitool lecc 00:AA:11:BB:22:CC}
+service radvd restart
+\end{verbatim}
+
+\noindent These commands never established a stable connection in this system. It was not possible to test the connection, and each connected device became automatically disconnected after about 15 seconds. The reason for this was never found. Instead it was possible to not use \textit{hcitool} for this part. Instead, the following commands worked fine:
+
+\begin{verbatim}
+cd /sys/kernel/debug/bluetooth
+echo 1 > 6lowpan_enable
+echo "connect 00:AA:11:BB:22:CC 1" > 6lowpan_control
+service radvd restart
+\end{verbatim} 
+
+\noindent The command \textit{hcitool con} shows the connected \gls{ble} devices. If the device is connected, the connection can be tested by typing:
+
+\begin{verbatim}
+ping6 2001::02AA:11FF:FEBB:22CC
+\end{verbatim}
+
+
+\noindent Note that \textit{2001::02AA:11FF:FEBB:22CC} is the full \gls{ipv6} address of the device when the Bluetooth address is \textit{00:AA:11:BB:22:CC} in this system. The \gls{ipv6} address can be used to route packets using \gls{6lowpan}. Using the basic examples provided by Nordic Semiconductor described in chapter \ref{chp:architecture}.3, it was now possible to send messages both using \gls{coap} \gls{con} and \gls{non}.
