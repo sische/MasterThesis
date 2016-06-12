@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  12 JUN 2016 22:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  12 JUN 2016 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2865,26 +2865,13 @@ l.577
 
 
 ] [51]
-
-LaTeX Warning: Reference `chp:appendixc' on page 52 undefined on input line 24.
-
-
-[52]
-
-LaTeX Warning: Reference `chp:appendixc' on page 53 undefined on input line 40.
-
-
-[53] [54pdfTeX warning (ext4): destination with the same identifier (name{table
-.5.1}) has been already used, duplicate ignored
+[52] [53] [54pdfTeX warning (ext4): destination with the same identifier (name{
+table.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.86 \newpage
-             ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55])
-[56]
+             ] [55]) [56]
 \openout2 = `results.aux'.
 
  (./results.tex
@@ -2952,7 +2939,7 @@ table.A.2}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.75 \newpage
-             ] <0byteCONwireshark.png, id=1592, 963.6pt x 1156.32pt>
+             ] <0byteCONwireshark.png, id=1591, 963.6pt x 1156.32pt>
 File: 0byteCONwireshark.png Graphic file (type png)
 
 <use 0byteCONwireshark.png>
@@ -3021,16 +3008,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 610688B080E5E01D28ADA71DD2EE52D8;2591.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
  35051 strings out of 493304
- 562869 string characters out of 6139871
- 930004 words of memory out of 5000000
+ 562873 string characters out of 6139871
+ 930044 words of memory out of 5000000
  36995 multiletter control sequences out of 15000+600000
  87373 words of font info for 147 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -3048,10 +3031,10 @@ mf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/font
 s/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (94 pages, 6248597 bytes).
+Output written on main.pdf (94 pages, 6247815 bytes).
 PDF statistics:
- 2111 PDF objects out of 2487 (max. 8388607)
- 1931 compressed objects within 20 object streams
+ 2110 PDF objects out of 2487 (max. 8388607)
+ 1930 compressed objects within 20 object streams
  542 named destinations out of 1000 (max. 500000)
  25567 words of extra memory for PDF output out of 29859 (max. 10000000)
 
