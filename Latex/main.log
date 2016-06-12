@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  12 JUN 2016 17:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  12 JUN 2016 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2679,7 +2679,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.173 
-      ] <CON0-200withAcks.png, id=1067, 1626.075pt x 879.285pt>
+      ] <CON0-200withAcks.png, id=1070, 1626.075pt x 879.285pt>
 File: CON0-200withAcks.png Graphic file (type png)
 
 <use CON0-200withAcks.png>
@@ -2712,7 +2712,7 @@ l.253
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.253 
-      ] <CONNONvs0-200acks.png, id=1130, 1626.075pt x 879.285pt>
+      ] <CONNONvs0-200acks.png, id=1133, 1626.075pt x 879.285pt>
 File: CONNONvs0-200acks.png Graphic file (type png)
 
 <use CONNONvs0-200acks.png>
@@ -2743,11 +2743,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.400 
-      ]
-
-LaTeX Warning: Reference `fig:NON0-kb' on page 40 undefined on input line 414.
-
-[40] <CONNON0-kwithACK.png, id=1221, 1626.075pt x 879.285pt>
+      ] [40] <CONNON0-kwithACK.png, id=1225, 1626.075pt x 879.285pt>
 File: CONNON0-kwithACK.png Graphic file (type png)
 
 <use CONNON0-kwithACK.png>
@@ -2763,7 +2759,7 @@ Underfull \vbox (badness 7981) has occurred while \output is active []
                                                   \fi \fi 
 l.465 
        <./CONNON0-kwithACK.png>]
-<bytesPrSecondNew3.png, id=1253, 1626.075pt x 879.285pt>
+<bytesPrSecondNew3.png, id=1257, 1626.075pt x 879.285pt>
 File: bytesPrSecondNew3.png Graphic file (type png)
 
 <use bytesPrSecondNew3.png>
@@ -2776,14 +2772,14 @@ Package pdftex.def Info: bytesPrSecondNew3.png used on input line 473.
                                                   \fi \fi 
 l.480 
        <./bytesPrSecondNew3.png>]
-<bytesPrSecondNewNON.png, id=1264, 1626.075pt x 879.285pt>
+<bytesPrSecondNewNON.png, id=1268, 1626.075pt x 879.285pt>
 File: bytesPrSecondNewNON.png Graphic file (type png)
 
 <use bytesPrSecondNewNON.png>
 Package pdftex.def Info: bytesPrSecondNewNON.png used on input line 484.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
 
-<avgTimeCONNON.png, id=1269, 1626.075pt x 879.285pt>
+<avgTimeCONNON.png, id=1273, 1626.075pt x 879.285pt>
 File: avgTimeCONNON.png Graphic file (type png)
  <use avgTimeCONNON.png>
 Package pdftex.def Info: avgTimeCONNON.png used on input line 494.
@@ -2796,14 +2792,14 @@ Package pdftex.def Info: avgTimeCONNON.png used on input line 494.
                                                   \fi \fi 
 l.497 \end{figure}
                    <./bytesPrSecondNewNON.png>]
-<goodput_payload_CON.png, id=1290, 1626.075pt x 879.285pt>
+<goodput_payload_CON.png, id=1294, 1626.075pt x 879.285pt>
 File: goodput_payload_CON.png Graphic file (type png)
 
 <use goodput_payload_CON.png>
 Package pdftex.def Info: goodput_payload_CON.png used on input line 523.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
 
-<goodput_payload_NON.png, id=1291, 1626.075pt x 879.285pt>
+<goodput_payload_NON.png, id=1295, 1626.075pt x 879.285pt>
 File: goodput_payload_NON.png Graphic file (type png)
 
 <use goodput_payload_NON.png>
@@ -2835,7 +2831,7 @@ l.537
                                                   \fi \fi 
 l.537 
        <./goodput_payload_CON.png> <./goodput_payload_NON.png>]
-<payloadGoodput_CONNON.png, id=1328, 1626.075pt x 879.285pt>
+<payloadGoodput_CONNON.png, id=1332, 1626.075pt x 879.285pt>
 File: payloadGoodput_CONNON.png Graphic file (type png)
 
 <use payloadGoodput_CONNON.png>
@@ -2848,7 +2844,7 @@ Package pdftex.def Info: payloadGoodput_CONNON.png used on input line 545.
                                                   \fi \fi 
 l.559 \newpage
                <./payloadGoodput_CONNON.png>]
-<bestCaseworstCase3.png, id=1345, 1626.075pt x 879.285pt>
+<bestCaseworstCase3.png, id=1350, 1626.075pt x 879.285pt>
 File: bestCaseworstCase3.png Graphic file (type png)
 
 <use bestCaseworstCase3.png>
@@ -2955,7 +2951,7 @@ table.A.2}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.75 \newpage
-             ] <0byteCONwireshark.png, id=1595, 963.6pt x 1156.32pt>
+             ] <0byteCONwireshark.png, id=1599, 963.6pt x 1156.32pt>
 File: 0byteCONwireshark.png Graphic file (type png)
 
 <use 0byteCONwireshark.png>
@@ -3031,11 +3027,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 35064 strings out of 493304
- 563019 string characters out of 6139871
+ 35057 strings out of 493304
+ 562938 string characters out of 6139871
  929927 words of memory out of 5000000
- 36997 multiletter control sequences out of 15000+600000
- 92206 words of font info for 152 fonts, out of 8000000 for 9000
+ 36996 multiletter control sequences out of 15000+600000
+ 91816 words of font info for 149 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  69i,14n,76p,1753b,2075s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -3052,10 +3048,10 @@ mf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
 /type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmtt9.pfb>
-Output written on main.pdf (94 pages, 6263563 bytes).
+Output written on main.pdf (94 pages, 6263578 bytes).
 PDF statistics:
- 2117 PDF objects out of 2487 (max. 8388607)
- 1936 compressed objects within 20 object streams
+ 2121 PDF objects out of 2487 (max. 8388607)
+ 1940 compressed objects within 20 object streams
  544 named destinations out of 1000 (max. 500000)
  27615 words of extra memory for PDF output out of 29859 (max. 10000000)
 
