@@ -7,6 +7,18 @@
   \url{http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf}.
 \newblock Accessed: 20-04-2016.
 
+\bibitem[\protect\citeauthoryear{??}{ant}{2016}]{ant23}
+ (2016).
+\newblock {ANT: This is ANT}.
+\newblock \url{http://www.thisisant.com}.
+\newblock [Accessed: 06-02-2016].
+
+\bibitem[\protect\citeauthoryear{??}{blu}{2016}]{bluez32}
+ (2016).
+\newblock {Bluez: Official Linux Bluetooth protocol stack}.
+\newblock \url{http://www.bluez.org}.
+\newblock [Accessed: 06-02-2016].
+
 \bibitem[\protect\citeauthoryear{??}{cop}{2016}]{copper3}
  (2016).
 \newblock {Copper: CoAP user-agent for Firefox}.

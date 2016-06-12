@@ -3,7 +3,9 @@
 
 Appendix B contains detailed description on how to connect and configure the different devices in the testbed. 
 
-\noindent Following is a listing of Linux terminal commands for the \gls{Raspberry Pi} to get the testbed up and running \cite{nordicNrfDocumentation}. 
+\section{Connecting Raspberry Pi and nRF52}
+
+\noindent Following is a listing of Linux terminal commands for the \gls{Raspberry Pi}, to get the testbed up and running \cite{nordicNrfDocumentation}. 
 
 \noindent Install an \gls{os} on the Raspberry Pi that has a Linux kernel version later than 3.18. On \textit{Raspbian} version 3.18 is the only stable version, (Note: Jan. 2016), but \textit{Ubuntu Mate} is stable in version 4.15. Ubuntu Mate was therefore chosen as the best and most stable \gls{os}, and was installed on the memory card from another computer \cite{ubuntuMate}. When this is done, a resizing of the file system is needed to use all the capacity of the memory card. This is not crucial to get the \gls{os} up and running, but recommended to be able to use more than 4GB of the memory card. Recommended size of the memory card is 16GB. To resize, after the initial boot of the \gls{os} on the \gls{Raspberry Pi}, run the following commands: 
 
@@ -81,11 +83,11 @@ hcitool lescan
 
 \begin{verbatim}
 echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
-\color{red}{hcitool lecc 00:AA:11:BB:22:CC}
+hcitool lecc 00:AA:11:BB:22:CC
 service radvd restart
 \end{verbatim}
 
-\noindent These commands never established a stable connection in this system. It was not possible to test the connection, and each connected device became automatically disconnected after about 15 seconds. The reason for this was never found. Instead it was possible to not use \textit{hcitool} for this part. Instead, the following commands worked fine:
+\noindent These commands never established a stable connection in this system. It was not possible to test the connection, and each connected device became automatically disconnected after about 15 seconds. We never found the reason for this problem. Instead, it was possible to not use \textit{hcitool} for this part. The following commands worked fine:
 
 \begin{verbatim}
 cd /sys/kernel/debug/bluetooth
@@ -101,4 +103,11 @@ ping6 2001::02AA:11FF:FEBB:22CC
 \end{verbatim}
 
 
-\noindent Note that \textit{2001::02AA:11FF:FEBB:22CC} is the full \gls{ipv6} address of the device when the Bluetooth address is \textit{00:AA:11:BB:22:CC} in this system. The \gls{ipv6} address can be used to route packets using \gls{6lowpan}. Using the basic examples provided by Nordic Semiconductor described in chapter \ref{chp:architecture}.3, it was now possible to send messages both using \gls{coap} \gls{con} and \gls{non}.
+\noindent Note that \textit{2001::02AA:11FF:FEBB:22CC} is the full \gls{ipv6} address of the device when the Bluetooth address is \textit{00:AA:11:BB:22:CC} in the testbed. The \gls{ipv6} address can be used to route packets using \gls{6lowpan}. Using the basic examples provided by Nordic Semiconductor described in chapter \ref{chp:architecture}.1, it was now possible to send messages both using \gls{coap} \gls{con} and \gls{non}.
+%\todo{3.3, still right reference?}
+
+
+\section{Connecting nRF52 and ADXL345}
+
+
+

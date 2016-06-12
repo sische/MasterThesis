@@ -7,7 +7,7 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Connection scheme nRF52 to ADXL345}}{24}{table.3.1}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Connection scheme nRF52 to ADXL345}}{23}{table.3.1}
 \addvspace {10pt}
 \contentsline {table}{\numberline {4.1}{\ignorespaces Wireshark CoAP CON 0 bytes payload}}{34}{table.4.1}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Wireshark CoAP CON 100 bytes payload}}{35}{table.4.2}

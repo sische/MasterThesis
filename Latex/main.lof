@@ -5,7 +5,7 @@
 \select@language {norsk}
 \select@language {english}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Example of IoT architecture}}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Testbed, system architecture}}{2}{figure.1.1}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Raspberry Pi 3}}{8}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Nordic Semiconductor nRF52 }}{9}{figure.2.2}
@@ -13,7 +13,7 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces BLE protocol stack \cite {gomez2012overview}}}{12}{figure.2.4}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces BLE Data Unit Structure \cite {gomez2012overview}}}{13}{figure.2.5}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces CON CoAP set up sequence diagram \cite {shelby2014constrained}}}{16}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces NON CoAP set up sequence diagram \cite {shelby2014constrained}}}{17}{figure.2.7}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces NON CoAP set up sequence diagram \cite {shelby2014constrained}}}{16}{figure.2.7}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces CoAP NON, set up sequence, Wireshark capture}}{17}{figure.2.8}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces CoAP message format \cite {shelby2014constrained}}}{18}{figure.2.9}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces MQTT subscription sequence diagram \cite {hunkeler2008mqtt}}}{18}{figure.2.10}

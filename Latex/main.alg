@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 10.06.2016  18:29:52
-;; Indexstyle: "/tmp/nBF69z5i7E", Rawindex: "/tmp/4zBtA6FhvV", Output: "main.acr"
+;; at 12.06.2016  13:56:42
+;; Indexstyle: "/tmp/wqw6vVQaNK", Rawindex: "/tmp/a0QM5wnoHG", Output: "main.acr"
 
 
 Building indexentry-tree:
@@ -53,6 +53,8 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Forming letter-groups:
 Letter-group: "¨ÃÚ" -> "I"
 Letter-group: "„´—" -> "B"
+Letter-group: "¨Ú—»" -> "I"
+Letter-group: "¼Ú¼à" -> "N"
 Letter-group: "6´ÃæÈ€¼" -> "glsnumbers"
 Letter-group: "€†®" -> "A"
 Letter-group: "€†´" -> "A"
@@ -70,7 +72,6 @@ Letter-group: "¨—" -> "I"
 Letter-group: "¨Èå4" -> "I"
 Letter-group: "¨Èå6" -> "I"
 Letter-group: "¨Ð»" -> "I"
-Letter-group: "¨Ú—»" -> "I"
 Letter-group: "´€¼" -> "L"
 Letter-group: "´2†€È" -> "L"
 Letter-group: "»2»" -> "M"
@@ -78,7 +79,6 @@ Letter-group: "»ÊÚÚ" -> "M"
 Letter-group: "»Úà" -> "M"
 Letter-group: "¼È" -> "N"
 Letter-group: "¼Ã¼" -> "N"
-Letter-group: "¼Ú¼à" -> "N"
 Letter-group: "È€¼" -> "P"
 Letter-group: "¨†»È" -> "I"
 Letter-group: "ÃÐ" -> "O"
@@ -131,3 +131,4 @@ Letter-group: "Ú†È" -> "T"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "àÈ" -> "U"
 WARNING: location-reference "{}{i}" did match multiple location-classes! (taking first one)
+WARNING: location-reference "{}{v}" did match multiple location-classes! (taking first one)

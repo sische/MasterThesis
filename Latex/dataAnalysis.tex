@@ -8,7 +8,7 @@
 \noindent  This objective was fulfilled by using the Raspberry Pi as a central node and nRF52s as end nodes. Central points in the solution was the use of a version of Linux \gls{os} with pre-configured kernel of version 4.15 or later on the \gls{Raspberry Pi}. In addition it was important to understand how prefix in \gls{ipv6} works, and how this can be used to identify a device connected using \gls{ble}. In this solution the end nodes with \glspl{nRF52} works as servers, while the central Raspberry Pi works as a client requesting services from these servers. 
 
 
-\noindent \textbf{R.1: Which technologies and transport protocols are suitable in such a network?}
+\noindent \textbf{R.1: Which transport protocols are suitable for such a system?}
 
 \noindent \gls{ble} was chosen over ANT, as explained in chapter \ref{chp:background}.2.3. Bluetooth is a widely used technology that is very interesting in an \gls{iot} setting, and was therefore the obvious choice in this network. The \gls{ble} version of Bluetooth is designed to use a minimal amount of energy and still be reliable and fast, which is central criteria in the testbit. As a result of this \gls{6lowpan} also seemed like a suitable communication protocol, both because it is made to work together with \gls{ble}, and because it is an up an coming technology that is assumed to be more and more used in the coming years. \textit{Zigbee} and \textit{Zensys} were the main other options, which did not seem as fit in this case mostly because of different solutions in routing. In the application layer the two main choices was between \gls{coap} and \gls{mqtt}. Because of time restrictions \gls{coap} was chosen to be studied in depth in this thesis. 
 

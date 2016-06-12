@@ -6,7 +6,7 @@
 
 \section{Description of measurements}
 
-\noindent The following sections will discuss if \textit{fragmentation} is a major issue when sending data through low energy networks. Another point will be which of the protocols described in chapter \ref{chp:background} is the most efficient to use when the goal is to get a maximum amount of \gls{payload} compared to the total throughput. Data will be sent through the network, containing a payload of constant length. Wireshark will be a central part of the measurements presented, and the packet size will be increased to see the changes. These problems are essential in the discussion of objective O.4. \todo{Denne sectionen sier for mange tanker paa en gang!}
+\noindent The following sections will discuss if \textit{fragmentation} is a major issue when sending data through low energy networks. Another point will be which of the protocols described in chapter \ref{chp:background} is the most efficient to use when the goal is to get a maximum amount of \gls{payload} compared to the total throughput. Data will be sent through the network, containing a payload of constant length. Wireshark will be a central part of the measurements presented, and the packet size will be increased to see the changes. These problems are essential in the discussion of objective O.4. %\todo{Denne sectionen sier for mange tanker paa en gang!}
 
 \noindent Before the experiment started, our expected result was that sending a small amount of data at a time would not be preferable, because of the needed bytes to set up the connection, header files and so on. We did not know the packet size needed before it would be considered profitable to send them regarding the cost of energy and network capacity. This is dependent on the situation where the network will be used. A system with sensors to analyse real-time patient data to see if a patient is in a stable state needs to be reliable, and the data will be sent no matter if it is profitable for the network or not. In this case, timing is the most important. A system used in a company to monitor how many cups of coffee are brewed during a day can easily store data in the end node and send larger amounts of data less frequently, if this is profitable for the network. 
 
@@ -17,7 +17,7 @@
     lim_{x\to\infty} \frac{x + 27}{x + 31 + C} = \frac{27 \, byte}{31 \, byte}*100 \, \approx 87,1 \,\%
 \end{equation} 
 
-\todo{Tjaa, ikke helt enig? Forklar bedre at det er header?}
+%\todo{Tjaa, ikke helt enig? Forklar bedre at det er header?}
 
 
 \noindent During measurements in the physical testbed, the actual result will probably be considerably lower than this because \gls{6lowpan} and \gls{coap} packets could require some additional fields for each packet. There are also other additional protocols in \gls{ble} that will require some packets, like the occasional \glspl{ack} from ACL. It is also logical to expect some other disturbing factors in a real-world wireless network. 
@@ -56,7 +56,7 @@ ping6 google.com
 
 \noindent Results from these first tests gave an approximate average of 250 \textit{ms} \gls{rtt}, from a request is sent to the response is received. The standard deviation in these cases was on average $ \sigma = 25 \, ms $, which is a variation of 10 \%. In total ten different measurements at different time were performed, an example can be seen in figure \ref{fig:ping3}. These measurements were performed using different versions of \glspl{nRF52}, and a different amount of these devices connected to the central Raspberry Pi at once. This is considered quite slow in such a system, and way beneath the transfer limitations of both \gls{ble}, \gls{6lowpan} and \gls{coap}. Another factor could be the limited power supply and computational power, but it is not clear what is the main cause at this point. This will regardless be a major limitation in the network.
 %, as explained in chapter \ref{chp:background}. 
-\todo{Tja, staar det noe i background egentlig?}
+%\todo{Tja, staar det noe i background egentlig?}
 %\todo{Explain limitations more clear?}
 
 \begin{figure}[ht]
@@ -134,7 +134,7 @@ Number & Time   & Protocol & Length & Info                             \\ \hline
 \end{tabular}
 \end{table}
 
-\noindent Table \ref{coapCON0table} shows the most basic example of a capture of packets in Wireshark using \gls{con}. The full capture can be seen in the Appendix \ref{chp:appendixb}. In this case an empty \textit{char} array was sent, meaning a \gls{payload} equal to 0 byte. As a consequence, all the captured bytes correspond solely to data sent by the network protocols. The 31 bytes per \gls{ble} packet, the maximum for \gls{ble} in the system, have been exceeded twice. Therefore, three packets were needed. The first packet is labeled \textit{[Reassembled in \#40]}, the second \textit{[Continuation to \#38]} and the last \textit{Connection oriented channel}. Then the \gls{ack} packages follows, two packages of 58 and 50 bytes, respectively. A final pair of packets tells how many packages were completed, as a built in feature in \gls{ble}  \gls{hci}  and \gls{acl}. All of these packages can fit into one \gls{6lowpan} packet, since the total number of bytes are less than 270 bytes. \todo{Say 0\% goodput somewhere in here?}
+\noindent Table \ref{coapCON0table} shows the most basic example of a capture of packets in Wireshark using \gls{con}. The full capture can be seen in the Appendix \ref{chp:appendixb}. In this case an empty \textit{char} array was sent, meaning a \gls{payload} equal to 0 byte. As a consequence, all the captured bytes correspond solely to data sent by the network protocols. The 31 bytes per \gls{ble} packet, the maximum for \gls{ble} in the system, have been exceeded twice. Therefore, three packets were needed. The first packet is labeled \textit{[Reassembled in \#40]}, the second \textit{[Continuation to \#38]} and the last \textit{Connection oriented channel}. Then the \gls{ack} packages follows, two packages of 58 and 50 bytes, respectively. A final pair of packets tells how many packages were completed, as a built in feature in \gls{ble}  \gls{hci}  and \gls{acl}. All of these packages can fit into one \gls{6lowpan} packet, since the total number of bytes are less than 270 bytes. %\todo{Say 0\% goodput somewhere in here?}
 
 
 

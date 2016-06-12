@@ -15,11 +15,11 @@
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.7\textwidth]{architectureIntro4.png}    
-    \caption{Example of IoT architecture}
+    \caption{Testbed, system architecture}
     \label{iotExampleArchitecture}
 \end{figure}
 
-\noindent Figure \ref{iotExampleArchitecture} shows the system, testbed, that will be constructed in this thesis. It consists of a sensor connected to a \gls{microcontroller} using the standard \gls{i2c} cable interface. The \gls{microcontroller} used is the \gls{nRF52} from Nordic Semiconductor, which is connected to a \gls{Raspberry Pi}. The communication link between these is using \gls{ble}, \gls{6lowpan} and \gls{coap}. Both these devices and the technologies used will be described in chapter \ref{chp:background}. The \gls{Raspberry Pi} is connected to the Internet using \gls{ipv4}, and can forward the data to a stationary computer if more computational power is needed. 
+\noindent Figure \ref{iotExampleArchitecture} shows the system, testbed, that will be constructed in this thesis. It consists of a sensor connected to a \gls{microcontroller} using the standard \gls{i2c} cable interface. The \gls{microcontroller} used is the \gls{nRF52} from Nordic Semiconductor, which is connected to a \gls{Raspberry Pi}. The communication link between these is using \gls{ble}, \gls{6lowpan} and \gls{coap}. Both these devices and the technologies used will be described in chapter \ref{chp:background}. The \gls{Raspberry Pi} is connected to the Internet, and can forward the data to a stationary computer if more computational power is needed. 
 
 
 
@@ -44,7 +44,7 @@
 
 \subsection{Scope}
 
-0\noindent This thesis will mainly focus on the best way of optimizing transportation and analysing data in a network. The goal is to find the optimal solution on how to treat data. Central points of discussion will be:
+\noindent This thesis will mainly focus on the best way of optimizing transportation and analysing data in a network. The goal is to find the optimal solution on how to treat data. Central points of discussion will be:
 
 \begin{itemize}
 	\item How to gather data from sensors efficiently, both concerning time and power consumption
@@ -94,11 +94,11 @@
 
 \section{Methodology}
 
-The research methodology used in this thesis can be split into three main parts. The first phase was to build and configure a complete end-to-end \gls{iot} system. This included finding the most appropriate devices and technology that could be used in such a system. 
+\noindent The research methodology used in this thesis can be split into three main parts. The first phase was to build and configure a complete end-to-end \gls{iot} system. This included finding the most appropriate devices and technology that could be used in such a system. 
 
-After the different devices have been connected and configured to communicate with each other, the next phase of the methodology is to transfer data between the different nodes. Data was collected using Wireshark, and programming code for the different devices in the testbed. 
+\noindent After the different devices have been connected and configured to communicate with each other, the next phase of the methodology is to transfer data between the different nodes. Data was collected using Wireshark, and programming code for the different devices in the testbed. 
 
-The third and final phase were to analyse the data captured in the previous phase. This was done by organizing data in tables and drawing graphs to find similarities, differences and patterns in the data. Several different examples where conducted and discussed in this phase. 
+\noindent The third and final phase were to analyse the data captured in the previous phase. This was done by organizing data in tables and drawing graphs to find similarities, differences and patterns in the data. Several different examples where conducted and discussed in this phase. 
 
 
 \section{Structure}
@@ -113,6 +113,8 @@ The third and final phase were to analyse the data captured in the previous phas
 \noindent \textbf{Chapter \ref{chp:dataAnalysis}} discusses the results found in chapter \ref{chp:measurements2} further, by going through the central points of the objectives. It discusses what was most successful, what could have been better and what should be considered for future works. The end of the chapter contains an overall evaluation of the used devices and technologies, and how the experience gained in this project can be used in the future. 
 
 \noindent \textbf{Chapter \ref{chp:results}} summarizes the entire work conducted in this project and presents the final conclusion. In the end, possible future works are discussed. 
+
+\noindent All the images of devices in the testbed presented in this thesis have been taken by the author, unless other is specified.
 
 
 
