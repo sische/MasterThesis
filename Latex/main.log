@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  12 JUN 2016 23:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  13 JUN 2016 00:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2885,27 +2885,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [58] (./main.bbl
 bibitemlist
 
-Underfull \hbox (badness 5533) in paragraph at lines 4--7
+Underfull \hbox (badness 5533) in paragraph at lines 25--29
 []\T1/lmr/m/n/10 (+20) Infocenter, Nordic Semi-con-duc-tor: CoAP Server Ex-am-p
 le.  [][]$http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
-\T1/lmr/m/n/10 (+20) / / infocenter . nordicsemi . com / index . jsp ? topic = 
-%2Fcom . nordic . infocenter .
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+\T1/lmr/m/n/10 (+17) / / infocenter . nordicsemi . com / index . jsp ? topic = 
+%2Fcom . nordic . infocenter . iotsdk .
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 53--58
-[]\T1/lmr/m/n/10 (+20) (2016b).  Nordic Semi-con-duc-tor: IoT SDK Doc-u-men-ta-
-tion.  [][]$https :
+Underfull \hbox (badness 1867) in paragraph at lines 25--29
+\T1/lmr/m/n/10 (+20) v0 . 9 . 0 % 2Fiot _ sdk _ app _ coap _ server . html & cp
+ = 5 _ 1 _ 0 _ 5 _ 0 _ 0$[][].  Ac-cessed:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--58
-\T1/lmr/m/n/10 (+20) / / infocenter . nordicsemi . com / index . jsp ? topic = 
-%2Fcom . nordic . infocenter .
+Underfull \hbox (badness 10000) in paragraph at lines 41--45
+[]\T1/lmr/m/n/10 (+20) Nordic Semi-con-duc-tor: de-vel-op-ment tools and soft-w
+are.  [][]$https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--51
+\T1/lmr/m/n/10 (+4) com / index . jsp ? topic = %2Fcom . nordic . infocenter . 
+sdk52 . v0 . 9 . 1 % 2Fexamples . html$[][].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
+[]\T1/lmr/m/n/10 (+20) Ubuntu Mate: In-stal-la-tion for Rasp-berry Pi.  https:/
+/ubuntu-
  []
 
 [59
@@ -2939,7 +2951,7 @@ table.A.2}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.75 \newpage
-             ] <0byteCONwireshark.png, id=1591, 963.6pt x 1156.32pt>
+             ] <0byteCONwireshark.png, id=1590, 963.6pt x 1156.32pt>
 File: 0byteCONwireshark.png Graphic file (type png)
 
 <use 0byteCONwireshark.png>
@@ -3012,8 +3024,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
  35051 strings out of 493304
- 562873 string characters out of 6139871
- 930044 words of memory out of 5000000
+ 562877 string characters out of 6139871
+ 930038 words of memory out of 5000000
  36995 multiletter control sequences out of 15000+600000
  87373 words of font info for 147 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -3031,10 +3043,10 @@ mf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/font
 s/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (94 pages, 6247815 bytes).
+Output written on main.pdf (94 pages, 6247863 bytes).
 PDF statistics:
- 2110 PDF objects out of 2487 (max. 8388607)
- 1930 compressed objects within 20 object streams
+ 2109 PDF objects out of 2487 (max. 8388607)
+ 1929 compressed objects within 20 object streams
  542 named destinations out of 1000 (max. 500000)
  25567 words of extra memory for PDF output out of 29859 (max. 10000000)
 

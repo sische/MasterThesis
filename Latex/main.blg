@@ -29,22 +29,22 @@ I was expecting a `,' or a `}'---line 130 of file main.bib
  : @article{Author: 
  :                  Sindre Schei year:2016,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 223 of file main.bib
+You're missing a field name---line 221 of file main.bib
  : 
  : % title = {{Nordic Semiconductor:} Development tools and Software,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 231 of file main.bib
- :  
- :  year = {2016},
+You're missing a field name---line 227 of file main.bib
+ : 
+ : % title = {{Infocenter, Nordic Semiconductor: CoAP Server Example}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 273 of file main.bib
+You're missing a field name---line 272 of file main.bib
  : 
  : % title = {{ANT and BLE:} Whats the main difference?,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 314 of file main.bib
+You're missing a field name---line 308 of file main.bib
  :  title = {{Nordic Semiconductor:} nRF52 Prewiev},
  :                                                  %
 I'm skipping whatever remains of this entry
@@ -78,9 +78,9 @@ Warning--to sort, need author or key in mqttWebsite
 Warning--no key, author in copper3
 Warning--no author, editor, or organization in copper3
 Warning--to sort, need author or key in copper3
-Warning--no key, author in nordicServerExamplePython
-Warning--no author, editor, or organization in nordicServerExamplePython
-Warning--to sort, need author or key in nordicServerExamplePython
+Warning--no key, author in nordicServerExamplePython2
+Warning--no author, editor, or organization in nordicServerExamplePython2
+Warning--to sort, need author or key in nordicServerExamplePython2
 Warning--no key, author in nordicNrfDocumentation
 Warning--no author, editor, or organization in nordicNrfDocumentation
 Warning--to sort, need author or key in nordicNrfDocumentation
@@ -111,12 +111,10 @@ Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
-Warning--no key, author in nordicServerExamplePython
-Warning--no author, editor, or organization in nordicServerExamplePython
-Warning--no key, author in nordicServerExamplePython
-Warning--no author, editor, or organization in nordicServerExamplePython
-Warning--no key, author in nord
-Warning--no author, editor, or organization in nord
+Warning--no key, author in nordicServerExamplePython2
+Warning--no author, editor, or organization in nordicServerExamplePython2
+Warning--no key, author in nordicServerExamplePython2
+Warning--no author, editor, or organization in nordicServerExamplePython2
 Warning--no key, author in nord
 Warning--no author, editor, or organization in nord
 Warning--no key, author in nordicNrfDocumentation
@@ -133,31 +131,42 @@ Warning--no key, author in ubuntuMate
 Warning--no author, editor, or organization in ubuntuMate
 Warning--no key, author in ubuntuMate
 Warning--no author, editor, or organization in ubuntuMate
-Warning--no key, author in nordicServerExamplePython
-Warning--no author, editor, or organization in nordicServerExamplePython
-Warning--empty year in nordicServerExamplePython
 Warning--no key, author in adxlDataSheet
 Warning--no author, editor, or organization in adxlDataSheet
+Warning--empty year in adxlDataSheet
 Warning--no key, author in ant23
 Warning--no author, editor, or organization in ant23
+Warning--empty year in ant23
 Warning--no key, author in bluez32
 Warning--no author, editor, or organization in bluez32
+Warning--empty year in bluez32
 Warning--no key, author in copper3
 Warning--no author, editor, or organization in copper3
+Warning--empty year in copper3
+Warning--no key, author in nordicServerExamplePython2
+Warning--no author, editor, or organization in nordicServerExamplePython2
+Warning--empty year in nordicServerExamplePython2
 Warning--no key, author in mqttWebsite
 Warning--no author, editor, or organization in mqttWebsite
+Warning--empty year in mqttWebsite
 Warning--no key, author in newark
 Warning--no author, editor, or organization in newark
+Warning--empty year in newark
 Warning--no key, author in nord
 Warning--no author, editor, or organization in nord
+Warning--empty year in nord
 Warning--no key, author in nordicNrfDocumentation
 Warning--no author, editor, or organization in nordicNrfDocumentation
+Warning--empty year in nordicNrfDocumentation
 Warning--no key, author in nrf52Nordic
 Warning--no author, editor, or organization in nrf52Nordic
+Warning--empty year in nrf52Nordic
 Warning--no key, author in softDevice
 Warning--no author, editor, or organization in softDevice
+Warning--empty year in softDevice
 Warning--no key, author in ubuntuMate
 Warning--no author, editor, or organization in ubuntuMate
+Warning--empty year in ubuntuMate
 Warning--no journal in chown2011rogue
 Warning--no number and no volume in chown2011rogue
 Warning--page numbers missing in chown2011rogue
@@ -172,43 +181,43 @@ Warning--no number and no volume in shelby2014constrained
 Warning--page numbers missing in shelby2014constrained
 You've used 25 entries,
             2861 wiz_defined-function locations,
-            754 strings with 8679 characters,
-and the built_in function-call counts, 13397 in all, are:
-= -- 1183
+            753 strings with 8672 characters,
+and the built_in function-call counts, 13301 in all, are:
+= -- 1192
 > -- 625
 < -- 3
-+ -- 187
++ -- 188
 - -- 212
-* -- 1189
-:= -- 2038
-add.period$ -- 84
+* -- 1161
+:= -- 2016
+add.period$ -- 74
 call.type$ -- 25
 change.case$ -- 153
-chr.to.int$ -- 24
-cite$ -- 191
-duplicate$ -- 446
-empty$ -- 1072
+chr.to.int$ -- 23
+cite$ -- 199
+duplicate$ -- 444
+empty$ -- 1054
 format.name$ -- 244
-if$ -- 2621
-int.to.chr$ -- 2
+if$ -- 2612
+int.to.chr$ -- 3
 int.to.str$ -- 0
 missing$ -- 13
-newline$ -- 135
+newline$ -- 125
 num.names$ -- 130
-pop$ -- 130
+pop$ -- 213
 preamble$ -- 1
-purify$ -- 301
+purify$ -- 299
 quote$ -- 0
-skip$ -- 448
+skip$ -- 372
 stack$ -- 0
-substring$ -- 715
-swap$ -- 147
+substring$ -- 711
+swap$ -- 146
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 496
-warning$ -- 119
+type$ -- 492
+warning$ -- 128
 while$ -- 126
 width$ -- 0
-write$ -- 334
+write$ -- 314
 (There were 8 error messages)

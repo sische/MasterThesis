@@ -1,76 +1,66 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{??}{nor}{}]{nordicServerExamplePython}
-{Infocenter, Nordic Semiconductor: CoAP Server Example}.
-\newblock
-  \url{http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.iotsdk.v0.9.0%2Fiot_sdk_app_coap_server.html&cp=5_1_0_5_0_0}.
-
-\bibitem[\protect\citeauthoryear{??}{adx}{2016}]{adxlDataSheet}
- (2016).
-\newblock {ADXL345: Digital Accelerometer Data Sheet}.
+\bibitem[\protect\citeauthoryear{??}{adx}{}]{adxlDataSheet}
+{ADXL345: Digital Accelerometer Data Sheet}.
 \newblock
   \url{http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf}.
 \newblock Accessed: 20-04-2016.
 
-\bibitem[\protect\citeauthoryear{??}{ant}{2016}]{ant23}
- (2016).
-\newblock {ANT: This is ANT}.
+\bibitem[\protect\citeauthoryear{??}{ant}{}]{ant23}
+{ANT: This is ANT}.
 \newblock \url{http://www.thisisant.com}.
-\newblock [Accessed: 06-02-2016].
+\newblock Accessed: 06-02-2016.
 
-\bibitem[\protect\citeauthoryear{??}{blu}{2016}]{bluez32}
- (2016).
-\newblock {Bluez: Official Linux Bluetooth protocol stack}.
+\bibitem[\protect\citeauthoryear{??}{blu}{}]{bluez32}
+{Bluez: Official Linux Bluetooth protocol stack}.
 \newblock \url{http://www.bluez.org}.
-\newblock [Accessed: 06-02-2016].
+\newblock Accessed: 06-02-2016.
 
-\bibitem[\protect\citeauthoryear{??}{cop}{2016}]{copper3}
- (2016).
-\newblock {Copper: CoAP user-agent for Firefox}.
+\bibitem[\protect\citeauthoryear{??}{cop}{}]{copper3}
+{Copper: CoAP user-agent for Firefox}.
 \newblock \url{http://people.inf.ethz.ch/~mkovatsc/copper.php}.
 \newblock Accessed: 29-05-2016.
 
-\bibitem[\protect\citeauthoryear{??}{mqt}{2016}]{mqttWebsite}
- (2016).
-\newblock {MQTT: Web page}.
+\bibitem[\protect\citeauthoryear{??}{nor}{a}]{nordicServerExamplePython2}
+{Infocenter, Nordic Semiconductor: CoAP Server Example}.
+\newblock
+  \url{http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.iotsdk.v0.9.0%2Fiot_sdk_app_coap_server.html&cp=5_1_0_5_0_0}.
+\newblock Accessed: 06-02-2016.
+
+\bibitem[\protect\citeauthoryear{??}{mqt}{}]{mqttWebsite}
+{MQTT: Web page}.
 \newblock \url{http://mqtt.org}.
 \newblock Accessed: 07-04-2016.
 
-\bibitem[\protect\citeauthoryear{??}{new}{2016}]{newark}
- (2016).
-\newblock {Newark: Element 14}.
+\bibitem[\protect\citeauthoryear{??}{new}{}]{newark}
+{Newark: Element 14}.
 \newblock \url{https://www.newark.com/}.
 \newblock Accessed: 13-05-2016.
 
-\bibitem[\protect\citeauthoryear{??}{nor}{2016a}]{nord}
- (2016a).
-\newblock {Nordic Semiconductor:} development tools and software.
+\bibitem[\protect\citeauthoryear{??}{nor}{b}]{nord}
+{Nordic Semiconductor:} development tools and software.
 \newblock
   \url{https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF52832/Development-tools-and-Software/}.
-\newblock [Accessed: 12-04-2016].
+\newblock Accessed: 12-04-2016.
 
-\bibitem[\protect\citeauthoryear{??}{nor}{2016b}]{nordicNrfDocumentation}
- (2016b).
-\newblock {Nordic Semiconductor: IoT SDK Documentation}.
-\newblock \url
-  {https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk52.v0.9.1%2Fexamples.html}.
+\bibitem[\protect\citeauthoryear{??}{nor}{c}]{nordicNrfDocumentation}
+{Nordic Semiconductor: IoT SDK Documentation}.
+\newblock
+  \url{https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk52.v0.9.1%2Fexamples.html}.
 \newblock Accessed: 27-01-16.
 
-\bibitem[\protect\citeauthoryear{??}{nrf}{2016}]{nrf52Nordic}
- (2016).
-\newblock {Nordic Semiconductor: nRF52 Series SoC}.
+\bibitem[\protect\citeauthoryear{??}{nrf}{}]{nrf52Nordic}
+{Nordic Semiconductor: nRF52 Series SoC}.
 \newblock \url{https://www.nordicsemi.com/Products/nRF52-Series-SoC}.
 \newblock Accessed: 25-03-2016.
 
-\bibitem[\protect\citeauthoryear{??}{sof}{2016}]{softDevice}
- (2016).
-\newblock {Nordic Semiconductor:} s110 softdevice.
+\bibitem[\protect\citeauthoryear{??}{sof}{}]{softDevice}
+{Nordic Semiconductor:} s110 softdevice.
 \newblock \url{https://www.nordicsemi.com/eng/Products/S110-SoftDevice-v7.0}.
 \newblock Accessed: 26-05-2016.
 
-\bibitem[\protect\citeauthoryear{??}{ubu}{2016}]{ubuntuMate}
- (2016).
-\newblock {Ubuntu Mate: Installation for Raspberry Pi}.
+\bibitem[\protect\citeauthoryear{??}{ubu}{}]{ubuntuMate}
+{Ubuntu Mate: Installation for Raspberry Pi}.
 \newblock https://ubuntu-mate.org/raspberry-pi/.
 \newblock Accessed: 31-01-2016.
 
