@@ -47,8 +47,8 @@
 \contentsline {subsection}{\numberline {4.3.3}Discussion}{36}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Tests with more data}{37}{subsection.4.3.4}
 \contentsline {subsection}{\numberline {4.3.5}Discussion}{40}{subsection.4.3.5}
-\contentsline {section}{\numberline {4.4}Transfer rates}{42}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Time used to transfer payload}{42}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.4}Transfer rates}{41}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Time used to transfer payload}{41}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Bytes sent through network, best and worst case}{47}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}Chapter summary}{48}{section.4.5}
 \contentsline {chapter}{\chapternumberline {5}Discussion}{51}{chapter.5}

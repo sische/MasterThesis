@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  12 JUN 2016 18:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.2)  12 JUN 2016 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2419,7 +2419,7 @@ l.51 	\item H
 
 
 ]
-<pi3.png, id=528, 1053.9375pt x 664.4825pt>
+<pi3.png, id=530, 1053.9375pt x 664.4825pt>
 File: pi3.png Graphic file (type png)
  <use pi3.png>
 Package pdftex.def Info: pi3.png used on input line 26.
@@ -2429,7 +2429,7 @@ Overfull \hbox (4.88365pt too wide) in paragraph at lines 26--27
  [][] 
  []
 
-[7] <nRF522.png, id=546, 1181.41376pt x 743.77875pt>
+[7] <nRF522.png, id=548, 1181.41376pt x 743.77875pt>
 File: nRF522.png Graphic file (type png)
  <use nRF522.png>
 Package pdftex.def Info: nRF522.png used on input line 40.
@@ -2458,7 +2458,7 @@ Underfull \vbox (badness 2384) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.78 
-      <./nRF522.png>] <adxl345imagge.png, id=581, 424.58624pt x 347.2975pt>
+      <./nRF522.png>] <adxl345imagge.png, id=583, 424.58624pt x 347.2975pt>
 File: adxl345imagge.png Graphic file (type png)
 
 <use adxl345imagge.png>
@@ -2471,7 +2471,7 @@ Package pdftex.def Info: adxl345imagge.png used on input line 97.
                                                   \fi \fi 
 l.108 
        <./adxl345imagge.png>] [11]
-<BLEprotocolStack.png, id=618, 537.00626pt x 264.99pt>
+<BLEprotocolStack.png, id=620, 537.00626pt x 264.99pt>
 File: BLEprotocolStack.png Graphic file (type png)
 
 <use BLEprotocolStack.png>
@@ -2482,7 +2482,7 @@ Overfull \hbox (11.90181pt too wide) in paragraph at lines 128--129
  [][] 
  []
 
-<BLEdataUnitStructure.png, id=636, 606.265pt x 194.7275pt>
+<BLEdataUnitStructure.png, id=638, 606.265pt x 194.7275pt>
 File: BLEdataUnitStructure.png Graphic file (type png)
 
 <use BLEdataUnitStructure.png>
@@ -2507,14 +2507,14 @@ nored
                                                   \fi \fi 
 l.155 
        <./BLEdataUnitStructure.png>] [14] [15]
-<CONclientserver.png, id=744, 304.13625pt x 304.13625pt>
+<CONclientserver.png, id=746, 304.13625pt x 304.13625pt>
 File: CONclientserver.png Graphic file (type png)
 
 <use CONclientserver.png>
 Package pdftex.def Info: CONclientserver.png used on input line 197.
 (pdftex.def)             Requested size: 182.48315pt x 182.48315pt.
 
-<NONOackSeqDiagram2.png, id=747, 300.12125pt x 304.13625pt>
+<NONOackSeqDiagram2.png, id=749, 300.12125pt x 304.13625pt>
 File: NONOackSeqDiagram2.png Graphic file (type png)
 
 <use NONOackSeqDiagram2.png>
@@ -2533,7 +2533,7 @@ l.214
                                                   \fi \fi 
 l.214 
        <./CONclientserver.png> <./NONOackSeqDiagram2.png>]
-<coapCONwiresharksetUpSequence.png, id=775, 798.985pt x 316.18124pt>
+<coapCONwiresharksetUpSequence.png, id=777, 798.985pt x 316.18124pt>
 File: coapCONwiresharksetUpSequence.png Graphic file (type png)
 
 <use coapCONwiresharksetUpSequence.png>
@@ -2547,14 +2547,14 @@ Package pdftex.def Info: coapCONwiresharksetUpSequence.png used on input line 2
                                                   \fi \fi 
 l.227 \newpage
                <./coapCONwiresharksetUpSequence.png>]
-<CoAPMessageFormat3.png, id=785, 685.56125pt x 203.76125pt>
+<CoAPMessageFormat3.png, id=787, 685.56125pt x 203.76125pt>
 File: CoAPMessageFormat3.png Graphic file (type png)
 
 <use CoAPMessageFormat3.png>
 Package pdftex.def Info: CoAPMessageFormat3.png used on input line 230.
 (pdftex.def)             Requested size: 364.0pt x 108.18881pt.
 
-<mqttSeqDiagram.png, id=794, 514.92375pt x 304.13625pt>
+<mqttSeqDiagram.png, id=796, 514.92375pt x 304.13625pt>
 File: mqttSeqDiagram.png Graphic file (type png)
 
 <use mqttSeqDiagram.png>
@@ -2573,7 +2573,7 @@ l.265
                                                   \fi \fi 
 l.265 
        <./CoAPMessageFormat3.png> <./mqttSeqDiagram.png>]
-<CopperExample.png, id=824, 703.62875pt x 431.6125pt>
+<CopperExample.png, id=826, 703.62875pt x 431.6125pt>
 File: CopperExample.png Graphic file (type png)
  <use CopperExample.png>
 Package pdftex.def Info: CopperExample.png used on input line 273.
@@ -2605,7 +2605,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.16 \newpage
              ] [22]
-<connectionADXL-nrf5.png, id=885, 555.07375pt x 809.0225pt>
+<connectionADXL-nrf5.png, id=887, 555.07375pt x 809.0225pt>
 File: connectionADXL-nrf5.png Graphic file (type png)
 
 <use connectionADXL-nrf5.png>
@@ -2647,7 +2647,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [28]
-<ping4.png, id=973, 738.76pt x 362.35374pt>
+<ping4.png, id=975, 738.76pt x 362.35374pt>
 File: ping4.png Graphic file (type png)
  <use ping4.png>
 Package pdftex.def Info: ping4.png used on input line 55.
@@ -2658,7 +2658,7 @@ Package pdftex.def Info: ping4.png used on input line 55.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.68 
-      <./ping4.png>] <tooog.png, id=1002, 585.18625pt x 384.43625pt>
+      <./ping4.png>] <tooog.png, id=1004, 585.18625pt x 384.43625pt>
 File: tooog.png Graphic file (type png)
 
 <use tooog.png>
@@ -2679,7 +2679,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.173 
-      ] <CON0-200withAcks.png, id=1070, 1626.075pt x 879.285pt>
+      ] <CON0-200withAcks.png, id=1072, 1626.075pt x 879.285pt>
 File: CON0-200withAcks.png Graphic file (type png)
 
 <use CON0-200withAcks.png>
@@ -2712,7 +2712,7 @@ l.253
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.253 
-      ] <CONNONvs0-200acks.png, id=1133, 1626.075pt x 879.285pt>
+      ] <CONNONvs0-200acks.png, id=1135, 1626.075pt x 879.285pt>
 File: CONNONvs0-200acks.png Graphic file (type png)
 
 <use CONNONvs0-200acks.png>
@@ -2733,7 +2733,7 @@ Overfull \vbox (36.42517pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.350 
+l.352 
       ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2742,68 +2742,69 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.400 
-      ] [40] <CONNON0-kwithACK.png, id=1225, 1626.075pt x 879.285pt>
+l.404 
+      ] <CONNON0-kwithACK.png, id=1209, 1626.075pt x 879.285pt>
 File: CONNON0-kwithACK.png Graphic file (type png)
 
 <use CONNON0-kwithACK.png>
-Package pdftex.def Info: CONNON0-kwithACK.png used on input line 449.
+Package pdftex.def Info: CONNON0-kwithACK.png used on input line 451.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
-
-Underfull \vbox (badness 7981) has occurred while \output is active []
-
- [41pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-5}) has been already used, duplicate ignored
+ [40] [41pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.4.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.465 
-       <./CONNON0-kwithACK.png>]
-<bytesPrSecondNew3.png, id=1257, 1626.075pt x 879.285pt>
+l.470 \noindent
+                There are several ways to measure throughput compared to tim...
+ <./CONNON0-kwithACK.png>]
+<bytesPrSecondNew3.png, id=1250, 1626.075pt x 879.285pt>
 File: bytesPrSecondNew3.png Graphic file (type png)
 
 <use bytesPrSecondNew3.png>
-Package pdftex.def Info: bytesPrSecondNew3.png used on input line 473.
+Package pdftex.def Info: bytesPrSecondNew3.png used on input line 475.
+(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
+
+<bytesPrSecondNewNON.png, id=1255, 1626.075pt x 879.285pt>
+File: bytesPrSecondNewNON.png Graphic file (type png)
+
+<use bytesPrSecondNewNON.png>
+Package pdftex.def Info: bytesPrSecondNewNON.png used on input line 486.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
  [42pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.480 
-       <./bytesPrSecondNew3.png>]
-<bytesPrSecondNewNON.png, id=1268, 1626.075pt x 879.285pt>
-File: bytesPrSecondNewNON.png Graphic file (type png)
-
-<use bytesPrSecondNewNON.png>
-Package pdftex.def Info: bytesPrSecondNewNON.png used on input line 484.
-(pdftex.def)             Requested size: 364.0pt x 196.82433pt.
-
-<avgTimeCONNON.png, id=1273, 1626.075pt x 879.285pt>
+l.489 \end{figure}
+                   <./bytesPrSecondNew3.png>]
+<avgTimeCONNON.png, id=1266, 1626.075pt x 879.285pt>
 File: avgTimeCONNON.png Graphic file (type png)
  <use avgTimeCONNON.png>
-Package pdftex.def Info: avgTimeCONNON.png used on input line 494.
+Package pdftex.def Info: avgTimeCONNON.png used on input line 496.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [43pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.497 \end{figure}
-                   <./bytesPrSecondNewNON.png>]
-<goodput_payload_CON.png, id=1294, 1626.075pt x 879.285pt>
+l.512 
+       <./bytesPrSecondNewNON.png>]
+<goodput_payload_CON.png, id=1288, 1626.075pt x 879.285pt>
 File: goodput_payload_CON.png Graphic file (type png)
 
 <use goodput_payload_CON.png>
-Package pdftex.def Info: goodput_payload_CON.png used on input line 523.
+Package pdftex.def Info: goodput_payload_CON.png used on input line 525.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
 
-<goodput_payload_NON.png, id=1295, 1626.075pt x 879.285pt>
+<goodput_payload_NON.png, id=1289, 1626.075pt x 879.285pt>
 File: goodput_payload_NON.png Graphic file (type png)
 
 <use goodput_payload_NON.png>
-Package pdftex.def Info: goodput_payload_NON.png used on input line 530.
+Package pdftex.def Info: goodput_payload_NON.png used on input line 532.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
 
 
@@ -2814,48 +2815,48 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.537 
-       <./avgTimeCONNON.png>]
-Underfull \vbox (badness 2735) has occurred while \output is active []
+l.540 \newpage
+               <./avgTimeCONNON.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.537 
+l.542 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.537 
+l.542 
        <./goodput_payload_CON.png> <./goodput_payload_NON.png>]
-<payloadGoodput_CONNON.png, id=1332, 1626.075pt x 879.285pt>
+<payloadGoodput_CONNON.png, id=1329, 1626.075pt x 879.285pt>
 File: payloadGoodput_CONNON.png Graphic file (type png)
 
 <use payloadGoodput_CONNON.png>
-Package pdftex.def Info: payloadGoodput_CONNON.png used on input line 545.
+Package pdftex.def Info: payloadGoodput_CONNON.png used on input line 548.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
  [46pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.559 \newpage
+l.562 \newpage
                <./payloadGoodput_CONNON.png>]
-<bestCaseworstCase3.png, id=1350, 1626.075pt x 879.285pt>
+<bestCaseworstCase3.png, id=1345, 1626.075pt x 879.285pt>
 File: bestCaseworstCase3.png Graphic file (type png)
 
 <use bestCaseworstCase3.png>
-Package pdftex.def Info: bestCaseworstCase3.png used on input line 568.
+Package pdftex.def Info: bestCaseworstCase3.png used on input line 571.
 (pdftex.def)             Requested size: 364.0pt x 196.82433pt.
  [47pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.574 
+l.577 
        <./bestCaseworstCase3.png>] [48]) [49]
 \openout2 = `dataAnalysis.aux'.
 
@@ -2878,7 +2879,7 @@ LaTeX Warning: Reference `chp:appendixc' on page 53 undefined on input line 40.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.83 \newpage
+l.86 \newpage
              ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2951,7 +2952,7 @@ table.A.2}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.75 \newpage
-             ] <0byteCONwireshark.png, id=1599, 963.6pt x 1156.32pt>
+             ] <0byteCONwireshark.png, id=1592, 963.6pt x 1156.32pt>
 File: 0byteCONwireshark.png Graphic file (type png)
 
 <use 0byteCONwireshark.png>
@@ -3027,11 +3028,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 35057 strings out of 493304
- 562938 string characters out of 6139871
- 929927 words of memory out of 5000000
- 36996 multiletter control sequences out of 15000+600000
- 91816 words of font info for 149 fonts, out of 8000000 for 9000
+ 35051 strings out of 493304
+ 562869 string characters out of 6139871
+ 930004 words of memory out of 5000000
+ 36995 multiletter control sequences out of 15000+600000
+ 87373 words of font info for 147 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  69i,14n,76p,1753b,2075s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -3044,14 +3045,13 @@ ype1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmtt9.pfb>
-Output written on main.pdf (94 pages, 6263578 bytes).
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
+Output written on main.pdf (94 pages, 6248597 bytes).
 PDF statistics:
- 2121 PDF objects out of 2487 (max. 8388607)
- 1940 compressed objects within 20 object streams
- 544 named destinations out of 1000 (max. 500000)
- 27615 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 2111 PDF objects out of 2487 (max. 8388607)
+ 1931 compressed objects within 20 object streams
+ 542 named destinations out of 1000 (max. 500000)
+ 25567 words of extra memory for PDF output out of 29859 (max. 10000000)
 
