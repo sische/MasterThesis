@@ -1,0 +1,16 @@
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\libraries\mem_manager\mem_manager.c
+.\_build\mem_manager.o: ..\..\..\config\sdk_config.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h
+.\_build\mem_manager.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\_build\mem_manager.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\_build\mem_manager.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\libraries\util\app_util.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\libraries\mem_manager\mem_manager.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h
+.\_build\mem_manager.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\_build\mem_manager.o: ..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h

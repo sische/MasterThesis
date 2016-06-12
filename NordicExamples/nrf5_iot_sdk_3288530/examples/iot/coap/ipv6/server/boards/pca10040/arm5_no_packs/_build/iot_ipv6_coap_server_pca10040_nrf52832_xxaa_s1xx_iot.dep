@@ -1,0 +1,958 @@
+Dependencies for Project 'iot_ipv6_coap_server_pca10040', Target 'nrf52832_xxaa_s1xx_iot': (DO NOT MODIFY !)
+F (..\..\..\main.c)(0x56B9E396)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\bsp\boards.h)(0x56A9FFC3)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpio.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\bsp\pca10040.h)(0x56A9FFC3)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_sdm.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_sdm.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52\nrf_sdm_device_specific.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_l2cap.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_err.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatt.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gattc.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatts.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\mem_manager\mem_manager.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\timer\app_timer_appsh.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\button\app_button.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_advdata.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\iot\ble_ipsp\ble_ipsp.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\ipv6_api.h)(0x56A9FFA5)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer\iot_pbuffer.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\icmp6_api.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\udp_api.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\iot_timer\iot_timer.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_api.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_transport.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\tls\nrf_tls.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_codes.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\medium\ipv6_medium.h)(0x56A9FFA6)
+I (..\..\..\config\ipv6_medium_platform.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\medium\ipv6_medium_ble.h)(0x56A9FFA6)
+I (..\..\..\config\ipv6_medium_ble_cfg.h)(0x56B353D7)
+I (..\..\..\..\..\..\..\..\components\iot\medium\commissioning\commissioning.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs\ble_ncfgs.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage.h)(0x56A9FFA3)
+I (..\..\..\config\pstorage_platform.h)(0x56A9FFC6)
+F (..\..\..\config\sdk_config.h)(0x56A9FFC6)()
+F (..\..\..\..\..\..\..\bsp\bsp.c)(0x56A9FFC3)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\bsp.o --omf_browse .\_build\bsp.crf --depend .\_build\bsp.d)
+I (..\..\..\..\..\..\..\bsp\bsp.h)(0x56A9FFC3)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\bsp\boards.h)(0x56A9FFC3)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpio.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\bsp\pca10040.h)(0x56A9FFC3)
+I (..\..\..\..\..\..\..\..\components\libraries\button\app_button.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB7FDE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+F (..\..\..\Abstract.txt)(0x56A9FFC6)()
+F (..\..\..\license.txt)(0x56A9FFC6)()
+F (..\..\..\..\..\..\..\..\components\ble\common\ble_advdata.c)(0x56A9FFA1)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\ble_advdata.o --omf_browse .\_build\ble_advdata.crf --depend .\_build\ble_advdata.d)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_advdata.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_l2cap.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_err.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatt.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gattc.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatts.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56A9FFA1)
+F (..\..\..\..\..\..\..\..\components\ble\common\ble_conn_params.c)(0x56A9FFA1)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\ble_conn_params.o --omf_browse .\_build\ble_conn_params.crf --depend .\_build\ble_conn_params.d)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_conn_params.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_l2cap.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_err.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatt.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gattc.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatts.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_hci.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\ble\common\ble_srv_common.c)(0x56A9FFA1)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\ble_srv_common.o --omf_browse .\_build\ble_srv_common.crf --depend .\_build\ble_srv_common.d)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_l2cap.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_err.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatt.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gattc.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatts.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\libraries\uart\app_uart_fifo.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\app_uart_fifo.o --omf_browse .\_build\app_uart_fifo.crf --depend .\_build\app_uart_fifo.d)
+I (..\..\..\..\..\..\..\..\components\libraries\uart\app_uart.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util_platform.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\fifo\app_fifo.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\uart\nrf_drv_uart.h)(0x56A9FFA3)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_uart.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB7FDE)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_uarte.h)(0x56A9FFA3)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\config\nrf_drv_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\config\nrf_drv_config_validation.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.c)(0x56A9FFA2)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\nrf_delay.o --omf_browse .\_build\nrf_delay.crf --depend .\_build\nrf_delay.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.h)(0x56A9FFA2)
+F (..\..\..\..\..\..\..\..\components\drivers_nrf\common\nrf_drv_common.c)(0x56A9FFA2)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\nrf_drv_common.o --omf_browse .\_build\nrf_drv_common.crf --depend .\_build\nrf_drv_common.d)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\common\nrf_drv_common.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+F (..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote\nrf_drv_gpiote.c)(0x56A9FFA2)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\nrf_drv_gpiote.o --omf_browse .\_build\nrf_drv_gpiote.crf --depend .\_build\nrf_drv_gpiote.d)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote\nrf_drv_gpiote.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpiote.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB7FDE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpio.h)(0x56A9FFA2)
+I (..\..\..\config\nrf_drv_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\config\nrf_drv_config_validation.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\common\nrf_drv_common.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util_platform.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\drivers_nrf\uart\nrf_drv_uart.c)(0x56A9FFA3)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\nrf_drv_uart.o --omf_browse .\_build\nrf_drv_uart.crf --depend .\_build\nrf_drv_uart.d)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\uart\nrf_drv_uart.h)(0x56A9FFA3)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_uart.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB7FDE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_uarte.h)(0x56A9FFA3)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\config\nrf_drv_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\config\nrf_drv_config_validation.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\common\nrf_drv_common.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpio.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util_platform.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage.c)(0x56A9FFA3)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\pstorage.o --omf_browse .\_build\pstorage.crf --depend .\_build\pstorage.d)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage.h)(0x56A9FFA3)
+I (..\..\..\config\pstorage_platform.h)(0x56A9FFC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\iot\ble_6lowpan\lib\ble_6lowpan.lib)(0x56A9FFA4)()
+F (..\..\..\..\..\..\..\..\components\iot\coap\coap.c)(0x56A9FFA4)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\coap.o --omf_browse .\_build\coap.crf --depend .\_build\coap.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_api.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_transport.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\tls\nrf_tls.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_codes.h)(0x56A9FFA4)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_queue.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_message.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_option.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ble_ipsp\ble_ipsp.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_l2cap.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_err.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatt.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gattc.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatts.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\mem_manager\mem_manager.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_resource.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_observe_api.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_observe.h)(0x56A9FFA5)
+F (..\..\..\..\..\..\..\..\components\iot\coap\coap_message.c)(0x56A9FFA4)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\coap_message.o --omf_browse .\_build\coap_message.crf --depend .\_build\coap_message.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_message.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_api.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_transport.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\tls\nrf_tls.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_codes.h)(0x56A9FFA4)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_option.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+F (..\..\..\..\..\..\..\..\components\iot\coap\coap_option.c)(0x56A9FFA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\coap_option.o --omf_browse .\_build\coap_option.crf --depend .\_build\coap_option.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_option.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_api.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_transport.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\tls\nrf_tls.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_codes.h)(0x56A9FFA4)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\iot\coap\coap_queue.c)(0x56A9FFA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\coap_queue.o --omf_browse .\_build\coap_queue.crf --depend .\_build\coap_queue.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_queue.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_transport.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\tls\nrf_tls.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_message.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_api.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_codes.h)(0x56A9FFA4)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_option.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\iot\coap\coap_resource.c)(0x56A9FFA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\coap_resource.o --omf_browse .\_build\coap_resource.crf --depend .\_build\coap_resource.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_resource.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_api.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_transport.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\tls\nrf_tls.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_codes.h)(0x56A9FFA4)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_message.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_option.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\iot\coap\coap_transport_ipv6.c)(0x56A9FFA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\coap_transport_ipv6.o --omf_browse .\_build\coap_transport_ipv6.crf --depend .\_build\coap_transport_ipv6.d)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer\iot_pbuffer.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_transport.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\tls\nrf_tls.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_api.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\coap\coap_codes.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\udp_api.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\ipv6_api.h)(0x56A9FFA5)
+F (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6\icmp6.c)(0x56A9FFA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\icmp6.o --omf_browse .\_build\icmp6.crf --depend .\_build\icmp6.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\icmp6_api.h)(0x56A9FFA5)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\ipv6_api.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer\iot_pbuffer.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6\icmp6.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\context_manager\iot_context_manager.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils\ipv6_utils.h)(0x56A9FFA6)
+F (..\..\..\..\..\..\..\..\components\iot\context_manager\iot_context_manager.c)(0x56A9FFA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\iot_context_manager.o --omf_browse .\_build\iot_context_manager.crf --depend .\_build\iot_context_manager.d)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\iot\context_manager\iot_context_manager.h)(0x56A9FFA5)
+F (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer\iot_pbuffer.c)(0x56A9FFA6)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\iot_pbuffer.o --omf_browse .\_build\iot_pbuffer.crf --depend .\_build\iot_pbuffer.d)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer\iot_pbuffer.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\mem_manager\mem_manager.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\iot\iot_timer\iot_timer.c)(0x56A9FFA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\iot_timer.o --omf_browse .\_build\iot_timer.crf --depend .\_build\iot_timer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\iot_timer\iot_timer.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+F (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\ipv6\ipv6.c)(0x56A9FFA6)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\ipv6.o --omf_browse .\_build\ipv6.crf --depend .\_build\ipv6.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\iot\ble_6lowpan\ble_6lowpan.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\mem_manager\mem_manager.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\context_manager\iot_context_manager.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\ipv6_api.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer\iot_pbuffer.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\icmp6_api.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\udp_api.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6\icmp6.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp\udp.h)(0x56A9FFA6)
+F (..\..\..\..\..\..\..\..\components\iot\medium\ipv6_medium_ble.c)(0x56A9FFA6)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\ipv6_medium_ble.o --omf_browse .\_build\ipv6_medium_ble.crf --depend .\_build\ipv6_medium_ble.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\iot\medium\ipv6_medium.h)(0x56A9FFA6)
+I (..\..\..\config\ipv6_medium_platform.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\medium\ipv6_medium_ble.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_l2cap.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_err.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatt.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gattc.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatts.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_advdata.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\config\ipv6_medium_ble_cfg.h)(0x56B353D7)
+I (..\..\..\..\..\..\..\..\components\iot\medium\commissioning\commissioning.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs\ble_ncfgs.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage.h)(0x56A9FFA3)
+I (..\..\..\config\pstorage_platform.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\iot\iot_timer\iot_timer.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_hci.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\iot\ble_ipsp\ble_ipsp.h)(0x56A9FFA4)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_sdm.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_sdm.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52\nrf_sdm_device_specific.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\iot\common\ipv6_parse.c)(0x56A9FFA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\ipv6_parse.o --omf_browse .\_build\ipv6_parse.crf --depend .\_build\ipv6_parse.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB7FDE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\iot\common\ipv6_parse.h)(0x56A9FFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+F (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils\ipv6_utils.c)(0x56A9FFA6)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\ipv6_utils.o --omf_browse .\_build\ipv6_utils.crf --depend .\_build\ipv6_utils.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils\ipv6_utils.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+F (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp\udp6.c)(0x56A9FFA6)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\udp6.o --omf_browse .\_build\udp6.crf --depend .\_build\udp6.d)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_common.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_defines.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\common\iot_errors.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer\iot_pbuffer.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\udp_api.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include\ipv6_api.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp\udp.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils\ipv6_utils.h)(0x56A9FFA6)
+F (..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs\ble_ncfgs.c)(0x56A9FFA6)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\ble_ncfgs.o --omf_browse .\_build\ble_ncfgs.crf --depend .\_build\ble_ncfgs.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs\ble_ncfgs.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_l2cap.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_err.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatt.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gattc.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatts.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\iot\medium\commissioning\commissioning.c)(0x56A9FFA6)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\commissioning.o --omf_browse .\_build\commissioning.crf --depend .\_build\commissioning.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\bsp\boards.h)(0x56A9FFC3)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpio.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\bsp\pca10040.h)(0x56A9FFC3)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_hci.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage.h)(0x56A9FFA3)
+I (..\..\..\config\pstorage_platform.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_advdata.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_l2cap.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_err.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatt.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gattc.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatts.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\iot\medium\commissioning\commissioning.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs\ble_ncfgs.h)(0x56A9FFA6)
+I (..\..\..\..\..\..\..\..\components\iot\iot_timer\iot_timer.h)(0x56A9FFA5)
+I (..\..\..\..\..\..\..\..\components\iot\medium\ipv6_medium_ble.h)(0x56A9FFA6)
+I (..\..\..\config\ipv6_medium_ble_cfg.h)(0x56B353D7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56A9FFA1)
+F (..\..\..\..\..\..\..\..\components\libraries\button\app_button.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\app_button.o --omf_browse .\_build\app_button.crf --depend .\_build\app_button.d)
+I (..\..\..\..\..\..\..\..\components\libraries\button\app_button.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpio.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote\nrf_drv_gpiote.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpiote.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB7FDE)
+I (..\..\..\config\nrf_drv_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\config\nrf_drv_config_validation.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\libraries\util\app_error.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\app_error.o --omf_browse .\_build\app_error.crf --depend .\_build\app_error.d)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\libraries\fifo\app_fifo.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\app_fifo.o --omf_browse .\_build\app_fifo.crf --depend .\_build\app_fifo.d)
+I (..\..\..\..\..\..\..\..\components\libraries\fifo\app_fifo.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+F (..\..\..\..\..\..\..\..\components\libraries\timer\app_timer.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\app_timer.o --omf_browse .\_build\app_timer.crf --depend .\_build\app_timer.d)
+I (..\..\..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util_platform.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\app_trace.o --omf_browse .\_build\app_trace.crf --depend .\_build\app_trace.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55DB7FDE)
+F (..\..\..\..\..\..\..\..\components\libraries\mem_manager\mem_manager.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\mem_manager.o --omf_browse .\_build\mem_manager.crf --depend .\_build\mem_manager.d)
+I (..\..\..\config\sdk_config.h)(0x56A9FFC6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_os.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\mem_manager\mem_manager.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\trace\app_trace.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\nrf_assert.o --omf_browse .\_build\nrf_assert.crf --depend .\_build\nrf_assert.d)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+F (..\..\..\..\..\..\..\..\components\libraries\uart\retarget.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\retarget.o --omf_browse .\_build\retarget.crf --depend .\_build\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB7FD6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (..\..\..\..\..\..\..\..\components\libraries\uart\app_uart.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util_platform.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+F (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.c)(0x56A9FFA7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\softdevice_handler.o --omf_browse .\_build\softdevice_handler.crf --depend .\_build\softdevice_handler.d)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x56A9FFA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB7FD8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_sdm.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_svc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_soc.h)(0x56A9FFA8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_soc.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf_error_sdm.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52\nrf_sdm_device_specific.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_ranges.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_types.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gap.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_l2cap.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_err.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatt.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gattc.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\ble_gatts.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x56A9FFA7)
+I (..\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56A9FFA7)
+F (RTE\Device\nRF52832_xxAA\arm_startup_nrf52.s)(0x55F93290)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include--pd "__UVISION_VERSION SETA 517" --pd "_RTE_ SETA 1" --pd "NRF52 SETA 1" --pd "__HEAP_SIZE SETA 512" --pd "BLE_STACK_SUPPORT_REQD SETA 1" --pd "BOARD_PCA10040 SETA 1" --pd "CONFIG_GPIO_AS_PINRESET SETA 1" --pd "s1xx SETA 1" --pd "SWI_DISABLE0 SETA 1" --pd "SOFTDEVICE_PRESENT SETA 1" --pd "NRF52 SETA 1"--list .\_build\arm_startup_nrf52.lst --xref -o .\_build\arm_startup_nrf52.o --depend .\_build\arm_startup_nrf52.d)
+F (RTE\Device\nRF52832_xxAA\system_nrf52.c)(0x55F93290)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\..\..\config -I..\..\..\..\..\..\..\bsp -I..\..\..\..\..\..\..\..\components\device -I..\..\..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\common -I..\..\..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\..\..\components\iot\ble_6lowpan -I..\..\..\..\..\..\..\..\components\iot\ble_ipsp -I..\..\..\..\..\..\..\..\components\iot\coap -I..\..\..\..\..\..\..\..\components\iot\include -I..\..\..\..\..\..\..\..\components\iot\tls -I..\..\..\..\..\..\..\..\components\iot\common -I..\..\..\..\..\..\..\..\components\iot\context_manager -I..\..\..\..\..\..\..\..\components\iot\iot_timer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\pbuffer -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\udp -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\include -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\utils -I..\..\..\..\..\..\..\..\components\iot\ipv6_stack\icmp6 -I..\..\..\..\..\..\..\..\components\iot\medium -I..\..\..\..\..\..\..\..\components\iot\medium\ble_ncfgs -I..\..\..\..\..\..\..\..\components\iot\medium\include -I..\..\..\..\..\..\..\..\components\iot\medium\commissioning -I..\..\..\..\..\..\..\..\components\libraries\button -I..\..\..\..\..\..\..\..\components\libraries\fifo -I..\..\..\..\..\..\..\..\components\libraries\mem_manager -I..\..\..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\..\..\components\libraries\trace -I..\..\..\..\..\..\..\..\components\libraries\uart -I..\..\..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers -I..\..\..\..\..\..\..\..\components\softdevice\s1xx_iot\headers\nrf52 -I..\..\.. --c99-I C:\Users\Bruker\nrf5_iot_sdk_3288530\examples\iot\coap\ipv6\server\boards\pca10040\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.0.5\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.3.2\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DNRF52 -D__HEAP_SIZE="512" -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10040 -DCONFIG_GPIO_AS_PINRESET -Ds1xx -DSWI_DISABLE0 -DSOFTDEVICE_PRESENT -DNRF52 -DCOMMISSIONING_ENABLED-o .\_build\system_nrf52.o --omf_browse .\_build\system_nrf52.crf --depend .\_build\system_nrf52.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB7FE0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB7FD6)
+I (..\..\..\..\..\..\..\..\components\device\nrf.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\nrf52.h)(0x56A9FFA2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm4.h)(0x53FC863A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF470A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmSimd.h)(0x53FC863A)
+I (..\..\..\..\..\..\..\..\components\toolchain\system_nrf52.h)(0x56A9FFA8)
+I (..\..\..\..\..\..\..\..\components\device\nrf52_bitfields.h)(0x56A9FFA2)
+I (..\..\..\..\..\..\..\..\components\device\nrf51_to_nrf52.h)(0x56A9FFA1)
+I (..\..\..\..\..\..\..\..\components\device\compiler_abstraction.h)(0x56A9FFA1)
