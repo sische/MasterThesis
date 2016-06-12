@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{??}{nor}{}]{nordicServerExamplePython}
+{Infocenter, Nordic Semiconductor: CoAP Server Example}.
+\newblock
+  \url{http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.iotsdk.v0.9.0%2Fiot_sdk_app_coap_server.html&cp=5_1_0_5_0_0}.
+
 \bibitem[\protect\citeauthoryear{??}{adx}{2016}]{adxlDataSheet}
  (2016).
 \newblock {ADXL345: Digital Accelerometer Data Sheet}.

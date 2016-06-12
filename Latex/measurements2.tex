@@ -4,23 +4,14 @@
 
 \noindent This chapter will display the experiments carried out concerning data sending rate from the \gls{nRF52} to the \gls{Raspberry Pi}. The goal is to determine the most efficient combination of the amount of data to send in one transmission. We will discuss sending frequency, \gls{payload} size and protocols to use in the different scenarios. 
 
-\section{Description of measurements}
+\noindent The following sections will discuss if \textit{fragmentation} (explained in section \ref{fragmentationSection}) is a major issue when sending data through low energy networks. We will be maximizing the amount of \gls{payload} compared to the total throughput, to find the best exploitation of the testbed. This will be the starting point for the first major test presented. 
 
-\noindent The following sections will discuss if \textit{fragmentation} is a major issue when sending data through low energy networks. Another point will be which of the protocols described in chapter \ref{chp:background} is the most efficient to use when the goal is to get a maximum amount of \gls{payload} compared to the total throughput. Data will be sent through the network, containing a payload of constant length. Wireshark will be a central part of the measurements presented, and the packet size will be increased to see the changes. These problems are essential in the discussion of objective O.4. %\todo{Denne sectionen sier for mange tanker paa en gang!}
+\noindent Another point will be which of the protocols described in chapter \ref{chp:background} is the most efficient to use when the goal is to maximize \gls{goodput}. To test this, data will be sent through the testbed, containing a payload of constant length. This will be the starting point for the second major test.
 
-\noindent Before the experiment started, our expected result was that sending a small amount of data at a time would not be preferable, because of the needed bytes to set up the connection, header files and so on. We did not know the packet size needed before it would be considered profitable to send them regarding the cost of energy and network capacity. This is dependent on the situation where the network will be used. A system with sensors to analyse real-time patient data to see if a patient is in a stable state needs to be reliable, and the data will be sent no matter if it is profitable for the network or not. In this case, timing is the most important. A system used in a company to monitor how many cups of coffee are brewed during a day can easily store data in the end node and send larger amounts of data less frequently, if this is profitable for the network. 
+\noindent The final major test will examine how much data is sent through the network in total in best and worst case scenarios, using the different protocols. In all these tests, Wireshark will be a central part, and the packet size will be systematically increased to see the changes in. These problems are essential in the discussion of objective O.4. 
 
-\noindent When sending \gls{ble} packets over the network, observations from the system show that the maximum packet size is 31 bytes in the testbed. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 bytes are needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} data transferred start out very poorly if the payload sent is tiny. The best possible ratio of useful data we can achieve will also be limited by this. 27 bytes \gls{payload} and 4 bytes header field is 87,1 \%, calculated in the following equation: 
- %\todo{If we ignore con start?}
+\noindent The results from these tests overall shows that the highest percentage of \gls{payload} compared to \gls{throughput} achieved is 78,48 \%. The highest measured \gls{goodput} is 611 \textit{bytes/second}. \gls{con} is the most stable during these measurements, and is the fastest for \glspl{payload} under 500 \textit{bytes} in the testbed. \gls{non} is the fastest for \glspl{payload} over 500 \textit{bytes}, and overall in the tetbed. These results are summarized in table \ref{ComparisonTable}. 
 
-\begin{equation} \label{percentageHeader}
-    lim_{x\to\infty} \frac{x + 27}{x + 31 + C} = \frac{27 \, byte}{31 \, byte}*100 \, \approx 87,1 \,\%
-\end{equation} 
-
-%\todo{Tjaa, ikke helt enig? Forklar bedre at det er header?}
-
-
-\noindent During measurements in the physical testbed, the actual result will probably be considerably lower than this because \gls{6lowpan} and \gls{coap} packets could require some additional fields for each packet. There are also other additional protocols in \gls{ble} that will require some packets, like the occasional \glspl{ack} from ACL. It is also logical to expect some other disturbing factors in a real-world wireless network. 
 
 \section{Possible limitations in the network}
 
@@ -71,9 +62,9 @@ ping6 google.com
 
 
 
-\subsection{Packet fragmentation}
+\subsection{Packet fragmentation} \label{fragmentationSection}
 
-\noindent In Internet Routing, fragmentation is known as the action of splitting data into smaller \glspl{packet}, to satisfy the maximal limits of the different technologies or protocols used (e.g. \gls{ble} and \gls{6lowpan} in the testbed). Each of these packets needs header fields of a certain size, or other requirements. In a network of \glspl{microcontroller}, fragmentation can be a factor that needs to be taken into account to optimize the \gls{payload} sent through the system. To better understand fragmentation, imagine a train with carriages as shown in Figure \ref{fig:trainExample}. 
+\noindent In Internet Routing, fragmentation is known as the action of splitting data into smaller \glspl{packet}, to satisfy the maximal limits of the different technologies or protocols used (e.g. \gls{ble} and \gls{6lowpan} in the testbed). Each of these packets needs header fields of a certain size, or other requirements. In a network of \glspl{microcontroller}, fragmentation can be a factor that needs to be taken into account to optimize the \gls{payload} sent through the system. To better understand fragmentation, imagine a train with carriages as shown in figure \ref{fig:trainExample}. 
 
 \begin{figure}[ht]
     \centering
@@ -85,8 +76,25 @@ ping6 google.com
 \noindent To be able to operate at all, the train needs a locomotive with an engine driver, a conductor and a cafe carriage. As soon as these things are already there, the company owning the train gets better and better off for every passenger buying a ticket. Lets assume that every carriage can carry 4 employees and 27 passengers, to make it directly comparable to the \gls{ble} packets in the network. Eventually all the carriages will be full, and a decision has to be made if it will be profitable to fit another carriage. It will in general be most profitable to use as many carriages as the locomotive can handle, and to fill up every carriage as much as possible. It will however not be a good idea to connect another carriage if there will only be one additional passenger sitting there, since the extra weight of the carriage adds unnecessary additional weight to the train set compared to the income. 
 
 \noindent In this example, the locomotive and employees are the \gls{6lowpan} packet, that are needed no matter what to get the train working. Each additional carriage is a \gls{ble} packet. The goal is therefore to find the maximal number of passengers compared to the cost of adding additional carriages, in other words the maximum number of bytes compared to the number of sent packets. This is known as fragmentation, fragmenting data into smaller pieces to satisfy the maximal limitations of packet sizes in the different protocols. This can be exploited by a system developer to maximize the percentage of \gls{payload} compared to \gls{throughput} in the network.
- 
-\newpage
+
+
+\section{Description of measurements}
+
+\noindent Before the experiment started, our expected result was that sending a small amount of data at a time would not be preferable, because of the needed bytes to set up the connection, header files and so on. We did not know the packet size needed before it would be considered profitable to send them regarding the cost of energy and network capacity. This is dependent on the situation where the network will be used. A system with sensors to analyse real-time patient data to see if a patient is in a stable state needs to be reliable, and the data will be sent no matter if it is profitable for the network or not. In this case, timing is the most important. A system used in a company to monitor how many cups of coffee are brewed during a day can easily store data in the end node and send larger amounts of data less frequently, if this is profitable for the network. 
+
+\noindent When sending \gls{ble} packets over the network, observations from the system show that the maximum packet size is 31 bytes in the testbed. Each of these packages needs a header field of 4 bytes, meaning 27 bytes left for useful data. However, to start the connection at all, 76 bytes are needed, meaning three \gls{ble} packets. The ratio between \textit{useful} and \textit{needed} data transferred start out very poorly if the payload sent is tiny. The best possible ratio of useful data we can achieve will also be limited by this. 27 bytes \gls{payload} and 4 bytes header field is 87,1 \%, calculated in the following equation: 
+ %\todo{If we ignore con start?}
+
+\begin{equation} \label{percentageHeader}
+    lim_{x\to\infty} \frac{x + 27}{x + 31} = \frac{27 \, byte}{31 \, byte}*100 \, \approx 87,1 \,\%
+\end{equation} 
+
+%\todo{Tjaa, ikke helt enig? Forklar bedre at det er header?}
+
+
+\noindent During measurements in the physical testbed, the actual result will probably be considerably lower than this because \gls{6lowpan} and \gls{coap} packets could require some additional fields for each packet. There are also other additional protocols in \gls{ble} that will require some packets, like the occasional \glspl{ack} from ACL. It is also logical to expect some other disturbing factors in a real-world wireless network. 
+
+%\newpage
 
 \section{Measurements}
 
@@ -286,7 +294,7 @@ Number & Time    & Protocol & Length & Info   							  \\ \hline
 \noindent Table \ref{coapCON700table} shows a bigger and more complex case, where a payload of 700 byte is being sent at once using \gls{coap} \gls{con}. In total 889 bytes are being sent in this process, with a \gls{con} packet size of 774 bytes. This gives a percentage of \gls{payload} compared to \gls{throughput} at 78.74 \%. The maximum packet length of a \gls{6lowpan} packet at 127 bytes and the max in the testbed of 270 bytes are therefore exceeded. This can be seen in the table, after 8 \gls{ble} packages of 31 bytes each, have been sent, there is only room for 22 bytes in the last packet before the \gls{6lowpan} packet reaches its maximal capacity. This is repeated several times, once for each \gls{6lowpan} packet, until the last \gls{ble} packets at the size of 17 bytes. After this the standard packages for \gls{ack} and \textit{Number of completed packages} follows. This is a good example of how fragmentation of packets works in this system. 
 %\todo{explain better, lower level 127, this system 270!} 
 
-
+\newpage
 \begin{table}[H]
 \small
 \centering

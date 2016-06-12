@@ -9,18 +9,17 @@
 \addvspace {10pt}
 \contentsline {table}{\numberline {3.1}{\ignorespaces Connection scheme nRF52 to ADXL345}}{23}{table.3.1}
 \addvspace {10pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Wireshark CoAP CON 0 bytes payload}}{34}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Wireshark CoAP CON 100 bytes payload}}{35}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Wireshark CoAP NON 0 bytes payload}}{37}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Wireshark CoAP NON 100 bytes payload}}{38}{table.4.4}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Wireshark CoAP CON 700 bytes}}{41}{table.4.5}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Wireshark CoAP NON 700 bytes}}{42}{table.4.6}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Wireshark CoAP CON 0 bytes payload}}{32}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Wireshark CoAP CON 100 bytes payload}}{33}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Wireshark CoAP NON 0 bytes payload}}{35}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Wireshark CoAP NON 100 bytes payload}}{35}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Wireshark CoAP CON 700 bytes}}{38}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Wireshark CoAP NON 700 bytes}}{39}{table.4.6}
 \addvspace {10pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of CON and NON}}{56}{table.5.1}
-\addvspace {10pt}
-\addvspace {10pt}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of CON and NON}}{54}{table.5.1}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {C.1}{\ignorespaces Goodput and time, CoAP CON}}{72}{table.C.1}
-\contentsline {table}{\numberline {C.2}{\ignorespaces Goodput and time, CoAP NON}}{72}{table.C.2}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Goodput and time, CoAP CON}}{62}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Goodput and time, CoAP NON}}{62}{table.A.2}
+\addvspace {10pt}
 \addvspace {10pt}

@@ -1,7 +1,7 @@
-\chapter{Appendix B}
+\chapter{Appendix C}
 \label{chp:appendixb1}
 
-Appendix B contains detailed description on how to connect and configure the different devices in the testbed. 
+Appendix \ref{chp:appendixb1} contains detailed description on how to connect and configure the different devices in the testbed. 
 
 \section{Connecting Raspberry Pi and nRF52}
 
@@ -109,5 +109,172 @@ ping6 2001::02AA:11FF:FEBB:22CC
 
 \section{Connecting nRF52 and ADXL345}
 
+In short, registers for \textit{data format control, initial power saving, interrupt enable control}, and \textit{the offset of each axis} has to be written to in that order. After this, the acceleration value from the different axes can be read. It was then possible to read from the registers containing current acceleration values using the method \textit{read\_reg} described in the next section.  
 
+\noindent In the solution proposed in this thesis, the acceleration values are being read as often as possible, limited by the processing power of the \gls{nRF52} and the \gls{i2c} connection. Furthermore, the read value is being stored in a simple dynamic char array in the \gls{nRF52} before being sent and reset when the \gls{ble} channel is ready. The highest obtained measurement frequency in this system was 11 times for every main loop, and 150 within these 11 loops. This resulted in 1650 measurements every second, but as explained in chapter \ref{chp:architecture}, even though the register was being read as often as possible, the same value was read up to 1650 times before it was updated. The accelerometer was therefore not tester further in this project. 
+
+\noindent The next section contains samples of programming code written to read acceleration data from the Adafruit gls{adxl345} connected to the \gls{nRF52} using the \gls{i2c} interface. This code was not being used in the testing of this thesis, as explained in chapter \ref{chp:architecture}. The code has been included and explained so it can be used by others in later projects.
+
+\section{C programming code for acceleration data} \label{subsec:progInC}
+
+The following code sample in C programming is parts of the main function in the file \textit{main.c}. From here methods \textit{accelerometer\_init} and \textit{start\_measuring} are being called to intitialize the different registers of the accelerometer, and start the measuring from the main loop. 
+\newpage
+\begin{lstlisting}[language=C]
+
+int main(void){
+	uint32_t err_code; 
+	
+	app_trace_init(); 
+	leds_init(); 
+	timers_init();
+	accelerometer_init(); 
+	
+	...
+	
+	for (;;)
+	{
+		power_manage();
+		start_measuring();
+	}
+}
+\end{lstlisting}
+
+%\newpage
+
+\textit{accelerometer\_init} will initialize the different registers to be able to read from the accelerometer. These registers should first be defined in a header file along with information about the slave address and which \gls{nRF52} pins that represented SCL and SDA, to clarify the code. 
+
+\begin{lstlisting}[language=C]
+// Part of header file: 
+
+	#define ADXL345_SLAVE_ADDRESS			0x53
+		
+    #define TWI_SCL_M						27   //!< Master SCL pin
+    #define TWI_SDA_M						26   //!< Master SDA pin
+		
+	#define X_AXIS_OFFSET					0x1E
+	#define Y_AXIS_OFFSET					0x1F
+	#define Z_AXIS_OFFSET					0x20
+	#define DATA_RATE_AND_POWER_INIT		0x2C
+	#define POWER_SAVING_INIT				0x2D
+	#define INTERRUPT_ENABLE_CONTROL		0x2E
+	#define DATA_FORMAT_CONTROL				0x31
+	#define READ_X_AXIS						0x32
+	#define READ_Y_AXIS						0x34
+	#define READ_Z_AXIS						0x36
+\end{lstlisting}
+\newpage
+\begin{lstlisting}[language=C]
+
+// Initialize accelerometer in main.c file: 
+
+static void accelerometer_init()
+{
+	write_reg(DATA_FORMAT_CONTROL, 0x00, 2);
+	write_reg(POWER_SAVING_INIT, 0xFF, 2);
+	write_reg(INTERRUPT_ENABLE_CONTROL, 0xFF, 2);
+	write_reg(X_AXIS_OFFSET, 0xFF, 2);
+	write_reg(Y_AXIS_OFFSET, 0xFF, 2);
+	write_reg(Z_AXIS_OFFSET, 0xFF, 2);	
+}
+
+\end{lstlisting}
+
+The initialization of the accelerometer calls the function \textit{write\_reg}, which is used to write to a register. 
+
+\begin{lstlisting}[language=C]
+static uint32_t write_reg(uint8_t register_address, uint8_t data_to_write, uint8_t size) 
+{		
+	ret_code_t ret;
+	
+    uint8_t addr8 = (uint8_t)register_address;
+    ret = nrf_drv_twi_tx(&m_twi_master, ADXL345_SLAVE_ADDRESS, &addr8, 1, true);
+    if(NRF_SUCCESS != ret)
+    {
+        break;
+    }
+    ret = nrf_drv_twi_tx(&m_twi_master, ADXL345_SLAVE_ADDRESS, &data_to_write, size, false);
+    return ret;
+}
+
+\end{lstlisting}
+
+After this initialisation process is successful, the \textit{start\_measuring} can begin. 
+
+\begin{lstlisting}[language=C]
+
+static void start_measuring()
+{
+	char stringa[150];
+	char anotherString[150];
+	
+	for (int j = 0; j < 150; j++)
+	{	
+		int r = read_reg(READ_Z_AXIS, 0x00);
+		int t = numberOfMeasurements++;
+	}
+	
+	sprintf(stringa, "%d,", numberOfMeasurements);
+	
+	for  (in i=0; i < 200; i++)
+	{
+		if (stringa[0] == '\0')
+		{
+			measuringCounter = i;
+			break;
+		}
+		else
+		{
+			if (!stringToSendOccupied)
+			{
+				appendChar(stringToSend, 150, stringa[i]);
+			}
+		}
+	}
+	numberOfMeasurements = 0; 
+}
+
+\end{lstlisting}
+
+This method calls the function \textit{read\_reg}, to read the registers that have been set to update earlier. 
+
+\begin{lstlisting}[language=C]
+
+static uint16_t read_reg(uint8_t register_address, uint8_t data_returnValue) 
+{
+	uint16_t rd;
+	ret_code_t ret;
+	uint8_t buff[2];
+    uint8_t addr8 = (uint8_t)register_address;
+    
+    ret = nrf_drv_twi_tx(&m_twi_master, ADXL345_SLAVE_ADDRESS, &addr8, 1, true);
+    if(NRF_SUCCESS != ret)
+    {
+        break;
+    }
+    ret = nrf_drv_twi_rx(&m_twi_master, ADXL345_SLAVE_ADDRESS, buff, 2, false);
+	rd = (uint16_t)(buff[0] | (buff[1] << 8));
+    
+    return rd;	
+}
+
+\end{lstlisting}
+
+After this it is possible to get the acceleration value from another point in the code, to be stores in a char array \textit{*str} until it is being sent. 
+
+
+\begin{lstlisting}[language=C]
+
+static void acceleration_value_get(coap_content_type_t content_type, char ** str)
+{
+	stringToSendOccupied = true; 
+	
+	strcpy(newString, stringToSend);
+	*str = newString;
+	stringToSend[0] = '\0';
+	
+	stringToSendOccupied = false; 
+}
+
+
+\end{lstlisting}
 

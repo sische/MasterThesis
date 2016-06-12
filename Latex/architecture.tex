@@ -56,13 +56,14 @@
 \label{nRF52ADXL345connection}
 \begin{tabular}{ll}
 \textbf{Pin connection} & \textbf{Explanation}                                                                                            \\
-5V - VIN               & Power source, \textbf{\textcolor{green}{green cable}} in Figure \ref{fig:nrf-adxl345}                   \\
-GND - GND           0   & Ground, \textbf{\textcolor{red}{red cable}} in Figure \ref{fig:nrf-adxl345}                             \\
-P0.27 - SDA            & \gls{i2c} Serial Data Line, \textbf{\textcolor{orange}{orange cable}} in Figure \ref{fig:nrf-adxl345} \\
-P0.26 - SCL            & \gls{i2c} Serial Clock Line, \textbf{\textcolor{brown}{brown cable}} in Figure \ref{fig:nrf-adxl345} 
+5V -- VIN               & Power source, \textbf{\textcolor{green}{green cable}} in Figure \ref{fig:nrf-adxl345}                   \\
+GND -- GND              & Ground, \textbf{\textcolor{red}{red cable}} in Figure \ref{fig:nrf-adxl345}                             \\
+P0.27 -- SDA            & \gls{i2c} Serial Data Line, \textbf{\textcolor{orange}{orange cable}} in Figure \ref{fig:nrf-adxl345} \\
+P0.26 -- SCL            & \gls{i2c} Serial Clock Line, \textbf{\textcolor{brown}{brown cable}} in Figure \ref{fig:nrf-adxl345} 
 \end{tabular}
 \end{table}
 
+\noindent \gls{nRF52} supports both \gls{i2c} and \gls{spi} serial computer buses. \gls{i2c} was chosen in this case because it is fast enough, flexible and simple to set up with the use of few cables. As seen in table \ref{nRF52ADXL345connection} and figure \ref{fig:nrf-adxl345}, this interface only requires four cables, for power, ground, data and clock. This gives a bandwidth of 1 bit and a maximum bitrate of 5 Mbit/s \cite{semiconductors2000i2c}. 
 
 \begin{figure}[ht]
     \centering
@@ -73,50 +74,22 @@ P0.26 - SCL            & \gls{i2c} Serial Clock Line, \textbf{\textcolor{brown}{
 
 \newpage
 
-\noindent \gls{nRF52} supports both \gls{i2c} and \gls{spi} serial computer buses. \gls{i2c} was chosen in this case because it is fast enough, flexible and simple to set up with the use of few cables. As seen in table \ref{nRF52ADXL345connection} and figure \ref{fig:nrf-adxl345}, this interface only requires four cables, for power, ground, data and clock. This gives a bandwidth of 1 bit and a maximum bitrate of 5 Mbit/s \cite{semiconductors2000i2c}. The is approximately the same as the assumed max rate capable from the \gls{nRF52}. 
 
-\noindent After the physical connection was complete, it was possible to start the process of initializing the \gls{ADXL345}. Acceleration values can only be read from this sensor if this has been correctly initialized at compile time. To do so, code to write to and read from the registers had to be added. We used another example from Nordic Semiconductor as a starting point to establish this communication. This was called \textit{TWI master with TWI slave}. By using specific methods from this example and writing to the right accelerometer registers in the right order \cite{devices2009digital}, it was possible to configure the accelerometer as wanted. The detailed description of the programming code used to do this can be seen in appendix \ref{chp:appendixc}. 
+\noindent After the physical connection was complete, it was possible to start the process of initializing the \gls{ADXL345}. Acceleration values can only be read from this sensor if this has been correctly initialized at compile time. To do so, code to write to and read from the registers had to be added. We used another example from Nordic Semiconductor as a starting point to establish this communication. This was called \textit{TWI master with TWI slave}. By using specific methods from this example and writing to the right accelerometer registers in the right order \cite{devices2009digital}, it was possible to configure the accelerometer as wanted. The detailed description of the programming code used to do this can be seen in appendix \ref{subsec:progInC}. 
 
-\noindent It turned out to be difficult and very time consuming to configure the \gls{ADXL345} to work as expected with the \gls{nRF52}. In short, registers for \textit{data format control, initial power saving, interrupt enable control}, and \textit{the offset of each axis} has to be written to in that order. After this, the acceleration value from the different axes can be read. It was then possible to read from the registers containing current acceleration values using the following code: 
-
-\begin{lstlisting}[language=C]
-
-static uint16_t read_reg(uint8_t register_address, uint8_t data_returnValue) 
-{
-	uint16_t rd;
-	ret_code_t ret;
-	uint8_t buff[2];
-    uint8_t addr8 = (uint8_t)register_address;
-    
-    ret = nrf_drv_twi_tx(&m_twi_master, ADXL345_SLAVE_ADDRESS, &addr8, 1, true);
-    if(NRF_SUCCESS != ret)
-    {
-        break;
-    }
-    ret = nrf_drv_twi_rx(&m_twi_master, ADXL345_SLAVE_ADDRESS, buff, 2, false);
-	rd = (uint16_t)(buff[0] | (buff[1] << 8));
-    
-    return rd;	
-}
-
-\end{lstlisting}
-
-
-\noindent In the solution proposed in this thesis, the acceleration values are being read as often as possible, limited by the processing power of the \gls{nRF52} and the \gls{i2c} connection. Furthermore, the read value is being stored in a simple dynamic char array in the \gls{nRF52} before being sent and reset when the \gls{ble} channel is ready. The highest obtained measurement frequency in this system was 11 times for every main loop, and 150 within these 11 loops. This resulted in 1650 measurements every second. The \gls{ADXL345} updates its acceleration value when instructed by the master, and the default setting is to follow the oscillator \textit{tick} of the \gls{nRF52}. This gives an update approximately every second. The result was that even though the register was being read as often as possible, the same value was read up to 1650 times before it was updated. 
-
-
+\noindent It turned out to be difficult and very time consuming to configure the \gls{ADXL345} to work as expected with the \gls{nRF52}. In short, we found that we were able to measure 11 times for every main loop of the code, and 150 within these 11 loops. This resulted in 1650 measurements every second. The \gls{ADXL345} updates its acceleration value when instructed by the master, and the default setting is to follow the oscillator \textit{tick} of the \gls{nRF52}. This gives an update approximately every second.  The result was that even though the register was being read as often as possible, the same value was read up to 1650 times before it was updated.
 
 \noindent To solve this problem the default setting of updating the register when told by the oscillator needed to be changed. This turned out to be very time-consuming and hard to solve in a proper way. Both because of problems with initializing the accelerometer correctly and making the \gls{nRF52} read and store the values fast enough to get proper data. The ideal solution would be to read at least 1000 values every second, to get a good starting point before analysing values. At this point it was not possible to get enough real data to be used in data analysis in another device in the testbed. In order not to loose too much time on hardware problems, it was decided to focus more on analysing the data sent over the network communication with random generated data. 
 
 %\noindent It would have been possible to use these values to test the network, even though the same value were read several times in a row. However, the accelerometer did never give a fixed number of measured values, and all the measured values could be from 0 to 5 digits long. Since the main focus of this thesis is to understand how data travels through the network, it was decided to not focus further on getting real data due to hardware problems. It would be preferable for the network measurements to use predictable data of fixed length, to get directly comparable results. To test the system with real data will therefore be discussed in the future work section, in chapter \ref{chp:results}. Since the network connection between the \gls{nRF52} and \gls{Raspberry Pi} was already stable, it was easy to generate random values of fixed length to send on the \gls{nRF52}, and do measurements to calculate the optimal throughput between these two. 
 
-\noindent The next chapter will describe the data analysis of the data sent through this network in detail, and how to optimize the percentage of usable data being transported.  
+%\noindent The next chapter will describe the data analysis of the data sent through this network in detail, and how to optimize the percentage of usable data being transported.  
 
-\newpage
+%\newpage
 
 \section{Discussion}
 
-\noindent Now the full system shown in figure \ref{fig:systemArchitectureThisSystem} has been connected. Due to problems explained in the previous section, the rest of the thesis will focus mainly on the link between the \gls{nRF52} and the \gls{Raspberry Pi}, with the option of using extra computational power from the stationary computer or a web service if necessary. The central point of discussion at this point is how to process and analyse data in the system. The main options to consider in all the different devices concerning how much computation to do in this link are the following: 
+\noindent Now the full system shown in figure \ref{fig:systemArchitectureThisSystem} has been connected. Due to problems explained in the previous section, the rest of the thesis will focus mainly on the link between the \gls{nRF52} and the \gls{Raspberry Pi}, with the option of using extra computational power from the stationary computer or a web service if necessary. The central point of discussion at this point is how to process and analyse data in the system. The main options to consider in all the different devices concerning how much computation to do on the \gls{Raspberry Pi} are the following: 
 
 \begin{itemize}
   \item Useful raw data: All data arrives as useful data, and can be posted directly to a web page or a server for storage

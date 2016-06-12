@@ -35,41 +35,40 @@
 \contentsline {section}{\numberline {3.1}Connecting Raspberry Pi and nRF52}{22}{section.3.1}
 \contentsline {section}{\numberline {3.2}Raspberry Pi to Network Computer or Server}{22}{section.3.2}
 \contentsline {section}{\numberline {3.3}Connecting nRF52 and ADXL345}{23}{section.3.3}
-\contentsline {section}{\numberline {3.4}Discussion}{27}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Network Measurements}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Description of measurements}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Possible limitations in the network}{30}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Stable transfer rate}{30}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Packet fragmentation}{32}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Measurements}{34}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}CoAP CON}{34}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}CoAP NON}{36}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Discussion}{38}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Tests with more data}{39}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Discussion}{43}{subsection.4.3.5}
-\contentsline {section}{\numberline {4.4}Transfer rates}{45}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Time used to transfer payload}{45}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Bytes sent through network, best and worst case}{50}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Chapter summary}{51}{section.4.5}
-\contentsline {chapter}{\chapternumberline {5}Discussion}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Set up network}{53}{section.5.1}
-\contentsline {section}{\numberline {5.2}Gather sensor data}{54}{section.5.2}
-\contentsline {section}{\numberline {5.3}Send data through network}{54}{section.5.3}
-\contentsline {section}{\numberline {5.4}Analyse data}{55}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Measurements}{56}{subsection.5.4.1}
-\contentsline {section}{\numberline {5.5}Ease of use}{57}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{57}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}nRF52}{58}{subsection.5.5.2}
-\contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future work}{60}{section.6.1}
-\contentsline {chapter}{References}{61}{section*.8}
+\contentsline {section}{\numberline {3.4}Discussion}{25}{section.3.4}
+\contentsline {chapter}{\chapternumberline {4}Network Measurements}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Possible limitations in the network}{28}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Stable transfer rate}{28}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Packet fragmentation}{29}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Description of measurements}{31}{section.4.2}
+\contentsline {section}{\numberline {4.3}Measurements}{31}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}CoAP CON}{31}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}CoAP NON}{34}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Discussion}{36}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Tests with more data}{37}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Discussion}{40}{subsection.4.3.5}
+\contentsline {section}{\numberline {4.4}Transfer rates}{42}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Time used to transfer payload}{42}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Bytes sent through network, best and worst case}{47}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Chapter summary}{48}{section.4.5}
+\contentsline {chapter}{\chapternumberline {5}Discussion}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}Set up network}{51}{section.5.1}
+\contentsline {section}{\numberline {5.2}Gather sensor data}{52}{section.5.2}
+\contentsline {section}{\numberline {5.3}Send data through network}{52}{section.5.3}
+\contentsline {section}{\numberline {5.4}Analyse data}{53}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Measurements}{54}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Ease of use}{55}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Raspberry Pi}{55}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}nRF52}{56}{subsection.5.5.2}
+\contentsline {chapter}{\chapternumberline {6}Conclusion and Future Work}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future work}{58}{section.6.1}
+\contentsline {chapter}{References}{59}{section*.8}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{63}{appendix.A}
-\contentsline {section}{\numberline {A.1}Python programming scripts}{63}{section.A.1}
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{67}{appendix.B}
-\contentsline {section}{\numberline {B.1}Connecting Raspberry Pi and nRF52}{67}{section.B.1}
-\contentsline {section}{\numberline {B.2}Connecting nRF52 and ADXL345}{70}{section.B.2}
-\contentsline {appendix}{\chapternumberline {C}Appendix C}{71}{appendix.C}
-\contentsline {section}{\numberline {C.1}Measured values from tests}{71}{section.C.1}
-\contentsline {appendix}{\chapternumberline {D}Appendix D}{75}{appendix.D}
-\contentsline {section}{\numberline {D.1}C programming code for acceleration data}{75}{section.D.1}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{61}{appendix.A}
+\contentsline {section}{\numberline {A.1}Measured values from tests}{61}{section.A.1}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{65}{appendix.B}
+\contentsline {section}{\numberline {B.1}Python programming scripts}{65}{section.B.1}
+\contentsline {appendix}{\chapternumberline {C}Appendix C}{69}{appendix.C}
+\contentsline {section}{\numberline {C.1}Connecting Raspberry Pi and nRF52}{69}{section.C.1}
+\contentsline {section}{\numberline {C.2}Connecting nRF52 and ADXL345}{72}{section.C.2}
+\contentsline {section}{\numberline {C.3}C programming code for acceleration data}{72}{section.C.3}
